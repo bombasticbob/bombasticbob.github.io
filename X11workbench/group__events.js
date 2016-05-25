@@ -1,6 +1,5 @@
 var group__events =
 [
-    [ "Event Synchronization Functions", "group__sync__events.html", "group__sync__events" ],
     [ "WBAppEvent", "group__events.html#ga2648b749bede99874e9ed979ce861f44", null ],
     [ "WBWinEvent", "group__events.html#ga873795f7442d970037a691cd4e51792c", null ],
     [ "WBAppDispatch", "group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5", null ],

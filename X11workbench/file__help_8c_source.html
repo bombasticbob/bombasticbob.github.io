@@ -709,7 +709,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  hFF = FindFirstFile(szFileName, &amp;fd);</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  <span class="keywordflow">if</span>(hFF != INVALID_HANDLE_VALUE)</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  <span class="keywordflow">if</span>(hFF != <a class="code" href="group__platform.html#ga5fdc7facea201bfce4ad308105f88d0c" title="INVALID HANDLE VALUE equivalent.">INVALID_HANDLE_VALUE</a>)</div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;  {</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    bRval = (fd.dwFileAttributes &amp; FILE_ATTRIBUTE_DIRECTORY) != 0;</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    FindClose(hFF);</div>
@@ -1253,7 +1253,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;</div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;<span class="preprocessor"></span>    pRval-&gt;hFF = FindFirstFile(p2, &amp;(pRval-&gt;fd))</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    <span class="keywordflow">if</span>(pRval-&gt;hFF == INVALID_HANDLE_VALUE)</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    <span class="keywordflow">if</span>(pRval-&gt;hFF == <a class="code" href="group__platform.html#ga5fdc7facea201bfce4ad308105f88d0c" title="INVALID HANDLE VALUE equivalent.">INVALID_HANDLE_VALUE</a>)</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;    {</div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;      free(pBuf);</div>
 <div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;      free(pRval);</div>
@@ -1292,7 +1292,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;    DIRLIST *pD = (DIRLIST *)pDirectoryList;</div>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span>(pD-&gt;hFF != INVALID_HANDLE_VALUE)</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span>(pD-&gt;hFF != <a class="code" href="group__platform.html#ga5fdc7facea201bfce4ad308105f88d0c" title="INVALID HANDLE VALUE equivalent.">INVALID_HANDLE_VALUE</a>)</div>
 <div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    {</div>
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;      FindClose(pD-&gt;hFF);</div>
 <div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;    }</div>
@@ -1539,7 +1539,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><b>file_help.c</b></li>
-    <li class="footer">Generated on Sat Oct 17 2015 15:35:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue May 24 2016 17:19:34 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

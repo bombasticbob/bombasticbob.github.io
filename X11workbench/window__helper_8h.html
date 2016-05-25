@@ -375,9 +375,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1ca511628142e183e7db3e326b947244"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga1ca511628142e183e7db3e326b947244">WBInitDisplay</a> (Display *pDisplay)</td></tr>
 <tr class="memdesc:ga1ca511628142e183e7db3e326b947244"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes default objects for the specified Display  <a href="group__startup.html#ga1ca511628142e183e7db3e326b947244">More...</a><br/></td></tr>
 <tr class="separator:ga1ca511628142e183e7db3e326b947244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39943cd7b10df7db6b0484e2ab88eb3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga39943cd7b10df7db6b0484e2ab88eb3f">WBInitClipboardSystem</a> (Display *pDisplay, const char *szDisplayName)</td></tr>
+<tr class="memdesc:ga39943cd7b10df7db6b0484e2ab88eb3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes clipboard sub-system  <a href="group__startup.html#ga39943cd7b10df7db6b0484e2ab88eb3f">More...</a><br/></td></tr>
+<tr class="separator:ga39943cd7b10df7db6b0484e2ab88eb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a1bc590572b555cc78840cd857e6824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit</a> (void)</td></tr>
 <tr class="memdesc:ga7a1bc590572b555cc78840cd857e6824"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes any remaining global objects, frees the Display pointer, and terminates event processing  <a href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">More...</a><br/></td></tr>
 <tr class="separator:ga7a1bc590572b555cc78840cd857e6824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab63b4967f31d44e7ce0b6cdd6de93b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gab63b4967f31d44e7ce0b6cdd6de93b22">WBExitClipboardSystem</a> (Display *pDisplay)</td></tr>
+<tr class="memdesc:gab63b4967f31d44e7ce0b6cdd6de93b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down the clipboard sub-system.  <a href="group__startup.html#gab63b4967f31d44e7ce0b6cdd6de93b22">More...</a><br/></td></tr>
+<tr class="separator:gab63b4967f31d44e7ce0b6cdd6de93b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59e964570bd9a7a7bf893796a83606a3"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">WBThreadInitDisplay</a> (void)</td></tr>
+<tr class="memdesc:ga59e964570bd9a7a7bf893796a83606a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes default Display for a thread (must call <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> first)  <a href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">More...</a><br/></td></tr>
+<tr class="separator:ga59e964570bd9a7a7bf893796a83606a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc195384568f9fb8ed6d2a7704722395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">WBThreadFreeDisplay</a> (Display *pThreadDisplay)</td></tr>
+<tr class="memdesc:gabc195384568f9fb8ed6d2a7704722395"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-initializes a Display for a thread that was allocated by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first)">WBThreadInitDisplay()</a>  <a href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">More...</a><br/></td></tr>
+<tr class="separator:gabc195384568f9fb8ed6d2a7704722395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga576673ed5710c0711a453f935b5043aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments</a> (int *pargc, char ***pargv, char ***penvp)</td></tr>
 <tr class="memdesc:ga576673ed5710c0711a453f935b5043aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses standard C arguments as passed to 'main()'  <a href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">More...</a><br/></td></tr>
 <tr class="separator:ga576673ed5710c0711a453f935b5043aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,6 +433,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:ga690f2acca275614c06c2e8afc55db18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga690f2acca275614c06c2e8afc55db18b">WBDebugDumpGC</a> (Display *pDisplay, GC hGC)</td></tr>
 <tr class="memdesc:ga690f2acca275614c06c2e8afc55db18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps a GC's settings  <a href="group__debug.html#ga690f2acca275614c06c2e8afc55db18b">More...</a><br/></td></tr>
 <tr class="separator:ga690f2acca275614c06c2e8afc55db18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa39191469018c352801b1178befdd5b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaa39191469018c352801b1178befdd5b2">WBDebugDumpEvent</a> (XEvent *pEvent)</td></tr>
+<tr class="memdesc:gaa39191469018c352801b1178befdd5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps the contents of an XEvent  <a href="group__debug.html#gaa39191469018c352801b1178befdd5b2">More...</a><br/></td></tr>
+<tr class="separator:gaa39191469018c352801b1178befdd5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac57c3a0127f4b7f69684ebee98e1e203"><td class="memItemLeft" align="right" valign="top">static __inline__ Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a> (void)</td></tr>
 <tr class="memdesc:gac57c3a0127f4b7f69684ebee98e1e203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default Display.  <a href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">More...</a><br/></td></tr>
 <tr class="separator:gac57c3a0127f4b7f69684ebee98e1e203"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -664,12 +679,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:gafa43907ec0a4d340d1741d95c573d8de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gafa43907ec0a4d340d1741d95c573d8de">WBProcessExposeEvent</a> (XExposeEvent *pEvent)</td></tr>
 <tr class="memdesc:gafa43907ec0a4d340d1741d95c573d8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">low-level event processing, internal handling of Expose events  <a href="group__events.html#gafa43907ec0a4d340d1741d95c573d8de">More...</a><br/></td></tr>
 <tr class="separator:gafa43907ec0a4d340d1741d95c573d8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad048870f0fc397da7aa532ebd1b2f838"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sync__events.html#gad048870f0fc397da7aa532ebd1b2f838">WBConvertSelection</a> (Display *pDisplay, Window wIDOwner, Atom aSelection, Atom aTarget, Atom aProperty, Time tmEvent)</td></tr>
-<tr class="memdesc:gad048870f0fc397da7aa532ebd1b2f838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the functionality of 'XConvertSelection' in a safe and proper manner.  <a href="group__sync__events.html#gad048870f0fc397da7aa532ebd1b2f838">More...</a><br/></td></tr>
-<tr class="separator:gad048870f0fc397da7aa532ebd1b2f838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0573ffdcb6cc79acdce1c39029098f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sync__events.html#gaa0573ffdcb6cc79acdce1c39029098f8">WBWaitForSelectionMessages</a> (Display *pDisplay)</td></tr>
-<tr class="memdesc:gaa0573ffdcb6cc79acdce1c39029098f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for a default period of time, dispatching any Selection events it finds.  <a href="group__sync__events.html#gaa0573ffdcb6cc79acdce1c39029098f8">More...</a><br/></td></tr>
-<tr class="separator:gaa0573ffdcb6cc79acdce1c39029098f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fc163cab26f1d5838c9245353168ea2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__clipboard.html#ga5fc163cab26f1d5838c9245353168ea2">WBGetClipboardData</a> (Display *pDisplay, Atom *paType, int *piFormat, unsigned long *pnData)</td></tr>
+<tr class="memdesc:ga5fc163cab26f1d5838c9245353168ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clipboard data of requested type.  <a href="group__clipboard.html#ga5fc163cab26f1d5838c9245353168ea2">More...</a><br/></td></tr>
+<tr class="separator:ga5fc163cab26f1d5838c9245353168ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24b0882f200d7f4bdf92b97e2a502f8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__clipboard.html#ga24b0882f200d7f4bdf92b97e2a502f8f">WBSetClipboardData</a> (Display *pDisplay, Atom aType, int iFormat, const void *pData, unsigned long nData)</td></tr>
+<tr class="memdesc:ga24b0882f200d7f4bdf92b97e2a502f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clipboard data of requested type.  <a href="group__clipboard.html#ga24b0882f200d7f4bdf92b97e2a502f8f">More...</a><br/></td></tr>
+<tr class="separator:ga24b0882f200d7f4bdf92b97e2a502f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4643ccb84640e2e795aca06ddc15f11a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__clipboard.html#ga4643ccb84640e2e795aca06ddc15f11a">WBGetSelectionData</a> (Display *pDisplay, Atom aSelection, Atom *paType, int *piFormat, unsigned long *pnData)</td></tr>
+<tr class="memdesc:ga4643ccb84640e2e795aca06ddc15f11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clipboard data of requested type.  <a href="group__clipboard.html#ga4643ccb84640e2e795aca06ddc15f11a">More...</a><br/></td></tr>
+<tr class="separator:ga4643ccb84640e2e795aca06ddc15f11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5b028a78611236d9271db098b174db6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__clipboard.html#gab5b028a78611236d9271db098b174db6">WBSetSelectionData</a> (Display *pDisplay, Atom aSelection, Atom aType, int iFormat, const void *pData, unsigned long nData)</td></tr>
+<tr class="memdesc:gab5b028a78611236d9271db098b174db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clipboard data of requested type.  <a href="group__clipboard.html#gab5b028a78611236d9271db098b174db6">More...</a><br/></td></tr>
+<tr class="separator:gab5b028a78611236d9271db098b174db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe0a3d2e602fb2791f2d0ef1d9ff8b30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">WBMapWindow</a> (Display *pDisplay, Window wID)</td></tr>
 <tr class="memdesc:gabe0a3d2e602fb2791f2d0ef1d9ff8b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XMapWindow, makes window visible.  <a href="group__expose.html#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">More...</a><br/></td></tr>
 <tr class="separator:gabe0a3d2e602fb2791f2d0ef1d9ff8b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -727,7 +748,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:gabfd2640f2400aa4f595c490ebb5baf7f"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gabfd2640f2400aa4f595c490ebb5baf7f">WBValidateRect</a> (Window wID, <a class="el" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRCT)</td></tr>
 <tr class="memdesc:gabfd2640f2400aa4f595c490ebb5baf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, validates a WB_RECT for asynchronous Expose event generation  <a href="group__expose.html#gabfd2640f2400aa4f595c490ebb5baf7f">More...</a><br/></td></tr>
 <tr class="separator:gabfd2640f2400aa4f595c490ebb5baf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc42f83070453daa04ccf39dc842d93b"><td class="memItemLeft" align="right" valign="top">WB_UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timer.html#gadc42f83070453daa04ccf39dc842d93b">WBGetTimeIndex</a> (void)</td></tr>
+<tr class="memitem:gadc42f83070453daa04ccf39dc842d93b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#gae71709cb8a7c418e8bfdbd1297a97ee5">WB_UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timer.html#gadc42f83070453daa04ccf39dc842d93b">WBGetTimeIndex</a> (void)</td></tr>
 <tr class="memdesc:gadc42f83070453daa04ccf39dc842d93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current 'time index' (in microseconds)  <a href="group__timer.html#gadc42f83070453daa04ccf39dc842d93b">More...</a><br/></td></tr>
 <tr class="separator:gadc42f83070453daa04ccf39dc842d93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab895b3dffe33d2ad2ff83e0564785999"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timer.html#gab895b3dffe33d2ad2ff83e0564785999">CreateTimer</a> (Display *pDisplay, Window wID, unsigned long lInterval, long lID, int iPeriodic)</td></tr>
@@ -864,6 +885,10 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga301c1b521a4286fc1bd898ad0f02e91c">aSTRING</a></td></tr>
 <tr class="memdesc:ga301c1b521a4286fc1bd898ad0f02e91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br/></td></tr>
 <tr class="separator:ga301c1b521a4286fc1bd898ad0f02e91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d475bd4065e4550d7423522cba2d548"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3d475bd4065e4550d7423522cba2d548"></a>
+const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga3d475bd4065e4550d7423522cba2d548">aUTF8_STRING</a></td></tr>
+<tr class="memdesc:ga3d475bd4065e4550d7423522cba2d548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br/></td></tr>
+<tr class="separator:ga3d475bd4065e4550d7423522cba2d548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba9d0bb8be874bbff95935412d996ef3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaba9d0bb8be874bbff95935412d996ef3"></a>
 const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaba9d0bb8be874bbff95935412d996ef3">aC_STRING</a></td></tr>
 <tr class="memdesc:gaba9d0bb8be874bbff95935412d996ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br/></td></tr>
@@ -981,7 +1006,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <dl class="section return"><dt>Returns</dt><dd>Non-zero value if the internal window information exists and the window has not been destroyed, else zero</dd></dl>
 <p>This function works ONLY for windows that have been registered with a callback. It checks to see if the internal window information exists and returns a non-zero value if the internal information exists AND the window itself has not been destroyed. This works whether or not the window was ever mapped. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l04731">4731</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l04843">4843</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1016,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="window__helper_8h.html">window_helper.h</a></li>
-    <li class="footer">Generated on Sat Oct 17 2015 15:35:16 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue May 24 2016 17:19:35 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

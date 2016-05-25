@@ -141,12 +141,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gad60beaeb57f42bc1b57e76e7e74efce4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__help.html#gad60beaeb57f42bc1b57e76e7e74efce4">CHWriteConfFileInt</a> (void *hFile, const char *szSection, const char *szIdentifier, int iData)</td></tr>
 <tr class="memdesc:gad60beaeb57f42bc1b57e76e7e74efce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">write an integer value to a configuration file  <a href="#gad60beaeb57f42bc1b57e76e7e74efce4">More...</a><br/></td></tr>
 <tr class="separator:gad60beaeb57f42bc1b57e76e7e74efce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6740edd7f569cde444d3bcbd28f24855"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__help.html#ga6740edd7f569cde444d3bcbd28f24855">CHGetSelectionData</a> (Display *pDisplay, Atom aSelection, Atom aProperty, Atom aTarget, Atom *paType, int *piFormat, unsigned long *pnData)</td></tr>
-<tr class="memdesc:ga6740edd7f569cde444d3bcbd28f24855"><td class="mdescLeft">&#160;</td><td class="mdescRight">get selection data from the display, returning it as a 'void *' (caller must destroy using 'XFree()')  <a href="#ga6740edd7f569cde444d3bcbd28f24855">More...</a><br/></td></tr>
-<tr class="separator:ga6740edd7f569cde444d3bcbd28f24855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47ce98378461e8570be82e68e7736b32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__help.html#ga47ce98378461e8570be82e68e7736b32">CHSetSelectionData</a> (Window wIDMgr, Atom aSelection, Atom aProperty, Atom aTarget, Atom aType, int iFormat, const void *pData, unsigned long nData)</td></tr>
-<tr class="memdesc:ga47ce98378461e8570be82e68e7736b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign selection data for the specified window. The window must be capable of managing the selection data requests  <a href="#ga47ce98378461e8570be82e68e7736b32">More...</a><br/></td></tr>
-<tr class="separator:ga47ce98378461e8570be82e68e7736b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3543bba07af332665cb69034c89839c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__help.html#ga3543bba07af332665cb69034c89839c1">CHSettingsRefresh</a> (Display *pDisplay)</td></tr>
 <tr class="memdesc:ga3543bba07af332665cb69034c89839c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">refresh the internally cached X settings  <a href="#ga3543bba07af332665cb69034c89839c1">More...</a><br/></td></tr>
 <tr class="separator:ga3543bba07af332665cb69034c89839c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,12 +256,12 @@ from the Window Manager or from the (deprecated) system configuration.
 <div class="line">  <span class="keyword">union</span></div>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordtype">int</span> <a class="code" href="struct__CHXSetting__.html#a467ba57b62803194f79e661ffd6dc73a" title="The data as an integer value.">iData</a>;                     <span class="comment">// The data as an integer value</span></div>
-<div class="line">    WB_INT64 <a class="code" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37" title="Reserved element, forces 64-bit size.">llData</a>;               <span class="comment">// Reserved element, forces 64-bit size</span></div>
+<div class="line">    <a class="code" href="group__platform.html#gabcd15160d38595f6368937f45005d11d" title="Platform abstract 64-bit integer.">WB_INT64</a> <a class="code" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37" title="Reserved element, forces 64-bit size.">llData</a>;               <span class="comment">// Reserved element, forces 64-bit size</span></div>
 <div class="line">    <a class="code" href="struct____XSETTINGS__DATA__COLOR____.html" title="Structure for storing configuration color information, XSettingsTypeColor.">XSETTINGS_DATA_COLOR</a> <a class="code" href="struct__CHXSetting__.html#ae240c7f4192f75473ba7c40c874c692f" title="The data as a color value.">clrData</a>;  <span class="comment">// The data as a color value</span></div>
 <div class="line">    <span class="keywordtype">void</span> *<a class="code" href="struct__CHXSetting__.html#aa92f08987c51e4eb7b92e84944ca2af3" title="un-typed pointer to data within string area">pData</a>;                   <span class="comment">// un-typed pointer to data within string area</span></div>
 <div class="line">    <span class="keywordtype">char</span> *<a class="code" href="struct__CHXSetting__.html#abe24f5f3933a24906a280ca25840a717" title="&#39;char&#39; typed pointer to data within string area">szData</a>;                  <span class="comment">// &#39;char&#39; typed pointer to data within string area</span></div>
 <div class="line">  } <a class="code" href="struct__CHXSetting__.html#a8b33c8d10b726935fbf10c694235ebe0" title="union of the data alias&#39;">uData</a>;                         <span class="comment">// union of the data alias&#39;</span></div>
-<div class="line">}  __PACKED__ <a class="code" href="group__conf__help.html#ga242b12920430908cccccdd8cce995c44" title="Structure for storing settings information internally.">CHXSetting</a>;</div>
+<div class="line">}  <a class="code" href="group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec" title="PACKED definition.">__PACKED__</a> <a class="code" href="group__conf__help.html#ga242b12920430908cccccdd8cce995c44" title="Structure for storing settings information internally.">CHXSetting</a>;</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -314,7 +308,7 @@ by the X11Workbench toolkit.
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="struct____XSETTINGS__DATA__COLOR____.html#a2b4792cb0102f2b2fd228cb026cd3cd4" title="16-bit RGB value for Blue">sBlue</a>;   <span class="comment">// 16-bit RGB value for Blue</span></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="struct____XSETTINGS__DATA__COLOR____.html#a72ec058732a20dfcba6946d6c631373c" title="16-bit RGB value for Green">sGreen</a>;  <span class="comment">// 16-bit RGB value for Green</span></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="struct____XSETTINGS__DATA__COLOR____.html#a9f8c925b4454831f2d5b1db0f57f8250" title="16-bit ALPHA value. If not used, it will be 0xffff">sAlpha</a>;  <span class="comment">// 16-bit ALPHA value.  If not used, it will be 0xffff</span></div>
-<div class="line">} __PACKED__ <a class="code" href="group__conf__help.html#gadc21ef5e2d67daab7b5d3f27222ec6f1" title="Structure for storing configuration color information, XSettingsTypeColor.">XSETTINGS_DATA_COLOR</a>;</div>
+<div class="line">} <a class="code" href="group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec" title="PACKED definition.">__PACKED__</a> <a class="code" href="group__conf__help.html#gadc21ef5e2d67daab7b5d3f27222ec6f1" title="Structure for storing configuration color information, XSettingsTypeColor.">XSETTINGS_DATA_COLOR</a>;</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -342,7 +336,7 @@ by the X11Workbench toolkit.
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00349">349</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00281">281</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +365,7 @@ by the X11Workbench toolkit.
 <p>Use this function to close the configuration file that was opened by <a class="el" href="group__conf__help.html#ga3eb399f31125de85322cce21639c82a5">CHOpenConfFile()</a><br/>
  Memory resources will NOT be freed (values will remain cached as needed). Use this function to simply remove the open file reference but leave the data in memory for later use. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01031">1031</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00625">625</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -398,7 +392,7 @@ by the X11Workbench toolkit.
 </dl>
 <p>This function will close the configuration file and destroy the cached information created by <a class="el" href="group__conf__help.html#ga3eb399f31125de85322cce21639c82a5">CHOpenConfFile()</a> but does not physically destroy the file on disk. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01063">1063</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00657">657</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -419,7 +413,7 @@ by the X11Workbench toolkit.
 <p>dump config information using debug output functions </p>
 <p>Debug function to dump config information using the debug output functions </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02910">2910</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02506">2506</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -441,7 +435,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>the 'argc' value stored by <a class="el" href="group__conf__help.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a></dd></dl>
 <p>Use this function to retrieve the stored 'argc' value from <a class="el" href="group__conf__help.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a> </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00826">826</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00420">420</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -463,7 +457,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>the 'argv' value stored by <a class="el" href="group__conf__help.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a></dd></dl>
 <p>Use this function to retrieve the stored 'argv' value from <a class="el" href="group__conf__help.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a> </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00831">831</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00425">425</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -510,7 +504,7 @@ by the X11Workbench toolkit.
 <p>Use this function to query an integer value for 'szIdentifier' in 'szSection'. The function will return a non-zero value on success, or a zero value on error, or if not found.<br/>
  If you need to distinguish an actual zero value from an error or 'not found' condition, consider using the <a class="el" href="group__conf__help.html#gac3f00ce3b2e13bb1fe6c7508d6d6563a">CHGetConfFileString()</a> function instead. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01821">1821</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01415">1415</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -570,7 +564,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>the total length of the string (excluding the zero byte), or -1 on error (or if value not found)</dd></dl>
 <p>Use this function to obtain a configuration parameter 'szIdentifier' from section 'szSection', and save the data into 'szData', which is 'cbData' bytes in length. The function will return the total length of the resulting string. The function returns -1 on error, or if the data value is not located. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01423">1423</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01017">1017</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -598,7 +592,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>default cursor blink 'enable' flag (non-zero to enable blink)</dd></dl>
 <p>Returns the default cursor blink 'enable' flag, zero to disable, non-zero to enable. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02381">2381</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01977">1977</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -626,7 +620,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>default cursor blink time in milliseconds</dd></dl>
 <p>Returns the default cursor blink time in milliseconds </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02420">2420</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02016">2016</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -665,7 +659,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>'malloc'd pointer to a zero-byte terminated character string containing the desired information</dd></dl>
 <p>This function will return NULL on error, or a malloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02806">2806</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02402">2402</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -693,7 +687,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>default double-click 'slop' distance in pixels</dd></dl>
 <p>Returns double-click 'slop' distance in pixels </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02303">2303</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01899">1899</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -721,7 +715,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>default double-click time in milliseconds</dd></dl>
 <p>Returns default double-click time in milliseconds </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02264">2264</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01860">1860</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -749,7 +743,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>default drag threshold in pixels</dd></dl>
 <p>Returns default drag threshold in pixels </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02342">2342</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01938">1938</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -777,7 +771,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>'malloc'd pointer to a zero-byte terminated character string containing the MIME type</dd></dl>
 <p>This function will return NULL on error, or a malloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02753">2753</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02349">2349</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -806,7 +800,7 @@ by the X11Workbench toolkit.
 <p>In the case of a '.desktop' file name being returned, use <a class="el" href="group__conf__help.html#gad91dd92dce9eb3289074d64f982b1ab6" title="Get the default application for a particular MIME type.">CHGetDesktopFileInfo()</a> to obtain the actual path name and other information associated with the application.</p>
 <p>This function will return NULL on error, or a malloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02775">2775</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l02371">2371</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -845,7 +839,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>the queried integer value, or 0 if error or no matching identifier</dd></dl>
 <p>This queries integer values from the 'Old' resource manager. This function is deprecated. Some window managers may still supporte it, however, so it's worth keeping for now. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00800">800</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00394">394</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -898,94 +892,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>length of string (excluding zero byte) or -1 if error or no matching identifier</dd></dl>
 <p>This queries string values from the 'Old' resource manager. This function is deprecated. Some window managers may still supporte it, however, so it's worth keeping for now. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00734">734</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga6740edd7f569cde444d3bcbd28f24855"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* CHGetSelectionData </td>
-          <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aSelection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aProperty</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom *&#160;</td>
-          <td class="paramname"><em>paType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>piFormat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long *&#160;</td>
-          <td class="paramname"><em>pnData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>get selection data from the display, returning it as a 'void *' (caller must destroy using 'XFree()') </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>the Display pointer for the selection (NULL for default) </td></tr>
-    <tr><td class="paramname">aSelection</td><td>the atom representing the selected value </td></tr>
-    <tr><td class="paramname">aProperty</td><td>the property being queried ('convert' output if it doesn't match aTarget) </td></tr>
-    <tr><td class="paramname">aTarget</td><td>the atom representing the selection target </td></tr>
-    <tr><td class="paramname">paType</td><td>pointer to the returned atom indicating the data type </td></tr>
-    <tr><td class="paramname">piFormat</td><td>pointer to the returned format (0, 8, 16, or 32) </td></tr>
-    <tr><td class="paramname">pnData</td><td>the size of the returned data (# of items, based on *piFormat) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the actual data</dd></dl>
-<p>Simple selection query function that grabs the specified selection item based on aSelection, aTarget, and aProperty, returning the 'Type' atom in 'paType', the format in 'piFormat' (0, 8, 16, or 32), and the data size in 'pnData' as 'number of elements' of the size in 'piFormat', as well as an allocated pointer to the retrieved data (or NULL on error)<br/>
- The caller must free the returned pointer by calling 'XFree()'.</p>
-<p>This function is intended for simplified queries. Large data transfers that require multiple calls XGetWindowProperty in order to retrieve the data are NOT supported at this time. Additionally, there is only limited support for data type conversion.<br/>
-</p>
-<p>Here is a short explanation of what each property atom should be<br/>
-</p>
-<p>Selection: Indicates what I'm querying. Typically 'CLIPBOARD' (may be 'PRIMARY' or 'SECONDARY')<br/>
-</p>
-<p>Property: Indicates the property being queried. Typically 'STRING' or 'C_STRING'.<br/>
-</p>
-<p>Target: Indicates 'output' of data conversion. Typically 'STRING' or 'TARGETS'. 'DELETE' 'INSERT_SELECTION' and 'INSERT_PROPERTY' have side-effects. 'None' is not allowed.<br/>
-</p>
-<p>This function does not currently handle 'INCR' returned data types. As such it may appear in 'paType' on return. This is considered a BUG and will be rectified at some point in the future.</p>
-<p>/sa <a href="http://tronche.com/gui/x/icccm/">http://tronche.com/gui/x/icccm/</a> </p>
-
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00330">330</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00328">328</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +931,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>A const pointer to the cached CHXSetting structure</dd></dl>
 <p>Use this function to query a specific CHXSetting structure via the setting name </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01929">1929</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01523">1523</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +998,7 @@ by the X11Workbench toolkit.
  when done, you must close the returned configuration file object pointer with <a class="el" href="group__conf__help.html#ga93b014dbe245239d457fdaff110e95ae">CHCloseConfFile</a><br/>
  The function may block as needed. Use <a class="el" href="group__conf__help.html#ga581f14aac609c634759b6b2bb797e2b1">CHDestroyConfFile</a> to close AND free memory resources. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00839">839</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00433">433</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -1133,90 +1040,6 @@ by the X11Workbench toolkit.
 
 </div>
 </div>
-<a class="anchor" id="ga47ce98378461e8570be82e68e7736b32"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CHSetSelectionData </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDMgr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aSelection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aProperty</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iFormat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>pData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>nData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>assign selection data for the specified window. The window must be capable of managing the selection data requests </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wIDMgr</td><td>the Window ID for the selection (None to use default) </td></tr>
-    <tr><td class="paramname">aSelection</td><td>the atom representing the selected value </td></tr>
-    <tr><td class="paramname">aProperty</td><td>the property being initially assigned (will be 'converted' if it doesn't match aTarget) </td></tr>
-    <tr><td class="paramname">aTarget</td><td>the atom representing the selection target </td></tr>
-    <tr><td class="paramname">aType</td><td>atom indicating the data type </td></tr>
-    <tr><td class="paramname">iFormat</td><td>The data format (0, 8, 16, or 32) </td></tr>
-    <tr><td class="paramname">nData</td><td>the size of the data (# of items, based on iFormat)</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This is a simplified function that assigns selection data using the specified window. 'None' for wIDMgr will walk the parent chain until it finds a window that is capable of handling selection requests.<br/>
-</p>
-<p>Selection requests include SelectionNotify, SelectionClear, and SelectionRequest events. Only top-level windows should support these, with the possible exception of windows specifically designed for editing that will use the selection properties as a part of the edit process.</p>
-<p>Specify 'aProperty' according to the data being assigned. 'aTarget' will be assigned using a data conversion type (as needed). Typical use, assign as STRING and convert to TEXT<br/>
-</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__conf__help.html#ga6740edd7f569cde444d3bcbd28f24855">CHGetSelectionData()</a> </dd></dl>
-
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00634">634</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga3543bba07af332665cb69034c89839c1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1240,7 +1063,7 @@ by the X11Workbench toolkit.
 </dl>
 <p>This function will refresh the internally cached X settings using various methods to query the system's parameter storage, some deprecated, some in accordance with the latest window manager specs. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01951">1951</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01545">1545</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1116,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>non-zero value on success, or zero on error</dd></dl>
 <p>Writes an integer value to the configuration file for 'szIdentifier' in 'szSection'. The function returns a non-zero value if successful, or a value of 0 if an error occurred. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01843">1843</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01437">1437</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -1346,7 +1169,7 @@ by the X11Workbench toolkit.
 <dl class="section return"><dt>Returns</dt><dd>non-zero value on success, or zero on error</dd></dl>
 <p>Writes a string value to the configuration file for 'szIdentifier' in 'szSection'. The function returns a non-zero value if successful, or a value of 0 if an error occurred. </p>
 
-<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01557">1557</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l01151">1151</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -1355,7 +1178,7 @@ by the X11Workbench toolkit.
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 17 2015 15:35:16 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue May 24 2016 17:19:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -8,12 +8,17 @@ var group__startup =
     [ "PXM_OnExit", "group__startup.html#ga5eb4d43e2a86e48bcbead0c291c7197a", null ],
     [ "WBDefaultColormap", "group__startup.html#ga25ecc057a42a10c41d4b324cd79957ed", null ],
     [ "WBExit", "group__startup.html#ga7a1bc590572b555cc78840cd857e6824", null ],
+    [ "WBExitClipboardSystem", "group__startup.html#gab63b4967f31d44e7ce0b6cdd6de93b22", null ],
     [ "WBInit", "group__startup.html#gab921a58954031f69ec22295ce106bde3", null ],
+    [ "WBInitClipboardSystem", "group__startup.html#ga39943cd7b10df7db6b0484e2ab88eb3f", null ],
     [ "WBInitDisplay", "group__startup.html#ga1ca511628142e183e7db3e326b947244", null ],
     [ "WBInitSizeHints", "group__startup.html#ga832d717d9276cf16a656c105c6ce667a", null ],
     [ "WBInitWindowAttributes", "group__startup.html#gacad4fcff08891dd42c7cd889e9d0c35a", null ],
     [ "WBParseStandardArguments", "group__startup.html#ga576673ed5710c0711a453f935b5043aa", null ],
     [ "WBPlatformOnExit", "group__startup.html#ga186e21ce3badbba01435fa3e30bacd16", null ],
+    [ "WBPlatformOnInit", "group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5", null ],
+    [ "WBThreadFreeDisplay", "group__startup.html#gabc195384568f9fb8ed6d2a7704722395", null ],
+    [ "WBThreadInitDisplay", "group__startup.html#ga59e964570bd9a7a7bf893796a83606a3", null ],
     [ "WBToolkitUsage", "group__startup.html#ga5cee3f4b704525ba89117af6616593e2", null ],
     [ "bQuitFlag", "group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f", null ]
 ];

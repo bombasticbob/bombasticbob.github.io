@@ -82,12 +82,15 @@ $(document).ready(function(){initNavTree('platform__helper_8c.html','');});
 <code>#include &lt;stdarg.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;memory.h&gt;</code><br/>
+<code>#include &lt;pthread.h&gt;</code><br/>
 <code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;fcntl.h&gt;</code><br/>
 <code>#include &lt;errno.h&gt;</code><br/>
 <code>#include &lt;signal.h&gt;</code><br/>
+<code>#include &lt;dlfcn.h&gt;</code><br/>
 <code>#include &lt;sys/wait.h&gt;</code><br/>
 <code>#include &lt;sys/types.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="window__helper_8h_source.html">window_helper.h</a>&quot;</code><br/>
 <code>#include &quot;file_help.h&quot;</code><br/>
@@ -120,6 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0513344ae36a7dfcd1eaed35539f28d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0513344ae36a7dfcd1eaed35539f28d2"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__add_to_temp_file_list</b> (const char *szFile)</td></tr>
 <tr class="separator:a0513344ae36a7dfcd1eaed35539f28d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">WBPlatformOnInit</a> (void)</td></tr>
+<tr class="memdesc:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource initialization on startup.  <a href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">More...</a><br/></td></tr>
+<tr class="separator:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga186e21ce3badbba01435fa3e30bacd16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">WBPlatformOnExit</a> (void)</td></tr>
 <tr class="memdesc:ga186e21ce3badbba01435fa3e30bacd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource 'free-up' on exit (must call)  <a href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">More...</a><br/></td></tr>
 <tr class="separator:ga186e21ce3badbba01435fa3e30bacd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +183,90 @@ static char *&#160;</td><td class="memItemRight" valign="bottom"><b>WBRunResultI
 <tr class="memitem:gad56bc7d42510658b1f7ede13b2082986"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#gad56bc7d42510658b1f7ede13b2082986">WBRunResultPipe</a> (const char *szStdInBuf, const char *szAppName,...)</td></tr>
 <tr class="memdesc:gad56bc7d42510658b1f7ede13b2082986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run an application synchronously, returning 'stdout' output in a character buffer.  <a href="group__process.html#gad56bc7d42510658b1f7ede13b2082986">More...</a><br/></td></tr>
 <tr class="separator:gad56bc7d42510658b1f7ede13b2082986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab174acc6a11dc722577cd5e3723f0b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d">WBLoadLibrary</a> (const char *szModuleName)</td></tr>
+<tr class="memdesc:gab174acc6a11dc722577cd5e3723f0b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a shared library, DLL, module, or whatever you call it on your operating system.  <a href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d">More...</a><br/></td></tr>
+<tr class="separator:gab174acc6a11dc722577cd5e3723f0b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga560a982b02824d34447e2b581dc2e190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga560a982b02824d34447e2b581dc2e190">WBFreeLibrary</a> (<a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> hModule)</td></tr>
+<tr class="memdesc:ga560a982b02824d34447e2b581dc2e190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a shared library, DLL, module, or whatever, that was loaded via '<a class="el" href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d" title="Loads a shared library, DLL, module, or whatever you call it on your operating system.">WBLoadLibrary()</a>'.  <a href="group__process.html#ga560a982b02824d34447e2b581dc2e190">More...</a><br/></td></tr>
+<tr class="separator:ga560a982b02824d34447e2b581dc2e190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ebada7768666a227eddfbb7d49afc97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#ga4a8d7e4273db30d42de55bae5e2c222d">WB_PROCADDRESS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97">WBGetProcAddress</a> (<a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> hModule, const char *szProcName)</td></tr>
+<tr class="memdesc:ga3ebada7768666a227eddfbb7d49afc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a shared library, DLL, module, or whatever you call it on your operating system.  <a href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97">More...</a><br/></td></tr>
+<tr class="separator:ga3ebada7768666a227eddfbb7d49afc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10dd362dd4fa868fcb48ff6e06b226e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026">WB_THREAD_KEY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3">WBThreadAllocLocal</a> (void)</td></tr>
+<tr class="memdesc:ga10dd362dd4fa868fcb48ff6e06b226e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate 'thread local' storage.  <a href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3">More...</a><br/></td></tr>
+<tr class="separator:ga10dd362dd4fa868fcb48ff6e06b226e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga349248d007124a85c817d40814dc0b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga349248d007124a85c817d40814dc0b4e">WBThreadFreeLocal</a> (<a class="el" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026">WB_THREAD_KEY</a> keyVal)</td></tr>
+<tr class="memdesc:ga349248d007124a85c817d40814dc0b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free 'thread local' storage allocated by <a class="el" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3" title="Allocate &#39;thread local&#39; storage.">WBThreadAllocLocal()</a>  <a href="group__threads.html#ga349248d007124a85c817d40814dc0b4e">More...</a><br/></td></tr>
+<tr class="separator:ga349248d007124a85c817d40814dc0b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga621a6f3683fa965609b642178ddd6fa3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga621a6f3683fa965609b642178ddd6fa3">WBThreadGetLocal</a> (<a class="el" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026">WB_THREAD_KEY</a> keyVal)</td></tr>
+<tr class="memdesc:ga621a6f3683fa965609b642178ddd6fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get 'thread local' data identified by 'keyVal'.  <a href="group__threads.html#ga621a6f3683fa965609b642178ddd6fa3">More...</a><br/></td></tr>
+<tr class="separator:ga621a6f3683fa965609b642178ddd6fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8860533d5bd6d4a62fdc2559c1993ba8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8">WBThreadSetLocal</a> (<a class="el" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026">WB_THREAD_KEY</a> keyVal, void *pValue)</td></tr>
+<tr class="memdesc:ga8860533d5bd6d4a62fdc2559c1993ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get 'thread local' data identified by 'keyVal'.  <a href="group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8">More...</a><br/></td></tr>
+<tr class="separator:ga8860533d5bd6d4a62fdc2559c1993ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf92228d0c21f601cc155fb97eeaa2304"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491">WB_THREAD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gaf92228d0c21f601cc155fb97eeaa2304">WBThreadGetCurrent</a> (void)</td></tr>
+<tr class="memdesc:gaf92228d0c21f601cc155fb97eeaa2304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get 'current thread' identifier.  <a href="group__threads.html#gaf92228d0c21f601cc155fb97eeaa2304">More...</a><br/></td></tr>
+<tr class="separator:gaf92228d0c21f601cc155fb97eeaa2304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5865aa74bdde3969125656acade2222d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491">WB_THREAD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga5865aa74bdde3969125656acade2222d">WBThreadCreate</a> (void *(*function)(void *), void *pParam)</td></tr>
+<tr class="memdesc:ga5865aa74bdde3969125656acade2222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread, returning its WB_THREAD identifier.  <a href="group__threads.html#ga5865aa74bdde3969125656acade2222d">More...</a><br/></td></tr>
+<tr class="separator:ga5865aa74bdde3969125656acade2222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41d0fceffe667a304b2b6ee7a271594d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d">WBThreadWait</a> (<a class="el" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491">WB_THREAD</a> hThread)</td></tr>
+<tr class="memdesc:ga41d0fceffe667a304b2b6ee7a271594d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a specified threat to exit.  <a href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d">More...</a><br/></td></tr>
+<tr class="separator:ga41d0fceffe667a304b2b6ee7a271594d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2815d76f9163c95a9b987e7ce8468a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6">WBThreadRunning</a> (<a class="el" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491">WB_THREAD</a> hThread)</td></tr>
+<tr class="memdesc:gae2815d76f9163c95a9b987e7ce8468a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a thread is running (can be suspended)  <a href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6">More...</a><br/></td></tr>
+<tr class="separator:gae2815d76f9163c95a9b987e7ce8468a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga319ef67fb43cc37ab703dc003322f79b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga319ef67fb43cc37ab703dc003322f79b">WBThreadExit</a> (void *pRval)</td></tr>
+<tr class="memdesc:ga319ef67fb43cc37ab703dc003322f79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit the current thread immediately, specifying return code.  <a href="group__threads.html#ga319ef67fb43cc37ab703dc003322f79b">More...</a><br/></td></tr>
+<tr class="separator:ga319ef67fb43cc37ab703dc003322f79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73005b3b02a1f7490dba38fb4205dfe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga73005b3b02a1f7490dba38fb4205dfe8">WBThreadClose</a> (<a class="el" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491">WB_THREAD</a> hThread)</td></tr>
+<tr class="memdesc:ga73005b3b02a1f7490dba38fb4205dfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the specified WB_THREAD identifier.  <a href="group__threads.html#ga73005b3b02a1f7490dba38fb4205dfe8">More...</a><br/></td></tr>
+<tr class="separator:ga73005b3b02a1f7490dba38fb4205dfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0ad4b961cb862bdb58ff5ae561f3ccc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gac0ad4b961cb862bdb58ff5ae561f3ccc">WBCondCreate</a> (<a class="el" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf">WB_COND</a> *pCond)</td></tr>
+<tr class="memdesc:gac0ad4b961cb862bdb58ff5ae561f3ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a signallable condition.  <a href="group__threads.html#gac0ad4b961cb862bdb58ff5ae561f3ccc">More...</a><br/></td></tr>
+<tr class="separator:gac0ad4b961cb862bdb58ff5ae561f3ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8c67307c5039bd3a52cf18e298dc5bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd">WBMutexCreate</a> (<a class="el" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8">WB_MUTEX</a> *pMtx)</td></tr>
+<tr class="memdesc:gac8c67307c5039bd3a52cf18e298dc5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lockable mutex.  <a href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd">More...</a><br/></td></tr>
+<tr class="separator:gac8c67307c5039bd3a52cf18e298dc5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf525b8a15c7044a869c72ae03266559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gadf525b8a15c7044a869c72ae03266559">WBCondFree</a> (<a class="el" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf">WB_COND</a> *pCond)</td></tr>
+<tr class="memdesc:gadf525b8a15c7044a869c72ae03266559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a signallable condition.  <a href="group__threads.html#gadf525b8a15c7044a869c72ae03266559">More...</a><br/></td></tr>
+<tr class="separator:gadf525b8a15c7044a869c72ae03266559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66a3f110301da7fa32b2c0ccd26cae66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66">WBMutexFree</a> (<a class="el" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8">WB_MUTEX</a> *pMtx)</td></tr>
+<tr class="memdesc:ga66a3f110301da7fa32b2c0ccd26cae66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a lockable mutex.  <a href="group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66">More...</a><br/></td></tr>
+<tr class="separator:ga66a3f110301da7fa32b2c0ccd26cae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c803b1f6e3d4420636107bd18425e8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d">WBMutexLock</a> (<a class="el" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8">WB_MUTEX</a> *pMtx, int nTimeout)</td></tr>
+<tr class="memdesc:ga1c803b1f6e3d4420636107bd18425e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for and lock a mutex, blocking until it is available.  <a href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d">More...</a><br/></td></tr>
+<tr class="separator:ga1c803b1f6e3d4420636107bd18425e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa57c76153ca0af21cc2525c605854832"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gaa57c76153ca0af21cc2525c605854832">WBMutexUnlock</a> (<a class="el" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8">WB_MUTEX</a> *pMtx)</td></tr>
+<tr class="memdesc:gaa57c76153ca0af21cc2525c605854832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock a previously locked mutex.  <a href="group__threads.html#gaa57c76153ca0af21cc2525c605854832">More...</a><br/></td></tr>
+<tr class="separator:gaa57c76153ca0af21cc2525c605854832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga629d9054a9eb2bc9af270b7c8e859573"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga629d9054a9eb2bc9af270b7c8e859573">WBCondSignal</a> (<a class="el" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf">WB_COND</a> *pCond)</td></tr>
+<tr class="memdesc:ga629d9054a9eb2bc9af270b7c8e859573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal a condition (event)  <a href="group__threads.html#ga629d9054a9eb2bc9af270b7c8e859573">More...</a><br/></td></tr>
+<tr class="separator:ga629d9054a9eb2bc9af270b7c8e859573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dd28d2a22b1bad1d58fdc33048d7c66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga0dd28d2a22b1bad1d58fdc33048d7c66">WBCondWait</a> (<a class="el" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf">WB_COND</a> *pCond, int nTimeout)</td></tr>
+<tr class="memdesc:ga0dd28d2a22b1bad1d58fdc33048d7c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a signal on a condition (event)  <a href="group__threads.html#ga0dd28d2a22b1bad1d58fdc33048d7c66">More...</a><br/></td></tr>
+<tr class="separator:ga0dd28d2a22b1bad1d58fdc33048d7c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04102292ada456ac24d5c3aeea524548"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga04102292ada456ac24d5c3aeea524548">WBCondWaitMutex</a> (<a class="el" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf">WB_COND</a> *pCond, <a class="el" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8">WB_MUTEX</a> *pMtx, int nTimeout)</td></tr>
+<tr class="memdesc:ga04102292ada456ac24d5c3aeea524548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a signal on a condition (event)  <a href="group__threads.html#ga04102292ada456ac24d5c3aeea524548">More...</a><br/></td></tr>
+<tr class="separator:ga04102292ada456ac24d5c3aeea524548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafacca116e6aff67ea87b4bb3323896b9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gafacca116e6aff67ea87b4bb3323896b9">WBInterlockedDecrement</a> (unsigned int *pValue)</td></tr>
+<tr class="memdesc:gafacca116e6aff67ea87b4bb3323896b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interlocked 'atomic' decrement of an unsigned integer.  <a href="group__threads.html#gafacca116e6aff67ea87b4bb3323896b9">More...</a><br/></td></tr>
+<tr class="separator:gafacca116e6aff67ea87b4bb3323896b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4df81ff2a0dad3e7c467b542c4796255"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga4df81ff2a0dad3e7c467b542c4796255">WBInterlockedIncrement</a> (unsigned int *pValue)</td></tr>
+<tr class="memdesc:ga4df81ff2a0dad3e7c467b542c4796255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interlocked 'atomic' increment of an unsigned integer.  <a href="group__threads.html#ga4df81ff2a0dad3e7c467b542c4796255">More...</a><br/></td></tr>
+<tr class="separator:ga4df81ff2a0dad3e7c467b542c4796255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c26bb0f1df6df296177d60d5b03c53a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga7c26bb0f1df6df296177d60d5b03c53a">WBInterlockedExchange</a> (unsigned int *pValue, unsigned int nNewVal)</td></tr>
+<tr class="memdesc:ga7c26bb0f1df6df296177d60d5b03c53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interlocked 'atomic' exchange of an unsigned integer with a specified value.  <a href="group__threads.html#ga7c26bb0f1df6df296177d60d5b03c53a">More...</a><br/></td></tr>
+<tr class="separator:ga7c26bb0f1df6df296177d60d5b03c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac237df8b5c56881495e71f43001381f9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#gac237df8b5c56881495e71f43001381f9">WBInterlockedRead</a> (unsigned int *pValue)</td></tr>
+<tr class="memdesc:gac237df8b5c56881495e71f43001381f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interlocked 'atomic' read of an unsigned integer.  <a href="group__threads.html#gac237df8b5c56881495e71f43001381f9">More...</a><br/></td></tr>
+<tr class="separator:gac237df8b5c56881495e71f43001381f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga737f9fed2f56848dc08d1cb608b49687"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687">WBPrintPostScriptFile</a> (const char *szPrinterName, const char *szFileName)</td></tr>
+<tr class="memdesc:ga737f9fed2f56848dc08d1cb608b49687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send postscript file to a printer (using lpr-cups or lpr on POSIX systems)  <a href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687">More...</a><br/></td></tr>
+<tr class="separator:ga737f9fed2f56848dc08d1cb608b49687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbe84588820dd08c5b1f1c3cc1a2e568"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">WBGetPrinterList</a> (void)</td></tr>
+<tr class="memdesc:gacbe84588820dd08c5b1f1c3cc1a2e568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of printer names.  <a href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">More...</a><br/></td></tr>
+<tr class="separator:gacbe84588820dd08c5b1f1c3cc1a2e568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -189,6 +279,12 @@ static char *&#160;</td><td class="memItemRight" valign="bottom"><b>pTempFileLis
 <tr class="memitem:a9d900f4c1def3c000d12308af4659da1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d900f4c1def3c000d12308af4659da1"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>cbTempFileList</b></td></tr>
 <tr class="separator:a9d900f4c1def3c000d12308af4659da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109e967360e1254fddd4e229055e5518"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a109e967360e1254fddd4e229055e5518"></a>
+static volatile int&#160;</td><td class="memItemRight" valign="bottom"><b>fInterlockedRWLockInitFlag</b> = 0</td></tr>
+<tr class="separator:a109e967360e1254fddd4e229055e5518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdce24461c067403036612e3de3440d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cdce24461c067403036612e3de3440d"></a>
+static pthread_rwlock_t&#160;</td><td class="memItemRight" valign="bottom"><b>xInterlockedRWLock</b></td></tr>
+<tr class="separator:a0cdce24461c067403036612e3de3440d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Platform-specific utility functions. </p>
@@ -243,7 +339,7 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>cbTempFileLi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="platform__helper_8c.html">platform_helper.c</a></li>
-    <li class="footer">Generated on Sat Oct 17 2015 15:35:16 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue May 24 2016 17:19:35 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

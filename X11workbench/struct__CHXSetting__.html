@@ -100,7 +100,7 @@ union {</td></tr>
 <tr class="memitem:a467ba57b62803194f79e661ffd6dc73a"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#a467ba57b62803194f79e661ffd6dc73a">iData</a></td></tr>
 <tr class="memdesc:a467ba57b62803194f79e661ffd6dc73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data as an integer value. <br/></td></tr>
 <tr class="separator:a467ba57b62803194f79e661ffd6dc73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eca3badeedc59e9d0f1e65e1387ff37"><td class="memItemLeft" >&#160;&#160;&#160;WB_INT64&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37">llData</a></td></tr>
+<tr class="memitem:a7eca3badeedc59e9d0f1e65e1387ff37"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__platform.html#gabcd15160d38595f6368937f45005d11d">WB_INT64</a>&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37">llData</a></td></tr>
 <tr class="memdesc:a7eca3badeedc59e9d0f1e65e1387ff37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved element, forces 64-bit size. <br/></td></tr>
 <tr class="separator:a7eca3badeedc59e9d0f1e65e1387ff37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae240c7f4192f75473ba7c40c874c692f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__conf__help.html#gadc21ef5e2d67daab7b5d3f27222ec6f1">XSETTINGS_DATA_COLOR</a>&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#ae240c7f4192f75473ba7c40c874c692f">clrData</a></td></tr>
@@ -129,14 +129,14 @@ from the Window Manager or from the (deprecated) system configuration.
 <div class="line">  <span class="keyword">union</span></div>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordtype">int</span> <a class="code" href="struct__CHXSetting__.html#a467ba57b62803194f79e661ffd6dc73a" title="The data as an integer value.">iData</a>;                     <span class="comment">// The data as an integer value</span></div>
-<div class="line">    WB_INT64 <a class="code" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37" title="Reserved element, forces 64-bit size.">llData</a>;               <span class="comment">// Reserved element, forces 64-bit size</span></div>
+<div class="line">    <a class="code" href="group__platform.html#gabcd15160d38595f6368937f45005d11d" title="Platform abstract 64-bit integer.">WB_INT64</a> <a class="code" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37" title="Reserved element, forces 64-bit size.">llData</a>;               <span class="comment">// Reserved element, forces 64-bit size</span></div>
 <div class="line">    XSETTINGS_DATA_COLOR <a class="code" href="struct__CHXSetting__.html#ae240c7f4192f75473ba7c40c874c692f" title="The data as a color value.">clrData</a>;  <span class="comment">// The data as a color value</span></div>
 <div class="line">    <span class="keywordtype">void</span> *<a class="code" href="struct__CHXSetting__.html#aa92f08987c51e4eb7b92e84944ca2af3" title="un-typed pointer to data within string area">pData</a>;                   <span class="comment">// un-typed pointer to data within string area</span></div>
 <div class="line">    <span class="keywordtype">char</span> *<a class="code" href="struct__CHXSetting__.html#abe24f5f3933a24906a280ca25840a717" title="&#39;char&#39; typed pointer to data within string area">szData</a>;                  <span class="comment">// &#39;char&#39; typed pointer to data within string area</span></div>
 <div class="line">  } <a class="code" href="struct__CHXSetting__.html#a8b33c8d10b726935fbf10c694235ebe0" title="union of the data alias&#39;">uData</a>;                         <span class="comment">// union of the data alias&#39;</span></div>
-<div class="line">}  __PACKED__ <a class="code" href="group__conf__help.html#ga242b12920430908cccccdd8cce995c44" title="Structure for storing settings information internally.">CHXSetting</a>;</div>
+<div class="line">}  <a class="code" href="group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec" title="PACKED definition.">__PACKED__</a> <a class="code" href="group__conf__help.html#ga242b12920430908cccccdd8cce995c44" title="Structure for storing settings information internally.">CHXSetting</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00409">409</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00341">341</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="conf__help_8h_source.html">conf_help.h</a></li>
 </ul>
@@ -146,7 +146,7 @@ from the Window Manager or from the (deprecated) system configuration.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__CHXSetting__.html">_CHXSetting_</a></li>
-    <li class="footer">Generated on Sat Oct 17 2015 15:35:16 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue May 24 2016 17:19:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

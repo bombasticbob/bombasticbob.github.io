@@ -19,6 +19,7 @@ var group__wmatom =
     [ "aTARGETS", "group__wmatom.html#gadc188f80702d9e969c48f65bf93d4d16", null ],
     [ "aTEXT", "group__wmatom.html#gafc5174842c8823184c5eb2d7ef07ec59", null ],
     [ "aTIMESTAMP", "group__wmatom.html#gaf33743baad5968419d3c8fdd1f2fff62", null ],
+    [ "aUTF8_STRING", "group__wmatom.html#ga3d475bd4065e4550d7423522cba2d548", null ],
     [ "aWINDOW", "group__wmatom.html#ga0549c92d32396ae2ec56ee676d0fbf55", null ],
     [ "aWM_DELETE_WINDOW", "group__wmatom.html#ga8191a78a2a9600da43a94630328db565", null ],
     [ "aWM_PROTOCOLS", "group__wmatom.html#gad934d5e7c2a72c15f9c49ee5f719fd73", null ],

@@ -52,12 +52,10 @@ var group__conf__help =
     [ "CHGetMimeDefaultApp", "group__conf__help.html#ga4bfa9ca24f4ba17b6438aa0177620b20", null ],
     [ "CHGetResourceInt", "group__conf__help.html#gacfb3205d14c47eb4078b17566bad5666", null ],
     [ "CHGetResourceString", "group__conf__help.html#gad6b8e3e44a9c6f68d3501def49b2b1df", null ],
-    [ "CHGetSelectionData", "group__conf__help.html#ga6740edd7f569cde444d3bcbd28f24855", null ],
     [ "CHGetXSetting", "group__conf__help.html#ga7d87ce6a7b353303eb0bf6212fc0e24d", null ],
     [ "CHGetXSettings", "group__conf__help.html#gaebab9086a01ee73d7d3ec5a26a6ed576", null ],
     [ "CHOpenConfFile", "group__conf__help.html#ga3eb399f31125de85322cce21639c82a5", null ],
     [ "CHRegisterArgs", "group__conf__help.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b", null ],
-    [ "CHSetSelectionData", "group__conf__help.html#ga47ce98378461e8570be82e68e7736b32", null ],
     [ "CHSettingsRefresh", "group__conf__help.html#ga3543bba07af332665cb69034c89839c1", null ],
     [ "CHWriteConfFileInt", "group__conf__help.html#gad60beaeb57f42bc1b57e76e7e74efce4", null ],
     [ "CHWriteConfFileString", "group__conf__help.html#ga695db75558f7759a9f2a372d50f18454", null ]

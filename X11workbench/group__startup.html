@@ -75,6 +75,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5eb4d43e2a86e48bcbead0c291c7197a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga5eb4d43e2a86e48bcbead0c291c7197a">PXM_OnExit</a> (void)</td></tr>
 <tr class="memdesc:ga5eb4d43e2a86e48bcbead0c291c7197a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees resources allocated by <a class="el" href="group__pixmap.html">Pixmap utility functions</a>.  <a href="#ga5eb4d43e2a86e48bcbead0c291c7197a">More...</a><br/></td></tr>
 <tr class="separator:ga5eb4d43e2a86e48bcbead0c291c7197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">WBPlatformOnInit</a> (void)</td></tr>
+<tr class="memdesc:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource initialization on startup.  <a href="#ga4231ddc6f845891d9be8f4f1f3c0aab5">More...</a><br/></td></tr>
+<tr class="separator:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga186e21ce3badbba01435fa3e30bacd16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">WBPlatformOnExit</a> (void)</td></tr>
 <tr class="memdesc:ga186e21ce3badbba01435fa3e30bacd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource 'free-up' on exit (must call)  <a href="#ga186e21ce3badbba01435fa3e30bacd16">More...</a><br/></td></tr>
 <tr class="separator:ga186e21ce3badbba01435fa3e30bacd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,9 +87,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1ca511628142e183e7db3e326b947244"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga1ca511628142e183e7db3e326b947244">WBInitDisplay</a> (Display *pDisplay)</td></tr>
 <tr class="memdesc:ga1ca511628142e183e7db3e326b947244"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes default objects for the specified Display  <a href="#ga1ca511628142e183e7db3e326b947244">More...</a><br/></td></tr>
 <tr class="separator:ga1ca511628142e183e7db3e326b947244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39943cd7b10df7db6b0484e2ab88eb3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga39943cd7b10df7db6b0484e2ab88eb3f">WBInitClipboardSystem</a> (Display *pDisplay, const char *szDisplayName)</td></tr>
+<tr class="memdesc:ga39943cd7b10df7db6b0484e2ab88eb3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes clipboard sub-system  <a href="#ga39943cd7b10df7db6b0484e2ab88eb3f">More...</a><br/></td></tr>
+<tr class="separator:ga39943cd7b10df7db6b0484e2ab88eb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a1bc590572b555cc78840cd857e6824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit</a> (void)</td></tr>
 <tr class="memdesc:ga7a1bc590572b555cc78840cd857e6824"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes any remaining global objects, frees the Display pointer, and terminates event processing  <a href="#ga7a1bc590572b555cc78840cd857e6824">More...</a><br/></td></tr>
 <tr class="separator:ga7a1bc590572b555cc78840cd857e6824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab63b4967f31d44e7ce0b6cdd6de93b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gab63b4967f31d44e7ce0b6cdd6de93b22">WBExitClipboardSystem</a> (Display *pDisplay)</td></tr>
+<tr class="memdesc:gab63b4967f31d44e7ce0b6cdd6de93b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down the clipboard sub-system.  <a href="#gab63b4967f31d44e7ce0b6cdd6de93b22">More...</a><br/></td></tr>
+<tr class="separator:gab63b4967f31d44e7ce0b6cdd6de93b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59e964570bd9a7a7bf893796a83606a3"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">WBThreadInitDisplay</a> (void)</td></tr>
+<tr class="memdesc:ga59e964570bd9a7a7bf893796a83606a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes default Display for a thread (must call <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> first)  <a href="#ga59e964570bd9a7a7bf893796a83606a3">More...</a><br/></td></tr>
+<tr class="separator:ga59e964570bd9a7a7bf893796a83606a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc195384568f9fb8ed6d2a7704722395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">WBThreadFreeDisplay</a> (Display *pThreadDisplay)</td></tr>
+<tr class="memdesc:gabc195384568f9fb8ed6d2a7704722395"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-initializes a Display for a thread that was allocated by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first)">WBThreadInitDisplay()</a>  <a href="#gabc195384568f9fb8ed6d2a7704722395">More...</a><br/></td></tr>
+<tr class="separator:gabc195384568f9fb8ed6d2a7704722395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga576673ed5710c0711a453f935b5043aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments</a> (int *pargc, char ***pargv, char ***penvp)</td></tr>
 <tr class="memdesc:ga576673ed5710c0711a453f935b5043aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses standard C arguments as passed to 'main()'  <a href="#ga576673ed5710c0711a453f935b5043aa">More...</a><br/></td></tr>
 <tr class="separator:ga576673ed5710c0711a453f935b5043aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +180,7 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A const pointer to a zero-byte terminated string containing a copy of the application name</dd></dl>
 <p>This function is only valid if you call <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a> on startup </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01475">1475</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01587">1587</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -186,7 +201,7 @@ Variables</h2></td></tr>
 <p>returns character name of the display to be opened and passed to WBInit </p>
 <p>Gets the display name associated with the current (default) display, or the display specified in the command line arguments passed to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a>. This name should be used in a call to XOpenDisplay(), and the resulting Display should then be passed to <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01470">1470</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01582">1582</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -207,7 +222,7 @@ Variables</h2></td></tr>
 <p>returns the startup geometry based on command line parameters </p>
 <p>Returns the desired geometry to be applied to the main window on startup. The value is based on a prior call to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments()</a>, and should not be relied upon otherwise. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01480">1480</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01592">1592</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -228,7 +243,7 @@ Variables</h2></td></tr>
 <p>returns the min/max/normal window state for startup </p>
 <p>Following a call to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments()</a>, this function will return the desired startup window state, either minimized (&lt; 0), maximized (&gt; 0), or normal (= 0). </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01488">1488</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01600">1600</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -278,7 +293,7 @@ Variables</h2></td></tr>
 <p>returns the default colormap for the default screen of the specified display </p>
 <p>Convenience function that returns the default colormap for the default screen of the specified display. Helps to clean up the initialization code and make it more 'modular'. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00369">369</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00416">416</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +314,28 @@ Variables</h2></td></tr>
 <p>deletes any remaining global objects, frees the Display pointer, and terminates event processing </p>
 <p>This function deletes any remaining global objects, frees the Display pointer, and terminates event processing, freeing up any remaining resources for the entire toolkit. You should call this function in your application right before it terminates. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01072">1072</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01139">1139</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab63b4967f31d44e7ce0b6cdd6de93b22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBExitClipboardSystem </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shut down the clipboard sub-system. </p>
+<p>Shuts down the clipboard sub-system. Called internally by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824" title="deletes any remaining global objects, frees the Display pointer, and terminates event processing...">WBExit()</a> </p>
+
+<p>Definition at line <a class="el" href="clipboard__helper_8c_source.html#l00219">219</a> of file <a class="el" href="clipboard__helper_8c_source.html">clipboard_helper.c</a>.</p>
 
 </div>
 </div>
@@ -330,7 +366,50 @@ Variables</h2></td></tr>
  The returned pointer can be retrieved at any time by calling '<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203" title="Returns the default Display.">WBGetDefaultDisplay()</a>'.<br/>
  </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00720">720</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00729">729</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga39943cd7b10df7db6b0484e2ab88eb3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBInitClipboardSystem </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szDisplayName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initializes clipboard sub-system </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The 'Display' associated with this clipboard (reserved, must match 'WBInitDisplay' call or be NULL) </td></tr>
+    <tr><td class="paramname">szDisplayName</td><td>A null-byte terminated ASCII string containing the DISPLAY name, or NULL<br/>
+ NULL values causes the display to initialize using <a class="el" href="group__startup.html#ga9e32c84e39bafa6723df9943dbfdb657">GetStartupDisplayName()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero value on success, non-zero on error.</dd></dl>
+<p>Call this function to initialize the 'Clipboard' sub-system, after initializing the 'Display'. This function is automatically called internally by <a class="el" href="group__startup.html#ga1ca511628142e183e7db3e326b947244" title="initializes default objects for the specified Display">WBInitDisplay()</a> so there should be no need to invoke it directly.<br/>
+ It will spawn a new thread that runs in the background to process clipboard-related messages, internally using a separate Display object, so that the main thread is not impacted (nor deadlocked) by clipboard handling.<br/>
+ The 'pDisplay' parameter is reserved for future use, for when multiple displays are supported.<br/>
+ If a thread uses the same display name that was passed to 'WBInit' then it refers to the same Display as the main thread, and you will not need to re-initialize the clipboard for that Display. </p>
+
+<p>Definition at line <a class="el" href="clipboard__helper_8c_source.html#l00138">138</a> of file <a class="el" href="clipboard__helper_8c_source.html">clipboard_helper.c</a>.</p>
 
 </div>
 </div>
@@ -355,11 +434,11 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Non-zero value on success, zero on error.</dd></dl>
-<p>Call this function before any other to assign the default Display pointer and initialize the X11 WorkBench Toolkit. A number of internal objects are initialized by this function. On error the function returns a zero value.<br/>
+<dl class="section return"><dt>Returns</dt><dd>Zero value on success, non-zero on error.</dd></dl>
+<p>Call this function before any other to assign the default Display pointer and initialize the X11 WorkBench Toolkit. A number of internal objects are initialized by this function. On error the function returns a non-zero value.<br/>
  The preferred method for initialization is to use <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3">WBInit()</a> with a display name (or NULL). However, in some cases you may wish to open the display yourself, and pass the pointer to this function instead. Typical reasons for that may be security-related, use of firewalls, proxies, and any other kind of possible and/or unusual method for opening a display. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00807">807</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00837">837</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -411,7 +490,7 @@ Variables</h2></td></tr>
 </dl>
 <p>Convenience function that assigns the default window size on application startup. Takes into consideration the screen dimensions and min width/height if the user did not specify window geometry on startup. See the X11 API Reference, sections 9.1.6 and 10.3 for more information on XSizeHints </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01504">1504</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01616">1616</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -470,7 +549,7 @@ Variables</h2></td></tr>
 </dl>
 <p>Convenience function to assign the minimal window attributes to the XSetWindowAttributes structure. Helps to clean up the initialization code and make it more 'modular'. For more information on window attributes, see the X11 API Documentation, section 3.3 . </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01493">1493</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01605">1605</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -509,7 +588,7 @@ Variables</h2></td></tr>
  Returns 0 on success, non-zero (or error code) otherwise.<br/>
  The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will likely be modified from their original values as part of the processing. If you want to retain the original values, pass 'copies' to this function and use the copies for normal argument processing (as with 'getarg'). </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01152">1152</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01264">1264</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -531,7 +610,78 @@ Variables</h2></td></tr>
 <p>Call this function right before exiting the application if you have made use of any system-specific resources from '<a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a>'. <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824" title="deletes any remaining global objects, frees the Display pointer, and terminates event processing...">WBExit()</a> does this automatically. Among other things, it will delete any temporary files that were created via <a class="el" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f" title="Get the name for a new, unique temporary file, creating the file in the process, and save its name fo...">WBTempFile()</a>.<br/>
  It should also be safe to call this function from within a 'signal' handler. </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00121">121</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00137">137</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4231ddc6f845891d9be8f4f1f3c0aab5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBPlatformOnInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resource initialization on startup. </p>
+<p>Call this function right before using any 'platform_helper' functions to initialize any global resources from '<a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a>'. <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> does this automatically. It should only be called once.<br/>
+ </p>
+
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00127">127</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabc195384568f9fb8ed6d2a7704722395"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBThreadFreeDisplay </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pThreadDisplay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>un-initializes a Display for a thread that was allocated by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first)">WBThreadInitDisplay()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pThreadDisplay</td><td>a Display pointer that was created via <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first)">WBThreadInitDisplay()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Call this function to free a thread-specific Display object that was created by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first)">WBThreadInitDisplay()</a> to free up resources before exiting the thread. </p>
+
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01248">1248</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga59e964570bd9a7a7bf893796a83606a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Display* WBThreadInitDisplay </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initializes default Display for a thread (must call <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> first) </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the Display, or NULL on error</dd></dl>
+<p>Call this function to create a thread-specific Display object when you need to process a message loop or create windows within that thread. You must call <a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395" title="un-initializes a Display for a thread that was allocated by WBThreadInitDisplay()">WBThreadFreeDisplay()</a> to free up resources before exiting the thread. </p>
+
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01223">1223</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -551,7 +701,7 @@ Variables</h2></td></tr>
  Signal procs that terminate the application, as well as the main frame window's 'Destroy' handler, and any 'Exit' functions, should all set this to TRUE (non-zero) to force the application to exit.</p>
 <div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f" title="&#39;Quit&#39; Flag - you should check this periodically in your main message loop and exit whenever it is TR...">bQuitFlag</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00128">128</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00130">130</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -560,7 +710,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 17 2015 15:35:16 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue May 24 2016 17:19:35 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

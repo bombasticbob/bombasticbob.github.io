@@ -40,6 +40,7 @@ var group__debug =
       [ "DebugSubSystem_MASK", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8", null ]
     ] ],
     [ "WBDebugDump", "group__debug.html#ga1b403292a2ce065b57db74db5809dfea", null ],
+    [ "WBDebugDumpEvent", "group__debug.html#gaa39191469018c352801b1178befdd5b2", null ],
     [ "WBDebugDumpGC", "group__debug.html#ga690f2acca275614c06c2e8afc55db18b", null ],
     [ "WBDebugPrint", "group__debug.html#gaff552460367fbdb1397a29e364800f49", null ],
     [ "WBDumpFontInfo", "group__debug.html#ga0305ec6ca26b97ff4283d83867d78def", null ],

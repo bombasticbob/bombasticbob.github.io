@@ -1,5 +1,8 @@
 var group__process =
 [
+    [ "WBFreeLibrary", "group__process.html#ga560a982b02824d34447e2b581dc2e190", null ],
+    [ "WBGetProcAddress", "group__process.html#ga3ebada7768666a227eddfbb7d49afc97", null ],
+    [ "WBLoadLibrary", "group__process.html#gab174acc6a11dc722577cd5e3723f0b2d", null ],
     [ "WBRunAsync", "group__process.html#ga1bd64d7b39e976442d0b6a8f500c2353", null ],
     [ "WBRunAsyncPipe", "group__process.html#ga87b3e57d4acf34d5d353c646445d151c", null ],
     [ "WBRunAsyncPipeV", "group__process.html#gaf9c772c6392d057d17513176f3c65902", null ],
