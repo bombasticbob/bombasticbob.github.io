@@ -10,7 +10,6 @@ var modules =
     [ "Process Control Functions", "group__process.html", "group__process" ],
     [ "Threads and Synchronization", "group__threads.html", "group__threads" ],
     [ "Frame Window API", "group__frame.html", "group__frame" ],
-    [ "Edit Window APIs and Structures", "group__edit__window.html", "group__edit__window" ],
     [ "Dialog Boxes", "group__dialog.html", "group__dialog" ],
     [ "Pixmap utility functions", "group__pixmap.html", "group__pixmap" ],
     [ "Printer utility functions", "group__printer.html", "group__printer" ],

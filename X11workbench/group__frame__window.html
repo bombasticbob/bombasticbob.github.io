@@ -78,6 +78,7 @@ Data Structures</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga359543d20a365fe240eb7641ec9fa130"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130">WBFrameWindowFlags</a> { <a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130a693325994a98569950cf59aeee196a69">WBFrameWindow_APP_WINDOW</a> = 1, 
 <a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130ab460f1bef76df20c89ace16702c45944">WBFrameWindow_VISIBLE</a> = 2, 
+<a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130ae802085dba0e718dc21b9814bf76e1f9">WBFrameWindow_NO_TABS</a> = 4, 
 <a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130ae04eba29ddef348c04b5e86626ea6972">WBFrameWindow_MAX</a> = 0x80000000L
  }</td></tr>
 <tr class="memdesc:ga359543d20a365fe240eb7641ec9fa130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame Window type and status flags.  <a href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130">More...</a><br/></td></tr>
@@ -127,9 +128,6 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <tr class="memitem:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">FWSetFocusWindowIndex</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, int iIndex)</td></tr>
 <tr class="memdesc:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using its tab order index.  <a href="#ga777ed52e4e0bfdfbcc417eebc61a95f6">More...</a><br/></td></tr>
 <tr class="separator:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d0c5b1a33b0aba67938288f2ae76aeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga9d0c5b1a33b0aba67938288f2ae76aeb">FWDoSelectionEvents</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, Window wID, Window wIDMenu, XEvent *pEvent)</td></tr>
-<tr class="memdesc:ga9d0c5b1a33b0aba67938288f2ae76aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles 'selection' events for frame windows.  <a href="#ga9d0c5b1a33b0aba67938288f2ae76aeb">More...</a><br/></td></tr>
-<tr class="separator:ga9d0c5b1a33b0aba67938288f2ae76aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>To create a frame window, you will need to call the <a class="el" href="group__frame__window.html#gac6e419a4d4627321ddfaaf48711fc211">FWCreateFrameWindow()</a> API function, which returns a WBFrameWindow structure pointer. Until the window has been destroyed this pointer will remain valid, though you should not manipulate its contents directly.<br/>
@@ -182,12 +180,15 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <tr><td class="fieldname"><em><a class="anchor" id="ga359543d20a365fe240eb7641ec9fa130ab460f1bef76df20c89ace16702c45944"></a>WBFrameWindow_VISIBLE</em>&nbsp;</td><td class="fielddoc">
 <p>set this to make window immediately visible </p>
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ga359543d20a365fe240eb7641ec9fa130ae802085dba0e718dc21b9814bf76e1f9"></a>WBFrameWindow_NO_TABS</em>&nbsp;</td><td class="fielddoc">
+<p>set this to disable tabs (single child frame only) </p>
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ga359543d20a365fe240eb7641ec9fa130ae04eba29ddef348c04b5e86626ea6972"></a>WBFrameWindow_MAX</em>&nbsp;</td><td class="fielddoc">
 <p>maximum flag value (for reference only) </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00255">255</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00259">259</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +227,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The tab order index of the window, or -1 on error </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00816">816</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00862">862</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -314,7 +315,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a WBFrameWindow object. The caller should not destroy this object, nor directly reference it after the window has been destroyed.</dd></dl>
 <p>Use this function to create a basic frame window </p>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00197">197</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00210">210</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -335,7 +336,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <p>Function to destroy a frame window based on the Window id. </p>
 <p>after calling this function the WBFrameWindow struct is no longer valid </p>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00371">371</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00384">384</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -356,60 +357,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <p>Function to destroy a frame window based on the WBFrameWindow structure. </p>
 <p>after calling this function the WBFrameWindow struct is no longer valid </p>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00376">376</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga9d0c5b1a33b0aba67938288f2ae76aeb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FWDoSelectionEvents </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *&#160;</td>
-          <td class="paramname"><em>pFrameWindow</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDMenu</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XEvent *&#160;</td>
-          <td class="paramname"><em>pEvent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handles 'selection' events for frame windows. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pFrameWindow</td><td>A pointer to a WBFrameWindow structure for the frame window </td></tr>
-    <tr><td class="paramname">wID</td><td>The ID of the frame window </td></tr>
-    <tr><td class="paramname">wIDMenu</td><td>The Window ID of the frame window's currently active menu </td></tr>
-    <tr><td class="paramname">pEvent</td><td>The 'selection' event </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Non-zero if 'handled', zero if further (or default) processing is needed</dd></dl>
-<p>This function performs basic 'selection event' processing. It is normally called internally for default handling of selection events whenever the specified callback function returns 0 for such events. </p>
-
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00844">844</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00389">389</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -445,9 +393,11 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The Window ID of the 'contained' window corresponding to the index, or 'None' on error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The Window ID of the 'contained' window corresponding to the index, or 'None' on error</dd></dl>
+<p>Use this function to get the Window ID of a 'contained' (child frame) window. To get more information about contained 'Child Frame' window, see</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="">child_frames</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00811">811</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00857">857</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -474,7 +424,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of 'contained' windows, or -1 on error </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00806">806</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00852">852</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -512,7 +462,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00821">821</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00867">867</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -550,7 +500,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00825">825</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00871">871</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -588,7 +538,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00829">829</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00875">875</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -625,9 +575,9 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
   </dd>
 </dl>
 <p>Assigns the menu handlers for the frame window. The array will be copied, and the copy will be used internally. These handlers are always checked, but only after the 'contained' window's handlers.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame__menu.html">Frame Window - Menus</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame__menu.html">frame_menu</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00422">422</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8c_source.html#l00435">435</a> of file <a class="el" href="frame__window_8c_source.html">frame_window.c</a>.</p>
 
 </div>
 </div>
@@ -636,7 +586,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 24 2016 17:19:36 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

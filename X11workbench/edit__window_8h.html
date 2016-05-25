@@ -78,6 +78,7 @@ $(document).ready(function(){initNavTree('edit__window_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="text__object_8h_source.html">text_object.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="frame__window_8h_source.html">frame_window.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="child__frame_8h_source.html">child_frame.h</a>&quot;</code><br/>
 </div>
 <p><a href="edit__window_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -95,21 +96,15 @@ typedef struct <a class="el" href="struct____WBEditWindow____.html">__WBEditWind
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga692ff3654fb890a167115770b0c6dd4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga692ff3654fb890a167115770b0c6dd4b">WBCreateEditWindow</a> (Window wOwner, int iTop, int iLeft, int iWidth, int iHeight)</td></tr>
-<tr class="memdesc:ga692ff3654fb890a167115770b0c6dd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Edit Window.  <a href="group__edit__window.html#ga692ff3654fb890a167115770b0c6dd4b">More...</a><br/></td></tr>
-<tr class="separator:ga692ff3654fb890a167115770b0c6dd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3c3f259952d47ab103c075b14f7312d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gaf3c3f259952d47ab103c075b14f7312d">WBCreateEditTab</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, const char *szFocusMenu, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
-<tr class="memdesc:gaf3c3f259952d47ab103c075b14f7312d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Edit Window as a 'tab' for a multi-document Frame Window.  <a href="group__edit__window.html#gaf3c3f259952d47ab103c075b14f7312d">More...</a><br/></td></tr>
-<tr class="separator:gaf3c3f259952d47ab103c075b14f7312d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeb22d3ea664441d9d09ce628e94557f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f">WBCreateEditWindow</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pOwner, XFontStruct *pFont, const char *szFocusMenu, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray, int fFlags)</td></tr>
+<tr class="memdesc:gaaeb22d3ea664441d9d09ce628e94557f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Edit Window.  <a href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f">More...</a><br/></td></tr>
+<tr class="separator:gaaeb22d3ea664441d9d09ce628e94557f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1905f55b320db416741d55866a92ebd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga1905f55b320db416741d55866a92ebd5">WBDestroyEditWindow</a> (<a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *pEditWindow)</td></tr>
 <tr class="memdesc:ga1905f55b320db416741d55866a92ebd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an Edit Window.  <a href="group__edit__window.html#ga1905f55b320db416741d55866a92ebd5">More...</a><br/></td></tr>
 <tr class="separator:ga1905f55b320db416741d55866a92ebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57c6ff70cbecae7cf216b9372cd9db58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga57c6ff70cbecae7cf216b9372cd9db58">WBSetEditWindowMenu</a> (<a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *pEditWindow, const char *szFocusMenu)</td></tr>
-<tr class="memdesc:ga57c6ff70cbecae7cf216b9372cd9db58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign menu handlers to an edit window.  <a href="group__edit__window.html#ga57c6ff70cbecae7cf216b9372cd9db58">More...</a><br/></td></tr>
-<tr class="separator:ga57c6ff70cbecae7cf216b9372cd9db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga892263ff3b30c5f43fe1851271ef70d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga892263ff3b30c5f43fe1851271ef70d4">WBSetEditWindowMenuHandlers</a> (<a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *pEditWindow, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
-<tr class="memdesc:ga892263ff3b30c5f43fe1851271ef70d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign menu handlers to an edit window.  <a href="group__edit__window.html#ga892263ff3b30c5f43fe1851271ef70d4">More...</a><br/></td></tr>
-<tr class="separator:ga892263ff3b30c5f43fe1851271ef70d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5948fc6822c873c0918420b63c237878"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878">WBEditWindowFromWindowID</a> (Window wID)</td></tr>
+<tr class="memdesc:ga5948fc6822c873c0918420b63c237878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the associated WBEditWindow structure pointer for a Window ID.  <a href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878">More...</a><br/></td></tr>
+<tr class="separator:ga5948fc6822c873c0918420b63c237878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Edit Window API functions. </p>
@@ -123,7 +118,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="edit__window_8h.html">edit_window.h</a></li>
-    <li class="footer">Generated on Tue May 24 2016 17:19:35 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Wed May 25 2016 03:00:43 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

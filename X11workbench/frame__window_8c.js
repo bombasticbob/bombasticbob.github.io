@@ -1,6 +1,6 @@
 var frame__window_8c =
 [
-    [ "__SIZEOF_POINTER_", "frame__window_8c.html#a200e9ca84795ae4c66e5f6fae03fac0b", null ],
+    [ "__SIZEOF_POINTER__", "frame__window_8c.html#a8bd657ce95940b7c6087cf5aa54d5280", null ],
     [ "FRAME_WINDOW_MIN_HEIGHT", "frame__window_8c.html#ae961b11e76723e5db75781f0a3b3f07b", null ],
     [ "FRAME_WINDOW_MIN_WIDTH", "frame__window_8c.html#a60bcefc485841a62e300b663381c76eb", null ],
     [ "LOAD_COLOR", "frame__window_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
@@ -12,7 +12,6 @@ var frame__window_8c =
     [ "FWDefaultCallback", "frame__window_8c.html#a6bc7fc0006976d87e7683e6745a8177e", null ],
     [ "FWDestroyFrameWindow", "frame__window_8c.html#gab70af043c2c00dbf97c2a531905be2b3", null ],
     [ "FWDestroyFrameWindow2", "frame__window_8c.html#ga9f5408fb92f895dea9fc09203fd32217", null ],
-    [ "FWDoSelectionEvents", "frame__window_8c.html#ga9d0c5b1a33b0aba67938288f2ae76aeb", null ],
     [ "FWGetContainedWindowByIndex", "frame__window_8c.html#ga53d54df9be1378ea9817e94af2645f8f", null ],
     [ "FWGetNumContWindows", "frame__window_8c.html#gad593b650497ec120af93adcade1499c2", null ],
     [ "FWRecalcLayout", "frame__window_8c.html#ga5ea6c01ec4dd7ff9660dfb6a6bb98a23", null ],

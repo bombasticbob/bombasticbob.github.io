@@ -12,6 +12,7 @@ var annotated =
     [ "__WB_DIALOG_WINDOW__", "struct____WB__DIALOG__WINDOW____.html", "struct____WB__DIALOG__WINDOW____" ],
     [ "__WB_FRAME_WINDOW__", "struct____WB__FRAME__WINDOW____.html", "struct____WB__FRAME__WINDOW____" ],
     [ "__WB_FW_MENU_HANDLER_", "struct____WB__FW__MENU__HANDLER__.html", "struct____WB__FW__MENU__HANDLER__" ],
+    [ "__WBChildFrame__", "struct____WBChildFrame____.html", "struct____WBChildFrame____" ],
     [ "__WBEditWindow__", "struct____WBEditWindow____.html", "struct____WBEditWindow____" ],
     [ "__XSETTINGS_DATA_COLOR__", "struct____XSETTINGS__DATA__COLOR____.html", "struct____XSETTINGS__DATA__COLOR____" ],
     [ "_CHXSetting_", "struct__CHXSetting__.html", "struct__CHXSetting__" ],

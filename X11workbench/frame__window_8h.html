@@ -125,6 +125,7 @@ typedef struct <a class="el" href="struct____WB__FRAME__WINDOW____.html">__WB_FR
 Enumerations</h2></td></tr>
 <tr class="memitem:ga359543d20a365fe240eb7641ec9fa130"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130">WBFrameWindowFlags</a> { <a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130a693325994a98569950cf59aeee196a69">WBFrameWindow_APP_WINDOW</a> = 1, 
 <a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130ab460f1bef76df20c89ace16702c45944">WBFrameWindow_VISIBLE</a> = 2, 
+<a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130ae802085dba0e718dc21b9814bf76e1f9">WBFrameWindow_NO_TABS</a> = 4, 
 <a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130ae04eba29ddef348c04b5e86626ea6972">WBFrameWindow_MAX</a> = 0x80000000L
  }</td></tr>
 <tr class="memdesc:ga359543d20a365fe240eb7641ec9fa130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame Window type and status flags.  <a href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130">More...</a><br/></td></tr>
@@ -174,9 +175,6 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <tr class="memitem:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">FWSetFocusWindowIndex</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, int iIndex)</td></tr>
 <tr class="memdesc:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using its tab order index.  <a href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">More...</a><br/></td></tr>
 <tr class="separator:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d0c5b1a33b0aba67938288f2ae76aeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga9d0c5b1a33b0aba67938288f2ae76aeb">FWDoSelectionEvents</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, Window wID, Window wIDMenu, XEvent *pEvent)</td></tr>
-<tr class="memdesc:ga9d0c5b1a33b0aba67938288f2ae76aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles 'selection' events for frame windows.  <a href="group__frame__window.html#ga9d0c5b1a33b0aba67938288f2ae76aeb">More...</a><br/></td></tr>
-<tr class="separator:ga9d0c5b1a33b0aba67938288f2ae76aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Frame Window API functions and definitions. </p>
@@ -189,7 +187,7 @@ static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="frame__window_8h.html">frame_window.h</a></li>
-    <li class="footer">Generated on Tue May 24 2016 17:19:35 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Wed May 25 2016 03:00:43 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

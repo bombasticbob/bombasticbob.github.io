@@ -1,6 +1,7 @@
 var group__frame__window =
 [
     [ "__WB_FRAME_WINDOW__", "struct____WB__FRAME__WINDOW____.html", [
+      [ "fFlags", "struct____WB__FRAME__WINDOW____.html#a8923c9253dc2f4b2186a564941c06794", null ],
       [ "iClientHeight", "struct____WB__FRAME__WINDOW____.html#a611ee0649d456278be1b38dffce515a5", null ],
       [ "iClientWidth", "struct____WB__FRAME__WINDOW____.html#a27424747da84f0a941eabfa48faf916b", null ],
       [ "iClientX", "struct____WB__FRAME__WINDOW____.html#ab7853bf1a94cfbc4acf1198eb8e557d5", null ],
@@ -12,13 +13,13 @@ var group__frame__window =
     [ "WBFrameWindowFlags", "group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130", [
       [ "WBFrameWindow_APP_WINDOW", "frame__window_8h.html#ga359543d20a365fe240eb7641ec9fa130a693325994a98569950cf59aeee196a69", null ],
       [ "WBFrameWindow_VISIBLE", "frame__window_8h.html#ga359543d20a365fe240eb7641ec9fa130ab460f1bef76df20c89ace16702c45944", null ],
+      [ "WBFrameWindow_NO_TABS", "frame__window_8h.html#ga359543d20a365fe240eb7641ec9fa130ae802085dba0e718dc21b9814bf76e1f9", null ],
       [ "WBFrameWindow_MAX", "frame__window_8h.html#ga359543d20a365fe240eb7641ec9fa130ae04eba29ddef348c04b5e86626ea6972", null ]
     ] ],
     [ "FWAddContainedWindow", "group__frame__window.html#gab2e7e584468a903daed1f08ffa014a09", null ],
     [ "FWCreateFrameWindow", "group__frame__window.html#gac6e419a4d4627321ddfaaf48711fc211", null ],
     [ "FWDestroyFrameWindow", "group__frame__window.html#gab70af043c2c00dbf97c2a531905be2b3", null ],
     [ "FWDestroyFrameWindow2", "group__frame__window.html#ga9f5408fb92f895dea9fc09203fd32217", null ],
-    [ "FWDoSelectionEvents", "group__frame__window.html#ga9d0c5b1a33b0aba67938288f2ae76aeb", null ],
     [ "FWGetContainedWindowByIndex", "group__frame__window.html#ga53d54df9be1378ea9817e94af2645f8f", null ],
     [ "FWGetFrameWindowStruct", "group__frame__window.html#gaac0ed9cb90f9d571021974c5a7b539cc", null ],
     [ "FWGetNumContWindows", "group__frame__window.html#gad593b650497ec120af93adcade1499c2", null ],

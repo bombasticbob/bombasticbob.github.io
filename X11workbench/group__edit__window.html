@@ -63,7 +63,7 @@ $(document).ready(function(){initNavTree('group__edit__window.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Edit Window APIs and Structures</div>  </div>
+<div class="title">Edit Window APIs and Structures<div class="ingroups"><a class="el" href="group__frame.html">Frame Window API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -75,36 +75,36 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga692ff3654fb890a167115770b0c6dd4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga692ff3654fb890a167115770b0c6dd4b">WBCreateEditWindow</a> (Window wOwner, int iTop, int iLeft, int iWidth, int iHeight)</td></tr>
-<tr class="memdesc:ga692ff3654fb890a167115770b0c6dd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Edit Window.  <a href="#ga692ff3654fb890a167115770b0c6dd4b">More...</a><br/></td></tr>
-<tr class="separator:ga692ff3654fb890a167115770b0c6dd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3c3f259952d47ab103c075b14f7312d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gaf3c3f259952d47ab103c075b14f7312d">WBCreateEditTab</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, const char *szFocusMenu, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
-<tr class="memdesc:gaf3c3f259952d47ab103c075b14f7312d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Edit Window as a 'tab' for a multi-document Frame Window.  <a href="#gaf3c3f259952d47ab103c075b14f7312d">More...</a><br/></td></tr>
-<tr class="separator:gaf3c3f259952d47ab103c075b14f7312d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeb22d3ea664441d9d09ce628e94557f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f">WBCreateEditWindow</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pOwner, XFontStruct *pFont, const char *szFocusMenu, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray, int fFlags)</td></tr>
+<tr class="memdesc:gaaeb22d3ea664441d9d09ce628e94557f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Edit Window.  <a href="#gaaeb22d3ea664441d9d09ce628e94557f">More...</a><br/></td></tr>
+<tr class="separator:gaaeb22d3ea664441d9d09ce628e94557f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1905f55b320db416741d55866a92ebd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga1905f55b320db416741d55866a92ebd5">WBDestroyEditWindow</a> (<a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *pEditWindow)</td></tr>
 <tr class="memdesc:ga1905f55b320db416741d55866a92ebd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an Edit Window.  <a href="#ga1905f55b320db416741d55866a92ebd5">More...</a><br/></td></tr>
 <tr class="separator:ga1905f55b320db416741d55866a92ebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57c6ff70cbecae7cf216b9372cd9db58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga57c6ff70cbecae7cf216b9372cd9db58">WBSetEditWindowMenu</a> (<a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *pEditWindow, const char *szFocusMenu)</td></tr>
-<tr class="memdesc:ga57c6ff70cbecae7cf216b9372cd9db58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign menu handlers to an edit window.  <a href="#ga57c6ff70cbecae7cf216b9372cd9db58">More...</a><br/></td></tr>
-<tr class="separator:ga57c6ff70cbecae7cf216b9372cd9db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga892263ff3b30c5f43fe1851271ef70d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga892263ff3b30c5f43fe1851271ef70d4">WBSetEditWindowMenuHandlers</a> (<a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *pEditWindow, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
-<tr class="memdesc:ga892263ff3b30c5f43fe1851271ef70d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign menu handlers to an edit window.  <a href="#ga892263ff3b30c5f43fe1851271ef70d4">More...</a><br/></td></tr>
-<tr class="separator:ga892263ff3b30c5f43fe1851271ef70d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5948fc6822c873c0918420b63c237878"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878">WBEditWindowFromWindowID</a> (Window wID)</td></tr>
+<tr class="memdesc:ga5948fc6822c873c0918420b63c237878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the associated WBEditWindow structure pointer for a Window ID.  <a href="#ga5948fc6822c873c0918420b63c237878">More...</a><br/></td></tr>
+<tr class="separator:ga5948fc6822c873c0918420b63c237878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Edit windows are child windows, typically owned by a frame window, in which text is edited and menu callbacks are processed.<br/>
+<p>Edit windows are 'Child Frame' windows, owned by a frame window, in which text is edited and menu callbacks are processed.<br/>
  The edited text is typically associated with a file name. An Edit Window uses the <a class="el" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d">TEXT_OBJECT</a> object (structure) to manage its state.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__text__object.html">Text Editing Utilities and Objects</a> </dd></dl>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaf3c3f259952d47ab103c075b14f7312d"></a>
+<a class="anchor" id="gaaeb22d3ea664441d9d09ce628e94557f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a>* WBCreateEditTab </td>
+          <td class="memname"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a>* WBCreateEditWindow </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *&#160;</td>
-          <td class="paramname"><em>pFrameWindow</em>, </td>
+          <td class="paramname"><em>pOwner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XFontStruct *&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -116,65 +116,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *&#160;</td>
-          <td class="paramname"><em>pHandlerArray</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create an Edit Window as a 'tab' for a multi-document Frame Window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pFrameWindow</td><td>A pointer to a WBFrameWindow structure for the owning frame window </td></tr>
-    <tr><td class="paramname">szFocusMenu</td><td>A const pointer to a text-based menu resource describing the menu that should appear when the edit window's tab has the focus </td></tr>
-    <tr><td class="paramname">pHandlerArray</td><td>A const pointer to an array of WBFWMenuHandler structures for the 'focus' menu handler, or NULL if none </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to a WBEditWindow object describing the new edit window, or NULL on error</dd></dl>
-<p>This function allows you to create an Edit Window that is a 'tab' (contained window) of a multi-document frame window, specifying a custom menu and menu handler that is in effect whenever this window has the focus. The edit window will automatically be added to the frame window's list of 'contained' windows.<br/>
- The function will return NULL on error. There is no need to destroy the object manually since the frame window will automatically perform any necessary cleanup. However, manually destroying the window will propogate to the frame window as well, cleaning up any allocated objects.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__edit__window.html#ga892263ff3b30c5f43fe1851271ef70d4">WBSetEditWindowMenuHandlers</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga692ff3654fb890a167115770b0c6dd4b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a>* WBCreateEditWindow </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wOwner</em>, </td>
+          <td class="paramname"><em>pHandlerArray</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iTop</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iLeft</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iHeight</em>&#160;</td>
+          <td class="paramname"><em>fFlags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -187,16 +135,18 @@ Functions</h2></td></tr>
 <p>Create an Edit Window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wOwner</td><td>The Window ID of the owning window </td></tr>
-    <tr><td class="paramname">iTop</td><td>the client position for the top of the edit window </td></tr>
-    <tr><td class="paramname">iLeft</td><td>the client position for the left of the edit window </td></tr>
-    <tr><td class="paramname">iWidth</td><td>the width of the edit window </td></tr>
-    <tr><td class="paramname">iHeight</td><td>the height of the edit window </td></tr>
+    <tr><td class="paramname">pOwner</td><td>A pointer to the owning WBFrameWindow. Can not be NULL. </td></tr>
+    <tr><td class="paramname">pFont</td><td>The desired font, or NULL to use the default </td></tr>
+    <tr><td class="paramname">szFocusMenu</td><td>A const pointer to a text-based menu resource describing the menu that should appear when the Child Frame's tab has the focus. Can be NULL if none. </td></tr>
+    <tr><td class="paramname">pHandlerArray</td><td>A const pointer to an array of WBFWMenuHandler structures for the 'focus' menu handler. Can be NULL if none. </td></tr>
+    <tr><td class="paramname">fFlags</td><td>A bitwise 'or' of the desired flags associated with this Edit Window. See 'WBChildFrame_FLAGS' </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to a WBEditWindow object describing the new edit window, or NULL on error</dd></dl>
 <p>This function allows you to create an Edit Window that is a regular child of a frame window or dialog box, as a 'single document' handler. To create a window that uses the maximum available space within the client area of the parent, specify '-1' for iTop, iLeft, iWidth, and iHeight. </p>
+
+<p>Definition at line <a class="el" href="edit__window_8c_source.html#l00058">58</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -223,77 +173,35 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="edit__window_8c_source.html#l00065">65</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ga57c6ff70cbecae7cf216b9372cd9db58"></a>
+<a class="anchor" id="ga5948fc6822c873c0918420b63c237878"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WBSetEditWindowMenu </td>
+          <td class="memname"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a>* WBEditWindowFromWindowID </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td>
-          <td class="paramname"><em>pEditWindow</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szFocusMenu</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Function to assign menu handlers to an edit window. </p>
+<p>Obtain the associated WBEditWindow structure pointer for a Window ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pEditWindow</td><td>The pointer to the WBFrameWindow structure for the desired frame window </td></tr>
-    <tr><td class="paramname">szFocusMenu</td><td>A const pointer to a text-based menu resource describing the menu that should appear when the edit window's tab has the focus</td></tr>
+    <tr><td class="paramname">wID</td><td>A valid Window ID </td></tr>
   </table>
   </dd>
 </dl>
-<p>Assigns the (new) menu for the edit window. The text will be copied, and the copy will be used internally, and free'd as necessary. Only valid when the owner is a Frame Window. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the associated WBEditWindow structure (if it is a WBEditWindow), or NULL on error</dd></dl>
+<p>Use this function to safely obtain the correct WBEditWindow structure for a given Window ID. </p>
 
-</div>
-</div>
-<a class="anchor" id="ga892263ff3b30c5f43fe1851271ef70d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBSetEditWindowMenuHandlers </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBEditWindow____.html">WBEditWindow</a> *&#160;</td>
-          <td class="paramname"><em>pEditWindow</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *&#160;</td>
-          <td class="paramname"><em>pHandlerArray</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to assign menu handlers to an edit window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pEditWindow</td><td>The pointer to the WBFrameWindow structure for the desired frame window </td></tr>
-    <tr><td class="paramname">pHandlerArray</td><td>A pointer to an array of WBFWMenuHandler structures - see <a class="el" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624">FW_MENU_HANDLER_ENTRY</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Assigns the (new) menu handlers for the edit window. The array will be copied, and the copy will be used internally, and free'd as necessary. Only valid when the owner is a Frame Window. </p>
+<p>Definition at line <a class="el" href="edit__window_8c_source.html#l00069">69</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -302,7 +210,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 24 2016 17:19:36 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

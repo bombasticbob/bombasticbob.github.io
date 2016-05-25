@@ -1,5 +1,7 @@
 var files =
 [
+    [ "child_frame.c", "child__frame_8c_source.html", null ],
+    [ "child_frame.h", "child__frame_8h.html", "child__frame_8h" ],
     [ "clipboard_helper.c", "clipboard__helper_8c.html", "clipboard__helper_8c" ],
     [ "conf_help.c", "conf__help_8c.html", "conf__help_8c" ],
     [ "conf_help.h", "conf__help_8h.html", "conf__help_8h" ],

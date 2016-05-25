@@ -83,7 +83,7 @@ $(document).ready(function(){initNavTree('edit__window_8c_source.html','');});
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*****************************************************************************</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    X11workbench - X11 programmer&#39;s &#39;work bench&#39; application and toolkit</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    Copyright (c) 2010-2013 by Bob Frazier (aka &#39;Big Bad Bombastic Bob&#39;)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    Copyright (c) 2010-2016 by Bob Frazier (aka &#39;Big Bad Bombastic Bob&#39;)</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">                             all rights reserved</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  DISCLAIMER:  The X11workbench application and toolkit software are supplied</span></div>
@@ -121,14 +121,34 @@ $(document).ready(function(){initNavTree('edit__window_8c_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &lt;strings.h&gt;</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a>&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="edit__window_8h.html" title="Edit Window API functions.">edit_window.h</a>&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f">   58</a></span>&#160;<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a> *<a class="code" href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f" title="Create an Edit Window.">WBCreateEditWindow</a>(<a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows">WBFrameWindow</a> *pOwner, XFontStruct *pFont,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> *szFocusMenu, <span class="keyword">const</span> <a class="code" href="struct____WB__FW__MENU__HANDLER__.html" title="structure for managing menu callbacks">WBFWMenuHandler</a> *pHandlerArray,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                 <span class="keywordtype">int</span> fFlags)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="group__edit__window.html#ga1905f55b320db416741d55866a92ebd5">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__edit__window.html#ga1905f55b320db416741d55866a92ebd5" title="Destroy an Edit Window.">WBDestroyEditWindow</a>(<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a> *pEditWindow)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878">   69</a></span>&#160;<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a> *<a class="code" href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878" title="Obtain the associated WBEditWindow structure pointer for a Window ID.">WBEditWindowFromWindowID</a>(Window wID)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><b>edit_window.c</b></li>
-    <li class="footer">Generated on Tue May 24 2016 17:19:34 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Wed May 25 2016 03:00:42 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
