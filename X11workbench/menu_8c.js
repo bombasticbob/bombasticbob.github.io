@@ -1,0 +1,26 @@
+var menu_8c =
+[
+    [ "ALT_HOTKEY", "menu_8c.html#a21e8e552456f623cff5b5ad783c61a2f", null ],
+    [ "CTRL_HOTKEY", "menu_8c.html#a7468438519fb423ca679f5caf5390909", null ],
+    [ "NEXT_COL", "menu_8c.html#aabb835ac38d9e935d4b093190050f197", null ],
+    [ "NEXT_LINE", "menu_8c.html#a8acc560aab1438d485904d3471b10153", null ],
+    [ "SHIFT_HOTKEY", "menu_8c.html#aaa1f5d2d49bf058601279fea91119698", null ],
+    [ "XK_MISCELLANY", "menu_8c.html#aeab6a095afeed0b9e64e415c5a5c669a", null ],
+    [ "__HotKeySearch", "menu_8c.html#af39a2be3e8e755e0cf2b66743383529e", null ],
+    [ "__HotKeySearchRecurse", "menu_8c.html#a92ad19747c2474cddea3e908bdae15de", null ],
+    [ "__PostMenuActivateEvent", "menu_8c.html#a8a1bdd1199a09548432eae36da67bd55", null ],
+    [ "InternalLocateMenuInResource", "menu_8c.html#a7bb4673498bf924250727ac763a5457d", null ],
+    [ "InternalPopulateMenuFromResource", "menu_8c.html#a349f24b5191c5774798aeadc729e359b", null ],
+    [ "MBAddMenuItem", "menu_8c.html#a7b5d47498d6ae4bd86b8cc006bc48050", null ],
+    [ "MBAddPopupMenu", "menu_8c.html#ae88c156906f6881b5fdad91a1df80cf1", null ],
+    [ "MBCreateMenu", "menu_8c.html#ac010d65a14eae65d7ed441f85421afc4", null ],
+    [ "MBCreateMenuItem", "menu_8c.html#ae4ae91f9fbdc1475432289b7a72d06bc", null ],
+    [ "MBDelMenuItem", "menu_8c.html#a8e02e3f962833d7bfea891202c62e380", null ],
+    [ "MBDestroyMenu", "menu_8c.html#a3fa651757859fd2a4f2940935edada84", null ],
+    [ "MBDestroyMenuItem", "menu_8c.html#a8521ca9e318811d811e1b107a8c3bcce", null ],
+    [ "MBFindPopupMenu", "menu_8c.html#a2819a159c3084a9729b0ecf879f60870", null ],
+    [ "MBMenuProcessHotKey", "menu_8c.html#a9abd89ca1ddde3b72752e1a4c99f6b7f", null ],
+    [ "MBRemovePopupMenu", "menu_8c.html#a79e0e1a85f15da4ac148c72dcb258e8b", null ],
+    [ "ProcessHotKeyText", "menu_8c.html#a99fb017fa8431b19b92494cf4b90e2e1", null ],
+    [ "TranslateHotKeyText", "menu_8c.html#adb29b5e46833d666d2daf54bd016522c", null ]
+];

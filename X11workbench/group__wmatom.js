@@ -1,0 +1,26 @@
+var group__wmatom =
+[
+    [ "aBITMAP", "group__wmatom.html#gae4d07e81656182b0406e74189d381288", null ],
+    [ "aC_STRING", "group__wmatom.html#gaba9d0bb8be874bbff95935412d996ef3", null ],
+    [ "aCLIPBOARD", "group__wmatom.html#ga6c168a251f6bfd9c490a216dcfa7744f", null ],
+    [ "aCOLORMAP", "group__wmatom.html#ga88c5269386d83d4bfe7f835200daec8f", null ],
+    [ "aCOMPOUND_TEXT", "group__wmatom.html#ga2505e834402b0142d3a9c874fc3b9914", null ],
+    [ "aDRAWABLE", "group__wmatom.html#gaa2b3d4feccacdde0618517b59a9d4bf9", null ],
+    [ "aINCR", "group__wmatom.html#ga820972fc52310cb7415047ee828c4659", null ],
+    [ "aMANAGER", "group__wmatom.html#ga462fa223f308de505b0f7d3f486e65f8", null ],
+    [ "aMULTIPLE", "group__wmatom.html#gad70cf755450b2b515dad5a54b97c14a9", null ],
+    [ "aNULL", "group__wmatom.html#gaa167210aeb180faba995a7b464bbfd69", null ],
+    [ "aPIXEL", "group__wmatom.html#ga094bd1c83620442f14dd2b2c283fdfab", null ],
+    [ "aPIXMAP", "group__wmatom.html#gac2ea7c123be41dae7602c5157deb7f55", null ],
+    [ "aPRIMARY", "group__wmatom.html#ga77559cdccba23fa66d8c43bf01fada9a", null ],
+    [ "aSECONDARY", "group__wmatom.html#gaa445a25cc4b4927c9ae9efa262740fd9", null ],
+    [ "aSTRING", "group__wmatom.html#ga301c1b521a4286fc1bd898ad0f02e91c", null ],
+    [ "aTARGET", "group__wmatom.html#gac35fd654b51e9fc0be288104581e0ee4", null ],
+    [ "aTARGETS", "group__wmatom.html#gadc188f80702d9e969c48f65bf93d4d16", null ],
+    [ "aTEXT", "group__wmatom.html#gafc5174842c8823184c5eb2d7ef07ec59", null ],
+    [ "aTIMESTAMP", "group__wmatom.html#gaf33743baad5968419d3c8fdd1f2fff62", null ],
+    [ "aWINDOW", "group__wmatom.html#ga0549c92d32396ae2ec56ee676d0fbf55", null ],
+    [ "aWM_DELETE_WINDOW", "group__wmatom.html#ga8191a78a2a9600da43a94630328db565", null ],
+    [ "aWM_PROTOCOLS", "group__wmatom.html#gad934d5e7c2a72c15f9c49ee5f719fd73", null ],
+    [ "aWM_TAKE_FOCUS", "group__wmatom.html#ga41c4fb149993b9ecaf081f383cf98728", null ]
+];
