@@ -85,8 +85,7 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="separator:a7f4fae9f2d922e3c85d3dab45f1dbfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e7c87e0c68661c51c508ab6faac58ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e7c87e0c68661c51c508ab6faac58ac"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac">nEntries</a></td></tr>
-<tr class="memdesc:a8e7c87e0c68661c51c508ab6faac58ac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h1>of entries currently in the array - call <a class="el" href="group__text__object.html#ga4625b33f8ab15d8646546257af958d45" title="Re-allocator for TEXT_BUFFER object.">WBCheckReAllocTextBuffer()</a> before increasing</h1>
-<br/></td></tr>
+<tr class="memdesc:a8e7c87e0c68661c51c508ab6faac58ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of entries currently in the array - call <a class="el" href="group__text__object.html#ga4625b33f8ab15d8646546257af958d45" title="Re-allocator for TEXT_BUFFER object.">WBCheckReAllocTextBuffer()</a> before increasing <br/></td></tr>
 <tr class="separator:a8e7c87e0c68661c51c508ab6faac58ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0734be45c637f24ee988b84b76ebf18c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0734be45c637f24ee988b84b76ebf18c"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__buffer__.html#a0734be45c637f24ee988b84b76ebf18c">nMaxCol</a></td></tr>
@@ -114,7 +113,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__text__buffer__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_buffer_</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct__text__buffer__.html#a7f4fae9f2d922e3c85d3dab45f1dbfe3" title="allocated size of aLines array">nArraySize</a>; <span class="comment">// allocated size of aLines array</span></div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac" title="of entries currently in the array - call WBCheckReAllocTextBuffer() before increasing">nEntries</a>;   <span class="comment">// # of entries currently in the array</span></div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac" title="number of entries currently in the array - call WBCheckReAllocTextBuffer() before increasing...">nEntries</a>;   <span class="comment">// number of entries currently in the array</span></div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// cached information</span></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__text__buffer__.html#a0734be45c637f24ee988b84b76ebf18c" title="The maximum column number for any line, rounded up by &#39;DEFAULT_TAB_WIDTH&#39;.">nMaxCol</a>;     <span class="comment">// The maximum column number for any line, rounded up by &#39;DEFAULT_TAB_WIDTH&#39;</span></div>
@@ -142,7 +141,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__text__buffer__.html">_text_buffer_</a></li>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

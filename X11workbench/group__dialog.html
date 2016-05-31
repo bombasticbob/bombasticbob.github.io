@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00638">638</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00642">642</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00564">564</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00570">570</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,11 @@ Functions</h2></td></tr>
     <tr><td class="paramname">iHeight</td><td>desired height of dialog window (-1 for default) </td></tr>
     <tr><td class="paramname">pUserCallback</td><td>The dialog window's callback function - see <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> </td></tr>
     <tr><td class="paramname">iFlags</td><td>Various creation flags, see <a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16b">WBDialogWindowFlags</a> </td></tr>
-    <tr><td class="paramname">pUserData</td><td>A 'user data' pointer that is to be associated with the dialog window <pre class="fragment">Use this high-level function to create a dialog window with a text resource.  The text resource
+    <tr><td class="paramname">pUserData</td><td>A 'user data' pointer that is to be associated with the dialog window </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a WBDialogWindow structure for the newly created window <pre class="fragment">Use this high-level function to create a dialog window with a text resource.  The text resource
 contains information about constructing the dialog window.  Standard symbol names are supported,
 along with numeric symbols.
 
@@ -409,10 +413,7 @@ A typical dialog window resource might look as follows:\n
 <div class="line">  CONTROL:Text ID:1001 X:24 Y:2 HEIGHT:20 WIDTH:172 VISIBLE</div>
 <div class="line">  CONTROL:DefPushButton ID:IDOK TITLE:OK X:80 Y:28 WIDTH:40 HEIGHT:18 VISIBLE</div>
 <div class="line">END_DIALOG</div>
-</div><!-- fragment --> <pre class="fragment">For more information, see \ref dialog_resource .</pre> </td></tr>
-  </table>
-  </dd>
-</dl>
+</div><!-- fragment --> <pre class="fragment">For more information, see \ref dialog_resource .</pre> </dd></dl>
 
 <p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00226">226</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
@@ -655,7 +656,7 @@ When specifying the 'szExtAndDescList' parameter, point it to a string similar t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

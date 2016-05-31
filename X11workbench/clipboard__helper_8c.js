@@ -3,7 +3,6 @@ var clipboard__helper_8c =
     [ "_CLIPBOARD_HELPER_C", "clipboard__helper_8c.html#a37d947a2319988bb5bf0a1f0155e8a6c", null ],
     [ "CLIPBOARD_DATA", "clipboard__helper_8c.html#a3337d46874d59646def642dbed0b7dc6", null ],
     [ "CLIPBOARD_TASK", "clipboard__helper_8c.html#a9c8340a15ec6100cd362680f080e9f6e", null ],
-    [ "__ClipboardThreadEventPredicate", "clipboard__helper_8c.html#aa794ecc2e145fc2f6225f8129c9a8722", null ],
     [ "AddNewItemToRunList", "clipboard__helper_8c.html#a2ce172d09679bc6faf13afb79a038fb9", null ],
     [ "CleanupDoneList", "clipboard__helper_8c.html#aef37c7ed3800f366a94af3d0e808f40e", null ],
     [ "ClipboardThreadProc", "clipboard__helper_8c.html#af008f0cd2c753c88516c1e7d840c182e", null ],

@@ -1,6 +1,5 @@
 var menu__bar_8c =
 [
-    [ "__SIZEOF_POINTER_", "menu__bar_8c.html#a200e9ca84795ae4c66e5f6fae03fac0b", null ],
     [ "BORDER", "menu__bar_8c.html#a6d0652ae6ea6a5c4fef68baf139fd085", null ],
     [ "DEBUG_TEST", "menu__bar_8c.html#a16338d0a87c8ce47570e30a485500e6e", null ],
     [ "LOAD_COLOR", "menu__bar_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
@@ -14,7 +13,6 @@ var menu__bar_8c =
     [ "MBGetDefaultMenuFont", "menu__bar_8c.html#a920550fa16c99f21ccc445b64fbf9ee9", null ],
     [ "MBInitGlobal", "menu__bar_8c.html#a9fb073faa3c0e7053b27a35991512df0", null ],
     [ "MBMenuHandleMenuItem", "menu__bar_8c.html#a055ddd49ef21cec1f8f2009d763542f6", null ],
-    [ "MBMenuHandleMenuItemUI", "menu__bar_8c.html#ab6c6f693793c34aca0645fa697ff283f", null ],
     [ "MBMenuParentEvent", "menu__bar_8c.html#adae68bdab62bb6ebac6d467d70555e30", null ],
     [ "MBMenuWinEvent", "menu__bar_8c.html#a7ae4012050dca497506cbfde20d59863", null ],
     [ "MBReCalcMenuBarWindow", "menu__bar_8c.html#a95dbee77c70d489a5ff8eac3718e89c9", null ],

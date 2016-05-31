@@ -61,6 +61,7 @@ $(document).ready(function(){initNavTree('group__pixmap.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Pixmap utility functions</div>  </div>
@@ -70,8 +71,14 @@ $(document).ready(function(){initNavTree('group__pixmap.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__XPM__ATTRIBUTES__.html">_XPM_ATTRIBUTES_</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal XPM helper structure.  <a href="struct__XPM__ATTRIBUTES__.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility structure for use with <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData()</a> whenever libXpm is not in use.  <a href="struct__XPM__ATTRIBUTES__.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaeb0ff1d05c44f48e5ac2c73d073daa7a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__XPM__ATTRIBUTES__.html">_XPM_ATTRIBUTES_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a></td></tr>
+<tr class="memdesc:gaeb0ff1d05c44f48e5ac2c73d073daa7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility structure for use with <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData()</a> whenever libXpm is not in use.  <a href="#gaeb0ff1d05c44f48e5ac2c73d073daa7a">More...</a><br/></td></tr>
+<tr class="separator:gaeb0ff1d05c44f48e5ac2c73d073daa7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -81,13 +88,13 @@ Functions</h2></td></tr>
 <tr class="memitem:gafbf77d08feec964f09ad0c4511381381"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gafbf77d08feec964f09ad0c4511381381">PXM_RegisterPixmapResource</a> (Atom aResource, char *ppResource[])</td></tr>
 <tr class="memdesc:gafbf77d08feec964f09ad0c4511381381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an icon (or pixmap) resource using an Atom.  <a href="#gafbf77d08feec964f09ad0c4511381381">More...</a><br/></td></tr>
 <tr class="separator:gafbf77d08feec964f09ad0c4511381381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6a4a9c282a8dbb5bfebb79eea0adc9f"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f">PXM_GetIconPixmap</a> (int idIcon, <a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr, Pixmap *pMask)</td></tr>
+<tr class="memitem:gae6a4a9c282a8dbb5bfebb79eea0adc9f"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f">PXM_GetIconPixmap</a> (int idIcon, <a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr, Pixmap *pMask)</td></tr>
 <tr class="memdesc:gae6a4a9c282a8dbb5bfebb79eea0adc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Icon pixmap pair using pre-defined resource ID.  <a href="#gae6a4a9c282a8dbb5bfebb79eea0adc9f">More...</a><br/></td></tr>
 <tr class="separator:gae6a4a9c282a8dbb5bfebb79eea0adc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fa81602beac3ccf34d3e5de23ec5c47"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga0fa81602beac3ccf34d3e5de23ec5c47">PXM_GetIconPixmapFromAtom</a> (Atom aIcon, <a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr, Pixmap *pMask)</td></tr>
+<tr class="memitem:ga0fa81602beac3ccf34d3e5de23ec5c47"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga0fa81602beac3ccf34d3e5de23ec5c47">PXM_GetIconPixmapFromAtom</a> (Atom aIcon, <a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr, Pixmap *pMask)</td></tr>
 <tr class="memdesc:ga0fa81602beac3ccf34d3e5de23ec5c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Icon pixmap pair using a registered or pre-defined resource ID.  <a href="#ga0fa81602beac3ccf34d3e5de23ec5c47">More...</a><br/></td></tr>
 <tr class="separator:ga0fa81602beac3ccf34d3e5de23ec5c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d4bf82e252edb337d85ada8a9486963"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga8d4bf82e252edb337d85ada8a9486963">PXM_LoadPixmap</a> (char *ppXPM[], <a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr, Pixmap *pMask)</td></tr>
+<tr class="memitem:ga8d4bf82e252edb337d85ada8a9486963"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga8d4bf82e252edb337d85ada8a9486963">PXM_LoadPixmap</a> (char *ppXPM[], <a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr, Pixmap *pMask)</td></tr>
 <tr class="memdesc:ga8d4bf82e252edb337d85ada8a9486963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create pixmap or pixmap pair using an XPM array.  <a href="#ga8d4bf82e252edb337d85ada8a9486963">More...</a><br/></td></tr>
 <tr class="separator:ga8d4bf82e252edb337d85ada8a9486963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga48509d33c2979ebc9404d9ab7c60351c"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga48509d33c2979ebc9404d9ab7c60351c">PXM_ImageToPixmap</a> (Display *pDisplay, Drawable dw, XImage *pImage, unsigned long clrFGPixel, unsigned long clrBGPixel)</td></tr>
@@ -99,12 +106,41 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1a8c10602b009710fc048b977ab62ac1"><td class="memItemLeft" align="right" valign="top">XImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga1a8c10602b009710fc048b977ab62ac1">PXM_PixmapToImage</a> (Display *pDisplay, Pixmap pxImage)</td></tr>
 <tr class="memdesc:ga1a8c10602b009710fc048b977ab62ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert pixmap to image (a wrapper for XGetImage on a pixmap)  <a href="#ga1a8c10602b009710fc048b977ab62ac1">More...</a><br/></td></tr>
 <tr class="separator:ga1a8c10602b009710fc048b977ab62ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac55eae99a18c54dd4ccce171cdbfbf61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61">MyLoadPixmapFromData</a> (Display *pDisplay, Window wID, char *aData[], Pixmap *pPixmap, Pixmap *pMask, <a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr)</td></tr>
+<tr class="memitem:gac55eae99a18c54dd4ccce171cdbfbf61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61">MyLoadPixmapFromData</a> (Display *pDisplay, Window wID, char *aData[], Pixmap *pPixmap, Pixmap *pMask, <a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *pAttr)</td></tr>
 <tr class="memdesc:gac55eae99a18c54dd4ccce171cdbfbf61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternate for XpmCreatePixmapFromData() when libXpm is not present.  <a href="#gac55eae99a18c54dd4ccce171cdbfbf61">More...</a><br/></td></tr>
 <tr class="separator:gac55eae99a18c54dd4ccce171cdbfbf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Utility functions for loading and managing pixmaps, icons, cursors, and so forth. These are primarily utilities and wrappers that include platform-dependent implementations as well as more generic functionality. </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="gaeb0ff1d05c44f48e5ac2c73d073daa7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__XPM__ATTRIBUTES__.html">_XPM_ATTRIBUTES_</a> <a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compatibility structure for use with <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData()</a> whenever libXpm is not in use. </p>
+<pre class="fragment">When libXpm is in use, XPM_ATTRIBUTES becomes a #define for XpmAttributes, the structure used
+by XpmCreatePixmapFromData().  Because so many elements are not needed, MyLoadPixmapFromData()
+uses this scaled-down version when libXpm is not available.
+
+When libXpm is NOT in use, the follow structure is defined:
+</pre><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">_XPM_ATTRIBUTES_</a></div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4" title="The width of the returned pixmaps.">width</a>;    <span class="comment">// The width of the returned pixmaps</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534" title="height of the returned pixmaps">height</a>;   <span class="comment">// height of the returned pixmaps</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5" title="depth of the returned &#39;image&#39; pixmap. The mask pixmap always has a depth of &#39;1&#39;.">depth</a>;    <span class="comment">// depth of the returned &#39;image&#39; pixmap.  The mask pixmap always has a depth of &#39;1&#39;.</span></div>
+<div class="line"></div>
+<div class="line">} <a class="code" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">XPM_ATTRIBUTES</a>;</div>
+</div><!-- fragment --> <pre class="fragment">When libXpm IS in use, the following macro is defined:
+</pre><div class="fragment"><div class="line"><span class="preprocessor">#define XPM_ATTRIBUTES XpmAttributes</span></div>
+</div><!-- fragment --> 
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gac55eae99a18c54dd4ccce171cdbfbf61"></a>
 <div class="memitem">
@@ -143,7 +179,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
           <td class="paramname"><em>pAttr</em>&#160;</td>
         </tr>
         <tr>
@@ -155,7 +191,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Alternate for XpmCreatePixmapFromData() when libXpm is not present. </p>
-<p>Internal XPM helper function to load a pixmap.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the display to use when creating the pixmaps </td></tr>
@@ -188,7 +223,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
           <td class="paramname"><em>pAttr</em>, </td>
         </tr>
         <tr>
@@ -235,7 +270,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
           <td class="paramname"><em>pAttr</em>, </td>
         </tr>
         <tr>
@@ -391,7 +426,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> *&#160;</td>
           <td class="paramname"><em>pAttr</em>, </td>
         </tr>
         <tr>
@@ -547,7 +582,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

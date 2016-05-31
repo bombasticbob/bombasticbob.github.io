@@ -1,14 +1,13 @@
 var child__frame_8h =
 [
-    [ "WBChildFrame", "child__frame_8h.html#af06650d056e926657cc94548674c1d98", null ],
-    [ "WBChildFrame_FLAGS", "child__frame_8h.html#ga8876436ba7e43c85f832361df3e05a9e", [
-      [ "WBChildFrame_NO_TAB", "child__frame_8h.html#ga8876436ba7e43c85f832361df3e05a9ea2d205951e2714825deddcfebe15a53a2", null ],
-      [ "WBChildFrame_PIXELS", "child__frame_8h.html#ga8876436ba7e43c85f832361df3e05a9ea292eaee8d5845c5193e8cdb6e4699a33", null ]
-    ] ],
-    [ "WBChildFrameFromWindowID", "child__frame_8h.html#ga1a2d0bcb23f882e09250e64ddb60f451", null ],
-    [ "WBDestroyChildFrame", "child__frame_8h.html#gabb4ce4a2f311b62f45f167121c98a831", null ],
-    [ "WBInitChildFrame", "child__frame_8h.html#ga0c4207841066d9a80071835e58f33480", null ],
-    [ "WBSetChildFrameDisplayName", "child__frame_8h.html#gafde217b4e6ba36fab9890c54fb397330", null ],
-    [ "WBSetChildFrameMenuHandlers", "child__frame_8h.html#ga94c1d0566c868de89c90f5e5464c28d3", null ],
-    [ "WBSetEditWindowMenu", "child__frame_8h.html#ga23890ea00300483ebac73ddf1243bf19", null ]
+    [ "CHILD_FRAME_TAG", "child__frame_8h.html#a346eb89f04d577c38d82cfddda0b784e", null ],
+    [ "FWChildFrameEvent", "child__frame_8h.html#ga3549da86196bcc4f4e9c3a06b20eff03", null ],
+    [ "FWChildFrameRecalcLayout", "child__frame_8h.html#ga93f05b54d49824d28c163247f61ee42e", null ],
+    [ "FWDestroyChildFrame", "child__frame_8h.html#ga7d37643bb26a2d032bff749520408f2d", null ],
+    [ "FWGetChildFrameStruct", "child__frame_8h.html#gac338984e00e8c9a717f935d6fa22b73c", null ],
+    [ "FWInitChildFrame", "child__frame_8h.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c", null ],
+    [ "FWSetChildFrameDisplayName", "child__frame_8h.html#ga393f410588656125823b9f159fa43f2c", null ],
+    [ "FWSetChildFrameExtent", "child__frame_8h.html#ga6120d2aa568176b2006560aeaea1678d", null ],
+    [ "FWSetChildFrameMenu", "child__frame_8h.html#ga07390d548c0a436a8a0de1572d085186", null ],
+    [ "FWSetChildFrameMenuHandlers", "child__frame_8h.html#ga2a1f33b655e8a2dc3444eabcc41ba511", null ]
 ];

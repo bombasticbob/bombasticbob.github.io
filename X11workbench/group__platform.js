@@ -1,10 +1,5 @@
 var group__platform =
 [
-    [ "_XPM_ATTRIBUTES_", "struct__XPM__ATTRIBUTES__.html", [
-      [ "depth", "struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5", null ],
-      [ "height", "struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534", null ],
-      [ "width", "struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4", null ]
-    ] ],
     [ "__PACKED__", "group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec", null ],
     [ "DECLARE_SORT_FUNCTION", "group__platform.html#ga8e072186273813195bb5c42ec9b978c2", null ],
     [ "INVALID_HANDLE_VALUE", "group__platform.html#ga5fdc7facea201bfce4ad308105f88d0c", null ],
@@ -20,9 +15,7 @@ var group__platform =
     [ "WB_PROCADDRESS", "group__platform.html#ga4a8d7e4273db30d42de55bae5e2c222d", null ],
     [ "WB_THREAD", "group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491", null ],
     [ "WB_THREAD_KEY", "group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026", null ],
-    [ "XPM_ATTRIBUTES", "group__platform.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a", null ],
     [ "my_qsort_r", "group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886", null ],
-    [ "MyLoadPixmapFromData", "group__platform.html#gac55eae99a18c54dd4ccce171cdbfbf61", null ],
     [ "WBSearchPath", "group__platform.html#gaefaa2afddaf082501611eef7339b1edf", null ],
     [ "WBTempFile", "group__platform.html#gabaf82705f01778a667ddef2239899a2f", null ],
     [ "WBTempFile0", "group__platform.html#ga7f8541b2e7204cafe39d514198b82826", null ]

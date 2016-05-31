@@ -385,7 +385,7 @@ structure.\n
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct____WB__DIALOG__PROP____.html#a207d3b12e11bd65b305d6b0a82bf66bc" title="&#39;long&#39; data value, assigned as needed">lVal</a>;  <span class="comment">// &#39;long&#39; data value, assigned as needed</span></div>
 <div class="line">  <span class="keywordtype">void</span> *<a class="code" href="struct____WB__DIALOG__PROP____.html#a411564e7e66ed76e3a6346cfadc1ff4a" title="pointer to data, as needed (may be allocated, some property types auto-free the data)">pVal</a>;          <span class="comment">// pointer to data, as needed (may be allocated, some property types auto-free the data)</span></div>
 <div class="line">} <a class="code" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6" title="Dialog property storage structure.">WB_DIALOG_PROP</a>;</div>
-</div><!-- fragment --><p> /sa <b>WB_DIALOG_PROP</b> and <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a> </p>
+</div><!-- fragment --><p> /sa <b>WB_DIALOG_PROP</b> and WBDialogPropList </p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ structure with additional data members.\n
 <div class="line"></div>
 <div class="line">} <a class="code" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a>;</div>
 </div><!-- fragment --><p> For each dialog control, a pointer to this structure is assigned to window property index 0, and can be easily obtained using <a class="el" href="group__dlgctrl.html#ga4b4f9ecdaeb8ba0163f595fb0f827c76" title="Returns a pointer to the WBDialogControl structure for a dialog control with validation. May return NULL.">DLGGetDialogControlStruct()</a> (preferred method)</p>
-<p>/sa <b>WB_DIALOG_CONTROL</b>, <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a> </p>
+<p>/sa <b>WB_DIALOG_CONTROL</b> and WBDialogPropList </p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00890">890</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00892">892</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +749,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00964">964</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00966">966</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -796,7 +796,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 </dl>
 <p>Often it is desirable to query control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the final query. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to query for the caption. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00541">541</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00543">543</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Often it is desirable to query control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the final query. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to query for the text property.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgctrl.html#ga9f287b3ff99758d680f27e212cdf1202">WBDialogControlGetProperty()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00674">674</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00676">676</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -897,7 +897,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 </dl>
 <p>Often it is desirable to query control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the final query. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to query for the caption. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00602">602</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00604">604</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -933,7 +933,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <dl class="section return"><dt>Returns</dt><dd>Pointer to WBDialogControl structure associated with the dialog control, or NULL if error or nonexistent</dd></dl>
 <p>This is the preferred function for obtaining a pointer to the WBDialogControl structure for a dialog control window </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00360">360</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00362">362</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +980,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <dl class="section return"><dt>Returns</dt><dd>Pointer to WBDialogControl structure associated with the dialog control, or NULL if error or nonexistent</dd></dl>
 <p>This is the preferred function for obtaining a pointer to the WBDialogControl structure for a dialog control window using the control ID and owning dialog window </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00483">483</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00485">485</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1050,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Use this function when immediate notification is needed, and there is no possibility of a blocking call, recursion, or invalid state as a result of the event processing</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgctrl.html#ga25c0a7ad6eb9e0086dd305aca25f4599" title="Notify Owner by posting an event that will ASYNCHRONOUSLY be sent to the owner window&#39;s callback func...">DLGNotifyOwnerAsync()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01246">1246</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01248">1248</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1120,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Use this function whenever immediate notification is NOT needed, or if there is a possibility of a blocking call, recursion, or invalid state as a result of a direct call to the owner window's callback function.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgctrl.html#ga438add5cbf864bf61dd081d80e47b7e5" title="Notify Owner by calling the owner window&#39;s callback function directly with an event.">DLGNotifyOwner()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01334">1334</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01336">1336</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1191,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Often it's useful to consilidate processing for a single type of event, such as clicking on a scrollbar or pressing an arrow key. Both send completely different event sequences to the control, but have similar processing after a certain point. If each of these generates a 'scroll' type event, and the event is sent to the control's callback, the 'scroll' functionality can be consolidated for both types of event handlers and you avoid duplication and the potential for additional 'bugginess'.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgctrl.html#gade2a325900bc7c4446891fc5b20cdf55" title="Notify &#39;self&#39; by posting an event that will ASYNCHRONOUSLY be sent to the window&#39;s callback function...">DLGNotifySelfAsync()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01299">1299</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01301">1301</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1262,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Often it's useful to consilidate processing for a single type of event, such as clicking on a scrollbar or pressing an arrow key. Both send completely different event sequences to the control, but have similar processing after a certain point. If each of these generates a 'scroll' type event, and the event is sent to the control's callback, the 'scroll' functionality can be consolidated for both types of event handlers and you avoid duplication and the potential for additional 'bugginess'.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgctrl.html#ga5f11771a07c69bfe4c13e353f387214c" title="Notify &#39;self&#39; by calling the window&#39;s own callback function directly with an event.">DLGNotifySelf()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01377">1377</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01379">1379</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1307,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 </dl>
 <p>Registers the callback function for the dialog control. Also assigns the class name string pointer (for debug and trace purposes), which may be different from the default in the case of a subclassed control. This will normally be called immediately after creating the control using <a class="el" href="group__dlgctrl.html#gabdd58e30b5ba5fd23d075455907d42e8" title="Create a dialog control window.">WBDialogControlCreate()</a> </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8c_source.html#l00344">344</a> of file <a class="el" href="dialog__controls_8c_source.html">dialog_controls.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8c_source.html#l00346">346</a> of file <a class="el" href="dialog__controls_8c_source.html">dialog_controls.c</a>.</p>
 
 </div>
 </div>
@@ -1408,7 +1408,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 </dl>
 <p>Often it is desirable to assign control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the assignment. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to assign the caption. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00512">512</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00514">514</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1469,7 +1469,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Often it is desirable to assign control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the assignment. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to assign the property's text value.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgctrl.html#gaf5841f51955c21f7348fd192b6dc598b">WBDialogControlSetProperty()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00639">639</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00641">641</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1522,7 +1522,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 </dl>
 <p>Often it is desirable to assign control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the assignment. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to assign the caption. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00573">573</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00575">575</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1598,18 +1598,20 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
   <table class="params">
     <tr><td class="paramname">aClass</td><td>The class name atom for the window being created (may be None) </td></tr>
     <tr><td class="paramname">pOwner</td><td>The owner window (usually a dialog frame window) </td></tr>
+    <tr><td class="paramname">pDialogEntry</td><td>A pointer to the WBDialogEntry structure associated with the control (the one I will be using) </td></tr>
     <tr><td class="paramname">iX</td><td>The horizontal position of the upper left corner of the control window (relative to the owner window) </td></tr>
     <tr><td class="paramname">iY</td><td>The vertical position of the upper left corner of the control window (relative to the owner window) </td></tr>
     <tr><td class="paramname">iWidth</td><td>The width of the control window </td></tr>
     <tr><td class="paramname">iHeight</td><td>The height of the control window </td></tr>
     <tr><td class="paramname">szTitle</td><td>A null-byte terminated string containing the 'title' text for the control (may be NULL) </td></tr>
-    <tr><td class="paramname">szPropertyList</td><td>A set of newline terminated strings, ending with a null-byte, containing property/value pairs for initial property assignment</td></tr>
+    <tr><td class="paramname">szPropertyList</td><td>A set of newline terminated strings, ending with a null-byte, containing property/value pairs for initial property assignment </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a WBDialogControl structure identifying the control</dd></dl>
 <p>Use this function to create a dialog conrol window, returning a pointer to the WBDialogControl class containing its properties. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8c_source.html#l00352">352</a> of file <a class="el" href="dialog__controls_8c_source.html">dialog_controls.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8c_source.html#l00354">354</a> of file <a class="el" href="dialog__controls_8c_source.html">dialog_controls.c</a>.</p>
 
 </div>
 </div>
@@ -1781,7 +1783,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Obtain the assigned TEXT property for a control, which is different from the CAPTION or Title. </p>
 <p>The TEXT property is a standard property for a dialog control. To preserve consistency use this function to query it, rather than querying the TEXT property directly. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00458">458</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00460">460</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2001,7 +2003,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <p>Assign the TEXT property for a control, which is different from the CAPTION or Title. </p>
 <p>The TEXT property is a standard property for a dialog control. To preserve consistency use this function to assign it, rather than assigning the TEXT property directly. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00439">439</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00441">441</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2031,7 +2033,7 @@ combined with dialog window:  DLGSetControlCaption(), DLGGetControlCaption()\n</
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -97,8 +97,7 @@ long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="separator:a75e0d422e416b24dbdb71a446b37f633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a784da442c51b7035c38b8253a0bdfae2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a784da442c51b7035c38b8253a0bdfae2"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2">lLineCount</a></td></tr>
-<tr class="memdesc:a784da442c51b7035c38b8253a0bdfae2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h1>of lines in 'cData' when ppLineBuf not NULL</h1>
-<br/></td></tr>
+<tr class="memdesc:a784da442c51b7035c38b8253a0bdfae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of lines in 'cData' when ppLineBuf not NULL <br/></td></tr>
 <tr class="separator:a784da442c51b7035c38b8253a0bdfae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a560aa453934694159998937774996"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2a560aa453934694159998937774996"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____file__help__buf____.html#ae2a560aa453934694159998937774996">lLineBufSize</a></td></tr>
@@ -131,7 +130,7 @@ memory buffer as well as from a text file.
 <div class="line">  <span class="keyword">struct </span><a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs">__file_help_buf__</a> *<a class="code" href="struct____file__help__buf____.html#a6918c3f3d28b36832e6773df57b3586e" title="pointer to &#39;next&#39; item in linked list (NULL for last object)">pNext</a>; <span class="comment">// pointer to &#39;next&#39; item in linked list (NULL for last object)</span></div>
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a9f8d162f1bb78e6eb33b102ad156709c" title="size of entire buffer">lBufferSize</a>;                <span class="comment">// size of entire buffer</span></div>
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a75e0d422e416b24dbdb71a446b37f633" title="number of bytes of valid data">lBufferCount</a>;               <span class="comment">// number of bytes of valid data</span></div>
-<div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>;                 <span class="comment">// # of lines in &#39;cData&#39; when ppLineBuf not NULL</span></div>
+<div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>;                 <span class="comment">// number of lines in &#39;cData&#39; when ppLineBuf not NULL</span></div>
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#ae2a560aa453934694159998937774996" title="size of memory block pointed to by &#39;ppLineBuf&#39;">lLineBufSize</a>;               <span class="comment">// size of memory block pointed to by &#39;ppLineBuf&#39;</span></div>
 <div class="line">  <span class="keywordtype">int</span>  <a class="code" href="struct____file__help__buf____.html#aa554ac4b7e21f28462750b92ad87add8" title="various bit flags">iFlags</a>;                     <span class="comment">// various bit flags</span></div>
 <div class="line">  <span class="keywordtype">char</span> **<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>;                <span class="comment">// array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)</span></div>
@@ -154,7 +153,7 @@ periodically using FBParseFileBuf()</pre>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____file__help__buf____.html">__file_help_buf__</a></li>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

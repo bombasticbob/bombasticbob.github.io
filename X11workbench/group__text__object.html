@@ -294,7 +294,7 @@ static __inline__ const <br class="typebreak"/>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__text__buffer__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_buffer_</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct__text__buffer__.html#a7f4fae9f2d922e3c85d3dab45f1dbfe3" title="allocated size of aLines array">nArraySize</a>; <span class="comment">// allocated size of aLines array</span></div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac" title="of entries currently in the array - call WBCheckReAllocTextBuffer() before increasing">nEntries</a>;   <span class="comment">// # of entries currently in the array</span></div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac" title="number of entries currently in the array - call WBCheckReAllocTextBuffer() before increasing...">nEntries</a>;   <span class="comment">// number of entries currently in the array</span></div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// cached information</span></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__text__buffer__.html#a0734be45c637f24ee988b84b76ebf18c" title="The maximum column number for any line, rounded up by &#39;DEFAULT_TAB_WIDTH&#39;.">nMaxCol</a>;     <span class="comment">// The maximum column number for any line, rounded up by &#39;DEFAULT_TAB_WIDTH&#39;</span></div>
@@ -652,7 +652,7 @@ static __inline__ const <br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 'malloc'd pointer to a TEXT_BUFFER object. Use 'WBFreeTextBuffer' to free it safely. </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00474">474</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00475">475</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -690,7 +690,7 @@ static __inline__ const <br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero value on error, or zero on success </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00581">581</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00582">582</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -717,7 +717,7 @@ static __inline__ const <br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00616">616</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00617">617</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -836,7 +836,7 @@ static __inline__ const <br class="typebreak"/>
  For complex edits, use <a class="el" href="group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf" title="Text buffer &#39;cached information&#39; refresh function.">WBTextBufferRefreshCache()</a>.<br/>
  If you join a pair of lines, call this function once for the deleted line, then again for the new (joined) line. </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00639">639</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00640">640</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -865,7 +865,7 @@ static __inline__ const <br class="typebreak"/>
 <p>Call this function to completely re-evaluate the cached information regarding line lengths. In some cases this can be time-consuming, but on a modern processor it's not likely to be noticable for documents smaller than 1Mb in size.<br/>
  You should call this function following an 'undo' or other complex edit operation, in lieu of <a class="el" href="group__text__object.html#ga21cd50513992d6b1687006d260f69f42" title="Text buffer &#39;cached information&#39; update function indicating a change to a line&#39;s length.">WBTextBufferLineChange()</a>. Also, for single-line edits, it may be better to ALWAYS use this function. </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00780">780</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00781">781</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -918,7 +918,7 @@ static __inline__ const <br class="typebreak"/>
 <dl class="section return"><dt>Returns</dt><dd>A 'malloc'd and initialized TEXT_OBJECT pointer - call WBTextObjectDestructor to destroy it</dd></dl>
 <p>This is being implemented as an object, similar to a C++ class with virtual member functions, for the purpose of being able to re-assign the vtable and thereby overload its functionality. </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00906">906</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00907">907</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -946,7 +946,7 @@ static __inline__ const <br class="typebreak"/>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>Use this function to SAFELY destroy an object allocated using WBTextObjectConstructor </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00926">926</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00927">927</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -955,7 +955,7 @@ static __inline__ const <br class="typebreak"/>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -583,7 +583,7 @@ $(document).ready(function(){initNavTree('dialog__impl_8c_source.html','');});
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;{</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<a class="code" href="struct____WB__DIALOG__WINDOW____.html" title="Structure identifying a dialog (frame) window.">WBDialogWindow</a> *pDlg = <a class="code" href="group__dlgwindow.html#ga8a22360f03f14357a2b22dfbff2894b1" title="Returns a pointer to the dialog window&#39;s WBDialogWindow structure.">DLGGetDialogWindowStruct</a>(wID);</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="keyword">struct </span>_FILE_DIALOG_ *pUserData = (<span class="keyword">struct </span>_FILE_DIALOG_ *)(pDlg ? pDlg-&gt;<a class="code" href="struct____WB__DIALOG__WINDOW____.html#a8d75dbe9027a94780bc2f31670400613" title="user data that&#39;s assignable via API">pUserData</a> : NULL);</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;Display *pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window">WBGetWindowDisplay</a>(wID);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">//Display *pDisplay = WBGetWindowDisplay(wID);</span></div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="keywordtype">char</span> *p1, *p2;</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
@@ -953,12 +953,12 @@ $(document).ready(function(){initNavTree('dialog__impl_8c_source.html','');});
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00898"></a><span class="lineno"><a class="code" href="group__dialog.html#gaa9ac41453b238c153917fcd3a33a587d">  898</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__dialog.html#gaa9ac41453b238c153917fcd3a33a587d" title="Display a splash screen for 5 seconds (with animation and copyright string), and then return...">DLGSplashScreen</a>(<span class="keywordtype">char</span> *aXPM[], <span class="keyword">const</span> <span class="keywordtype">char</span> *szCopyright, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> clrText)</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;{</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;Window wID, wIDTemp;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;Window wID;<span class="comment">//, wIDTemp;</span></div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;XSetWindowAttributes xswa;  <span class="comment">/* Temporary Set Window Attribute struct */</span></div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;<span class="keywordtype">int</span> iX, iY, iW, iH;</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;XSizeHints  xsh;            <span class="comment">/* Size hints for window manager */</span></div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;XWMHints xwmh;</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Internal XPM helper structure.">XPM_ATTRIBUTES</a> xattr;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">XPM_ATTRIBUTES</a> xattr;</div>
 <div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;SPLASH data;</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;Atom a1;</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ai1[3];</div>
@@ -1155,296 +1155,297 @@ $(document).ready(function(){initNavTree('dialog__impl_8c_source.html','');});
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> SplashDoExposeEvent(XExposeEvent *pEvent, Display *pDisplay,</div>
 <div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;                               Window wID, <span class="keyword">struct</span> _SPLASH_ *pData)</div>
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;{</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;  <span class="keywordtype">int</span> iHPos, iVPos;</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;  XWindowAttributes xwa;      <span class="comment">/* Temp Get Window Attribute struct */</span></div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;  XFontStruct *pOldFont, *pFont;</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;  XPoint xpt[3];</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;  GC gc;<span class="comment">// = WBGetWindowDefaultGC(wID);</span></div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;  Pixmap pxTemp;</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;  XGCValues xgcv;</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;  <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> geomPaint, geomBorder, geomText;</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;  <span class="keywordtype">int</span> i1, i2, iX, iY, iW, iH, iTimeStart, iTimeEnd;</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;  XRectangle xrct;</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;  <span class="keywordtype">char</span> *p1, *p2;</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;  <span class="keywordflow">if</span>(!pDisplay)</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;  {</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    pDisplay = <a class="code" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203" title="Returns the default Display.">WBGetDefaultDisplay</a>();</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;  }</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;<span class="comment">//  gc = WBBeginPaint(wID, pEvent, &amp;geomPaint);  // gnome b0rks this - window has absolute coordinates!</span></div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;  <span class="keywordflow">if</span>(!pData-&gt;pFont &amp;&amp; pData-&gt;szCopyright &amp;&amp; *(pData-&gt;szCopyright))</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;  {</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    pFont = <a class="code" href="group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80" title="Calculate the ideal font based on the text and rectangle.">DTCalcIdealFont</a>(NULL, pData-&gt;szCopyright, &amp;geomText);</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;</div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    <span class="keywordflow">if</span>(!pFont)</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    {</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;      pFont = <a class="code" href="group__defaults.html#ga83eea3d816ace887a40c079d2991ea2a" title="Returns a pointer to the default font&#39;s XFontStruct.">WBGetDefaultFont</a>();</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;    }</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    pData-&gt;pFont = <a class="code" href="group__font.html#ga736827e64c95112cea24d236b2d7785d" title="make a copy of an existing font (best when assigning to a window)">WBCopyFont</a>(pFont);</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;  }</div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;  pFont = pData-&gt;pFont; <span class="comment">// cache it</span></div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;  bzero(&amp;xgcv, <span class="keyword">sizeof</span>(xgcv));</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;  <span class="keywordflow">if</span>(pFont)</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;  {</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    xgcv.font = pData-&gt;pFont-&gt;fid;</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    xgcv.fill_style = FillSolid;</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;  }</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;  xgcv.foreground = pData-&gt;clrText;</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;  xgcv.background = pData-&gt;clrWhite;</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;  xgcv.line_width = 1;</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;  xgcv.function = GXcopy; <span class="comment">// copy</span></div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;  xgcv.cap_style = CapProjecting;</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;  gc = XCreateGC(pDisplay, wID,</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;                 ((xgcv.font ? GCFont | GCFillStyle : 0) | GCForeground | GCBackground | GCCapStyle | GCFunction | GCLineWidth),</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                 &amp;xgcv);</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;  <span class="keywordflow">if</span>(!gc)</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;  {</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;    <a class="code" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47" title="Preferred method of implementing a &#39;warning level&#39; debug message for all subsystems.">WB_WARN_PRINT</a>(<span class="stringliteral">&quot;%s - * BUG *  line %d\n&quot;</span>, __FUNCTION__, __LINE__);</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;  }</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;  <span class="comment">// now we get to create a window-compatible pixmap compatible with the window size</span></div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;  <span class="comment">// NOTE:  XListDepths and XDefaultDepth may be needed to convert pixmaps to something that&#39;s compatible</span></div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  pxTemp = XCreatePixmap(pDisplay, wID, pData-&gt;iW + 4, pData-&gt;iH + 4,</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;                         DefaultDepth(pDisplay, DefaultScreen(pDisplay)));</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;  <span class="keywordflow">if</span>(!pxTemp)</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;  {</div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s - * BUG *  line %d\n&quot;</span>, __FUNCTION__, __LINE__);</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;    XFreeGC(pDisplay, gc);</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;  }</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  <a class="code" href="group__wcore.html#ga78f3eb1180fe3847bab48df07b2ed733" title="Returns the RAW geometry of the window as reported by the window manager.">WBGetWindowGeom</a>(wID, &amp;geomBorder);</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;  geomBorder.x = geomBorder.y = 0; <span class="comment">// force this (for now, gnome has absolute coordinates for splash window!)</span></div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;  xrct.x = geomBorder.x;</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;  xrct.y = geomBorder.y;</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;  xrct.width = geomBorder.width;</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;  xrct.height = geomBorder.height;</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;  <span class="keywordflow">if</span>(pData-&gt;nIter &lt;= 1)</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;  {</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;<span class="comment">//    WBClearWindow(wID, gc);  GC doesn&#39;t have a clip region yet, don&#39;t do this</span></div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    XClearWindow(pDisplay, wID);  <span class="comment">// erase background</span></div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;  }</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;  <span class="comment">// TODO:  create pixmap, do the operations, then render pixmap</span></div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;  <span class="comment">// TODO:  consider creating clip regions to improve performance</span></div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;  XCopyArea(pDisplay, pData-&gt;pixmap, pxTemp ? pxTemp : wID, gc,</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;            0, 0, pData-&gt;iW, pData-&gt;iH, geomBorder.x + 2, geomBorder.y + 2);</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;  <span class="keywordflow">if</span>(pData-&gt;nIter &gt;= SPLASH_FRAMERATE / 2) <span class="comment">// after first half second</span></div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;  {</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;    geomText.x = geomBorder.x + 2;</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    geomText.y = geomBorder.y + 2;</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;    geomText.width = geomBorder.width - 4;</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;    geomText.height = geomBorder.height - 4;</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;    geomText.y += (geomText.height * 2) / 3;</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;    geomText.height -= (geomText.height * 2) / 3; <span class="comment">// bottom 1/3</span></div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;    <span class="comment">// copyright string is 1 or 2 lines, for now use whatever font I end up with and draw lines separately</span></div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;    <span class="keywordflow">if</span>(pFont)</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    {</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;      <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> rctBounds;</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;      rctBounds.left = geomText.x;</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;      rctBounds.top = geomText.y;</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;      rctBounds.right = rctBounds.left + geomText.width;</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;      rctBounds.bottom = rctBounds.top + geomText.height;</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;      <a class="code" href="group__draw__text.html#ga5a6c2d8e7650da251465c55bd981baaa" title="draw multi-line text">DTDrawMultiLineText</a>(pFont, pData-&gt;szCopyright, pDisplay, gc, pxTemp ? pxTemp : wID,</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;                          -8, 0, &amp;rctBounds, <a class="code" href="draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a2752318131612802b50de90a63af8746" title="center using entire text height (ascent + descent for single line)">DTAlignment_VCENTER</a> | <a class="code" href="draw__text_8h.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9" title="horizontally centered text. tabs are treated as white space">DTAlignment_HCENTER</a>);</div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;<span class="preprocessor"></span>      p1 = pData-&gt;szCopyright;</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;      p2 = strchr(p1, <span class="charliteral">&#39;\n&#39;</span>);</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;      <span class="keywordflow">if</span>(p2)</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;      {</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        *(p2++) = 0;</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;      }</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;      <span class="keywordflow">if</span>(!p2 || !*p2)</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;      {</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;        iX = geomText.x + (geomText.width - XTextWidth(pFont, p1, strlen(p1))) / 2;</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;        iY = geomText.y + (geomText.height - pFont-&gt;max_bounds.ascent + pFont-&gt;max_bounds.descent) / 2</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;           + pFont-&gt;max_bounds.ascent; <span class="comment">// bottom of text</span></div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;        XDrawString(pDisplay, pxTemp ? pxTemp : wID, gc, iX, iY, p1, strlen(p1));</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;      }</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;      {</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        iX = geomText.x + (geomText.width - XTextWidth(pFont, p1, strlen(p1))) / 2;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;        iY = geomText.y + (geomText.height - 2 * (pFont-&gt;max_bounds.ascent + pFont-&gt;max_bounds.descent)) / 2</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;           + pFont-&gt;max_bounds.ascent; <span class="comment">// bottom of text</span></div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        XDrawString(pDisplay, pxTemp ? pxTemp : wID, gc, iX, iY, p1, strlen(p1));</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        iX = geomText.x + (geomText.width - XTextWidth(pFont, p2, strlen(p2))) / 2;</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;        iY += pFont-&gt;max_bounds.ascent + pFont-&gt;max_bounds.descent;</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;        XDrawString(pDisplay, pxTemp ? pxTemp : wID, gc, iX, iY, p2, strlen(p2));</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;      }</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;      <span class="keywordflow">if</span>(p2)</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;      {</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;        *(p2 - 1) = <span class="charliteral">&#39;\n&#39;</span>; <span class="comment">// restore it for next time</span></div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;      }</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;<span class="preprocessor">#endif // 0</span></div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;<span class="preprocessor"></span>    }</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;    {</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;      fprintf(stderr, <span class="stringliteral">&quot;NO FONT, iter=%d\n&quot;</span>, pData-&gt;nIter);</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    }</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    iTimeStart = 3 * SPLASH_FRAMERATE / 2;</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    iTimeEnd = SPLASH_TIME * SPLASH_FRAMERATE - SPLASH_FRAMERATE / 2; <span class="comment">// 1/2 sec before end</span></div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;    <span class="keywordflow">if</span>(iTimeStart + SPLASH_FRAMERATE / 2 &gt; iTimeEnd)</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    {</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;      iTimeStart = iTimeEnd - SPLASH_FRAMERATE / 2;</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;    }</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;</div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    <span class="comment">// drawing the &#39;glimmer&#39; diagonally from upper left to lower right</span></div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    <span class="comment">// TODO:  make this optional?</span></div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    <span class="keywordflow">if</span>(pData-&gt;nIter &gt;= iTimeStart &amp;&amp; pData-&gt;nIter &lt;= iTimeEnd)</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    {</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;      <span class="keywordtype">int</span> bInvert = 0;</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;      <span class="keywordtype">int</span> iDelta = iTimeEnd - iTimeStart + 1;</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;      iX = 2 * (pData-&gt;iW * (pData-&gt;nIter - iTimeStart) / iDelta + pData-&gt;iW / (2 * iDelta));</div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;      iY = 2 * (pData-&gt;iH * (pData-&gt;nIter - iTimeStart) / iDelta + pData-&gt;iH / (2 * iDelta));</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;      <span class="keywordflow">if</span>(iX &gt; pData-&gt;iW || iY &gt; pData-&gt;iH)</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;      {</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;        i1 = (iX - pData-&gt;iW) * pData-&gt;iH / pData-&gt;iW;</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;        i2 = (iY - pData-&gt;iH) * pData-&gt;iW / pData-&gt;iH;</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;        iX = i2;</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;        iY = i1;</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;        bInvert = 1; <span class="comment">// so it&#39;s (iX,pData-&gt;iH-1),(pData-&gt;iW-1,iY)</span></div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;      }</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;      <span class="comment">// using some interesting raster ops, &#39;highlight&#39; the pixels along the line of</span></div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;      <span class="comment">// (0,iY),(iX,0) or (iX,pData-&gt;iH-1),(pData-&gt;iW-1,iY)</span></div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite &amp; 0x404040);</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;      xgcv.line_width = 19;</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;      xgcv.function = GXor; <span class="comment">// a or b</span></div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;      xgcv.cap_style = CapProjecting;</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;      {</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;      }</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;      {</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;      }</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite &amp; 0x808080);</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;      xgcv.line_width = 11;</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;      xgcv.function = GXor; <span class="comment">// a or b</span></div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;      xgcv.cap_style = CapProjecting;</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;      {</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;      }</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;      {</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;      }</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite &amp; 0xc0c0c0);</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;      xgcv.line_width = 5;</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;      xgcv.function = GXor; <span class="comment">// a or b</span></div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;      xgcv.cap_style = CapProjecting;</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;      {</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;      }</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;      {</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;      }</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite);</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;      xgcv.line_width = 1;</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;      xgcv.function = GXcopy; <span class="comment">// copy</span></div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;      xgcv.cap_style = CapProjecting;</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;      {</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;      }</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;      {</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;      }</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    }</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;  }</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;  <span class="comment">// this fixes the border areas properly</span></div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;  xgcv.line_width = 3;</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;  xgcv.function = GXcopy; <span class="comment">// copy</span></div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;  xgcv.cap_style = CapProjecting;</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;  XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, 0,0, pData-&gt;iW + 3, 0);</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, pData-&gt;iW + 3, 0, pData-&gt;iW + 3, pData-&gt;iH + 3);</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, pData-&gt;iW + 3, pData-&gt;iH + 3, 0, pData-&gt;iH + 3);</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, 0, pData-&gt;iH + 3, 0, 0);</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;  <span class="keywordflow">if</span>(pxTemp) <span class="comment">// use the spare bitmap to do the work, thus making the whole screen update at once</span></div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;  {</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;    XCopyArea(pDisplay, pxTemp, wID, gc, 0, 0, pData-&gt;iW + 4, pData-&gt;iH + 4, geomBorder.x, geomBorder.y);</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    XFreePixmap(pDisplay, pxTemp);</div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;  }</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;  XFreeGC(pDisplay, gc);</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;  XSync(pDisplay, 0); <span class="comment">// force update NOW</span></div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;  <a class="code" href="group__expose.html#ga15fc03073ae32c9396749d2d3a0777d2" title="&#39;Paint&#39; helper, validates a geometry for asynchronous Expose event generation">WBValidateGeom</a>(wID, NULL);</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;<span class="comment">//  WBEndPaint(wID, gc);</span></div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;  <span class="keywordflow">return</span> 1;  <span class="comment">// processed</span></div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;}</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;  XFontStruct *pFont;<span class="comment">//, *pOldFont;</span></div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;<span class="comment">//  XPoint xpt[3];</span></div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;  GC gc;<span class="comment">// = WBGetWindowDefaultGC(wID);</span></div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;  Pixmap pxTemp;</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;  XGCValues xgcv;</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;  <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> geomBorder, geomText;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;  XRectangle xrct;</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;<span class="comment">//  WB_GEOM geomPaint;</span></div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;  <span class="keywordtype">int</span> i1, i2, iX, iY, iTimeStart, iTimeEnd;</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;<span class="comment">//  int iW, iH, iHPos, iVPos;</span></div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;<span class="comment">//  XWindowAttributes xwa;      /* Temp Get Window Attribute struct */</span></div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;<span class="comment">//  char *p1, *p2;</span></div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;  <span class="keywordflow">if</span>(!pDisplay)</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;  {</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    pDisplay = <a class="code" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203" title="Returns the default Display.">WBGetDefaultDisplay</a>();</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;  }</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;<span class="comment">//  gc = WBBeginPaint(wID, pEvent, &amp;geomPaint);  // gnome b0rks this - window has absolute coordinates!</span></div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;  <span class="keywordflow">if</span>(!pData-&gt;pFont &amp;&amp; pData-&gt;szCopyright &amp;&amp; *(pData-&gt;szCopyright))</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;  {</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    pFont = <a class="code" href="group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80" title="Calculate the ideal font based on the text and rectangle.">DTCalcIdealFont</a>(NULL, pData-&gt;szCopyright, &amp;geomText);</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    <span class="keywordflow">if</span>(!pFont)</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;    {</div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;      pFont = <a class="code" href="group__defaults.html#ga83eea3d816ace887a40c079d2991ea2a" title="Returns a pointer to the default font&#39;s XFontStruct.">WBGetDefaultFont</a>();</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    }</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    pData-&gt;pFont = <a class="code" href="group__font.html#ga736827e64c95112cea24d236b2d7785d" title="make a copy of an existing font (best when assigning to a window)">WBCopyFont</a>(pFont);</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;  }</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;  pFont = pData-&gt;pFont; <span class="comment">// cache it</span></div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;  bzero(&amp;xgcv, <span class="keyword">sizeof</span>(xgcv));</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;  <span class="keywordflow">if</span>(pFont)</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;  {</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    xgcv.font = pData-&gt;pFont-&gt;fid;</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    xgcv.fill_style = FillSolid;</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;  }</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;  xgcv.foreground = pData-&gt;clrText;</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;  xgcv.background = pData-&gt;clrWhite;</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;  xgcv.line_width = 1;</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;  xgcv.function = GXcopy; <span class="comment">// copy</span></div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;  xgcv.cap_style = CapProjecting;</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;  gc = XCreateGC(pDisplay, wID,</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                 ((xgcv.font ? GCFont | GCFillStyle : 0) | GCForeground | GCBackground | GCCapStyle | GCFunction | GCLineWidth),</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;                 &amp;xgcv);</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;  <span class="keywordflow">if</span>(!gc)</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;  {</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;    <a class="code" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47" title="Preferred method of implementing a &#39;warning level&#39; debug message for all subsystems.">WB_WARN_PRINT</a>(<span class="stringliteral">&quot;%s - * BUG *  line %d\n&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;  }</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;  <span class="comment">// now we get to create a window-compatible pixmap compatible with the window size</span></div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;  <span class="comment">// NOTE:  XListDepths and XDefaultDepth may be needed to convert pixmaps to something that&#39;s compatible</span></div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;  pxTemp = XCreatePixmap(pDisplay, wID, pData-&gt;iW + 4, pData-&gt;iH + 4,</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;                         DefaultDepth(pDisplay, DefaultScreen(pDisplay)));</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;  <span class="keywordflow">if</span>(!pxTemp)</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;  {</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s - * BUG *  line %d\n&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;    XFreeGC(pDisplay, gc);</div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  }</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;  <a class="code" href="group__wcore.html#ga78f3eb1180fe3847bab48df07b2ed733" title="Returns the RAW geometry of the window as reported by the window manager.">WBGetWindowGeom</a>(wID, &amp;geomBorder);</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;  geomBorder.x = geomBorder.y = 0; <span class="comment">// force this (for now, gnome has absolute coordinates for splash window!)</span></div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;  xrct.x = geomBorder.x;</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;  xrct.y = geomBorder.y;</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;  xrct.width = geomBorder.width;</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;  xrct.height = geomBorder.height;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;  <span class="keywordflow">if</span>(pData-&gt;nIter &lt;= 1)</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;  {</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;<span class="comment">//    WBClearWindow(wID, gc);  GC doesn&#39;t have a clip region yet, don&#39;t do this</span></div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;    XClearWindow(pDisplay, wID);  <span class="comment">// erase background</span></div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;  }</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;  <span class="comment">// TODO:  create pixmap, do the operations, then render pixmap</span></div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;  <span class="comment">// TODO:  consider creating clip regions to improve performance</span></div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;  XCopyArea(pDisplay, pData-&gt;pixmap, pxTemp ? pxTemp : wID, gc,</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;            0, 0, pData-&gt;iW, pData-&gt;iH, geomBorder.x + 2, geomBorder.y + 2);</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;  <span class="keywordflow">if</span>(pData-&gt;nIter &gt;= SPLASH_FRAMERATE / 2) <span class="comment">// after first half second</span></div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;  {</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    geomText.x = geomBorder.x + 2;</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;    geomText.y = geomBorder.y + 2;</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;    geomText.width = geomBorder.width - 4;</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;    geomText.height = geomBorder.height - 4;</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;    geomText.y += (geomText.height * 2) / 3;</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;    geomText.height -= (geomText.height * 2) / 3; <span class="comment">// bottom 1/3</span></div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;    <span class="comment">// copyright string is 1 or 2 lines, for now use whatever font I end up with and draw lines separately</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    <span class="keywordflow">if</span>(pFont)</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    {</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;      <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> rctBounds;</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;      rctBounds.left = geomText.x;</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;      rctBounds.top = geomText.y;</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;      rctBounds.right = rctBounds.left + geomText.width;</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;      rctBounds.bottom = rctBounds.top + geomText.height;</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;      <a class="code" href="group__draw__text.html#ga5a6c2d8e7650da251465c55bd981baaa" title="draw multi-line text">DTDrawMultiLineText</a>(pFont, pData-&gt;szCopyright, pDisplay, gc, pxTemp ? pxTemp : wID,</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;                          -8, 0, &amp;rctBounds, <a class="code" href="draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a2752318131612802b50de90a63af8746" title="center using entire text height (ascent + descent for single line)">DTAlignment_VCENTER</a> | <a class="code" href="draw__text_8h.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9" title="horizontally centered text. tabs are treated as white space">DTAlignment_HCENTER</a>);</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;<span class="preprocessor"></span>      p1 = pData-&gt;szCopyright;</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;      p2 = strchr(p1, <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;      <span class="keywordflow">if</span>(p2)</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;      {</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        *(p2++) = 0;</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;      }</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;      <span class="keywordflow">if</span>(!p2 || !*p2)</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;      {</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;        iX = geomText.x + (geomText.width - XTextWidth(pFont, p1, strlen(p1))) / 2;</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        iY = geomText.y + (geomText.height - pFont-&gt;max_bounds.ascent + pFont-&gt;max_bounds.descent) / 2</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;           + pFont-&gt;max_bounds.ascent; <span class="comment">// bottom of text</span></div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        XDrawString(pDisplay, pxTemp ? pxTemp : wID, gc, iX, iY, p1, strlen(p1));</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;      }</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;      {</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;        iX = geomText.x + (geomText.width - XTextWidth(pFont, p1, strlen(p1))) / 2;</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;        iY = geomText.y + (geomText.height - 2 * (pFont-&gt;max_bounds.ascent + pFont-&gt;max_bounds.descent)) / 2</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;           + pFont-&gt;max_bounds.ascent; <span class="comment">// bottom of text</span></div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;        XDrawString(pDisplay, pxTemp ? pxTemp : wID, gc, iX, iY, p1, strlen(p1));</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;        iX = geomText.x + (geomText.width - XTextWidth(pFont, p2, strlen(p2))) / 2;</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        iY += pFont-&gt;max_bounds.ascent + pFont-&gt;max_bounds.descent;</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        XDrawString(pDisplay, pxTemp ? pxTemp : wID, gc, iX, iY, p2, strlen(p2));</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;      }</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;      <span class="keywordflow">if</span>(p2)</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;      {</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;        *(p2 - 1) = <span class="charliteral">&#39;\n&#39;</span>; <span class="comment">// restore it for next time</span></div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;      }</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;<span class="preprocessor">#endif // 0</span></div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;<span class="preprocessor"></span>    }</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;    {</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;      fprintf(stderr, <span class="stringliteral">&quot;NO FONT, iter=%d\n&quot;</span>, pData-&gt;nIter);</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    }</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    iTimeStart = 3 * SPLASH_FRAMERATE / 2;</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    iTimeEnd = SPLASH_TIME * SPLASH_FRAMERATE - SPLASH_FRAMERATE / 2; <span class="comment">// 1/2 sec before end</span></div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    <span class="keywordflow">if</span>(iTimeStart + SPLASH_FRAMERATE / 2 &gt; iTimeEnd)</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    {</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;      iTimeStart = iTimeEnd - SPLASH_FRAMERATE / 2;</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;    }</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    <span class="comment">// drawing the &#39;glimmer&#39; diagonally from upper left to lower right</span></div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <span class="comment">// TODO:  make this optional?</span></div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    <span class="keywordflow">if</span>(pData-&gt;nIter &gt;= iTimeStart &amp;&amp; pData-&gt;nIter &lt;= iTimeEnd)</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;    {</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;      <span class="keywordtype">int</span> bInvert = 0;</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;      <span class="keywordtype">int</span> iDelta = iTimeEnd - iTimeStart + 1;</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;      iX = 2 * (pData-&gt;iW * (pData-&gt;nIter - iTimeStart) / iDelta + pData-&gt;iW / (2 * iDelta));</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;      iY = 2 * (pData-&gt;iH * (pData-&gt;nIter - iTimeStart) / iDelta + pData-&gt;iH / (2 * iDelta));</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;      <span class="keywordflow">if</span>(iX &gt; pData-&gt;iW || iY &gt; pData-&gt;iH)</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;      {</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;        i1 = (iX - pData-&gt;iW) * pData-&gt;iH / pData-&gt;iW;</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;        i2 = (iY - pData-&gt;iH) * pData-&gt;iW / pData-&gt;iH;</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;        iX = i2;</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;        iY = i1;</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;        bInvert = 1; <span class="comment">// so it&#39;s (iX,pData-&gt;iH-1),(pData-&gt;iW-1,iY)</span></div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;      }</div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;      <span class="comment">// using some interesting raster ops, &#39;highlight&#39; the pixels along the line of</span></div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;      <span class="comment">// (0,iY),(iX,0) or (iX,pData-&gt;iH-1),(pData-&gt;iW-1,iY)</span></div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite &amp; 0x404040);</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;      xgcv.line_width = 19;</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;      xgcv.function = GXor; <span class="comment">// a or b</span></div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;      xgcv.cap_style = CapProjecting;</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;      {</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;      }</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;      {</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;      }</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite &amp; 0x808080);</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;      xgcv.line_width = 11;</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;      xgcv.function = GXor; <span class="comment">// a or b</span></div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;      xgcv.cap_style = CapProjecting;</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;      {</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;      }</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;      {</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;      }</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite &amp; 0xc0c0c0);</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;      xgcv.line_width = 5;</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;      xgcv.function = GXor; <span class="comment">// a or b</span></div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;      xgcv.cap_style = CapProjecting;</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;      {</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;      }</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;      {</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;      }</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;      XSetForeground(pDisplay, gc, pData-&gt;clrWhite);</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;      xgcv.line_width = 1;</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;      xgcv.function = GXcopy; <span class="comment">// copy</span></div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;      xgcv.cap_style = CapProjecting;</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;      XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;      <span class="keywordflow">if</span>(!bInvert)</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;      {</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, -2, iY, iX, -2);</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;      }</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;      {</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, iX, pData-&gt;iH + 4, pData-&gt;iW + 4, iY);</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;      }</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;    }</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;  }</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;  <span class="comment">// this fixes the border areas properly</span></div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;  xgcv.line_width = 3;</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;  xgcv.function = GXcopy; <span class="comment">// copy</span></div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;  xgcv.cap_style = CapProjecting;</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;  XChangeGC(pDisplay, gc, GCCapStyle | GCFunction | GCLineWidth, &amp;xgcv);</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, 0,0, pData-&gt;iW + 3, 0);</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, pData-&gt;iW + 3, 0, pData-&gt;iW + 3, pData-&gt;iH + 3);</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, pData-&gt;iW + 3, pData-&gt;iH + 3, 0, pData-&gt;iH + 3);</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;  XDrawLine(pDisplay, pxTemp ? pxTemp : wID, gc, 0, pData-&gt;iH + 3, 0, 0);</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;  <span class="keywordflow">if</span>(pxTemp) <span class="comment">// use the spare bitmap to do the work, thus making the whole screen update at once</span></div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;  {</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    XCopyArea(pDisplay, pxTemp, wID, gc, 0, 0, pData-&gt;iW + 4, pData-&gt;iH + 4, geomBorder.x, geomBorder.y);</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    XFreePixmap(pDisplay, pxTemp);</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;  }</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;  XFreeGC(pDisplay, gc);</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;  XSync(pDisplay, 0); <span class="comment">// force update NOW</span></div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;  <a class="code" href="group__expose.html#ga15fc03073ae32c9396749d2d3a0777d2" title="&#39;Paint&#39; helper, validates a geometry for asynchronous Expose event generation">WBValidateGeom</a>(wID, NULL);</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;<span class="comment">//  WBEndPaint(wID, gc);</span></div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;  <span class="keywordflow">return</span> 1;  <span class="comment">// processed</span></div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;}</div>
 <div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="dialog__impl_8c.html">dialog_impl.c</a></li>
-    <li class="footer">Generated on Wed May 25 2016 03:00:42 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

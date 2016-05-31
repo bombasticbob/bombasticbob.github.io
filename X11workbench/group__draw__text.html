@@ -181,8 +181,8 @@ output when it is at the end of a line, particularly when wrapping text.
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#ab8842d19dcb5084fd4cca196318d3bd4" title="length of text element (in bytes)">nLength</a>;            <span class="comment">// length of text element (in bytes)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#a339c9f28b92af29925c235e75f37bd11" title="width of text in pixels (based on font size) (NA for tabs, LF, valid for white space)">iWidth</a>;             <span class="comment">// width of text in pixels (based on font size) (NA for tabs, LF, valid for white space)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#a2884aa55a9f2544c59a08976071b1d64" title="height of text in pixels (based on font size) (NA for tabs, LF, valid for white space)">iHeight</a>;            <span class="comment">// height of text in pixels (based on font size) (NA for tabs, LF, valid for white space)</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#a237a536bc95e0c75ebc9c69e81efc44f" title="indicates that the text consists of tabs (nLength for # of tabs, pText is NULL)">iIsTab</a>;             <span class="comment">// indicates that the text consists of tabs (nLength for # of tabs, pText is NULL)</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#adf51da265112e0310b0a782496c94669" title="indicates a line feed (CR, CRLF, LF, or LFCR) (nLength for # of line feeds, pText is NULL)...">iIsLineFeed</a>;        <span class="comment">// indicates a line feed (CR, CRLF, LF, or LFCR) (nLength for # of line feeds, pText is NULL)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#a237a536bc95e0c75ebc9c69e81efc44f" title="indicates that the text consists of tabs (nLength for number of tabs, pText is NULL)">iIsTab</a>;             <span class="comment">// indicates that the text consists of tabs (nLength for number of tabs, pText is NULL)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#adf51da265112e0310b0a782496c94669" title="indicates a line feed (CR, CRLF, LF, or LFCR) (nLength for number of line feeds, pText is NULL)...">iIsLineFeed</a>;        <span class="comment">// indicates a line feed (CR, CRLF, LF, or LFCR) (nLength for number of line feeds, pText is NULL)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#ac1ef761a679b65a4f8d349f8f7d37a07" title="indicates that it is &#39;white space&#39; (regular or special character) (nLength, width, height applies)">iIsWhiteSpace</a>;      <span class="comment">// indicates that it is &#39;white space&#39; (regular or special character) (nLength, width, height applies)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#aa46fd71a7485fa548df5fd9356167814" title="Relative &#39;X&#39; pixel position for the beginning of this element (when pre-rendered, else -1)...">iX</a>;                 <span class="comment">// Relative &#39;X&#39; pixel position for the beginning of this element (when pre-rendered, else -1)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORD____.html#a40c1eea16ed01cb492c2faf0eeb8a6e7" title="Relative &#39;Y&#39; pixel position for the beginning of this element (when pre-rendered, else -1)...">iY</a>;                 <span class="comment">// Relative &#39;Y&#39; pixel position for the beginning of this element (when pre-rendered, else -1)</span></div>
@@ -364,8 +364,8 @@ and viewport scrolling.
     <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct (NULL implies system default font) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>A positive integer in 'characters', or negative integer in pixels, indicating tab width </td></tr>
-    <tr><td class="paramname">iTabOrgin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
-    <tr><td class="paramname">prcSource</td><td>A pointer to the 'source' bounding rectangle in which the text is intended to fit. If NULL, the function will ALWAYS return non-zero and return the raw text extents without trying to fit it into a particular bounding rectangle. </td></tr>
+    <tr><td class="paramname">iTabOrigin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
+    <tr><td class="paramname">prcSource</td><td>A pointer to the 'source' bounding rectangle in which the text is intended to fit. (If NULL, the function will ALWAYS return non-zero and return the raw text extents without trying to fit it into a particular bounding rectangle.) </td></tr>
     <tr><td class="paramname">prcDest</td><td>A pointer to the 'destination' bounding rectangle, based on the actual text size, and fit according to iAlignment flags. </td></tr>
     <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags </td></tr>
   </table>
@@ -414,7 +414,7 @@ and viewport scrolling.
   <table class="params">
     <tr><td class="paramname">pRefFont</td><td>A pointer to an XFontStruct (NULL implies system default font) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
-    <tr><td class="paramname">geomBounds</td><td>A pointer to a WBGeom structure that defines a bounding rectangle</td></tr>
+    <tr><td class="paramname">geomBounds</td><td>A pointer to a <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure that defines a bounding rectangle</td></tr>
   </table>
   </dd>
 </dl>
@@ -495,8 +495,9 @@ and viewport scrolling.
   <table class="params">
     <tr><td class="paramname">pFont</td><td>A pointer to the font to use for drawing text (NULL implies system default font) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
     <tr><td class="paramname">gc</td><td>The graphics context for the drawable </td></tr>
-    <tr><td class="paramname">dw</td><td>The drawable (Window or Pixmap, typically) </td></tr>
+    <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>The width of a tab, negative for pixels, positive for avg char width </td></tr>
     <tr><td class="paramname">iTabOrigin</td><td>The 'origin point' for tabulation corresponding to the first character in the string </td></tr>
     <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle </td></tr>
@@ -504,7 +505,7 @@ and viewport scrolling.
   </table>
   </dd>
 </dl>
-<p>draw multi-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.</p>
+<p>This function draws multi-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.</p>
 <p>NOTE: tabs begin at the 'left most' position, adjusted by 'iTabOrigin'. </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l01565">1565</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
@@ -582,8 +583,9 @@ and viewport scrolling.
   <table class="params">
     <tr><td class="paramname">pFont</td><td>A pointer to the font to use for drawing text (NULL implies system default font) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
-    <tr><td class="paramname">gc</td><td>The graphics context for the drawable </td></tr>
-    <tr><td class="paramname">dw</td><td>The drawable (Window or Pixmap, typically) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
+    <tr><td class="paramname">gc</td><td>The graphics context for the Drawable </td></tr>
+    <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>The width of a tab, negative for pixels, positive for avg char width </td></tr>
     <tr><td class="paramname">iTabOrigin</td><td>The 'origin point' for tabulation corresponding to the first character in the string </td></tr>
     <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle </td></tr>
@@ -591,7 +593,9 @@ and viewport scrolling.
   </table>
   </dd>
 </dl>
-<p>draw single-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment. If the text cannot fit within the bounding rectangle, it will be truncated. If you want the text to wrap, use 'DTDrawMultiLineText'</p>
+<p>This function draws single-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.<br/>
+ If the text cannot fit within the bounding rectangle, it will be truncated.<br/>
+ If you want the text to wrap, use <a class="el" href="group__draw__text.html#ga5a6c2d8e7650da251465c55bd981baaa" title="draw multi-line text">DTDrawMultiLineText()</a></p>
 <p>NOTE: tabs begin at the 'left most' text position, adjusted by 'iTabOrigin'. </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l01541">1541</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
@@ -742,9 +746,9 @@ and viewport scrolling.
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct to be used, or NULL for the system default font </td></tr>
-    <tr><td class="paramname">dtWords</td><td>A pointer to the DT_WORDS structure. This structure can be part of a linked list. </td></tr>
+    <tr><td class="paramname">pWords</td><td>A pointer to the DT_WORDS structure. This structure can be part of a linked list. </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>A positive integer in 'characters', or negative integer in pixels, indicating tab width </td></tr>
-    <tr><td class="paramname">iTabOrgin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
+    <tr><td class="paramname">iTabOrigin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
     <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle (advisory with respect to available width and height, based on iAlignment) </td></tr>
     <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags</td></tr>
   </table>
@@ -827,12 +831,18 @@ and viewport scrolling.
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct to be used, or NULL for the system default font </td></tr>
-    <tr><td class="paramname">szText</td><td>A 0-byte terminated UFT8 string containing the text to be rendered </td></tr>
+    <tr><td class="paramname">pWords</td><td>A pointer to the DT_WORDS structure. This structure can be part of a linked list. </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
+    <tr><td class="paramname">gc</td><td>The graphics context for the Drawable </td></tr>
+    <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
+    <tr><td class="paramname">iHScrollBy</td><td>The amount to 'horizontally scroll by' (in 'units' of prcBounds) </td></tr>
+    <tr><td class="paramname">iVScrollBy</td><td>The amount to 'vertically scroll by' (in 'units' of prcBounds) </td></tr>
+    <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle (advisory with respect to available width and height, based on iAlignment) </td></tr>
+    <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd pointer to a DT_WORDS structure (variable length). use 'free()' to de-allocate the memory block.</dd></dl>
-<p>The 'DT_WORDS' structure is intended to be used to cache rendering information, particularly for a large block of text that may be calculation-expensive to re-render. Call '<a class="el" href="group__draw__text.html#ga5c1dff4dec52e1de7dce725525249ffe" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display.">DTPreRender()</a>' and '<a class="el" href="group__draw__text.html#gaab5f01f953283ee14a7347463989af60" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display.">DTRender()</a>' to manage rendering with the DT_WORDS structure. </p>
+<p>This function will scan the DT_WORDS structure 'pWords', and using the other parameters, render the text within the 'prcBounds' rectangle on the specified Drawable. </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l01745">1745</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -843,7 +853,7 @@ and viewport scrolling.
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

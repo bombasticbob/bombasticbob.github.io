@@ -88,7 +88,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga10289c47ba568d1a721f19b817d7a6b7">FW_MENU_HANDLER_END</a>&#160;&#160;&#160;{0, 0, 0} };</td></tr>
 <tr class="memdesc:ga10289c47ba568d1a721f19b817d7a6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this macro to complete the definition of a WBFWMenuHandler array. <br/></td></tr>
 <tr class="separator:ga10289c47ba568d1a721f19b817d7a6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb">FWGetFocusWindow</a>(pFW)&#160;&#160;&#160;<a class="el" href="group__frame__window.html#ga53d54df9be1378ea9817e94af2645f8f">FWGetContainedWindowByIndex</a>(pFW, -1)</td></tr>
+<tr class="memitem:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb">FWGetFocusWindow</a>(pFW)&#160;&#160;&#160;<a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1)</td></tr>
 <tr class="memdesc:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro to aid code readability, returning the Window ID of the contained window that has the focus.  <a href="#ga1f3667b5a203812ffbf9dd8f8e3946fb">More...</a><br/></td></tr>
 <tr class="separator:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -145,7 +145,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00347">347</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00506">506</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -183,13 +183,13 @@ Macros</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">X</td><td>A menu identifier expressed as an ASCII string or ID </td></tr>
-    <tr><td class="paramname">Y</td><td>A callback function pointer, or NULL - see <a class="el" href="struct____WB__FW__MENU__HANDLER__.html#ae58a4b34d068f430bd7cbbfebcf90e00" title="menu callback (gets pointer to the &#39;XClientEvent&#39;)">WBFWMenuHandler::callback</a> </td></tr>
+    <tr><td class="paramname">Y</td><td>A callback function pointer, or NULL - see <a class="el" href="struct____WB__FW__MENU__HANDLER__.html#ae58a4b34d068f430bd7cbbfebcf90e00" title="menu callback (gets pointer to the &#39;XClientMessageEvent&#39;)">WBFWMenuHandler::callback</a> </td></tr>
     <tr><td class="paramname">Z</td><td>A UI callback functino pointer, or NULL - see <a class="el" href="struct____WB__FW__MENU__HANDLER__.html#a48df5817752dd0acd7501acff9a229ba" title="menu &#39;UI&#39; callback to handle displaying menu states.">WBFWMenuHandler::UIcallback</a> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00356">356</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00515">515</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +202,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pFW</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__frame__window.html#ga53d54df9be1378ea9817e94af2645f8f">FWGetContainedWindowByIndex</a>(pFW, -1)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,7 +215,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00392">392</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00551">551</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +224,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -66,9 +66,7 @@ $(document).ready(function(){initNavTree('child__frame_8h.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">child_frame.h File Reference</div>  </div>
@@ -82,52 +80,51 @@ $(document).ready(function(){initNavTree('child__frame_8h.html','');});
 </div>
 <p><a href="child__frame_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure that defines a Child Frame within a Frame Window.  <a href="struct____WBChildFrame____.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:af06650d056e926657cc94548674c1d98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af06650d056e926657cc94548674c1d98"></a>
-typedef struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WBChildFrame</b></td></tr>
-<tr class="separator:af06650d056e926657cc94548674c1d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga8876436ba7e43c85f832361df3e05a9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga8876436ba7e43c85f832361df3e05a9e">WBChildFrame_FLAGS</a> { <a class="el" href="group__child__frame.html#ga8876436ba7e43c85f832361df3e05a9ea2d205951e2714825deddcfebe15a53a2">WBChildFrame_NO_TAB</a> = 1, 
-<a class="el" href="group__child__frame.html#ga8876436ba7e43c85f832361df3e05a9ea292eaee8d5845c5193e8cdb6e4699a33">WBChildFrame_PIXELS</a> = 2
- }</td></tr>
-<tr class="memdesc:ga8876436ba7e43c85f832361df3e05a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration for 'fFlags' member of WBChildFrame  <a href="group__child__frame.html#ga8876436ba7e43c85f832361df3e05a9e">More...</a><br/></td></tr>
-<tr class="separator:ga8876436ba7e43c85f832361df3e05a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a346eb89f04d577c38d82cfddda0b784e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a346eb89f04d577c38d82cfddda0b784e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CHILD_FRAME_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)&quot;FWCF&quot;))</td></tr>
+<tr class="separator:a346eb89f04d577c38d82cfddda0b784e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0c4207841066d9a80071835e58f33480"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga0c4207841066d9a80071835e58f33480">WBInitChildFrame</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pOwner, XFontStruct *pFont, const char *szFocusMenu, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback, int fFlags)</td></tr>
-<tr class="memdesc:ga0c4207841066d9a80071835e58f33480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a child frame (assumed to be a base 'class' for the window)  <a href="group__child__frame.html#ga0c4207841066d9a80071835e58f33480">More...</a><br/></td></tr>
-<tr class="separator:ga0c4207841066d9a80071835e58f33480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb4ce4a2f311b62f45f167121c98a831"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#gabb4ce4a2f311b62f45f167121c98a831">WBDestroyChildFrame</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame)</td></tr>
-<tr class="memdesc:gabb4ce4a2f311b62f45f167121c98a831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an Child Frame.  <a href="group__child__frame.html#gabb4ce4a2f311b62f45f167121c98a831">More...</a><br/></td></tr>
-<tr class="separator:gabb4ce4a2f311b62f45f167121c98a831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23890ea00300483ebac73ddf1243bf19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga23890ea00300483ebac73ddf1243bf19">WBSetEditWindowMenu</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, const char *szFocusMenu)</td></tr>
-<tr class="memdesc:ga23890ea00300483ebac73ddf1243bf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign the menu resource to a Child Frame.  <a href="group__child__frame.html#ga23890ea00300483ebac73ddf1243bf19">More...</a><br/></td></tr>
-<tr class="separator:ga23890ea00300483ebac73ddf1243bf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94c1d0566c868de89c90f5e5464c28d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga94c1d0566c868de89c90f5e5464c28d3">WBSetChildFrameMenuHandlers</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
-<tr class="memdesc:ga94c1d0566c868de89c90f5e5464c28d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign menu handlers to a Child Frame.  <a href="group__child__frame.html#ga94c1d0566c868de89c90f5e5464c28d3">More...</a><br/></td></tr>
-<tr class="separator:ga94c1d0566c868de89c90f5e5464c28d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafde217b4e6ba36fab9890c54fb397330"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#gafde217b4e6ba36fab9890c54fb397330">WBSetChildFrameDisplayName</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, const char *szDisplayName)</td></tr>
-<tr class="memdesc:gafde217b4e6ba36fab9890c54fb397330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the display name.  <a href="group__child__frame.html#gafde217b4e6ba36fab9890c54fb397330">More...</a><br/></td></tr>
-<tr class="separator:gafde217b4e6ba36fab9890c54fb397330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a2d0bcb23f882e09250e64ddb60f451"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga1a2d0bcb23f882e09250e64ddb60f451">WBChildFrameFromWindowID</a> (Window wID)</td></tr>
-<tr class="memdesc:ga1a2d0bcb23f882e09250e64ddb60f451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the associated WBChildFrame structure pointer for a Window ID.  <a href="group__child__frame.html#ga1a2d0bcb23f882e09250e64ddb60f451">More...</a><br/></td></tr>
-<tr class="separator:ga1a2d0bcb23f882e09250e64ddb60f451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9b14e9a9ad32a0b413e1dd3c5b3f95c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c">FWInitChildFrame</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pOwner, XFontStruct *pFont, const char *szFocusMenu, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback, int fFlags)</td></tr>
+<tr class="memdesc:gaf9b14e9a9ad32a0b413e1dd3c5b3f95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a child frame (assumed to be a base 'class' for the window)  <a href="group__child__frame.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c">More...</a><br/></td></tr>
+<tr class="separator:gaf9b14e9a9ad32a0b413e1dd3c5b3f95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d37643bb26a2d032bff749520408f2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d">FWDestroyChildFrame</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame)</td></tr>
+<tr class="memdesc:ga7d37643bb26a2d032bff749520408f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an Child Frame.  <a href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d">More...</a><br/></td></tr>
+<tr class="separator:ga7d37643bb26a2d032bff749520408f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07390d548c0a436a8a0de1572d085186"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga07390d548c0a436a8a0de1572d085186">FWSetChildFrameMenu</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, const char *szFocusMenu)</td></tr>
+<tr class="memdesc:ga07390d548c0a436a8a0de1572d085186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign the menu resource to a Child Frame.  <a href="group__child__frame.html#ga07390d548c0a436a8a0de1572d085186">More...</a><br/></td></tr>
+<tr class="separator:ga07390d548c0a436a8a0de1572d085186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a1f33b655e8a2dc3444eabcc41ba511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga2a1f33b655e8a2dc3444eabcc41ba511">FWSetChildFrameMenuHandlers</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
+<tr class="memdesc:ga2a1f33b655e8a2dc3444eabcc41ba511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign menu handlers to a Child Frame.  <a href="group__child__frame.html#ga2a1f33b655e8a2dc3444eabcc41ba511">More...</a><br/></td></tr>
+<tr class="separator:ga2a1f33b655e8a2dc3444eabcc41ba511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga393f410588656125823b9f159fa43f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga393f410588656125823b9f159fa43f2c">FWSetChildFrameDisplayName</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, const char *szDisplayName)</td></tr>
+<tr class="memdesc:ga393f410588656125823b9f159fa43f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the display name.  <a href="group__child__frame.html#ga393f410588656125823b9f159fa43f2c">More...</a><br/></td></tr>
+<tr class="separator:ga393f410588656125823b9f159fa43f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6120d2aa568176b2006560aeaea1678d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d">FWSetChildFrameExtent</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame, int iXExtent, int iYExtent)</td></tr>
+<tr class="memdesc:ga6120d2aa568176b2006560aeaea1678d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the X,Y extent for the child frame (notifies everything)  <a href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d">More...</a><br/></td></tr>
+<tr class="separator:ga6120d2aa568176b2006560aeaea1678d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93f05b54d49824d28c163247f61ee42e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e">FWChildFrameRecalcLayout</a> (<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pChildFrame)</td></tr>
+<tr class="memdesc:ga93f05b54d49824d28c163247f61ee42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child frame notification callback (called by frame window)  <a href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e">More...</a><br/></td></tr>
+<tr class="separator:ga93f05b54d49824d28c163247f61ee42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3549da86196bcc4f4e9c3a06b20eff03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03">FWChildFrameEvent</a> (Window wID, XEvent *pEvent)</td></tr>
+<tr class="memdesc:ga3549da86196bcc4f4e9c3a06b20eff03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default event handler for Child Frame window.  <a href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03">More...</a><br/></td></tr>
+<tr class="separator:ga3549da86196bcc4f4e9c3a06b20eff03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac338984e00e8c9a717f935d6fa22b73c"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#gac338984e00e8c9a717f935d6fa22b73c">FWGetChildFrameStruct</a> (Window wID)</td></tr>
+<tr class="memdesc:gac338984e00e8c9a717f935d6fa22b73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the associated WBChildFrame structure pointer for a Window ID.  <a href="group__child__frame.html#gac338984e00e8c9a717f935d6fa22b73c">More...</a><br/></td></tr>
+<tr class="separator:gac338984e00e8c9a717f935d6fa22b73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Child Frame API functions. </p>
 <p>Child Frames are child windows that display a tab in the Frame window, and have specialized menus and menu handlers associated with them.<br/>
  The Child Frame also provides for horizontal and vertical scrolling of the display surface, as needed, varying the display region.<br/>
- A derived window will need to register the appropriate callbacks, and have the ' </p>
+ A derived window will need to register the appropriate callbacks, and have the 'WBChildFrame' structure as the first member of its own structure. When the derived window creates the structure, it must initialize its own structure first, and then call <a class="el" href="group__child__frame.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c" title="Initialize a child frame (assumed to be a base &#39;class&#39; for the window)">FWInitChildFrame()</a> to complete the process. And when the drived window is destroyed, it must call <a class="el" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d" title="Destroy an Child Frame.">FWDestroyChildFrame()</a> to complete the 'destruction' process.<br/>
+ The behavior of a Child Frame is like a 'base class' in C++, with a kind of polymorphism and abstraction used by the containing WBFrameWindow to manage focus, tabs, and layout changes.<br/>
+ The Child Frame then handles scrolling and 'menu change on focus change', so that each type of Child Frame can have its own menu. The Frame Window will change the displayed menu according to the Child Frame that has the current focus, and display a default menu when there is no Child Frame.<br/>
+ A derived Child Frame maintains its own data as well as handling events. So, rather than abstracting the data from the Child Frame, this toolkit combines them (as it is simpler to do so). If you need extra levels of abstraction, just create more 'derived' versions from your own designs, and abstract the 'next level up'.<br/>
+ </p>
 
 <p>Definition in file <a class="el" href="child__frame_8h_source.html">child_frame.h</a>.</p>
 </div></div><!-- contents -->
@@ -136,7 +133,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="child__frame_8h.html">child_frame.h</a></li>
-    <li class="footer">Generated on Wed May 25 2016 03:00:43 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -349,15 +349,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_fre
 <tr class="memitem:a31f0929e762c72720b3af04e36087f4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31f0929e762c72720b3af04e36087f4c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_add_undo</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int iOperation, int iSelMode, int iStartRow, int iStartCol, const <a class="el" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prctStartSel, const char *pStartText, int cbStartText, int iEndRow, int iEndCol, const <a class="el" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prctEndSel, const char *pEndText, int cbEndText)</td></tr>
 <tr class="separator:a31f0929e762c72720b3af04e36087f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20c65b2dd3c0568bfa8c69d3375bd1a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20c65b2dd3c0568bfa8c69d3375bd1a7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_add_redo</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, struct __internal_undo_redo_buffer *pUndo)</td></tr>
-<tr class="separator:a20c65b2dd3c0568bfa8c69d3375bd1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae050ff2f13744fc0f2fa04768b6b320a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae050ff2f13744fc0f2fa04768b6b320a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_perform_undo</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, struct __internal_undo_redo_buffer *pUndo)</td></tr>
-<tr class="separator:ae050ff2f13744fc0f2fa04768b6b320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a49a01593d70442fc2bc68faca44c90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a49a01593d70442fc2bc68faca44c90"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_perform_redo</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, struct __internal_undo_redo_buffer *pRedo)</td></tr>
-<tr class="separator:a4a49a01593d70442fc2bc68faca44c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75d52fc6063c4c556290560345bd3534"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75d52fc6063c4c556290560345bd3534"></a>
 static char *&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_get_selected_text</b> (const struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int iRow, int iCol, int iEndRow, int iEndCol)</td></tr>
 <tr class="separator:a75d52fc6063c4c556290560345bd3534"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,12 +373,6 @@ const <a class="el" href="group__text__object.html#ga44726f48c6cbcc4ef5e670740db
 <tr class="memitem:a83cc10f2dfc168b7f767bebc118e14d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83cc10f2dfc168b7f767bebc118e14d5"></a>
 static const char&#160;</td><td class="memItemRight" valign="bottom"><b>szWBAllocTag</b> [] =&quot;WB_M&quot;</td></tr>
 <tr class="separator:a83cc10f2dfc168b7f767bebc118e14d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a3e41cb31e40e7db364d2a5404f7615"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a3e41cb31e40e7db364d2a5404f7615"></a>
-static struct __malloc_header__ *&#160;</td><td class="memItemRight" valign="bottom"><b>pMallocList</b> = NULL</td></tr>
-<tr class="separator:a6a3e41cb31e40e7db364d2a5404f7615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a6cf83d4599dfec801e7375e8e8388"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32a6cf83d4599dfec801e7375e8e8388"></a>
-static struct __malloc_header__ *&#160;</td><td class="memItemRight" valign="bottom"><b>pMallocListEnd</b> = NULL</td></tr>
-<tr class="separator:a32a6cf83d4599dfec801e7375e8e8388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utilities for copying and drawing text, determining text extents, and so on. </p>
@@ -421,7 +406,7 @@ static struct __malloc_header__ *&#160;</td><td class="memItemRight" valign="bot
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="text__object_8c.html">text_object.c</a></li>
-    <li class="footer">Generated on Wed May 25 2016 03:00:43 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

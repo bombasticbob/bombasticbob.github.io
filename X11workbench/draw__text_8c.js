@@ -17,7 +17,7 @@ var draw__text_8c =
     [ "InternalCalcIdealBounds", "draw__text_8c.html#ga3dbf9362aa6875a61b3f3dfecb0d16f4", null ],
     [ "InternalDebugDumpWords", "draw__text_8c.html#a2191cf9865900ba9fb7b22c93bb291b9", null ],
     [ "WBCatString", "draw__text_8c.html#ga3cd9dc296e11519265f83431edcad082", null ],
-    [ "WBCatStringN", "draw__text_8c.html#ga8329041bbc3dae05ef8e702c9c8b0f14", null ],
+    [ "WBCatStringN", "draw__text_8c.html#ga4af5e6852bf30948fc71dc9ee4432ce6", null ],
     [ "WBCopyString", "draw__text_8c.html#ga01c938dde1b777421803b3e31c4717aa", null ],
     [ "WBCopyStringN", "draw__text_8c.html#ga892d4fcc14f538f9c2e2475bce9c1279", null ],
     [ "WBDeQuoteString", "draw__text_8c.html#ga970cc5651dadf44ab9335c64ef67283b", null ],

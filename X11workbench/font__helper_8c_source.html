@@ -602,21 +602,21 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      *tbuf = 0;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  }</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; WBFontFlag_WT_MASK)  <span class="comment">// iFlags overrides</span></div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffab35fe7a6d1b0fa85e67ff79004b18a96" title="font weight bit mask">WBFontFlag_WT_MASK</a>)  <span class="comment">// iFlags overrides</span></div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  {</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WT_REGULAR:</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffae159c7c7a6a610ef8a695ff87807a58c" title="regular font weight (mutually exclusive0">WBFontFlag_WT_REGULAR</a>:</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;regular&quot;</span>);</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WT_MEDIUM:</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa9bcb4697361f77dc59df1a3d255a53ac" title="medium font weight (mutually exclusive0">WBFontFlag_WT_MEDIUM</a>:</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;medium&quot;</span>);</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WT_DEMIBOLD:</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffae8864a8cdb230540ce49f6537ac69813" title="demi-bold font weight (mutually exclusive0">WBFontFlag_WT_DEMIBOLD</a>:</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;demibold&quot;</span>);</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WT_BOLD:</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa6dd88c21c3d8cd61d9828066fbd340b8" title="bold font weight (mutually exclusive0">WBFontFlag_WT_BOLD</a>:</div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;bold&quot;</span>);</div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WT_ANY:</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa3a13810bc1ca8b4ed2c531ebc7266799" title="Any font weight specification (mutually exclusive)">WBFontFlag_WT_ANY</a>:</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      <span class="keywordflow">if</span>(bForceWildcard || !*tbuf)</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        strcpy(tbuf, <span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -643,18 +643,18 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;      *tbuf = 0;</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  }</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; WBFontFlag_SLANT_MASK)  <span class="comment">// iFlags overrides</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa630bf3256132291f1e886ff5ce90ef3a" title="slant mask">WBFontFlag_SLANT_MASK</a>)  <span class="comment">// iFlags overrides</span></div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  {</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_SLANT_REGULAR:</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0e001d8a2b73b0e9b2f6cf4a367910f1" title="&#39;regular&#39; slant (mutually exclusive)">WBFontFlag_SLANT_REGULAR</a>:</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;r&quot;</span>);</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_SLANT_OBLIQUE:</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa690416ec7bcb189c13f4c9a30d9e4272" title="&#39;oblique&#39; slant (mutually exclusive)">WBFontFlag_SLANT_OBLIQUE</a>:</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;o&quot;</span>);</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_SLANT_ITALIC:</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa1a1fa4eb4676476a383eaa3dde1100c9" title="&#39;italic&#39; slant (mutually exclusive)">WBFontFlag_SLANT_ITALIC</a>:</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;i&quot;</span>);</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_SLANT_ANY:</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa8bb562bd8a7ffb91ed670a557c062a50" title="&#39;default&#39; slant (zero; mutually exclusive; may return an italic or oblique font)">WBFontFlag_SLANT_ANY</a>:</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;      <span class="keywordflow">if</span>(bForceWildcard || !*tbuf)</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        strcpy(tbuf, <span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -681,15 +681,15 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;      *tbuf = 0;</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  }</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; WBFontFlag_WIDTH_MASK)</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffab8bc02bc0479f2890850bebe045e7422" title="width mask">WBFontFlag_WIDTH_MASK</a>)</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  {</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WIDTH_NORMAL:</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa5918b801cd55e2d16a828a96af020e05" title="normal width (mutually exclusive)">WBFontFlag_WIDTH_NORMAL</a>:</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;normal&quot;</span>);</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WIDTH_SEMICOND:</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffaec61c0cc1e109d891549427f038ced9e" title="semicondensed width (mutually exclusive)">WBFontFlag_WIDTH_SEMICOND</a>:</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;semicondensed&quot;</span>);</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_WIDTH_ANY:</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffaa066ebb2989f1d7676d24baf56c939c9" title="&#39;Any&#39; width (zero; mutually exclusive)">WBFontFlag_WIDTH_ANY</a>:</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;      <span class="keywordflow">if</span>(bForceWildcard || !*tbuf)</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        strcpy(tbuf, <span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -700,15 +700,15 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  strncpy(tbuf, pFI-&gt;szAdStyle, <span class="keyword">sizeof</span>(tbuf));</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <span class="comment">// if I&#39;m insisting on serif then this must be blank</span></div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; WBFontFlag_STYLE_MASK)</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa1dc7f928d38cabb4558a90e7ed655214" title="style mask">WBFontFlag_STYLE_MASK</a>)</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  {</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_STYLE_SANS:</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa6075985bb1611df72947393321e9e20c" title="force sans-serif">WBFontFlag_STYLE_SANS</a>:</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;sans&quot;</span>);</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_STYLE_SERIF:</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0feb3ea8d12b845d64d183f8e1e86fae" title="force serif (i.e. &#39;not sans&#39;)">WBFontFlag_STYLE_SERIF</a>:</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      *tbuf = 0;</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_STYLE_ANY:</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa540e1b9248a8e47cf31c51b73d7fd950" title="&#39;Any&#39; style (default, zero)">WBFontFlag_STYLE_ANY</a>:</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;      <span class="keywordflow">if</span>(bForceWildcard)</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        strcpy(tbuf, <span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -721,7 +721,7 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  iAvgWidth = pFI-&gt;iAvgWidth;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="keywordflow">if</span>((iFlags &amp; WBFontFlag_SIZE_MASK) == WBFontFlag_SIZE_PIXELS)</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="keywordflow">if</span>((iFlags &amp; <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa59b3eb972640182fc0bb96ccd7cec95a" title="&#39;size mask&#39; for font size &gt; 0">WBFontFlag_SIZE_MASK</a>) == <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffafeabc2ecff39673379f552fbbb2d7fd0" title="font size is in &#39;pixels&#39; (when font size &gt; 0)">WBFontFlag_SIZE_PIXELS</a>)</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;  {</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="keywordflow">if</span>(pFI-&gt;iPixelSize &gt; 0 &amp;&amp; iSize &lt; 0 &amp;&amp; !bForceWildcard)</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;      sprintf(tbuf, <span class="stringliteral">&quot;%d&quot;</span>, pFI-&gt;iPixelSize);</div>
@@ -748,15 +748,15 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    DO_FONT_BUILD_THING(tbuf);</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  }</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>((iFlags &amp; WBFontFlag_SIZE_MASK) == WBFontFlag_SIZE_POINTS ||</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;          (iFlags &amp; WBFontFlag_SIZE_MASK) == WBFontFlag_SIZE_TWIPS)</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>((iFlags &amp; WBFontFlag_SIZE_MASK) == <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa00fefa9ec38fa26c59baa2ea1f8c2711" title="font size is in &#39;points&#39; (when font size &gt; 0)">WBFontFlag_SIZE_POINTS</a> ||</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;          (iFlags &amp; WBFontFlag_SIZE_MASK) == <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa61e08f1274c1c4ae92fe24a51fa6c733" title="font size is in &#39;twips&#39; (when font size &gt; 0)">WBFontFlag_SIZE_TWIPS</a>)</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  {</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="keywordflow">if</span>(pFI-&gt;iPointSize &gt; 0 &amp;&amp; !bForceWildcard)</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    {</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;      <span class="keywordflow">if</span>(iSize &lt; 0 ||</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;         ((iFlags &amp; WBFontFlag_SIZE_MASK) == WBFontFlag_SIZE_POINTS</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;         ((iFlags &amp; WBFontFlag_SIZE_MASK) == <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa00fefa9ec38fa26c59baa2ea1f8c2711" title="font size is in &#39;points&#39; (when font size &gt; 0)">WBFontFlag_SIZE_POINTS</a></div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;          &amp;&amp; iSize * 10 == pFI-&gt;iPointSize) ||</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;         ((iFlags &amp; WBFontFlag_SIZE_MASK) == WBFontFlag_SIZE_TWIPS</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;         ((iFlags &amp; WBFontFlag_SIZE_MASK) == <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa61e08f1274c1c4ae92fe24a51fa6c733" title="font size is in &#39;twips&#39; (when font size &gt; 0)">WBFontFlag_SIZE_TWIPS</a></div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;          &amp;&amp; iSize / 2 == pFI-&gt;iPointSize))</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;      {</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        sprintf(tbuf, <span class="stringliteral">&quot;%d&quot;</span>, pFI-&gt;iPixelSize);</div>
@@ -765,7 +765,7 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;      {</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        strcpy(tbuf, <span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;      }</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>((iFlags &amp; WBFontFlag_SIZE_MASK) == WBFontFlag_SIZE_POINTS)</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>((iFlags &amp; WBFontFlag_SIZE_MASK) == <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa00fefa9ec38fa26c59baa2ea1f8c2711" title="font size is in &#39;points&#39; (when font size &gt; 0)">WBFontFlag_SIZE_POINTS</a>)</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;      {</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        sprintf(tbuf, <span class="stringliteral">&quot;%d&quot;</span>, ((pFI-&gt;iPixelSize * 20 * iSize / pFI-&gt;iPointSize) + 1) / 2);</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      }</div>
@@ -783,7 +783,7 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;      sprintf(tbuf, <span class="stringliteral">&quot;%d&quot;</span>, pFI-&gt;iPointSize);</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(iSize &gt; 0)</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    {</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      <span class="keywordflow">if</span>((iFlags &amp; WBFontFlag_SIZE_MASK) == WBFontFlag_SIZE_POINTS)</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      <span class="keywordflow">if</span>((iFlags &amp; WBFontFlag_SIZE_MASK) == <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa00fefa9ec38fa26c59baa2ea1f8c2711" title="font size is in &#39;points&#39; (when font size &gt; 0)">WBFontFlag_SIZE_POINTS</a>)</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;      {</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        sprintf(tbuf, <span class="stringliteral">&quot;%d&quot;</span>, iSize * 10);</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <span class="keywordflow">if</span>(pFI-&gt;iPointSize != iSize * 10)</div>
@@ -849,18 +849,18 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  }</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; WBFontFlag_PITCH_MASK)</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="keywordflow">switch</span>(iFlags &amp; <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffac6e32692bcad832ecc1f1b19222f890d" title="&#39;pitch mask&#39;">WBFontFlag_PITCH_MASK</a>)</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  {</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_PITCH_FIXED:</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa36cbb5eb7a08f150506081590e08ec0a" title="force fixed pitch">WBFontFlag_PITCH_FIXED</a>:</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;m&quot;</span>);</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_PITCH_CONDENSED:</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffad112dba8b044ae5e6d5f417d13999b71" title="condensed (alternate to &#39;fixed&#39;)">WBFontFlag_PITCH_CONDENSED</a>:</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;c&quot;</span>);</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_PITCH_VARIABLE:</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffac53b8a1df1c849a3b64e6f8a54b0f6f0" title="force variable pitch">WBFontFlag_PITCH_VARIABLE</a>:</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;      strcpy(tbuf, <span class="stringliteral">&quot;p&quot;</span>);</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    <span class="keywordflow">case</span> WBFontFlag_PITCH_ANY:</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0456825fc53e3ea3268126d851a0e542" title="&#39;Any&#39; pitch (default, zero)">WBFontFlag_PITCH_ANY</a>:</div>
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;      <span class="keywordflow">if</span>(!*tbuf || bForceWildcard)</div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        strcpy(tbuf, <span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -1061,12 +1061,12 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;      <span class="keywordflow">if</span>(pFI-&gt;iPixelSize &gt; 0)</div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;      {</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;        iFontSize = pFI-&gt;iPixelSize;</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        iFlags |= WBFontFlag_SIZE_PIXELS;</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        iFlags |= <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffafeabc2ecff39673379f552fbbb2d7fd0" title="font size is in &#39;pixels&#39; (when font size &gt; 0)">WBFontFlag_SIZE_PIXELS</a>;</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;      }</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pFI-&gt;iPointSize &gt; 0)</div>
 <div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;      {</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        iFontSize = pFI-&gt;iPointSize;</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;        iFlags |= WBFontFlag_SIZE_POINTS;</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;        iFlags |= <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa00fefa9ec38fa26c59baa2ea1f8c2711" title="font size is in &#39;points&#39; (when font size &gt; 0)">WBFontFlag_SIZE_POINTS</a>;</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;      }</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;      {</div>
@@ -1078,7 +1078,7 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    <span class="keywordflow">if</span>(!pFI)</div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    {</div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;      iFontSize = pOriginal-&gt;ascent + pOriginal-&gt;descent;</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;      iFlags |= WBFontFlag_SIZE_PIXELS;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;      iFlags |= <a class="code" href="font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffafeabc2ecff39673379f552fbbb2d7fd0" title="font size is in &#39;pixels&#39; (when font size &gt; 0)">WBFontFlag_SIZE_PIXELS</a>;</div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;    }</div>
 <div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;    {</div>
@@ -1294,7 +1294,7 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="font__helper_8c.html">font_helper.c</a></li>
-    <li class="footer">Generated on Wed May 25 2016 03:00:43 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

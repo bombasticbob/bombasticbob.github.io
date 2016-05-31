@@ -89,7 +89,7 @@ Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="separator:ac1bf4c310535451938ef5b31b2b0c51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa554ac4b7e21f28462750b92ad87add8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa554ac4b7e21f28462750b92ad87add8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html#aa554ac4b7e21f28462750b92ad87add8">iFlags</a></td></tr>
-<tr class="memdesc:aa554ac4b7e21f28462750b92ad87add8"><td class="mdescLeft">&#160;</td><td class="mdescRight">bitmask of attribute flags (see <a class="el" href="group__frame__window.html#ga359543d20a365fe240eb7641ec9fa130">WBFrameWindowFlags</a> enumeration) <br/></td></tr>
+<tr class="memdesc:aa554ac4b7e21f28462750b92ad87add8"><td class="mdescLeft">&#160;</td><td class="mdescRight">bitmask of attribute flags (see <a class="el" href="group__frame__window.html#ga21dd621be91fedb5d2a59b8d9711bab9">WBFrameWindow_FLAGS</a> enumeration) <br/></td></tr>
 <tr class="separator:aa554ac4b7e21f28462750b92ad87add8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7853bf1a94cfbc4acf1198eb8e557d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7853bf1a94cfbc4acf1198eb8e557d5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html#ab7853bf1a94cfbc4acf1198eb8e557d5">iClientX</a></td></tr>
@@ -107,10 +107,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html#a611ee0649d456278be1b38dffce515a5">iClientHeight</a></td></tr>
 <tr class="memdesc:a611ee0649d456278be1b38dffce515a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current height of the frame window's client area. <br/></td></tr>
 <tr class="separator:a611ee0649d456278be1b38dffce515a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8923c9253dc2f4b2186a564941c06794"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8923c9253dc2f4b2186a564941c06794"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html#a8923c9253dc2f4b2186a564941c06794">fFlags</a></td></tr>
-<tr class="memdesc:a8923c9253dc2f4b2186a564941c06794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various bit flags. <br/></td></tr>
-<tr class="separator:a8923c9253dc2f4b2186a564941c06794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3769bc855baa7894a2d2b74f442f5277"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3769bc855baa7894a2d2b74f442f5277"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html#a3769bc855baa7894a2d2b74f442f5277">iFirstTab</a></td></tr>
+<tr class="memdesc:a3769bc855baa7894a2d2b74f442f5277"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first visible tab index (0 if none) <br/></td></tr>
+<tr class="separator:a3769bc855baa7894a2d2b74f442f5277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dd302c6a1da0386a9e299e240bc2a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2dd302c6a1da0386a9e299e240bc2a2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html#ac2dd302c6a1da0386a9e299e240bc2a2">iTabWidth</a></td></tr>
+<tr class="memdesc:ac2dd302c6a1da0386a9e299e240bc2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The width of each tab (in pixels) <br/></td></tr>
+<tr class="separator:ac2dd302c6a1da0386a9e299e240bc2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7f18221ef9fb0f939856d5bedb73a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef7f18221ef9fb0f939856d5bedb73a8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html#aef7f18221ef9fb0f939856d5bedb73a8">iNumTabs</a></td></tr>
+<tr class="memdesc:aef7f18221ef9fb0f939856d5bedb73a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of visible tabs. <br/></td></tr>
+<tr class="separator:aef7f18221ef9fb0f939856d5bedb73a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>main controlling structure for frame windows </p>
@@ -120,17 +128,20 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a9cad1622f4396ded0afaf6a8d8a5727a" title="tag indicating I&#39;m a frame window">ulTag</a>;                  <span class="comment">// tag indicating I&#39;m a frame window</span></div>
 <div class="line">  Window <a class="code" href="struct____WB__FRAME__WINDOW____.html#ac1bf4c310535451938ef5b31b2b0c51b" title="Window id for the frame window.">wID</a>;                          <span class="comment">// Window id for the frame window</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#aa554ac4b7e21f28462750b92ad87add8" title="bitmask of attribute flags (see WBFrameWindowFlags enumeration)">iFlags</a>;                          <span class="comment">// bitmask of attribute flags (see \ref WBFrameWindowFlags enumeration)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#aa554ac4b7e21f28462750b92ad87add8" title="bitmask of attribute flags (see WBFrameWindow_FLAGS enumeration)">iFlags</a>;                          <span class="comment">// bitmask of attribute flags (see \ref WBFrameWindow_FLAGS enumeration)</span></div>
+<div class="line"></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#ab7853bf1a94cfbc4acf1198eb8e557d5" title="The current X position of the frame window&#39;s client area (relative to the window)">iClientX</a>;                        <span class="comment">// The current X position of the frame window&#39;s client area</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a357ee914afb0052f18c556589b678566" title="The current Y position of the frame window&#39;s client area (relative to the window)">iClientY</a>;                        <span class="comment">// The current Y position of the frame window&#39;s client area</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a27424747da84f0a941eabfa48faf916b" title="The current width of the frame window&#39;s client area.">iClientWidth</a>;                    <span class="comment">// The current width of the frame window&#39;s client area</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a611ee0649d456278be1b38dffce515a5" title="The current height of the frame window&#39;s client area.">iClientHeight</a>;                   <span class="comment">// The current height of the frame window&#39;s client area</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a8923c9253dc2f4b2186a564941c06794" title="Various bit flags.">fFlags</a>;                          <span class="comment">// Various bit flags</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a3769bc855baa7894a2d2b74f442f5277" title="The first visible tab index (0 if none)">iFirstTab</a>;                       <span class="comment">// The first visible tab index (0 if none)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#ac2dd302c6a1da0386a9e299e240bc2a2" title="The width of each tab (in pixels)">iTabWidth</a>;                       <span class="comment">// The width of each tab (in pixels)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#aef7f18221ef9fb0f939856d5bedb73a8" title="The total number of visible tabs.">iNumTabs</a>;                        <span class="comment">// The total number of visible tabs</span></div>
 <div class="line"></div>
 <div class="line">} <a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows">WBFrameWindow</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00241">241</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00245">245</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="frame__window_8h_source.html">frame_window.h</a></li>
 </ul>
@@ -140,7 +151,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WB__FRAME__WINDOW____.html">__WB_FRAME_WINDOW__</a></li>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

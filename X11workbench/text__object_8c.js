@@ -14,7 +14,6 @@ var text__object_8c =
     [ "WB_DRAW_STRING", "text__object_8c.html#acdb2e0a2ede4994aa57807e3fdb89df3", null ],
     [ "WB_TEXT_ESCAPEMENT", "text__object_8c.html#ac0e51c6603b3f8ea32ad7b4e94e548c5", null ],
     [ "WB_TEXT_EXTENTS", "text__object_8c.html#ae41279cef060c5a4cd578eef2d1be205", null ],
-    [ "__internal_add_redo", "text__object_8c.html#a20c65b2dd3c0568bfa8c69d3375bd1a7", null ],
     [ "__internal_add_undo", "text__object_8c.html#a31f0929e762c72720b3af04e36087f4c", null ],
     [ "__internal_begin_highlight", "text__object_8c.html#a457e3d599a1eb5ce4e95ed4d87d61393", null ],
     [ "__internal_begin_mouse_drag", "text__object_8c.html#a1b568949f33da1382f0a5ded02e073c7", null ],
@@ -66,8 +65,6 @@ var text__object_8c =
     [ "__internal_page_left", "text__object_8c.html#af9fc7818f58042041b118790fde28a36", null ],
     [ "__internal_page_right", "text__object_8c.html#a0d8c666dbf7b30c85671d256f532fe73", null ],
     [ "__internal_page_up", "text__object_8c.html#a54161bf39f52ef89079bb027dde2f8ce", null ],
-    [ "__internal_perform_redo", "text__object_8c.html#a4a49a01593d70442fc2bc68faca44c90", null ],
-    [ "__internal_perform_undo", "text__object_8c.html#ae050ff2f13744fc0f2fa04768b6b320a", null ],
     [ "__internal_redo", "text__object_8c.html#a56e832462157c627f75a86a327894a80", null ],
     [ "__internal_replace_select", "text__object_8c.html#a812845e824622f269c7123e820d4a66e", null ],
     [ "__internal_set_col", "text__object_8c.html#ab32fb04649b50ce43c4c1ea9206d3c78", null ],
@@ -93,8 +90,6 @@ var text__object_8c =
     [ "WBTextBufferRefreshCache", "text__object_8c.html#gad4092bcfdf3f63f4f223c5089bcdd5bf", null ],
     [ "WBTextObjectConstructor", "text__object_8c.html#gafb89e8eacd7f963104ed12b034482e7c", null ],
     [ "WBTextObjectDestructor", "text__object_8c.html#gacc9102b78fe0ca6ba8b11c6e969bbf29", null ],
-    [ "pMallocList", "text__object_8c.html#a6a3e41cb31e40e7db364d2a5404f7615", null ],
-    [ "pMallocListEnd", "text__object_8c.html#a32a6cf83d4599dfec801e7375e8e8388", null ],
     [ "szWBAllocTag", "text__object_8c.html#a83cc10f2dfc168b7f767bebc118e14d5", null ],
     [ "WBDefaultTextObjectVTable", "text__object_8c.html#a5363de736f610c46c399c8b8d672d4a5", null ]
 ];

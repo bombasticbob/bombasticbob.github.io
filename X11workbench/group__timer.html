@@ -138,7 +138,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Non-zero on error, zero on success.</dd></dl>
 <p>Timers can either be periodic (recurring), or one-shot. Use this function to create them. A timer created by this function must be subsequently deleted via <a class="el" href="group__timer.html#gac0847f36d2cbc0d28cfa9ebb727ad3c9">DeleteTimer()</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l03030">3030</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l03041">3041</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ Functions</h2></td></tr>
 </dl>
 <p>Timers created via <a class="el" href="group__timer.html#gab895b3dffe33d2ad2ff83e0564785999" title="Creates a one-shot or periodic timer.">CreateTimer()</a> must be subsequently deleted using this function by passing the same Display, Window, and Timer 'unique' ID that were used to create it. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l03127">3127</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l03138">3138</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An unsigned 64-bit time index value, in microseconds</dd></dl>
 <p>The 'time index' is the master timer that determines when a timer event will be generated. By design it uses a 64-bit integer that never 'wraps around' to zero. It is generally derived from the 'gettimeofday' API call for operating systems such as BSD and Linux that support the POSIX standard. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l03015">3015</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l03026">3026</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 25 2016 03:00:44 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
