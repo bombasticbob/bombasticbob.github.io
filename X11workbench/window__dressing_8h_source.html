@@ -126,93 +126,94 @@ $(document).ready(function(){initNavTree('window__dressing_8h_source.html','');}
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// SCROLL BARS</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>__WB_SCROLLINFO__</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> iScrollState;  <span class="comment">// scroll state flags - see enumeration</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// fixed dimension sizes - 0 if not known, else based on owner client width/height</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">int</span> iVScrollWidth, iHScrollHeight;  <span class="comment">// width/height for &#39;fixed portion&#39; of scrollbar</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> iVBarHeight, iHBarWidth;        <span class="comment">// height/width of scrollbars [detect size change]</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// knob size / pos in pixels - 0 if NA, -1 if not known</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">int</span> iHKnob, iVKnob; <span class="comment">// appropriate relative X or Y pixel position of knob</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">int</span> iHKnobSize, iVKnobSize;  <span class="comment">// appropriate pixel height/width of knob</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// scroll ranges (actual)</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> iHMin, iHMax;  <span class="comment">// 0,0 for &quot;no bar&quot; else inclusive range of H scroll values</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">int</span> iVMin, iVMax;  <span class="comment">// 0,0 for &quot;no bar&quot; else inclusive range of V scroll values</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// scroll position</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> iHPos, iVPos;  <span class="comment">// current scroll position (N/A if outside of min/max range)</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// scroll bar geometries (border not used)</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> geomHBar, geomHLeft, geomHRight, geomHKnob; <span class="comment">// empty geometries if not visible</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> geomVBar, geomVUp, geomVDown, geomVKnob;    <span class="comment">// empty geometries if not visible</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} WB_SCROLLINFO;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">enum</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  WBScrollState_LDRAG = 1, <span class="comment">// left button in &#39;drag&#39; state on vertical scroll bar (relies on drag cancel)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  WBScrollState_RDRAG = 2,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  WBScrollState_MDRAG = 4,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  WBScrollState_HLDRAG = 8, <span class="comment">// left button in &#39;drag&#39; state on horizontal scroll bar</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  WBScrollState_HRDRAG = 16,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  WBScrollState_HMDRAG = 32</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">static</span> __inline__ <span class="keywordtype">void</span> WBInitScrollInfo(WB_SCROLLINFO *pSI) { bzero(pSI, <span class="keyword">sizeof</span>(*pSI)); pSI-&gt;iHPos = pSI-&gt;iVPos = -1; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// SCROLL BARS</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>__WB_SCROLLINFO__</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">int</span> iScrollState;  <span class="comment">// scroll state flags - see enumeration</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// fixed dimension sizes - 0 if not known, else based on owner client width/height</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> iVScrollWidth, iHScrollHeight;  <span class="comment">// width/height for &#39;fixed portion&#39; of scrollbar</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> iVBarHeight, iHBarWidth;        <span class="comment">// height/width of scrollbars [detect size change]</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// knob size / pos in pixels - 0 if NA, -1 if not known</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">int</span> iHKnob, iVKnob; <span class="comment">// appropriate relative X or Y pixel position of knob</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">int</span> iHKnobSize, iVKnobSize;  <span class="comment">// appropriate pixel height/width of knob</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// scroll ranges (actual)</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">int</span> iHMin, iHMax;  <span class="comment">// 0,0 for &quot;no bar&quot; else inclusive range of H scroll values</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> iVMin, iVMax;  <span class="comment">// 0,0 for &quot;no bar&quot; else inclusive range of V scroll values</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">// scroll position</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">int</span> iHPos, iVPos;  <span class="comment">// current scroll position (N/A if outside of min/max range)</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// scroll bar geometries (border not used)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> geomHBar, geomHLeft, geomHRight, geomHKnob; <span class="comment">// empty geometries if not visible</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> geomVBar, geomVUp, geomVDown, geomVKnob;    <span class="comment">// empty geometries if not visible</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} WB_SCROLLINFO;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">enum</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  WBScrollState_LDRAG = 1, <span class="comment">// left button in &#39;drag&#39; state on vertical scroll bar (relies on drag cancel)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  WBScrollState_RDRAG = 2,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  WBScrollState_MDRAG = 4,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  WBScrollState_HLDRAG = 8, <span class="comment">// left button in &#39;drag&#39; state on horizontal scroll bar</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  WBScrollState_HRDRAG = 16,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  WBScrollState_HMDRAG = 32</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> WBSetVScrollRange(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iMin, <span class="keywordtype">int</span> iMax);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> WBSetHScrollRange(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iMin, <span class="keywordtype">int</span> iMax);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> WBSetVScrollPos(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iPos);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> WBSetHScrollPos(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iPos);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> WBUpdateScrollBarGeometry(WB_SCROLLINFO *pSI, XFontStruct *pfontReference,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                               <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomUsable);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">int</span> WBCalcVScrollDragPos(WB_SCROLLINFO *pScrollInfo, <span class="keywordtype">int</span> iY); <span class="comment">// &#39;iY&#39; is the &#39;y&#39; value for the mouse position relative to window orig</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">int</span> WBCalcHScrollDragPos(WB_SCROLLINFO *pScrollInfo, <span class="keywordtype">int</span> iX); <span class="comment">// &#39;iX&#39; is the &#39;x&#39; value for the mouse position relative to window orig</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">// internal SCROLLINFO utilities for list-based dialog controls</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> WBCalcVScrollBar(WB_SCROLLINFO *pScrollInfo, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient, <span class="keywordtype">int</span> iVScrollWidth,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                      <span class="keywordtype">int</span> iHScrollHeight, <span class="keywordtype">int</span> nListItems, <span class="keywordtype">int</span> nPos);  <span class="comment">// calculates V scroll geometry for paint</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> WBCalcHScrollBar(WB_SCROLLINFO *pScrollInfo, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient, <span class="keywordtype">int</span> iVScrollWidth,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                      <span class="keywordtype">int</span> iHScrollHeight, <span class="keywordtype">int</span> nListItems, <span class="keywordtype">int</span> nPos);  <span class="comment">// calculates H scroll geometry for paint</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// scroll bar drawing</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> WBPaintVScrollBar(WB_SCROLLINFO *pScrollInfo, Display *pDisplay, Window wID,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                       GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> WBPaintHScrollBar(WB_SCROLLINFO *pScrollInfo, Display *pDisplay, Window wID,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">static</span> __inline__ <span class="keywordtype">void</span> WBInitScrollInfo(WB_SCROLLINFO *pSI) { bzero(pSI, <span class="keyword">sizeof</span>(*pSI)); pSI-&gt;iHPos = pSI-&gt;iVPos = -1; }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> WBSetVScrollRange(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iMin, <span class="keywordtype">int</span> iMax);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> WBSetHScrollRange(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iMin, <span class="keywordtype">int</span> iMax);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> WBSetVScrollPos(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iPos);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> WBSetHScrollPos(WB_SCROLLINFO *pSI, <span class="keywordtype">int</span> iPos);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> WBUpdateScrollBarGeometry(WB_SCROLLINFO *pSI, XFontStruct *pfontReference,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                               <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomUsable);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">int</span> WBCalcVScrollDragPos(WB_SCROLLINFO *pScrollInfo, <span class="keywordtype">int</span> iY); <span class="comment">// &#39;iY&#39; is the &#39;y&#39; value for the mouse position relative to window orig</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">int</span> WBCalcHScrollDragPos(WB_SCROLLINFO *pScrollInfo, <span class="keywordtype">int</span> iX); <span class="comment">// &#39;iX&#39; is the &#39;x&#39; value for the mouse position relative to window orig</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// internal SCROLLINFO utilities for list-based dialog controls</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> WBCalcVScrollBar(WB_SCROLLINFO *pScrollInfo, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient, <span class="keywordtype">int</span> iVScrollWidth,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                      <span class="keywordtype">int</span> iHScrollHeight, <span class="keywordtype">int</span> nListItems, <span class="keywordtype">int</span> nPos);  <span class="comment">// calculates V scroll geometry for paint</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">void</span> WBCalcHScrollBar(WB_SCROLLINFO *pScrollInfo, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient, <span class="keywordtype">int</span> iVScrollWidth,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                      <span class="keywordtype">int</span> iHScrollHeight, <span class="keywordtype">int</span> nListItems, <span class="keywordtype">int</span> nPos);  <span class="comment">// calculates H scroll geometry for paint</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// scroll bar drawing</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> WBPaintVScrollBar(WB_SCROLLINFO *pScrollInfo, Display *pDisplay, Window wID,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                       GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">// borders and &#39;3D&#39; rectangle art</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> WBPaintHScrollBar(WB_SCROLLINFO *pScrollInfo, Display *pDisplay, Window wID,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                       GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomClient);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> WBDrawBorderRect(Display *pDisplay, Window wID, GC gc,</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                      <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomBorder, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lBorderColor);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> WBDraw3DBorderRect(Display *pDisplay, Window wID, GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomBorder,</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lBorderColor1, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lBorderColor2);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> WBDrawDashedRect(Display *pDisplay, Window wID, GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomRect, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lColor);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">// borders and &#39;3D&#39; rectangle art</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> WBDrawBorderRect(Display *pDisplay, Window wID, GC gc,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                      <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomBorder, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lBorderColor);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> WBDraw3DBorderRect(Display *pDisplay, Window wID, GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomBorder,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lBorderColor1, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lBorderColor2);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // _WINDOW_DRESSING_H_INCLUDED_</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span> WBDrawDashedRect(Display *pDisplay, Window wID, GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pgeomRect, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lColor);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif // _WINDOW_DRESSING_H_INCLUDED_</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="window__dressing_8h.html">window_dressing.h</a></li>
-    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

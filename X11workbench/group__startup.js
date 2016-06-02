@@ -1,6 +1,9 @@
 var group__startup =
 [
+    [ "CHGetArgC", "group__startup.html#ga7eec5756f1781b9fdcd556abe5f60bdb", null ],
+    [ "CHGetArgV", "group__startup.html#gad01030485cf2a1f495e49f86123d911c", null ],
     [ "CHOnExit", "group__startup.html#ga83f8b82a09a23819dbf0a8266182a7a6", null ],
+    [ "CHRegisterArgs", "group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b", null ],
     [ "GetStartupAppName", "group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca", null ],
     [ "GetStartupDisplayName", "group__startup.html#ga9e32c84e39bafa6723df9943dbfdb657", null ],
     [ "GetStartupGeometry", "group__startup.html#ga524ee3467a88a398fdab2629d41b6eb4", null ],

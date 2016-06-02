@@ -105,11 +105,17 @@ Macros</h2></td></tr>
 <tr class="memitem:a949236c7f6b362482a6d3dda9d620309"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a949236c7f6b362482a6d3dda9d620309"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TAB_BAR_HEIGHT</b>&#160;&#160;&#160;20 /* for now */</td></tr>
 <tr class="separator:a949236c7f6b362482a6d3dda9d620309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc290e96a55964ca09f3eaa7f6719294"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc290e96a55964ca09f3eaa7f6719294"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STATUS_BAR_HEIGHT</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:abc290e96a55964ca09f3eaa7f6719294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d999f7c8eb0101e808c7427c775831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1d999f7c8eb0101e808c7427c775831"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_STATUS_BAR_TAB</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:af1d999f7c8eb0101e808c7427c775831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa7dab283c25528f228e1e938a30726"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaa7dab283c25528f228e1e938a30726"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR0</b>(X, Y)&#160;&#160;&#160;if(<a class="el" href="group__conf__help.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &gt; 0) {  }</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR0</b>(X, Y)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &gt; 0) {  }</td></tr>
 <tr class="separator:adaa7dab283c25528f228e1e938a30726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b54ca275d4d228b63c0bab30424630"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b54ca275d4d228b63c0bab30424630"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR</b>(X, Y, Z)&#160;&#160;&#160;if(<a class="el" href="group__conf__help.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &lt;= 0){ <a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(&quot;%s - WARNING:  can't find color %s, using default value %s\n&quot;, __FUNCTION__, X, Z); strcpy(Y,Z); }</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR</b>(X, Y, Z)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &lt;= 0){ <a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(&quot;%s - WARNING:  can't find color %s, using default value %s\n&quot;, __FUNCTION__, X, Z); strcpy(Y,Z); }</td></tr>
 <tr class="separator:a61b54ca275d4d228b63c0bab30424630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd657ce95940b7c6087cf5aa54d5280"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd657ce95940b7c6087cf5aa54d5280"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>__SIZEOF_POINTER__</b>&#160;&#160;&#160;0</td></tr>
@@ -126,6 +132,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6bc7fc0006976d87e7683e6745a8177e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bc7fc0006976d87e7683e6745a8177e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>FWDefaultCallback</b> (Window wID, XEvent *pEvent)</td></tr>
 <tr class="separator:a6bc7fc0006976d87e7683e6745a8177e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812adf2af1ffc59d70f24584a563bec1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a812adf2af1ffc59d70f24584a563bec1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>InternalPaintStatusBar</b> (FRAME_WINDOW *pFrameWindow, XExposeEvent *pEvent)</td></tr>
+<tr class="separator:a812adf2af1ffc59d70f24584a563bec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cb891faeecbca6859c3941ea528476a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cb891faeecbca6859c3941ea528476a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_destroy_frame_window</b> (FRAME_WINDOW *pTemp)</td></tr>
 <tr class="separator:a7cb891faeecbca6859c3941ea528476a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +189,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCheckC
 <tr class="memitem:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">FWSetFocusWindowIndex</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, int iIndex)</td></tr>
 <tr class="memdesc:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using its tab order index.  <a href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">More...</a><br/></td></tr>
 <tr class="separator:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4295a8606405987f556ef11fb5c3130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">FWSetStatusText</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, const char *szText)</td></tr>
+<tr class="memdesc:gaa4295a8606405987f556ef11fb5c3130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the 'status' text for a Frame Window with a status bar.  <a href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">More...</a><br/></td></tr>
+<tr class="separator:gaa4295a8606405987f556ef11fb5c3130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74597022b33ab1ab995f3ffe711524e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga74597022b33ab1ab995f3ffe711524e9">FWSetStatusTabInfo</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, int nTabs, const int *pTabs)</td></tr>
+<tr class="memdesc:ga74597022b33ab1ab995f3ffe711524e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the 'status' tab info for a Frame Window with a status bar.  <a href="group__frame__window.html#ga74597022b33ab1ab995f3ffe711524e9">More...</a><br/></td></tr>
+<tr class="separator:ga74597022b33ab1ab995f3ffe711524e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -195,6 +210,12 @@ static XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrBG</b></t
 <tr class="memitem:a6e418d6909b006779a63227887fdaf15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e418d6909b006779a63227887fdaf15"></a>
 static XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrBD</b></td></tr>
 <tr class="separator:a6e418d6909b006779a63227887fdaf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f44d3a46417565ff0ba7ceb2b36cd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41f44d3a46417565ff0ba7ceb2b36cd5"></a>
+static XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrBD2</b></td></tr>
+<tr class="separator:a41f44d3a46417565ff0ba7ceb2b36cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083d22d8982be24a6583763d337bb232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a083d22d8982be24a6583763d337bb232"></a>
+static XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrBD3</b></td></tr>
+<tr class="separator:a083d22d8982be24a6583763d337bb232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a11c961eb8bca06493ff34845ff295d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a11c961eb8bca06493ff34845ff295d"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>iInitColorFlag</b> = 0</td></tr>
 <tr class="separator:a1a11c961eb8bca06493ff34845ff295d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,7 +231,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>iInitColorFlag<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="frame__window_8c.html">frame_window.c</a></li>
-    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

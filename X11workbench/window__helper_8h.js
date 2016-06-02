@@ -137,6 +137,7 @@ var window__helper_8h =
     [ "WBAppDefault", "window__helper_8h.html#gaebf8a5ba7fe6108957684397fd4ed634", null ],
     [ "WBAppDispatch", "window__helper_8h.html#ga4a3789b26732b720b3e1b4334ec2e3e5", null ],
     [ "WBBeginPaint", "window__helper_8h.html#gaf12acdde095ac1a025ab91863140ba1f", null ],
+    [ "WBBeginPaintGeom", "window__helper_8h.html#ga0adc3dcf20bfb7cb3add1ac460056f6b", null ],
     [ "WBBeginWaitCursor", "window__helper_8h.html#gaa94b62835fe172896de55fb95dbee45c", null ],
     [ "WBChangeWMPropertiesWindowType", "window__helper_8h.html#gaa081ed4be9f20145a74dd0147fc4b67d", null ],
     [ "WBCheckGetEvent", "window__helper_8h.html#gae65d3f6f49b844602dfc2ce6037fde09", null ],

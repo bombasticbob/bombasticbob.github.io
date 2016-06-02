@@ -4,7 +4,7 @@ var modules =
     [ "Core API", "group__core.html", "group__core" ],
     [ "X11 Error Handling API", "group__error.html", "group__error" ],
     [ "Configuration 'helper' functions", "group__conf__help.html", "group__conf__help" ],
-    [ "Text Utilities", "group__text.html", "group__text" ],
+    [ "Text Utilities (generic)", "group__text.html", "group__text" ],
     [ "Platform-specific 'Helper' Functions and Definitions", "group__platform.html", "group__platform" ],
     [ "File Buffer and I/O 'helper' functions", "group__file__help.html", "group__file__help" ],
     [ "Process Control Functions", "group__process.html", "group__process" ],

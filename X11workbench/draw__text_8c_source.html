@@ -411,7 +411,7 @@ $(document).ready(function(){initNavTree('draw__text_8c_source.html','');});
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  *pDest = 0; <span class="comment">// make sure</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;}</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="code" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">  369</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb" title="De-Quote a string &#39;in place&#39;, that is modifying the original string by removing quotes.">WBStringLineCount</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pSrc, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nMaxChars)</div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="code" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">  369</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb" title="Determine how many &#39;lines&#39; are in a block of text by counting &#39;linefeed&#39; characters.">WBStringLineCount</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pSrc, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nMaxChars)</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;{</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keywordtype">int</span> iRval = 1;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *p1;</div>
@@ -428,7 +428,7 @@ $(document).ready(function(){initNavTree('draw__text_8c_source.html','');});
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keywordflow">do</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    p1 = <a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784" title="De-Quote a string &#39;in place&#39;, that is modifying the original string by removing quotes.">WBStringNextLine</a>(pSrc, &amp;nMaxChars);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    p1 = <a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784" title="Locate the next line in a block of text, returning its pointer (and updating remaining length)...">WBStringNextLine</a>(pSrc, &amp;nMaxChars);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span>(p1 &amp;&amp; nMaxChars) <span class="comment">// another line remains</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    {</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      iRval++;</div>
@@ -441,7 +441,7 @@ $(document).ready(function(){initNavTree('draw__text_8c_source.html','');});
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordflow">return</span> iRval;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;}</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno"><a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784">  399</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784" title="De-Quote a string &#39;in place&#39;, that is modifying the original string by removing quotes.">WBStringNextLine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pSrc, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pnMaxChars)</div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784">  399</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784" title="Locate the next line in a block of text, returning its pointer (and updating remaining length)...">WBStringNextLine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pSrc, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pnMaxChars)</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;{</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keywordtype">int</span> nMaxChars;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
@@ -1878,7 +1878,7 @@ $(document).ready(function(){initNavTree('draw__text_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="draw__text_8c.html">draw_text.c</a></li>
-    <li class="footer">Generated on Mon May 30 2016 22:18:01 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:35 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -1,8 +1,7 @@
 var group__text =
 [
+    [ "XML-specific Text Utilities", "group__text__xml.html", "group__text__xml" ],
     [ "NEXT_WORD", "group__text.html#ga22d851925a8a6edd21f35a31de883423", null ],
-    [ "CHFindEndOfXMLTag", "group__text.html#ga43c717f2411e18efc0f0f181bbbb5bda", null ],
-    [ "CHParseXMLTagContents", "group__text.html#ga10c208e293c69c4f9c29da367747d3a3", null ],
     [ "WBCatString", "group__text.html#ga3cd9dc296e11519265f83431edcad082", null ],
     [ "WBCatStringN", "group__text.html#ga4af5e6852bf30948fc71dc9ee4432ce6", null ],
     [ "WBCopyString", "group__text.html#ga01c938dde1b777421803b3e31c4717aa", null ],

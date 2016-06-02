@@ -541,7 +541,7 @@ $(document).ready(function(){initNavTree('text__object_8c_source.html','');});
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  <span class="keywordflow">if</span>(pBuf &amp;&amp; (cbBufSize || *pBuf))</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  {</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    nLines = <a class="code" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb" title="De-Quote a string &#39;in place&#39;, that is modifying the original string by removing quotes.">WBStringLineCount</a>(pBuf, cbBufSize);</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    nLines = <a class="code" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb" title="Determine how many &#39;lines&#39; are in a block of text by counting &#39;linefeed&#39; characters.">WBStringLineCount</a>(pBuf, cbBufSize);</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  }</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <span class="keywordflow">if</span>(nLines &lt; DEFAULT_TEXT_BUFFER_LINES)</div>
@@ -579,7 +579,7 @@ $(document).ready(function(){initNavTree('text__object_8c_source.html','');});
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;      <span class="keywordtype">int</span> cbLen;</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;      <span class="keywordtype">char</span> *p2, *p3;</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      p1 = <a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784" title="De-Quote a string &#39;in place&#39;, that is modifying the original string by removing quotes.">WBStringNextLine</a>(pBuf, &amp;cbBufSize);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      p1 = <a class="code" href="group__text.html#gacbabd0b058670415d5c851858e9f6784" title="Locate the next line in a block of text, returning its pointer (and updating remaining length)...">WBStringNextLine</a>(pBuf, &amp;cbBufSize);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;      <span class="keywordflow">if</span>(p1) <span class="comment">// another line remains</span></div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;      {</div>
@@ -4532,7 +4532,7 @@ $(document).ready(function(){initNavTree('text__object_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="text__object_8c.html">text_object.c</a></li>
-    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

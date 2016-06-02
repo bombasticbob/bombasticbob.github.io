@@ -204,7 +204,8 @@ When libXpm is NOT in use, the follow structure is defined:
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A value of zero on success (same as XpmSuccess, returned by XpmCreatePixmapFromData() on success).</dd></dl>
 <p>This function is an alternate for XpmCreatePixmapFromData() when libXpm is not present. It provides similar functionality, although there are some significant differences, particularly with the use of XPM_ATTRIBUTES as an actual structure and not just a '#define'. When libXpm is compiled in, XPM_ATTRIBUTES becomes a macro that is defined as XpmAttributes, the structure used by XpmCreatePixmapFromData(). There are a large number of members in this structure that are not useful for the purpose of this function, and so a scaled-down version is used when MyLoadPixmapFromData is being invoked.<br/>
- You should use libXpm when it is present on your system, as this function has not been fully tested on all platforms. </p>
+ You should use libXpm when it is present on your system, as this function has not been fully tested on all platforms.</p>
+<p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00675">675</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
@@ -251,7 +252,8 @@ When libXpm is NOT in use, the follow structure is defined:
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pixmap identifier for the Icon image, or None on error.</dd></dl>
-<p>Use this function whenever you need to load an icon using a pre-defined resource ID. </p>
+<p>Use this function whenever you need to load an icon using a pre-defined resource ID.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00288">288</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -298,7 +300,8 @@ When libXpm is NOT in use, the follow structure is defined:
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pixmap identifier for the Icon image, or None on error.</dd></dl>
-<p>Use this function whenever you need to load an icon using a pre-defined or registered Atom </p>
+<p>Use this function whenever you need to load an icon using a pre-defined or registered Atom</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00314">314</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -359,7 +362,8 @@ When libXpm is NOT in use, the follow structure is defined:
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The resultant pixmap</dd></dl>
 <p>This function is a convenient way to perform a standard operation that converts an Image to a Pixmap. A pixmap is a more efficient way of storing graphic data for subsequent display. Typically a pixmap will be cached for a window's Expose event handler, and is re-created when needed. Pixmaps are typically stored by the X server, so an operation that paints a window with a pixmap should perform more efficiently. However, a pixmap cannot be queried nor directly manipulated, while an XImage can.<br/>
- The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap(). </p>
+ The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00389">389</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -407,7 +411,8 @@ When libXpm is NOT in use, the follow structure is defined:
 <dl class="section return"><dt>Returns</dt><dd>The resultant pixmap</dd></dl>
 <p>This function is a convenient way to perform a standard operation that converts an Image to a Pixmap. A pixmap is a more efficient way of storing graphic data for subsequent display. Typically a pixmap will be cached for a window's Expose event handler, and is re-created when needed. Pixmaps are typically stored by the X server, so an operation that paints a window with a pixmap should perform more efficiently. However, a pixmap cannot be queried nor directly manipulated, while an XImage can.<br/>
  For monochrome images, the foreground color is black, and the background color is white.<br/>
- The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap(). </p>
+ The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00460">460</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -454,7 +459,8 @@ When libXpm is NOT in use, the follow structure is defined:
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pixmap identifier for the image, or None on error.</dd></dl>
-<p>This function conveniently wraps XpmCreatePixmapFromData() </p>
+<p>This function conveniently wraps XpmCreatePixmapFromData()</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00340">340</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -496,7 +502,8 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>This function wraps the functionality of XGetImage with a simpler interface, returning an XImage * to an object allocated by Xlib. A pixmap is typically stored on the X Server, whereas an XImage is stored locally.<br/>
  XGetImage creates an XImage using the same depth as the pixmap. The plane mask specified by this function includes all image data, and the origin is always 0,0. The XImage format is always ZPixmap.<br/>
  The size of the pixmap is automatically determined using XGetGeometry(). As a side note, you could theoretically use this function to create an image from a pixmap for the purpose of determining its characteristics.<br/>
- The function returns NULL on error. Use XDestroyImage to dispose of the XImage object. </p>
+ The function returns NULL on error. Use XDestroyImage to dispose of the XImage object.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00473">473</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -534,7 +541,8 @@ When libXpm is NOT in use, the follow structure is defined:
   </table>
   </dd>
 </dl>
-<p>Use this function to register the application's icons for IDC_ICON_APP and ID_APPLICATION. In this way you can use both of them in dialog boxes and take advantage of <a class="el" href="group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f" title="Create Icon pixmap pair using pre-defined resource ID.">PXM_GetIconPixmap()</a> to create a pair of icon pixmaps whenever they are needed. </p>
+<p>Use this function to register the application's icons for IDC_ICON_APP and ID_APPLICATION. In this way you can use both of them in dialog boxes and take advantage of <a class="el" href="group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f" title="Create Icon pixmap pair using pre-defined resource ID.">PXM_GetIconPixmap()</a> to create a pair of icon pixmaps whenever they are needed.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00095">95</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -573,7 +581,8 @@ When libXpm is NOT in use, the follow structure is defined:
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The function returns zero on success, non-zero on error.</dd></dl>
-<p>This function allows you to register a pixmap or icon resource using an Atom. Typically this will be used by dialog boxes or menus to conveniently identify pixmap or icon images. </p>
+<p>This function allows you to register a pixmap or icon resource using an Atom. Typically this will be used by dialog boxes or menus to conveniently identify pixmap or icon images.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 </div>
 </div>
@@ -582,7 +591,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

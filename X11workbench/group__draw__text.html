@@ -299,7 +299,7 @@ and viewport scrolling.
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="draw__text_8h_source.html#l00214">214</a> of file <a class="el" href="draw__text_8h_source.html">draw_text.h</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8h_source.html#l00241">241</a> of file <a class="el" href="draw__text_8h_source.html">draw_text.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,8 @@ and viewport scrolling.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>zero if the text will fit within prcSource, -1 error, or 1 to indicate that prcDest is larger than prcSource</dd></dl>
 <p>This function will calculate the ideal bounding rectangle for the specified text, if possible, within the limitations of the source rectangle. If the text cannot be rendered within the source rectangle, the function will attempt to calculate an appropriately sized rectangle in which to render it. You can use this function to re-size windows to accomodate the size of the text that must be displayed within the window.</p>
-<p>NOTE: tab width is negative for pixels, positive for avg char width, beginning at the left most position of the specified rectangle. Tab Origin is always in pixels using the absolute position (relative to the same origin as prcSource). </p>
+<p>NOTE: tab width is negative for pixels, positive for avg char width, beginning at the left most position of the specified rectangle. Tab Origin is always in pixels using the absolute position (relative to the same origin as prcSource).</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l00823">823</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -418,7 +419,8 @@ and viewport scrolling.
   </table>
   </dd>
 </dl>
-<p>sometimes you want to adjust text size to fit within a particular rectangle. This function determines how to do that by adjusting the font size. </p>
+<p>sometimes you want to adjust text size to fit within a particular rectangle. This function determines how to do that by adjusting the font size.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l00531">531</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -506,7 +508,8 @@ and viewport scrolling.
   </dd>
 </dl>
 <p>This function draws multi-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.</p>
-<p>NOTE: tabs begin at the 'left most' position, adjusted by 'iTabOrigin'. </p>
+<p>NOTE: tabs begin at the 'left most' position, adjusted by 'iTabOrigin'.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l01565">1565</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -596,7 +599,8 @@ and viewport scrolling.
 <p>This function draws single-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.<br/>
  If the text cannot fit within the bounding rectangle, it will be truncated.<br/>
  If you want the text to wrap, use <a class="el" href="group__draw__text.html#ga5a6c2d8e7650da251465c55bd981baaa" title="draw multi-line text">DTDrawMultiLineText()</a></p>
-<p>NOTE: tabs begin at the 'left most' text position, adjusted by 'iTabOrigin'. </p>
+<p>NOTE: tabs begin at the 'left most' text position, adjusted by 'iTabOrigin'.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l01541">1541</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -642,7 +646,8 @@ and viewport scrolling.
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the text width, in pixels</dd></dl>
-<p>Use this function in lieu of XTextWidth for MBCS and UTF-8 strings. </p>
+<p>Use this function in lieu of XTextWidth for MBCS and UTF-8 strings.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l00491">491</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -688,7 +693,8 @@ and viewport scrolling.
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 'malloc'd pointer to a DT_WORDS structure (variable length). use 'free()' to de-allocate the memory block.</dd></dl>
-<p>The 'DT_WORDS' structure is intended to be used to cache rendering information, particularly for a large block of text that may be calculation-expensive to re-render. Call '<a class="el" href="group__draw__text.html#ga5c1dff4dec52e1de7dce725525249ffe" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display.">DTPreRender()</a>' and '<a class="el" href="group__draw__text.html#gaab5f01f953283ee14a7347463989af60" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display.">DTRender()</a>' to manage rendering with the DT_WORDS structure. </p>
+<p>The 'DT_WORDS' structure is intended to be used to cache rendering information, particularly for a large block of text that may be calculation-expensive to re-render. Call '<a class="el" href="group__draw__text.html#ga5c1dff4dec52e1de7dce725525249ffe" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display.">DTPreRender()</a>' and '<a class="el" href="group__draw__text.html#gaab5f01f953283ee14a7347463989af60" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display.">DTRender()</a>' to manage rendering with the DT_WORDS structure.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l00619">619</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -755,7 +761,8 @@ and viewport scrolling.
   </dd>
 </dl>
 <p>This function will scan the DT_WORDS structure 'pWords', and using the alignment flags and prcBounds, modify the 'iX' and 'iY' members for each DT_WORD entry in 'pWords' according to their rendered position within the display surface described by 'prcBounds'. It will also calculate the iMaxWidth and iMaxHeight members for 'pWords'.<br/>
- Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'inifinite' display area by specifying a value of 0x7fffffffL for the 'right' and 'bottom' members. Then, you can use '<a class="el" href="group__draw__text.html#gaab5f01f953283ee14a7347463989af60" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display.">DTRender()</a>' and specify 'iHScrollBy' and 'iVScrollBy' to modify the location of the 'viewport' area using scroll bars. </p>
+ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'inifinite' display area by specifying a value of 0x7fffffffL for the 'right' and 'bottom' members. Then, you can use '<a class="el" href="group__draw__text.html#gaab5f01f953283ee14a7347463989af60" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display.">DTRender()</a>' and specify 'iHScrollBy' and 'iVScrollBy' to modify the location of the 'viewport' area using scroll bars.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l01739">1739</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -842,7 +849,8 @@ and viewport scrolling.
   </table>
   </dd>
 </dl>
-<p>This function will scan the DT_WORDS structure 'pWords', and using the other parameters, render the text within the 'prcBounds' rectangle on the specified Drawable. </p>
+<p>This function will scan the DT_WORDS structure 'pWords', and using the other parameters, render the text within the 'prcBounds' rectangle on the specified Drawable.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
 <p>Definition at line <a class="el" href="draw__text_8c_source.html#l01745">1745</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
@@ -853,7 +861,7 @@ and viewport scrolling.
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

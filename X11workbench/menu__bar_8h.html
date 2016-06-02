@@ -66,9 +66,10 @@ $(document).ready(function(){initNavTree('menu__bar_8h.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">menu_bar.h File Reference</div>  </div>
 </div><!--header-->
@@ -80,80 +81,105 @@ $(document).ready(function(){initNavTree('menu__bar_8h.html','');});
 </div>
 <p><a href="menu__bar_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBMenuBarWindow____.html">__WBMenuBarWindow__</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for defining a menu bar window  <a href="struct____WBMenuBarWindow____.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a60c236d646afa3bf13516acc923d4ab2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60c236d646afa3bf13516acc923d4ab2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MENU_WINDOW_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)&quot;MWMW&quot;))</td></tr>
 <tr class="separator:a60c236d646afa3bf13516acc923d4ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ac86fd88b3682aa50484ee18a114ad175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac86fd88b3682aa50484ee18a114ad175"></a>
+typedef struct <a class="el" href="struct____WBMenuBarWindow____.html">__WBMenuBarWindow__</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WBMenuBarWindow</b></td></tr>
+<tr class="separator:ac86fd88b3682aa50484ee18a114ad175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9fb073faa3c0e7053b27a35991512df0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fb073faa3c0e7053b27a35991512df0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>MBInitGlobal</b> (void)</td></tr>
-<tr class="separator:a9fb073faa3c0e7053b27a35991512df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a920550fa16c99f21ccc445b64fbf9ee9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a920550fa16c99f21ccc445b64fbf9ee9"></a>
-XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><b>MBGetDefaultMenuFont</b> (void)</td></tr>
-<tr class="separator:a920550fa16c99f21ccc445b64fbf9ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6cd6b6f88f5473d25289cab703cf21d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6cd6b6f88f5473d25289cab703cf21d"></a>
-static __inline__ WBMenuBarWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>MBGetMenuBarWindowStruct</b> (Window wID)</td></tr>
-<tr class="separator:ac6cd6b6f88f5473d25289cab703cf21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30dc16d5a7b5a0dbe33b408d80b7387c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30dc16d5a7b5a0dbe33b408d80b7387c"></a>
-WBMenuBarWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>MBCreateMenuBarWindow</b> (Window wIDParent, const char *pszResource, int iFlags)</td></tr>
-<tr class="separator:a30dc16d5a7b5a0dbe33b408d80b7387c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ce9b1b7ecfd7ca8a358e50006dd055"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9ce9b1b7ecfd7ca8a358e50006dd055"></a>
-WBMenuBarWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>MBFindMenuBarWindow</b> (WBMenu *pMenu)</td></tr>
-<tr class="separator:ae9ce9b1b7ecfd7ca8a358e50006dd055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95dbee77c70d489a5ff8eac3718e89c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95dbee77c70d489a5ff8eac3718e89c9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MBReCalcMenuBarWindow</b> (WBMenuBarWindow *pMenuBar)</td></tr>
-<tr class="separator:a95dbee77c70d489a5ff8eac3718e89c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a339efd0b3c2e3e09af5251e22241a2a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a339efd0b3c2e3e09af5251e22241a2a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MBDestroyMenuBarWindow</b> (WBMenuBarWindow *pMenuBar)</td></tr>
-<tr class="separator:a339efd0b3c2e3e09af5251e22241a2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c87566c260c2407f06c9ba40d6167b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2c87566c260c2407f06c9ba40d6167b"></a>
-static __inline__ WBMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>MBGetMenuBarMenu</b> (WBMenuBarWindow *pMenuBar)</td></tr>
-<tr class="separator:aa2c87566c260c2407f06c9ba40d6167b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d736bf29568c4bfd7b24d82b6f59585"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d736bf29568c4bfd7b24d82b6f59585"></a>
-static __inline__ WBMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>MBSetMenuBarMenu</b> (WBMenuBarWindow *pMenuBar, WBMenu *pMenu)</td></tr>
-<tr class="separator:a3d736bf29568c4bfd7b24d82b6f59585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fb073faa3c0e7053b27a35991512df0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga9fb073faa3c0e7053b27a35991512df0">MBInitGlobal</a> (void)</td></tr>
+<tr class="memdesc:ga9fb073faa3c0e7053b27a35991512df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize global resources for Menu Bar windows.  <a href="group__menu__bar.html#ga9fb073faa3c0e7053b27a35991512df0">More...</a><br/></td></tr>
+<tr class="separator:ga9fb073faa3c0e7053b27a35991512df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga920550fa16c99f21ccc445b64fbf9ee9"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga920550fa16c99f21ccc445b64fbf9ee9">MBGetDefaultMenuFont</a> (void)</td></tr>
+<tr class="memdesc:ga920550fa16c99f21ccc445b64fbf9ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the default 'Menu Bar' font structure.  <a href="group__menu__bar.html#ga920550fa16c99f21ccc445b64fbf9ee9">More...</a><br/></td></tr>
+<tr class="separator:ga920550fa16c99f21ccc445b64fbf9ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6cd6b6f88f5473d25289cab703cf21d"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="struct____WBMenuBarWindow____.html">WBMenuBarWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gac6cd6b6f88f5473d25289cab703cf21d">MBGetMenuBarWindowStruct</a> (Window wID)</td></tr>
+<tr class="memdesc:gac6cd6b6f88f5473d25289cab703cf21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a pointer to the WBMenuBarWindow structure from a Window ID of a Menu Bar window.  <a href="group__menu__bar.html#gac6cd6b6f88f5473d25289cab703cf21d">More...</a><br/></td></tr>
+<tr class="separator:gac6cd6b6f88f5473d25289cab703cf21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30dc16d5a7b5a0dbe33b408d80b7387c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBMenuBarWindow____.html">WBMenuBarWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga30dc16d5a7b5a0dbe33b408d80b7387c">MBCreateMenuBarWindow</a> (Window wIDParent, const char *pszResource, int iFlags)</td></tr>
+<tr class="memdesc:ga30dc16d5a7b5a0dbe33b408d80b7387c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Menu Bar windows and its associated WBMenuBarWindow structure.  <a href="group__menu__bar.html#ga30dc16d5a7b5a0dbe33b408d80b7387c">More...</a><br/></td></tr>
+<tr class="separator:ga30dc16d5a7b5a0dbe33b408d80b7387c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9ce9b1b7ecfd7ca8a358e50006dd055"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBMenuBarWindow____.html">WBMenuBarWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gae9ce9b1b7ecfd7ca8a358e50006dd055">MBFindMenuBarWindow</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu)</td></tr>
+<tr class="memdesc:gae9ce9b1b7ecfd7ca8a358e50006dd055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate the first WBMenuBarWindow that is using a WBMenu structure.  <a href="group__menu__bar.html#gae9ce9b1b7ecfd7ca8a358e50006dd055">More...</a><br/></td></tr>
+<tr class="separator:gae9ce9b1b7ecfd7ca8a358e50006dd055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95dbee77c70d489a5ff8eac3718e89c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga95dbee77c70d489a5ff8eac3718e89c9">MBReCalcMenuBarWindow</a> (<a class="el" href="struct____WBMenuBarWindow____.html">WBMenuBarWindow</a> *pMenuBar)</td></tr>
+<tr class="memdesc:ga95dbee77c70d489a5ff8eac3718e89c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cause a 'layout recalculation' for a Menu Bar window.  <a href="group__menu__bar.html#ga95dbee77c70d489a5ff8eac3718e89c9">More...</a><br/></td></tr>
+<tr class="separator:ga95dbee77c70d489a5ff8eac3718e89c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga339efd0b3c2e3e09af5251e22241a2a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4">MBDestroyMenuBarWindow</a> (<a class="el" href="struct____WBMenuBarWindow____.html">WBMenuBarWindow</a> *pMenuBar)</td></tr>
+<tr class="memdesc:ga339efd0b3c2e3e09af5251e22241a2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a 'Menu Bar' window.  <a href="group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4">More...</a><br/></td></tr>
+<tr class="separator:ga339efd0b3c2e3e09af5251e22241a2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2c87566c260c2407f06c9ba40d6167b"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gaa2c87566c260c2407f06c9ba40d6167b">MBGetMenuBarMenu</a> (<a class="el" href="struct____WBMenuBarWindow____.html">WBMenuBarWindow</a> *pMenuBar)</td></tr>
+<tr class="memdesc:gaa2c87566c260c2407f06c9ba40d6167b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current WBMenu for a Menu Bar window.  <a href="group__menu__bar.html#gaa2c87566c260c2407f06c9ba40d6167b">More...</a><br/></td></tr>
+<tr class="separator:gaa2c87566c260c2407f06c9ba40d6167b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d736bf29568c4bfd7b24d82b6f59585"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga3d736bf29568c4bfd7b24d82b6f59585">MBSetMenuBarMenu</a> (<a class="el" href="struct____WBMenuBarWindow____.html">WBMenuBarWindow</a> *pMenuBar, <a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu)</td></tr>
+<tr class="memdesc:ga3d736bf29568c4bfd7b24d82b6f59585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a new WBMenu for a Menu Bar window.  <a href="group__menu__bar.html#ga3d736bf29568c4bfd7b24d82b6f59585">More...</a><br/></td></tr>
+<tr class="separator:ga3d736bf29568c4bfd7b24d82b6f59585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a90382967048a5ac08616bf7f33792adf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90382967048a5ac08616bf7f33792adf"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuFG</b></td></tr>
-<tr class="separator:a90382967048a5ac08616bf7f33792adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaad087c13f1a3851fe5f0d16cbb49fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaad087c13f1a3851fe5f0d16cbb49fd"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuBG</b></td></tr>
-<tr class="separator:adaad087c13f1a3851fe5f0d16cbb49fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada41579200b04d23cae552c85b126d16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada41579200b04d23cae552c85b126d16"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuActiveFG</b></td></tr>
-<tr class="separator:ada41579200b04d23cae552c85b126d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66b9952c4021239d39c31dcd331d5bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66b9952c4021239d39c31dcd331d5bd"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuActiveBG</b></td></tr>
-<tr class="separator:ae66b9952c4021239d39c31dcd331d5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a343775e6ea32d5c23fa246f22035c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61a343775e6ea32d5c23fa246f22035c"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuBorder1</b></td></tr>
-<tr class="separator:a61a343775e6ea32d5c23fa246f22035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfcfb3142f7fc0e7137246aa4dfd3db1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfcfb3142f7fc0e7137246aa4dfd3db1"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuBorder2</b></td></tr>
-<tr class="separator:acfcfb3142f7fc0e7137246aa4dfd3db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e66322b0a69f895784fb5192bf4f8b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e66322b0a69f895784fb5192bf4f8b4"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuBorder3</b></td></tr>
-<tr class="separator:a1e66322b0a69f895784fb5192bf4f8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45d71136efdf8a752e58ce9fa7a6e64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa45d71136efdf8a752e58ce9fa7a6e64"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuDisabledFG</b></td></tr>
-<tr class="separator:aa45d71136efdf8a752e58ce9fa7a6e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90af25d82149c8b2aa70deedf803f3e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90af25d82149c8b2aa70deedf803f3e1"></a>
-XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrMenuActiveDisabledFG</b></td></tr>
-<tr class="separator:a90af25d82149c8b2aa70deedf803f3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce3b4925bb98df9b162d4f638d9b887"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adce3b4925bb98df9b162d4f638d9b887"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><b>aMENU_RESIZE</b></td></tr>
-<tr class="separator:adce3b4925bb98df9b162d4f638d9b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7fb3ec6362c7171da1bd4fc5ea2450a"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><b>aMENU_DISPLAY_POPUP</b></td></tr>
-<tr class="separator:ad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb78060999bc8a63cfb4f3c507fb834"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0eb78060999bc8a63cfb4f3c507fb834"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><b>aMENU_ACTIVATE</b></td></tr>
-<tr class="separator:a0eb78060999bc8a63cfb4f3c507fb834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ga90382967048a5ac08616bf7f33792adf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga90382967048a5ac08616bf7f33792adf"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga90382967048a5ac08616bf7f33792adf">clrMenuFG</a></td></tr>
+<tr class="memdesc:ga90382967048a5ac08616bf7f33792adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu foreground color <br/></td></tr>
+<tr class="separator:ga90382967048a5ac08616bf7f33792adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadaad087c13f1a3851fe5f0d16cbb49fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadaad087c13f1a3851fe5f0d16cbb49fd"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gadaad087c13f1a3851fe5f0d16cbb49fd">clrMenuBG</a></td></tr>
+<tr class="memdesc:gadaad087c13f1a3851fe5f0d16cbb49fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu background color <br/></td></tr>
+<tr class="separator:gadaad087c13f1a3851fe5f0d16cbb49fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada41579200b04d23cae552c85b126d16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gada41579200b04d23cae552c85b126d16"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gada41579200b04d23cae552c85b126d16">clrMenuActiveFG</a></td></tr>
+<tr class="memdesc:gada41579200b04d23cae552c85b126d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu 'active' foreground color <br/></td></tr>
+<tr class="separator:gada41579200b04d23cae552c85b126d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae66b9952c4021239d39c31dcd331d5bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae66b9952c4021239d39c31dcd331d5bd"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gae66b9952c4021239d39c31dcd331d5bd">clrMenuActiveBG</a></td></tr>
+<tr class="memdesc:gae66b9952c4021239d39c31dcd331d5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu 'active' background color <br/></td></tr>
+<tr class="separator:gae66b9952c4021239d39c31dcd331d5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61a343775e6ea32d5c23fa246f22035c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga61a343775e6ea32d5c23fa246f22035c"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga61a343775e6ea32d5c23fa246f22035c">clrMenuBorder1</a></td></tr>
+<tr class="memdesc:ga61a343775e6ea32d5c23fa246f22035c"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu border color 1 <br/></td></tr>
+<tr class="separator:ga61a343775e6ea32d5c23fa246f22035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfcfb3142f7fc0e7137246aa4dfd3db1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacfcfb3142f7fc0e7137246aa4dfd3db1"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gacfcfb3142f7fc0e7137246aa4dfd3db1">clrMenuBorder2</a></td></tr>
+<tr class="memdesc:gacfcfb3142f7fc0e7137246aa4dfd3db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu border color 2 <br/></td></tr>
+<tr class="separator:gacfcfb3142f7fc0e7137246aa4dfd3db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e66322b0a69f895784fb5192bf4f8b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1e66322b0a69f895784fb5192bf4f8b4"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga1e66322b0a69f895784fb5192bf4f8b4">clrMenuBorder3</a></td></tr>
+<tr class="memdesc:ga1e66322b0a69f895784fb5192bf4f8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu border color 3 <br/></td></tr>
+<tr class="separator:ga1e66322b0a69f895784fb5192bf4f8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa45d71136efdf8a752e58ce9fa7a6e64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa45d71136efdf8a752e58ce9fa7a6e64"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gaa45d71136efdf8a752e58ce9fa7a6e64">clrMenuDisabledFG</a></td></tr>
+<tr class="memdesc:gaa45d71136efdf8a752e58ce9fa7a6e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu 'disabled' foreground color <br/></td></tr>
+<tr class="separator:gaa45d71136efdf8a752e58ce9fa7a6e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90af25d82149c8b2aa70deedf803f3e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga90af25d82149c8b2aa70deedf803f3e1"></a>
+XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga90af25d82149c8b2aa70deedf803f3e1">clrMenuActiveDisabledFG</a></td></tr>
+<tr class="memdesc:ga90af25d82149c8b2aa70deedf803f3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu 'disabled but active' foreground color <br/></td></tr>
+<tr class="separator:ga90af25d82149c8b2aa70deedf803f3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadce3b4925bb98df9b162d4f638d9b887"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadce3b4925bb98df9b162d4f638d9b887"></a>
+Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gadce3b4925bb98df9b162d4f638d9b887">aMENU_RESIZE</a></td></tr>
+<tr class="memdesc:gadce3b4925bb98df9b162d4f638d9b887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'RESIZE' client event. <br/></td></tr>
+<tr class="separator:gadce3b4925bb98df9b162d4f638d9b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad7fb3ec6362c7171da1bd4fc5ea2450a"></a>
+Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gad7fb3ec6362c7171da1bd4fc5ea2450a">aMENU_DISPLAY_POPUP</a></td></tr>
+<tr class="memdesc:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'DISPLAY POPUP' client event. <br/></td></tr>
+<tr class="separator:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0eb78060999bc8a63cfb4f3c507fb834"></a>
+Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga0eb78060999bc8a63cfb4f3c507fb834">aMENU_ACTIVATE</a></td></tr>
+<tr class="memdesc:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'ACTIVATE' client event. <br/></td></tr>
+<tr class="separator:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definition file for menu bar window structures and API functions. </p>
@@ -168,7 +194,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><b>aMENU_ACTIVATE</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="menu__bar_8h.html">menu_bar.h</a></li>
-    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

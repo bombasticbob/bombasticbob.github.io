@@ -69,9 +69,18 @@ $(document).ready(function(){initNavTree('group__startup.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga136dc71e33c9eb8bc4256ee8fbb8f84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:ga136dc71e33c9eb8bc4256ee8fbb8f84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">registers arguments from the command line for later use  <a href="#ga136dc71e33c9eb8bc4256ee8fbb8f84b">More...</a><br/></td></tr>
+<tr class="separator:ga136dc71e33c9eb8bc4256ee8fbb8f84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga83f8b82a09a23819dbf0a8266182a7a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga83f8b82a09a23819dbf0a8266182a7a6">CHOnExit</a> (void)</td></tr>
 <tr class="memdesc:ga83f8b82a09a23819dbf0a8266182a7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">frees resources used by <a class="el" href="group__conf__help.html">Configuration 'helper' functions</a>  <a href="#ga83f8b82a09a23819dbf0a8266182a7a6">More...</a><br/></td></tr>
 <tr class="separator:ga83f8b82a09a23819dbf0a8266182a7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad01030485cf2a1f495e49f86123d911c"><td class="memItemLeft" align="right" valign="top">const char *const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gad01030485cf2a1f495e49f86123d911c">CHGetArgV</a> (void)</td></tr>
+<tr class="memdesc:gad01030485cf2a1f495e49f86123d911c"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the array of arguments stored by <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a>  <a href="#gad01030485cf2a1f495e49f86123d911c">More...</a><br/></td></tr>
+<tr class="separator:gad01030485cf2a1f495e49f86123d911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eec5756f1781b9fdcd556abe5f60bdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga7eec5756f1781b9fdcd556abe5f60bdb">CHGetArgC</a> (void)</td></tr>
+<tr class="memdesc:ga7eec5756f1781b9fdcd556abe5f60bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the argument count stored by <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a>  <a href="#ga7eec5756f1781b9fdcd556abe5f60bdb">More...</a><br/></td></tr>
+<tr class="separator:ga7eec5756f1781b9fdcd556abe5f60bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5eb4d43e2a86e48bcbead0c291c7197a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga5eb4d43e2a86e48bcbead0c291c7197a">PXM_OnExit</a> (void)</td></tr>
 <tr class="memdesc:ga5eb4d43e2a86e48bcbead0c291c7197a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees resources allocated by <a class="el" href="group__pixmap.html">Pixmap utility functions</a>.  <a href="#ga5eb4d43e2a86e48bcbead0c291c7197a">More...</a><br/></td></tr>
 <tr class="separator:ga5eb4d43e2a86e48bcbead0c291c7197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,9 +114,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga576673ed5710c0711a453f935b5043aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments</a> (int *pargc, char ***pargv, char ***penvp)</td></tr>
 <tr class="memdesc:ga576673ed5710c0711a453f935b5043aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses standard C arguments as passed to 'main()'  <a href="#ga576673ed5710c0711a453f935b5043aa">More...</a><br/></td></tr>
 <tr class="separator:ga576673ed5710c0711a453f935b5043aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5cee3f4b704525ba89117af6616593e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5cee3f4b704525ba89117af6616593e2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">WBToolkitUsage</a> (void)</td></tr>
-<tr class="memdesc:ga5cee3f4b704525ba89117af6616593e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays 'usage' for toolkit options to stderr. <br/></td></tr>
+<tr class="memitem:ga5cee3f4b704525ba89117af6616593e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">WBToolkitUsage</a> (void)</td></tr>
+<tr class="memdesc:ga5cee3f4b704525ba89117af6616593e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays 'usage' for toolkit options to stderr.  <a href="#ga5cee3f4b704525ba89117af6616593e2">More...</a><br/></td></tr>
 <tr class="separator:ga5cee3f4b704525ba89117af6616593e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">GetStartupAppName</a> (void)</td></tr>
 <tr class="memdesc:ga412c75eb0f657d771d6aa386b4d178ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to a copy of the application name from argv[0]  <a href="#ga412c75eb0f657d771d6aa386b4d178ca">More...</a><br/></td></tr>
@@ -141,6 +149,52 @@ Variables</h2></td></tr>
 <p>Functions and variables associated with application startup and shutdown</p>
 <p>Required functions for API startup and shutdown, resource pre-allocation, and final cleanup, as well as useful utilities for argument parsing, and querying options. </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga7eec5756f1781b9fdcd556abe5f60bdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHGetArgC </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the argument count stored by <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>the 'argc' value stored by <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a></dd></dl>
+<p>Use this function to retrieve the stored 'argc' value from <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a></p>
+<p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
+
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00420">420</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad01030485cf2a1f495e49f86123d911c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const* CHGetArgV </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the array of arguments stored by <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>the 'argv' value stored by <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a></dd></dl>
+<p>Use this function to retrieve the stored 'argv' value from <a class="el" href="group__startup.html#ga136dc71e33c9eb8bc4256ee8fbb8f84b">CHRegisterArgs()</a></p>
+<p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
+
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00425">425</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga83f8b82a09a23819dbf0a8266182a7a6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -156,9 +210,49 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>frees resources used by <a class="el" href="group__conf__help.html">Configuration 'helper' functions</a> </p>
-<p>call this prior to normal application exit to free resources. Called by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit()</a> . </p>
+<p>call this prior to normal application exit to free resources. Called by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit()</a> .</p>
+<p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
 
 <p>Definition at line <a class="el" href="conf__help_8c_source.html#l00160">160</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga136dc71e33c9eb8bc4256ee8fbb8f84b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHRegisterArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>registers arguments from the command line for later use </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>The 'argc' as passed-in to main() </td></tr>
+    <tr><td class="paramname">argv</td><td>The 'argv' as passed-in to main()</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function registers the arguments from 'argv' as passed in to the main() for the application, and keeps an independent record of their contents for future use by any part of the program that might have use for this kind of information.</p>
+<p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
+
+<p>Definition at line <a class="el" href="conf__help_8c_source.html#l00152">152</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -178,7 +272,8 @@ Variables</h2></td></tr>
 
 <p>returns a pointer to a copy of the application name from argv[0] </p>
 <dl class="section return"><dt>Returns</dt><dd>A const pointer to a zero-byte terminated string containing a copy of the application name</dd></dl>
-<p>This function is only valid if you call <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a> on startup </p>
+<p>This function is only valid if you call <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a> on startup</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01598">1598</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -199,7 +294,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>returns character name of the display to be opened and passed to WBInit </p>
-<p>Gets the display name associated with the current (default) display, or the display specified in the command line arguments passed to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a>. This name should be used in a call to XOpenDisplay(), and the resulting Display should then be passed to <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> </p>
+<p>Gets the display name associated with the current (default) display, or the display specified in the command line arguments passed to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a>. This name should be used in a call to XOpenDisplay(), and the resulting Display should then be passed to <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a></p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01593">1593</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -220,7 +316,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>returns the startup geometry based on command line parameters </p>
-<p>Returns the desired geometry to be applied to the main window on startup. The value is based on a prior call to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments()</a>, and should not be relied upon otherwise. </p>
+<p>Returns the desired geometry to be applied to the main window on startup. The value is based on a prior call to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments()</a>, and should not be relied upon otherwise.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01603">1603</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -241,7 +338,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>returns the min/max/normal window state for startup </p>
-<p>Following a call to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments()</a>, this function will return the desired startup window state, either minimized (&lt; 0), maximized (&gt; 0), or normal (= 0). </p>
+<p>Following a call to <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments()</a>, this function will return the desired startup window state, either minimized (&lt; 0), maximized (&gt; 0), or normal (= 0).</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01611">1611</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -262,7 +360,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Frees resources allocated by <a class="el" href="group__pixmap.html">Pixmap utility functions</a>. </p>
-<p>Call this to free resources allocated by the PXM functions. Called by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit()</a> </p>
+<p>Call this to free resources allocated by the PXM functions. Called by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit()</a></p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00517">517</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
@@ -291,9 +390,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>returns the default colormap for the default screen of the specified display </p>
-<p>Convenience function that returns the default colormap for the default screen of the specified display. Helps to clean up the initialization code and make it more 'modular'. </p>
+<p>Convenience function that returns the default colormap for the default screen of the specified display. Helps to clean up the initialization code and make it more 'modular'.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00416">416</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00450">450</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +412,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>deletes any remaining global objects, frees the Display pointer, and terminates event processing </p>
-<p>This function deletes any remaining global objects, frees the Display pointer, and terminates event processing, freeing up any remaining resources for the entire toolkit. You should call this function in your application right before it terminates. </p>
+<p>This function deletes any remaining global objects, frees the Display pointer, and terminates event processing, freeing up any remaining resources for the entire toolkit. You should call this function in your application right before it terminates.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01150">1150</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -333,7 +434,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shut down the clipboard sub-system. </p>
-<p>Shuts down the clipboard sub-system. Called internally by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824" title="deletes any remaining global objects, frees the Display pointer, and terminates event processing...">WBExit()</a> </p>
+<p>Shuts down the clipboard sub-system. Called internally by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824" title="deletes any remaining global objects, frees the Display pointer, and terminates event processing...">WBExit()</a></p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="clipboard__helper_8c_source.html#l00220">220</a> of file <a class="el" href="clipboard__helper_8c_source.html">clipboard_helper.c</a>.</p>
 
@@ -364,7 +466,8 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the Display, or NULL on error</dd></dl>
 <p>Call this function before any other to create a display and initialize the X11 WorkBench Toolkit. Alternately you can create the display yourself and call <a class="el" href="group__startup.html#ga1ca511628142e183e7db3e326b947244">WBInitDisplay()</a>. <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit()</a> will free the assigned Display pointer for you by calling XCloseDisplay().<br/>
  The returned pointer can be retrieved at any time by calling '<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203" title="Returns the default Display.">WBGetDefaultDisplay()</a>'.<br/>
- </p>
+</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l00740">740</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -407,7 +510,8 @@ Variables</h2></td></tr>
 <p>Call this function to initialize the 'Clipboard' sub-system, after initializing the 'Display'. This function is automatically called internally by <a class="el" href="group__startup.html#ga1ca511628142e183e7db3e326b947244" title="initializes default objects for the specified Display">WBInitDisplay()</a> so there should be no need to invoke it directly.<br/>
  It will spawn a new thread that runs in the background to process clipboard-related messages, internally using a separate Display object, so that the main thread is not impacted (nor deadlocked) by clipboard handling.<br/>
  The 'pDisplay' parameter is reserved for future use, for when multiple displays are supported.<br/>
- If a thread uses the same display name that was passed to 'WBInit' then it refers to the same Display as the main thread, and you will not need to re-initialize the clipboard for that Display. </p>
+ If a thread uses the same display name that was passed to 'WBInit' then it refers to the same Display as the main thread, and you will not need to re-initialize the clipboard for that Display.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="clipboard__helper_8c_source.html#l00139">139</a> of file <a class="el" href="clipboard__helper_8c_source.html">clipboard_helper.c</a>.</p>
 
@@ -436,7 +540,8 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero value on success, non-zero on error.</dd></dl>
 <p>Call this function before any other to assign the default Display pointer and initialize the X11 WorkBench Toolkit. A number of internal objects are initialized by this function. On error the function returns a non-zero value.<br/>
- The preferred method for initialization is to use <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3">WBInit()</a> with a display name (or NULL). However, in some cases you may wish to open the display yourself, and pass the pointer to this function instead. Typical reasons for that may be security-related, use of firewalls, proxies, and any other kind of possible and/or unusual method for opening a display. </p>
+ The preferred method for initialization is to use <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3">WBInit()</a> with a display name (or NULL). However, in some cases you may wish to open the display yourself, and pass the pointer to this function instead. Typical reasons for that may be security-related, use of firewalls, proxies, and any other kind of possible and/or unusual method for opening a display.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l00848">848</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -488,7 +593,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Convenience function that assigns the default window size on application startup. Takes into consideration the screen dimensions and min width/height if the user did not specify window geometry on startup. See the X11 API Reference, sections 9.1.6 and 10.3 for more information on XSizeHints </p>
+<p>Convenience function that assigns the default window size on application startup. Takes into consideration the screen dimensions and min width/height if the user did not specify window geometry on startup. See the X11 API Reference, sections 9.1.6 and 10.3 for more information on XSizeHints</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01627">1627</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -547,7 +653,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Convenience function to assign the minimal window attributes to the XSetWindowAttributes structure. Helps to clean up the initialization code and make it more 'modular'. For more information on window attributes, see the X11 API Documentation, section 3.3 . </p>
+<p>Convenience function to assign the minimal window attributes to the XSetWindowAttributes structure. Helps to clean up the initialization code and make it more 'modular'. For more information on window attributes, see the X11 API Documentation, section 3.3 .</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01616">1616</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -586,7 +693,8 @@ Variables</h2></td></tr>
 <p>parses standard C arguments as passed to 'main()' </p>
 <p>In order to support a large number of default switches and parameters that are supported by the X11workbench Toolkit API, you should pass pointers to the parameters that were passed to 'main()' by the C startup code to this function.<br/>
  Returns 0 on success, non-zero (or error code) otherwise.<br/>
- The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will likely be modified from their original values as part of the processing. If you want to retain the original values, pass 'copies' to this function and use the copies for normal argument processing (as with 'getarg'). </p>
+ The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will likely be modified from their original values as part of the processing. If you want to retain the original values, pass 'copies' to this function and use the copies for normal argument processing (as with 'getarg').</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01275">1275</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -608,7 +716,8 @@ Variables</h2></td></tr>
 
 <p>Resource 'free-up' on exit (must call) </p>
 <p>Call this function right before exiting the application if you have made use of any system-specific resources from '<a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a>'. <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824" title="deletes any remaining global objects, frees the Display pointer, and terminates event processing...">WBExit()</a> does this automatically. Among other things, it will delete any temporary files that were created via <a class="el" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f" title="Get the name for a new, unique temporary file, creating the file in the process, and save its name fo...">WBTempFile()</a>.<br/>
- It should also be safe to call this function from within a 'signal' handler. </p>
+ It should also be safe to call this function from within a 'signal' handler.</p>
+<p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00137">137</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
@@ -630,7 +739,8 @@ Variables</h2></td></tr>
 
 <p>Resource initialization on startup. </p>
 <p>Call this function right before using any 'platform_helper' functions to initialize any global resources from '<a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a>'. <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> does this automatically. It should only be called once.<br/>
- </p>
+</p>
+<p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00127">127</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
@@ -657,7 +767,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Call this function to free a thread-specific Display object that was created by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first)">WBThreadInitDisplay()</a> to free up resources before exiting the thread. </p>
+<p>Call this function to free a thread-specific Display object that was created by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first)">WBThreadInitDisplay()</a> to free up resources before exiting the thread.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01259">1259</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -679,9 +790,31 @@ Variables</h2></td></tr>
 
 <p>initializes default Display for a thread (must call <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> first) </p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the Display, or NULL on error</dd></dl>
-<p>Call this function to create a thread-specific Display object when you need to process a message loop or create windows within that thread. You must call <a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395" title="un-initializes a Display for a thread that was allocated by WBThreadInitDisplay()">WBThreadFreeDisplay()</a> to free up resources before exiting the thread. </p>
+<p>Call this function to create a thread-specific Display object when you need to process a message loop or create windows within that thread. You must call <a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395" title="un-initializes a Display for a thread that was allocated by WBThreadInitDisplay()">WBThreadFreeDisplay()</a> to free up resources before exiting the thread.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01234">1234</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5cee3f4b704525ba89117af6616593e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBToolkitUsage </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays 'usage' for toolkit options to stderr. </p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
+
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l01574">1574</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -710,7 +843,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

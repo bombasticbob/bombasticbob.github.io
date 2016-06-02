@@ -135,6 +135,10 @@ var group__dlgctrl =
       [ "CUSTOM_Reserved30", "group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a31ab745f732a3935066de4ed1beb9664", null ],
       [ "CUSTOM_Reserved31", "group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a4cd3721dfa8bbdda73ff6051bbcdb5e4", null ]
     ] ],
+    [ "DLGCDefaultListControlDisplayProc", "group__dlgctrl.html#ga18316afbd1e068e95d9730531c7d8179", null ],
+    [ "DLGCDestroyProperties", "group__dlgctrl.html#gafee2e3046aee420104741e48706675aa", null ],
+    [ "DLGCListInfoConstructor", "group__dlgctrl.html#ga3fed966bae3ca47d3e6ebe14930da6ce", null ],
+    [ "DLGCListInfoDestructor", "group__dlgctrl.html#gae25ada5d37c28a484c29b8ef184f3d1e", null ],
     [ "DLGGetControlCaption", "group__dlgctrl.html#ga5667ed3db4dc0cdd90f971417ddbfd5e", null ],
     [ "DLGGetControlProperty", "group__dlgctrl.html#ga04b16b728c882a574ae6304fa797c8a7", null ],
     [ "DLGGetControlText", "group__dlgctrl.html#ga296842a0a9a21a3fedea4f8c4cbee5b0", null ],

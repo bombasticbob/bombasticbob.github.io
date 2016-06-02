@@ -201,48 +201,48 @@ $(document).ready(function(){initNavTree('dialog__support_8h_source.html','');})
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keywordtype">void</span> DLGCDestroyProperties(<a class="code" href="struct____WB__DIALOG__PROPLIST____.html" title="Container structure for the dialog property storage structures.">WBDialogPropList</a> *);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<a class="code" href="struct____LISTINFO____.html" title="Structure containing data for list-related dialog controls.">LISTINFO</a> *DLGCListInfoConstructor(Window wOwner, <span class="keywordtype">int</span> nMax, <span class="keywordtype">int</span> nFlags,</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                  <span class="keywordtype">void</span> *(*pfnAllocator)(<span class="keyword">const</span> <span class="keywordtype">void</span> *,<span class="keywordtype">int</span>), <span class="keywordtype">void</span> (*pfnDestructor)(<span class="keywordtype">void</span> *),</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                  <span class="keywordtype">void</span> (*pfnDisplay)(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a> *, <span class="keywordtype">void</span> *, <span class="keywordtype">int</span>, GC, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *),</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                  <span class="keywordtype">int</span> (*pfnSort)(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">void</span> DLGCListInfoDestructor(<a class="code" href="struct____LISTINFO____.html" title="Structure containing data for list-related dialog controls.">LISTINFO</a> *);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">void</span> DLGCDefaultListControlDisplayProc(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a> *pList, <span class="keywordtype">void</span> *pData, <span class="keywordtype">int</span> iSelected, GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pGeom);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__dlgctrl.html#gafee2e3046aee420104741e48706675aa" title="Destroy Properties for a dialog control.">DLGCDestroyProperties</a>(<a class="code" href="struct____WB__DIALOG__PROPLIST____.html" title="Container structure for the dialog property storage structures.">WBDialogPropList</a> *pPropList);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#ifndef DIALOG_SUPPORT_C</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_TEXT;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_CAPTION;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_FONT;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_SCROLLINFO;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_LISTINFO;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#endif // DIALOG_SUPPORT_C</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#ifdef NO_DEBUG</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEBUG_DUMP_LIST(X)</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // !NO_DEBUG</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> DEBUG_DUMP_LIST(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a> *pCtrl);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif // NO_DEBUG</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif // _DIALOG_SUPPORT_H_INCLUDED_</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<a class="code" href="struct____LISTINFO____.html" title="Structure containing data for list-related dialog controls.">LISTINFO</a> *<a class="code" href="group__dlgctrl.html#ga3fed966bae3ca47d3e6ebe14930da6ce" title="Create LISTINFO structure for a list type control.">DLGCListInfoConstructor</a>(Window wOwner, <span class="keywordtype">int</span> nMax, <span class="keywordtype">int</span> nFlags,</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                  <span class="keywordtype">void</span> *(*pfnAllocator)(<span class="keyword">const</span> <span class="keywordtype">void</span> *,<span class="keywordtype">int</span>), <span class="keywordtype">void</span> (*pfnDestructor)(<span class="keywordtype">void</span> *),</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                  <span class="keywordtype">void</span> (*pfnDisplay)(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a> *, <span class="keywordtype">void</span> *, <span class="keywordtype">int</span>, GC, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *),</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                  <span class="keywordtype">int</span> (*pfnSort)(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *));</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__dlgctrl.html#gae25ada5d37c28a484c29b8ef184f3d1e" title="Destroy a LISTINFO structure.">DLGCListInfoDestructor</a>(<a class="code" href="struct____LISTINFO____.html" title="Structure containing data for list-related dialog controls.">LISTINFO</a> *pListInfo);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__dlgctrl.html#ga18316afbd1e068e95d9730531c7d8179" title="The default &#39;display proc&#39; for displaying a list item from a LISTINFO structure.">DLGCDefaultListControlDisplayProc</a>(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a> *pList, <span class="keywordtype">void</span> *pData, <span class="keywordtype">int</span> iSelected, GC gc, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pGeom);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">#ifndef DIALOG_SUPPORT_C</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_TEXT;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_CAPTION;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_FONT;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_SCROLLINFO;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Atom aDLGC_LISTINFO;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#endif // DIALOG_SUPPORT_C</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#ifdef NO_DEBUG</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEBUG_DUMP_LIST(X)</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // !NO_DEBUG</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> DEBUG_DUMP_LIST(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a> *pCtrl);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#endif // NO_DEBUG</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#endif // _DIALOG_SUPPORT_H_INCLUDED_</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><b>dialog_support.h</b></li>
-    <li class="footer">Generated on Mon May 30 2016 22:18:01 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:35 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

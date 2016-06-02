@@ -1,6 +1,7 @@
 var group__expose =
 [
     [ "WBBeginPaint", "group__expose.html#gaf12acdde095ac1a025ab91863140ba1f", null ],
+    [ "WBBeginPaintGeom", "group__expose.html#ga0adc3dcf20bfb7cb3add1ac460056f6b", null ],
     [ "WBClearWindow", "group__expose.html#ga1cbd545c3fa47148b5458186c2666507", null ],
     [ "WBEndPaint", "group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e", null ],
     [ "WBGeomToRegion", "group__expose.html#ga365dbd8d44807bcbd0823d9bbdb5ddf5", null ],

@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00388">388</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00414">414</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An integer value, in which zero indicates "not handled", and non-zero indicates "handled"</dd></dl>
-<p>Use this function to safely obtain the correct WBChildFrame structure for a given Window ID. </p>
+<p>Use this function to safely obtain the correct WBChildFrame structure for a given Window ID.</p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00357">357</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -221,7 +222,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>The frame window will call this function whenever the layout changes, including at the point the child frame is added to the frame window. Internally, it will call the user-defined event handler function with an event type of 'ClientMessage' and message type RESIZE_NOTIFY </p>
+<p>The frame window will call this function whenever the layout changes, including at the point the child frame is added to the frame window. Internally, it will call the user-defined event handler function with an event type of 'ClientMessage' and message type <a class="el" href="group__xatoms.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe">RESIZE_NOTIFY</a></p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00290">290</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -249,7 +251,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
-<p>Call this function to destroy the actual window and de-reference </p>
+<p>Call this function to destroy the actual window and de-reference</p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00205">205</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -285,9 +288,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the associated WBChildFrame structure (if it is a WBChildFrame), or NULL on error</dd></dl>
-<p>Use this function to safely obtain the correct WBChildFrame structure for a given Window ID. </p>
+<p>Use this function to safely obtain the correct WBChildFrame structure for a given Window ID.</p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
-<p>Definition at line <a class="el" href="child__frame_8h_source.html#l00213">213</a> of file <a class="el" href="child__frame_8h_source.html">child_frame.h</a>.</p>
+<p>Definition at line <a class="el" href="child__frame_8h_source.html#l00231">231</a> of file <a class="el" href="child__frame_8h_source.html">child_frame.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +368,8 @@ Functions</h2></td></tr>
  Failure to call this function will prevent the 'Child Frame' functionality from working correctly, and will not register the relationship between the Window ID and the WBChildFrame structure.</p>
 <p>NOTE: To create a stand-alone 'derived' Child Frame, first create a minimal frame window, with disabled 'tabs'. Then, create the Child Frame 'derived' window using WBInitChildFrame(). Only one will be allowed.<br/>
  NOTE 2: If WBInitChildFrame() returns a non-zero value, do NOT call WBDestroyChildFrame() on that WBChildFrame .</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame.html">Frame Windows</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame.html">Frame Windows</a></dd></dl>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00064">64</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -402,7 +407,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Assigns the display name for the Child Frame, to appear in the tab and (optionally) in the frame window's title bar whenever the Child Frame has the focus. </p>
+<p>Assigns the display name for the Child Frame, to appear in the tab and (optionally) in the frame window's title bar whenever the Child Frame has the focus.</p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00280">280</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -447,7 +453,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Use this function to assign the X and Y extents for the display surface on a Child Frame window. Calling this function will set up the scrolling behavior as well as notifying 'everything' of the changes, such as re-painting the window or re-sizing something. </p>
+<p>Use this function to assign the X and Y extents for the display surface on a Child Frame window. Calling this function will set up the scrolling behavior as well as notifying 'everything' of the changes, such as re-painting the window or re-sizing something.</p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00284">284</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -485,7 +492,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Assigns the (new) menu for the Child Frame. The text will be copied, and the copy will be used internally, and free'd as necessary. Only valid when the owner is a Frame Window. </p>
+<p>Assigns the (new) menu for the Child Frame. The text will be copied, and the copy will be used internally, and free'd as necessary. Only valid when the owner is a Frame Window.</p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00272">272</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -524,7 +532,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624">FW_MENU_HANDLER_ENTRY</a></dd></dl>
-<p>Assigns the (new) menu handlers for the Child Frame. The array will be copied, and the copy will be used internally, and free'd as necessary. </p>
+<p>Assigns the (new) menu handlers for the Child Frame. The array will be copied, and the copy will be used internally, and free'd as necessary.</p>
+<p>Header File: <a class="el" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a> </p>
 
 <p>Definition at line <a class="el" href="child__frame_8c_source.html#l00276">276</a> of file <a class="el" href="child__frame_8c_source.html">child_frame.c</a>.</p>
 
@@ -535,7 +544,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 30 2016 22:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

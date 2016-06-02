@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>X11 Work Bench Toolkit: Frame Window - Menus</title>
+<title>X11 Work Bench Toolkit: Frame Window Menu Handling</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(document).ready(function(){initNavTree('group__frame__menu.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">Frame Window - Menus<div class="ingroups"><a class="el" href="group__frame.html">Frame Window API</a></div></div>  </div>
+<div class="title">Frame Window Menu Handling<div class="ingroups"><a class="el" href="group__frame.html">Frame Window API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -95,7 +95,7 @@ Macros</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Macros and functions needed to set up a frame window's menu. </p>
 <p>Setting up a menu event handler for a frame window using the WBFWMenuHandler structures involves the use of set of macros to create the structure, and a call to <a class="el" href="group__frame__window.html#gab506e40699d1db64bbbef36dc62e4dde">FWSetMenuHandlers()</a> to assign them to the Frame window.</p>
-<p>Typical sample code follows: </p>
+<p>Typical sample code follows:</p>
 <div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> FileExitHandler(XClientMessageEvent *);</div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> FileOpenHandler(XClientMessageEvent *);</div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> FileSaveHandler(XClientMessageEvent *);</div>
@@ -122,7 +122,8 @@ Macros</h2></td></tr>
 <div class="line">  <span class="comment">// after creating the frame window &#39;pFrameWindow&#39; with menu &#39;szMyMenu&#39;</span></div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="group__frame__window.html#gab506e40699d1db64bbbef36dc62e4dde" title="Function to assign the default menu handler to a frame window.">FWSetMenuHandlers</a>(pFrameWindow, main_menu_handler);</div>
-</div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
+</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame__window.html">Frame Window APIs and Structures</a> </dd></dl>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga8a61ebc2ef84095119158df442cfca52"></a>
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +146,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00506">506</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00550">550</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -189,7 +190,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00515">515</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00559">559</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +216,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00551">551</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00599">599</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +225,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

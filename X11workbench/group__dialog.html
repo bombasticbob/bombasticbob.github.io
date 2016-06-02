@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00642">642</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00681">681</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00570">570</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00606">606</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,9 @@ A typical dialog window resource might look as follows:\n
 <div class="line">  CONTROL:Text ID:1001 X:24 Y:2 HEIGHT:20 WIDTH:172 VISIBLE</div>
 <div class="line">  CONTROL:DefPushButton ID:IDOK TITLE:OK X:80 Y:28 WIDTH:40 HEIGHT:18 VISIBLE</div>
 <div class="line">END_DIALOG</div>
-</div><!-- fragment --> <pre class="fragment">For more information, see \ref dialog_resource .</pre> </dd></dl>
+</div><!-- fragment --> <pre class="fragment">For more information, see \ref dialog_resource .
+
+Header File:  dialog_window.h</pre> </dd></dl>
 
 <p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00226">226</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
@@ -478,10 +480,11 @@ When specifying the 'szExtAndDescList' parameter, point it to a string similar t
 <div class="line">  <span class="stringliteral">&quot;*.doc\tDocument Files\n&quot;</span></div>
 <div class="line">  <span class="stringliteral">&quot;*.sh\tShell Script Files\n&quot;</span></div>
 <div class="line">  <span class="stringliteral">&quot;*.*\tOther Files\n&quot;</span>;</div>
-</div><!-- fragment --> This describes 3 file types with extensions '.txt', '.doc', and '.sh' with a 4th file type of 'other files' that encompasses everything else. Simple pattern matching is applied to each file name for the selected pattern. </td></tr>
+</div><!-- fragment --> This describes 3 file types with extensions '.txt', '.doc', and '.sh' with a 4th file type of 'other files' that encompasses everything else. Simple pattern matching is applied to each file name for the selected pattern.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
 <p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00805">805</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
@@ -544,10 +547,11 @@ When specifying the 'szExtAndDescList' parameter, point it to a string similar t
     <tr><td class="paramname">szPrompt</td><td>A null-byte terminated string that is to be displayed in a message area on the dialog window </td></tr>
     <tr><td class="paramname">szDefault</td><td>A null-byte terminated string containing the default value. May be NULL </td></tr>
     <tr><td class="paramname">iWidth</td><td>The specified width of the dialog window, or -1 for default </td></tr>
-    <tr><td class="paramname">iMaxChar</td><td>The maximum number of characters in the input string </td></tr>
+    <tr><td class="paramname">iMaxChar</td><td>The maximum number of characters in the input string</td></tr>
   </table>
   </dd>
 </dl>
+<p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
 <p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00432">432</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
@@ -600,7 +604,8 @@ When specifying the 'szExtAndDescList' parameter, point it to a string similar t
   </table>
   </dd>
 </dl>
-<p>Use this function to display a simple modal 'message box' dialog window, and return the button that was pressed for further processing. </p>
+<p>Use this function to display a simple modal 'message box' dialog window, and return the button that was pressed for further processing.</p>
+<p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
 <p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00215">215</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
@@ -645,7 +650,8 @@ When specifying the 'szExtAndDescList' parameter, point it to a string similar t
   </table>
   </dd>
 </dl>
-<p>This function will create an animated splash screen based on the dimensions of the pixmap passed to it, animating the pixmap with a 'diagonal flash' from upper left to lower right, and draw the copyright string onto the lower 1/3 of the pixmap, vertically centered. </p>
+<p>This function will create an animated splash screen based on the dimensions of the pixmap passed to it, animating the pixmap with a 'diagonal flash' from upper left to lower right, and draw the copyright string onto the lower 1/3 of the pixmap, vertically centered.</p>
+<p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
 <p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00898">898</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
@@ -656,7 +662,7 @@ When specifying the 'szExtAndDescList' parameter, point it to a string similar t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

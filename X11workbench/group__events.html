@@ -145,9 +145,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Event-specific value. Typically returns zero if the event was not processed, non-zero if further processing is not necessary</dd></dl>
-<p>An event callback for the application should be declared according to this defined type </p>
+<p>An event callback for the application should be declared according to this defined type</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00176">176</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00181">181</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -170,9 +171,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Event-specific value. Typically returns zero if the event was not processed, non-zero if further processing is not necessary</dd></dl>
-<p>Event callbacks for windows should be declared according to this defined type </p>
+<p>Event callbacks for windows should be declared according to this defined type</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00166">166</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00169">169</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -198,7 +200,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Application events have a window ID of None, and are dispatched to the registered Application callback. In the absence of a callback, default processing is performed. </p>
+<p>Application events have a window ID of None, and are dispatched to the registered Application callback. In the absence of a callback, default processing is performed.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l04118">4118</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -274,7 +277,8 @@ To correctly implement a message loop, your code should be similar to the follow
 <div class="line"></div>
 <div class="line">    <a class="code" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f" title="Generic Event Dispatcher, using message type to dispatch.">WBDispatch</a>(&amp;event);</div>
 <div class="line">  }</div>
-</div><!-- fragment --> </dd></dl>
+</div><!-- fragment --></dd></dl>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l03410">3410</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -301,7 +305,8 @@ To correctly implement a message loop, your code should be similar to the follow
   </table>
   </dd>
 </dl>
-<p>Call this function to generically dispatch an XEvent. The application will need to check for a 'quit' state independently. See <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a>, <a class="el" href="group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5" title="Dispatches an application XEvent. May be called directly.">WBAppDispatch()</a> </p>
+<p>Call this function to generically dispatch an XEvent. The application will need to check for a 'quit' state independently. See <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a>, <a class="el" href="group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5" title="Dispatches an application XEvent. May be called directly.">WBAppDispatch()</a></p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l04218">4218</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -339,7 +344,8 @@ To correctly implement a message loop, your code should be similar to the follow
   </table>
   </dd>
 </dl>
-<p>Call this function from within a modal window's event process to close the window and exit from WBShowModal with the specified value in 'iReturn' </p>
+<p>Call this function from within a modal window's event process to close the window and exit from WBShowModal with the specified value in 'iReturn'</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01965">1965</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -367,9 +373,10 @@ To correctly implement a message loop, your code should be similar to the follow
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A const pointer to an ASCII 0-byte terminated character string representing the event ID, or NULL</dd></dl>
-<p>Intended primarily for debug messages, it returns a pointer to an ASCII string containing the name of the event, based on its event ID. The ID of the event is the value of 'type' within the XEvent structure. </p>
+<p>Intended primarily for debug messages, it returns a pointer to an ASCII string containing the name of the event, based on its event ID. The ID of the event is the value of 'type' within the XEvent structure.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07235">7235</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07324">7324</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -389,7 +396,8 @@ To correctly implement a message loop, your code should be similar to the follow
 
 <p>Main message loop, high level API to check for and retrieve the next event. </p>
 <dl class="section return"><dt>Returns</dt><dd>The 'Time' value for the last event that had a server timestamp</dd></dl>
-<p>In some cases it's necessary to know an approximate value of the X server's timestamp. The message loop will capture the timestamp value whenever it can. Use this function to return the best known server time value for the default Display. </p>
+<p>In some cases it's necessary to know an approximate value of the X server's timestamp. The message loop will capture the timestamp value whenever it can. Use this function to return the best known server time value for the default Display.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l03403">3403</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -428,9 +436,10 @@ To correctly implement a message loop, your code should be similar to the follow
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a non-zero value if an event was obtained, or zero if no event was available</dd></dl>
-<p>Similar to XNextEvent, this function checks the internal (and external) event queues for an event. Unlike XNextEvent it does not wait for an event to appear before returning. The function returns zero if there are no events to be processed. </p>
+<p>Similar to XNextEvent, this function checks the internal (and external) event queues for an event. Unlike XNextEvent it does not wait for an event to appear before returning. The function returns zero if there are no events to be processed.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07098">7098</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07187">7187</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -457,9 +466,10 @@ To correctly implement a message loop, your code should be similar to the follow
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero value on error, or zero if successful</dd></dl>
 <p>The preferred method of event processing between windows is to post them to one of the internal event queues, rather than using XSendEvent or calling WBDispatch directly.<br/>
- Use WBPostAppEvent for application events (where the window ID is 'None') </p>
+ Use WBPostAppEvent for application events (where the window ID is 'None')</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07137">7137</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07226">7226</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -495,9 +505,10 @@ To correctly implement a message loop, your code should be similar to the follow
   </table>
   </dd>
 </dl>
-<p>Use this function to effectively delay an event's posting to the internal queue for a specified period of time, in milliseconds. For application messages, specify 'None' for the Window ID in the XEvent structure (otherwise specify the correct Window ID). After the time delay, the event will be retrieved and returned via <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a> similar to a timer message. If the window specified in the message is destroyed before the timeout, the message will be ignored. </p>
+<p>Use this function to effectively delay an event's posting to the internal queue for a specified period of time, in milliseconds. For application messages, specify 'None' for the Window ID in the XEvent structure (otherwise specify the correct Window ID). After the time delay, the event will be retrieved and returned via <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a> similar to a timer message. If the window specified in the message is destroyed before the timeout, the message will be ignored.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07116">7116</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07205">7205</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -547,9 +558,10 @@ To correctly implement a message loop, your code should be similar to the follow
   </table>
   </dd>
 </dl>
-<p>Causes (reliable) 'Set Active' 'Set Input Focus' 'Raise Window' and 'Map Window' events to be applied to a particular window. In many cases window managers may differ in their handling of things like 'XSetFocus' to set focus to a window. By handling this in the application event queue, it is possible to delay events asynchronously in a manner that avoids a race condition from the window manager. Clicking on a window, or using ALT+Tab, or switching desktops may cause unexpected 'things' to take place. By forcing the window to be ACTIVE and also using the normal 'XSetInputFocus' function, as well as 'Raising' and mapping the window, THIS method is likely to work everywhere, and in a consistent manner. </p>
+<p>Causes (reliable) 'Set Active' 'Set Input Focus' 'Raise Window' and 'Map Window' events to be applied to a particular window. In many cases window managers may differ in their handling of things like 'XSetFocus' to set focus to a window. By handling this in the application event queue, it is possible to delay events asynchronously in a manner that avoids a race condition from the window manager. Clicking on a window, or using ALT+Tab, or switching desktops may cause unexpected 'things' to take place. By forcing the window to be ACTIVE and also using the normal 'XSetInputFocus' function, as well as 'Raising' and mapping the window, THIS method is likely to work everywhere, and in a consistent manner.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07150">7150</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07239">7239</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -587,9 +599,10 @@ To correctly implement a message loop, your code should be similar to the follow
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero value on error, or zero if successful</dd></dl>
 <p>The preferred method of event processing between windows is to post them to one of the internal event queues, rather than using XSendEvent() or calling <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f" title="Generic Event Dispatcher, using message type to dispatch.">WBDispatch()</a> or <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a> directly.<br/>
- You should always use this function for asynchronously posting non-priority events, such as notifications and timers, or when recursion may occur. Note that any pointers or X11 resources that are passed using XEvent may not be valid by the time they are received. If you must pass volatile data to a window, use <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f" title="Generic Event Dispatcher, using message type to dispatch.">WBDispatch()</a> or <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a> instead. </p>
+ You should always use this function for asynchronously posting non-priority events, such as notifications and timers, or when recursion may occur. Note that any pointers or X11 resources that are passed using XEvent may not be valid by the time they are received. If you must pass volatile data to a window, use <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f" title="Generic Event Dispatcher, using message type to dispatch.">WBDispatch()</a> or <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a> instead.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07103">7103</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07192">7192</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -627,9 +640,10 @@ To correctly implement a message loop, your code should be similar to the follow
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero value on error, or zero if successful</dd></dl>
 <p>The preferred method of event processing between windows is to post them to one of the internal event queues, rather than using XSendEvent() or calling <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f" title="Generic Event Dispatcher, using message type to dispatch.">WBDispatch()</a> or <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a> directly.<br/>
- Use WBPostPriorityEvent for priority events, such as UI handling (where performance is critical) </p>
+ Use WBPostPriorityEvent for priority events, such as UI handling (where performance is critical)</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07121">7121</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07210">7210</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -655,9 +669,10 @@ To correctly implement a message loop, your code should be similar to the follow
   </dd>
 </dl>
 <p>Instead of passing Expose events directly along to the respective window, they are first consolidated, and then re-prioritized for optimimum display performance.<br/>
- Expose events typically come in bunches, and all too frequently. By delaying their processing, AND consolidating them into a single event, it is possible to minimize the un-necessary re-drawing of windows and improve the 'apparent speed' of your applicatino. Normally this is done within <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a> automatically. If you decide to implement the message prioritization yourself, you can use this function to handle Expose events for you, and correctly prioritize them. </p>
+ Expose events typically come in bunches, and all too frequently. By delaying their processing, AND consolidating them into a single event, it is possible to minimize the un-necessary re-drawing of windows and improve the 'apparent speed' of your applicatino. Normally this is done within <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a> automatically. If you decide to implement the message prioritization yourself, you can use this function to handle Expose events for you, and correctly prioritize them.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l04716">4716</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l04752">4752</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -695,7 +710,8 @@ To correctly implement a message loop, your code should be similar to the follow
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>-1 on error, or the dialog box's '<a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351" title="End a modal window with a specific return value.">WBEndModal()</a>' iReturn value</dd></dl>
 <p>Use this function to show a 'modal' window. The function returns when the window is closed. 'bMenuFlag' is &gt; 0 if menu semantics need to be applied to the modal window, or &lt; 0 if splash semantics need to be applied. Otherwise, it is treated as a NORMAL (dialog) window.</p>
-<p>The return value is -1 on error, or the value specified by 'iReturn' in the call to <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351" title="End a modal window with a specific return value.">WBEndModal()</a>. </p>
+<p>The return value is -1 on error, or the value specified by 'iReturn' in the call to <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351" title="End a modal window with a specific return value.">WBEndModal()</a>.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l01685">1685</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -733,7 +749,8 @@ To correctly implement a message loop, your code should be similar to the follow
   </table>
   </dd>
 </dl>
-<p>Dispatches an XEvent for the specified window. Normally, WBDispatch will call this function using the window ID from the XEvent itself, and pass that ID as the first parameter. A caller may choose to send the event to a different window, specifying its window ID instead. This is similar to a modal 'Event Send' and can be useful to have a parent or child widnow handle a particular type of event (rather than the destined window). </p>
+<p>Dispatches an XEvent for the specified window. Normally, WBDispatch will call this function using the window ID from the XEvent itself, and pass that ID as the first parameter. A caller may choose to send the event to a different window, specifying its window ID instead. This is similar to a modal 'Event Send' and can be useful to have a parent or child widnow handle a particular type of event (rather than the destined window).</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p>Definition at line <a class="el" href="window__helper_8c_source.html#l04238">4238</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -744,7 +761,7 @@ To correctly implement a message loop, your code should be similar to the follow
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 30 2016 22:18:03 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jun 2 2016 13:40:37 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

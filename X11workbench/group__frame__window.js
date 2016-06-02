@@ -16,7 +16,18 @@ var group__frame__window =
       [ "WBFrameWindow_APP_WINDOW", "frame__window_8h.html#ga21dd621be91fedb5d2a59b8d9711bab9a693325994a98569950cf59aeee196a69", null ],
       [ "WBFrameWindow_VISIBLE", "frame__window_8h.html#ga21dd621be91fedb5d2a59b8d9711bab9ab460f1bef76df20c89ace16702c45944", null ],
       [ "WBFrameWindow_NO_TABS", "frame__window_8h.html#ga21dd621be91fedb5d2a59b8d9711bab9ae802085dba0e718dc21b9814bf76e1f9", null ],
+      [ "WBFrameWindow_STATUS_BAR", "frame__window_8h.html#ga21dd621be91fedb5d2a59b8d9711bab9a25c1e10fd1dd3453834f6a8a3acc8f20", null ],
       [ "WBFrameWindow_MAX", "frame__window_8h.html#ga21dd621be91fedb5d2a59b8d9711bab9ae04eba29ddef348c04b5e86626ea6972", null ]
+    ] ],
+    [ "WBStatusTabInfo_FLAGS", "group__frame__window.html#gadacccd461d63825fec608ba6ff1254dd", [
+      [ "WBStatusTabInfo_MASK", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254ddad2a8a80b0a212dc5cff3912fdd11f057", null ],
+      [ "WBStatusTabInfo_BREAK", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254ddaf94e48182d74190e63e6074bf7b18e53", null ],
+      [ "WBStatusTabInfo_JUSTIFY_MASK", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254ddae682caad025ea0e6568a3741612a72f1", null ],
+      [ "WBStatusTabInfo_JUSTIFY_LEFT", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254ddaa07a66fe29d998528e5a0e8626f75abb", null ],
+      [ "WBStatusTabInfo_JUSTIFY_CENTER", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254dda1bfae2e37c84c83268349533d10a6a39", null ],
+      [ "WBStatusTabInfo_JUSTIFY_RIGHT", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254dda1f08217468c3dabf72f4c9e181f5b954", null ],
+      [ "WBStatusTabInfo_JUSTIFY_res6", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254dda5bd456b069994b10d16e36a2ea382966", null ],
+      [ "WBStatusTabInfo_RTL_COLUMN", "frame__window_8h.html#gadacccd461d63825fec608ba6ff1254dda2058f174262c3b1cbf5aa6e1d0379ecd", null ]
     ] ],
     [ "FWAddContainedWindow", "group__frame__window.html#gad77acdf96e4649b642dee2c3e2cd1145", null ],
     [ "FWCreateFrameWindow", "group__frame__window.html#gac6e419a4d4627321ddfaaf48711fc211", null ],
@@ -33,5 +44,7 @@ var group__frame__window =
     [ "FWSetFocusWindow", "group__frame__window.html#gaa7360907bb6b8d7e5fd33b220e3c7ed6", null ],
     [ "FWSetFocusWindowIndex", "group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6", null ],
     [ "FWSetMenuHandlers", "group__frame__window.html#gab506e40699d1db64bbbef36dc62e4dde", null ],
+    [ "FWSetStatusTabInfo", "group__frame__window.html#ga74597022b33ab1ab995f3ffe711524e9", null ],
+    [ "FWSetStatusText", "group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130", null ],
     [ "FWSetUserCallback", "group__frame__window.html#ga7d38ec4032b321a227904d3d34293f37", null ]
 ];
