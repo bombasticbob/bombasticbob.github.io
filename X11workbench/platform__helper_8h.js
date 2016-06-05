@@ -18,6 +18,7 @@ var platform__helper_8h =
     [ "WB_UINT64", "platform__helper_8h.html#gae71709cb8a7c418e8bfdbd1297a97ee5", null ],
     [ "WB_UNLIKELY", "platform__helper_8h.html#a71d10c657cde4801e8f2214f0d2c85d3", null ],
     [ "XPM_CREATE_PIXMAP_FROM_DATA", "platform__helper_8h.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1", null ],
+    [ "XPM_FREE_ATTRIBUTES", "platform__helper_8h.html#ga5cadde28513a5d92a6d0bce3505f3a53", null ],
     [ "WB_COND", "platform__helper_8h.html#gadfcddd1293aed00ceaefbf5c89adfbcf", null ],
     [ "WB_MODULE", "platform__helper_8h.html#ga7f0672ea4d50fd29e009c4945778a92a", null ],
     [ "WB_MUTEX", "platform__helper_8h.html#ga5645870e43e8bbd2296cc08fbd87e1c8", null ],

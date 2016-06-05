@@ -1208,291 +1208,286 @@ $(document).ready(function(){initNavTree('frame__window_8c_source.html','');});
 <div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;  rct.top = rct.bottom - STATUS_BAR_HEIGHT;</div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;<span class="comment">//  rct.top -= 4 * STATUS_BAR_HEIGHT; // temporary</span></div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;  <span class="comment">// does the Expose event intersect my status bar?</span></div>
 <div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;<span class="comment">//  WB_ERROR_PRINT(&quot;TEMPORARY: %s - status bar rect:  (%d,%d,%d,%d)\n&quot;,</span></div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;<span class="comment">//                  __FUNCTION__, rct.left, rct.top, rct.right, rct.bottom);</span></div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;  <span class="comment">// does the Expose event intersect my status bar?</span></div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;  rctExpose.left   = pEvent-&gt;x;</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;  rctExpose.top    = pEvent-&gt;y;</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;  rctExpose.right  = rctExpose.left + pEvent-&gt;width;</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;  rctExpose.bottom = rctExpose.top + pEvent-&gt;height;</div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  rctExpose.left   = pEvent-&gt;x;</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;  rctExpose.top    = pEvent-&gt;y;</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;  rctExpose.right  = rctExpose.left + pEvent-&gt;width;</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;  rctExpose.bottom = rctExpose.top + pEvent-&gt;height;</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;</div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="group__wcore.html#gac63e4883a78e0a46f209f23294367d9d" title="Returns logical TRUE if the rectangle R1 overlaps/intersects R2.">WBRectOverlapped</a>(rct, rctExpose))</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;  {</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;INFO: %s - expose event excludes status bar\n&quot;</span>, __FUNCTION__);</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="group__wcore.html#gac63e4883a78e0a46f209f23294367d9d" title="Returns logical TRUE if the rectangle R1 overlaps/intersects R2.">WBRectOverlapped</a>(rct, rctExpose))</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;  {</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;<span class="comment">//    WB_ERROR_PRINT(&quot;INFO: %s - expose event excludes status bar\n&quot;, __FUNCTION__);</span></div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;    <span class="keywordflow">return</span>; <span class="comment">// do nothing (no overlap)</span></div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;  }</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;  <span class="comment">// intersect the two rectangles so I only re-paint what I have to</span></div>
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;    <span class="keywordflow">return</span>; <span class="comment">// do nothing (no overlap)</span></div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  }</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;  <span class="comment">// intersect the two rectangles so I only re-paint what I have to</span></div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  <span class="keywordflow">if</span>(rctExpose.top &lt; rct.top)</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  {</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    rctExpose.top = rct.top;</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;  }</div>
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;  <span class="keywordflow">if</span>(rctExpose.top &lt; rct.top)</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;  <span class="keywordflow">if</span>(rctExpose.bottom &gt; rct.bottom)</div>
 <div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;  {</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;    rctExpose.top = rct.top;</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;    rctExpose.bottom = rct.bottom;</div>
 <div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;  }</div>
 <div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;  <span class="keywordflow">if</span>(rctExpose.bottom &gt; rct.bottom)</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;  <span class="keywordflow">if</span>(rctExpose.left &lt; rct.left)</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;  {</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    rctExpose.bottom = rct.bottom;</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    rctExpose.left = rct.left;</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  }</div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;  <span class="keywordflow">if</span>(rctExpose.left &lt; rct.left)</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;  <span class="keywordflow">if</span>(rctExpose.right &gt; rct.right)</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;  {</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    rctExpose.left = rct.left;</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    rctExpose.right = rct.right;</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;  }</div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;  <span class="keywordflow">if</span>(rctExpose.right &gt; rct.right)</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;  {</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;    rctExpose.right = rct.right;</div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;  }</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;  <span class="comment">// time to start painting</span></div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;  <span class="comment">// time to start painting</span></div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;  geom.x      = rctExpose.left;</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;  geom.y      = rctExpose.top;</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;  geom.width  = rctExpose.right - rctExpose.left;</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;  geom.height = rctExpose.bottom - rctExpose.top;</div>
 <div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;  geom.x      = rctExpose.left;</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;  geom.y      = rctExpose.top;</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;  geom.width  = rctExpose.right - rctExpose.left;</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;  geom.height = rctExpose.bottom - rctExpose.top;</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;  gc = <a class="code" href="group__expose.html#ga0adc3dcf20bfb7cb3add1ac460056f6b" title="&#39;Paint&#39; helper, creates a GC for use in updating the window for a specified rectangular area...">WBBeginPaintGeom</a>(pFrameWindow-&gt;wbFW.wID, &amp;geom);</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;  <span class="keywordflow">if</span>(gc == None)</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;  {</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;ERROR: %s - no GC from WBBeginPaintGeom\n&quot;</span>, __FUNCTION__);</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;  }</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;  {</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    Display *pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window">WBGetWindowDisplay</a>(pFrameWindow-&gt;wbFW.wID);</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;    XPoint xpt[3];</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    <span class="comment">// fill the rectangle with the background color</span></div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;    <a class="code" href="group__expose.html#ga1cbd545c3fa47148b5458186c2666507" title="&#39;Paint&#39; helper, erases background by painting the background color within the clipping region...">WBClearWindow</a>(pFrameWindow-&gt;wbFW.wID, gc); <span class="comment">// should only paint my little rectangle</span></div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    <span class="comment">// draw some lines in some colors for the border</span></div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    <span class="comment">// paint the 3D-looking border</span></div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    XSetForeground(pDisplay, gc, clrBD2.pixel);</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;    xpt[0].x=rct.left;</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;    xpt[0].y=rct.bottom - 2;  <span class="comment">// exclude first point</span></div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;    xpt[1].x=rct.left;</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;    xpt[1].y=rct.top;</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    xpt[2].x=rct.right - 2;   <span class="comment">// exclude last point</span></div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    xpt[2].y=rct.top;</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;</div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    XDrawLines(pDisplay, pFrameWindow-&gt;wbFW.wID, gc, xpt, 3, CoordModeOrigin);</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    XSetForeground(pDisplay, gc, clrBD3.pixel);</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    xpt[0].x=rct.right - 1;</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    xpt[0].y=rct.top + 1;              <span class="comment">// exclude first point</span></div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    xpt[1].x=rct.right - 1;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    xpt[1].y=rct.bottom - 1;</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    xpt[2].x=rct.left + 1;              <span class="comment">// exclude final point</span></div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    xpt[2].y=rct.bottom - 1;</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    XDrawLines(pDisplay, pFrameWindow-&gt;wbFW.wID, gc, xpt, 3, CoordModeOrigin);</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    XSetForeground(pDisplay, gc, clrFG.pixel); <span class="comment">// by convention, set it to FG [for text I need this]</span></div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <span class="comment">// TODO:  the tabbed columns and their enclosed text</span></div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    <span class="keywordflow">if</span>(pFrameWindow-&gt;szStatus)</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    {</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;      <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> rctTemp;</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;  gc = <a class="code" href="group__expose.html#ga0adc3dcf20bfb7cb3add1ac460056f6b" title="&#39;Paint&#39; helper, creates a GC for use in updating the window for a specified rectangular area...">WBBeginPaintGeom</a>(pFrameWindow-&gt;wbFW.wID, &amp;geom);</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;  <span class="keywordflow">if</span>(gc == None)</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;  {</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;ERROR: %s - no GC from WBBeginPaintGeom\n&quot;</span>, __FUNCTION__);</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;  }</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;  {</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    Display *pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window">WBGetWindowDisplay</a>(pFrameWindow-&gt;wbFW.wID);</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    XPoint xpt[3];</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    <span class="comment">// fill the rectangle with the background color</span></div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    <a class="code" href="group__expose.html#ga1cbd545c3fa47148b5458186c2666507" title="&#39;Paint&#39; helper, erases background by painting the background color within the clipping region...">WBClearWindow</a>(pFrameWindow-&gt;wbFW.wID, gc); <span class="comment">// should only paint my little rectangle</span></div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    <span class="comment">// draw some lines in some colors for the border</span></div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;    <span class="comment">// paint the 3D-looking border</span></div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;    XSetForeground(pDisplay, gc, clrBD2.pixel);</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    xpt[0].x=rct.left;</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    xpt[0].y=rct.bottom - 2;  <span class="comment">// exclude first point</span></div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    xpt[1].x=rct.left;</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    xpt[1].y=rct.top;</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    xpt[2].x=rct.right - 2;   <span class="comment">// exclude last point</span></div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;    xpt[2].y=rct.top;</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;    XDrawLines(pDisplay, pFrameWindow-&gt;wbFW.wID, gc, xpt, 3, CoordModeOrigin);</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    XSetForeground(pDisplay, gc, clrBD3.pixel);</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    xpt[0].x=rct.right - 1;</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    xpt[0].y=rct.top + 1;              <span class="comment">// exclude first point</span></div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    xpt[1].x=rct.right - 1;</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;    xpt[1].y=rct.bottom - 1;</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    xpt[2].x=rct.left + 1;              <span class="comment">// exclude final point</span></div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    xpt[2].y=rct.bottom - 1;</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    XDrawLines(pDisplay, pFrameWindow-&gt;wbFW.wID, gc, xpt, 3, CoordModeOrigin);</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    XSetForeground(pDisplay, gc, clrFG.pixel); <span class="comment">// by convention, set it to FG [for text I need this]</span></div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    <span class="comment">// TODO:  the tabbed columns and their enclosed text</span></div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;    <span class="keywordflow">if</span>(pFrameWindow-&gt;szStatus)</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    {</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;      <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> rctTemp;</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;      rctTemp.left = rct.left + 8;</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;      rctTemp.top = rct.top + 4;</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;      rctTemp.right = rct.right - 8;</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;      rctTemp.bottom = rct.bottom - 4;</div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;</div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;      rctTemp.left = rct.left + 8;</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;      rctTemp.top = rct.top + 4;</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;      rctTemp.right = rct.right - 8;</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;      rctTemp.bottom = rct.bottom - 4;</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;      <span class="comment">// temporary:  just paint the text</span></div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;<span class="comment">//      DTDrawSingleLineText(WBGetDefaultFont(),</span></div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;<span class="comment">//                           pFrameWindow-&gt;szStatus, pDisplay,</span></div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;<span class="comment">//                           gc, pFrameWindow-&gt;wbFW.wID, 0, 0, &amp;rctTemp, 0);</span></div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;      XDrawString(pDisplay, pFrameWindow-&gt;wbFW.wID, gc, rctTemp.left, rctTemp.bottom - 2,</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;                  pFrameWindow-&gt;szStatus, strlen(pFrameWindow-&gt;szStatus));</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;    }                         </div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;      <span class="comment">// temporary:  just paint the text</span></div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;<span class="comment">//      DTDrawSingleLineText(WBGetDefaultFont(),</span></div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;<span class="comment">//                           pFrameWindow-&gt;szStatus, pDisplay,</span></div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;<span class="comment">//                           gc, pFrameWindow-&gt;wbFW.wID, 0, 0, &amp;rctTemp, 0);</span></div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;      XDrawString(pDisplay, pFrameWindow-&gt;wbFW.wID, gc, rctTemp.left, rctTemp.bottom - 2,</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;                  pFrameWindow-&gt;szStatus, strlen(pFrameWindow-&gt;szStatus));</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    }                         </div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    <a class="code" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39;">WBEndPaint</a>(pFrameWindow-&gt;wbFW.wID, gc);  <span class="comment">// and that&#39;s it!</span></div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;  }</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;  <span class="comment">// finally, alter the expose event slightly so that it reflects the &#39;painted&#39; area</span></div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    <a class="code" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39;">WBEndPaint</a>(pFrameWindow-&gt;wbFW.wID, gc);  <span class="comment">// and that&#39;s it!</span></div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;  }</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;</div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;  <span class="comment">// finally, alter the expose event slightly so that it reflects the &#39;painted&#39; area</span></div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;</div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;  <span class="keywordflow">if</span>(pEvent-&gt;height + pEvent-&gt;x &gt; rct.top)</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;  {</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;<span class="comment">//    WB_ERROR_PRINT(&quot;TEMPOPRARY: %s - altering height in Expose event\n&quot;, __FUNCTION__);</span></div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;    pEvent-&gt;height = rct.top - pEvent-&gt;x;</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    <span class="keywordflow">if</span>(pEvent-&gt;height &lt; 0)</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    {</div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;      pEvent-&gt;height = 0;</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;    }</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;  }</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  <span class="keywordflow">if</span>(pEvent-&gt;height + pEvent-&gt;x &gt; rct.top)</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;  {</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;<span class="comment">//    WB_ERROR_PRINT(&quot;TEMPOPRARY: %s - altering height in Expose event\n&quot;, __FUNCTION__);</span></div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    pEvent-&gt;height = rct.top - pEvent-&gt;x;</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <span class="keywordflow">if</span>(pEvent-&gt;height &lt; 0)</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    {</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;      pEvent-&gt;height = 0;</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;    }</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;  }</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;  <span class="comment">// TODO:  manage top, left, right and x, y, width?  probably don&#39;t need to</span></div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;}</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;</div>
 <div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;  <span class="comment">// TODO:  manage top, left, right and x, y, width?  probably don&#39;t need to</span></div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;</div>
 <div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;}</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="preprocessor">#if 0 </span><span class="comment">/* these are handled separately - don&#39;t do this */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;<span class="comment">// CLIPBOARD / SELECTION EVENTS</span></div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;<span class="comment">// NOTES:</span></div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;<span class="comment">// KDE wants _QT_SELECTION</span></div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;<span class="comment">// GNOME wants GDK_SELECTION</span></div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;<span class="comment">// &#39;libXt&#39; wants _XT_SELECTION (see XtOwnSelection, XtGetSelectionValue, etc.)</span></div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="comment">// (nothing else seen so far)</span></div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;<span class="preprocessor">#if 0 </span><span class="comment">/* these are handled separately - don&#39;t do this */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;<span class="comment">// CLIPBOARD / SELECTION EVENTS</span></div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;<span class="comment">// NOTES:</span></div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;<span class="comment">// KDE wants _QT_SELECTION</span></div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;<span class="comment">// GNOME wants GDK_SELECTION</span></div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;<span class="comment">// &#39;libXt&#39; wants _XT_SELECTION (see XtOwnSelection, XtGetSelectionValue, etc.)</span></div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;<span class="comment">// (nothing else seen so far)</span></div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;<span class="keywordtype">int</span> FWDoSelectionEvents(<a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows">WBFrameWindow</a> *pFrameWindow, Window wID, Window wIDMenu, XEvent *pEvent)</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;{</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;Display *pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window">WBGetWindowDisplay</a>(wID);</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;FRAME_WINDOW *pFW = (FRAME_WINDOW *)pFrameWindow;</div>
 <div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="keywordtype">int</span> FWDoSelectionEvents(<a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows">WBFrameWindow</a> *pFrameWindow, Window wID, Window wIDMenu, XEvent *pEvent)</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;{</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;Display *pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window">WBGetWindowDisplay</a>(wID);</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;FRAME_WINDOW *pFW = (FRAME_WINDOW *)pFrameWindow;</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;  <span class="comment">// this is what the libXt function &#39;RequestSelectionValue&#39; does</span></div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;  <span class="comment">// XConvertSelection(info-&gt;ctx-&gt;dpy, selection, target,   // &#39;selection&#39; and &#39;target&#39; are Atoms</span></div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;  <span class="comment">//                   info-&gt;property, XtWindow(info-&gt;widget), info-&gt;time);</span></div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;</div>
 <div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;  <span class="comment">// this is what the libXt function &#39;RequestSelectionValue&#39; does</span></div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;  <span class="comment">// XConvertSelection(info-&gt;ctx-&gt;dpy, selection, target,   // &#39;selection&#39; and &#39;target&#39; are Atoms</span></div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;  <span class="comment">//                   info-&gt;property, XtWindow(info-&gt;widget), info-&gt;time);</span></div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;  <span class="comment">// TEMPORARY:  doing what WBDefault does</span></div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;  <span class="keywordflow">if</span>(pEvent-&gt;type == SelectionRequest)</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;  {</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    <span class="keywordtype">char</span> *p1 = pEvent-&gt;xselectionrequest.selection != None ? XGetAtomName(pDisplay, pEvent-&gt;xselectionrequest.selection) : NULL;</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;    <span class="keywordtype">char</span> *p2 = pEvent-&gt;xselectionrequest.target != None ? XGetAtomName(pDisplay, pEvent-&gt;xselectionrequest.target) : NULL;</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <span class="keywordtype">char</span> *p3 = pEvent-&gt;xselectionrequest.property != None ? XGetAtomName(pDisplay, pEvent-&gt;xselectionrequest.property) : NULL;</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY - %s - SelectionRequest owner=%d requestor=%d selection=%s target=%s property=%s\n&quot;</span>,</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                   __FUNCTION__,</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselectionrequest.owner,</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselectionrequest.requestor,</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                   p1 ? p1 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;                   p2 ? p2 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;                   p3 ? p3 : <span class="stringliteral">&quot;NULL&quot;</span>);</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;    <span class="keywordflow">if</span>(p1)</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;    {</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;      XFree(p1);</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;    }                   </div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;    <span class="keywordflow">if</span>(p2)</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;    {</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;      XFree(p2);</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    }                   </div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;    <span class="keywordflow">if</span>(p3)</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    {</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;      XFree(p3);</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;    }                   </div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;    <span class="comment">// the default rejects the request.  Send a &#39;SelectionNotify&#39; to indicate the failure</span></div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;    <span class="keywordflow">if</span>(pEvent-&gt;xselectionrequest.owner == wID) <span class="comment">// only if I&#39;m the selection owner</span></div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;    {</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;      XSelectionEvent evtN;</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;      memset(&amp;evtN, 0, <span class="keyword">sizeof</span>(evtN));</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;      evtN.type = SelectionNotify;</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;      evtN.send_event = True; <span class="comment">// &#39;cause I&#39;m going to use &#39;XSendEvent&#39; to reply immediately</span></div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;      evtN.requestor = pEvent-&gt;xselectionrequest.requestor;</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;      evtN.selection = pEvent-&gt;xselectionrequest.selection;</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;      evtN.target = pEvent-&gt;xselectionrequest.target;</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;      evtN.property = None; <span class="comment">// to indicate failure</span></div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;      evtN.time = pEvent-&gt;xselectionrequest.time; <span class="comment">// same time as request (for now)</span></div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;  <span class="comment">// TEMPORARY:  doing what WBDefault does</span></div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;  <span class="keywordflow">if</span>(pEvent-&gt;type == SelectionRequest)</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;  {</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    <span class="keywordtype">char</span> *p1 = pEvent-&gt;xselectionrequest.selection != None ? XGetAtomName(pDisplay, pEvent-&gt;xselectionrequest.selection) : NULL;</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    <span class="keywordtype">char</span> *p2 = pEvent-&gt;xselectionrequest.target != None ? XGetAtomName(pDisplay, pEvent-&gt;xselectionrequest.target) : NULL;</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    <span class="keywordtype">char</span> *p3 = pEvent-&gt;xselectionrequest.property != None ? XGetAtomName(pDisplay, pEvent-&gt;xselectionrequest.property) : NULL;</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY - %s - SelectionRequest owner=%d requestor=%d selection=%s target=%s property=%s\n&quot;</span>,</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                   __FUNCTION__,</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselectionrequest.owner,</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselectionrequest.requestor,</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;                   p1 ? p1 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                   p2 ? p2 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                   p3 ? p3 : <span class="stringliteral">&quot;NULL&quot;</span>);</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    <span class="keywordflow">if</span>(p1)</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;    {</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;      XFree(p1);</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;    }                   </div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;    <span class="keywordflow">if</span>(p2)</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;    {</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;      XFree(p2);</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;    }                   </div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;    <span class="keywordflow">if</span>(p3)</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;    {</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;      XFree(p3);</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    }                   </div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;    <span class="comment">// the default rejects the request.  Send a &#39;SelectionNotify&#39; to indicate the failure</span></div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;    <span class="keywordflow">if</span>(pEvent-&gt;xselectionrequest.owner == wID) <span class="comment">// only if I&#39;m the selection owner</span></div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;    {</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;      XSelectionEvent evtN;</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;      memset(&amp;evtN, 0, <span class="keyword">sizeof</span>(evtN));</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;      evtN.type = SelectionNotify;</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;      evtN.send_event = True; <span class="comment">// &#39;cause I&#39;m going to use &#39;XSendEvent&#39; to reply immediately</span></div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;      evtN.requestor = pEvent-&gt;xselectionrequest.requestor;</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;      evtN.selection = pEvent-&gt;xselectionrequest.selection;</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;      evtN.target = pEvent-&gt;xselectionrequest.target;</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;      evtN.property = None; <span class="comment">// to indicate failure</span></div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;      evtN.time = pEvent-&gt;xselectionrequest.time; <span class="comment">// same time as request (for now)</span></div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;      <a class="code" href="group__debug.html#ga51714b3d017c77dc550adc45b16dfceb" title="wrapper macro for calls into the X11 library. This macro precedes the call(s)">BEGIN_XCALL_DEBUG_WRAPPER</a></div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;      XSendEvent(pDisplay, evtN.requestor, False, 0, (XEvent *)&amp;evtN);</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;      <a class="code" href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63" title="wrapper macro for calls into the X11 library. This macro follows the call(s)">END_XCALL_DEBUG_WRAPPER</a></div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;    }</div>
 <div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;      <a class="code" href="group__debug.html#ga51714b3d017c77dc550adc45b16dfceb" title="wrapper macro for calls into the X11 library. This macro precedes the call(s)">BEGIN_XCALL_DEBUG_WRAPPER</a></div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;      XSendEvent(pDisplay, evtN.requestor, False, 0, (XEvent *)&amp;evtN);</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;      <a class="code" href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63" title="wrapper macro for calls into the X11 library. This macro follows the call(s)">END_XCALL_DEBUG_WRAPPER</a></div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;    }</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;    <span class="keywordflow">return</span> 1; <span class="comment">// &quot;handled&quot;</span></div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;  }</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pEvent-&gt;type == SelectionClear)</div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;  {</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;    <span class="keywordtype">char</span> *p1 = XGetAtomName(pDisplay, pEvent-&gt;xselectionclear.selection);</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;    <span class="keywordflow">return</span> 1; <span class="comment">// &quot;handled&quot;</span></div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;  }</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pEvent-&gt;type == SelectionClear)</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;  {</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    <span class="keywordtype">char</span> *p1 = XGetAtomName(pDisplay, pEvent-&gt;xselectionclear.selection);</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY - %s - SelectionClear window=%d selection=%s\n&quot;</span>,</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                   __FUNCTION__,</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselectionclear.window,</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                   p1 ? p1 : <span class="stringliteral">&quot;NULL&quot;</span>);</div>
 <div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY - %s - SelectionClear window=%d selection=%s\n&quot;</span>,</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;                   __FUNCTION__,</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselectionclear.window,</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;                   p1 ? p1 : <span class="stringliteral">&quot;NULL&quot;</span>);</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    <span class="keywordflow">if</span>(p1)</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;    {</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;      XFree(p1);</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;    }                   </div>
 <div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;    <span class="keywordflow">if</span>(p1)</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    {</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;      XFree(p1);</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    }                   </div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <span class="comment">// the default rejects the request.  Send a &#39;SelectionNotify&#39; to indicate the failure</span></div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <span class="keywordflow">if</span>(pEvent-&gt;xselectionrequest.owner == wID) <span class="comment">// only if I&#39;m the selection owner</span></div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    {</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;      XSelectionEvent evtN;</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;      memset(&amp;evtN, 0, <span class="keyword">sizeof</span>(evtN));</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;      evtN.type = SelectionNotify;</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;      evtN.send_event = True; <span class="comment">// &#39;cause I&#39;m going to use &#39;XSendEvent&#39; to reply immediately</span></div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;      evtN.requestor = pEvent-&gt;xselectionrequest.requestor;</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;      evtN.selection = pEvent-&gt;xselectionrequest.selection;</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;      evtN.target = None;</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;      evtN.property = None; <span class="comment">// to indicate failure (?)</span></div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;      evtN.time = pEvent-&gt;xselectionrequest.time; <span class="comment">// same time as request (for now)</span></div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;    <span class="comment">// the default rejects the request.  Send a &#39;SelectionNotify&#39; to indicate the failure</span></div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    <span class="keywordflow">if</span>(pEvent-&gt;xselectionrequest.owner == wID) <span class="comment">// only if I&#39;m the selection owner</span></div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    {</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;      XSelectionEvent evtN;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;      memset(&amp;evtN, 0, <span class="keyword">sizeof</span>(evtN));</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;      evtN.type = SelectionNotify;</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;      evtN.send_event = True; <span class="comment">// &#39;cause I&#39;m going to use &#39;XSendEvent&#39; to reply immediately</span></div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;      evtN.requestor = pEvent-&gt;xselectionrequest.requestor;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;      evtN.selection = pEvent-&gt;xselectionrequest.selection;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;      evtN.target = None;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;      evtN.property = None; <span class="comment">// to indicate failure (?)</span></div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;      evtN.time = pEvent-&gt;xselectionrequest.time; <span class="comment">// same time as request (for now)</span></div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;      <a class="code" href="group__debug.html#ga51714b3d017c77dc550adc45b16dfceb" title="wrapper macro for calls into the X11 library. This macro precedes the call(s)">BEGIN_XCALL_DEBUG_WRAPPER</a></div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;      XSendEvent(pDisplay, evtN.requestor, False, 0, (XEvent *)&amp;evtN);</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;      <a class="code" href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63" title="wrapper macro for calls into the X11 library. This macro follows the call(s)">END_XCALL_DEBUG_WRAPPER</a></div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    }</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;      <a class="code" href="group__debug.html#ga51714b3d017c77dc550adc45b16dfceb" title="wrapper macro for calls into the X11 library. This macro precedes the call(s)">BEGIN_XCALL_DEBUG_WRAPPER</a></div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;      XSendEvent(pDisplay, evtN.requestor, False, 0, (XEvent *)&amp;evtN);</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;      <a class="code" href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63" title="wrapper macro for calls into the X11 library. This macro follows the call(s)">END_XCALL_DEBUG_WRAPPER</a></div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    }</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <span class="keywordflow">return</span> 1; <span class="comment">// &quot;handled&quot;</span></div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;  }</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pEvent-&gt;type == SelectionNotify)</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;  {</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    <span class="keywordtype">char</span> *p1 = XGetAtomName(pDisplay, pEvent-&gt;xselection.selection);</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    <span class="keywordtype">char</span> *p2 = XGetAtomName(pDisplay, pEvent-&gt;xselection.target);</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    <span class="keywordtype">char</span> *p3 = XGetAtomName(pDisplay, pEvent-&gt;xselection.property);</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY - %s - SelectionNotify requestor=%d selection=%s target=%s property=%s\n&quot;</span>,</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;                   __FUNCTION__,</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselection.requestor,</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;                   p1 ? p1 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                   p2 ? p2 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;                   p3 ? p3 : <span class="stringliteral">&quot;NULL&quot;</span>);</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <span class="keywordflow">if</span>(p1)</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;    {</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;      XFree(p1);</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    }                   </div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;    <span class="keywordflow">if</span>(p2)</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    {</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;      XFree(p2);</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;    }                   </div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    <span class="keywordflow">if</span>(p3)</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;    {</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;      XFree(p3);</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    }                   </div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    <span class="keywordflow">return</span> 1; <span class="comment">// &quot;handled&quot;</span></div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;  }</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pEvent-&gt;type == SelectionNotify)</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;  {</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    <span class="keywordtype">char</span> *p1 = XGetAtomName(pDisplay, pEvent-&gt;xselection.selection);</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <span class="keywordtype">char</span> *p2 = XGetAtomName(pDisplay, pEvent-&gt;xselection.target);</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    <span class="keywordtype">char</span> *p3 = XGetAtomName(pDisplay, pEvent-&gt;xselection.property);</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY - %s - SelectionNotify requestor=%d selection=%s target=%s property=%s\n&quot;</span>,</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;                   __FUNCTION__,</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;                   (<span class="keywordtype">int</span>)pEvent-&gt;xselection.requestor,</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;                   p1 ? p1 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;                   p2 ? p2 : <span class="stringliteral">&quot;NULL&quot;</span>,</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;                   p3 ? p3 : <span class="stringliteral">&quot;NULL&quot;</span>);</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    <span class="keywordflow">if</span>(p1)</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;    {</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;      XFree(p1);</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    }                   </div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    <span class="keywordflow">if</span>(p2)</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    {</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;      XFree(p2);</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    }                   </div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    <span class="keywordflow">if</span>(p3)</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;    {</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;      XFree(p3);</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;    }                   </div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    <span class="keywordflow">return</span> 1; <span class="comment">// &quot;handled&quot;</span></div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;  }</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;    <span class="keywordflow">return</span> 1; <span class="comment">// &quot;handled&quot;</span></div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;  }</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;  <span class="keywordflow">return</span> 0; <span class="comment">// for now</span></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;}</div>
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;  <span class="keywordflow">return</span> 0; <span class="comment">// for now</span></div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;}</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;<span class="preprocessor">#endif // 0</span></div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;<span class="preprocessor">#endif // 0</span></div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="frame__window_8c.html">frame_window.c</a></li>
-    <li class="footer">Generated on Thu Jun 2 2016 13:40:35 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jun 4 2016 19:19:52 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

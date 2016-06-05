@@ -76,6 +76,7 @@ var window__helper_8h =
       [ "DebugSubSystem_Font", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a65fce82f598992eb34b1dda5d50f889a", null ],
       [ "DebugSubSystem_Settings", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a8c0dbd5a6a424171b8605a9a9a2cde16", null ],
       [ "DebugSubSystem_Selection", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a9f60cbc5957ceeda886a8559056ae4de", null ],
+      [ "DebugSubSystem_Pixmap", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395af692ff7eba270cc2a3a7cce224f81047", null ],
       [ "DebugSubSystem_MASK", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8", null ]
     ] ],
     [ "WMPropertiesWindowType", "window__helper_8h.html#ga393c61affbc5766ce678224558be0b16", [
@@ -256,6 +257,7 @@ var window__helper_8h =
     [ "WBValidateGeom", "window__helper_8h.html#ga15fc03073ae32c9396749d2d3a0777d2", null ],
     [ "WBValidateRect", "window__helper_8h.html#gabfd2640f2400aa4f595c490ebb5baf7f", null ],
     [ "WBValidateRegion", "window__helper_8h.html#ga424b1bf6edbe03b7e9aefff3af680cb3", null ],
+    [ "WBWaitForEvent", "window__helper_8h.html#gacf7234ca254d2459a41bb6917b41ab60", null ],
     [ "WBWindowDispatch", "window__helper_8h.html#gaf6df53fd27da18e4a5a0ad5077c45a21", null ],
     [ "WBXlatCoordGeom", "window__helper_8h.html#ga1ef37a916fec2cacab2c772ad915ff58", null ],
     [ "WBXlatCoordPoint", "window__helper_8h.html#ga37248fbd87d296716633672fd98877f9", null ],

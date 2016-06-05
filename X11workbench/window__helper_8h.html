@@ -297,7 +297,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a65fce82f598992eb34b1dda5d50f889a">DebugSubSystem_Font</a> = 0x00002000, 
 <a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a8c0dbd5a6a424171b8605a9a9a2cde16">DebugSubSystem_Settings</a> = 0x00004000, 
 <a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a9f60cbc5957ceeda886a8559056ae4de">DebugSubSystem_Selection</a> = 0x00008000, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8">DebugSubSystem_MASK</a> = ~7L
+<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395af692ff7eba270cc2a3a7cce224f81047">DebugSubSystem_Pixmap</a> = 0x00010000, 
+<br/>
+&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8">DebugSubSystem_MASK</a> = ~7L
 <br/>
  }</td></tr>
 <tr class="memdesc:gab658e6d84759440dbf3c890446075395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug level enumeration.  <a href="group__debug.html#gab658e6d84759440dbf3c890446075395">More...</a><br/></td></tr>
@@ -633,6 +635,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae65d3f6f49b844602dfc2ce6037fde09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09">WBCheckGetEvent</a> (Display *pDisplay, XEvent *pEvent)</td></tr>
 <tr class="memdesc:gae65d3f6f49b844602dfc2ce6037fde09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main message loop, high level API to check for and retrieve the next event.  <a href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09">More...</a><br/></td></tr>
 <tr class="separator:gae65d3f6f49b844602dfc2ce6037fde09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf7234ca254d2459a41bb6917b41ab60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">WBWaitForEvent</a> (Display *pDisplay)</td></tr>
+<tr class="memdesc:gacf7234ca254d2459a41bb6917b41ab60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for an event, blocking indefinitely.  <a href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">More...</a><br/></td></tr>
+<tr class="separator:gacf7234ca254d2459a41bb6917b41ab60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79275e72d837cef2b535e9feeb81074f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">WBDispatch</a> (XEvent *pEvent)</td></tr>
 <tr class="memdesc:ga79275e72d837cef2b535e9feeb81074f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic Event Dispatcher, using message type to dispatch.  <a href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">More...</a><br/></td></tr>
 <tr class="separator:ga79275e72d837cef2b535e9feeb81074f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -652,7 +657,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac1ece849fdeb1fc9c42f3565dcc35351"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a modal window with a specific return value.  <a href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351">More...</a><br/></td></tr>
 <tr class="separator:gac1ece849fdeb1fc9c42f3565dcc35351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaded67a2919c5cb862d512803fbcf21b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">WBNextEvent</a> (Display *pDisplay, XEvent *pEvent)</td></tr>
-<tr class="memdesc:gaded67a2919c5cb862d512803fbcf21b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">low-level event queue wrapper. Implements the client-side event queue  <a href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">More...</a><br/></td></tr>
+<tr class="memdesc:gaded67a2919c5cb862d512803fbcf21b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">low-level event queue wrapper. Implements the client-side event queue. Does not block if no events available.  <a href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">More...</a><br/></td></tr>
 <tr class="separator:gaded67a2919c5cb862d512803fbcf21b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70cadee7dfde0a884dfdb5a36f4bf6b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">WBPostEvent</a> (Window wID, XEvent *pEvent)</td></tr>
 <tr class="memdesc:ga70cadee7dfde0a884dfdb5a36f4bf6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places a copy of the specified event at the end of the regular (internal) event queue.  <a href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">More...</a><br/></td></tr>
@@ -1002,7 +1007,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>This function works ONLY for windows that have been registered with a callback. It checks to see if the internal window information exists and returns a non-zero value if the internal information exists AND the window itself has not been destroyed. This works whether or not the window was ever mapped.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l04890">4890</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l05066">5066</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1017,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="window__helper_8h.html">window_helper.h</a></li>
-    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jun 4 2016 19:19:53 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

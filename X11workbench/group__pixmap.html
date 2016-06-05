@@ -61,6 +61,7 @@ $(document).ready(function(){initNavTree('group__pixmap.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -73,6 +74,15 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__XPM__ATTRIBUTES__.html">_XPM_ATTRIBUTES_</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility structure for use with <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData()</a> whenever libXpm is not in use.  <a href="struct__XPM__ATTRIBUTES__.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga2f46e1ee45b5d47e6b642e56f1a0ddd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1">XPM_CREATE_PIXMAP_FROM_DATA</a>(A, B, C, D, E, F)&#160;&#160;&#160;<a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61">MyLoadPixmapFromData</a>(A,B,C,D,E,F)</td></tr>
+<tr class="memdesc:ga2f46e1ee45b5d47e6b642e56f1a0ddd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform helper macro to create a pixmap from data.  <a href="#ga2f46e1ee45b5d47e6b642e56f1a0ddd1">More...</a><br/></td></tr>
+<tr class="separator:ga2f46e1ee45b5d47e6b642e56f1a0ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cadde28513a5d92a6d0bce3505f3a53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga5cadde28513a5d92a6d0bce3505f3a53">XPM_FREE_ATTRIBUTES</a>(pAttr)&#160;&#160;&#160;/* does nothing */</td></tr>
+<tr class="memdesc:ga5cadde28513a5d92a6d0bce3505f3a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform helper macro to free XPM_ATTRIBUTES filled in by <a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1" title="Platform helper macro to create a pixmap from data.">XPM_CREATE_PIXMAP_FROM_DATA()</a>  <a href="#ga5cadde28513a5d92a6d0bce3505f3a53">More...</a><br/></td></tr>
+<tr class="separator:ga5cadde28513a5d92a6d0bce3505f3a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -112,6 +122,102 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Utility functions for loading and managing pixmaps, icons, cursors, and so forth. These are primarily utilities and wrappers that include platform-dependent implementations as well as more generic functionality. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga2f46e1ee45b5d47e6b642e56f1a0ddd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XPM_CREATE_PIXMAP_FROM_DATA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">B, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">C, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">D, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">E, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">F&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61">MyLoadPixmapFromData</a>(A,B,C,D,E,F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Platform helper macro to create a pixmap from data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>A pointer to the Display </td></tr>
+    <tr><td class="paramname">B</td><td>The Window ID </td></tr>
+    <tr><td class="paramname">C</td><td>A pointer to an array of 'char *' that represents the pixmap data </td></tr>
+    <tr><td class="paramname">D</td><td>A pointer to a Pixmap into which the data will be saved, or NULL </td></tr>
+    <tr><td class="paramname">E</td><td>A pointer to the Pixmap into which the mask data will be saved (icons only), or NULL </td></tr>
+    <tr><td class="paramname">F</td><td>A pointer to an XPM_ATTRIBUTES structure. If libXpm is present, this will be defined in X11/xpm.h </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure. See XpmCreatePixmapFromData in libXpm documentation</dd></dl>
+<p>This macro abstracts calls to XpmCreatePixmapFromData() by allowing an internal function to be called whenever libXpm is not available for this purpose. </p>
+
+<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00356">356</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5cadde28513a5d92a6d0bce3505f3a53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XPM_FREE_ATTRIBUTES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pAttr</td><td>)</td>
+          <td>&#160;&#160;&#160;/* does nothing */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Platform helper macro to free XPM_ATTRIBUTES filled in by <a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1" title="Platform helper macro to create a pixmap from data.">XPM_CREATE_PIXMAP_FROM_DATA()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pAttr</td><td>A pointer to the XPM_ATTRIBUTES that was filled in by a successful call to <a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1" title="Platform helper macro to create a pixmap from data.">XPM_CREATE_PIXMAP_FROM_DATA()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This macro abstracts calls to XpmFreeAttributes() by allowing an internal function to be called whenever libXpm is not available for this purpose. For the current implementation, the non-libXpm version does nothing.<br/>
+ Use this macro to free up XPM_ATTRIBUTES structure members that consume resources after a successful call to <a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1" title="Platform helper macro to create a pixmap from data.">XPM_CREATE_PIXMAP_FROM_DATA()</a>. This will help prevent resource leaks. </p>
+
+<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00370">370</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="gaeb0ff1d05c44f48e5ac2c73d073daa7a"></a>
 <div class="memitem">
@@ -207,7 +313,7 @@ When libXpm is NOT in use, the follow structure is defined:
  You should use libXpm when it is present on your system, as this function has not been fully tested on all platforms.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00675">675</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00681">681</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -255,7 +361,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>Use this function whenever you need to load an icon using a pre-defined resource ID.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00288">288</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00296">296</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -303,7 +409,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>Use this function whenever you need to load an icon using a pre-defined or registered Atom</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00314">314</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00322">322</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -365,7 +471,7 @@ When libXpm is NOT in use, the follow structure is defined:
  The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00389">389</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00411">411</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -414,7 +520,7 @@ When libXpm is NOT in use, the follow structure is defined:
  The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00460">460</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00482">482</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -462,7 +568,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>This function conveniently wraps XpmCreatePixmapFromData()</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00340">340</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00348">348</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -505,7 +611,7 @@ When libXpm is NOT in use, the follow structure is defined:
  The function returns NULL on error. Use XDestroyImage to dispose of the XImage object.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00473">473</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00495">495</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -544,7 +650,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>Use this function to register the application's icons for IDC_ICON_APP and ID_APPLICATION. In this way you can use both of them in dialog boxes and take advantage of <a class="el" href="group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f" title="Create Icon pixmap pair using pre-defined resource ID.">PXM_GetIconPixmap()</a> to create a pair of icon pixmaps whenever they are needed.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00095">95</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00103">103</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -591,7 +697,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jun 4 2016 19:19:53 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

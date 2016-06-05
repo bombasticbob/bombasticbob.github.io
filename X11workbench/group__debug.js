@@ -37,6 +37,7 @@ var group__debug =
       [ "DebugSubSystem_Font", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a65fce82f598992eb34b1dda5d50f889a", null ],
       [ "DebugSubSystem_Settings", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a8c0dbd5a6a424171b8605a9a9a2cde16", null ],
       [ "DebugSubSystem_Selection", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a9f60cbc5957ceeda886a8559056ae4de", null ],
+      [ "DebugSubSystem_Pixmap", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395af692ff7eba270cc2a3a7cce224f81047", null ],
       [ "DebugSubSystem_MASK", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8", null ]
     ] ],
     [ "WBDebugDump", "group__debug.html#ga1b403292a2ce065b57db74db5809dfea", null ],

@@ -258,258 +258,261 @@ $(document).ready(function(){initNavTree('platform__helper_8h_source.html','');}
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#define XPM_ATTRIBUTES XpmAttributes</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define XPM_CREATE_PIXMAP_FROM_DATA(A,B,C,D,E,F) XpmCreatePixmapFromData(A,B,C,D,E,F)</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#else // HAVE_XPM or __DOXYGEN__</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00305"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html">  305</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">_XPM_ATTRIBUTES_</a></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="comment">// I only need certain information from MyLoadPixmapFromData(), so that&#39;s all I&#39;m doing with this structure</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4">  309</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4" title="The width of the returned pixmaps.">width</a>;    </div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534">  310</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534" title="height of the returned pixmaps">height</a>;   </div>
-<div class="line"><a name="l00311"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5">  311</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5" title="depth of the returned &#39;image&#39; pixmap. The mask pixmap always has a depth of &#39;1&#39;.">depth</a>;    </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;} <a class="code" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">XPM_ATTRIBUTES</a>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define XPM_FREE_ATTRIBUTES(pAttr) XpmFreeAttributes(pAttr)</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#else // HAVE_XPM or __DOXYGEN__</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html">  306</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">_XPM_ATTRIBUTES_</a></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;{</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="comment">// I only need certain information from MyLoadPixmapFromData(), so that&#39;s all I&#39;m doing with this structure</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4">  310</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4" title="The width of the returned pixmaps.">width</a>;    </div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534">  311</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534" title="height of the returned pixmaps">height</a>;   </div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="code" href="struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5">  312</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5" title="depth of the returned &#39;image&#39; pixmap. The mask pixmap always has a depth of &#39;1&#39;.">depth</a>;    </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;} <a class="code" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">XPM_ATTRIBUTES</a>;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData</a>(Display *pDisplay, Window wID, <span class="keywordtype">char</span> *aData[],</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                         Pixmap *pPixmap, Pixmap *pMask, <a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">XPM_ATTRIBUTES</a> *pAttr);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno"><a class="code" href="group__platform.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1">  355</a></span>&#160;<span class="preprocessor">#define XPM_CREATE_PIXMAP_FROM_DATA(A,B,C,D,E,F) MyLoadPixmapFromData(A,B,C,D,E,F)</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">// some helpful macros that need to be universal without being in a different header</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno"><a class="code" href="group__text.html#ga22d851925a8a6edd21f35a31de883423">  372</a></span>&#160;<span class="preprocessor">#define NEXT_WORD(pX, pY, pZ) {while(*(pX) &amp;&amp; *(pX) &lt;= &#39; &#39;){(pX)++;} (pY)=(pZ)=(pX); while(*(pX)&gt;&#39; &#39;){(pX)++;} (pZ)=(pX);}</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData</a>(Display *pDisplay, Window wID, <span class="keywordtype">char</span> *aData[],</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                         Pixmap *pPixmap, Pixmap *pMask, <a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">XPM_ATTRIBUTES</a> *pAttr);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="code" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1">  356</a></span>&#160;<span class="preprocessor">#define XPM_CREATE_PIXMAP_FROM_DATA(A,B,C,D,E,F) MyLoadPixmapFromData(A,B,C,D,E,F)</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="code" href="group__pixmap.html#ga5cadde28513a5d92a6d0bce3505f3a53">  370</a></span>&#160;<span class="preprocessor">#define XPM_FREE_ATTRIBUTES(pAttr) </span><span class="comment">/* does nothing */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">// some helpful macros that need to be universal without being in a different header</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">// common macros</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#ifndef FALSE</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FALSE 0</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // FALSE</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TRUE</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TRUE !0</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // TRUE</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00387"></a><span class="lineno"><a class="code" href="group__text.html#ga22d851925a8a6edd21f35a31de883423">  387</a></span>&#160;<span class="preprocessor">#define NEXT_WORD(pX, pY, pZ) {while(*(pX) &amp;&amp; *(pX) &lt;= &#39; &#39;){(pX)++;} (pY)=(pZ)=(pX); while(*(pX)&gt;&#39; &#39;){(pX)++;} (pZ)=(pX);}</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">// HANDLING qsort_r CALLING CONVENTION DIFFERENCES</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#if defined(QSORT_R_BSD) &amp;&amp; !defined(__DOXYGEN__)</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">// DECLARE_SORT_FUNCTION based on - int (*compar)(void *, const void *, const void *)</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">//    generates    int fn_name(void *p0, const void *p1, const void *p2)</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#define DECLARE_SORT_FUNCTION(fn_name,p0,p1,p2) int fn_name(void *p0, const void *p1, const void *p2)</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor"></span><span class="comment">// void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *))</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#define QSORT_R(A,B,C,D,E) qsort_r((A),(B),(C),(D),(E))</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor">#elif defined(QSORT_R_GNUC) &amp;&amp; !defined(__DOXYGEN__)</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">// DECLARE_SORT_FUNCTION based on typedef int (*__compar_d_fn_t) (__const void *, __const void *, void *)</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">//    generates    int fn_name(const void *p1, const void *p2, void *p0)</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#define DECLARE_SORT_FUNCTION(fn_name,p0,p1,p2) int fn_name(const void *p1, const void *p2, void *p0)</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor"></span><span class="comment">// extern void qsort_r (void *__base, size_t __nmemb, size_t __size, __compar_d_fn_t __compar, void *__arg)</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#define QSORT_R(A,B,C,D,E) qsort_r((A),(B),(C),(E),(D))</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">// here is where I implement &#39;vectored&#39; quicksort for OTHER PLATFORMS</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886" title="Local implementation of qsort_r() for operating systems that do not have it.">my_qsort_r</a>(<span class="keywordtype">void</span> *base, <span class="keywordtype">int</span> nmemb, <span class="keywordtype">int</span> size, <span class="keywordtype">void</span> *thunk,</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                <span class="keywordtype">int</span> (*compar)(<span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *));</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">// the rest is exactly like the BSD version</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00460"></a><span class="lineno"><a class="code" href="group__platform.html#ga8e072186273813195bb5c42ec9b978c2">  460</a></span>&#160;<span class="preprocessor">#define DECLARE_SORT_FUNCTION(fn_name,p0,p1,p2) int fn_name(void *p0, const void *p1, const void *p2)</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00475"></a><span class="lineno"><a class="code" href="group__platform.html#gace47742235ba7c59804024b08432cf72">  475</a></span>&#160;<span class="preprocessor">#define QSORT_R(base,nmemb,size,thunk,compar) my_qsort_r((base),(nmemb),(size),(thunk),(compar))</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">// common macros</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#ifndef FALSE</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FALSE 0</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // FALSE</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TRUE</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TRUE !0</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // TRUE</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">// HANDLING qsort_r CALLING CONVENTION DIFFERENCES</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#if defined(QSORT_R_BSD) &amp;&amp; !defined(__DOXYGEN__)</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">// DECLARE_SORT_FUNCTION based on - int (*compar)(void *, const void *, const void *)</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">//    generates    int fn_name(void *p0, const void *p1, const void *p2)</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#define DECLARE_SORT_FUNCTION(fn_name,p0,p1,p2) int fn_name(void *p0, const void *p1, const void *p2)</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor"></span><span class="comment">// void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *))</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">#define QSORT_R(A,B,C,D,E) qsort_r((A),(B),(C),(D),(E))</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">#elif defined(QSORT_R_GNUC) &amp;&amp; !defined(__DOXYGEN__)</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">// DECLARE_SORT_FUNCTION based on typedef int (*__compar_d_fn_t) (__const void *, __const void *, void *)</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">//    generates    int fn_name(const void *p1, const void *p2, void *p0)</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#define DECLARE_SORT_FUNCTION(fn_name,p0,p1,p2) int fn_name(const void *p1, const void *p2, void *p0)</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor"></span><span class="comment">// extern void qsort_r (void *__base, size_t __nmemb, size_t __size, __compar_d_fn_t __compar, void *__arg)</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#define QSORT_R(A,B,C,D,E) qsort_r((A),(B),(C),(E),(D))</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">// here is where I implement &#39;vectored&#39; quicksort for OTHER PLATFORMS</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886" title="Local implementation of qsort_r() for operating systems that do not have it.">my_qsort_r</a>(<span class="keywordtype">void</span> *base, <span class="keywordtype">int</span> nmemb, <span class="keywordtype">int</span> size, <span class="keywordtype">void</span> *thunk,</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                <span class="keywordtype">int</span> (*compar)(<span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *));</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">// the rest is exactly like the BSD version</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
+<div class="line"><a name="l00475"></a><span class="lineno"><a class="code" href="group__platform.html#ga8e072186273813195bb5c42ec9b978c2">  475</a></span>&#160;<span class="preprocessor">#define DECLARE_SORT_FUNCTION(fn_name,p0,p1,p2) int fn_name(void *p0, const void *p1, const void *p2)</span></div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="comment">// *******************************************</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="comment">// FILE/APPLICATION SEARCH PATH AND TEMP FILES</span></div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="comment">// *******************************************</span></div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5" title="Resource initialization on startup.">WBPlatformOnInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00490"></a><span class="lineno"><a class="code" href="group__platform.html#gace47742235ba7c59804024b08432cf72">  490</a></span>&#160;<span class="preprocessor">#define QSORT_R(base,nmemb,size,thunk,compar) my_qsort_r((base),(nmemb),(size),(thunk),(compar))</span></div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16" title="Resource &#39;free-up&#39; on exit (must call)">WBPlatformOnExit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__platform.html#gaefaa2afddaf082501611eef7339b1edf" title="Run an application asynchronously.">WBSearchPath</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f" title="Get the name for a new, unique temporary file, creating the file in the process, and save its name fo...">WBTempFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szExt);</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__platform.html#ga7f8541b2e7204cafe39d514198b82826" title="Get the name for a new, unique temporary file, creating the file in the process.">WBTempFile0</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szExt);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="comment">//   ____  ____   ___   ____ _____ ____ ____     ____ ___  _   _ _____ ____   ___  _        //</span></div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="comment">//  |  _ \|  _ \ / _ \ / ___| ____/ ___/ ___|   / ___/ _ \| \ | |_   _|  _ \ / _ \| |       //</span></div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="comment">//  | |_) | |_) | | | | |   |  _| \___ \___ \  | |  | | | |  \| | | | | |_) | | | | |       //</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="comment">//  |  __/|  _ &lt;| |_| | |___| |___ ___) |__) | | |__| |_| | |\  | | | |  _ &lt;| |_| | |___    //</span></div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="comment">//  |_|   |_| \_\\___/ \____|_____|____/____/   \____\___/|_| \_| |_| |_| \_\\___/|_____|   //</span></div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="comment">//                                                                                          //</span></div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="comment">// *********************</span></div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="comment">// SPAWNING APPLICATIONS</span></div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="comment">// *********************</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="comment">// *******************************************</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="comment">// FILE/APPLICATION SEARCH PATH AND TEMP FILES</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="comment">// *******************************************</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5" title="Resource initialization on startup.">WBPlatformOnInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16" title="Resource &#39;free-up&#39; on exit (must call)">WBPlatformOnExit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__platform.html#gaefaa2afddaf082501611eef7339b1edf" title="Run an application asynchronously.">WBSearchPath</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName);</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f" title="Get the name for a new, unique temporary file, creating the file in the process, and save its name fo...">WBTempFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szExt);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__platform.html#ga7f8541b2e7204cafe39d514198b82826" title="Get the name for a new, unique temporary file, creating the file in the process.">WBTempFile0</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szExt);</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_FILE_HANDLE HANDLE</span></div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_PROCESS_ID HANDLE</span></div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_INVALID_FILE_HANDLE INVALID_HANDLE_VALUE</span></div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // !WIN32</span></div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_FILE_HANDLE int</span></div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_PROCESS_ID unsigned int</span></div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_INVALID_FILE_HANDLE -1</span></div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // WIN32</span></div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;WB_PROCESS_ID <a class="code" href="group__process.html#ga1bd64d7b39e976442d0b6a8f500c2353" title="Run an application asynchronously.">WBRunAsync</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983" title="Run an application synchronously, returning &#39;stdout&#39; output in a character buffer.">WBRunResult</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__process.html#gad56bc7d42510658b1f7ede13b2082986" title="Run an application synchronously, returning &#39;stdout&#39; output in a character buffer.">WBRunResultPipe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szStdInBuf, <span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;WB_PROCESS_ID <a class="code" href="group__process.html#ga87b3e57d4acf34d5d353c646445d151c" title="Run an application asynchronously, specifying file handles for STDIN, STDOUT, and STDERR...">WBRunAsyncPipe</a>(WB_FILE_HANDLE hStdIn, WB_FILE_HANDLE hStdOut, WB_FILE_HANDLE hStdErr,</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;WB_PROCESS_ID <a class="code" href="group__process.html#gaf9c772c6392d057d17513176f3c65902" title="Run an application asynchronously, specifying file handles for STDIN, STDOUT, and STDERR...">WBRunAsyncPipeV</a>(WB_FILE_HANDLE hStdIn, WB_FILE_HANDLE hStdOut, WB_FILE_HANDLE hStdErr,</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, va_list va);</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="comment">//   ____  _   _    _    ____  _____ ____    _     ___ ____ ____     //</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment">//  / ___|| | | |  / \  |  _ \| ____|  _ \  | |   |_ _| __ ) ___|    //</span></div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="comment">//  \___ \| |_| | / _ \ | |_) |  _| | | | | | |    | ||  _ \___ \    //</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="comment">//   ___) |  _  |/ ___ \|  _ &lt;| |___| |_| | | |___ | || |_) |__) |   //</span></div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="comment">//  |____/|_| |_/_/   \_\_| \_\_____|____/  |_____|___|____/____/    //</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="comment">//                                                                   //</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<a class="code" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a" title="MODULE HANDLE equivalent.">WB_MODULE</a> <a class="code" href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d" title="Loads a shared library, DLL, module, or whatever you call it on your operating system.">WBLoadLibrary</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szModuleName); <span class="comment">// load a library module (shared lib, DLL, whatever)</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__process.html#ga560a982b02824d34447e2b581dc2e190" title="Frees a shared library, DLL, module, or whatever, that was loaded via &#39;WBLoadLibrary()&#39;.">WBFreeLibrary</a>(<a class="code" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a" title="MODULE HANDLE equivalent.">WB_MODULE</a> hModule);                 </div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<a class="code" href="group__platform.html#ga4a8d7e4273db30d42de55bae5e2c222d" title="PROC ADDRESS equivalent.">WB_PROCADDRESS</a> <a class="code" href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97" title="Loads a shared library, DLL, module, or whatever you call it on your operating system.">WBGetProcAddress</a>(<a class="code" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a" title="MODULE HANDLE equivalent.">WB_MODULE</a> hModule, <span class="keyword">const</span> <span class="keywordtype">char</span> *szProcName);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="comment">//   ____  ____   ___   ____ _____ ____ ____     ____ ___  _   _ _____ ____   ___  _        //</span></div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="comment">//  |  _ \|  _ \ / _ \ / ___| ____/ ___/ ___|   / ___/ _ \| \ | |_   _|  _ \ / _ \| |       //</span></div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="comment">//  | |_) | |_) | | | | |   |  _| \___ \___ \  | |  | | | |  \| | | | | |_) | | | | |       //</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="comment">//  |  __/|  _ &lt;| |_| | |___| |___ ___) |__) | | |__| |_| | |\  | | | |  _ &lt;| |_| | |___    //</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="comment">//  |_|   |_| \_\\___/ \____|_____|____/____/   \____\___/|_| \_| |_| |_| \_\\___/|_____|   //</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="comment">//                                                                                          //</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="comment">// *********************</span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="comment">// SPAWNING APPLICATIONS</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="comment">// *********************</span></div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_FILE_HANDLE HANDLE</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_PROCESS_ID HANDLE</span></div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_INVALID_FILE_HANDLE INVALID_HANDLE_VALUE</span></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // !WIN32</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_FILE_HANDLE int</span></div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_PROCESS_ID unsigned int</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WB_INVALID_FILE_HANDLE -1</span></div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // WIN32</span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;WB_PROCESS_ID <a class="code" href="group__process.html#ga1bd64d7b39e976442d0b6a8f500c2353" title="Run an application asynchronously.">WBRunAsync</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983" title="Run an application synchronously, returning &#39;stdout&#39; output in a character buffer.">WBRunResult</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__process.html#gad56bc7d42510658b1f7ede13b2082986" title="Run an application synchronously, returning &#39;stdout&#39; output in a character buffer.">WBRunResultPipe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szStdInBuf, <span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;WB_PROCESS_ID <a class="code" href="group__process.html#ga87b3e57d4acf34d5d353c646445d151c" title="Run an application asynchronously, specifying file handles for STDIN, STDOUT, and STDERR...">WBRunAsyncPipe</a>(WB_FILE_HANDLE hStdIn, WB_FILE_HANDLE hStdOut, WB_FILE_HANDLE hStdErr,</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, ...);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;WB_PROCESS_ID <a class="code" href="group__process.html#gaf9c772c6392d057d17513176f3c65902" title="Run an application asynchronously, specifying file handles for STDIN, STDOUT, and STDERR...">WBRunAsyncPipeV</a>(WB_FILE_HANDLE hStdIn, WB_FILE_HANDLE hStdOut, WB_FILE_HANDLE hStdErr,</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">char</span> *szAppName, va_list va);</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="comment">//   ____  _   _    _    ____  _____ ____    _     ___ ____ ____     //</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment">//  / ___|| | | |  / \  |  _ \| ____|  _ \  | |   |_ _| __ ) ___|    //</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="comment">//  \___ \| |_| | / _ \ | |_) |  _| | | | | | |    | ||  _ \___ \    //</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="comment">//   ___) |  _  |/ ___ \|  _ &lt;| |___| |_| | | |___ | || |_) |__) |   //</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="comment">//  |____/|_| |_/_/   \_\_| \_\_____|____/  |_____|___|____/____/    //</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">//                                                                   //</span></div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<a class="code" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a" title="MODULE HANDLE equivalent.">WB_MODULE</a> <a class="code" href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d" title="Loads a shared library, DLL, module, or whatever you call it on your operating system.">WBLoadLibrary</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szModuleName); <span class="comment">// load a library module (shared lib, DLL, whatever)</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__process.html#ga560a982b02824d34447e2b581dc2e190" title="Frees a shared library, DLL, module, or whatever, that was loaded via &#39;WBLoadLibrary()&#39;.">WBFreeLibrary</a>(<a class="code" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a" title="MODULE HANDLE equivalent.">WB_MODULE</a> hModule);                 </div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="comment">//   _____ _   _ ____  _____    _    ____  ____     //</span></div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="comment">//  |_   _| | | |  _ \| ____|  / \  |  _ \/ ___|    //</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="comment">//    | | | |_| | |_) |  _|   / _ \ | | | \___ \    //</span></div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="comment">//    | | |  _  |  _ &lt;| |___ / ___ \| |_| |___) |   //</span></div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="comment">//    |_| |_| |_|_| \_\_____/_/   \_\____/|____/    //</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="comment">//                                                  //</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> <a class="code" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3" title="Allocate &#39;thread local&#39; storage.">WBThreadAllocLocal</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga349248d007124a85c817d40814dc0b4e" title="Free &#39;thread local&#39; storage allocated by WBThreadAllocLocal()">WBThreadFreeLocal</a>(<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> keyVal);</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="keywordtype">void</span> * <a class="code" href="group__threads.html#ga621a6f3683fa965609b642178ddd6fa3" title="Get &#39;thread local&#39; data identified by &#39;keyVal&#39;.">WBThreadGetLocal</a>(<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> keyVal);</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8" title="Get &#39;thread local&#39; data identified by &#39;keyVal&#39;.">WBThreadSetLocal</a>(<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> keyVal, <span class="keywordtype">void</span> *pValue);</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="comment">// simplified thread support (cross-platform)</span></div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;<a class="code" href="group__platform.html#ga4a8d7e4273db30d42de55bae5e2c222d" title="PROC ADDRESS equivalent.">WB_PROCADDRESS</a> <a class="code" href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97" title="Loads a shared library, DLL, module, or whatever you call it on your operating system.">WBGetProcAddress</a>(<a class="code" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a" title="MODULE HANDLE equivalent.">WB_MODULE</a> hModule, <span class="keyword">const</span> <span class="keywordtype">char</span> *szProcName);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="comment">//   _____ _   _ ____  _____    _    ____  ____     //</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="comment">//  |_   _| | | |  _ \| ____|  / \  |  _ \/ ___|    //</span></div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="comment">//    | | | |_| | |_) |  _|   / _ \ | | | \___ \    //</span></div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="comment">//    | | |  _  |  _ &lt;| |___ / ___ \| |_| |___) |   //</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="comment">//    |_| |_| |_|_| \_\_____/_/   \_\____/|____/    //</span></div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;<span class="comment">//                                                  //</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> <a class="code" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3" title="Allocate &#39;thread local&#39; storage.">WBThreadAllocLocal</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga349248d007124a85c817d40814dc0b4e" title="Free &#39;thread local&#39; storage allocated by WBThreadAllocLocal()">WBThreadFreeLocal</a>(<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> keyVal);</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="keywordtype">void</span> * <a class="code" href="group__threads.html#ga621a6f3683fa965609b642178ddd6fa3" title="Get &#39;thread local&#39; data identified by &#39;keyVal&#39;.">WBThreadGetLocal</a>(<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> keyVal);</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> <a class="code" href="group__threads.html#gaf92228d0c21f601cc155fb97eeaa2304" title="Get &#39;current thread&#39; identifier.">WBThreadGetCurrent</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8" title="Get &#39;thread local&#39; data identified by &#39;keyVal&#39;.">WBThreadSetLocal</a>(<a class="code" href="group__platform.html#gaf3410aa1fb5aa0102fd6c22106fd2026" title="THREAD LOCAL STORAGE &#39;key&#39; equivalent.">WB_THREAD_KEY</a> keyVal, <span class="keywordtype">void</span> *pValue);</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> <a class="code" href="group__threads.html#ga5865aa74bdde3969125656acade2222d" title="Create a new thread, returning its WB_THREAD identifier.">WBThreadCreate</a>(<span class="keywordtype">void</span> *(*<span class="keyword">function</span>)(<span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *pParam);</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d" title="Wait for a specified threat to exit.">WBThreadWait</a>(<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> hThread);        <span class="comment">// closes hThread, returns exit code, waits for thread to terminate (blocks)</span></div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6" title="Determine whether a thread is running (can be suspended)">WBThreadRunning</a>(<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> hThread);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;<span class="comment">// simplified thread support (cross-platform)</span></div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> <a class="code" href="group__threads.html#gaf92228d0c21f601cc155fb97eeaa2304" title="Get &#39;current thread&#39; identifier.">WBThreadGetCurrent</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> <a class="code" href="group__threads.html#ga5865aa74bdde3969125656acade2222d" title="Create a new thread, returning its WB_THREAD identifier.">WBThreadCreate</a>(<span class="keywordtype">void</span> *(*<span class="keyword">function</span>)(<span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *pParam);</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d" title="Wait for a specified threat to exit.">WBThreadWait</a>(<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> hThread);        <span class="comment">// closes hThread, returns exit code, waits for thread to terminate (blocks)</span></div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga319ef67fb43cc37ab703dc003322f79b" title="Exit the current thread immediately, specifying return code.">WBThreadExit</a>(<span class="keywordtype">void</span> *pRval);</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga73005b3b02a1f7490dba38fb4205dfe8" title="Close the specified WB_THREAD identifier.">WBThreadClose</a>(<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> hThread);</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6" title="Determine whether a thread is running (can be suspended)">WBThreadRunning</a>(<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> hThread);</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga319ef67fb43cc37ab703dc003322f79b" title="Exit the current thread immediately, specifying return code.">WBThreadExit</a>(<span class="keywordtype">void</span> *pRval);</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gac0ad4b961cb862bdb58ff5ae561f3ccc" title="Create a signallable condition.">WBCondCreate</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond);</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd" title="Create a lockable mutex.">WBMutexCreate</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx);</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#gadf525b8a15c7044a869c72ae03266559" title="Free a signallable condition.">WBCondFree</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond);</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66" title="Free a lockable mutex.">WBMutexFree</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx);</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d" title="Wait for and lock a mutex, blocking until it is available.">WBMutexLock</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx, <span class="keywordtype">int</span> nTimeout);</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga73005b3b02a1f7490dba38fb4205dfe8" title="Close the specified WB_THREAD identifier.">WBThreadClose</a>(<a class="code" href="group__platform.html#gaed85c9ea8560e7d4f32ebaaaa6318491" title="THREAD HANDLE equivalent.">WB_THREAD</a> hThread);</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gac0ad4b961cb862bdb58ff5ae561f3ccc" title="Create a signallable condition.">WBCondCreate</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond);</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd" title="Create a lockable mutex.">WBMutexCreate</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx);</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#gadf525b8a15c7044a869c72ae03266559" title="Free a signallable condition.">WBCondFree</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond);</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66" title="Free a lockable mutex.">WBMutexFree</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx);</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gaa57c76153ca0af21cc2525c605854832" title="Unlock a previously locked mutex.">WBMutexUnlock</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx);</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga629d9054a9eb2bc9af270b7c8e859573" title="Signal a condition (event)">WBCondSignal</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond);</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga0dd28d2a22b1bad1d58fdc33048d7c66" title="Wait for a signal on a condition (event)">WBCondWait</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond, <span class="keywordtype">int</span> nTimeout);</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga04102292ada456ac24d5c3aeea524548" title="Wait for a signal on a condition (event)">WBCondWaitMutex</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond, <a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx, <span class="keywordtype">int</span> nTimeout);</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#gabb07ecbcf0c5f8eab791b8ed3987f146" title="Interlocked &#39;atomic&#39; decrement of an unsigned integer.">WBInterlockedDecrement</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue);</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d" title="Wait for and lock a mutex, blocking until it is available.">WBMutexLock</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx, <span class="keywordtype">int</span> nTimeout);</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#gaa57c76153ca0af21cc2525c605854832" title="Unlock a previously locked mutex.">WBMutexUnlock</a>(<a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx);</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga629d9054a9eb2bc9af270b7c8e859573" title="Signal a condition (event)">WBCondSignal</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond);</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga0dd28d2a22b1bad1d58fdc33048d7c66" title="Wait for a signal on a condition (event)">WBCondWait</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond, <span class="keywordtype">int</span> nTimeout);</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga04102292ada456ac24d5c3aeea524548" title="Wait for a signal on a condition (event)">WBCondWaitMutex</a>(<a class="code" href="group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf" title="CONDITION HANDLE equivalent (similar to an &#39;event&#39;)">WB_COND</a> *pCond, <a class="code" href="group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8" title="MUTEX HANDLE equivalent.">WB_MUTEX</a> *pMtx, <span class="keywordtype">int</span> nTimeout);</div>
 <div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;</div>
 <div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga426cd910d58ea6892043c700d5254220" title="Interlocked &#39;atomic&#39; increment of an unsigned integer.">WBInterlockedIncrement</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue);</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#gabb07ecbcf0c5f8eab791b8ed3987f146" title="Interlocked &#39;atomic&#39; decrement of an unsigned integer.">WBInterlockedDecrement</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue);</div>
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#gaf3420abc2224c6c1f40bba7be5aeaf43" title="Interlocked &#39;atomic&#39; exchange of an unsigned integer with a specified value.">WBInterlockedExchange</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nNewVal);</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;</div>
-<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#gaa71105c960a49acc2c6d183f8c50d8cd" title="Interlocked &#39;atomic&#39; read of an unsigned integer.">WBInterlockedRead</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue);</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#ga426cd910d58ea6892043c700d5254220" title="Interlocked &#39;atomic&#39; increment of an unsigned integer.">WBInterlockedIncrement</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue);</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#gaf3420abc2224c6c1f40bba7be5aeaf43" title="Interlocked &#39;atomic&#39; exchange of an unsigned integer with a specified value.">WBInterlockedExchange</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nNewVal);</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;<span class="comment">//   ____  ____  ___ _   _ _____ ___ _   _  ____    //</span></div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;<span class="comment">//  |  _ \|  _ \|_ _| \ | |_   _|_ _| \ | |/ ___|   //</span></div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;<span class="comment">//  | |_) | |_) || ||  \| | | |  | ||  \| | |  _    //</span></div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;<span class="comment">//  |  __/|  _ &lt; | || |\  | | |  | || |\  | |_| |   //</span></div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;<span class="comment">//  |_|   |_| \_\___|_| \_| |_| |___|_| \_|\____|   //</span></div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;<span class="comment">//                                                  //</span></div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;<span class="comment">// NOTE:  the POSIX world uses postscript, particularly with CUPS.  So does this library.</span></div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687" title="Send postscript file to a printer (using lpr-cups or lpr on POSIX systems)">WBPrintPostScriptFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szPrinterName, <span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName);</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;<span class="keywordtype">char</span> *<a class="code" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568" title="Get a list of printer names.">WBGetPrinterList</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;<span class="comment">// TODO:  complete IPP support for cups and network-capable printers</span></div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;<span class="comment">// TODO:  printer capabilities in a binary structure</span></div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;<span class="comment">// TODO:  support for port 515 &#39;printer&#39; TCP/UDP printer services (i.e. cups-lpd or lpd)</span></div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;<span class="comment">// TODO:  dynamically load CUPS API when available. see &#39;cups-config&#39; application docs</span></div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__threads.html#gaa71105c960a49acc2c6d183f8c50d8cd" title="Interlocked &#39;atomic&#39; read of an unsigned integer.">WBInterlockedRead</a>(<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pValue);</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;<span class="comment">//   ____  ____  ___ _   _ _____ ___ _   _  ____    //</span></div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;<span class="comment">//  |  _ \|  _ \|_ _| \ | |_   _|_ _| \ | |/ ___|   //</span></div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;<span class="comment">//  | |_) | |_) || ||  \| | | |  | ||  \| | |  _    //</span></div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;<span class="comment">//  |  __/|  _ &lt; | || |\  | | |  | || |\  | |_| |   //</span></div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;<span class="comment">//  |_|   |_| \_\___|_| \_| |_| |___|_| \_|\____|   //</span></div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;<span class="comment">//                                                  //</span></div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;<span class="comment">// NOTE:  the POSIX world uses postscript, particularly with CUPS.  So does this library.</span></div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687" title="Send postscript file to a printer (using lpr-cups or lpr on POSIX systems)">WBPrintPostScriptFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szPrinterName, <span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName);</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;<span class="keywordtype">char</span> *<a class="code" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568" title="Get a list of printer names.">WBGetPrinterList</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;<span class="preprocessor">#endif // _PLATFORM_HELPER_H_INCLDUED_</span></div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;<span class="comment">// TODO:  complete IPP support for cups and network-capable printers</span></div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;<span class="comment">// TODO:  printer capabilities in a binary structure</span></div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;<span class="comment">// TODO:  support for port 515 &#39;printer&#39; TCP/UDP printer services (i.e. cups-lpd or lpd)</span></div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;<span class="comment">// TODO:  dynamically load CUPS API when available. see &#39;cups-config&#39; application docs</span></div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;<span class="preprocessor">#endif // _PLATFORM_HELPER_H_INCLDUED_</span></div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="platform__helper_8h.html">platform_helper.h</a></li>
-    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jun 4 2016 19:19:52 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

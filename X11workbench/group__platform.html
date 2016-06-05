@@ -88,9 +88,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga440b53a71a770adf0a937dd35c6cc2ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec">__PACKED__</a>&#160;&#160;&#160;/* platform dependent; actual def must be a blank or doxygen barphs on it */</td></tr>
 <tr class="memdesc:ga440b53a71a770adf0a937dd35c6cc2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">PACKED definition.  <a href="#ga440b53a71a770adf0a937dd35c6cc2ec">More...</a><br/></td></tr>
 <tr class="separator:ga440b53a71a770adf0a937dd35c6cc2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f46e1ee45b5d47e6b642e56f1a0ddd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1">XPM_CREATE_PIXMAP_FROM_DATA</a>(A, B, C, D, E, F)&#160;&#160;&#160;<a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61">MyLoadPixmapFromData</a>(A,B,C,D,E,F)</td></tr>
-<tr class="memdesc:ga2f46e1ee45b5d47e6b642e56f1a0ddd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform helper macro to create a pixmap from data.  <a href="#ga2f46e1ee45b5d47e6b642e56f1a0ddd1">More...</a><br/></td></tr>
-<tr class="separator:ga2f46e1ee45b5d47e6b642e56f1a0ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e072186273813195bb5c42ec9b978c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga8e072186273813195bb5c42ec9b978c2">DECLARE_SORT_FUNCTION</a>(fn_name, p0, p1, p2)&#160;&#160;&#160;int fn_name(void *p0, const void *p1, const void *p2)</td></tr>
 <tr class="memdesc:ga8e072186273813195bb5c42ec9b978c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to declare a sort function for <a class="el" href="group__platform.html#gace47742235ba7c59804024b08432cf72">QSORT_R</a>.  <a href="#ga8e072186273813195bb5c42ec9b978c2">More...</a><br/></td></tr>
 <tr class="separator:ga8e072186273813195bb5c42ec9b978c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +213,7 @@ similar to the following example:
 <div class="line">  <span class="keywordflow">return</span> strcmp(pStringArray[*pP1],pStringArray[*pP2]);</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00460">460</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00475">475</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +289,7 @@ similar to the following example:
 </dl>
 <p>Use this UNIVERSALLY whenever you need to use qsort_r(), as it is platform independent and deals with the incompatibilities associated with the BSD version and the Linux version. </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00475">475</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00490">490</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -361,73 +358,6 @@ similar to the following example:
 <p>This definition identifies the data type for an unsigned 64-bit integer </p>
 
 <p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00113">113</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga2f46e1ee45b5d47e6b642e56f1a0ddd1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define XPM_CREATE_PIXMAP_FROM_DATA</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">A, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">B, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">C, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">D, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">E, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">F&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61">MyLoadPixmapFromData</a>(A,B,C,D,E,F)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Platform helper macro to create a pixmap from data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">A</td><td>A pointer to the Display </td></tr>
-    <tr><td class="paramname">B</td><td>The Window ID </td></tr>
-    <tr><td class="paramname">C</td><td>A pointer to an array of 'char *' that represents the pixmap data </td></tr>
-    <tr><td class="paramname">D</td><td>A pointer to a Pixmap into which the data will be saved, or NULL </td></tr>
-    <tr><td class="paramname">E</td><td>A pointer to the Pixmap into which the mask data will be saved (icons only), or NULL </td></tr>
-    <tr><td class="paramname">F</td><td>A pointer to an XPM_ATTRIBUTES structure. If libXpm is present, this will be defined in X11/xpm.h </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure. See XpmCreatePixmapFromData in libXpm documentation</dd></dl>
-<p>This macro abstracts calls to XpmCreatePixmapFromData() by allowing an internal function to be called whenever libXpm is not available for this purpose. </p>
-
-<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00355">355</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +551,7 @@ similar to the following example:
  The caller must 'free()' any non-NULL pointer returned by this function.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01016">1016</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01022">1022</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -653,7 +583,7 @@ similar to the following example:
  This function preserves the name of the file in a list of temporary files that need to be deleted once the application has terminated. This way an external application can keep the file open indefinitely, or even re-read the file, without negative effects. The '<a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16" title="Resource &#39;free-up&#39; on exit (must call)">WBPlatformOnExit()</a>' function will delete all temporary files that have been previously created by 'WBTempFile'.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01265">1265</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01271">1271</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -684,7 +614,7 @@ similar to the following example:
  The caller must 'free()' any non-NULL pointer returned by this function.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01149">1149</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01155">1155</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -693,7 +623,7 @@ similar to the following example:
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jun 4 2016 19:19:53 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -5,6 +5,8 @@ var group__pixmap =
       [ "height", "struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534", null ],
       [ "width", "struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4", null ]
     ] ],
+    [ "XPM_CREATE_PIXMAP_FROM_DATA", "group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1", null ],
+    [ "XPM_FREE_ATTRIBUTES", "group__pixmap.html#ga5cadde28513a5d92a6d0bce3505f3a53", null ],
     [ "XPM_ATTRIBUTES", "group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a", null ],
     [ "MyLoadPixmapFromData", "group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61", null ],
     [ "PXM_GetIconPixmap", "group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f", null ],

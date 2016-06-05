@@ -168,9 +168,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a5bc1ce3d2654da5eb9308d90566c7c2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bc1ce3d2654da5eb9308d90566c7c2f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TIMER_ARRAY_SIZE</b>&#160;&#160;&#160;512</td></tr>
 <tr class="separator:a5bc1ce3d2654da5eb9308d90566c7c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab737b57be0a940f5a837033f58ad74d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab737b57be0a940f5a837033f58ad74d7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WBGetWindowEntry</b>(X)&#160;&#160;&#160;Debug_WBGetWindowEntry(X, __FUNCTION__, __LINE__)</td></tr>
+<tr class="separator:ab737b57be0a940f5a837033f58ad74d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62a73aaf78ecc0275d3b0102fe802c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac62a73aaf78ecc0275d3b0102fe802c5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>WBInitSizeHints__max</b>(X, Y)&#160;&#160;&#160;((X) &gt; (Y) ? (X) : (Y))</td></tr>
 <tr class="separator:ac62a73aaf78ecc0275d3b0102fe802c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab737b57be0a940f5a837033f58ad74d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab737b57be0a940f5a837033f58ad74d7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WBGetWindowEntry</b>(X)&#160;&#160;&#160;Debug_WBGetWindowEntry(X, __FUNCTION__, __LINE__)</td></tr>
+<tr class="separator:ab737b57be0a940f5a837033f58ad74d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fbe50d5610641c56db84d2606f667e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0fbe50d5610641c56db84d2606f667e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_NAME_ENTRY</b>(X)&#160;&#160;&#160;{ X, #X }</td></tr>
 <tr class="separator:ab0fbe50d5610641c56db84d2606f667e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,9 +218,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a216daaf30d9330abb57acfd1137b8c4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a216daaf30d9330abb57acfd1137b8c4c"></a>
-static __inline__ _WINDOW_ENTRY_ *&#160;</td><td class="memItemRight" valign="bottom"><b>WBGetWindowEntry</b> (Window wID)</td></tr>
-<tr class="separator:a216daaf30d9330abb57acfd1137b8c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54be40f65b0a2a06980a5ca9abac3a98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54be40f65b0a2a06980a5ca9abac3a98"></a>
+static __inline__ _WINDOW_ENTRY_ *&#160;</td><td class="memItemRight" valign="bottom"><b>Debug_WBGetWindowEntry</b> (Window wID, const char *szFunction, int nLine)</td></tr>
+<tr class="separator:a54be40f65b0a2a06980a5ca9abac3a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9683d2a1d881fd33861bfaf7f3d506be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9683d2a1d881fd33861bfaf7f3d506be"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__WBInitEvent</b> ()</td></tr>
 <tr class="separator:a9683d2a1d881fd33861bfaf7f3d506be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +233,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__WBDelWindowE
 <tr class="memitem:a7f7cd888f7e62c2e76f0b10041eca394"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f7cd888f7e62c2e76f0b10041eca394"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>__WBInsertPriorityEvent</b> (Display *pDisp, Window wID, XEvent *pEvent)</td></tr>
 <tr class="separator:a7f7cd888f7e62c2e76f0b10041eca394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96f0eaf4f52ffb4835fbc04ab9207f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa96f0eaf4f52ffb4835fbc04ab9207f0"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>__WBNextPaintEvent</b> (Display *pDisp, XEvent *pEvent, Window wID)</td></tr>
+<tr class="separator:aa96f0eaf4f52ffb4835fbc04ab9207f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8cfbe6ca6f6a25ddda706cdc97e28a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e8cfbe6ca6f6a25ddda706cdc97e28a"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>__WBNextDisplayEvent</b> (Display *pDisp, XEvent *pEvent)</td></tr>
 <tr class="separator:a4e8cfbe6ca6f6a25ddda706cdc97e28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -392,9 +401,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__CreateDelaye
 <tr class="memitem:adeed776b37fd04a82c795f9e6a3cf450"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeed776b37fd04a82c795f9e6a3cf450"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__DeleteDelayedEvent</b> (DELAYED_EVENT_ENTRY *pPrev, DELAYED_EVENT_ENTRY *pEntry)</td></tr>
 <tr class="separator:adeed776b37fd04a82c795f9e6a3cf450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b6e34c60609b01de2e6fb16b5b0ad0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b6e34c60609b01de2e6fb16b5b0ad0b"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>__CheckDelayedEvents</b> (Display *pDisplay, XEvent *pEvent)</td></tr>
-<tr class="separator:a2b6e34c60609b01de2e6fb16b5b0ad0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716c91c1c48d1d6d82f19c4107f55ef8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a716c91c1c48d1d6d82f19c4107f55ef8"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((noinline))</td></tr>
+<tr class="separator:a716c91c1c48d1d6d82f19c4107f55ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3012c71c4da06a1d7ff024e6b1cfb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a3012c71c4da06a1d7ff024e6b1cfb0"></a>
 static Bool&#160;</td><td class="memItemRight" valign="bottom"><b>__WBCheckIfEventPredicate</b> (Display *pDisplay, XEvent *pEvent, XPointer arg)</td></tr>
 <tr class="separator:a1a3012c71c4da06a1d7ff024e6b1cfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,6 +416,9 @@ static Bool&#160;</td><td class="memItemRight" valign="bottom"><b>__WBCheckIfEve
 <tr class="memitem:gae65d3f6f49b844602dfc2ce6037fde09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09">WBCheckGetEvent</a> (Display *pDisplay, XEvent *pEvent)</td></tr>
 <tr class="memdesc:gae65d3f6f49b844602dfc2ce6037fde09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main message loop, high level API to check for and retrieve the next event.  <a href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09">More...</a><br/></td></tr>
 <tr class="separator:gae65d3f6f49b844602dfc2ce6037fde09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf7234ca254d2459a41bb6917b41ab60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">WBWaitForEvent</a> (Display *pDisplay)</td></tr>
+<tr class="memdesc:gacf7234ca254d2459a41bb6917b41ab60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for an event, blocking indefinitely.  <a href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">More...</a><br/></td></tr>
+<tr class="separator:gacf7234ca254d2459a41bb6917b41ab60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a3789b26732b720b3e1b4334ec2e3e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5">WBAppDispatch</a> (XEvent *pEvent)</td></tr>
 <tr class="memdesc:ga4a3789b26732b720b3e1b4334ec2e3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches an application XEvent. May be called directly.  <a href="group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5">More...</a><br/></td></tr>
 <tr class="separator:ga4a3789b26732b720b3e1b4334ec2e3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -615,7 +627,7 @@ Region&#160;</td><td class="memItemRight" valign="bottom"><b>WBCopyRegion</b> (R
 <tr class="memdesc:gadbc5e143b5ad59425ea04752ce982d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, frees resources and marks the update region 'valid'  <a href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e">More...</a><br/></td></tr>
 <tr class="separator:gadbc5e143b5ad59425ea04752ce982d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaded67a2919c5cb862d512803fbcf21b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">WBNextEvent</a> (Display *pDisplay, XEvent *pEvent)</td></tr>
-<tr class="memdesc:gaded67a2919c5cb862d512803fbcf21b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">low-level event queue wrapper. Implements the client-side event queue  <a href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">More...</a><br/></td></tr>
+<tr class="memdesc:gaded67a2919c5cb862d512803fbcf21b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">low-level event queue wrapper. Implements the client-side event queue. Does not block if no events available.  <a href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">More...</a><br/></td></tr>
 <tr class="separator:gaded67a2919c5cb862d512803fbcf21b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70cadee7dfde0a884dfdb5a36f4bf6b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">WBPostEvent</a> (Window wID, XEvent *pEvent)</td></tr>
 <tr class="memdesc:ga70cadee7dfde0a884dfdb5a36f4bf6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places a copy of the specified event at the end of the regular (internal) event queue.  <a href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">More...</a><br/></td></tr>
@@ -853,6 +865,9 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>iWBPaintLast</b
 <tr class="memitem:a2ff1d0f40e9f6e87341234d7b3e34900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ff1d0f40e9f6e87341234d7b3e34900"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>iWBFreeEvent</b> = -1</td></tr>
 <tr class="separator:a2ff1d0f40e9f6e87341234d7b3e34900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ec8849b2306250ec6a50e793a79fa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4ec8849b2306250ec6a50e793a79fa5"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>iInitEventFlag</b> = 0</td></tr>
+<tr class="separator:af4ec8849b2306250ec6a50e793a79fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8f8de27bf7457cbe231ca3bde64e93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb8f8de27bf7457cbe231ca3bde64e93"></a>
 static int(*&#160;</td><td class="memItemRight" valign="bottom"><b>pAppEventCallback</b> )(XEvent *pEvent) = NULL</td></tr>
 <tr class="separator:abb8f8de27bf7457cbe231ca3bde64e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -992,7 +1007,7 @@ struct {</td></tr>
 <p>This function works ONLY for windows that have been registered with a callback. It checks to see if the internal window information exists and returns a non-zero value if the internal information exists AND the window itself has not been destroyed. This works whether or not the window was ever mapped.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l04890">4890</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l05066">5066</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1017,7 @@ struct {</td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="window__helper_8c.html">window_helper.c</a></li>
-    <li class="footer">Generated on Thu Jun 2 2016 13:40:36 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jun 4 2016 19:19:53 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

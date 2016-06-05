@@ -8,7 +8,6 @@ var group__platform =
     [ "WB_INT64", "group__platform.html#gabcd15160d38595f6368937f45005d11d", null ],
     [ "WB_UINT32", "group__platform.html#gae7efd12935053dda79fdaf375f298cf3", null ],
     [ "WB_UINT64", "group__platform.html#gae71709cb8a7c418e8bfdbd1297a97ee5", null ],
-    [ "XPM_CREATE_PIXMAP_FROM_DATA", "group__platform.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1", null ],
     [ "WB_COND", "group__platform.html#gadfcddd1293aed00ceaefbf5c89adfbcf", null ],
     [ "WB_MODULE", "group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a", null ],
     [ "WB_MUTEX", "group__platform.html#ga5645870e43e8bbd2296cc08fbd87e1c8", null ],

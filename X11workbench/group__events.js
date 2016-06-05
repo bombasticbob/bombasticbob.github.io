@@ -16,5 +16,6 @@ var group__events =
     [ "WBPostPriorityEvent", "group__events.html#gad1379e7531ae4e2b7f901b6e187623fe", null ],
     [ "WBProcessExposeEvent", "group__events.html#gafa43907ec0a4d340d1741d95c573d8de", null ],
     [ "WBShowModal", "group__events.html#ga0c303659d95901643983f88a38948b44", null ],
+    [ "WBWaitForEvent", "group__events.html#gacf7234ca254d2459a41bb6917b41ab60", null ],
     [ "WBWindowDispatch", "group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21", null ]
 ];
