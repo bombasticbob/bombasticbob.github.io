@@ -14,7 +14,11 @@ var group__pixmap =
     [ "PXM_ImageToPixmap", "group__pixmap.html#ga48509d33c2979ebc9404d9ab7c60351c", null ],
     [ "PXM_ImageToPixmap0", "group__pixmap.html#ga8a167fe485e5b20bbccb69340ca7fd3e", null ],
     [ "PXM_LoadPixmap", "group__pixmap.html#ga8d4bf82e252edb337d85ada8a9486963", null ],
+    [ "PXM_PixelToRGB", "group__pixmap.html#ga180e026a1a845c326f2297c5358e6fde", null ],
     [ "PXM_PixmapToImage", "group__pixmap.html#ga1a8c10602b009710fc048b977ab62ac1", null ],
     [ "PXM_RegisterAppIcons", "group__pixmap.html#gaf6c256a5a97c5770125191ec0caa3d19", null ],
-    [ "PXM_RegisterPixmapResource", "group__pixmap.html#gafbf77d08feec964f09ad0c4511381381", null ]
+    [ "PXM_RegisterPixmapResource", "group__pixmap.html#gafbf77d08feec964f09ad0c4511381381", null ],
+    [ "PXM_RGBToPixel", "group__pixmap.html#ga8d5263b0ba8461654d76bda4409b6634", null ],
+    [ "PXM_RGBToYUV", "group__pixmap.html#ga61dcf89abade545723acc8767c8f00d1", null ],
+    [ "PXM_YUVToRGB", "group__pixmap.html#gae2cae55acc3e44d1f869a22bfe4f0110", null ]
 ];

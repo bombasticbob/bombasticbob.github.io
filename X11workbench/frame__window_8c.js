@@ -30,6 +30,7 @@ var frame__window_8c =
     [ "FWSetUserCallback", "frame__window_8c.html#ga7d38ec4032b321a227904d3d34293f37", null ],
     [ "InternalCheckColors", "frame__window_8c.html#a295dc9a9bb99b4db953be37f268a8d93", null ],
     [ "InternalPaintStatusBar", "frame__window_8c.html#a812adf2af1ffc59d70f24584a563bec1", null ],
+    [ "InternalPaintTabBar", "frame__window_8c.html#a40251ebed200dfb76bec9215328f1146", null ],
     [ "WBFrameWindowExit", "frame__window_8c.html#a2c5369b62735fc702b114c838ad08c08", null ],
     [ "clrBD", "frame__window_8c.html#a6e418d6909b006779a63227887fdaf15", null ],
     [ "clrBD2", "frame__window_8c.html#a41f44d3a46417565ff0ba7ceb2b36cd5", null ],

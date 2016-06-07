@@ -92,6 +92,18 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga61dcf89abade545723acc8767c8f00d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga61dcf89abade545723acc8767c8f00d1">PXM_RGBToYUV</a> (int iR, int iG, int iB, int *piY, int *piU, int *piV)</td></tr>
+<tr class="memdesc:ga61dcf89abade545723acc8767c8f00d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert R, G, B values to Y, U, V.  <a href="#ga61dcf89abade545723acc8767c8f00d1">More...</a><br/></td></tr>
+<tr class="separator:ga61dcf89abade545723acc8767c8f00d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2cae55acc3e44d1f869a22bfe4f0110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gae2cae55acc3e44d1f869a22bfe4f0110">PXM_YUVToRGB</a> (int iY, int iU, int iV, int *piR, int *piG, int *piB)</td></tr>
+<tr class="memdesc:gae2cae55acc3e44d1f869a22bfe4f0110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Y, U, V values to R, G, B.  <a href="#gae2cae55acc3e44d1f869a22bfe4f0110">More...</a><br/></td></tr>
+<tr class="separator:gae2cae55acc3e44d1f869a22bfe4f0110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga180e026a1a845c326f2297c5358e6fde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga180e026a1a845c326f2297c5358e6fde">PXM_PixelToRGB</a> (XStandardColormap *pMap, XColor *pColor)</td></tr>
+<tr class="memdesc:ga180e026a1a845c326f2297c5358e6fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the pixel menber of an XColor to RGB.  <a href="#ga180e026a1a845c326f2297c5358e6fde">More...</a><br/></td></tr>
+<tr class="separator:ga180e026a1a845c326f2297c5358e6fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d5263b0ba8461654d76bda4409b6634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga8d5263b0ba8461654d76bda4409b6634">PXM_RGBToPixel</a> (XStandardColormap *pMap, XColor *pColor)</td></tr>
+<tr class="memdesc:ga8d5263b0ba8461654d76bda4409b6634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icon Registration for application 'large' and 'small' icons.  <a href="#ga8d5263b0ba8461654d76bda4409b6634">More...</a><br/></td></tr>
+<tr class="separator:ga8d5263b0ba8461654d76bda4409b6634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf6c256a5a97c5770125191ec0caa3d19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gaf6c256a5a97c5770125191ec0caa3d19">PXM_RegisterAppIcons</a> (char *ppRegAppLarge[], char *ppRegAppSmall[])</td></tr>
 <tr class="memdesc:gaf6c256a5a97c5770125191ec0caa3d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icon Registration for application 'large' and 'small' icons.  <a href="#gaf6c256a5a97c5770125191ec0caa3d19">More...</a><br/></td></tr>
 <tr class="separator:gaf6c256a5a97c5770125191ec0caa3d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +198,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure. See XpmCreatePixmapFromData in libXpm documentation</dd></dl>
 <p>This macro abstracts calls to XpmCreatePixmapFromData() by allowing an internal function to be called whenever libXpm is not available for this purpose. </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00356">356</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00367">367</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +226,7 @@ Functions</h2></td></tr>
 <p>This macro abstracts calls to XpmFreeAttributes() by allowing an internal function to be called whenever libXpm is not available for this purpose. For the current implementation, the non-libXpm version does nothing.<br/>
  Use this macro to free up XPM_ATTRIBUTES structure members that consume resources after a successful call to <a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1" title="Platform helper macro to create a pixmap from data.">XPM_CREATE_PIXMAP_FROM_DATA()</a>. This will help prevent resource leaks. </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00370">370</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00381">381</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +373,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>Use this function whenever you need to load an icon using a pre-defined resource ID.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00296">296</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00890">890</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -409,7 +421,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>Use this function whenever you need to load an icon using a pre-defined or registered Atom</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00322">322</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00916">916</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -471,7 +483,7 @@ When libXpm is NOT in use, the follow structure is defined:
  The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00411">411</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01005">1005</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -520,7 +532,7 @@ When libXpm is NOT in use, the follow structure is defined:
  The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00482">482</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01076">1076</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -568,7 +580,46 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>This function conveniently wraps XpmCreatePixmapFromData()</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00348">348</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00942">942</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga180e026a1a845c326f2297c5358e6fde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PXM_PixelToRGB </td>
+          <td>(</td>
+          <td class="paramtype">XStandardColormap *&#160;</td>
+          <td class="paramname"><em>pMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XColor *&#160;</td>
+          <td class="paramname"><em>pColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert the pixel menber of an XColor to RGB. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMap</td><td>A pointer to the XStandardColormap for conversion </td></tr>
+    <tr><td class="paramname">pColor</td><td>A pointer to the XColor structure. The 'pixel' member must be a valid pixel value</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function reads the pixel member from 'pColor' and calculates the RGB values between 0 and 65535</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00177">177</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -611,7 +662,7 @@ When libXpm is NOT in use, the follow structure is defined:
  The function returns NULL on error. Use XDestroyImage to dispose of the XImage object.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00495">495</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01089">1089</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -650,7 +701,7 @@ When libXpm is NOT in use, the follow structure is defined:
 <p>Use this function to register the application's icons for IDC_ICON_APP and ID_APPLICATION. In this way you can use both of them in dialog boxes and take advantage of <a class="el" href="group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f" title="Create Icon pixmap pair using pre-defined resource ID.">PXM_GetIconPixmap()</a> to create a pair of icon pixmaps whenever they are needed.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00103">103</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00697">697</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -692,12 +743,198 @@ When libXpm is NOT in use, the follow structure is defined:
 
 </div>
 </div>
+<a class="anchor" id="ga8d5263b0ba8461654d76bda4409b6634"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PXM_RGBToPixel </td>
+          <td>(</td>
+          <td class="paramtype">XStandardColormap *&#160;</td>
+          <td class="paramname"><em>pMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XColor *&#160;</td>
+          <td class="paramname"><em>pColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Icon Registration for application 'large' and 'small' icons. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMap</td><td>A pointer to the XStandardColormap for conversion </td></tr>
+    <tr><td class="paramname">pColor</td><td>A pointer to the XColor structure. The 'red' 'green' and 'blue' members must be a valid RGB value</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function reads the red, green, and blue members from 'pColor' and calculates the pixel value. RGB entries are between 0 and 65535, for each of the red, green, and blue members.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00645">645</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga61dcf89abade545723acc8767c8f00d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PXM_RGBToYUV </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iG</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piV</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert R, G, B values to Y, U, V. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iR</td><td>the Red value (0-255) </td></tr>
+    <tr><td class="paramname">iG</td><td>the Green value (0-255) </td></tr>
+    <tr><td class="paramname">iB</td><td>the Blue value (0-255) </td></tr>
+    <tr><td class="paramname">piY</td><td>the returned 'Y' value (0-255) </td></tr>
+    <tr><td class="paramname">piU</td><td>the returned 'U' value (0-255) </td></tr>
+    <tr><td class="paramname">piV</td><td>the returned 'V' value (0-255)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Translate colors from RGB to YUV. Often this is desirable when doing color conversions, where you want to alter the brightness but leave the chroma information as-is.<br/>
+ The chrominance (U, V) information determines the color space, and the luminance (Y) determines the brightness. Altering the brightness 'Y' effectively leaves the chrominance information intact, while affecting how 'bright' a color appears. A color can also be 'faded' or 'saturated' by equally increasing or decreasing the 'U' and 'V' levels.</p>
+<p>In YUV, for a white pixel, Y should be 255, U and V should both be 128<br/>
+ In RGB, a white pixel would have R, G, and B at 255.<br/>
+ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and V 128.<br/>
+</p>
+<p>However, the actual YUV calculations return 'iY' as 16 for 'black', and 235 for 'white'. Anything outside of this Y range SHOULD result in 'faded' colors (towards black or white). This algorithm has been tested for RGB values between 0 and 255, respectively, and the inverse calculation results in a deviation of at most '1' for R, G, or B, from the original RGB value.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00121">121</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae2cae55acc3e44d1f869a22bfe4f0110"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PXM_YUVToRGB </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piG</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert Y, U, V values to R, G, B. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iY</td><td>the 'Y' value (0-255) </td></tr>
+    <tr><td class="paramname">iU</td><td>the 'U' value (0-255) </td></tr>
+    <tr><td class="paramname">iV</td><td>the 'V' value (0-255) </td></tr>
+    <tr><td class="paramname">piR</td><td>the returned Red value (0-255) </td></tr>
+    <tr><td class="paramname">piG</td><td>the returned Green value (0-255) </td></tr>
+    <tr><td class="paramname">piB</td><td>the returned Blue value (0-255)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Translate colors from YUV to RGB. Often this is desirable when doing color conversions, where you want to alter the brightness but leave the chroma information as-is.<br/>
+ The chrominance (U, V) information determines the color space, and the luminance (Y) determines the brightness. Altering the brightness 'Y' effectively leaves the chrominance information intact, while affecting how 'bright' a color appears. A color can also be 'faded' or 'saturated' by equally increasing or decreasing the 'U' and 'V' levels.<br/>
+</p>
+<p>In YUV, for a white pixel, Y should be 255, U and V should both be 128<br/>
+ In RGB, a white pixel would have R, G, and B at 255.<br/>
+ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and V 128.<br/>
+</p>
+<p>However, the actual YUV calculations return 'iY' as 16 for 'black', and 235 for 'white'. Anything outside of this Y range SHOULD result in 'faded' colors (towards black or white). This algorithm has been tested for RGB values between 0 and 255, respectively, and the inverse calculation results in a deviation of at most '1' for R, G, or B, from the original RGB value.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p>Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00149">149</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 4 2016 19:19:53 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

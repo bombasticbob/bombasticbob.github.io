@@ -22,7 +22,8 @@ var files =
     [ "font_helper.h", "font__helper_8h.html", "font__helper_8h" ],
     [ "frame_window.c", "frame__window_8c.html", "frame__window_8c" ],
     [ "frame_window.h", "frame__window_8h.html", "frame__window_8h" ],
-    [ "hello.c", "hello_8c_source.html", null ],
+    [ "gizzard.c", "gizzard_8c_source.html", null ],
+    [ "gizzard.h", "gizzard_8h_source.html", null ],
     [ "menu.c", "menu_8c.html", "menu_8c" ],
     [ "menu.h", "menu_8h.html", "menu_8h" ],
     [ "menu_bar.c", "menu__bar_8c.html", "menu__bar_8c" ],
@@ -35,7 +36,6 @@ var files =
     [ "platform_helper.h", "platform__helper_8h.html", "platform__helper_8h" ],
     [ "refactor.c", "refactor_8c_source.html", null ],
     [ "refactor.h", "refactor_8h_source.html", null ],
-    [ "test.c", "test_8c_source.html", null ],
     [ "text_object.c", "text__object_8c.html", "text__object_8c" ],
     [ "text_object.h", "text__object_8h.html", "text__object_8h" ],
     [ "window_dressing.c", "window__dressing_8c.html", "window__dressing_8c" ],
@@ -44,6 +44,7 @@ var files =
     [ "window_helper.h", "window__helper_8h.html", "window__helper_8h" ],
     [ "X11workbench.c", "X11workbench_8c_source.html", null ],
     [ "X11workbench.h", "X11workbench_8h_source.html", null ],
-    [ "X11WorkbenchToolkit_config.h", "X11WorkbenchToolkit__config_8h_source.html", null ],
+    [ "X11workbenchToolkit_config.h", "X11workbenchToolkit__config_8h_source.html", null ],
+    [ "X11workbenchToolkit_install_config.h", "X11workbenchToolkit__install__config_8h_source.html", null ],
     [ "xclip.py", "xclip_8py_source.html", null ]
 ];

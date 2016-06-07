@@ -1,6 +1,7 @@
 var NAVTREEINDEX0 =
 {
-"X11WorkbenchToolkit__config_8h_source.html":[9,0,44],
+"X11workbenchToolkit__config_8h_source.html":[9,0,44],
+"X11workbenchToolkit__install__config_8h_source.html":[9,0,45],
 "X11workbench_8c_source.html":[9,0,42],
 "X11workbench_8h_source.html":[9,0,43],
 "annotated.html":[8,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "dialog__controls_8h.html#ga4c2d4017fe583dff0db9dced65ab9520":[9,0,6,4],
 "dialog__controls_8h.html#ga5490e27238ec770eac36831273b673ef":[9,0,6,29],
 "dialog__controls_8h.html#ga564e6facfeb6cf38c1bf8a334577c956":[9,0,6,34],
-"dialog__controls_8h.html#ga5667ed3db4dc0cdd90f971417ddbfd5e":[9,0,6,61],
-"dialog__controls_8h.html#ga567afa72cc44823df20cbebfcf4e85e6":[9,0,6,37]
+"dialog__controls_8h.html#ga5667ed3db4dc0cdd90f971417ddbfd5e":[9,0,6,61]
 };
