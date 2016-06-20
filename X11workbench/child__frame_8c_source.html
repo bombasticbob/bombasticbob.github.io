@@ -128,14 +128,14 @@ $(document).ready(function(){initNavTree('child__frame_8c_source.html','');});
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="child__frame_8h.html" title="Child Frame API functions.">child_frame.h</a>&quot;</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">static</span> <a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrames = NULL;  <span class="comment">// pointer to linked list of &#39;Child Frame&#39; windows</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">static</span> <a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrames = NULL;  <span class="comment">// pointer to linked list of &#39;Child Frame&#39; windows</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="group__child__frame.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c">   64</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__child__frame.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c" title="Initialize a child frame (assumed to be a base &#39;class&#39; for the window)">FWInitChildFrame</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrame, <a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows">WBFrameWindow</a> *pOwner, XFontStruct *pFont,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">char</span> *szFocusMenu, <span class="keyword">const</span> <a class="code" href="struct____WB__FW__MENU__HANDLER__.html" title="structure for managing menu callbacks">WBFWMenuHandler</a> *pHandlerArray,</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="group__child__frame.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c">   64</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__child__frame.html#gaf9b14e9a9ad32a0b413e1dd3c5b3f95c" title="Initialize a child frame (assumed to be a base &#39;class&#39; for the window)">FWInitChildFrame</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame, <a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows ">WBFrameWindow</a> *pOwner, XFontStruct *pFont,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">char</span> *szFocusMenu, <span class="keyword">const</span> <a class="code" href="struct____WB__FW__MENU__HANDLER____.html" title="structure for managing menu callbacks ">WBFWMenuHandler</a> *pHandlerArray,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                     <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c" title="event callback function type for window events">WBWinEvent</a> pUserCallback, <span class="keywordtype">int</span> fFlags)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pC;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pC;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;XSetWindowAttributes xswa;  <span class="comment">/* Temporary Set Window Attribute struct */</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;Display *pDisplay = <a class="code" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203" title="Returns the default Display.">WBGetDefaultDisplay</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span> iRval = -1;</div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('child__frame_8c_source.html','');});
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="comment">// NEXT, set up all of the various &#39;things&#39; in the structure that are simple assignments</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a9cad1622f4396ded0afaf6a8d8a5727a" title="tag indicating I&#39;m a &#39;Child Frame&#39; window">ulTag</a> = CHILD_FRAME_TAG;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a9cad1622f4396ded0afaf6a8d8a5727a" title="tag indicating I&#39;m a &#39;Child Frame&#39; window">ulTag</a> = <a class="code" href="group__child__frame.html#ga346eb89f04d577c38d82cfddda0b784e" title="TAG for the WBChildFrame structure.">CHILD_FRAME_TAG</a>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordflow">if</span>(!pFont)</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  {</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('child__frame_8c_source.html','');});
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc" title="a pointer to the WBFrameWindow owner">pOwner</a> = pOwner;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  iRval = <a class="code" href="group__frame__window.html#gad77acdf96e4649b642dee2c3e2cd1145" title="Adds a &#39;contained&#39; window and returns the tab order index.">FWAddContainedWindow</a>(pOwner, pChildFrame); <span class="comment">// TODO:  make THIS assign the owner pointer?</span></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">if</span>(iRval) <span class="comment">// error?</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">if</span>(iRval &lt; 0) <span class="comment">// error? (returns negative on error, otherwise the tab index)</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  {</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d" title="Destroy an Child Frame.">FWDestroyChildFrame</a>(pChildFrame); <span class="comment">// this frees up all of the resources</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
@@ -272,9 +272,9 @@ $(document).ready(function(){initNavTree('child__frame_8c_source.html','');});
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">return</span> iRval;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d">  205</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d" title="Destroy an Child Frame.">FWDestroyChildFrame</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrame)</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d">  205</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d" title="Destroy an Child Frame.">FWDestroyChildFrame</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pC, *pC2;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pC, *pC2;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">if</span>(!pChildFrame)</div>
@@ -325,9 +325,9 @@ $(document).ready(function(){initNavTree('child__frame_8c_source.html','');});
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="comment">// and any resources that were malloc&#39;d must also be free&#39;d</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">if</span>(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a495794af48dde1f64ab785bd60b86c4b" title="display name shown in tab and title bar. You should not alter this member.">szDisplayName</a>)</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">if</span>(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a495794af48dde1f64ab785bd60b86c4b" title="display name shown in tab and title bar. You should not alter this member directly.">szDisplayName</a>)</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    free(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a495794af48dde1f64ab785bd60b86c4b" title="display name shown in tab and title bar. You should not alter this member.">szDisplayName</a>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    free(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a495794af48dde1f64ab785bd60b86c4b" title="display name shown in tab and title bar. You should not alter this member directly.">szDisplayName</a>);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  }</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">if</span>(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a0cd81e00633325fed14ac2fd8d991734" title="default font for the window">pFont</a>)</div>
@@ -339,129 +339,133 @@ $(document).ready(function(){initNavTree('child__frame_8c_source.html','');});
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga07390d548c0a436a8a0de1572d085186">  272</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga07390d548c0a436a8a0de1572d085186" title="Function to assign the menu resource to a Child Frame.">FWSetChildFrameMenu</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrame, <span class="keyword">const</span> <span class="keywordtype">char</span> *szFocusMenu)</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga07390d548c0a436a8a0de1572d085186">  272</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga07390d548c0a436a8a0de1572d085186" title="Function to assign the menu resource to a Child Frame.">FWSetChildFrameMenu</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame, <span class="keyword">const</span> <span class="keywordtype">char</span> *szFocusMenu)</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga2a1f33b655e8a2dc3444eabcc41ba511">  276</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga2a1f33b655e8a2dc3444eabcc41ba511" title="Function to assign menu handlers to a Child Frame.">FWSetChildFrameMenuHandlers</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrame, <span class="keyword">const</span> <a class="code" href="struct____WB__FW__MENU__HANDLER__.html" title="structure for managing menu callbacks">WBFWMenuHandler</a> *pHandlerArray)</div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga2a1f33b655e8a2dc3444eabcc41ba511">  276</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga2a1f33b655e8a2dc3444eabcc41ba511" title="Function to assign menu handlers to a Child Frame.">FWSetChildFrameMenuHandlers</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame, <span class="keyword">const</span> <a class="code" href="struct____WB__FW__MENU__HANDLER____.html" title="structure for managing menu callbacks ">WBFWMenuHandler</a> *pHandlerArray)</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;{</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga393f410588656125823b9f159fa43f2c">  280</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga393f410588656125823b9f159fa43f2c" title="Assign the display name.">FWSetChildFrameDisplayName</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrame, <span class="keyword">const</span> <span class="keywordtype">char</span> *szDisplayName)</div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga393f410588656125823b9f159fa43f2c">  280</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga393f410588656125823b9f159fa43f2c" title="Assign the display name.">FWSetChildFrameDisplayName</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame, <span class="keyword">const</span> <span class="keywordtype">char</span> *szDisplayName)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;{</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d">  284</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d" title="Set the X,Y extent for the child frame (notifies everything)">FWSetChildFrameExtent</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrame, <span class="keywordtype">int</span> iXExtent, <span class="keywordtype">int</span> iYExtent)</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="code" href="group__child__frame.html#gae6b4da06f5e670c4fb0702e1be8a43ee">  284</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#gae6b4da06f5e670c4fb0702e1be8a43ee" title="Assign the image atom for the child frame. the image appears in the tab associated with the child fra...">FWSetChildFrameImageAtom</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame, Atom aImage)</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">// NOTE:  see (and maybe call) FWChildFrameRecalcLayout, below</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e">  290</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e" title="Child frame notification callback (called by frame window)">FWChildFrameRecalcLayout</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pChildFrame)</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows">WBFrameWindow</a> *pOwner;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keywordtype">int</span> iL, iT, iW, iH;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordflow">if</span>(!pChildFrame) <span class="comment">// TODO:  properly validate this (anal retentive if DEBUG build)</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  }</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  pOwner = pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc" title="a pointer to the WBFrameWindow owner">pOwner</a>;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordflow">if</span>(!pOwner) <span class="comment">// irrelevant if NULL.  TODO:  properly validate this (anal retentive if DEBUG build)</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  {</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  }</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  iL = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#ab7853bf1a94cfbc4acf1198eb8e557d5" title="The current X position of the frame window&#39;s client area (relative to the window)">iClientX</a>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  iT = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#a357ee914afb0052f18c556589b678566" title="The current Y position of the frame window&#39;s client area (relative to the window)">iClientY</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  iW = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#a27424747da84f0a941eabfa48faf916b" title="The current width of the frame window&#39;s client area.">iClientWidth</a>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  iH = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#a611ee0649d456278be1b38dffce515a5" title="The current height of the frame window&#39;s client area.">iClientHeight</a>;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">// re-calculate these members of the WBChildFrame structure, as needed</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">//  pChildFrame-&gt;iLeft = iL converted to correct units and scrolled;</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">//  pChildFrame-&gt;iTop = iT converted to correct units and scrolled;  </span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">//  pChildRrame-&gt;iWidth = iW converted to correct units;</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">//  pChildFrame-&gt;iHeight = iH converted to correct units;</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="comment">// TODO:  anything ELSE that I need to do when re-calculating the layout, scrollbars, whatever</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="comment">//        just apply that to iL, iT, iW, iH so that it reflects the correct viewpoirt in pixels</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="comment">//        minus any border, decorations, scrollbars, whatever, with 0,0 being top,left</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d">  288</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d" title="Set the X,Y extent for the child frame (notifies everything)">FWSetChildFrameExtent</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame, <span class="keywordtype">int</span> iXExtent, <span class="keywordtype">int</span> iYExtent)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="comment">// NOTE:  see (and maybe call) FWChildFrameRecalcLayout, below</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e">  294</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e" title="Child frame notification callback (called by frame window)">FWChildFrameRecalcLayout</a>(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pChildFrame)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows ">WBFrameWindow</a> *pOwner;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keywordtype">int</span> iL, iT, iW, iH;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordflow">if</span>(!pChildFrame) <span class="comment">// TODO:  properly validate this (anal retentive if DEBUG build)</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  pOwner = pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc" title="a pointer to the WBFrameWindow owner">pOwner</a>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordflow">if</span>(!pOwner) <span class="comment">// irrelevant if NULL.  TODO:  properly validate this (anal retentive if DEBUG build)</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  iL = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#ab7853bf1a94cfbc4acf1198eb8e557d5" title="The current X position of the frame window&#39;s client area (relative to the window)">iClientX</a>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  iT = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#a357ee914afb0052f18c556589b678566" title="The current Y position of the frame window&#39;s client area (relative to the window)">iClientY</a>;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  iW = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#a27424747da84f0a941eabfa48faf916b" title="The current width of the frame window&#39;s client area.">iClientWidth</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  iH = pOwner-&gt;<a class="code" href="struct____WB__FRAME__WINDOW____.html#a611ee0649d456278be1b38dffce515a5" title="The current height of the frame window&#39;s client area.">iClientHeight</a>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">// re-calculate these members of the WBChildFrame structure, as needed</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">//  pChildFrame-&gt;iLeft = iL converted to correct units and scrolled;</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">//  pChildFrame-&gt;iTop = iT converted to correct units and scrolled;  </span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">//  pChildRrame-&gt;iWidth = iW converted to correct units;</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">//  pChildFrame-&gt;iHeight = iH converted to correct units;</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="comment">// NOW, tell the user callback function (if any) what&#39;s happening.</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="comment">// I must assume that the owning frame is valid and has already re-calc&#39;d its layout</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="comment">// TODO:  anything ELSE that I need to do when re-calculating the layout, scrollbars, whatever</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="comment">//        just apply that to iL, iT, iW, iH so that it reflects the correct viewpoirt in pixels</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="comment">//        minus any border, decorations, scrollbars, whatever, with 0,0 being top,left</span></div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordflow">if</span>(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  {</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    Display *pDisplay;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    XClientMessageEvent evt;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window">WBGetWindowDisplay</a>(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#ac1bf4c310535451938ef5b31b2b0c51b" title="window identifier for the &#39;Child Frame&#39; window">wID</a>);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    bzero(&amp;evt, <span class="keyword">sizeof</span>(evt));</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    evt.type = ClientMessage;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    evt.display = pDisplay;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    evt.window = pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#ac1bf4c310535451938ef5b31b2b0c51b" title="window identifier for the &#39;Child Frame&#39; window">wID</a>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    evt.message_type = <a class="code" href="group__xatoms.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe" title="notification of window re-size via ClientMessage">aRESIZE_NOTIFY</a>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    evt.format = 32;  <span class="comment">// always</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    evt.data.l[0] = iL;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    evt.data.l[1] = iT;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    evt.data.l[2] = iL + iW; <span class="comment">// right</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    evt.data.l[3] = iT + iH; <span class="comment">// bottom</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>(evt.window, (XEvent *)&amp;evt);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  }  </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="comment">// NOW, tell the user callback function (if any) what&#39;s happening.</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="comment">// I must assume that the owning frame is valid and has already re-calc&#39;d its layout</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keywordflow">if</span>(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>)</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    Display *pDisplay;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    XClientMessageEvent evt;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window">WBGetWindowDisplay</a>(pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#ac1bf4c310535451938ef5b31b2b0c51b" title="window identifier for the &#39;Child Frame&#39; window">wID</a>);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    bzero(&amp;evt, <span class="keyword">sizeof</span>(evt));</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    evt.type = ClientMessage;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    evt.display = pDisplay;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    evt.window = pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#ac1bf4c310535451938ef5b31b2b0c51b" title="window identifier for the &#39;Child Frame&#39; window">wID</a>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    evt.message_type = <a class="code" href="group__xatoms.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe" title="notification of window re-size via ClientMessage">aRESIZE_NOTIFY</a>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    evt.format = 32;  <span class="comment">// always</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    evt.data.l[0] = iL;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    evt.data.l[1] = iT;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    evt.data.l[2] = iL + iW; <span class="comment">// right</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    evt.data.l[3] = iT + iH; <span class="comment">// bottom</span></div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">// DEFAULT WINDOW EVENT HANDLER FOR CHILD FRAME</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03">  357</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03" title="Default event handler for Child Frame window.">FWChildFrameEvent</a>(Window wID, XEvent *pEvent)</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;{</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keywordtype">int</span> iRval = 0;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> *pC;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  pC = <a class="code" href="group__child__frame.html#gac338984e00e8c9a717f935d6fa22b73c" title="Obtain the associated WBChildFrame structure pointer for a Window ID.">FWGetChildFrameStruct</a>(wID);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keywordflow">if</span>(!pC)</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="comment">// TODO:  messages I handle myself, before any user callbacks</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="comment">//        (and perhaps messages that I don&#39;t pass to the callback at all)</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keywordflow">if</span>(pC-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>)</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    iRval = pC-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>(wID, pEvent);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  }  </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordflow">if</span>(!iRval)</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">// TODO:  default handling of messages NOT handled by user callback</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    pChildFrame-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>(evt.window, (XEvent *)&amp;evt);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  }  </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">// DEFAULT WINDOW EVENT HANDLER FOR CHILD FRAME</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="code" href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03">  361</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03" title="Default event handler for Child Frame window.">FWChildFrameEvent</a>(Window wID, XEvent *pEvent)</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;{</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keywordtype">int</span> iRval = 0;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *pC;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  pC = <a class="code" href="group__child__frame.html#gac338984e00e8c9a717f935d6fa22b73c" title="Obtain the associated WBChildFrame structure pointer for a Window ID.">FWGetChildFrameStruct</a>(wID);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">if</span>(!pC)</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="comment">// TODO:  messages I handle myself, before any user callbacks</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="comment">//        (and perhaps messages that I don&#39;t pass to the callback at all)</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordflow">if</span>(pC-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>)</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    iRval = pC-&gt;<a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>(wID, pEvent);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  }  </div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keywordflow">return</span> iRval;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordflow">if</span>(!iRval)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  {</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">// TODO:  default handling of messages NOT handled by user callback</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordflow">return</span> iRval;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;}</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><b>child_frame.c</b></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:45 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:12 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

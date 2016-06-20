@@ -34,19 +34,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "X11workbenchToolkit__config_8h_source.html",
-"dialog__controls_8h.html#ga567afa72cc44823df20cbebfcf4e85e6",
-"dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7",
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa5918b801cd55e2d16a828a96af020e05",
-"globals_0x73.html",
-"group__dlgctrl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a48b672d82979cd4b521b1a51a672a545",
-"group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02ea927830b623ea32b0f347c7f3a7f81023",
-"group__text__object.html#ggae25c81a136508d2822cfd94927091186a6329e32095da2ba11efd4a5ac540a50d",
-"menu__popup_8c.html",
-"struct____WBChildFrame____.html#a339c9f28b92af29925c235e75f37bd11",
-"struct__text__object__vtable__.html#aea81e3e71bd57c85ec99f1c8d26bc55c",
-"window__helper_8c.html#a61dadd085c1777f559549e05962b2c9ea281f43696ec7133372b7664d4d6046a9",
-"window__helper_8h.html#ga1ef37a916fec2cacab2c772ad915ff58",
-"window__helper_8h.html#gaf33743baad5968419d3c8fdd1f2fff62"
+"dialog__controls_8h.html#ga564e6facfeb6cf38c1bf8a334577c956",
+"dialog__window_8h.html#ga8a22360f03f14357a2b22dfbff2894b1",
+"draw__text_8h.html#ga970cc5651dadf44ab9335c64ef67283b",
+"frame__window_8h.html#ga7d38ec4032b321a227904d3d34293f37",
+"group__dlgctrl.html#ga3efd6729ac89a13b7cd729bc574227bd",
+"group__events.html#ga3f7502f7a233be633097abdefeb3db21",
+"group__startup.html#ga7eec5756f1781b9fdcd556abe5f60bdb",
+"menu_8c.html#aeab6a095afeed0b9e64e415c5a5c669a",
+"refactor_8c_source.html",
+"struct____WB__SCROLLINFO____.html#a28febfaf5faa20e0b8359fb5975aad2a",
+"text__object_8h.html#gaaa875345ecadd735f983b8a37ba7ce11",
+"window__helper_8c.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7",
+"window__helper_8h.html#ga82131f2b559763bb5091f2ce5a0e3fff"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

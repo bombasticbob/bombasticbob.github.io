@@ -2613,11 +2613,11 @@ $(document).ready(function(){initNavTree('platform__helper_8c_source.html','');}
 <div class="line"><a name="l02559"></a><span class="lineno"> 2559</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
 <div class="line"><a name="l02560"></a><span class="lineno"> 2560</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else  // WIN23</span></div>
 <div class="line"><a name="l02561"></a><span class="lineno"> 2561</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02562"></a><span class="lineno"> 2562</span>&#160;  <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY: %s - here I am\n&quot;</span>, __FUNCTION__);</div>
+<div class="line"><a name="l02562"></a><span class="lineno"> 2562</span>&#160;<span class="comment">//  WB_ERROR_PRINT(&quot;TEMPORARY: %s - here I am\n&quot;, __FUNCTION__);</span></div>
 <div class="line"><a name="l02563"></a><span class="lineno"> 2563</span>&#160;</div>
 <div class="line"><a name="l02564"></a><span class="lineno"> 2564</span>&#160;  <span class="keywordflow">if</span>(!pCond || !pMtx)</div>
 <div class="line"><a name="l02565"></a><span class="lineno"> 2565</span>&#160;  {</div>
-<div class="line"><a name="l02566"></a><span class="lineno"> 2566</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;TEMPORARY: %s - returns -1 (NULL pCond)\n&quot;</span>, __FUNCTION__);</div>
+<div class="line"><a name="l02566"></a><span class="lineno"> 2566</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;ERROR: %s - returns -1 (NULL pCond)\n&quot;</span>, __FUNCTION__);</div>
 <div class="line"><a name="l02567"></a><span class="lineno"> 2567</span>&#160;</div>
 <div class="line"><a name="l02568"></a><span class="lineno"> 2568</span>&#160;    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l02569"></a><span class="lineno"> 2569</span>&#160;  }</div>
@@ -2769,7 +2769,7 @@ $(document).ready(function(){initNavTree('platform__helper_8c_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="platform__helper_8c.html">platform_helper.c</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:45 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:13 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

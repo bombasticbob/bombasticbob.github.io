@@ -103,7 +103,7 @@ union {</td></tr>
 <tr class="memitem:a7eca3badeedc59e9d0f1e65e1387ff37"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__platform.html#gabcd15160d38595f6368937f45005d11d">WB_INT64</a>&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37">llData</a></td></tr>
 <tr class="memdesc:a7eca3badeedc59e9d0f1e65e1387ff37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved element, forces 64-bit size. <br/></td></tr>
 <tr class="separator:a7eca3badeedc59e9d0f1e65e1387ff37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae240c7f4192f75473ba7c40c874c692f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__desktop__settings.html#gadc21ef5e2d67daab7b5d3f27222ec6f1">XSETTINGS_DATA_COLOR</a>&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#ae240c7f4192f75473ba7c40c874c692f">clrData</a></td></tr>
+<tr class="memitem:ae240c7f4192f75473ba7c40c874c692f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__desktop__settings.html#gae01fd313d4d5127b45782b652e5eb5e3">XSETTINGS_DATA_COLOR</a>&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#ae240c7f4192f75473ba7c40c874c692f">clrData</a></td></tr>
 <tr class="memdesc:ae240c7f4192f75473ba7c40c874c692f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data as a color value. <br/></td></tr>
 <tr class="separator:ae240c7f4192f75473ba7c40c874c692f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92f08987c51e4eb7b92e84944ca2af3"><td class="memItemLeft" >&#160;&#160;&#160;void *&#160;&#160;&#160;<a class="el" href="struct__CHXSetting__.html#aa92f08987c51e4eb7b92e84944ca2af3">pData</a></td></tr>
@@ -118,9 +118,8 @@ union {</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure for storing settings information internally. </p>
-<pre class="fragment">This structure is used internally by the \ref conf_help to cache configuration information obtained
-from the Window Manager or from the (deprecated) system configuration.
-</pre><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__CHXSetting__.html" title="Structure for storing settings information internally.">_CHXSetting_</a></div>
+<p>This structure is used internally by the <a class="el" href="group__conf__help.html">Configuration 'helper' functions</a> to cache configuration information obtained from the Window Manager or from the (deprecated) system configuration.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__CHXSetting__.html" title="Structure for storing settings information internally. ">_CHXSetting_</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="struct__CHXSetting__.html#aa988d6f93c746b6c6e1d869b52ba92a0" title="pointer to the NAME string within memory that follows CHXSettings::aData">szName</a>;              <span class="comment">// pointer to the NAME string within memory that follows CHXSettings::aData</span></div>
 <div class="line">  <span class="keywordtype">int</span>   <a class="code" href="struct__CHXSetting__.html#adfc54d0a91539b0ef936ee9c7dae58c0" title="The setting type (XSettingsType enumeration)">iType</a>;                     <span class="comment">// The setting type (\ref XSettingsType enumeration)</span></div>
@@ -134,9 +133,9 @@ from the Window Manager or from the (deprecated) system configuration.
 <div class="line">    <span class="keywordtype">void</span> *<a class="code" href="struct__CHXSetting__.html#aa92f08987c51e4eb7b92e84944ca2af3" title="un-typed pointer to data within string area">pData</a>;                   <span class="comment">// un-typed pointer to data within string area</span></div>
 <div class="line">    <span class="keywordtype">char</span> *<a class="code" href="struct__CHXSetting__.html#abe24f5f3933a24906a280ca25840a717" title="&#39;char&#39; typed pointer to data within string area">szData</a>;                  <span class="comment">// &#39;char&#39; typed pointer to data within string area</span></div>
 <div class="line">  } <a class="code" href="struct__CHXSetting__.html#a8b33c8d10b726935fbf10c694235ebe0" title="union of the data alias&#39;">uData</a>;                         <span class="comment">// union of the data alias&#39;</span></div>
-<div class="line">}  <a class="code" href="group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec" title="PACKED definition.">__PACKED__</a> <a class="code" href="group__desktop__settings.html#ga242b12920430908cccccdd8cce995c44" title="Structure for storing settings information internally.">CHXSetting</a>;</div>
+<div class="line">}  <a class="code" href="group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec" title="PACKED definition.">__PACKED__</a> <a class="code" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426" title="Structure for storing settings information internally.">CHXSetting</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00387">387</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00400">400</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="conf__help_8h_source.html">conf_help.h</a></li>
 </ul>
@@ -146,7 +145,7 @@ from the Window Manager or from the (deprecated) system configuration.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__CHXSetting__.html">_CHXSetting_</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

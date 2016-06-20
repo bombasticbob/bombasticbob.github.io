@@ -12,10 +12,11 @@ var modules =
     [ "Frame Window API", "group__frame.html", "group__frame" ],
     [ "Dialog Boxes", "group__dialog.html", "group__dialog" ],
     [ "Pixmap utility functions", "group__pixmap.html", "group__pixmap" ],
-    [ "Printer utility functions", "group__printer.html", "group__printer" ],
     [ "Font Utilities", "group__font.html", "group__font" ],
     [ "Text Drawing Utilities", "group__draw__text.html", "group__draw__text" ],
+    [ "'Window Dressing' Graphics Drawing Utilities", "group__window__dressing.html", "group__window__dressing" ],
     [ "Text Editing Utilities and Objects", "group__text__object.html", "group__text__object" ],
     [ "Memory sub-allocator for high performance dynamic memory management", "group__sub__alloc.html", "group__sub__alloc" ],
+    [ "Printer utility functions", "group__printer.html", "group__printer" ],
     [ "Debug Helper", "group__debug.html", "group__debug" ]
 ];

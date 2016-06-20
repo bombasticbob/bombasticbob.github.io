@@ -1,7 +1,7 @@
 var menu__bar_8h =
 [
     [ "MENU_WINDOW_TAG", "menu__bar_8h.html#a60c236d646afa3bf13516acc923d4ab2", null ],
-    [ "WBMenuBarWindow", "menu__bar_8h.html#ac86fd88b3682aa50484ee18a114ad175", null ],
+    [ "WBMenuBarWindow", "menu__bar_8h.html#gac86fd88b3682aa50484ee18a114ad175", null ],
     [ "MBCreateMenuBarWindow", "menu__bar_8h.html#ga30dc16d5a7b5a0dbe33b408d80b7387c", null ],
     [ "MBDestroyMenuBarWindow", "menu__bar_8h.html#ga339efd0b3c2e3e09af5251e22241a2a4", null ],
     [ "MBFindMenuBarWindow", "menu__bar_8h.html#gae9ce9b1b7ecfd7ca8a358e50006dd055", null ],

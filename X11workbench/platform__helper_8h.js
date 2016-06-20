@@ -25,7 +25,7 @@ var platform__helper_8h =
     [ "WB_PROCADDRESS", "platform__helper_8h.html#ga4a8d7e4273db30d42de55bae5e2c222d", null ],
     [ "WB_THREAD", "platform__helper_8h.html#gaed85c9ea8560e7d4f32ebaaaa6318491", null ],
     [ "WB_THREAD_KEY", "platform__helper_8h.html#gaf3410aa1fb5aa0102fd6c22106fd2026", null ],
-    [ "XPM_ATTRIBUTES", "platform__helper_8h.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a", null ],
+    [ "XPM_ATTRIBUTES", "platform__helper_8h.html#ga1bb15776f1bc24315c53197bacf5164a", null ],
     [ "my_qsort_r", "platform__helper_8h.html#gaaa2be84e6aa35494ef5c78db3fe19886", null ],
     [ "MyLoadPixmapFromData", "platform__helper_8h.html#gac55eae99a18c54dd4ccce171cdbfbf61", null ],
     [ "WBCondCreate", "platform__helper_8h.html#gac0ad4b961cb862bdb58ff5ae561f3ccc", null ],

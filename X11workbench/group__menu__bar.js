@@ -13,6 +13,7 @@ var group__menu__bar =
       [ "wOwner", "struct____WBMenuBarWindow____.html#af2479329d50a78c07f034e58942003c1", null ],
       [ "wSelf", "struct____WBMenuBarWindow____.html#a46ce97124b75df3e9d3ee0f660294d9a", null ]
     ] ],
+    [ "WBMenuBarWindow", "group__menu__bar.html#gac86fd88b3682aa50484ee18a114ad175", null ],
     [ "MBCreateMenuBarWindow", "group__menu__bar.html#ga30dc16d5a7b5a0dbe33b408d80b7387c", null ],
     [ "MBDestroyMenuBarWindow", "group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4", null ],
     [ "MBFindMenuBarWindow", "group__menu__bar.html#gae9ce9b1b7ecfd7ca8a358e50006dd055", null ],

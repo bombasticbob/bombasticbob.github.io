@@ -24,9 +24,9 @@ var group__desktop__settings =
       [ "pDisplay", "struct__CHXSettings__.html#a0e5b4ba1b30f7c298b82d7592e78a8e3", null ],
       [ "uiSerial", "struct__CHXSettings__.html#a74bf6b69faca68501bfca1269185bc35", null ]
     ] ],
-    [ "CHXSetting", "group__desktop__settings.html#ga242b12920430908cccccdd8cce995c44", null ],
-    [ "CHXSettings", "group__desktop__settings.html#ga083afbaded4136e7c507d0e09b44ddc1", null ],
-    [ "XSETTINGS_DATA_COLOR", "group__desktop__settings.html#gadc21ef5e2d67daab7b5d3f27222ec6f1", null ],
+    [ "CHXSetting", "group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426", null ],
+    [ "CHXSettings", "group__desktop__settings.html#ga78d9a6c66a95454b2fc898da68562c95", null ],
+    [ "XSETTINGS_DATA_COLOR", "group__desktop__settings.html#gae01fd313d4d5127b45782b652e5eb5e3", null ],
     [ "XSettingsType", "group__desktop__settings.html#gab8bbe81bca89b1e6aa014317095b4dd1", [
       [ "XSettingsTypeInteger", "group__desktop__settings.html#ggab8bbe81bca89b1e6aa014317095b4dd1a95edb2f0ecb93be19311194a7cceed9a", null ],
       [ "XSettingsTypeString", "group__desktop__settings.html#ggab8bbe81bca89b1e6aa014317095b4dd1ab33a720dd45efc5cdf65364be1902a0a", null ],

@@ -5,7 +5,7 @@ var dialog__controls_8h =
     [ "COMBO_CONTROL_STR", "dialog__controls_8h.html#ga67eea89df8ea0f2b875de3d07e979c66", null ],
     [ "COMBOTREE_CONTROL_STR", "dialog__controls_8h.html#gae5c044fc15c209a68864d4b8465f11b2", null ],
     [ "DEFPUSHBUTTON_CONTROL_STR", "dialog__controls_8h.html#ga4c2d4017fe583dff0db9dced65ab9520", null ],
-    [ "DIALOG_CONTROL_TAG", "dialog__controls_8h.html#a96fdf0aa143ef1a3fc84000f209b5489", null ],
+    [ "DIALOG_CONTROL_TAG", "dialog__controls_8h.html#ga96fdf0aa143ef1a3fc84000f209b5489", null ],
     [ "DLGInitControlListInfoDefault", "dialog__controls_8h.html#ga42aa5560dc7e3a7a63b04485a6eda1fd", null ],
     [ "EDIT_CONTROL_STR", "dialog__controls_8h.html#ga3376b89d9c4291d2af7e7cf1080a2f59", null ],
     [ "FILE_COMBO_CONTROL_STR", "dialog__controls_8h.html#gaf26bcda7ff60dcbe51f9ce961a2ec582", null ],

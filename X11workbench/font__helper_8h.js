@@ -60,6 +60,7 @@ var font__helper_8h =
     ] ],
     [ "WBCopyFont", "font__helper_8h.html#ga736827e64c95112cea24d236b2d7785d", null ],
     [ "WBDumpFontInfo", "font__helper_8h.html#ga0305ec6ca26b97ff4283d83867d78def", null ],
+    [ "WBFontAvgCharWidth", "font__helper_8h.html#gaf129efae522b6800670aed6758cb92cc", null ],
     [ "WBFontSetFromFont", "font__helper_8h.html#ga79162ae03e23d84e9325fb655286a282", null ],
     [ "WBLoadFont", "font__helper_8h.html#gad7562debef3c6912b163e22d0d931dbe", null ],
     [ "WBLoadModifyFont", "font__helper_8h.html#ga26240a73b1a75e2e5eb0ea37bf7e3748", null ]

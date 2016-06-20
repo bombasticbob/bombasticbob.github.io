@@ -141,6 +141,9 @@ static __inline__ char *&#160;</td><td class="memItemRight" valign="bottom"><b>D
 <tr class="memitem:af531c8c6ed6a70f9003af10ac4a401a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af531c8c6ed6a70f9003af10ac4a401a1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>CHGetResourceString_Old</b> (Display *pDisplay, const char *szIdentifier, char *szData, int cbData)</td></tr>
 <tr class="separator:af531c8c6ed6a70f9003af10ac4a401a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3448bea92698b2c12407000bceb25ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3448bea92698b2c12407000bceb25ca"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateColorRequest</b> (const char *szIdentifier)</td></tr>
+<tr class="separator:aa3448bea92698b2c12407000bceb25ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6b8e3e44a9c6f68d3501def49b2b1df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a> (Display *pDisplay, const char *szIdentifier, char *szData, int cbData)</td></tr>
 <tr class="memdesc:gad6b8e3e44a9c6f68d3501def49b2b1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries desktop resource strings (may become deprecated)  <a href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">More...</a><br/></td></tr>
 <tr class="separator:gad6b8e3e44a9c6f68d3501def49b2b1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +189,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>__enum_conf_fil
 <tr class="memitem:a1b2005411e820c19e5a2707ea30b6fc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b2005411e820c19e5a2707ea30b6fc4"></a>
 struct __XSETTINGS_HEADER__&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((__packed__))</td></tr>
 <tr class="separator:a1b2005411e820c19e5a2707ea30b6fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d87ce6a7b353303eb0bf6212fc0e24d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__desktop__settings.html#ga242b12920430908cccccdd8cce995c44">CHXSetting</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__desktop__settings.html#ga7d87ce6a7b353303eb0bf6212fc0e24d">CHGetXSetting</a> (Display *pDisplay, const char *szSettingName)</td></tr>
+<tr class="memitem:ga7d87ce6a7b353303eb0bf6212fc0e24d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__desktop__settings.html#ga7d87ce6a7b353303eb0bf6212fc0e24d">CHGetXSetting</a> (Display *pDisplay, const char *szSettingName)</td></tr>
 <tr class="memdesc:ga7d87ce6a7b353303eb0bf6212fc0e24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to a specific X setting entry by name  <a href="group__desktop__settings.html#ga7d87ce6a7b353303eb0bf6212fc0e24d">More...</a><br/></td></tr>
 <tr class="separator:ga7d87ce6a7b353303eb0bf6212fc0e24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3543bba07af332665cb69034c89839c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__desktop__settings.html#ga3543bba07af332665cb69034c89839c1">CHSettingsRefresh</a> (Display *pDisplay)</td></tr>
@@ -234,6 +237,9 @@ static const char *const *&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:aead8b9451fa1d84d389ea639edcef289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aead8b9451fa1d84d389ea639edcef289"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>argc_copy</b> = 0</td></tr>
 <tr class="separator:aead8b9451fa1d84d389ea639edcef289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a774a394a4e8d03821210f66165b60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4a774a394a4e8d03821210f66165b60"></a>
+static <a class="el" href="group__desktop__settings.html#ga78d9a6c66a95454b2fc898da68562c95">CHXSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pXSettings</b> = NULL</td></tr>
+<tr class="separator:aa4a774a394a4e8d03821210f66165b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70cfe8006865f231cb70fe3d730093c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70cfe8006865f231cb70fe3d730093c2"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>cByteOrder</b></td></tr>
 <tr class="separator:a70cfe8006865f231cb70fe3d730093c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,7 +273,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>szData</b> [4]</td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="conf__help_8c.html">conf_help.c</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

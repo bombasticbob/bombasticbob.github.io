@@ -11,18 +11,8 @@ var group__file__help__buf =
       [ "ppLineBuf", "struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d", null ],
       [ "pPrev", "struct____file__help__buf____.html#a1970bac48e3a561f6cf1712fddfad567", null ]
     ] ],
-    [ "file_help_buf_t", "group__file__help__buf.html#ga93851a1b159a65275ee049ad8ecc929f", null ],
-    [ "__file_help_buf_flags__", "group__file__help__buf.html#gafccf41d5676dc039c3f552a4cbffc02e", [
-      [ "file_help_buf_dirty", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02eacbabfca8a27d8e0577230d96319d85fe", null ],
-      [ "file_help_buf_reserved01", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02ead96011b49899b3ea071b574282430d76", null ],
-      [ "file_help_buf_reserved02", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02eaa231aadbb7430cad78c15a4026e1f322", null ],
-      [ "file_help_buf_reserved03", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02ea268d6fc57376d514fc644d68d9cabb69", null ],
-      [ "file_help_buf_reserved04", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02eab0e2fd2aefdb3956104a468baf14c8aa", null ],
-      [ "file_help_buf_reserved05", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02ea49b486ef0d36637088233a654815a55f", null ],
-      [ "file_help_buf_reserved06", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02ea478716c5bc1bcdb68e86c538811e8235", null ],
-      [ "file_help_buf_reserved07", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02ea927830b623ea32b0f347c7f3a7f81023", null ],
-      [ "file_help_buf_reserved08", "group__file__help__buf.html#ggafccf41d5676dc039c3f552a4cbffc02ead52ef25062b9d871e70be66a8fc526fc", null ]
-    ] ],
+    [ "file_help_buf_t", "group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6", null ],
+    [ "__file_help_buf_flags__", "group__file__help__buf.html#gafccf41d5676dc039c3f552a4cbffc02e", null ],
     [ "FBDeleteFromFileBuf", "group__file__help__buf.html#ga001d1c336976f759c5e78695d611bbea", null ],
     [ "FBDeleteLineFromFileBuf", "group__file__help__buf.html#ga11e42b63f0b753aec88859bacdfa391c", null ],
     [ "FBDestroyFileBuf", "group__file__help__buf.html#gae8ffbec5bf5d1557e14e1b4f038c7a91", null ],

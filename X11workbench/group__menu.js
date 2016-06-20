@@ -25,6 +25,8 @@ var group__menu =
     [ "WBMENU_POPUP_MASK", "group__menu.html#gaa6a71fec90db85a5246b1f973ccba163", null ],
     [ "WBMENU_RESERVE_DEFAULT", "group__menu.html#ga9f0180efa72232c0547a7d489bad40a1", null ],
     [ "WBMENU_SEPARATOR", "group__menu.html#ga04aed99a89eae4695c9fe534d7896bc1", null ],
+    [ "WBMenu", "group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759", null ],
+    [ "WBMenuItem", "group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4", null ],
     [ "MBAddMenuItem", "group__menu.html#gafbc231c300917a9d36eaa222f1614823", null ],
     [ "MBAddPopupMenu", "group__menu.html#gae7764ad782ab2c344978b7bb4582a03b", null ],
     [ "MBCopyMenu", "group__menu.html#ga94dfff2b4db5b2b42040562928a3b880", null ],

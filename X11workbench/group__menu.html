@@ -61,6 +61,7 @@ $(document).ready(function(){initNavTree('group__menu.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Menu functions and structures<div class="ingroups"><a class="el" href="group__frame.html">Frame Window API</a></div></div>  </div>
@@ -76,42 +77,51 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for managing menu items  <a href="struct____WBMenu.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga6e4ffa6e5616302be7bbf961388d40f4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____WBMenuItem____.html">__WBMenuItem__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a></td></tr>
+<tr class="memdesc:ga6e4ffa6e5616302be7bbf961388d40f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for managing menu items  <a href="#ga6e4ffa6e5616302be7bbf961388d40f4">More...</a><br/></td></tr>
+<tr class="separator:ga6e4ffa6e5616302be7bbf961388d40f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8011ffb36b608b2fc1c74372ee7a759"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____WBMenu.html">__WBMenu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a></td></tr>
+<tr class="memdesc:gaa8011ffb36b608b2fc1c74372ee7a759"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for managing menu items  <a href="#gaa8011ffb36b608b2fc1c74372ee7a759">More...</a><br/></td></tr>
+<tr class="separator:gaa8011ffb36b608b2fc1c74372ee7a759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac010d65a14eae65d7ed441f85421afc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gac010d65a14eae65d7ed441f85421afc4">MBCreateMenu</a> (int iID, int iPopup, const char *pszResource, int iReserveSpace)</td></tr>
+<tr class="memitem:gac010d65a14eae65d7ed441f85421afc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gac010d65a14eae65d7ed441f85421afc4">MBCreateMenu</a> (int iID, int iPopup, const char *pszResource, int iReserveSpace)</td></tr>
 <tr class="memdesc:gac010d65a14eae65d7ed441f85421afc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a WBMenu from a text menu resource.  <a href="#gac010d65a14eae65d7ed441f85421afc4">More...</a><br/></td></tr>
 <tr class="separator:gac010d65a14eae65d7ed441f85421afc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fa651757859fd2a4f2940935edada84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga3fa651757859fd2a4f2940935edada84">MBDestroyMenu</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu)</td></tr>
+<tr class="memitem:ga3fa651757859fd2a4f2940935edada84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga3fa651757859fd2a4f2940935edada84">MBDestroyMenu</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu)</td></tr>
 <tr class="memdesc:ga3fa651757859fd2a4f2940935edada84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a WBMenu created by <a class="el" href="group__menu.html#gac010d65a14eae65d7ed441f85421afc4" title="Create a WBMenu from a text menu resource.">MBCreateMenu()</a>, freeing up its resources.  <a href="#ga3fa651757859fd2a4f2940935edada84">More...</a><br/></td></tr>
 <tr class="separator:ga3fa651757859fd2a4f2940935edada84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94dfff2b4db5b2b42040562928a3b880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga94dfff2b4db5b2b42040562928a3b880">MBCopyMenu</a> (const <a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu, int iReserveSpace)</td></tr>
+<tr class="memitem:ga94dfff2b4db5b2b42040562928a3b880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga94dfff2b4db5b2b42040562928a3b880">MBCopyMenu</a> (const <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, int iReserveSpace)</td></tr>
 <tr class="memdesc:ga94dfff2b4db5b2b42040562928a3b880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a copy of a WBMenu from an existing WBMenu.  <a href="#ga94dfff2b4db5b2b42040562928a3b880">More...</a><br/></td></tr>
 <tr class="separator:ga94dfff2b4db5b2b42040562928a3b880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4ae91f9fbdc1475432289b7a72d06bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae4ae91f9fbdc1475432289b7a72d06bc">MBCreateMenuItem</a> (const char **ppszResource)</td></tr>
+<tr class="memitem:gae4ae91f9fbdc1475432289b7a72d06bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae4ae91f9fbdc1475432289b7a72d06bc">MBCreateMenuItem</a> (const char **ppszResource)</td></tr>
 <tr class="memdesc:gae4ae91f9fbdc1475432289b7a72d06bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a single allocated WBMenuItem structure from a text menu resource, advancing the source text pointer to the next menu item.  <a href="#gae4ae91f9fbdc1475432289b7a72d06bc">More...</a><br/></td></tr>
 <tr class="separator:gae4ae91f9fbdc1475432289b7a72d06bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8521ca9e318811d811e1b107a8c3bcce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga8521ca9e318811d811e1b107a8c3bcce">MBDestroyMenuItem</a> (<a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a> *pMenuItem)</td></tr>
+<tr class="memitem:ga8521ca9e318811d811e1b107a8c3bcce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga8521ca9e318811d811e1b107a8c3bcce">MBDestroyMenuItem</a> (<a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem)</td></tr>
 <tr class="memdesc:ga8521ca9e318811d811e1b107a8c3bcce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a WBMenuItem created by <a class="el" href="group__menu.html#gae4ae91f9fbdc1475432289b7a72d06bc" title="Create a single allocated WBMenuItem structure from a text menu resource, advancing the source text p...">MBCreateMenuItem()</a>, freeing up its resources.  <a href="#ga8521ca9e318811d811e1b107a8c3bcce">More...</a><br/></td></tr>
 <tr class="separator:ga8521ca9e318811d811e1b107a8c3bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbc231c300917a9d36eaa222f1614823"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gafbc231c300917a9d36eaa222f1614823">MBAddMenuItem</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu, const <a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a> *pMenuItem, int iPos)</td></tr>
+<tr class="memitem:gafbc231c300917a9d36eaa222f1614823"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gafbc231c300917a9d36eaa222f1614823">MBAddMenuItem</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, const <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem, int iPos)</td></tr>
 <tr class="memdesc:gafbc231c300917a9d36eaa222f1614823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a WBMenuItem menu item to an existing WBMenu.  <a href="#gafbc231c300917a9d36eaa222f1614823">More...</a><br/></td></tr>
 <tr class="separator:gafbc231c300917a9d36eaa222f1614823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae33f4d3b3630ffca3fa17cecd46d2e0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae33f4d3b3630ffca3fa17cecd46d2e0b">MBRemoveMenuItem</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu, int iPos)</td></tr>
+<tr class="memitem:gae33f4d3b3630ffca3fa17cecd46d2e0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae33f4d3b3630ffca3fa17cecd46d2e0b">MBRemoveMenuItem</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, int iPos)</td></tr>
 <tr class="memdesc:gae33f4d3b3630ffca3fa17cecd46d2e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a WBMenuItem from a menu created by <a class="el" href="group__menu.html#gac010d65a14eae65d7ed441f85421afc4" title="Create a WBMenu from a text menu resource.">MBCreateMenu()</a>, freeing up its resources.  <a href="#gae33f4d3b3630ffca3fa17cecd46d2e0b">More...</a><br/></td></tr>
 <tr class="separator:gae33f4d3b3630ffca3fa17cecd46d2e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7764ad782ab2c344978b7bb4582a03b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae7764ad782ab2c344978b7bb4582a03b">MBAddPopupMenu</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu, const <a class="el" href="struct____WBMenu.html">WBMenu</a> *pPopupMenu)</td></tr>
+<tr class="memitem:gae7764ad782ab2c344978b7bb4582a03b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae7764ad782ab2c344978b7bb4582a03b">MBAddPopupMenu</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, const <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pPopupMenu)</td></tr>
 <tr class="memdesc:gae7764ad782ab2c344978b7bb4582a03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a WBMenuItem menu item to an existing WBMenu.  <a href="#gae7764ad782ab2c344978b7bb4582a03b">More...</a><br/></td></tr>
 <tr class="separator:gae7764ad782ab2c344978b7bb4582a03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2819a159c3084a9729b0ecf879f60870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga2819a159c3084a9729b0ecf879f60870">MBFindPopupMenu</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu, int idPopup)</td></tr>
+<tr class="memitem:ga2819a159c3084a9729b0ecf879f60870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga2819a159c3084a9729b0ecf879f60870">MBFindPopupMenu</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, int idPopup)</td></tr>
 <tr class="memdesc:ga2819a159c3084a9729b0ecf879f60870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate a WBMenu 'popup' within a menu created by <a class="el" href="group__menu.html#gac010d65a14eae65d7ed441f85421afc4" title="Create a WBMenu from a text menu resource.">MBCreateMenu()</a>  <a href="#ga2819a159c3084a9729b0ecf879f60870">More...</a><br/></td></tr>
 <tr class="separator:ga2819a159c3084a9729b0ecf879f60870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d1262510d030d74d5cb9fb296481030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9d1262510d030d74d5cb9fb296481030">MBRemovePopupMenu</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu, int idPopup)</td></tr>
+<tr class="memitem:ga9d1262510d030d74d5cb9fb296481030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9d1262510d030d74d5cb9fb296481030">MBRemovePopupMenu</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, int idPopup)</td></tr>
 <tr class="memdesc:ga9d1262510d030d74d5cb9fb296481030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a WBMenu 'popup' from a menu created by <a class="el" href="group__menu.html#gac010d65a14eae65d7ed441f85421afc4" title="Create a WBMenu from a text menu resource.">MBCreateMenu()</a>, freeing up its resources.  <a href="#ga9d1262510d030d74d5cb9fb296481030">More...</a><br/></td></tr>
 <tr class="separator:ga9d1262510d030d74d5cb9fb296481030"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8760438ac31188bac506659b28fecc33"><td class="memItemLeft" align="right" valign="top">static __inline__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga8760438ac31188bac506659b28fecc33">MBMenuIsPopup</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu)</td></tr>
+<tr class="memitem:ga8760438ac31188bac506659b28fecc33"><td class="memItemLeft" align="right" valign="top">static __inline__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga8760438ac31188bac506659b28fecc33">MBMenuIsPopup</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu)</td></tr>
 <tr class="memdesc:ga8760438ac31188bac506659b28fecc33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate whether a 'WBMenu' refers to a popup menu.  <a href="#ga8760438ac31188bac506659b28fecc33">More...</a><br/></td></tr>
 <tr class="separator:ga8760438ac31188bac506659b28fecc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9abd89ca1ddde3b72752e1a4c99f6b7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9abd89ca1ddde3b72752e1a4c99f6b7f">MBMenuProcessHotKey</a> (<a class="el" href="struct____WBMenu.html">WBMenu</a> *pMenu, XKeyEvent *pEvent)</td></tr>
+<tr class="memitem:ga9abd89ca1ddde3b72752e1a4c99f6b7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9abd89ca1ddde3b72752e1a4c99f6b7f">MBMenuProcessHotKey</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, XKeyEvent *pEvent)</td></tr>
 <tr class="memdesc:ga9abd89ca1ddde3b72752e1a4c99f6b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for menu hotkeys.  <a href="#ga9abd89ca1ddde3b72752e1a4c99f6b7f">More...</a><br/></td></tr>
 <tr class="separator:ga9abd89ca1ddde3b72752e1a4c99f6b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f0180efa72232c0547a7d489bad40a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9f0180efa72232c0547a7d489bad40a1">WBMENU_RESERVE_DEFAULT</a>&#160;&#160;&#160;(256 * sizeof(void *))</td></tr>
@@ -186,6 +196,72 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="gaa8011ffb36b608b2fc1c74372ee7a759"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>structure for managing menu items </p>
+<p>Definition for the structure that defines a menu. A menu is a single-level entity that can contain other "sub menus" that display as 'popup' menus when the menu item is highlighted or selected.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBMenu.html" title="structure for managing menu items ">__WBMenu</a></div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a2bb21eec20254688020158712a7914cc" title="menu identifier specified when menu was created (high bit set for popup)">iMenuID</a>;                 <span class="comment">// menu identifier specified when menu was created (high bit set for popup)</span></div>
+<div class="line"></div>
+<div class="line">  <a class="code" href="struct____WBMenuItem____.html" title="structure for managing menu items ">WBMenuItem</a> **<a class="code" href="struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c" title="An allocated array of menu items.">ppItems</a>;        <span class="comment">// An allocated array of menu items</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a24b1cb6145a6f39dcafd3622138a05d3" title="The number of menu item entries in the &#39;ppItems&#39; array.">nItems</a>;                  <span class="comment">// The number of menu item entries in the &#39;ppItems&#39; array</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a63473adbe2109db2b71cfba9efff0df6" title="The maximum number of menu item entries that can be stored in &#39;ppItems&#39;.">nMaxItems</a>;               <span class="comment">// The maximum number of menu item entries that can be stored in &#39;ppItems&#39;</span></div>
+<div class="line"></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____WBMenu.html" title="structure for managing menu items ">__WBMenu</a> **<a class="code" href="struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff" title="An allocated array of &#39;popup&#39; menus contained by this menu.">ppPopups</a>;  <span class="comment">// An allocated array of &#39;popup&#39; menus contained by this menu</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#ae15309f5e39a6efbc70fe8d9b8222535" title="The number of popup menu entries in the &#39;ppPopups&#39; array.">nPopups</a>;                 <span class="comment">// The number of popup menu entries in the &#39;ppPopups&#39; array</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a6f97d99954ffe66592d514cd8f57ed50" title="The maximum number of popup menu entries that can be stored in &#39;ppPopups&#39;.">nMaxPopups</a>;              <span class="comment">// The maximum number of popup menu entries that can be stored in &#39;ppPopups&#39;</span></div>
+<div class="line"></div>
+<div class="line">} <a class="code" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759" title="structure for managing menu items">WBMenu</a>;</div>
+</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4" title="structure for managing menu items">WBMenuItem</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6e4ffa6e5616302be7bbf961388d40f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>structure for managing menu items </p>
+<p>Definition for the structure that defines a single menu item.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBMenuItem____.html" title="structure for managing menu items ">__WBMenuItem__</a></div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// the following data members are offsets from &#39;data&#39; for each component of the menu item</span></div>
+<div class="line">  <span class="comment">// &#39;-1&#39; generically indicates &quot;none&quot;</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#aed4773ce2c0a2045039203efefdf81c0" title="offset in &#39;data&#39; to null-byte terminated strings (-1 if none)">iMenuItemText</a>;     <span class="comment">// offset in &#39;data&#39; to null-byte terminated strings (-1 if none)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a9fbeb92f9390bf28646ccba81cdb8ace" title="offset of (first) &#39;underscore&#39; within menu text (-1 if none)">iUnderscore</a>;       <span class="comment">// offset of (first) &#39;underscore&#39; within menu text (-1 if none)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a379bda790791742d87163a7e9c4aa331" title="offset in &#39;data&#39; to null-byte terminated strings (-1 if none)">iTooltipText</a>;      <span class="comment">// offset in &#39;data&#39; to null-byte terminated strings (-1 if none)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#aa952e7b1e353d2d10725e0adb34c989f" title="hotkey description (-1 if none)">iHotKey</a>;           <span class="comment">// hotkey description (-1 if none)</span></div>
+<div class="line"></div>
+<div class="line">  <span class="comment">// the following data members are numeric properties (not offsets)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a6afcd9b6e57229f2cb0822631939f73d">iAction</a>;           <span class="comment">// high bit set for popup; -1 for separator; otherwise, it&#39;s a message</span></div>
+<div class="line">                         <span class="comment">// if hight bit set, corresponding lower bits are the popup menu ID</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a28b2937d5c94a3f034d2ae3c3b29af8a" title="hotkey character translation (0 if none)">nHotKey</a>;           <span class="comment">// hotkey character translation (0 if none)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a7edb30334c0aee836b64400457fc937f" title="width of menu text (in pixels; assign &#39;-1&#39; to calculate it)">iTextWidth</a>;        <span class="comment">// width of menu text (in pixels; assign &#39;-1&#39; to calculate it)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a5d95487df73075e613c66baba4097a6e" title="horizontal/vertical position of menu (in pixels; assign &#39;-1&#39; to calculate it)">iPosition</a>;         <span class="comment">// horizontal/vertical position of menu (in pixels; assign &#39;-1&#39; to calculate it)</span></div>
+<div class="line"></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a11868eb3d48b4fda9f66ea0bc586ae6c" title="total size of data">nDataSize</a>;         <span class="comment">// total size of data</span></div>
+<div class="line">  <span class="keywordtype">char</span> <a class="code" href="struct____WBMenuItem____.html#aa12fa7025612e5f4774f2412dd7f465b" title="data follows">data</a>[4];          <span class="comment">// data follows</span></div>
+<div class="line"></div>
+<div class="line">} <a class="code" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4" title="structure for managing menu items">WBMenuItem</a>;</div>
+</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759" title="structure for managing menu items">WBMenu</a> </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gafbc231c300917a9d36eaa222f1614823"></a>
 <div class="memitem">
@@ -194,13 +270,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int MBAddMenuItem </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *&#160;</td>
           <td class="paramname"><em>pMenuItem</em>, </td>
         </tr>
         <tr>
@@ -241,13 +317,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int MBAddPopupMenu </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pPopupMenu</em>&#160;</td>
         </tr>
         <tr>
@@ -279,9 +355,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct____WBMenu.html">WBMenu</a>* MBCopyMenu </td>
+          <td class="memname"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a>* MBCopyMenu </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em>, </td>
         </tr>
         <tr>
@@ -319,7 +395,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct____WBMenu.html">WBMenu</a>* MBCreateMenu </td>
+          <td class="memname"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a>* MBCreateMenu </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iID</em>, </td>
@@ -373,7 +449,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a>* MBCreateMenuItem </td>
+          <td class="memname"><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a>* MBCreateMenuItem </td>
           <td>(</td>
           <td class="paramtype">const char **&#160;</td>
           <td class="paramname"><em>ppszResource</em></td><td>)</td>
@@ -405,7 +481,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void MBDestroyMenu </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em></td><td>)</td>
           <td></td>
         </tr>
@@ -434,7 +510,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void MBDestroyMenuItem </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *&#160;</td>
           <td class="paramname"><em>pMenuItem</em></td><td>)</td>
           <td></td>
         </tr>
@@ -461,9 +537,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct____WBMenu.html">WBMenu</a>* MBFindPopupMenu </td>
+          <td class="memname"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a>* MBFindPopupMenu </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em>, </td>
         </tr>
         <tr>
@@ -507,7 +583,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static __inline__ int MBMenuIsPopup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em></td><td>)</td>
           <td></td>
         </tr>
@@ -530,7 +606,7 @@ Functions</h2></td></tr>
 <p>Use this function to indicate whether a 'WBMenu' refers to a popup menu</p>
 <p>Header File: <a class="el" href="menu_8h.html" title="Definition file for menus.">menu.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu_8h_source.html#l00350">350</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+<p>Definition at line <a class="el" href="menu_8h_source.html#l00357">357</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +617,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int MBMenuProcessHotKey </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em>, </td>
         </tr>
         <tr>
@@ -581,7 +657,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void MBRemoveMenuItem </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em>, </td>
         </tr>
         <tr>
@@ -621,7 +697,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void MBRemovePopupMenu </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____WBMenu.html">WBMenu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td>
           <td class="paramname"><em>pMenu</em>, </td>
         </tr>
         <tr>
@@ -659,7 +735,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

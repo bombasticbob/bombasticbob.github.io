@@ -108,28 +108,26 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a55e7f44006af0fe8d5aef9a573402acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">original text pointer <br/></td></tr>
 <tr class="separator:a55e7f44006af0fe8d5aef9a573402acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c94dd74811f016b5458861460c44933"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c94dd74811f016b5458861460c44933"></a>
-<a class="el" href="group__draw__text.html#ga623d1dd61c45adc85054c3af56c66023">DT_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____DT__WORDS____.html#a5c94dd74811f016b5458861460c44933">aWords</a> [1]</td></tr>
+<a class="el" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____DT__WORDS____.html#a5c94dd74811f016b5458861460c44933">aWords</a> [1]</td></tr>
 <tr class="memdesc:a5c94dd74811f016b5458861460c44933"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual data (self-contained within the memory block) <br/></td></tr>
 <tr class="separator:a5c94dd74811f016b5458861460c44933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of DT_WORD structures along with a pointer to the original text. </p>
-<pre class="fragment">A collection of DT_WORD structures, along with a pointer to the original text.  This structure is
-typically used to render text and calculate bounding rectangles for the purpose of window sizing
-and viewport scrolling.
-</pre><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____DT__WORDS____.html" title="A collection of DT_WORD structures along with a pointer to the original text.">__DT_WORDS__</a></div>
+<p>A collection of DT_WORD structures, along with a pointer to the original text. This structure is typically used to render text and calculate bounding rectangles for the purpose of window sizing and viewport scrolling.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____DT__WORDS____.html" title="A collection of DT_WORD structures along with a pointer to the original text. ">__DT_WORDS__</a></div>
 <div class="line">{</div>
-<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____DT__WORDS____.html" title="A collection of DT_WORD structures along with a pointer to the original text.">__DT_WORDS__</a> *<a class="code" href="struct____DT__WORDS____.html#a7370327996fe8fb814744e490b80d402" title="pointer to previous structure in linked list (reserved)">pPrev</a>; <span class="comment">// pointer to previous structure in linked list (reserved)</span></div>
-<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____DT__WORDS____.html" title="A collection of DT_WORD structures along with a pointer to the original text.">__DT_WORDS__</a> *<a class="code" href="struct____DT__WORDS____.html#afdaeb8e851eb3d1e1bfe43b97df4ded8" title="pointer to next structure in linked list (reserved)">pNext</a>; <span class="comment">// pointer to next structure in linked list (reserved)</span></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____DT__WORDS____.html" title="A collection of DT_WORD structures along with a pointer to the original text. ">__DT_WORDS__</a> *<a class="code" href="struct____DT__WORDS____.html#a7370327996fe8fb814744e490b80d402" title="pointer to previous structure in linked list (reserved)">pPrev</a>; <span class="comment">// pointer to previous structure in linked list (reserved)</span></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____DT__WORDS____.html" title="A collection of DT_WORD structures along with a pointer to the original text. ">__DT_WORDS__</a> *<a class="code" href="struct____DT__WORDS____.html#afdaeb8e851eb3d1e1bfe43b97df4ded8" title="pointer to next structure in linked list (reserved)">pNext</a>; <span class="comment">// pointer to next structure in linked list (reserved)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORDS____.html#a40cac163737ecbfdcce8144f9a89c552" title="number of items in aWords">nCount</a>;           <span class="comment">// number of items in aWords</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORDS____.html#a23d9f7b5895f47c027059c43a4589e4f" title="max number of items in aWords (for memory allocation purposes)">nMax</a>;             <span class="comment">// max number of items in aWords (for memory allocation purposes)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORDS____.html#a978cabf5fa7005d326e0e3418a63056b" title="maximum width of contained text, or -1 if not known">iMaxWidth</a>;        <span class="comment">// maximum width of contained text, or -1 if not known</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DT__WORDS____.html#aedb7ee58003a0d684429fb1e6808d234" title="maximum height of contained text, or -1 if not known">iMaxHeight</a>;       <span class="comment">// maximum height of contained text, or -1 if not known</span></div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="struct____DT__WORDS____.html#a55e7f44006af0fe8d5aef9a573402acd" title="original text pointer">szText</a>;   <span class="comment">// original text pointer</span></div>
-<div class="line">  <a class="code" href="struct____DT__WORD____.html" title="Structure defining a &#39;word&#39; for rendering purposes.">DT_WORD</a> <a class="code" href="struct____DT__WORDS____.html#a5c94dd74811f016b5458861460c44933" title="The actual data (self-contained within the memory block)">aWords</a>[1];    <span class="comment">// The actual data (self-contained within the memory block)</span></div>
-<div class="line">} <a class="code" href="group__draw__text.html#gad1a3f71916ca17fb9245de6705731721" title="A collection of DT_WORD structures along with a pointer to the original text.">DT_WORDS</a>;</div>
+<div class="line">  <a class="code" href="struct____DT__WORD____.html" title="Structure defining a &#39;word&#39; for rendering purposes. ">DT_WORD</a> <a class="code" href="struct____DT__WORDS____.html#a5c94dd74811f016b5458861460c44933" title="The actual data (self-contained within the memory block)">aWords</a>[1];    <span class="comment">// The actual data (self-contained within the memory block)</span></div>
+<div class="line">} <a class="code" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52" title="A collection of DT_WORD structures along with a pointer to the original text.">DT_WORDS</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="draw__text_8h_source.html#l00356">356</a> of file <a class="el" href="draw__text_8h_source.html">draw_text.h</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8h_source.html#l00371">371</a> of file <a class="el" href="draw__text_8h_source.html">draw_text.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="draw__text_8h_source.html">draw_text.h</a></li>
 </ul>
@@ -139,7 +137,7 @@ and viewport scrolling.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____DT__WORDS____.html">__DT_WORDS__</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

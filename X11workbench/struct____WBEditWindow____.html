@@ -80,7 +80,7 @@ $(document).ready(function(){initNavTree('struct____WBEditWindow____.html','');}
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:af43b80ebb62fff3da6707d56b1487a65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af43b80ebb62fff3da6707d56b1487a65"></a>
-<a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65">childframe</a></td></tr>
+<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65">childframe</a></td></tr>
 <tr class="memdesc:af43b80ebb62fff3da6707d56b1487a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">elements common to a 'child frame' (derived object) <br/></td></tr>
 <tr class="separator:af43b80ebb62fff3da6707d56b1487a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b57379a155552a87604d15bdea3a5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6b57379a155552a87604d15bdea3a5a"></a>
@@ -95,30 +95,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBEditWindow____.html#aeb19499809a5ebe07fc1ea7854527083">nMaxTextObjects</a></td></tr>
 <tr class="memdesc:aeb19499809a5ebe07fc1ea7854527083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of items in aTextObjects. <br/></td></tr>
 <tr class="separator:aeb19499809a5ebe07fc1ea7854527083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff88e08fc48f136beb39bcdeea74ab6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ff88e08fc48f136beb39bcdeea74ab6"></a>
-<a class="el" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d">TEXT_OBJECT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBEditWindow____.html#a6ff88e08fc48f136beb39bcdeea74ab6">aTextObjects</a> [2]</td></tr>
-<tr class="memdesc:a6ff88e08fc48f136beb39bcdeea74ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">'TEXT_OBJECT' array (TODO: just make this a pointer instead?) <br/></td></tr>
-<tr class="separator:a6ff88e08fc48f136beb39bcdeea74ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a886f85e1a24cbb4d866e9ae37940c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78a886f85e1a24cbb4d866e9ae37940c"></a>
+<a class="el" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d">TEXT_OBJECT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBEditWindow____.html#a78a886f85e1a24cbb4d866e9ae37940c">pTextObjects</a></td></tr>
+<tr class="memdesc:a78a886f85e1a24cbb4d866e9ae37940c"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the 'TEXT_OBJECT' array <br/></td></tr>
+<tr class="separator:a78a886f85e1a24cbb4d866e9ae37940c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure that defines an Edit Window. </p>
 <p>The WBFWMenuHandler structure is designed to be initialized via macros, so that a set of callback functions can then be easily used to handle menu events. If no menu handler is present for a menu item, or if the menu UI handler is NOT NULL and returns a non-zero value, the menu item will be disabled and displayed accordingly. It will not be possible to use its hotkey nor select it. Otherwise, the menu will be displayed normally and be selectable, and its hotkey will be able to activate it.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">__WBEditWindow__</a></div>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window. ">__WBEditWindow__</a></div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> <a class="code" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65" title="elements common to a &#39;child frame&#39; (derived object)">childframe</a>;          <span class="comment">// elements common to a &#39;child frame&#39; (derived object)</span></div>
+<div class="line">  <a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> <a class="code" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65" title="elements common to a &#39;child frame&#39; (derived object)">childframe</a>;          <span class="comment">// elements common to a &#39;child frame&#39; (derived object)</span></div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____WBEditWindow____.html#ae6b57379a155552a87604d15bdea3a5a" title="malloc&#39;d name of file associated with this edit window (NULL if none)">szFileName</a>;                 <span class="comment">// malloc&#39;d name of file associated with this edit window (NULL if none)</span></div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBEditWindow____.html#aa9cff2c5d539f82739a44c34456443c2" title="Total number of items in aTextObjects.">nTextObjects</a>;                 <span class="comment">// Total number of items in aTextObjects</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBEditWindow____.html#aeb19499809a5ebe07fc1ea7854527083" title="Max number of items in aTextObjects.">nMaxTextObjects</a>;              <span class="comment">// Max number of items in aTextObjects</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">TEXT_OBJECT</a> *<a class="code" href="struct____WBEditWindow____.html#a6ff88e08fc48f136beb39bcdeea74ab6" title="&#39;TEXT_OBJECT&#39; array (TODO: just make this a pointer instead?)">aTextObjects</a>[2];     <span class="comment">// &#39;TEXT_OBJECT&#39; array</span></div>
+<div class="line">  <a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">TEXT_OBJECT</a> *<a class="code" href="struct____WBEditWindow____.html#a78a886f85e1a24cbb4d866e9ae37940c" title="pointer to the &#39;TEXT_OBJECT&#39; array">pTextObjects</a>;        <span class="comment">// pointer to the &#39;TEXT_OBJECT&#39; array</span></div>
 <div class="line"></div>
-<div class="line">} <a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a>;</div>
+<div class="line">} <a class="code" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2" title="Structure that defines an Edit Window.">WBEditWindow</a>;</div>
 </div><!-- fragment --><p>Additional 'Child Frame' API functions can be called directly by using a type cast from 'WBEditWindow *' to 'WBChildFrame *', or by using the 'WBChildWindowFromWindowID()' function.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d">TEXT_OBJECT</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="edit__window_8h_source.html#l00146">146</a> of file <a class="el" href="edit__window_8h_source.html">edit_window.h</a>.</p>
+<p>Definition at line <a class="el" href="edit__window_8h_source.html#l00148">148</a> of file <a class="el" href="edit__window_8h_source.html">edit_window.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="edit__window_8h_source.html">edit_window.h</a></li>
 </ul>
@@ -128,7 +128,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WBEditWindow____.html">__WBEditWindow__</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

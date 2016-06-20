@@ -1,5 +1,6 @@
 var group__wmatom =
 [
+    [ "aAVERAGE_WIDTH", "group__wmatom.html#ga78d972018413f3100f8d8e769bad214f", null ],
     [ "aBITMAP", "group__wmatom.html#gae4d07e81656182b0406e74189d381288", null ],
     [ "aC_STRING", "group__wmatom.html#gaba9d0bb8be874bbff95935412d996ef3", null ],
     [ "aCLIPBOARD", "group__wmatom.html#ga6c168a251f6bfd9c490a216dcfa7744f", null ],

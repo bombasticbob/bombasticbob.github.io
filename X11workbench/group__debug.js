@@ -38,11 +38,13 @@ var group__debug =
       [ "DebugSubSystem_Settings", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a8c0dbd5a6a424171b8605a9a9a2cde16", null ],
       [ "DebugSubSystem_Selection", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395a9f60cbc5957ceeda886a8559056ae4de", null ],
       [ "DebugSubSystem_Pixmap", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395af692ff7eba270cc2a3a7cce224f81047", null ],
+      [ "DebugSubSystem_Expose", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395ab8ce6d5213b0808ca71cd39214720380", null ],
       [ "DebugSubSystem_MASK", "window__helper_8h.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8", null ]
     ] ],
     [ "WBDebugDump", "group__debug.html#ga1b403292a2ce065b57db74db5809dfea", null ],
     [ "WBDebugDumpEvent", "group__debug.html#gaa39191469018c352801b1178befdd5b2", null ],
     [ "WBDebugDumpGC", "group__debug.html#ga690f2acca275614c06c2e8afc55db18b", null ],
+    [ "WBDebugDumpRegion", "group__debug.html#ga87f581d644796a185b48611c5c8c163d", null ],
     [ "WBDebugPrint", "group__debug.html#gaff552460367fbdb1397a29e364800f49", null ],
     [ "WBDumpFontInfo", "group__debug.html#ga0305ec6ca26b97ff4283d83867d78def", null ],
     [ "WBGetDebugLevel", "group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13", null ],

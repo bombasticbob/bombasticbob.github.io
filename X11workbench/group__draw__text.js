@@ -21,8 +21,8 @@ var group__draw__text =
       [ "pPrev", "struct____DT__WORDS____.html#a7370327996fe8fb814744e490b80d402", null ],
       [ "szText", "struct____DT__WORDS____.html#a55e7f44006af0fe8d5aef9a573402acd", null ]
     ] ],
-    [ "DT_WORD", "group__draw__text.html#ga623d1dd61c45adc85054c3af56c66023", null ],
-    [ "DT_WORDS", "group__draw__text.html#gad1a3f71916ca17fb9245de6705731721", null ],
+    [ "DT_WORD", "group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a", null ],
+    [ "DT_WORDS", "group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52", null ],
     [ "DTAlignment", "group__draw__text.html#ga082c206bfd406e64f16e934644548d40", [
       [ "DTAlignment_HLEFT", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a72306f5eca801e824103a1fd0b53188d", null ],
       [ "DTAlignment_HCENTER", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9", null ],
@@ -44,6 +44,7 @@ var group__draw__text =
       [ "DTAlignment_NO_SHRINK", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a0fa654264f70855c10b5960fbdb5e94c", null ],
       [ "DTAlignment_ALLOW_TRAILING", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804", null ],
       [ "DTAlignment_NO_WORD_WRAP", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a204dff61b43cd0d49df26819f2a1984c", null ],
+      [ "DTAlignment_SINGLELINE", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a196a3d7f39c98443cc28b2d35ba1108b", null ],
       [ "DTAlignment_UNDERSCORE", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da", null ],
       [ "DTAlignment_PRINTING", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6", null ]
     ] ],
@@ -53,6 +54,6 @@ var group__draw__text =
     [ "DTDrawSingleLineText", "group__draw__text.html#gac52fd81c2eb3caf63074333e7c2cbcd2", null ],
     [ "DTGetTextWidth", "group__draw__text.html#gab939f0546f74387edba83043440de77d", null ],
     [ "DTGetWordsFromText", "group__draw__text.html#ga622bdff494230c3a68db989121878679", null ],
-    [ "DTPreRender", "group__draw__text.html#ga5c1dff4dec52e1de7dce725525249ffe", null ],
-    [ "DTRender", "group__draw__text.html#gaab5f01f953283ee14a7347463989af60", null ]
+    [ "DTPreRender", "group__draw__text.html#gab2a6008375cb90a9c61ddf0b97002407", null ],
+    [ "DTRender", "group__draw__text.html#ga0eec4d84392b9beedbef1be27bcd22ba", null ]
 ];

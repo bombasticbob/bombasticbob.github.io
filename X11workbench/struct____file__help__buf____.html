@@ -118,16 +118,11 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>basic 'buffered I/O' object structure for 'FileBuf' APIs </p>
-<pre class="fragment">This structure is intended to assist implementing buffered I/O for files
-that contain multiple lines separated by linefeeds.  A 'file edit'
-window or dialog control could use one of these objects to assist with
-displaying and editing text based on the contents of a file.  It would
-also be possible to construct a \ref file_help_buf_t object from a
-memory buffer as well as from a text file.
-</pre><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs">__file_help_buf__</a></div>
+<p>This structure is intended to assist implementing buffered I/O for files that contain multiple lines separated by linefeeds. A 'file edit' window or dialog control could use one of these objects to assist with displaying and editing text based on the contents of a file. It would also be possible to construct a <a class="el" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a> object from a memory buffer as well as from a text file.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">__file_help_buf__</a></div>
 <div class="line">{</div>
-<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs">__file_help_buf__</a> *<a class="code" href="struct____file__help__buf____.html#a1970bac48e3a561f6cf1712fddfad567" title="pointer to &#39;previous&#39; item in linked list (NULL for owner object)">pPrev</a>; <span class="comment">// pointer to &#39;previous&#39; item in linked list (NULL for owner object)</span></div>
-<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs">__file_help_buf__</a> *<a class="code" href="struct____file__help__buf____.html#a6918c3f3d28b36832e6773df57b3586e" title="pointer to &#39;next&#39; item in linked list (NULL for last object)">pNext</a>; <span class="comment">// pointer to &#39;next&#39; item in linked list (NULL for last object)</span></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">__file_help_buf__</a> *<a class="code" href="struct____file__help__buf____.html#a1970bac48e3a561f6cf1712fddfad567" title="pointer to &#39;previous&#39; item in linked list (NULL for owner object)">pPrev</a>; <span class="comment">// pointer to &#39;previous&#39; item in linked list (NULL for owner object)</span></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">__file_help_buf__</a> *<a class="code" href="struct____file__help__buf____.html#a6918c3f3d28b36832e6773df57b3586e" title="pointer to &#39;next&#39; item in linked list (NULL for last object)">pNext</a>; <span class="comment">// pointer to &#39;next&#39; item in linked list (NULL for last object)</span></div>
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a9f8d162f1bb78e6eb33b102ad156709c" title="size of entire buffer">lBufferSize</a>;                <span class="comment">// size of entire buffer</span></div>
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a75e0d422e416b24dbdb71a446b37f633" title="number of bytes of valid data">lBufferCount</a>;               <span class="comment">// number of bytes of valid data</span></div>
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>;                 <span class="comment">// number of lines in &#39;cData&#39; when ppLineBuf not NULL</span></div>
@@ -135,15 +130,11 @@ memory buffer as well as from a text file.
 <div class="line">  <span class="keywordtype">int</span>  <a class="code" href="struct____file__help__buf____.html#aa554ac4b7e21f28462750b92ad87add8" title="various bit flags">iFlags</a>;                     <span class="comment">// various bit flags</span></div>
 <div class="line">  <span class="keywordtype">char</span> **<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>;                <span class="comment">// array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)</span></div>
 <div class="line">  <span class="keywordtype">char</span> <a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>[<span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *)];      <span class="comment">// the data itself (aligned to size of a pointer)</span></div>
-<div class="line">} <a class="code" href="group__file__help__buf.html#ga93851a1b159a65275ee049ad8ecc929f" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs">file_help_buf_t</a>;</div>
-</div><!-- fragment --> <pre class="fragment">TODO:  'ppLineBuf' should point to an area within cData.  If 'pNext' is valid, subsequent lines
-could be pointed to by the 'ppLineBuf' within the structure pointed to by 'pNext'.  In this
-way line pointers can be re-structured without re-allocating memory.  Additionally, there is
-no reason why lines must be contiguous, so inserting and removing lines can make use of the
-additional allocated space pointed to by 'pNext'.\n
-As it would become fragmented, it would also be a good idea to re-build the structure
-periodically using FBParseFileBuf()</pre> 
-<p>Definition at line <a class="el" href="file__help_8h_source.html#l00132">132</a> of file <a class="el" href="file__help_8h_source.html">file_help.h</a>.</p>
+<div class="line">} <a class="code" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs">file_help_buf_t</a>;</div>
+</div><!-- fragment --><p>TODO: 'ppLineBuf' should point to an area within cData. If 'pNext' is valid, subsequent lines could be pointed to by the 'ppLineBuf' within the structure pointed to by 'pNext'. In this way line pointers can be re-structured without re-allocating memory. Additionally, there is no reason why lines must be contiguous, so inserting and removing lines can make use of the additional allocated space pointed to by 'pNext'.<br/>
+ As it would become fragmented, it would also be a good idea to re-build the structure periodically using <a class="el" href="group__file__help__buf.html#ga4473fb94d70c15cb95277ef19cb564e0" title="Parse or Re-Parse the data for a file_help_buf_t object.">FBParseFileBuf()</a> </p>
+
+<p>Definition at line <a class="el" href="file__help_8h_source.html#l00138">138</a> of file <a class="el" href="file__help_8h_source.html">file_help.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="file__help_8h_source.html">file_help.h</a></li>
 </ul>
@@ -153,7 +144,7 @@ periodically using FBParseFileBuf()</pre>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____file__help__buf____.html">__file_help_buf__</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

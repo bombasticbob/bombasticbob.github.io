@@ -162,50 +162,47 @@ $(document).ready(function(){initNavTree('edit__window_8h_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//  WBEditWindowFlags_EncodingUTF16   = 0x2,</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">//  WBEditWindowFlags_EncodingOther   = 0x3, // &#39;other&#39; implies locales, etc. (reserved)</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//  WBEditWindowFlags_Minimized       = 0x40000000L,  // minimized window within owner&#39;s client area</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">//  WBEditWindowFlags_Maximized       = 0x80000000L,  // maximized window within owner&#39;s client area</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//};</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html">  146</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">__WBEditWindow__</a></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65">  148</a></span>&#160;  <a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a> <a class="code" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65" title="elements common to a &#39;child frame&#39; (derived object)">childframe</a>;          </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#ae6b57379a155552a87604d15bdea3a5a">  150</a></span>&#160;  <span class="keywordtype">char</span> *<a class="code" href="struct____WBEditWindow____.html#ae6b57379a155552a87604d15bdea3a5a" title="malloc&#39;d name of file associated with this edit window (NULL if none)">szFileName</a>;                 </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//};</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html">  148</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window. ">__WBEditWindow__</a></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65">  150</a></span>&#160;  <a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> <a class="code" href="struct____WBEditWindow____.html#af43b80ebb62fff3da6707d56b1487a65" title="elements common to a &#39;child frame&#39; (derived object)">childframe</a>;          </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#aa9cff2c5d539f82739a44c34456443c2">  152</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct____WBEditWindow____.html#aa9cff2c5d539f82739a44c34456443c2" title="Total number of items in aTextObjects.">nTextObjects</a>;                 </div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#aeb19499809a5ebe07fc1ea7854527083">  153</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct____WBEditWindow____.html#aeb19499809a5ebe07fc1ea7854527083" title="Max number of items in aTextObjects.">nMaxTextObjects</a>;              </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#a6ff88e08fc48f136beb39bcdeea74ab6">  155</a></span>&#160;  <a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">TEXT_OBJECT</a> *<a class="code" href="struct____WBEditWindow____.html#a6ff88e08fc48f136beb39bcdeea74ab6" title="&#39;TEXT_OBJECT&#39; array (TODO: just make this a pointer instead?)">aTextObjects</a>[2];     </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#ae6b57379a155552a87604d15bdea3a5a">  152</a></span>&#160;  <span class="keywordtype">char</span> *<a class="code" href="struct____WBEditWindow____.html#ae6b57379a155552a87604d15bdea3a5a" title="malloc&#39;d name of file associated with this edit window (NULL if none)">szFileName</a>;                 </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#aa9cff2c5d539f82739a44c34456443c2">  154</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct____WBEditWindow____.html#aa9cff2c5d539f82739a44c34456443c2" title="Total number of items in aTextObjects.">nTextObjects</a>;                 </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#aeb19499809a5ebe07fc1ea7854527083">  155</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct____WBEditWindow____.html#aeb19499809a5ebe07fc1ea7854527083" title="Max number of items in aTextObjects.">nMaxTextObjects</a>;              </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;} <a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="code" href="struct____WBEditWindow____.html#a78a886f85e1a24cbb4d866e9ae37940c">  157</a></span>&#160;  <a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">TEXT_OBJECT</a> *<a class="code" href="struct____WBEditWindow____.html#a78a886f85e1a24cbb4d866e9ae37940c" title="pointer to the &#39;TEXT_OBJECT&#39; array">pTextObjects</a>;        </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a> *<a class="code" href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f" title="Create an Edit Window.">WBCreateEditWindow</a>(<a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows">WBFrameWindow</a> *pOwner, XFontStruct *pFont,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> *szFocusMenu, <span class="keyword">const</span> <a class="code" href="struct____WB__FW__MENU__HANDLER__.html" title="structure for managing menu callbacks">WBFWMenuHandler</a> *pHandlerArray,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                 <span class="keywordtype">int</span> fFlags);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__edit__window.html#ga1905f55b320db416741d55866a92ebd5" title="Destroy an Edit Window.">WBDestroyEditWindow</a>(<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a> *pEditWindow);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window.">WBEditWindow</a> *<a class="code" href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878" title="Obtain the associated WBEditWindow structure pointer for a Window ID.">WBEditWindowFromWindowID</a>(Window wID);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif // _EDIT_WINDOW_H_INCLUDED_</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;} <a class="code" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2" title="Structure that defines an Edit Window.">WBEditWindow</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window. ">WBEditWindow</a> *<a class="code" href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f" title="Create an Edit Window.">WBCreateEditWindow</a>(<a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows ">WBFrameWindow</a> *pOwner, XFontStruct *pFont,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> *szFocusMenu, <span class="keyword">const</span> <a class="code" href="struct____WB__FW__MENU__HANDLER____.html" title="structure for managing menu callbacks ">WBFWMenuHandler</a> *pHandlerArray,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                 <span class="keywordtype">int</span> fFlags);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__edit__window.html#ga1905f55b320db416741d55866a92ebd5" title="Destroy an Edit Window.">WBDestroyEditWindow</a>(<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window. ">WBEditWindow</a> *pEditWindow);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<a class="code" href="struct____WBEditWindow____.html" title="Structure that defines an Edit Window. ">WBEditWindow</a> *<a class="code" href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878" title="Obtain the associated WBEditWindow structure pointer for a Window ID.">WBEditWindowFromWindowID</a>(Window wID);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#endif // _EDIT_WINDOW_H_INCLUDED_</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="edit__window_8h.html">edit_window.h</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:45 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:13 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

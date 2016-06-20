@@ -70,7 +70,8 @@ $(document).ready(function(){initNavTree('frame__window_8h.html','');});
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">frame_window.h File Reference</div>  </div>
 </div><!--header-->
@@ -78,15 +79,15 @@ $(document).ready(function(){initNavTree('frame__window_8h.html','');});
 
 <p>Frame Window API functions and definitions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="window__helper_8h_source.html">window_helper.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="window__dressing_8h_source.html">window_dressing.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="menu__bar_8h_source.html">menu_bar.h</a>&quot;</code><br/>
 </div>
 <p><a href="frame__window_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FW__MENU__HANDLER__.html">__WB_FW_MENU_HANDLER_</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for managing menu callbacks  <a href="struct____WB__FW__MENU__HANDLER__.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FW__MENU__HANDLER____.html">__WB_FW_MENU_HANDLER__</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for managing menu callbacks  <a href="struct____WB__FW__MENU__HANDLER____.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FRAME__WINDOW____.html">__WB_FRAME_WINDOW__</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">main controlling structure for frame windows  <a href="struct____WB__FRAME__WINDOW____.html#details">More...</a><br/></td></tr>
@@ -97,10 +98,11 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af0816ee655e0dfe37f0889b7091f4058"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0816ee655e0dfe37f0889b7091f4058"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FRAME_WINDOW_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)&quot;FWFW&quot;))</td></tr>
-<tr class="separator:af0816ee655e0dfe37f0889b7091f4058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a61ebc2ef84095119158df442cfca52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga8a61ebc2ef84095119158df442cfca52">FW_MENU_HANDLER_BEGIN</a>(X)&#160;&#160;&#160;static const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> X[] = {</td></tr>
+<tr class="memitem:gaf0816ee655e0dfe37f0889b7091f4058"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf0816ee655e0dfe37f0889b7091f4058"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaf0816ee655e0dfe37f0889b7091f4058">FRAME_WINDOW_TAG</a>&#160;&#160;&#160;(*((const unsigned int *)&quot;FWFW&quot;))</td></tr>
+<tr class="memdesc:gaf0816ee655e0dfe37f0889b7091f4058"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG for the WBFrameWindow structure. <br/></td></tr>
+<tr class="separator:gaf0816ee655e0dfe37f0889b7091f4058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a61ebc2ef84095119158df442cfca52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga8a61ebc2ef84095119158df442cfca52">FW_MENU_HANDLER_BEGIN</a>(X)&#160;&#160;&#160;static const <a class="el" href="group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b">WBFWMenuHandler</a> X[] = {</td></tr>
 <tr class="memdesc:ga8a61ebc2ef84095119158df442cfca52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this macro to begin definition of a WBFWMenuHandler array.  <a href="group__frame__menu.html#ga8a61ebc2ef84095119158df442cfca52">More...</a><br/></td></tr>
 <tr class="separator:ga8a61ebc2ef84095119158df442cfca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga229372f84c3decfd19c503e93bcd0624"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624">FW_MENU_HANDLER_ENTRY</a>(X, Y, Z)&#160;&#160;&#160;{ (unsigned long)X, Y, Z },</td></tr>
@@ -116,16 +118,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a3c4f2af99262415109ef93e4e3ad009b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c4f2af99262415109ef93e4e3ad009b"></a>
-typedef struct <br class="typebreak"/>
-<a class="el" href="struct____WB__FW__MENU__HANDLER__.html">__WB_FW_MENU_HANDLER_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WBFWMenuHandler</b></td></tr>
-<tr class="separator:a3c4f2af99262415109ef93e4e3ad009b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf113fd95153c5a0de0876becf0a83a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf113fd95153c5a0de0876becf0a83a5"></a>
-typedef struct <a class="el" href="struct____WB__FRAME__WINDOW____.html">__WB_FRAME_WINDOW__</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WBFrameWindow</b></td></tr>
-<tr class="separator:acf113fd95153c5a0de0876becf0a83a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06650d056e926657cc94548674c1d98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af06650d056e926657cc94548674c1d98"></a>
-typedef struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WBChildFrame</b></td></tr>
-<tr class="separator:af06650d056e926657cc94548674c1d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c4f2af99262415109ef93e4e3ad009b"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="struct____WB__FW__MENU__HANDLER____.html">__WB_FW_MENU_HANDLER__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b">WBFWMenuHandler</a></td></tr>
+<tr class="memdesc:ga3c4f2af99262415109ef93e4e3ad009b"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for managing menu callbacks  <a href="group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b">More...</a><br/></td></tr>
+<tr class="separator:ga3c4f2af99262415109ef93e4e3ad009b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf113fd95153c5a0de0876becf0a83a5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____WB__FRAME__WINDOW____.html">__WB_FRAME_WINDOW__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a></td></tr>
+<tr class="memdesc:gacf113fd95153c5a0de0876becf0a83a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">main controlling structure for frame windows  <a href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">More...</a><br/></td></tr>
+<tr class="separator:gacf113fd95153c5a0de0876becf0a83a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf06650d056e926657cc94548674c1d98"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a></td></tr>
+<tr class="memdesc:gaf06650d056e926657cc94548674c1d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure that defines a Child Frame within a Frame Window.  <a href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">More...</a><br/></td></tr>
+<tr class="separator:gaf06650d056e926657cc94548674c1d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -169,49 +171,49 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac6e419a4d4627321ddfaaf48711fc211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gac6e419a4d4627321ddfaaf48711fc211">FWCreateFrameWindow</a> (const char *szTitle, int idIcon, const char *szMenuResource, int iX, int iY, int iWidth, int iHeight, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback, int iFlags)</td></tr>
+<tr class="memitem:gac6e419a4d4627321ddfaaf48711fc211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gac6e419a4d4627321ddfaaf48711fc211">FWCreateFrameWindow</a> (const char *szTitle, int idIcon, const char *szMenuResource, int iX, int iY, int iWidth, int iHeight, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback, int iFlags)</td></tr>
 <tr class="memdesc:gac6e419a4d4627321ddfaaf48711fc211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a frame window.  <a href="group__frame__window.html#gac6e419a4d4627321ddfaaf48711fc211">More...</a><br/></td></tr>
 <tr class="separator:gac6e419a4d4627321ddfaaf48711fc211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ea6c01ec4dd7ff9660dfb6a6bb98a23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga5ea6c01ec4dd7ff9660dfb6a6bb98a23">FWRecalcLayout</a> (Window wID)</td></tr>
 <tr class="memdesc:ga5ea6c01ec4dd7ff9660dfb6a6bb98a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force a frame window to recalculate its layout, which may involve resizing multiple contained windows.  <a href="group__frame__window.html#ga5ea6c01ec4dd7ff9660dfb6a6bb98a23">More...</a><br/></td></tr>
 <tr class="separator:ga5ea6c01ec4dd7ff9660dfb6a6bb98a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d38ec4032b321a227904d3d34293f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga7d38ec4032b321a227904d3d34293f37">FWSetUserCallback</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFW, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pCallBack)</td></tr>
+<tr class="memitem:ga7d38ec4032b321a227904d3d34293f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga7d38ec4032b321a227904d3d34293f37">FWSetUserCallback</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pCallBack)</td></tr>
 <tr class="memdesc:ga7d38ec4032b321a227904d3d34293f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign a new WBWinEvent callback function for a frame window  <a href="group__frame__window.html#ga7d38ec4032b321a227904d3d34293f37">More...</a><br/></td></tr>
 <tr class="separator:ga7d38ec4032b321a227904d3d34293f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac0ed9cb90f9d571021974c5a7b539cc"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaac0ed9cb90f9d571021974c5a7b539cc">FWGetFrameWindowStruct</a> (Window wID)</td></tr>
+<tr class="memitem:gaac0ed9cb90f9d571021974c5a7b539cc"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaac0ed9cb90f9d571021974c5a7b539cc">FWGetFrameWindowStruct</a> (Window wID)</td></tr>
 <tr class="memdesc:gaac0ed9cb90f9d571021974c5a7b539cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the associated WBFrameWindow structure pointer for a frame window's Window ID.  <a href="group__frame__window.html#gaac0ed9cb90f9d571021974c5a7b539cc">More...</a><br/></td></tr>
 <tr class="separator:gaac0ed9cb90f9d571021974c5a7b539cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab70af043c2c00dbf97c2a531905be2b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gab70af043c2c00dbf97c2a531905be2b3">FWDestroyFrameWindow</a> (Window wID)</td></tr>
 <tr class="memdesc:gab70af043c2c00dbf97c2a531905be2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to destroy a frame window based on the Window id.  <a href="group__frame__window.html#gab70af043c2c00dbf97c2a531905be2b3">More...</a><br/></td></tr>
 <tr class="separator:gab70af043c2c00dbf97c2a531905be2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f5408fb92f895dea9fc09203fd32217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga9f5408fb92f895dea9fc09203fd32217">FWDestroyFrameWindow2</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow)</td></tr>
+<tr class="memitem:ga9f5408fb92f895dea9fc09203fd32217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga9f5408fb92f895dea9fc09203fd32217">FWDestroyFrameWindow2</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow)</td></tr>
 <tr class="memdesc:ga9f5408fb92f895dea9fc09203fd32217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to destroy a frame window based on the WBFrameWindow structure.  <a href="group__frame__window.html#ga9f5408fb92f895dea9fc09203fd32217">More...</a><br/></td></tr>
 <tr class="separator:ga9f5408fb92f895dea9fc09203fd32217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab506e40699d1db64bbbef36dc62e4dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gab506e40699d1db64bbbef36dc62e4dde">FWSetMenuHandlers</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, const <a class="el" href="struct____WB__FW__MENU__HANDLER__.html">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
+<tr class="memitem:gab506e40699d1db64bbbef36dc62e4dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gab506e40699d1db64bbbef36dc62e4dde">FWSetMenuHandlers</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, const <a class="el" href="group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b">WBFWMenuHandler</a> *pHandlerArray)</td></tr>
 <tr class="memdesc:gab506e40699d1db64bbbef36dc62e4dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign the default menu handler to a frame window.  <a href="group__frame__window.html#gab506e40699d1db64bbbef36dc62e4dde">More...</a><br/></td></tr>
 <tr class="separator:gab506e40699d1db64bbbef36dc62e4dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad593b650497ec120af93adcade1499c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gad593b650497ec120af93adcade1499c2">FWGetNumContWindows</a> (const <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow)</td></tr>
+<tr class="memitem:gad593b650497ec120af93adcade1499c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gad593b650497ec120af93adcade1499c2">FWGetNumContWindows</a> (const <a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow)</td></tr>
 <tr class="memdesc:gad593b650497ec120af93adcade1499c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of 'contained' windows.  <a href="group__frame__window.html#gad593b650497ec120af93adcade1499c2">More...</a><br/></td></tr>
 <tr class="separator:gad593b650497ec120af93adcade1499c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2932bd7fb9fbe99081b5e598e6c5317c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a> (const <a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, int iIndex)</td></tr>
+<tr class="memitem:ga2932bd7fb9fbe99081b5e598e6c5317c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a> (const <a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, int iIndex)</td></tr>
 <tr class="memdesc:ga2932bd7fb9fbe99081b5e598e6c5317c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Window ID for the specified 'contained' window. The index follows the tab order.  <a href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">More...</a><br/></td></tr>
 <tr class="separator:ga2932bd7fb9fbe99081b5e598e6c5317c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad77acdf96e4649b642dee2c3e2cd1145"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gad77acdf96e4649b642dee2c3e2cd1145">FWAddContainedWindow</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, <a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pNew)</td></tr>
+<tr class="memitem:gad77acdf96e4649b642dee2c3e2cd1145"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gad77acdf96e4649b642dee2c3e2cd1145">FWAddContainedWindow</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pNew)</td></tr>
 <tr class="memdesc:gad77acdf96e4649b642dee2c3e2cd1145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a 'contained' window and returns the tab order index.  <a href="group__frame__window.html#gad77acdf96e4649b642dee2c3e2cd1145">More...</a><br/></td></tr>
 <tr class="separator:gad77acdf96e4649b642dee2c3e2cd1145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga513685b0d832f1000133d2a3e603f17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga513685b0d832f1000133d2a3e603f17f">FWRemoveContainedWindow</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, <a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pCont)</td></tr>
+<tr class="memitem:ga513685b0d832f1000133d2a3e603f17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga513685b0d832f1000133d2a3e603f17f">FWRemoveContainedWindow</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pCont)</td></tr>
 <tr class="memdesc:ga513685b0d832f1000133d2a3e603f17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a 'contained' window from a frame window (does not destroy the window)  <a href="group__frame__window.html#ga513685b0d832f1000133d2a3e603f17f">More...</a><br/></td></tr>
 <tr class="separator:ga513685b0d832f1000133d2a3e603f17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7360907bb6b8d7e5fd33b220e3c7ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa7360907bb6b8d7e5fd33b220e3c7ed6">FWSetFocusWindow</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, <a class="el" href="struct____WBChildFrame____.html">WBChildFrame</a> *pCont)</td></tr>
+<tr class="memitem:gaa7360907bb6b8d7e5fd33b220e3c7ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa7360907bb6b8d7e5fd33b220e3c7ed6">FWSetFocusWindow</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pCont)</td></tr>
 <tr class="memdesc:gaa7360907bb6b8d7e5fd33b220e3c7ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using the Window ID.  <a href="group__frame__window.html#gaa7360907bb6b8d7e5fd33b220e3c7ed6">More...</a><br/></td></tr>
 <tr class="separator:gaa7360907bb6b8d7e5fd33b220e3c7ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">FWSetFocusWindowIndex</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, int iIndex)</td></tr>
+<tr class="memitem:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">FWSetFocusWindowIndex</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, int iIndex)</td></tr>
 <tr class="memdesc:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using its tab order index.  <a href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">More...</a><br/></td></tr>
 <tr class="separator:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4295a8606405987f556ef11fb5c3130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">FWSetStatusText</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, const char *szText)</td></tr>
-<tr class="memdesc:gaa4295a8606405987f556ef11fb5c3130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the 'status' text for a Frame Window with a status bar.  <a href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">More...</a><br/></td></tr>
+<tr class="memitem:gaa4295a8606405987f556ef11fb5c3130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">FWSetStatusText</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, const char *szText)</td></tr>
+<tr class="memdesc:gaa4295a8606405987f556ef11fb5c3130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the 'status' text for a Frame Window with a status bar, forcing a re-paint.  <a href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">More...</a><br/></td></tr>
 <tr class="separator:gaa4295a8606405987f556ef11fb5c3130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74597022b33ab1ab995f3ffe711524e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga74597022b33ab1ab995f3ffe711524e9">FWSetStatusTabInfo</a> (<a class="el" href="struct____WB__FRAME__WINDOW____.html">WBFrameWindow</a> *pFrameWindow, int nTabs, const int *pTabs)</td></tr>
+<tr class="memitem:ga74597022b33ab1ab995f3ffe711524e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga74597022b33ab1ab995f3ffe711524e9">FWSetStatusTabInfo</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFrameWindow, int nTabs, const int *pTabs)</td></tr>
 <tr class="memdesc:ga74597022b33ab1ab995f3ffe711524e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the 'status' tab info for a Frame Window with a status bar.  <a href="group__frame__window.html#ga74597022b33ab1ab995f3ffe711524e9">More...</a><br/></td></tr>
 <tr class="separator:ga74597022b33ab1ab995f3ffe711524e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0aa9799b8d1efec89d401fd7985eb9b"><td class="memItemLeft" align="right" valign="top">XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gab0aa9799b8d1efec89d401fd7985eb9b">FWGetDefaultFG</a> (void)</td></tr>
@@ -223,6 +225,33 @@ Functions</h2></td></tr>
 <tr class="memitem:gab373347130f0af691769d2238ee719de"><td class="memItemLeft" align="right" valign="top">XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gab373347130f0af691769d2238ee719de">FWGetDefaultBD</a> (void)</td></tr>
 <tr class="memdesc:gab373347130f0af691769d2238ee719de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default border color.  <a href="group__frame__window.html#gab373347130f0af691769d2238ee719de">More...</a><br/></td></tr>
 <tr class="separator:gab373347130f0af691769d2238ee719de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga8e7bcc25a5d006d292f5663ed782b3c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8e7bcc25a5d006d292f5663ed782b3c7"></a>
+const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga8e7bcc25a5d006d292f5663ed782b3c7">aNEW_TAB</a></td></tr>
+<tr class="memdesc:ga8e7bcc25a5d006d292f5663ed782b3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to create a new tab (also ctrl+N) <br/></td></tr>
+<tr class="separator:ga8e7bcc25a5d006d292f5663ed782b3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad6493b1bb386690fac603042808c65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ad6493b1bb386690fac603042808c65"></a>
+const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame__window_8h.html#a0ad6493b1bb386690fac603042808c65">aNEXT_TAB</a></td></tr>
+<tr class="memdesc:a0ad6493b1bb386690fac603042808c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to switch to the next tab (also ctrl+alt+pgdn) <br/></td></tr>
+<tr class="separator:a0ad6493b1bb386690fac603042808c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3e325437198d5b6ef9fc4fe8bc647f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c3e325437198d5b6ef9fc4fe8bc647f"></a>
+const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame__window_8h.html#a7c3e325437198d5b6ef9fc4fe8bc647f">aPREV_TAB</a></td></tr>
+<tr class="memdesc:a7c3e325437198d5b6ef9fc4fe8bc647f"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to switch to the previous tab (also ctrl+alt+pgup) <br/></td></tr>
+<tr class="separator:a7c3e325437198d5b6ef9fc4fe8bc647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f9f51e9db32518cd20acd819da80a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04f9f51e9db32518cd20acd819da80a6"></a>
+const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame__window_8h.html#a04f9f51e9db32518cd20acd819da80a6">aSET_TAB</a></td></tr>
+<tr class="memdesc:a04f9f51e9db32518cd20acd819da80a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to switch to the specified tab <br/></td></tr>
+<tr class="separator:a04f9f51e9db32518cd20acd819da80a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e35aad8c4d3e4dd2b10b80746d944d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e35aad8c4d3e4dd2b10b80746d944d5"></a>
+const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame__window_8h.html#a8e35aad8c4d3e4dd2b10b80746d944d5">aCLOSE_TAB</a></td></tr>
+<tr class="memdesc:a8e35aad8c4d3e4dd2b10b80746d944d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to close the specified tab <br/></td></tr>
+<tr class="separator:a8e35aad8c4d3e4dd2b10b80746d944d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e21600fefd5faccaf6ca98ff098552"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16e21600fefd5faccaf6ca98ff098552"></a>
+const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame__window_8h.html#a16e21600fefd5faccaf6ca98ff098552">aREORDER_TAB</a></td></tr>
+<tr class="memdesc:a16e21600fefd5faccaf6ca98ff098552"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to re-order the specified tab (activate with mouse-drag) <br/></td></tr>
+<tr class="separator:a16e21600fefd5faccaf6ca98ff098552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Frame Window API functions and definitions. </p>
@@ -235,7 +264,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="frame__window_8h.html">frame_window.h</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

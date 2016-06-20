@@ -68,11 +68,11 @@ $(document).ready(function(){initNavTree('struct____DIALOG__WINDOW____.html','')
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">__DIALOG_WINDOW__ Struct Reference<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a></div></div>  </div>
+<div class="title">__DIALOG_WINDOW__ Struct Reference<div class="ingroups"><a class="el" href="group__dlgwindow.html">Dialog (Frame) Windows</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>DIALOG_WINDOW structure (internal)  
+<p>DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  
  <a href="struct____DIALOG__WINDOW____.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -107,11 +107,28 @@ struct <a class="el" href="struct____DIALOG__WINDOW____.html">__DIALOG_WINDOW__<
 <tr class="separator:a8a13964683af4796d0ce53c58cddad90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>DIALOG_WINDOW structure (internal) </p>
-<p>Dialog 'owner' window structure, kept internally as part of a link list. This structure keeps track of the child (control) windows and global properties. See also <a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> and <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a>.<br/>
- </p>
+<div class="textblock"><p>DIALOG_WINDOW structure (internal), an extension of WBDialogWindow. </p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____DIALOG__WINDOW____.html" title="DIALOG_WINDOW structure (internal), an extension of WBDialogWindow. ">__DIALOG_WINDOW__</a></div>
+<div class="line">{</div>
+<div class="line">  <a class="code" href="struct____WB__DIALOG__WINDOW____.html" title="Structure identifying a dialog (frame) window. ">WBDialogWindow</a> <a class="code" href="struct____DIALOG__WINDOW____.html#abbd3348b2419dc3237a6a963cc6aa704" title="WBDialogWIndow structure, required to be at the beginning.">wbDLG</a>;            <span class="comment">// WBDialogWIndow structure, required to be at the beginning</span></div>
+<div class="line"></div>
+<div class="line">  <a class="code" href="struct____WB__DIALOG__ENTRY____.html" title="Structure identifying one of the controls that appears on a dialog window. ">WBDialogEntry</a> *<a class="code" href="struct____DIALOG__WINDOW____.html#a8cb4686b7633f8696696761533a37b4a" title="malloc&#39;d array of child window/control information as WBDialogEntry following order of windows creati...">pwContents</a>;       <span class="comment">// malloc&#39;d array of child window/control information as</span></div>
+<div class="line">                                   <span class="comment">// WBDialogEntry following order of windows creation and tab order</span></div>
+<div class="line"></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DIALOG__WINDOW____.html#a45b1722dcd4bfec379e336b4ddb3870c" title="size of &#39;pwContents&#39; when pwContents is not NULL">nContents</a>;                   <span class="comment">// size of &#39;pwContents&#39; when pwContents is not NULL</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DIALOG__WINDOW____.html#adf4e1559b888de60b9fc1cf1771875ad" title="extent of &#39;pwContents&#39; when pwContents is not NULL">nMaxContents</a>;                <span class="comment">// extent of &#39;pwContents&#39; when pwContents is not NULL</span></div>
+<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____DIALOG__WINDOW____.html#a1b1024bebb223853fcd34131aae6c549" title="title bar string (malloc&#39;d pointer, must free on destroy)">szTitle</a>;                   <span class="comment">// title bar string (malloc&#39;d pointer, must free on destroy)</span></div>
+<div class="line"></div>
+<div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c" title="event callback function type for window events">WBWinEvent</a> <a class="code" href="struct____DIALOG__WINDOW____.html#a75b5ac90ba23f881854d08b7f7b9385c" title="pointer to dialog window callback function">pDLGCallback</a>;         <span class="comment">// pointer to dialog window callback function</span></div>
+<div class="line"></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____DIALOG__WINDOW____.html" title="DIALOG_WINDOW structure (internal), an extension of WBDialogWindow. ">__DIALOG_WINDOW__</a> *<a class="code" href="struct____DIALOG__WINDOW____.html#a8a13964683af4796d0ce53c58cddad90" title="internal use only, pointer to next entry in chain (linked list)">pNext</a>; <span class="comment">// internal use only, pointer to next entry in chain (linked list)</span></div>
+<div class="line"></div>
+<div class="line">} <a class="code" href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245" title="DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.">DIALOG_WINDOW</a>;</div>
+</div><!-- fragment --><p>Dialog 'owner' window structure, kept internally as part of a link list. This structure keeps track of the child (control) windows and global properties. See also <a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> and <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a>.<br/>
+</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad" title="Structure identifying one of the controls that appears on a dialog window.">WBDialogEntry</a>, <a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a" title="Structure identifying a dialog (frame) window.">WBDialogWindow</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00094">94</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00119">119</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="dialog__window_8c_source.html">dialog_window.c</a></li>
 </ul>
@@ -121,7 +138,7 @@ struct <a class="el" href="struct____DIALOG__WINDOW____.html">__DIALOG_WINDOW__<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____DIALOG__WINDOW____.html">__DIALOG_WINDOW__</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

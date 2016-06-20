@@ -82,7 +82,9 @@ $(document).ready(function(){initNavTree('window__dressing_8c.html','');});
 <code>#include &lt;errno.h&gt;</code><br/>
 <code>#include &lt;X11/Xlib.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="window__dressing_8h_source.html">window_dressing.h</a>&quot;</code><br/>
+<code>#include &quot;pixmap_helper.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="conf__help_8h_source.html">conf_help.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="draw__text_8h_source.html">draw_text.h</a>&quot;</code><br/>
 </div>
 <p><a href="window__dressing_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -102,33 +104,54 @@ Functions</h2></td></tr>
 <tr class="memitem:a3805e54a9e2f35a9274b583657ec1e19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3805e54a9e2f35a9274b583657ec1e19"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckInitScrollColors</b> (void)</td></tr>
 <tr class="separator:a3805e54a9e2f35a9274b583657ec1e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7fdf0d82f4b06105396f506566875e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff7fdf0d82f4b06105396f506566875e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBCalcHScrollBar</b> (WB_SCROLLINFO *pScrollInfo, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, int iVScrollWidth, int iHScrollHeight, int nListItems, int nPos)</td></tr>
-<tr class="separator:aff7fdf0d82f4b06105396f506566875e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae88951710b059bd5e537665b0d8ce886"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae88951710b059bd5e537665b0d8ce886"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>WBCalcVScrollDragPos</b> (WB_SCROLLINFO *pScrollInfo, int iY)</td></tr>
-<tr class="separator:ae88951710b059bd5e537665b0d8ce886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd85d726da4e111bc820eea7d02a40c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addd85d726da4e111bc820eea7d02a40c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>WBCalcHScrollDragPos</b> (WB_SCROLLINFO *pScrollInfo, int iX)</td></tr>
-<tr class="separator:addd85d726da4e111bc820eea7d02a40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb470b52479a3b6a6571abe9962e6e85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb470b52479a3b6a6571abe9962e6e85"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBCalcVScrollBar</b> (WB_SCROLLINFO *pScrollInfo, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, int iVScrollWidth, int iHScrollHeight, int nListItems, int nPos)</td></tr>
-<tr class="separator:acb470b52479a3b6a6571abe9962e6e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e3e7332ef61c4dd271e338a6ebaf34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e3e7332ef61c4dd271e338a6ebaf34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBDrawBorderRect</b> (Display *pDisplay, Window wID, GC gc, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor)</td></tr>
-<tr class="separator:a27e3e7332ef61c4dd271e338a6ebaf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac92af566dae9360307188c034cc7445e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac92af566dae9360307188c034cc7445e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBDraw3DBorderRect</b> (Display *pDisplay, Window wID, GC gc, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor1, unsigned long lBorderColor2)</td></tr>
-<tr class="separator:ac92af566dae9360307188c034cc7445e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a428e6dce1acc71b38fa8a17117f3803c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a428e6dce1acc71b38fa8a17117f3803c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBDrawDashedRect</b> (Display *pDisplay, Window wID, GC gc, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
-<tr class="separator:a428e6dce1acc71b38fa8a17117f3803c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51c0eb16afea6ca14087d8d97c77f4f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51c0eb16afea6ca14087d8d97c77f4f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBPaintVScrollBar</b> (WB_SCROLLINFO *pScrollInfo, Display *pDisplay, Window wID, GC gc, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
-<tr class="separator:a51c0eb16afea6ca14087d8d97c77f4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad6059cf07cb46cbd7021e19bfa8682"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ad6059cf07cb46cbd7021e19bfa8682"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBPaintHScrollBar</b> (WB_SCROLLINFO *pScrollInfo, Display *pDisplay, Window wID, GC gc, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
-<tr class="separator:a4ad6059cf07cb46cbd7021e19bfa8682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff7fdf0d82f4b06105396f506566875e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaff7fdf0d82f4b06105396f506566875e">WBCalcHScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, int iVScrollWidth, int iHScrollHeight, int nListItems, int nPos)</td></tr>
+<tr class="memdesc:gaff7fdf0d82f4b06105396f506566875e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the parameters for a horizontal scroll bar.  <a href="group__window__dressing.html#gaff7fdf0d82f4b06105396f506566875e">More...</a><br/></td></tr>
+<tr class="separator:gaff7fdf0d82f4b06105396f506566875e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae88951710b059bd5e537665b0d8ce886"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gae88951710b059bd5e537665b0d8ce886">WBCalcVScrollDragPos</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, int iY)</td></tr>
+<tr class="memdesc:gae88951710b059bd5e537665b0d8ce886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate and assign the correct vertical scroll bar position from mouse coordinates.  <a href="group__window__dressing.html#gae88951710b059bd5e537665b0d8ce886">More...</a><br/></td></tr>
+<tr class="separator:gae88951710b059bd5e537665b0d8ce886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddd85d726da4e111bc820eea7d02a40c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaddd85d726da4e111bc820eea7d02a40c">WBCalcHScrollDragPos</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, int iX)</td></tr>
+<tr class="memdesc:gaddd85d726da4e111bc820eea7d02a40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate and assign the correct horizontal scroll bar position from mouse coordinates.  <a href="group__window__dressing.html#gaddd85d726da4e111bc820eea7d02a40c">More...</a><br/></td></tr>
+<tr class="separator:gaddd85d726da4e111bc820eea7d02a40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb470b52479a3b6a6571abe9962e6e85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gacb470b52479a3b6a6571abe9962e6e85">WBCalcVScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, int iVScrollWidth, int iHScrollHeight, int nListItems, int nPos)</td></tr>
+<tr class="memdesc:gacb470b52479a3b6a6571abe9962e6e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the parameters for a vertical scroll bar.  <a href="group__window__dressing.html#gacb470b52479a3b6a6571abe9962e6e85">More...</a><br/></td></tr>
+<tr class="separator:gacb470b52479a3b6a6571abe9962e6e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf85e7c61f3170d19da3e0b051a9d6d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaf85e7c61f3170d19da3e0b051a9d6d06">WBDrawBorderRect</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor)</td></tr>
+<tr class="memdesc:gaf85e7c61f3170d19da3e0b051a9d6d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'border' rectangle.  <a href="group__window__dressing.html#gaf85e7c61f3170d19da3e0b051a9d6d06">More...</a><br/></td></tr>
+<tr class="separator:gaf85e7c61f3170d19da3e0b051a9d6d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ebd818d333c3475bdcf5fa0299545b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga2ebd818d333c3475bdcf5fa0299545b7">WBDraw3DBorderRect</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor1, unsigned long lBorderColor2)</td></tr>
+<tr class="memdesc:ga2ebd818d333c3475bdcf5fa0299545b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 3D 'border' rectangle.  <a href="group__window__dressing.html#ga2ebd818d333c3475bdcf5fa0299545b7">More...</a><br/></td></tr>
+<tr class="separator:ga2ebd818d333c3475bdcf5fa0299545b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad617bf61913a94e557dd18fe2094830f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gad617bf61913a94e557dd18fe2094830f">WBDrawDashedRect</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:gad617bf61913a94e557dd18fe2094830f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'dashed' rectangle.  <a href="group__window__dressing.html#gad617bf61913a94e557dd18fe2094830f">More...</a><br/></td></tr>
+<tr class="separator:gad617bf61913a94e557dd18fe2094830f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b16bdffe6d68e889dce913ccf64229d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d">WBPaintVScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
+<tr class="memdesc:ga1b16bdffe6d68e889dce913ccf64229d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paint the vertical scroll bar within a window based on WB_SCROLLINFO.  <a href="group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d">More...</a><br/></td></tr>
+<tr class="separator:ga1b16bdffe6d68e889dce913ccf64229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab320df64511bdefe4e3544da85164482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gab320df64511bdefe4e3544da85164482">WBPaintHScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
+<tr class="memdesc:gab320df64511bdefe4e3544da85164482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paint the horizontal scroll bar within a window based on WB_SCROLLINFO.  <a href="group__window__dressing.html#gab320df64511bdefe4e3544da85164482">More...</a><br/></td></tr>
+<tr class="separator:gab320df64511bdefe4e3544da85164482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf24688ae89293b6032aab16b32e2fa48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaf24688ae89293b6032aab16b32e2fa48">WBDrawLeftArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:gaf24688ae89293b6032aab16b32e2fa48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a left arrow in a window within a specified geometry.  <a href="group__window__dressing.html#gaf24688ae89293b6032aab16b32e2fa48">More...</a><br/></td></tr>
+<tr class="separator:gaf24688ae89293b6032aab16b32e2fa48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1840a4f4b9f855129c79511794348b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gac1840a4f4b9f855129c79511794348b2">WBDrawUpArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:gac1840a4f4b9f855129c79511794348b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw an up arrow in a window within a specified geometry.  <a href="group__window__dressing.html#gac1840a4f4b9f855129c79511794348b2">More...</a><br/></td></tr>
+<tr class="separator:gac1840a4f4b9f855129c79511794348b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4d381b683d4cf196f87195f83b4e6f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gad4d381b683d4cf196f87195f83b4e6f3">WBDrawRightArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:gad4d381b683d4cf196f87195f83b4e6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a right arrow in a window within a specified geometry.  <a href="group__window__dressing.html#gad4d381b683d4cf196f87195f83b4e6f3">More...</a><br/></td></tr>
+<tr class="separator:gad4d381b683d4cf196f87195f83b4e6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43da8059f5926c745279d643499490bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga43da8059f5926c745279d643499490bf">WBDrawDownArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:ga43da8059f5926c745279d643499490bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a down arrow in a window within a specified geometry.  <a href="group__window__dressing.html#ga43da8059f5926c745279d643499490bf">More...</a><br/></td></tr>
+<tr class="separator:ga43da8059f5926c745279d643499490bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef65e6a8b152f73566237673d056409"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ef65e6a8b152f73566237673d056409"></a>
+static unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>isqrt</b> (unsigned char iVal)</td></tr>
+<tr class="separator:a1ef65e6a8b152f73566237673d056409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55abc178c0c37369777d6858a0c66ffa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55abc178c0c37369777d6858a0c66ffa"></a>
+static unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>icos</b> (unsigned char iVal)</td></tr>
+<tr class="separator:a55abc178c0c37369777d6858a0c66ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa993f5db24c32a45042efeaf3f90a879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaa993f5db24c32a45042efeaf3f90a879">WBDraw3DBorderTab</a> (Display *pDisplay, Drawable dw, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomOutline, int bFocus, unsigned long lFGColor, unsigned long lBGColor, unsigned long lBorderColor1, unsigned long lBorderColor2, unsigned long lHighlightColor, XFontStruct *pFont, XFontStruct *pBoldFont, Atom aGraphic, const char *szText)</td></tr>
+<tr class="memdesc:gaa993f5db24c32a45042efeaf3f90a879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'tab' within a specified 'outline' rectangle.  <a href="group__window__dressing.html#gaa993f5db24c32a45042efeaf3f90a879">More...</a><br/></td></tr>
+<tr class="separator:gaa993f5db24c32a45042efeaf3f90a879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -183,7 +206,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>iInitScrollColo
 <div class="line">               GCSubwindowMode | GCGraphicsExposures | GCClipXOrigin | GCClipYOrigin | \</div>
 <div class="line">               GCClipMask | GCDashOffset | GCDashList | GCArcMode)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="window__dressing_8c_source.html#l00062">62</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p>Definition at line <a class="el" href="window__dressing_8c_source.html#l00066">66</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
@@ -193,7 +216,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>iInitScrollColo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="window__dressing_8c.html">window_dressing.c</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

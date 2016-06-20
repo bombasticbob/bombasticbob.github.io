@@ -75,6 +75,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____LISTINFO____.html">__LISTINFO__</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing data for list-related dialog controls.  <a href="struct____LISTINFO____.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__WB__LIST__CURSEL__.html">_WB_LIST_CURSEL_</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing information about the current selection in a list.  <a href="struct__WB__LIST__CURSEL__.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -87,7 +90,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga9e0253d5bc7a46cc83932ef540d24389"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____LISTINFO____.html">__LISTINFO__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389">LISTINFO</a></td></tr>
 <tr class="memdesc:ga9e0253d5bc7a46cc83932ef540d24389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing data for list-related dialog controls.  <a href="#ga9e0253d5bc7a46cc83932ef540d24389">More...</a><br/></td></tr>
 <tr class="separator:ga9e0253d5bc7a46cc83932ef540d24389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92b775d076e343e60c315d20d6a5245f"><td class="memItemLeft" align="right" valign="top">typedef struct _WB_LIST_CURSEL_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga92b775d076e343e60c315d20d6a5245f">WBListCurSel</a></td></tr>
+<tr class="memitem:ga92b775d076e343e60c315d20d6a5245f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__WB__LIST__CURSEL__.html">_WB_LIST_CURSEL_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga92b775d076e343e60c315d20d6a5245f">WBListCurSel</a></td></tr>
 <tr class="memdesc:ga92b775d076e343e60c315d20d6a5245f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing information about the current selection in a list.  <a href="#ga92b775d076e343e60c315d20d6a5245f">More...</a><br/></td></tr>
 <tr class="separator:ga92b775d076e343e60c315d20d6a5245f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -131,10 +134,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga9c22b88b8abffc7bb60b4fbe4edea96e">DLGGetControlListData</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
 <tr class="memdesc:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the data pointer for a single list entry (listbox, combo, and tree controls only)  <a href="#ga9c22b88b8abffc7bb60b4fbe4edea96e">More...</a><br/></td></tr>
 <tr class="separator:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac016370ae1aa425ebf70345b562b8500"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gac016370ae1aa425ebf70345b562b8500">DLGInitControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *), int(*pfnSort)(const void *, const void *))</td></tr>
+<tr class="memitem:gac016370ae1aa425ebf70345b562b8500"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gac016370ae1aa425ebf70345b562b8500">DLGInitControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *), int(*pfnSort)(const void *, const void *))</td></tr>
 <tr class="memdesc:gac016370ae1aa425ebf70345b562b8500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the 'List Entry' for a control, specifying various callbacks and flags.  <a href="#gac016370ae1aa425ebf70345b562b8500">More...</a><br/></td></tr>
 <tr class="separator:gac016370ae1aa425ebf70345b562b8500"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad76df2338f411cc555e0abe3ed546526"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gad76df2338f411cc555e0abe3ed546526">DLGModifyControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int bFlags, int nFlags, int bAllocator, void *(*pfnAllocator)(const void *, int), int bDestructor, void(*pfnDestructor)(void *), int bDisplay, void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *), int bSort, int(*pfnSort)(const void *, const void *))</td></tr>
+<tr class="memitem:gad76df2338f411cc555e0abe3ed546526"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gad76df2338f411cc555e0abe3ed546526">DLGModifyControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int bFlags, int nFlags, int bAllocator, void *(*pfnAllocator)(const void *, int), int bDestructor, void(*pfnDestructor)(void *), int bDisplay, void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *), int bSort, int(*pfnSort)(const void *, const void *))</td></tr>
 <tr class="memdesc:gad76df2338f411cc555e0abe3ed546526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the 'List Entry' for a control, specifying various callbacks and flags.  <a href="#gad76df2338f411cc555e0abe3ed546526">More...</a><br/></td></tr>
 <tr class="separator:gad76df2338f411cc555e0abe3ed546526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91c094a37f470da65a045d316eb117b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga91c094a37f470da65a045d316eb117b3">DLGAddControlListEntry</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, const char *pData, long cbData, int iIndex)</td></tr>
@@ -179,7 +182,7 @@ Functions</h2></td></tr>
 <p>wrapper macro for <a class="el" href="group__dlglist.html#gac016370ae1aa425ebf70345b562b8500" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags.">DLGInitControlListInfo()</a> for standard malloc'd text data </p>
 <p>This macro creates a standard malloc'd text data list entry using <a class="el" href="group__dlglist.html#gad37ea0f014795844f165efbcd5dd8df3" title="The default &#39;List Info&#39; data allocator for a control&#39;s list info.">DLGCDefaultListInfoAllocator()</a> and free, for sorted text data with standard display and sort comparison functions NOTE: using DLGInitControlListInfoDefault implies string data that's malloc'd. For some other scheme of maintaining and copying data pointers for a listbox, substitute your own function pointers as needed. </p>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01155">1155</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01166">1166</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -195,10 +198,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Structure containing data for list-related dialog controls. </p>
-<pre class="fragment">Internally maintained structure containing list-related control data
-including selection information and function callbacks for allocation,
-de-allocation, display, and sorting.
-</pre> <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____LISTINFO____.html" title="Structure containing data for list-related dialog controls.">__LISTINFO__</a></div>
+<p>Internally maintained structure containing list-related control data including selection information and function callbacks for allocation, de-allocation, display, and sorting.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____LISTINFO____.html" title="Structure containing data for list-related dialog controls. ">__LISTINFO__</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____LISTINFO____.html#a24b1cb6145a6f39dcafd3622138a05d3" title="current number of valid entries in &#39;aItems&#39;">nItems</a>, <a class="code" href="struct____LISTINFO____.html#a63473adbe2109db2b71cfba9efff0df6" title="max size of aItems (must re-alloc to increase nMaxItems)">nMaxItems</a>;              <span class="comment">// size/max size of aItems (must re-alloc to increase nMaxItems)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____LISTINFO____.html#aab21bf45159b912d5deb21b4cc54c377" title="current scroll position">nPos</a>, <a class="code" href="struct____LISTINFO____.html#adf10e19a2ea7ef40bde221b24094f48f" title="scroll position of the top item currently displayed">nTop</a>;                     <span class="comment">// scroll position and position of top item</span></div>
@@ -212,7 +213,7 @@ de-allocation, display, and sorting.
 <div class="line">                                      <span class="comment">// typically this will point to &#39;free&#39;</span></div>
 <div class="line">                                      <span class="comment">// if NULL, the caller-supplied pointer is ignored</span></div>
 <div class="line"></div>
-<div class="line">  void (*<a class="code" href="struct____LISTINFO____.html#ab74186ce12ef0ab5a06e5c8a054e9d93" title="display callback function to paint the entry on the display surface">pfnDisplay</a>)(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control.">WBDialogControl</a> *pControl, <span class="keywordtype">void</span> *pData, <span class="keywordtype">int</span> iSelected, GC gcPaint, <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pGeom);</div>
+<div class="line">  void (*<a class="code" href="struct____LISTINFO____.html#ab74186ce12ef0ab5a06e5c8a054e9d93" title="display callback function to paint the entry on the display surface">pfnDisplay</a>)(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control. ">WBDialogControl</a> *pControl, <span class="keywordtype">void</span> *pData, <span class="keywordtype">int</span> iSelected, GC gcPaint, <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pGeom);</div>
 <div class="line">                                      <span class="comment">// generic function to display contents of item within &#39;pGeom&#39; using GC</span></div>
 <div class="line">                                      <span class="comment">// typically one of the listbox &#39;display item&#39; functions</span></div>
 <div class="line"></div>
@@ -220,7 +221,7 @@ de-allocation, display, and sorting.
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">void</span> *<a class="code" href="struct____LISTINFO____.html#a911a9d918389b496e3cbe8c49d290f7f" title="The array of item data, integrated into the memory block containing this structure.">aItems</a>[1];                    <span class="comment">// array of item data (remainder of struct)</span></div>
 <div class="line">} <a class="code" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389" title="Structure containing data for list-related dialog controls.">LISTINFO</a>;</div>
-</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><b><a class="el" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389" title="Structure containing data for list-related dialog controls.">LISTINFO</a></b> <a class="el" href="group__dlglist.html#gac016370ae1aa425ebf70345b562b8500" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags.">DLGInitControlListInfo()</a> </dd></dl>
+</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlglist.html#gac016370ae1aa425ebf70345b562b8500" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags.">DLGInitControlListInfo()</a> </dd></dl>
 
 </div>
 </div>
@@ -235,7 +236,14 @@ de-allocation, display, and sorting.
 </div><div class="memdoc">
 
 <p>Structure containing information about the current selection in a list. </p>
-<p>Typically used in a listbox or combo box, this structure specifies the current list selection info for a listbox, combo box, or tree control.<br/>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__WB__LIST__CURSEL__.html" title="Structure containing information about the current selection in a list. ">_WB_LIST_CURSEL_</a></div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__WB__LIST__CURSEL__.html#ae27257a2b09b74ce8528f55e65381ed5" title="current selection">iCurSel</a>;      <span class="comment">// current selection</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__WB__LIST__CURSEL__.html#ac34c298c311e29b36839e7bc617db45f" title="index of item at top of window">iTopIndex</a>;    <span class="comment">// index of item at top of window</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__WB__LIST__CURSEL__.html#a2884aa55a9f2544c59a08976071b1d64" title="calculated height of window in &quot;entries&quot; (see next member)">iHeight</a>;      <span class="comment">// calculated height of window in &quot;entries&quot; (see next member)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__WB__LIST__CURSEL__.html#a9be0073fd0d9ec612c66fd3bd8fabb6a" title="cached display height of each entry (calculated by Expose handler)">iEntryHeight</a>; <span class="comment">// cached display height of each entry (calculated by Expose handler)</span></div>
+<div class="line">} <a class="code" href="group__dlglist.html#ga92b775d076e343e60c315d20d6a5245f" title="Structure containing information about the current selection in a list.">WBListCurSel</a>;</div>
+</div><!-- fragment --><p>Typically used in a listbox or combo box, this structure specifies the current list selection info for a listbox, combo box, or tree control.<br/>
  NOTE: this structure must immediately follow the WBDialogControl members in the control's structure for a control that has the CONTROL_SupportListInfo flag. </p>
 
 </div>
@@ -274,7 +282,7 @@ de-allocation, display, and sorting.
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00983">983</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00994">994</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +324,7 @@ de-allocation, display, and sorting.
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l00997">997</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__controls_8h_source.html#l01008">1008</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -545,11 +553,11 @@ de-allocation, display, and sorting.
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 for no sel, &gt; 0 for the number of selections, &lt; 0 on error. If 'piBits is NULL, it returns the necessary size for the array (in integers) <pre class="fragment">The 'piBits' and 'nSize' parameters must indicate a memory block of sufficient size, or an error will be returned.
-Use a NULL value of 'piBits' to obtain the necessary size of the array, if it is not known.
-To determine if a specific bit is set, use a formula similar to the following\n
-</pre> <div class="fragment"><div class="line">piBits[(iIndex &gt;&gt; 32)] &amp; (1 &lt;&lt; (iIndex &amp; 31)) ? TRUE : FALSE</div>
-</div><!-- fragment --> where 'iIndex' represents the index of the bit you wish to query.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for no sel, &gt; 0 for the number of selections, &lt; 0 on error. If 'piBits is NULL, it returns the necessary size for the array (in integers)</dd></dl>
+<p>The 'piBits' and 'nSize' parameters must indicate a memory block of sufficient size, or an error will be returned. Use a NULL value of 'piBits' to obtain the necessary size of the array, if it is not known. To determine if a specific bit is set, use a formula similar to the following<br/>
+</p>
+<div class="fragment"><div class="line">piBits[(iIndex &gt;&gt; 32)] &amp; (1 &lt;&lt; (iIndex &amp; 31)) ? TRUE : FALSE</div>
+</div><!-- fragment --><p>where 'iIndex' represents the index of the bit you wish to query.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
 <p>Definition at line <a class="el" href="dialog__support_8c_source.html#l01691">1691</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -642,7 +650,7 @@ To determine if a specific bit is set, use a formula similar to the following\n
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *)&#160;</td>
           <td class="paramname"><em>pfnDisplay</em>, </td>
         </tr>
         <tr>
@@ -734,7 +742,7 @@ To determine if a specific bit is set, use a formula similar to the following\n
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *)&#160;</td>
           <td class="paramname"><em>pfnDisplay</em>, </td>
         </tr>
         <tr>
@@ -872,7 +880,7 @@ To determine if a specific bit is set, use a formula similar to the following\n
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

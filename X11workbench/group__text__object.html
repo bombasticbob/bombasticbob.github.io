@@ -97,6 +97,10 @@ Macros</h2></td></tr>
 <tr class="separator:ga62718777d64cfa4175e4d1eb273a4d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf15aafcb3f4c571182bbbd3173bcb01c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gaf15aafcb3f4c571182bbbd3173bcb01c">MIN_BORDER_SPACING</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:gaf15aafcb3f4c571182bbbd3173bcb01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaece410745c1fa1a575dbc858f7aa93da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaece410745c1fa1a575dbc858f7aa93da"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gaece410745c1fa1a575dbc858f7aa93da">TEXT_OBJECT_TAG</a>&#160;&#160;&#160;(*((const unsigned int *)&quot;WBTX&quot;))</td></tr>
+<tr class="memdesc:gaece410745c1fa1a575dbc858f7aa93da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 'tag' for a TEXT_OBJECT structure. <br/></td></tr>
+<tr class="separator:gaece410745c1fa1a575dbc858f7aa93da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -215,7 +219,7 @@ static __inline__ const <br class="typebreak"/>
 </div><div class="memdoc">
 <p>the number of characters to auto-hscroll by to get the cursor inside the viewport </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00139">139</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00143">143</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +234,7 @@ static __inline__ const <br class="typebreak"/>
 </div><div class="memdoc">
 <p>the default width for a hard tab in a TEXT_OBJECT </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00135">135</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00139">139</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +249,7 @@ static __inline__ const <br class="typebreak"/>
 </div><div class="memdoc">
 <p>A 'hard tab' is represented internally by this character </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00131">131</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00135">135</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +264,7 @@ static __inline__ const <br class="typebreak"/>
 </div><div class="memdoc">
 <p>the minimum number of pixels separating the text from the window border (when unspecified) </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00147">147</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00151">151</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +279,7 @@ static __inline__ const <br class="typebreak"/>
 </div><div class="memdoc">
 <p>the minimum number of pixels by which lines are separated (normally will be 'descent / 2') </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00143">143</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00147">147</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -331,8 +335,8 @@ static __inline__ const <br class="typebreak"/>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a9cad1622f4396ded0afaf6a8d8a5727a" title="tag word, always assigned to TEXT_OBJECT_TAG">ulTag</a>;        <span class="comment">// tag word, always assigned to TEXT_OBJECT_TAG</span></div>
 <div class="line">  Window <a class="code" href="struct__text__object__.html#a8ee54f42851c33959157c826f2847e83" title="owner window (cached from paint/expose handling and/or cursor blink)">wIDOwner</a>;           <span class="comment">// owner window (cached from paint/expose handling and/or cursor blink)</span></div>
-<div class="line">  <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> <a class="code" href="struct__text__object__.html#a922bb91783f47b60a4dfc9d5ec85cd5b" title="select boundary in characters, {0,0,0,0} implies NONE, {-1,x,x,x} implies ALL. if top == bottom...">rctSel</a>;            <span class="comment">// select boundary in characters</span></div>
-<div class="line">  <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> <a class="code" href="struct__text__object__.html#ae892bb7174415a60d62b33906531a923" title="highlight rect {0,0,0,0} implies NONE">rctHighLight</a>;      <span class="comment">// highlight rect</span></div>
+<div class="line">  <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> <a class="code" href="struct__text__object__.html#a922bb91783f47b60a4dfc9d5ec85cd5b" title="select boundary in characters, {0,0,0,0} implies NONE, {-1,x,x,x} implies ALL. if top == bottom...">rctSel</a>;            <span class="comment">// select boundary in characters</span></div>
+<div class="line">  <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> <a class="code" href="struct__text__object__.html#ae892bb7174415a60d62b33906531a923" title="highlight rect {0,0,0,0} implies NONE">rctHighLight</a>;      <span class="comment">// highlight rect</span></div>
 <div class="line"></div>
 <div class="line">  XColor <a class="code" href="struct__text__object__.html#a8ef53d03edb4519ef96166a599cc5471" title="highlight FG color">clrHFG</a>;             <span class="comment">// highlight FG color</span></div>
 <div class="line">  XColor <a class="code" href="struct__text__object__.html#afbb76e6ad6c0d940a7fce363f8008fa6" title="highlight BG color">clrHBG</a>;             <span class="comment">// highlight BG color</span></div>
@@ -362,8 +366,8 @@ static __inline__ const <br class="typebreak"/>
 <div class="line"></div>
 <div class="line">  <span class="comment">// viewport</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> <a class="code" href="struct__text__object__.html#ad5ae99dff7021ede0a9518f9f556d5e0" title="viewport, in characters (rctView.top is the top visible line, always)">rctView</a>;           <span class="comment">// viewport, in characters</span></div>
-<div class="line">  <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> <a class="code" href="struct__text__object__.html#aa54896eacbd59c2d64d9f686a6f6ab88" title="viewport, in window coordinates, or &#39;empty&#39; if unknown">rctWinView</a>;        <span class="comment">// viewport, in window coordinates, or &#39;empty&#39; if unknown</span></div>
+<div class="line">  <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> <a class="code" href="struct__text__object__.html#ad5ae99dff7021ede0a9518f9f556d5e0" title="viewport, in characters (rctView.top is the top visible line, always)">rctView</a>;           <span class="comment">// viewport, in characters</span></div>
+<div class="line">  <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> <a class="code" href="struct__text__object__.html#aa54896eacbd59c2d64d9f686a6f6ab88" title="viewport, in window coordinates, or &#39;empty&#39; if unknown">rctWinView</a>;        <span class="comment">// viewport, in window coordinates, or &#39;empty&#39; if unknown</span></div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// the data</span></div>
@@ -380,7 +384,6 @@ static __inline__ const <br class="typebreak"/>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct__text__object__.html#afcdddd174fbc347ee5916159d71233f2" title="descriptive text (optional, owner-maintained)">pDesc</a>;               <span class="comment">// descriptive text (optional, owner-maintained)</span></div>
 <div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct__text__object__.html#a5de8eea2d4f75d7ce6525c58cb81ea8c" title="filename (optional, owner-maintained)">pFileName</a>;           <span class="comment">// filename (optional, owner-maintained)</span></div>
-<div class="line"></div>
 <div class="line">} <a class="code" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d" title="&#39;base class&#39; structure for TEXT_OBJECT">TEXT_OBJECT</a>;</div>
 </div><!-- fragment --> 
 </div>
@@ -427,11 +430,11 @@ static __inline__ const <br class="typebreak"/>
 <div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a535ddd98db34379815658a6f1d0fcf64" title="Get the current scroll mode for the object.">get_scrollmode</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
 <div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9ba6800d2c906cfaa1ddf8b157ae8be8" title="Set the current scroll mode for the object.">set_scrollmode</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a32b54760de261f88914c291c13aed559" title="scroll mode - 0=normal, 1=&#39;scroll lock&#39;">iScrollMode</a>);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a843ddc0bf60069bc9b4cab7f7bad1446" title="Get the current selection rectangle as WB_RECT.">get_select</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> *pRct);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aaebe6798ade450589bdecceb374c372f" title="Set the current selection rectangle as WB_RECT.">set_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> *pRct);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a843ddc0bf60069bc9b4cab7f7bad1446" title="Get the current selection rectangle as WB_RECT.">get_select</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aaebe6798ade450589bdecceb374c372f" title="Set the current selection rectangle as WB_RECT.">set_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
 <div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#aa254521505cd2c51b353c3ddb76e9a66" title="Returns a non-zero value if there is currently a &#39;selection&#39;.">has_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">char</span>* (* get_sel_text)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> *pRct);</div>
+<div class="line">  <span class="keywordtype">char</span>* (* get_sel_text)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
 <div class="line"></div>
 <div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a119aa196b01a4f4ec75c4a76b550115f" title="Get the current row cursor for the object.">get_row</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
 <div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ac3c7f8fd47c995aa85b463cb9bf390a8" title="Set the current row cursor for the object.">set_row</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a431c133f885a93bf46af818cc5cad82e" title="current row (cursor)">iRow</a>);</div>
@@ -452,8 +455,8 @@ static __inline__ const <br class="typebreak"/>
 <div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#ae49018424ae41a09dbd4f449a9d9f860" title="Indicate whether a &#39;redo&#39; operation is possible (mostly for menu UI)">can_redo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
 <div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ab5afd8f1c750307122d505cabdc87616" title="Perform a single &#39;redo&#39; operation.">redo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a74d6ed3d4ab361e703a88454e9dbc102" title="Get the current viewport (in characters). The return value is not relevant if the expose method has n...">get_view</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> *pRct);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a39dfe60fc24619dd1c1ae766e5a0d6c0" title="Set the current viewport (in characters). Only &#39;left&#39; and &#39;top&#39; are relevant if the expose method has...">set_view</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="window__helper_8h.html#a3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a> *pRct);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a74d6ed3d4ab361e703a88454e9dbc102" title="Get the current viewport (in characters). The return value is not relevant if the expose method has n...">get_view</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a39dfe60fc24619dd1c1ae766e5a0d6c0" title="Set the current viewport (in characters). Only &#39;left&#39; and &#39;top&#39; are relevant if the expose method has...">set_view</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
 <div class="line"></div>
 <div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9a2c626038ad5814001485d66cd45f93" title="Begin a highlight block.">begin_highlight</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
 <div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae36da8a9fc3354ae133d269f76ee2274" title="End a highlight block.">end_highlight</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
@@ -484,7 +487,7 @@ static __inline__ const <br class="typebreak"/>
 <div class="line">  <span class="comment">// handling expose events for the text area</span></div>
 <div class="line"></div>
 <div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a879a069fddf9b9f6fd8b1ab71cf1e62c" title="Member function to properly render the text in a window (Expose event)">do_expose</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, Display *pDisplay, Window wID,</div>
-<div class="line">                   GC gc, <span class="keyword">const</span> <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pPaintGeom, <span class="keyword">const</span> <a class="code" href="window__helper_8h.html#a37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a> *pViewGeom,</div>
+<div class="line">                   GC gc, <span class="keyword">const</span> <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pPaintGeom, <span class="keyword">const</span> <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pViewGeom,</div>
 <div class="line">                   XFontSet rFontSet);</div>
 <div class="line"></div>
 <div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a655fff134d9f6213027d788e80027505" title="Periodic callback to &#39;blink&#39; the cursor.">cursor_blink</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> bHasFocus);</div>
@@ -517,7 +520,7 @@ static __inline__ const <br class="typebreak"/>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00122">122</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00126">126</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +547,7 @@ static __inline__ const <br class="typebreak"/>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00112">112</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00116">116</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +586,7 @@ static __inline__ const <br class="typebreak"/>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00087">87</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00091">91</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +616,7 @@ static __inline__ const <br class="typebreak"/>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00101">101</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00105">105</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -753,7 +756,7 @@ static __inline__ const <br class="typebreak"/>
 <p>Use this function to initialize a TEXT_OBJECT as an automatic variable or as part of an array.<br/>
  Make sure you call the 'destroy' API function right before de-allocating. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00880">880</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00887">887</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +791,7 @@ static __inline__ const <br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>non-zero if the object is a valid TEXT_OBJECT, zero otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00867">867</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00874">874</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -955,7 +958,7 @@ static __inline__ const <br class="typebreak"/>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

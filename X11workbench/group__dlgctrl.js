@@ -2,35 +2,6 @@ var group__dlgctrl =
 [
     [ "'Control Name' Atoms for standard dialog controls", "group__dlgctrl__atom.html", "group__dlgctrl__atom" ],
     [ "CONTROL NOTIFY Atoms for dialog controls", "group__dlgctrl__notify.html", "group__dlgctrl__notify" ],
-    [ "_WB_IMAGE_CONTROL_", "struct__WB__IMAGE__CONTROL__.html", [
-      [ "pixmap", "struct__WB__IMAGE__CONTROL__.html#a2c6fe912af6b883836eea48b2a112825", null ],
-      [ "pixmap2", "struct__WB__IMAGE__CONTROL__.html#a8bc2cf63eb1ddb29e22275cf6dbe3001", null ],
-      [ "wbDLGCtrl", "struct__WB__IMAGE__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
-    ] ],
-    [ "_WB_PUSHBUTTON_CONTROL_", "struct__WB__PUSHBUTTON__CONTROL__.html", [
-      [ "pixmap", "struct__WB__PUSHBUTTON__CONTROL__.html#a2c6fe912af6b883836eea48b2a112825", null ],
-      [ "pixmap2", "struct__WB__PUSHBUTTON__CONTROL__.html#a8bc2cf63eb1ddb29e22275cf6dbe3001", null ],
-      [ "wbDLGCtrl", "struct__WB__PUSHBUTTON__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
-    ] ],
-    [ "_WB_EDIT_CONTROL_", "struct__WB__EDIT__CONTROL__.html", [
-      [ "wbDLGCtrl", "struct__WB__EDIT__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ],
-      [ "xTextObject", "struct__WB__EDIT__CONTROL__.html#ae0d2ba439b30720b797c108c4009a769", null ]
-    ] ],
-    [ "_WB_LIST_CONTROL_", "struct__WB__LIST__CONTROL__.html", [
-      [ "cbBitmap", "struct__WB__LIST__CONTROL__.html#a43edc860b77f7e3fb9bdf29a7379beef", null ],
-      [ "pSelBitmap", "struct__WB__LIST__CONTROL__.html#a95f76c48501ae974d786fbdc9a5f5ca4", null ],
-      [ "sel", "struct__WB__LIST__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
-      [ "wbDLGCtrl", "struct__WB__LIST__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
-    ] ],
-    [ "_WB_COMBO_CONTROL_", "struct__WB__COMBO__CONTROL__.html", [
-      [ "sel", "struct__WB__COMBO__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
-      [ "wbDLGCtrl", "struct__WB__COMBO__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ],
-      [ "xTextObject", "struct__WB__COMBO__CONTROL__.html#ae0d2ba439b30720b797c108c4009a769", null ]
-    ] ],
-    [ "_WB_TREE_CONTROL_", "struct__WB__TREE__CONTROL__.html", [
-      [ "sel", "struct__WB__TREE__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
-      [ "wbDLGCtrl", "struct__WB__TREE__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
-    ] ],
     [ "__WB_DIALOG_PROP__", "struct____WB__DIALOG__PROP____.html", [
       [ "aProp", "struct____WB__DIALOG__PROP____.html#a5b801cec3bddc4f53c446a664908cecd", null ],
       [ "lVal", "struct____WB__DIALOG__PROP____.html#a207d3b12e11bd65b305d6b0a82bf66bc", null ],
@@ -62,13 +33,45 @@ var group__dlgctrl =
       [ "ulTag", "struct____WB__DIALOG__CONTROL____.html#a9cad1622f4396ded0afaf6a8d8a5727a", null ],
       [ "wID", "struct____WB__DIALOG__CONTROL____.html#ac1bf4c310535451938ef5b31b2b0c51b", null ]
     ] ],
+    [ "_WB_IMAGE_CONTROL_", "struct__WB__IMAGE__CONTROL__.html", [
+      [ "pixmap", "struct__WB__IMAGE__CONTROL__.html#a2c6fe912af6b883836eea48b2a112825", null ],
+      [ "pixmap2", "struct__WB__IMAGE__CONTROL__.html#a8bc2cf63eb1ddb29e22275cf6dbe3001", null ],
+      [ "wbDLGCtrl", "struct__WB__IMAGE__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
+    ] ],
+    [ "_WB_PUSHBUTTON_CONTROL_", "struct__WB__PUSHBUTTON__CONTROL__.html", [
+      [ "pixmap", "struct__WB__PUSHBUTTON__CONTROL__.html#a2c6fe912af6b883836eea48b2a112825", null ],
+      [ "pixmap2", "struct__WB__PUSHBUTTON__CONTROL__.html#a8bc2cf63eb1ddb29e22275cf6dbe3001", null ],
+      [ "wbDLGCtrl", "struct__WB__PUSHBUTTON__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
+    ] ],
+    [ "_WB_EDIT_CONTROL_", "struct__WB__EDIT__CONTROL__.html", [
+      [ "wbDLGCtrl", "struct__WB__EDIT__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ],
+      [ "xTextObject", "struct__WB__EDIT__CONTROL__.html#ae0d2ba439b30720b797c108c4009a769", null ]
+    ] ],
+    [ "_WB_LIST_CONTROL_", "struct__WB__LIST__CONTROL__.html", [
+      [ "cbBitmap", "struct__WB__LIST__CONTROL__.html#a43edc860b77f7e3fb9bdf29a7379beef", null ],
+      [ "pSelBitmap", "struct__WB__LIST__CONTROL__.html#a95f76c48501ae974d786fbdc9a5f5ca4", null ],
+      [ "sel", "struct__WB__LIST__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
+      [ "wbDLGCtrl", "struct__WB__LIST__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
+    ] ],
+    [ "_WB_COMBO_CONTROL_", "struct__WB__COMBO__CONTROL__.html", [
+      [ "sel", "struct__WB__COMBO__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
+      [ "wbDLGCtrl", "struct__WB__COMBO__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ],
+      [ "xTextObject", "struct__WB__COMBO__CONTROL__.html#ae0d2ba439b30720b797c108c4009a769", null ]
+    ] ],
+    [ "_WB_TREE_CONTROL_", "struct__WB__TREE__CONTROL__.html", [
+      [ "sel", "struct__WB__TREE__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
+      [ "wbDLGCtrl", "struct__WB__TREE__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
+    ] ],
+    [ "DIALOG_CONTROL_TAG", "group__dlgctrl.html#ga96fdf0aa143ef1a3fc84000f209b5489", null ],
     [ "WB_DIALOG_PROP", "group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6", null ],
-    [ "WBComboControl", "group__dlgctrl.html#gaada1241dd8e709089c75dac809dfac2a", null ],
+    [ "WBComboControl", "group__dlgctrl.html#ga33315fdad56a996e4147c19ee4a6ba81", null ],
     [ "WBDialogControl", "group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0", null ],
     [ "WBDialogPropList", "group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4", null ],
-    [ "WBEditControl", "group__dlgctrl.html#ga33b42b65429ec4bc96191c678cd3f32f", null ],
-    [ "WBListControl", "group__dlgctrl.html#ga1a9fe1233eadc67892e0e6656314e4a3", null ],
-    [ "WBTreeControl", "group__dlgctrl.html#ga1508b51c7111908f1cbf260feabc0bef", [
+    [ "WBEditControl", "group__dlgctrl.html#ga779002c52df1244633dd1a7af8b40c2f", null ],
+    [ "WBImageControl", "group__dlgctrl.html#gad51c57113fe93e6c3dccd7ee773dcd60", null ],
+    [ "WBListControl", "group__dlgctrl.html#gad0c1f4b823e49c4c72b461699bcafd86", null ],
+    [ "WBPushButtonControl", "group__dlgctrl.html#gaaee51a696f4d8d690687ce72db3fbef9", null ],
+    [ "WBTreeControl", "group__dlgctrl.html#ga50229ea1e571dfc8efdc5388de01c3d9", [
       [ "WB_SCROLL_DEFAULT", "group__dlgctrl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a283d7836973fc4cd386fae001266dc17", null ],
       [ "WB_SCROLL_HORIZONTAL", "group__dlgctrl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57ab721303d414a9b53a65ba336a5db7b6f", null ],
       [ "WB_SCROLL_VERTICAL", "group__dlgctrl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57aad68f61a838ef3b2b761039b75126cc8", null ],

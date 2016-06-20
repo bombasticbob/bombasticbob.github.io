@@ -39,6 +39,7 @@ var conf__help_8c =
     [ "CHWriteConfFileInt", "conf__help_8c.html#gad60beaeb57f42bc1b57e76e7e74efce4", null ],
     [ "CHWriteConfFileString", "conf__help_8c.html#ga695db75558f7759a9f2a372d50f18454", null ],
     [ "DoMakePath", "conf__help_8c.html#a827423934f99436fedf770a26a5bb7ce", null ],
+    [ "TranslateColorRequest", "conf__help_8c.html#aa3448bea92698b2c12407000bceb25ca", null ],
     [ "trim_ends", "conf__help_8c.html#ad8ee0d85befb1d5bbbf45980821a73e4", null ],
     [ "argc_copy", "conf__help_8c.html#aead8b9451fa1d84d389ea639edcef289", null ],
     [ "argv_copy", "conf__help_8c.html#a5ce79d4a989ace16f534bc6fa3f01119", null ],
@@ -46,6 +47,7 @@ var conf__help_8c =
     [ "cByteOrder", "conf__help_8c.html#a70cfe8006865f231cb70fe3d730093c2", null ],
     [ "cUnused", "conf__help_8c.html#ab360eb48e648307056c1956a00771420", null ],
     [ "nSettings", "conf__help_8c.html#a144607fdd808dd42bb6026f1bdb3efb4", null ],
+    [ "pXSettings", "conf__help_8c.html#aa4a774a394a4e8d03821210f66165b60", null ],
     [ "szData", "conf__help_8c.html#a4a7628af4a634312045a8cdce63584ea", null ],
     [ "uiSerial", "conf__help_8c.html#a74bf6b69faca68501bfca1269185bc35", null ],
     [ "XSETTINGS_DATA_INT", "conf__help_8c.html#abfa65d133702b2b4092bde2cfd7ab234", null ]

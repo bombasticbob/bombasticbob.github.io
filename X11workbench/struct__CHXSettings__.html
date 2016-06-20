@@ -72,7 +72,7 @@ $(document).ready(function(){initNavTree('struct__CHXSettings__.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Array wrapper for <a class="el" href="group__desktop__settings.html#ga242b12920430908cccccdd8cce995c44">CHXSetting</a> cache.  
+<p>Array wrapper for <a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a> cache.  
  <a href="struct__CHXSettings__.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="conf__help_8h_source.html">conf_help.h</a>&gt;</code></p>
@@ -92,24 +92,22 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a74bf6b69faca68501bfca1269185bc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number from last XSETTINGS query <br/></td></tr>
 <tr class="separator:a74bf6b69faca68501bfca1269185bc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb4f3d2c83e670d1f57ee2750bca723e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb4f3d2c83e670d1f57ee2750bca723e"></a>
-<a class="el" href="group__desktop__settings.html#ga242b12920430908cccccdd8cce995c44">CHXSetting</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__CHXSettings__.html#afb4f3d2c83e670d1f57ee2750bca723e">aData</a> [1]</td></tr>
-<tr class="memdesc:afb4f3d2c83e670d1f57ee2750bca723e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of 'nSettings' <a class="el" href="group__desktop__settings.html#ga242b12920430908cccccdd8cce995c44">CHXSetting</a> structures. Binary and string data directly follows the array. <br/></td></tr>
+<a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__CHXSettings__.html#afb4f3d2c83e670d1f57ee2750bca723e">aData</a> [1]</td></tr>
+<tr class="memdesc:afb4f3d2c83e670d1f57ee2750bca723e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of 'nSettings' <a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a> structures. Binary and string data directly follows the array. <br/></td></tr>
 <tr class="separator:afb4f3d2c83e670d1f57ee2750bca723e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Array wrapper for <a class="el" href="group__desktop__settings.html#ga242b12920430908cccccdd8cce995c44">CHXSetting</a> cache. </p>
-<pre class="fragment">This structure wraps the array of \ref CHXSetting structures and any variable length data that
-it might reference.  It is the internal format for the settings array and can be retrieved by
-calling \ref CHGetXSettings()
-</pre><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__CHXSettings__.html" title="Array wrapper for CHXSetting cache.">_CHXSettings_</a></div>
+<div class="textblock"><p>Array wrapper for <a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a> cache. </p>
+<p>This structure wraps the array of <a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a> structures and any variable length data that it might reference. It is the internal format for the settings array and can be retrieved by calling <a class="el" href="group__desktop__settings.html#gaebab9086a01ee73d7d3ec5a26a6ed576">CHGetXSettings()</a></p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__CHXSettings__.html" title="Array wrapper for CHXSetting cache. ">_CHXSettings_</a></div>
 <div class="line">{</div>
 <div class="line">  Display *<a class="code" href="struct__CHXSettings__.html#a0e5b4ba1b30f7c298b82d7592e78a8e3" title="identifies which display it belongs to (reserved)">pDisplay</a>;      <span class="comment">// identifies which display it belongs to (reserved)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__CHXSettings__.html#a20dadca04de7a0fac91cae9cc2974b8a" title="the total number of settings in aData">nSettings</a>;          <span class="comment">// the total number of settings in aData</span></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__CHXSettings__.html#a74bf6b69faca68501bfca1269185bc35" title="serial number from last XSETTINGS query">uiSerial</a>;  <span class="comment">// serial number from last XSETTINGS query</span></div>
 <div class="line">  CHXSetting <a class="code" href="struct__CHXSettings__.html#afb4f3d2c83e670d1f57ee2750bca723e" title="An array of &#39;nSettings&#39; CHXSetting structures. Binary and string data directly follows the array...">aData</a>[1];    <span class="comment">// An array of &#39;nSettings&#39; \ref CHXSetting structures.  Binary and string data directly follows the array.</span></div>
-<div class="line">} <a class="code" href="group__desktop__settings.html#ga083afbaded4136e7c507d0e09b44ddc1" title="Array wrapper for CHXSetting cache.">CHXSettings</a>;</div>
+<div class="line">} <a class="code" href="group__desktop__settings.html#ga78d9a6c66a95454b2fc898da68562c95" title="Array wrapper for CHXSetting cache.">CHXSettings</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00422">422</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+<p>Definition at line <a class="el" href="conf__help_8h_source.html#l00442">442</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="conf__help_8h_source.html">conf_help.h</a></li>
 </ul>
@@ -119,7 +117,7 @@ calling \ref CHGetXSettings()
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__CHXSettings__.html">_CHXSettings_</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

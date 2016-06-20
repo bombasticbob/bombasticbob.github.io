@@ -84,7 +84,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="memdesc:a2bb21eec20254688020158712a7914cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu identifier specified when menu was created (high bit set for popup) <br/></td></tr>
 <tr class="separator:a2bb21eec20254688020158712a7914cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaffc211c6852c7f86f7a4dee949b618c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaffc211c6852c7f86f7a4dee949b618c"></a>
-<a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c">ppItems</a></td></tr>
+<a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c">ppItems</a></td></tr>
 <tr class="memdesc:aaffc211c6852c7f86f7a4dee949b618c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocated array of menu items. <br/></td></tr>
 <tr class="separator:aaffc211c6852c7f86f7a4dee949b618c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b1cb6145a6f39dcafd3622138a05d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24b1cb6145a6f39dcafd3622138a05d3"></a>
@@ -111,22 +111,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>structure for managing menu items </p>
 <p>Definition for the structure that defines a menu. A menu is a single-level entity that can contain other "sub menus" that display as 'popup' menus when the menu item is highlighted or selected.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBMenu.html" title="structure for managing menu items">__WBMenu</a></div>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBMenu.html" title="structure for managing menu items ">__WBMenu</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a2bb21eec20254688020158712a7914cc" title="menu identifier specified when menu was created (high bit set for popup)">iMenuID</a>;                 <span class="comment">// menu identifier specified when menu was created (high bit set for popup)</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="struct____WBMenuItem____.html" title="structure for managing menu items">WBMenuItem</a> **<a class="code" href="struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c" title="An allocated array of menu items.">ppItems</a>;        <span class="comment">// An allocated array of menu items</span></div>
+<div class="line">  <a class="code" href="struct____WBMenuItem____.html" title="structure for managing menu items ">WBMenuItem</a> **<a class="code" href="struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c" title="An allocated array of menu items.">ppItems</a>;        <span class="comment">// An allocated array of menu items</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a24b1cb6145a6f39dcafd3622138a05d3" title="The number of menu item entries in the &#39;ppItems&#39; array.">nItems</a>;                  <span class="comment">// The number of menu item entries in the &#39;ppItems&#39; array</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a63473adbe2109db2b71cfba9efff0df6" title="The maximum number of menu item entries that can be stored in &#39;ppItems&#39;.">nMaxItems</a>;               <span class="comment">// The maximum number of menu item entries that can be stored in &#39;ppItems&#39;</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____WBMenu.html" title="structure for managing menu items">__WBMenu</a> **<a class="code" href="struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff" title="An allocated array of &#39;popup&#39; menus contained by this menu.">ppPopups</a>;  <span class="comment">// An allocated array of &#39;popup&#39; menus contained by this menu</span></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____WBMenu.html" title="structure for managing menu items ">__WBMenu</a> **<a class="code" href="struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff" title="An allocated array of &#39;popup&#39; menus contained by this menu.">ppPopups</a>;  <span class="comment">// An allocated array of &#39;popup&#39; menus contained by this menu</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#ae15309f5e39a6efbc70fe8d9b8222535" title="The number of popup menu entries in the &#39;ppPopups&#39; array.">nPopups</a>;                 <span class="comment">// The number of popup menu entries in the &#39;ppPopups&#39; array</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenu.html#a6f97d99954ffe66592d514cd8f57ed50" title="The maximum number of popup menu entries that can be stored in &#39;ppPopups&#39;.">nMaxPopups</a>;              <span class="comment">// The maximum number of popup menu entries that can be stored in &#39;ppPopups&#39;</span></div>
 <div class="line"></div>
-<div class="line">} <a class="code" href="struct____WBMenu.html" title="structure for managing menu items">WBMenu</a>;</div>
-</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="struct____WBMenuItem____.html">WBMenuItem</a> </dd></dl>
+<div class="line">} <a class="code" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759" title="structure for managing menu items">WBMenu</a>;</div>
+</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4" title="structure for managing menu items">WBMenuItem</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="menu_8h_source.html#l00169">169</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+<p>Definition at line <a class="el" href="menu_8h_source.html#l00176">176</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="menu_8h_source.html">menu.h</a></li>
 </ul>
@@ -136,7 +136,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WBMenu.html">__WBMenu</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

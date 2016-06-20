@@ -61,7 +61,9 @@ $(document).ready(function(){initNavTree('group__core.html','');});
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Core API</div>  </div>
 </div><!--header-->
@@ -90,6 +92,15 @@ Modules</h2></td></tr>
 <tr class="memitem:group__timer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timer.html">Timer Functions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__WBRect__.html">_WBRect_</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal wrapper struct for 'rectangle' definition  <a href="struct__WBRect__.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__WBGeom__.html">_WBGeom_</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal wrapper struct for X11 'geometry' definition  <a href="struct__WBGeom__.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gaa3f68398eddd018b389e0c1609a369c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa3f68398eddd018b389e0c1609a369c4"></a>
@@ -103,6 +114,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ga2e85284677c8665134da365f761894e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core.html#ga2e85284677c8665134da365f761894e9">GCAll</a></td></tr>
 <tr class="memdesc:ga2e85284677c8665134da365f761894e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bit mask for ALL GC properties (used when copying a GC)  <a href="#ga2e85284677c8665134da365f761894e9">More...</a><br/></td></tr>
 <tr class="separator:ga2e85284677c8665134da365f761894e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga3d18dd30d60f281275c252bf6c7f5718"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__WBRect__.html">_WBRect_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a></td></tr>
+<tr class="memdesc:ga3d18dd30d60f281275c252bf6c7f5718"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal wrapper struct for 'rectangle' definition  <a href="#ga3d18dd30d60f281275c252bf6c7f5718">More...</a><br/></td></tr>
+<tr class="separator:ga3d18dd30d60f281275c252bf6c7f5718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37cf1decbd82558512b5b108ec6f3d01"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__WBGeom__.html">_WBGeom_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a></td></tr>
+<tr class="memdesc:ga37cf1decbd82558512b5b108ec6f3d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal wrapper struct for X11 'geometry' definition  <a href="#ga37cf1decbd82558512b5b108ec6f3d01">More...</a><br/></td></tr>
+<tr class="separator:ga37cf1decbd82558512b5b108ec6f3d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The 'Core' API for the X11workbench Toolkit identifies those functions that implement the most essential functions, such as the creation and destruction of windows, and the main event loop, All programs using the API must correctly initialize and make use of these functions in lieu of calling their X11 counterparts. </p>
@@ -128,12 +148,63 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga37cf1decbd82558512b5b108ec6f3d01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>internal wrapper struct for X11 'geometry' definition </p>
+<p>The geometry structure is a wrapper for the X11 functions that specify the individual parameters for a geometry, such as XGetGeometry. Instead of passing 5 integers, you pass the pointer to a structure for the X11workbench API functions. This provides many advantages over the 'individual parameter' method as well as providing a structure for cacheing geometry information.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">_WBGeom_</a></div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__WBGeom__.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, <a class="code" href="struct__WBGeom__.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>;</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__WBGeom__.html#aca34d28e3d8bcbcadb8edb4e3af24f8c">width</a>, <a class="code" href="struct__WBGeom__.html#ab2e78c61905b4419fcc7b4cfc500fe85">height</a>, <a class="code" href="struct__WBGeom__.html#a8f31549b347fd7b3c2a3690f5f3bc156">border</a>;</div>
+<div class="line">} <a class="code" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01" title="internal wrapper struct for X11 &#39;geometry&#39; definition">WB_GEOM</a>;</div>
+</div><!-- fragment --><p>Use of 'int' for each parameter is consistent with the various 'Geom' functions which typically use 'int *' for returned parameters, such as:</p>
+<div class="fragment"><div class="line">Status XGetGeometry(Display *display, Drawable d, Window *root_return,</div>
+<div class="line">                    <span class="keywordtype">int</span> *x_return, <span class="keywordtype">int</span> *y_return,</div>
+<div class="line">                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *width_return, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *height_return,</div>
+<div class="line">                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *border_return, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *depth_return);</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="ga3d18dd30d60f281275c252bf6c7f5718"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>internal wrapper struct for 'rectangle' definition </p>
+<p>The rectangle structure has been defined primarily for convenience, so that specific coding methods that work well in GUI environments that use rectangles (instead of 'geometry') can easily be ported into this environment.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">_WBRect_</a></div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__WBRect__.html#ad8f5e19e19f12974c9713e920ec54331">left</a>, <a class="code" href="struct__WBRect__.html#af93f4f37fc2ad9c37af4a715423b110c">top</a>, <a class="code" href="struct__WBRect__.html#a2f54f8b71f0d765e2b7dbd9a8b9774ff">right</a>, <a class="code" href="struct__WBRect__.html#a323a7064fba6e15e3e542e34fb19764e">bottom</a>;</div>
+<div class="line">} <a class="code" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718" title="internal wrapper struct for &#39;rectangle&#39; definition">WB_RECT</a>;</div>
+</div><!-- fragment --><p>Note that this is different from an XRectangle, which is defined as</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">short</span> x, y;</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> width, height;</div>
+<div class="line">} XRectangle;</div>
+</div><!-- fragment --> 
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

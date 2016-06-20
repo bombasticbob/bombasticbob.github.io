@@ -67,7 +67,6 @@ $(document).ready(function(){initNavTree('dialog__window_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -90,12 +89,11 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aab9fa27f246b823ca0392562e90326f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab9fa27f246b823ca0392562e90326f9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIALOG_WINDOW_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)&quot;DLGW&quot;))</td></tr>
-<tr class="separator:aab9fa27f246b823ca0392562e90326f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0623b88503df845f33680554b56796b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0623b88503df845f33680554b56796b4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIALOG_ENTRY_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)&quot;DLGE&quot;))</td></tr>
-<tr class="separator:a0623b88503df845f33680554b56796b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:gaab9fa27f246b823ca0392562e90326f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gaab9fa27f246b823ca0392562e90326f9">DIALOG_WINDOW_TAG</a>&#160;&#160;&#160;(*((const unsigned int *)&quot;DLGW&quot;))</td></tr>
+<tr class="separator:gaab9fa27f246b823ca0392562e90326f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0623b88503df845f33680554b56796b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#ga0623b88503df845f33680554b56796b4">DIALOG_ENTRY_TAG</a>&#160;&#160;&#160;(*((const unsigned int *)&quot;DLGE&quot;))</td></tr>
+<tr class="separator:ga0623b88503df845f33680554b56796b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -109,115 +107,115 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gaf4b1dd7894610596e141bc8242e7c16b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16b">WBDialogWindowFlags</a> { <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#ggaf4b1dd7894610596e141bc8242e7c16baaff19e58b8981d18f5f086c6d049893f">WBDialogWindow_APP_WINDOW</a> = 1, 
-<a class="el" href="group__dlgwindow.html#ggaf4b1dd7894610596e141bc8242e7c16baabceb0e170c982584ea472587c38a356">WBDialogWindow_VISIBLE</a> = 2, 
-<a class="el" href="group__dlgwindow.html#ggaf4b1dd7894610596e141bc8242e7c16ba0ed86dbea349cbb60a467710ffc37411">WBDialogWindow_DOMODAL</a> = 4, 
-<a class="el" href="group__dlgwindow.html#ggaf4b1dd7894610596e141bc8242e7c16ba5f5d431ba218778e8efdfc67b526151a">WBDialogWindow_CENTERMOUSE</a> = 8, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16baaff19e58b8981d18f5f086c6d049893f">WBDialogWindow_APP_WINDOW</a> = 1, 
+<a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16baabceb0e170c982584ea472587c38a356">WBDialogWindow_VISIBLE</a> = 2, 
+<a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16ba0ed86dbea349cbb60a467710ffc37411">WBDialogWindow_DOMODAL</a> = 4, 
+<a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16ba5f5d431ba218778e8efdfc67b526151a">WBDialogWindow_CENTERMOUSE</a> = 8, 
 <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#ggaf4b1dd7894610596e141bc8242e7c16baf65c6d4947039b82cc1dad16f5d44c83">WBDialogWindow_HRESIZE</a> = 0x100, 
-<a class="el" href="group__dlgwindow.html#ggaf4b1dd7894610596e141bc8242e7c16ba08a2d5ad0cf15a751de4c41a5c713bc3">WBDialogWindow_VRESIZE</a> = 0x200, 
-<a class="el" href="group__dlgwindow.html#ggaf4b1dd7894610596e141bc8242e7c16ba7eeea6655d0f11f67a76bfcb4c0f0728">WBDialogWindow_MAX</a> = 0x80000000L
+&#160;&#160;<a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16baf65c6d4947039b82cc1dad16f5d44c83">WBDialogWindow_HRESIZE</a> = 0x100, 
+<a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16ba08a2d5ad0cf15a751de4c41a5c713bc3">WBDialogWindow_VRESIZE</a> = 0x200, 
+<a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16ba7eeea6655d0f11f67a76bfcb4c0f0728">WBDialogWindow_MAX</a> = 0x80000000L
 <br/>
  }</td></tr>
 <tr class="memdesc:gaf4b1dd7894610596e141bc8242e7c16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration for the iFlags member of WBDialogWindow  <a href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16b">More...</a><br/></td></tr>
 <tr class="separator:gaf4b1dd7894610596e141bc8242e7c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97c244cac0ae5750288fa38b47a10da7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7">WBDialogEntryFlags</a> { <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a2768590644e2ec98df6717d61619dfaa">WBDialogEntry_VISIBLE</a> = 0x1, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a71de1e9af5e009725770fd44f777b79c">WBDialogEntry_EDIT</a> = 0x2, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a5b0214bcda8dad4c9bc6c2716b9d91dc">WBDialogEntry_MULTILINE</a> = 0x4, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7abbce8aedc48563ae152a6af9ead402fa">WBDialogEntry_ALLCHARS</a> = 0x8, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a2768590644e2ec98df6717d61619dfaa">WBDialogEntry_VISIBLE</a> = 0x1, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a71de1e9af5e009725770fd44f777b79c">WBDialogEntry_EDIT</a> = 0x2, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a5b0214bcda8dad4c9bc6c2716b9d91dc">WBDialogEntry_MULTILINE</a> = 0x4, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abbce8aedc48563ae152a6af9ead402fa">WBDialogEntry_ALLCHARS</a> = 0x8, 
 <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a8279226ad2a6e25c03d576ef65e59884">WBDialogEntry_HResize</a> = 0x00040000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a93348195e1b70d1cb25768003fe5def8">WBDialogEntry_VResize</a> = 0x00080000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a24f402a9cb7c5a6e3ee72f8ecd4be2a2">WBDialogEntry_ResizeMask</a> = 0x000c0000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a2971b6f1b2ba07a76a32ca79df250440">WBDialogEntry_VAlignFixed</a> = 0x00000000, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a8279226ad2a6e25c03d576ef65e59884">WBDialogEntry_HResize</a> = 0x00040000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a93348195e1b70d1cb25768003fe5def8">WBDialogEntry_VResize</a> = 0x00080000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a24f402a9cb7c5a6e3ee72f8ecd4be2a2">WBDialogEntry_ResizeMask</a> = 0x000c0000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a2971b6f1b2ba07a76a32ca79df250440">WBDialogEntry_VAlignFixed</a> = 0x00000000, 
 <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7ad7181629466abf4c75c9d928dbd6c08d">WBDialogEntry_VAlignTop</a> = 0x00100000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7aa4a142fb0ba55f1411c18415da2438ca">WBDialogEntry_VAlignBottom</a> = 0x00200000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7abb290eb7dbc05e3fd7881c65bbd46bb0">WBDialogEntry_VAlignCenter</a> = 0x00300000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a73da8458ffda2350c5fc450b4fa3de2d">WBDialogEntry_VAlignMask</a> = 0x00300000, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ad7181629466abf4c75c9d928dbd6c08d">WBDialogEntry_VAlignTop</a> = 0x00100000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7aa4a142fb0ba55f1411c18415da2438ca">WBDialogEntry_VAlignBottom</a> = 0x00200000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abb290eb7dbc05e3fd7881c65bbd46bb0">WBDialogEntry_VAlignCenter</a> = 0x00300000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a73da8458ffda2350c5fc450b4fa3de2d">WBDialogEntry_VAlignMask</a> = 0x00300000, 
 <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a0f80539a3cf58d54d630c302a13a5de9">WBDialogEntry_HAlignFixed</a> = 0x00000000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a393983aa0a36963a45084984a2e12315">WBDialogEntry_HAlignLeft</a> = 0x00400000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a50f7026e9e9649786c957f10fbb824d0">WBDialogEntry_HAlignRight</a> = 0x00800000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a1253b00888c0da7fbd1de3e99809a8f7">WBDialogEntry_HAlignCenter</a> = 0x00c00000, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a0f80539a3cf58d54d630c302a13a5de9">WBDialogEntry_HAlignFixed</a> = 0x00000000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a393983aa0a36963a45084984a2e12315">WBDialogEntry_HAlignLeft</a> = 0x00400000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a50f7026e9e9649786c957f10fbb824d0">WBDialogEntry_HAlignRight</a> = 0x00800000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a1253b00888c0da7fbd1de3e99809a8f7">WBDialogEntry_HAlignCenter</a> = 0x00c00000, 
 <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7aa3cd6009015b5dabf58dcbb07c036687">WBDialogEntry_HAlignMask</a> = 0x00c00000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a2c3388618c0000696539bc2b0aa32d21">WBDialogEntry_AlignMask</a> = 0x00f00000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a0550bab0c7f13b243a0e87634fcdf296">WBDialogEntry_Reserved24</a> = 0x01000000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a4c543fcce486e519d2ebe98ee675face">WBDialogEntry_Reserved25</a> = 0x02000000, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7aa3cd6009015b5dabf58dcbb07c036687">WBDialogEntry_HAlignMask</a> = 0x00c00000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a2c3388618c0000696539bc2b0aa32d21">WBDialogEntry_AlignMask</a> = 0x00f00000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a0550bab0c7f13b243a0e87634fcdf296">WBDialogEntry_Reserved24</a> = 0x01000000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a4c543fcce486e519d2ebe98ee675face">WBDialogEntry_Reserved25</a> = 0x02000000, 
 <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7afa4a6155791b05214b04d30132413668">WBDialogEntry_Reserved26</a> = 0x04000000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7ac1e87bf8de35ab3b292459a50be95369">WBDialogEntry_PRESSED</a> = 0x08000000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a440cbaea09245a637fbc487199b693c6">WBDialogEntry_CAN_HAVE_FOCUS</a> = 0x10000000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a47c84e65ed5e6ab0d957bc00a29f6102">WBDialogEntry_HAS_FOCUS</a> = 0x20000000, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7afa4a6155791b05214b04d30132413668">WBDialogEntry_Reserved26</a> = 0x04000000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ac1e87bf8de35ab3b292459a50be95369">WBDialogEntry_PRESSED</a> = 0x08000000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a440cbaea09245a637fbc487199b693c6">WBDialogEntry_CAN_HAVE_FOCUS</a> = 0x10000000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a47c84e65ed5e6ab0d957bc00a29f6102">WBDialogEntry_HAS_FOCUS</a> = 0x20000000, 
 <br/>
-&#160;&#160;<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a3a12639f259a3f77b2dd89eac6c3d246">WBDialogEntry_PUSHBUTTON</a> = 0x40000000, 
-<a class="el" href="group__dlgwindow.html#gga97c244cac0ae5750288fa38b47a10da7a3509f878ba2febe772c915f8b42c27dc">WBDialogEntry_DEFAULT</a> = 0x80000000
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a3a12639f259a3f77b2dd89eac6c3d246">WBDialogEntry_PUSHBUTTON</a> = 0x40000000, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a3509f878ba2febe772c915f8b42c27dc">WBDialogEntry_DEFAULT</a> = 0x80000000
 <br/>
  }</td></tr>
 <tr class="memdesc:ga97c244cac0ae5750288fa38b47a10da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration for the iFlags member of WBDialogEntry  <a href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7">More...</a><br/></td></tr>
 <tr class="separator:ga97c244cac0ae5750288fa38b47a10da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4414a7e45fa6331cd4a0e7faf6e68ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog.html#gac4414a7e45fa6331cd4a0e7faf6e68ca">MessageBoxEnum</a> { <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa127322709f37d1ffb23ef5b8db642e4b">MessageBox_Error</a> =0, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa85419374c58878bb9cc9bfa2f18a9e2a">MessageBox_Warning</a> =1, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa63cf915188d64ab930bcfe5deeb1bf85">MessageBox_Info</a> =2, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaca55adace7176697b3b7aefad3288d03">MessageBox_Asterisk</a> =3, 
+<tr class="memitem:gac4414a7e45fa6331cd4a0e7faf6e68ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68ca">MessageBoxEnum</a> { <br/>
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa127322709f37d1ffb23ef5b8db642e4b">MessageBox_Error</a> =0, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa85419374c58878bb9cc9bfa2f18a9e2a">MessageBox_Warning</a> =1, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa63cf915188d64ab930bcfe5deeb1bf85">MessageBox_Info</a> =2, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaca55adace7176697b3b7aefad3288d03">MessageBox_Asterisk</a> =3, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa3cbf812941370c7df1316ee925449a96">MessageBox_Question</a> =4, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caad39c5bbd3aa3d1e3652f63c3773c6da8">MessageBox_BoldQuestion</a> =5, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaf58edcdbdcf6d703b27344d858ca9ec9">MessageBox_WTF</a> =6, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa2ec02876dcab802b936a9664ee63c899">MessageBox_Bang</a> =7, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa3cbf812941370c7df1316ee925449a96">MessageBox_Question</a> =4, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caad39c5bbd3aa3d1e3652f63c3773c6da8">MessageBox_BoldQuestion</a> =5, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaf58edcdbdcf6d703b27344d858ca9ec9">MessageBox_WTF</a> =6, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa2ec02876dcab802b936a9664ee63c899">MessageBox_Bang</a> =7, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caabd1749ef889ec8ed3bb7e43177baf6fa">MessageBox_Triangle</a> =8, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa6158a024293940b9ab7245386f3ff227">MessageBox_FaceOfDeath</a> =9, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaf624ef4837f88fb08adb00024a76afd9">MessageBox_JollyRoger</a> =10, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaa1d4bc9ebfa30a858d7ae5c67b128c92">MessageBox_ThumbsUp</a> =11, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caabd1749ef889ec8ed3bb7e43177baf6fa">MessageBox_Triangle</a> =8, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa6158a024293940b9ab7245386f3ff227">MessageBox_FaceOfDeath</a> =9, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaf624ef4837f88fb08adb00024a76afd9">MessageBox_JollyRoger</a> =10, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaa1d4bc9ebfa30a858d7ae5c67b128c92">MessageBox_ThumbsUp</a> =11, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa67c1fc2f871bd8eb655b3defe62de3ee">MessageBox_ThumbsDown</a> =12, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa8f022eac04bb7c0d821283bd0c6244b2">MessageBox_MiddleFinger</a> =13, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaf742dafff5797663bdc4e8a2c48c5a40">MessageBox_TeddyBear</a> =14, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa886593515476e632c59f097fcfd89927">MessageBox_Barney</a> =15, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa67c1fc2f871bd8eb655b3defe62de3ee">MessageBox_ThumbsDown</a> =12, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa8f022eac04bb7c0d821283bd0c6244b2">MessageBox_MiddleFinger</a> =13, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaf742dafff5797663bdc4e8a2c48c5a40">MessageBox_TeddyBear</a> =14, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa886593515476e632c59f097fcfd89927">MessageBox_Barney</a> =15, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa1107a78e77de6d683f2aea4d37306982">MessageBox_App</a> =16, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa998b8139e16cc7664683e0bebab55fe7">MessageBox_ICON_MASK</a> = 0x1f, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaaf0c98bc1ec36c54f675d0285cbef6ca">MessageBox_OK</a> = 0x20, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaea4744a7077098fffbff0314291daf80">MessageBox_Yes</a> = 0x40, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa1107a78e77de6d683f2aea4d37306982">MessageBox_App</a> =16, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa998b8139e16cc7664683e0bebab55fe7">MessageBox_ICON_MASK</a> = 0x1f, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaaf0c98bc1ec36c54f675d0285cbef6ca">MessageBox_OK</a> = 0x20, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaea4744a7077098fffbff0314291daf80">MessageBox_Yes</a> = 0x40, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa0d1a9d1a00e2ff064e3a5f4f04b71ffb">MessageBox_No</a> = 0x80, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa73f288d44f0f73d94a5f10a0dbc8fc0d">MessageBox_Abort</a> = 0x100, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa8054253e65aecde4044802d2c2169f35">MessageBox_Retry</a> = 0x200, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa42e69b7e24eb77401dd688a95e0b5127">MessageBox_Ignore</a> = 0x400, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa0d1a9d1a00e2ff064e3a5f4f04b71ffb">MessageBox_No</a> = 0x80, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa73f288d44f0f73d94a5f10a0dbc8fc0d">MessageBox_Abort</a> = 0x100, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa8054253e65aecde4044802d2c2169f35">MessageBox_Retry</a> = 0x200, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa42e69b7e24eb77401dd688a95e0b5127">MessageBox_Ignore</a> = 0x400, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caaf4cdf96f685d30a16e451e7d39bf2ee3">MessageBox_Cancel</a> = 0x800, 
-<a class="el" href="group__dialog.html#ggac4414a7e45fa6331cd4a0e7faf6e68caa2d916aab18b9e7f4f74c31c1bff0ea5a">MessageBox_BUTTON_MASK</a> = 0xfe0
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaf4cdf96f685d30a16e451e7d39bf2ee3">MessageBox_Cancel</a> = 0x800, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa2d916aab18b9e7f4f74c31c1bff0ea5a">MessageBox_BUTTON_MASK</a> = 0xfe0
 <br/>
  }</td></tr>
-<tr class="memdesc:gac4414a7e45fa6331cd4a0e7faf6e68ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message Box flag enumeration.  <a href="group__dialog.html#gac4414a7e45fa6331cd4a0e7faf6e68ca">More...</a><br/></td></tr>
+<tr class="memdesc:gac4414a7e45fa6331cd4a0e7faf6e68ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message Box flag enumeration.  <a href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68ca">More...</a><br/></td></tr>
 <tr class="separator:gac4414a7e45fa6331cd4a0e7faf6e68ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92ee7dbf8c990b8a2b7fd764ee1c938e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog.html#ga92ee7dbf8c990b8a2b7fd764ee1c938e">FileDialogEnum</a> { <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938ea6ccb72f13a6a373cb375149968d4f8f6">FileDialog_Open</a> = 0, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938ea1a1b15ca2f345064fbe08c5d5957c196">FileDialog_Save</a> = 1, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938ea87fdf63367b44e4737645c6e0ac6bb7d">FileDialog_SaveAs</a> = 2, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938eae6d938c6bbd1b15b4d675521f70317bd">FileDialog_Folder</a> = 3, 
+<tr class="memitem:ga92ee7dbf8c990b8a2b7fd764ee1c938e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938e">FileDialogEnum</a> { <br/>
+&#160;&#160;<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea6ccb72f13a6a373cb375149968d4f8f6">FileDialog_Open</a> = 0, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea1a1b15ca2f345064fbe08c5d5957c196">FileDialog_Save</a> = 1, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea87fdf63367b44e4737645c6e0ac6bb7d">FileDialog_SaveAs</a> = 2, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eae6d938c6bbd1b15b4d675521f70317bd">FileDialog_Folder</a> = 3, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938eaeb3d2a1d1518443d9a554e81a4117b2c">FileDialog_MASK</a> = 0xf, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938eabf6246225566ffb7677c566c924b9f47">FileDialog_ReadOnly</a> = 0x10, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938ea6662e898d9a6ddd6278acdde8e884fd3">FileDialog_NoOverwrite</a> = 0x20, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938eaf3f4fcd4fdf10083e4925a86539ee08e">FileDialog_NoOverwritePrompt</a> = 0x40, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eaeb3d2a1d1518443d9a554e81a4117b2c">FileDialog_MASK</a> = 0xf, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eabf6246225566ffb7677c566c924b9f47">FileDialog_ReadOnly</a> = 0x10, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea6662e898d9a6ddd6278acdde8e884fd3">FileDialog_NoOverwrite</a> = 0x20, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eaf3f4fcd4fdf10083e4925a86539ee08e">FileDialog_NoOverwritePrompt</a> = 0x40, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938ea8a316a1057a6229327716e8b08c6a084">FileDialog_NoFolderNav</a> = 0x80, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938eaa1c9702296ce8aa04df0c0b01cfa8a34">FileDialog_Simple</a> = 0x100, 
-<a class="el" href="group__dialog.html#gga92ee7dbf8c990b8a2b7fd764ee1c938ea0d500668130c4b62f49743236182585f">FileDialog_MODIFIER_MASK</a> = 0xff0
+&#160;&#160;<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea8a316a1057a6229327716e8b08c6a084">FileDialog_NoFolderNav</a> = 0x80, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eaa1c9702296ce8aa04df0c0b01cfa8a34">FileDialog_Simple</a> = 0x100, 
+<a class="el" href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea0d500668130c4b62f49743236182585f">FileDialog_MODIFIER_MASK</a> = 0xff0
 <br/>
  }</td></tr>
-<tr class="memdesc:ga92ee7dbf8c990b8a2b7fd764ee1c938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileDialog enumeration.  <a href="group__dialog.html#ga92ee7dbf8c990b8a2b7fd764ee1c938e">More...</a><br/></td></tr>
+<tr class="memdesc:ga92ee7dbf8c990b8a2b7fd764ee1c938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileDialog enumeration.  <a href="group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938e">More...</a><br/></td></tr>
 <tr class="separator:ga92ee7dbf8c990b8a2b7fd764ee1c938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga39053c006797afbd6c436823dac75dcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog.html#ga39053c006797afbd6c436823dac75dcb">DLGCreateDialogWindow</a> (const char *szTitle, const char *szDialogResource, int iX, int iY, int iWidth, int iHeight, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback, int iFlags, void *pUserData)</td></tr>
-<tr class="memdesc:ga39053c006797afbd6c436823dac75dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a dialog window using a text resource  <a href="group__dialog.html#ga39053c006797afbd6c436823dac75dcb">More...</a><br/></td></tr>
+<tr class="memitem:ga39053c006797afbd6c436823dac75dcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#ga39053c006797afbd6c436823dac75dcb">DLGCreateDialogWindow</a> (const char *szTitle, const char *szDialogResource, int iX, int iY, int iWidth, int iHeight, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback, int iFlags, void *pUserData)</td></tr>
+<tr class="memdesc:ga39053c006797afbd6c436823dac75dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a dialog window using a text resource  <a href="group__dialog__api.html#ga39053c006797afbd6c436823dac75dcb">More...</a><br/></td></tr>
 <tr class="separator:ga39053c006797afbd6c436823dac75dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7bdf5b39d9df41d00817eb0ffda16ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#gab7bdf5b39d9df41d00817eb0ffda16ef">DLGAssignOwner</a> (<a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a> *pDlg, Window wIDOwner)</td></tr>
 <tr class="memdesc:gab7bdf5b39d9df41d00817eb0ffda16ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign owning window to dialog.  <a href="group__dlgwindow.html#gab7bdf5b39d9df41d00817eb0ffda16ef">More...</a><br/></td></tr>
@@ -271,17 +269,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga9d2e85a542eea2eafa3f1ec876ae4b58"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga9d2e85a542eea2eafa3f1ec876ae4b58">DLGNotifyDlgAsync</a> (<a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a> *pDLG, Atom aNotify, long lData0, long lData1, long lData2, long lData3, long lData4)</td></tr>
 <tr class="memdesc:ga9d2e85a542eea2eafa3f1ec876ae4b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify dialog window by posting an event that will ASYNCHRONOUSLY be sent to the dialog window's callback function.  <a href="group__dlgwindow.html#ga9d2e85a542eea2eafa3f1ec876ae4b58">More...</a><br/></td></tr>
 <tr class="separator:ga9d2e85a542eea2eafa3f1ec876ae4b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1927b5f46aa6fb8e57a3786db1d0ea0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog.html#gac1927b5f46aa6fb8e57a3786db1d0ea0">DLGMessageBox</a> (int iType, Window wIDOwner, const char *szTitle, const char *szMessage)</td></tr>
-<tr class="memdesc:gac1927b5f46aa6fb8e57a3786db1d0ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal 'message box' dialog window with a specific title, message, and button combination.  <a href="group__dialog.html#gac1927b5f46aa6fb8e57a3786db1d0ea0">More...</a><br/></td></tr>
+<tr class="memitem:gac1927b5f46aa6fb8e57a3786db1d0ea0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gac1927b5f46aa6fb8e57a3786db1d0ea0">DLGMessageBox</a> (int iType, Window wIDOwner, const char *szTitle, const char *szMessage)</td></tr>
+<tr class="memdesc:gac1927b5f46aa6fb8e57a3786db1d0ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal 'message box' dialog window with a specific title, message, and button combination.  <a href="group__dialog__api.html#gac1927b5f46aa6fb8e57a3786db1d0ea0">More...</a><br/></td></tr>
 <tr class="separator:gac1927b5f46aa6fb8e57a3786db1d0ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8aa6305ea75cbfc9db1a10cce1b4958"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog.html#gae8aa6305ea75cbfc9db1a10cce1b4958">DLGInputBox</a> (Window wIDOwner, const char *szTitle, const char *szPrompt, const char *szDefault, int iWidth, int iMaxChar)</td></tr>
-<tr class="memdesc:gae8aa6305ea75cbfc9db1a10cce1b4958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a special purpose dialog window that retrieves a character string as input.  <a href="group__dialog.html#gae8aa6305ea75cbfc9db1a10cce1b4958">More...</a><br/></td></tr>
+<tr class="memitem:gae8aa6305ea75cbfc9db1a10cce1b4958"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gae8aa6305ea75cbfc9db1a10cce1b4958">DLGInputBox</a> (Window wIDOwner, const char *szTitle, const char *szPrompt, const char *szDefault, int iWidth, int iMaxChar)</td></tr>
+<tr class="memdesc:gae8aa6305ea75cbfc9db1a10cce1b4958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a special purpose dialog window that retrieves a character string as input.  <a href="group__dialog__api.html#gae8aa6305ea75cbfc9db1a10cce1b4958">More...</a><br/></td></tr>
 <tr class="separator:gae8aa6305ea75cbfc9db1a10cce1b4958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61c93635fb125b35d904e4e13e0169c6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog.html#ga61c93635fb125b35d904e4e13e0169c6">DLGFileDialog</a> (int iType, Window wIDOwner, const char *szDefPath, const char *szDefName, const char *szExtAndDescList)</td></tr>
-<tr class="memdesc:ga61c93635fb125b35d904e4e13e0169c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal File Dialog window, returning a malloc'd pointer to a null-byte terminated string containing a fully qualified file or path name.  <a href="group__dialog.html#ga61c93635fb125b35d904e4e13e0169c6">More...</a><br/></td></tr>
+<tr class="memitem:ga61c93635fb125b35d904e4e13e0169c6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6">DLGFileDialog</a> (int iType, Window wIDOwner, const char *szDefPath, const char *szDefName, const char *szExtAndDescList)</td></tr>
+<tr class="memdesc:ga61c93635fb125b35d904e4e13e0169c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal File Dialog window, returning a malloc'd pointer to a null-byte terminated string containing a fully qualified file or path name.  <a href="group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6">More...</a><br/></td></tr>
 <tr class="separator:ga61c93635fb125b35d904e4e13e0169c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9ac41453b238c153917fcd3a33a587d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog.html#gaa9ac41453b238c153917fcd3a33a587d">DLGSplashScreen</a> (char *aXPM[], const char *szCopyright, unsigned long clrText)</td></tr>
-<tr class="memdesc:gaa9ac41453b238c153917fcd3a33a587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a splash screen for 5 seconds (with animation and copyright string), and then return.  <a href="group__dialog.html#gaa9ac41453b238c153917fcd3a33a587d">More...</a><br/></td></tr>
+<tr class="memitem:gaa9ac41453b238c153917fcd3a33a587d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gaa9ac41453b238c153917fcd3a33a587d">DLGSplashScreen</a> (char *aXPM[], const char *szCopyright, unsigned long clrText)</td></tr>
+<tr class="memdesc:gaa9ac41453b238c153917fcd3a33a587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a splash screen for 5 seconds (with animation and copyright string), and then return.  <a href="group__dialog__api.html#gaa9ac41453b238c153917fcd3a33a587d">More...</a><br/></td></tr>
 <tr class="separator:gaa9ac41453b238c153917fcd3a33a587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -294,7 +292,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="dialog__window_8h.html">dialog_window.h</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

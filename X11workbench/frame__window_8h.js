@@ -1,13 +1,13 @@
 var frame__window_8h =
 [
-    [ "FRAME_WINDOW_TAG", "frame__window_8h.html#af0816ee655e0dfe37f0889b7091f4058", null ],
+    [ "FRAME_WINDOW_TAG", "frame__window_8h.html#gaf0816ee655e0dfe37f0889b7091f4058", null ],
     [ "FW_MENU_HANDLER_BEGIN", "frame__window_8h.html#ga8a61ebc2ef84095119158df442cfca52", null ],
     [ "FW_MENU_HANDLER_END", "frame__window_8h.html#ga10289c47ba568d1a721f19b817d7a6b7", null ],
     [ "FW_MENU_HANDLER_ENTRY", "frame__window_8h.html#ga229372f84c3decfd19c503e93bcd0624", null ],
     [ "FWGetFocusWindow", "frame__window_8h.html#ga1f3667b5a203812ffbf9dd8f8e3946fb", null ],
-    [ "WBChildFrame", "frame__window_8h.html#af06650d056e926657cc94548674c1d98", null ],
-    [ "WBFrameWindow", "frame__window_8h.html#acf113fd95153c5a0de0876becf0a83a5", null ],
-    [ "WBFWMenuHandler", "frame__window_8h.html#a3c4f2af99262415109ef93e4e3ad009b", null ],
+    [ "WBChildFrame", "frame__window_8h.html#gaf06650d056e926657cc94548674c1d98", null ],
+    [ "WBFrameWindow", "frame__window_8h.html#gacf113fd95153c5a0de0876becf0a83a5", null ],
+    [ "WBFWMenuHandler", "frame__window_8h.html#ga3c4f2af99262415109ef93e4e3ad009b", null ],
     [ "WBChildFrame_FLAGS", "frame__window_8h.html#ga8876436ba7e43c85f832361df3e05a9e", [
       [ "WBChildFrame_NO_TAB", "frame__window_8h.html#ga8876436ba7e43c85f832361df3e05a9ea2d205951e2714825deddcfebe15a53a2", null ],
       [ "WBChildFrame_PIXELS", "frame__window_8h.html#ga8876436ba7e43c85f832361df3e05a9ea292eaee8d5845c5193e8cdb6e4699a33", null ],
@@ -50,5 +50,11 @@ var frame__window_8h =
     [ "FWSetMenuHandlers", "frame__window_8h.html#gab506e40699d1db64bbbef36dc62e4dde", null ],
     [ "FWSetStatusTabInfo", "frame__window_8h.html#ga74597022b33ab1ab995f3ffe711524e9", null ],
     [ "FWSetStatusText", "frame__window_8h.html#gaa4295a8606405987f556ef11fb5c3130", null ],
-    [ "FWSetUserCallback", "frame__window_8h.html#ga7d38ec4032b321a227904d3d34293f37", null ]
+    [ "FWSetUserCallback", "frame__window_8h.html#ga7d38ec4032b321a227904d3d34293f37", null ],
+    [ "aCLOSE_TAB", "frame__window_8h.html#a8e35aad8c4d3e4dd2b10b80746d944d5", null ],
+    [ "aNEW_TAB", "frame__window_8h.html#ga8e7bcc25a5d006d292f5663ed782b3c7", null ],
+    [ "aNEXT_TAB", "frame__window_8h.html#a0ad6493b1bb386690fac603042808c65", null ],
+    [ "aPREV_TAB", "frame__window_8h.html#a7c3e325437198d5b6ef9fc4fe8bc647f", null ],
+    [ "aREORDER_TAB", "frame__window_8h.html#a16e21600fefd5faccaf6ca98ff098552", null ],
+    [ "aSET_TAB", "frame__window_8h.html#a04f9f51e9db32518cd20acd819da80a6", null ]
 ];

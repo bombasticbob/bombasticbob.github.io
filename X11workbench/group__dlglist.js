@@ -15,6 +15,12 @@ var group__dlglist =
       [ "pfnSort", "struct____LISTINFO____.html#a3e3cf99e2496af3d59658fb2e21f3761", null ],
       [ "wOwner", "struct____LISTINFO____.html#af2479329d50a78c07f034e58942003c1", null ]
     ] ],
+    [ "_WB_LIST_CURSEL_", "struct__WB__LIST__CURSEL__.html", [
+      [ "iCurSel", "struct__WB__LIST__CURSEL__.html#ae27257a2b09b74ce8528f55e65381ed5", null ],
+      [ "iEntryHeight", "struct__WB__LIST__CURSEL__.html#a9be0073fd0d9ec612c66fd3bd8fabb6a", null ],
+      [ "iHeight", "struct__WB__LIST__CURSEL__.html#a2884aa55a9f2544c59a08976071b1d64", null ],
+      [ "iTopIndex", "struct__WB__LIST__CURSEL__.html#ac34c298c311e29b36839e7bc617db45f", null ]
+    ] ],
     [ "DLGInitControlListInfoDefault", "group__dlglist.html#ga42aa5560dc7e3a7a63b04485a6eda1fd", null ],
     [ "LISTINFO", "group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389", null ],
     [ "WBListCurSel", "group__dlglist.html#ga92b775d076e343e60c315d20d6a5245f", null ],

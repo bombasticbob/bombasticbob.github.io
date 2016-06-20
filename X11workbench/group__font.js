@@ -62,6 +62,7 @@ var group__font =
       [ "WBFontFlag_REG_MASK", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa4555d046caac25e5a688fbc31d357cdf", null ]
     ] ],
     [ "WBCopyFont", "group__font.html#ga736827e64c95112cea24d236b2d7785d", null ],
+    [ "WBFontAvgCharWidth", "group__font.html#gaf129efae522b6800670aed6758cb92cc", null ],
     [ "WBFontSetFromFont", "group__font.html#ga79162ae03e23d84e9325fb655286a282", null ],
     [ "WBLoadFont", "group__font.html#gad7562debef3c6912b163e22d0d931dbe", null ],
     [ "WBLoadModifyFont", "group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748", null ]

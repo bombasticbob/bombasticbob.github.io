@@ -8,9 +8,9 @@ var conf__help_8h =
     [ "GLOBAL_XPATH", "conf__help_8h.html#a93b65a606d6e11ed8fd41afdd4524439", null ],
     [ "LOCAL_CONF_NAME", "conf__help_8h.html#ad59e1c4fcc8ff5b79f9e1c1df5410d86", null ],
     [ "LOCAL_PATH", "conf__help_8h.html#a8841199e7e5fe3e103bbaddfabbcac32", null ],
-    [ "CHXSetting", "conf__help_8h.html#ga242b12920430908cccccdd8cce995c44", null ],
-    [ "CHXSettings", "conf__help_8h.html#ga083afbaded4136e7c507d0e09b44ddc1", null ],
-    [ "XSETTINGS_DATA_COLOR", "conf__help_8h.html#gadc21ef5e2d67daab7b5d3f27222ec6f1", null ],
+    [ "CHXSetting", "conf__help_8h.html#ga99c9eca7bca8350d6657917666ae2426", null ],
+    [ "CHXSettings", "conf__help_8h.html#ga78d9a6c66a95454b2fc898da68562c95", null ],
+    [ "XSETTINGS_DATA_COLOR", "conf__help_8h.html#gae01fd313d4d5127b45782b652e5eb5e3", null ],
     [ "XSettingsType", "conf__help_8h.html#gab8bbe81bca89b1e6aa014317095b4dd1", [
       [ "XSettingsTypeInteger", "conf__help_8h.html#ggab8bbe81bca89b1e6aa014317095b4dd1a95edb2f0ecb93be19311194a7cceed9a", null ],
       [ "XSettingsTypeString", "conf__help_8h.html#ggab8bbe81bca89b1e6aa014317095b4dd1ab33a720dd45efc5cdf65364be1902a0a", null ],

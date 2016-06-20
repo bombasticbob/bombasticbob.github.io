@@ -72,11 +72,11 @@ $(document).ready(function(){initNavTree('group__debug.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga51714b3d017c77dc550adc45b16dfceb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga51714b3d017c77dc550adc45b16dfceb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga51714b3d017c77dc550adc45b16dfceb">BEGIN_XCALL_DEBUG_WRAPPER</a>&#160;&#160;&#160;{ const char *szOldXCallFunc = <a class="el" href="group__debug.html#ga61491e06febc120b12e741142c45c89a">sz_xcall_func</a>; int iOldXCallLine = <a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a>; <a class="el" href="group__debug.html#ga61491e06febc120b12e741142c45c89a">sz_xcall_func</a> = __FUNCTION__;  <a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a> = __LINE__;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga51714b3d017c77dc550adc45b16dfceb">BEGIN_XCALL_DEBUG_WRAPPER</a>&#160;&#160;&#160;{ const char *__szOldXCallFunc__ = <a class="el" href="group__debug.html#ga61491e06febc120b12e741142c45c89a">sz_xcall_func</a>; int __iOldXCallLine__ = <a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a>; <a class="el" href="group__debug.html#ga61491e06febc120b12e741142c45c89a">sz_xcall_func</a> = __FUNCTION__;  <a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a> = __LINE__; {</td></tr>
 <tr class="memdesc:ga51714b3d017c77dc550adc45b16dfceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrapper macro for calls into the X11 library. This macro precedes the call(s) <br/></td></tr>
 <tr class="separator:ga51714b3d017c77dc550adc45b16dfceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaecce059895600af7ce5b6ad5bf88ff63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaecce059895600af7ce5b6ad5bf88ff63"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63">END_XCALL_DEBUG_WRAPPER</a>&#160;&#160;&#160;<a class="el" href="group__debug.html#ga61491e06febc120b12e741142c45c89a">sz_xcall_func</a> = szOldXCallFunc;  <a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a> = iOldXCallLine; }</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63">END_XCALL_DEBUG_WRAPPER</a>&#160;&#160;&#160;} <a class="el" href="group__debug.html#ga61491e06febc120b12e741142c45c89a">sz_xcall_func</a> = __szOldXCallFunc__;  <a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a> = __iOldXCallLine__; }</td></tr>
 <tr class="memdesc:gaecce059895600af7ce5b6ad5bf88ff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrapper macro for calls into the X11 library. This macro follows the call(s) <br/></td></tr>
 <tr class="separator:gaecce059895600af7ce5b6ad5bf88ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c0fc7cbc16080fb7336bfc18dfb6c0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d">WB_DEBUG_PRINT</a>(L,...)</td></tr>
@@ -139,7 +139,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a9f60cbc5957ceeda886a8559056ae4de">DebugSubSystem_Selection</a> = 0x00008000, 
 <a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395af692ff7eba270cc2a3a7cce224f81047">DebugSubSystem_Pixmap</a> = 0x00010000, 
 <br/>
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8">DebugSubSystem_MASK</a> = ~7L
+&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395ab8ce6d5213b0808ca71cd39214720380">DebugSubSystem_Expose</a> = 0x00020000, 
+<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8">DebugSubSystem_MASK</a> = ~7L
 <br/>
  }</td></tr>
 <tr class="memdesc:gab658e6d84759440dbf3c890446075395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug level enumeration.  <a href="group__debug.html#gab658e6d84759440dbf3c890446075395">More...</a><br/></td></tr>
@@ -165,6 +166,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga690f2acca275614c06c2e8afc55db18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga690f2acca275614c06c2e8afc55db18b">WBDebugDumpGC</a> (Display *pDisplay, GC hGC)</td></tr>
 <tr class="memdesc:ga690f2acca275614c06c2e8afc55db18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps a GC's settings  <a href="#ga690f2acca275614c06c2e8afc55db18b">More...</a><br/></td></tr>
 <tr class="separator:ga690f2acca275614c06c2e8afc55db18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87f581d644796a185b48611c5c8c163d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga87f581d644796a185b48611c5c8c163d">WBDebugDumpRegion</a> (Region hRgn, int bRotate)</td></tr>
+<tr class="memdesc:ga87f581d644796a185b48611c5c8c163d"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps contents of a region  <a href="#ga87f581d644796a185b48611c5c8c163d">More...</a><br/></td></tr>
+<tr class="separator:ga87f581d644796a185b48611c5c8c163d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa39191469018c352801b1178befdd5b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaa39191469018c352801b1178befdd5b2">WBDebugDumpEvent</a> (XEvent *pEvent)</td></tr>
 <tr class="memdesc:gaa39191469018c352801b1178befdd5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps the contents of an XEvent  <a href="#gaa39191469018c352801b1178befdd5b2">More...</a><br/></td></tr>
 <tr class="separator:gaa39191469018c352801b1178befdd5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,7 +248,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
  </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00655">655</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00677">677</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +297,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
  </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00628">628</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00650">650</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +342,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 </dl>
 <p>Preferred method of implementing an 'error level' binary dump for all subsystems </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00722">722</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00744">744</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +363,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>Preferred method of implementing an 'error level' debug message for all subsystems. </p>
 <p>Preferred method of implementing an 'error level' debug message for all subsystems </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00700">700</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00722">722</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +398,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <div class="line">}</div>
 </div><!-- fragment --> <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00681">681</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00703">703</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +443,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 </dl>
 <p>Preferred method of implementing a 'warning level' binary dump for all subsystems </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00711">711</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00733">733</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +464,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>Preferred method of implementing a 'warning level' debug message for all subsystems. </p>
 <p>Preferred method of implementing a 'warning level' debug message for all subsystems </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00693">693</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00715">715</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -564,12 +568,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr><td class="fieldname"><em><a class="anchor" id="gab658e6d84759440dbf3c890446075395af692ff7eba270cc2a3a7cce224f81047"></a>DebugSubSystem_Pixmap</em>&nbsp;</td><td class="fielddoc">
 <p>pixmap handling </p>
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gab658e6d84759440dbf3c890446075395ab8ce6d5213b0808ca71cd39214720380"></a>DebugSubSystem_Expose</em>&nbsp;</td><td class="fielddoc">
+<p>expose/paint handling </p>
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8"></a>DebugSubSystem_MASK</em>&nbsp;</td><td class="fielddoc">
 <p>mask for allowed 'subsystem' bits </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00733">733</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00755">755</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +623,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>Allows you to generate a custom 'binary data dump' in an easily readable hex/ASCII format, using the debug message output</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07858">7858</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08559">8559</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -644,7 +651,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>Debug function that dumps out all of the members of the XNextEvent. It assumes that the event is genuine; that is, the 'display' 'window' etc. are valid.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07942">7942</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08643">8643</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -683,7 +690,46 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>Debug function that dumps out all of the settings for a GC that can be retrieved using normal API functions.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07902">7902</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08603">8603</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga87f581d644796a185b48611c5c8c163d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBDebugDumpRegion </td>
+          <td>(</td>
+          <td class="paramtype">Region&#160;</td>
+          <td class="paramname"><em>hRgn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bRotate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dumps contents of a region </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hRgn</td><td>The region to dump </td></tr>
+    <tr><td class="paramname">bRotate</td><td>True if you want to rotate the output 90 degrees (useful for very WIDE regions)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Debug function that dumps out the contents of a region</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
+
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08712">8712</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -778,7 +824,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>Various 'debug print' macros need to know what the current debug level is in order to filter their output. This function provides a standard way in which to obtain the debug level. It is defined 'inline' to minimize any performance impact and to allow optimization.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00530">530</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l00540">540</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -801,7 +847,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>Pass the debug level as 'iLevel' 0 for none, 1 for minimal, 2 for more, etc. up to 7</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l07829">7829</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08530">8530</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -810,7 +856,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:46 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

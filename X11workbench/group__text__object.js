@@ -106,6 +106,7 @@ var group__text__object =
     [ "HARD_TAB_CHAR", "group__text__object.html#ga4825ca14c3c4b39203dc6530181587e3", null ],
     [ "MIN_BORDER_SPACING", "group__text__object.html#gaf15aafcb3f4c571182bbbd3173bcb01c", null ],
     [ "MIN_LINE_SPACING", "group__text__object.html#ga62718777d64cfa4175e4d1eb273a4d03", null ],
+    [ "TEXT_OBJECT_TAG", "group__text__object.html#gaece410745c1fa1a575dbc858f7aa93da", null ],
     [ "TEXT_BUFFER", "group__text__object.html#ga5833900dbf06c8ec0f32459f8d151df6", null ],
     [ "TEXT_OBJECT", "group__text__object.html#ga444a831dc1519c93326499ba16e24a4d", null ],
     [ "TEXT_OBJECT_VTABLE", "group__text__object.html#ga44726f48c6cbcc4ef5e670740db73a8d", null ],

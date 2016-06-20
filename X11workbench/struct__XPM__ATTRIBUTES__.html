@@ -94,10 +94,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compatibility structure for use with <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData()</a> whenever libXpm is not in use. </p>
-<p>This structure is a scaled-down version of the standard X11 structure 'XpmAttributes', and is defined ONLY when libXpm is not in use (that is, the configure script did not discover it). Only those structure members that are needed by this toolkit have been defined.<br/>
- For more information, see <a class="el" href="group__pixmap.html#gaeb0ff1d05c44f48e5ac2c73d073daa7a">XPM_ATTRIBUTES</a> and <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61">MyLoadPixmapFromData()</a> </p>
+<p>When libXpm is in use, XPM_ATTRIBUTES becomes a #define for XpmAttributes, the structure used by XpmCreatePixmapFromData(). Because so many elements are not needed, <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData()</a> uses this scaled-down version when libXpm is not available.</p>
+<p>When libXpm is NOT in use, the follow structure is defined:</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__XPM__ATTRIBUTES__.html" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">_XPM_ATTRIBUTES_</a></div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4" title="The width of the returned pixmaps.">width</a>;    <span class="comment">// The width of the returned pixmaps</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534" title="height of the returned pixmaps">height</a>;   <span class="comment">// height of the returned pixmaps</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5" title="depth of the returned &#39;image&#39; pixmap. The mask pixmap always has a depth of &#39;1&#39;.">depth</a>;    <span class="comment">// depth of the returned &#39;image&#39; pixmap.  The mask pixmap always has a depth of &#39;1&#39;.</span></div>
+<div class="line"></div>
+<div class="line">} <a class="code" href="group__pixmap.html#ga1bb15776f1bc24315c53197bacf5164a" title="Compatibility structure for use with MyLoadPixmapFromData() whenever libXpm is not in use...">XPM_ATTRIBUTES</a>;</div>
+</div><!-- fragment --><p>When libXpm IS in use, the following macro is defined:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#define XPM_ATTRIBUTES XpmAttributes</span></div>
+</div><!-- fragment --><p>This structure is a scaled-down version of the standard X11 structure 'XpmAttributes', and is defined ONLY when libXpm is not in use (that is, the configure script did not discover it). Only those structure members that are needed by this toolkit have been defined.<br/>
+ For more information, see <a class="el" href="group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61" title="Alternate for XpmCreatePixmapFromData() when libXpm is not present.">MyLoadPixmapFromData()</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00317">317</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8h_source.html#l00318">318</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="platform__helper_8h_source.html">platform_helper.h</a></li>
 </ul>
@@ -107,7 +118,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__XPM__ATTRIBUTES__.html">_XPM_ATTRIBUTES_</a></li>
-    <li class="footer">Generated on Mon Jun 6 2016 17:47:47 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -4,7 +4,7 @@ var dialog__window_8c =
     [ "LOAD_COLOR0", "dialog__window_8c.html#adaa7dab283c25528f228e1e938a30726", null ],
     [ "THIS_SUBSYSTEM", "dialog__window_8c.html#a4c86db9b4d20c25c379871767e1904f0", null ],
     [ "XK_MISCELLANY", "dialog__window_8c.html#aeab6a095afeed0b9e64e415c5a5c669a", null ],
-    [ "DIALOG_WINDOW", "dialog__window_8c.html#ae838d8ae014247c8f12baaed48ec617e", null ],
+    [ "DIALOG_WINDOW", "dialog__window_8c.html#gab8c73137f754b5662dd2d6dbf4e76245", null ],
     [ "x__BEGIN_DIALOG", "dialog__window_8c.html#a99fb83031ce9923c84392b4e92f956b5a793577a22a3a2b6b12843ab39e186b88", null ],
     [ "x__END_DIALOG", "dialog__window_8c.html#a99fb83031ce9923c84392b4e92f956b5a19031701821c1b4cdecefe55ef77c4bd", null ],
     [ "x__FONT", "dialog__window_8c.html#a99fb83031ce9923c84392b4e92f956b5a47339e61dec10342c1338921cf9a3e45", null ],

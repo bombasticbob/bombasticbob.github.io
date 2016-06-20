@@ -3,6 +3,7 @@ var dialog__impl_8c =
     [ "FILE_DIALOG_FILE_LIST_CONTROL", "dialog__impl_8c.html#aa56f9936d2035828c618eb71092c22b0", null ],
     [ "FILE_DIALOG_FILE_NAME_CONTROL", "dialog__impl_8c.html#ab4d38d5c633412281e84230a616cb4e6", null ],
     [ "FILE_DIALOG_PATH_TREE_CONTROL", "dialog__impl_8c.html#abf17b17d3d80000ec1440d8ea48fd93b", null ],
+    [ "GLEAM_WIDTH", "dialog__impl_8c.html#a50ac5abdddc81aea53dc0e91cbe14285", null ],
     [ "MESSAGE_BOX_HEIGHT", "dialog__impl_8c.html#ac29efc683aeb329c649a407a2254e52c", null ],
     [ "MESSAGE_BOX_OFFSET", "dialog__impl_8c.html#a45658d0e3e5f62700c83a77b4095c6ba", null ],
     [ "MESSAGE_BOX_WIDTH", "dialog__impl_8c.html#a327f29a2d6b389d0db1ba1a0ad33dff1", null ],
