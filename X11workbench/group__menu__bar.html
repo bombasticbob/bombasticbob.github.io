@@ -62,7 +62,8 @@ $(document).ready(function(){initNavTree('group__menu__bar.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Menu Bar window - functions and structures<div class="ingroups"><a class="el" href="group__frame.html">Frame Window API</a></div></div>  </div>
 </div><!--header-->
@@ -109,6 +110,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3d736bf29568c4bfd7b24d82b6f59585"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga3d736bf29568c4bfd7b24d82b6f59585">MBSetMenuBarMenu</a> (<a class="el" href="group__menu__bar.html#gac86fd88b3682aa50484ee18a114ad175">WBMenuBarWindow</a> *pMenuBar, <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu)</td></tr>
 <tr class="memdesc:ga3d736bf29568c4bfd7b24d82b6f59585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a new WBMenu for a Menu Bar window.  <a href="#ga3d736bf29568c4bfd7b24d82b6f59585">More...</a><br/></td></tr>
 <tr class="separator:ga3d736bf29568c4bfd7b24d82b6f59585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabea0f500adbe4ec3840f2478302eb5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gaabea0f500adbe4ec3840f2478302eb5d">MBSetMenuBarMenuResource</a> (<a class="el" href="group__menu__bar.html#gac86fd88b3682aa50484ee18a114ad175">WBMenuBarWindow</a> *pMenuBar, const char *pszMenuResource)</td></tr>
+<tr class="memdesc:gaabea0f500adbe4ec3840f2478302eb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a new WBMenu for a Menu Bar window.  <a href="#gaabea0f500adbe4ec3840f2478302eb5d">More...</a><br/></td></tr>
+<tr class="separator:gaabea0f500adbe4ec3840f2478302eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gadce3b4925bb98df9b162d4f638d9b887"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gadce3b4925bb98df9b162d4f638d9b887">aMENU_RESIZE</a></td></tr>
+<tr class="memdesc:gadce3b4925bb98df9b162d4f638d9b887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Client Message Atom for 'RESIZE' notification (tells menu bar to resize itself)  <a href="#gadce3b4925bb98df9b162d4f638d9b887">More...</a><br/></td></tr>
+<tr class="separator:gadce3b4925bb98df9b162d4f638d9b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga0eb78060999bc8a63cfb4f3c507fb834">aMENU_ACTIVATE</a></td></tr>
+<tr class="memdesc:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Client Message Atom for 'ACTIVATE' notification.  <a href="#ga0eb78060999bc8a63cfb4f3c507fb834">More...</a><br/></td></tr>
+<tr class="separator:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gad7fb3ec6362c7171da1bd4fc5ea2450a">aMENU_DISPLAY_POPUP</a></td></tr>
+<tr class="memdesc:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Client Message Atom for 'DISPLAY POPUP' action.  <a href="#gad7fb3ec6362c7171da1bd4fc5ea2450a">More...</a><br/></td></tr>
+<tr class="separator:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90382967048a5ac08616bf7f33792adf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga90382967048a5ac08616bf7f33792adf"></a>
 XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga90382967048a5ac08616bf7f33792adf">clrMenuFG</a></td></tr>
 <tr class="memdesc:ga90382967048a5ac08616bf7f33792adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu foreground color <br/></td></tr>
@@ -145,18 +161,6 @@ XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gr
 XColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga90af25d82149c8b2aa70deedf803f3e1">clrMenuActiveDisabledFG</a></td></tr>
 <tr class="memdesc:ga90af25d82149c8b2aa70deedf803f3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu 'disabled but active' foreground color <br/></td></tr>
 <tr class="separator:ga90af25d82149c8b2aa70deedf803f3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadce3b4925bb98df9b162d4f638d9b887"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadce3b4925bb98df9b162d4f638d9b887"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gadce3b4925bb98df9b162d4f638d9b887">aMENU_RESIZE</a></td></tr>
-<tr class="memdesc:gadce3b4925bb98df9b162d4f638d9b887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'RESIZE' client event. <br/></td></tr>
-<tr class="separator:gadce3b4925bb98df9b162d4f638d9b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad7fb3ec6362c7171da1bd4fc5ea2450a"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gad7fb3ec6362c7171da1bd4fc5ea2450a">aMENU_DISPLAY_POPUP</a></td></tr>
-<tr class="memdesc:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'DISPLAY POPUP' client event. <br/></td></tr>
-<tr class="separator:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0eb78060999bc8a63cfb4f3c507fb834"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga0eb78060999bc8a63cfb4f3c507fb834">aMENU_ACTIVATE</a></td></tr>
-<tr class="memdesc:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'ACTIVATE' client event. <br/></td></tr>
-<tr class="separator:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Structures and API functions for managing and working with menu bar windows. A menu bar is a window that contains one or more text menu items, usually displaying a popup menu whenever a text menu item is activated. The popup menu is displayed as needed (normally hidden).<br/>
@@ -239,7 +243,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to create a Menu Bar windows and its associated WBMenuBarWindow structure. You must call <a class="el" href="group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4" title="Destroy a &#39;Menu Bar&#39; window.">MBDestroyMenuBarWindow()</a> for any non-NULL return value.</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00252">252</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00303">303</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
 
 </div>
 </div>
@@ -268,7 +272,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to destroy a WBMenuBarWindow structure and the associated Menu Bar window, as created using WBCreateMenBarWindow()</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00428">428</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00470">470</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
 
 </div>
 </div>
@@ -297,7 +301,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to locate the first 'Menu Bar' window that is using a specific WBMenu structure</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00409">409</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00451">451</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
 
 </div>
 </div>
@@ -320,7 +324,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to obtain a pointer to the default 'Menu Bar' font structure</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00247">247</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00298">298</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
 
 </div>
 </div>
@@ -357,7 +361,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to safely obtain the current WBMenu for a specified Menu Bar window.</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8h_source.html#l00266">266</a> of file <a class="el" href="menu__bar_8h_source.html">menu_bar.h</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8h_source.html#l00267">267</a> of file <a class="el" href="menu__bar_8h_source.html">menu_bar.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +398,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to obtain the WBMenuBarWindow struct pointer for a 'Menu Bar' window.</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8h_source.html#l00188">188</a> of file <a class="el" href="menu__bar_8h_source.html">menu_bar.h</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8h_source.html#l00189">189</a> of file <a class="el" href="menu__bar_8h_source.html">menu_bar.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +421,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to initialize the 'Menu Bar' support.</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00129">129</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00175">175</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
 
 </div>
 </div>
@@ -446,7 +450,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to re-calculate the layout of a Menu Bar window. Typically this will be done as a result of a re-size on the owning window, or as a result of re-assigning a new WBMenu.</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00421">421</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00463">463</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
 
 </div>
 </div>
@@ -491,10 +495,107 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>previously assigned WBMenu</dd></dl>
-<p>Use this function to safely assign a new WBMenu to a Menu Bar window.</p>
+<p>Use this function to safely assign a new WBMenu to a Menu Bar window. This resource will be destroyed when the Menu Bar window is destroyed, so if you keep a cached copy and maintain it outside of the Menu Bar, be sure and assign a WBMenu of 'NULL' before destroying the menu bar.</p>
 <p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
 
-<p>Definition at line <a class="el" href="menu__bar_8h_source.html#l00287">287</a> of file <a class="el" href="menu__bar_8h_source.html">menu_bar.h</a>.</p>
+<p>Definition at line <a class="el" href="menu__bar_8h_source.html#l00290">290</a> of file <a class="el" href="menu__bar_8h_source.html">menu_bar.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaabea0f500adbe4ec3840f2478302eb5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MBSetMenuBarMenuResource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__menu__bar.html#gac86fd88b3682aa50484ee18a114ad175">WBMenuBarWindow</a> *&#160;</td>
+          <td class="paramname"><em>pMenuBar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszMenuResource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assign a new WBMenu for a Menu Bar window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMenuBar</td><td>A pointer to the WBMenuBarWindow structure associated with a Menu Bar window </td></tr>
+    <tr><td class="paramname">pszMenuResource</td><td>A pionter to a 'menu resource' (const) character string that will be used to replace the current menu</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Use this function to safely replace the menu resource for a Menu Bar window. The existing WBMenu will be destroyed. If you want to preserve the existing WBMenu, use <a class="el" href="group__menu__bar.html#ga3d736bf29568c4bfd7b24d82b6f59585" title="Assign a new WBMenu for a Menu Bar window.">MBSetMenuBarMenu()</a> instead, after constructing the replacement WBMenu from the resource.</p>
+<p>Header File: <a class="el" href="menu__bar_8h.html" title="Definition file for menu bar window structures and API functions.">menu_bar.h</a> </p>
+
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00489">489</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ga0eb78060999bc8a63cfb4f3c507fb834"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aMENU_ACTIVATE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal Client Message Atom for 'ACTIVATE' notification. </p>
+<p>Atom for 'ACTIVATE' client event.</p>
+<p>XClientMessageEvent members: window = menu bar window ID message_type = aMENU_ACTIVATE format = 32</p>
+<p>To activate a specific menu item: data.l[0] = (long) pointer to WBMenuItem (advisory only; 32-bit truncation) data.l[1] = the index for menu item</p>
+<p>To move to the previous or next menu item in the list: data.l[0] = 0 data.l[1] = 1 or -1; 1 moves 'next', -1 'previous'. others undefined. </p>
+
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00148">148</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad7fb3ec6362c7171da1bd4fc5ea2450a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aMENU_DISPLAY_POPUP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal Client Message Atom for 'DISPLAY POPUP' action. </p>
+<p>Atom for 'DISPLAY POPUP' client event.</p>
+<p>XClientMessageEvent members: window = menu bar window ID message_type = aMENU_DISPLAY_POPUP format = 32 data.l[0] = popup menu identifier data.l[1] = X coordinate for popup 'left' side data.l[2] = X coordinate for popup 'right' side (left side plus text extent) </p>
+
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00163">163</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadce3b4925bb98df9b162d4f638d9b887"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aMENU_RESIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal Client Message Atom for 'RESIZE' notification (tells menu bar to resize itself) </p>
+<p>Atom for 'RESIZE' client event.</p>
+<p>XCLientMessageEvent members: window = menu bar window ID message_type = aMENU_RESIZE format = 32</p>
+<p>(no data members) </p>
+
+<p>Definition at line <a class="el" href="menu__bar_8c_source.html#l00128">128</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
 
 </div>
 </div>
@@ -503,7 +604,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

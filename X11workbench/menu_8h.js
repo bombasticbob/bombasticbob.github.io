@@ -1,9 +1,12 @@
 var menu_8h =
 [
+    [ "WBMENU_DYNAMIC_HIGH_BIT", "menu_8h.html#gab44db5d5d421803fa6a04d4019ff28cf", null ],
     [ "WBMENU_POPUP_HIGH_BIT", "menu_8h.html#ga789ce61d76d2e8f8255210cc915577e7", null ],
     [ "WBMENU_POPUP_MASK", "menu_8h.html#gaa6a71fec90db85a5246b1f973ccba163", null ],
     [ "WBMENU_RESERVE_DEFAULT", "menu_8h.html#ga9f0180efa72232c0547a7d489bad40a1", null ],
     [ "WBMENU_SEPARATOR", "menu_8h.html#ga04aed99a89eae4695c9fe534d7896bc1", null ],
+    [ "WBMENU_TAG", "menu_8h.html#a209c6e39176a271f787d3b7a8f24ea0a", null ],
+    [ "WBMENUITEM_TAG", "menu_8h.html#adfe95d67b7e3d7e9a3994876741220a2", null ],
     [ "WBMenu", "menu_8h.html#gaa8011ffb36b608b2fc1c74372ee7a759", null ],
     [ "WBMenuItem", "menu_8h.html#ga6e4ffa6e5616302be7bbf961388d40f4", null ],
     [ "MBAddMenuItem", "menu_8h.html#gafbc231c300917a9d36eaa222f1614823", null ],
@@ -14,6 +17,8 @@ var menu_8h =
     [ "MBDestroyMenu", "menu_8h.html#ga3fa651757859fd2a4f2940935edada84", null ],
     [ "MBDestroyMenuItem", "menu_8h.html#ga8521ca9e318811d811e1b107a8c3bcce", null ],
     [ "MBFindPopupMenu", "menu_8h.html#ga2819a159c3084a9729b0ecf879f60870", null ],
+    [ "MBIsMenuItemValid", "menu_8h.html#gaa05b432c0074446ae12cbb06708592b2", null ],
+    [ "MBIsMenuValid", "menu_8h.html#ga41a8c143ed28cc1a63089d04a6cd8db9", null ],
     [ "MBMenuIsPopup", "menu_8h.html#ga8760438ac31188bac506659b28fecc33", null ],
     [ "MBMenuProcessHotKey", "menu_8h.html#ga9abd89ca1ddde3b72752e1a4c99f6b7f", null ],
     [ "MBRemoveMenuItem", "menu_8h.html#gae33f4d3b3630ffca3fa17cecd46d2e0b", null ],

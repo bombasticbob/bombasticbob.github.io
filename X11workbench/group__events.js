@@ -8,6 +8,7 @@ var group__events =
     [ "WBEndModal", "group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351", null ],
     [ "WBEventName", "group__events.html#ga64cd93bb3d9b9ed06f787c7a1ee7df7f", null ],
     [ "WBGetLastEventTime", "group__events.html#ga3f7502f7a233be633097abdefeb3db21", null ],
+    [ "WBMouseCancel", "group__events.html#ga1f2b00666adc4ae2587894bcd3ae8d7f", null ],
     [ "WBNextEvent", "group__events.html#gaded67a2919c5cb862d512803fbcf21b5", null ],
     [ "WBPostAppEvent", "group__events.html#ga7db44fa0c4785345f944167a066209d3", null ],
     [ "WBPostDelayedEvent", "group__events.html#gae58733a08aa8a56986313c090d56fa9c", null ],

@@ -108,9 +108,9 @@ Macros</h2></td></tr>
 <tr class="memitem:adc71b26dd2805a6002cf1de8c3a32582"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc71b26dd2805a6002cf1de8c3a32582"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MENU_FONT_SIZE</b>&#160;&#160;&#160;13</td></tr>
 <tr class="separator:adc71b26dd2805a6002cf1de8c3a32582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16338d0a87c8ce47570e30a485500e6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16338d0a87c8ce47570e30a485500e6e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEBUG_TEST</b>(X)&#160;&#160;&#160;if(!(X)) { <a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(&quot;%s:%d - %s\n&quot;, __FUNCTION__, __LINE__, &quot;WARNING - &quot; #X &quot; failed!\n&quot;); }</td></tr>
-<tr class="separator:a16338d0a87c8ce47570e30a485500e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcde85bd7b6fbbbd694f518a7e6e457f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcde85bd7b6fbbbd694f518a7e6e457f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEBUG_VALIDATE</b>(X)&#160;&#160;&#160;if(!(X)) { <a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(&quot;%s:%d - %s\n&quot;, __FUNCTION__, __LINE__, &quot;WARNING - &quot; #X &quot; failed!\n&quot;); }</td></tr>
+<tr class="separator:afcde85bd7b6fbbbd694f518a7e6e457f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b54ca275d4d228b63c0bab30424630"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b54ca275d4d228b63c0bab30424630"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR</b>(X, Y, Z)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &lt;= 0){ <a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(&quot;%s - WARNING:  can't find color %s, using default value %s\n&quot;, __FUNCTION__, X, Z); strcpy(Y,Z); }</td></tr>
 <tr class="separator:a61b54ca275d4d228b63c0bab30424630"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +147,9 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>__FindMenuBarWi
 <tr class="memitem:ga339efd0b3c2e3e09af5251e22241a2a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4">MBDestroyMenuBarWindow</a> (<a class="el" href="group__menu__bar.html#gac86fd88b3682aa50484ee18a114ad175">WBMenuBarWindow</a> *pMenuBar)</td></tr>
 <tr class="memdesc:ga339efd0b3c2e3e09af5251e22241a2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a 'Menu Bar' window.  <a href="group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4">More...</a><br/></td></tr>
 <tr class="separator:ga339efd0b3c2e3e09af5251e22241a2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabea0f500adbe4ec3840f2478302eb5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gaabea0f500adbe4ec3840f2478302eb5d">MBSetMenuBarMenuResource</a> (<a class="el" href="group__menu__bar.html#gac86fd88b3682aa50484ee18a114ad175">WBMenuBarWindow</a> *pMenuBar, const char *pszResource)</td></tr>
+<tr class="memdesc:gaabea0f500adbe4ec3840f2478302eb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a new WBMenu for a Menu Bar window.  <a href="group__menu__bar.html#gaabea0f500adbe4ec3840f2478302eb5d">More...</a><br/></td></tr>
+<tr class="separator:gaabea0f500adbe4ec3840f2478302eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055ddd49ef21cec1f8f2009d763542f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a055ddd49ef21cec1f8f2009d763542f6"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>MBMenuHandleMenuItem</b> (Display *pDisplay, <a class="el" href="group__menu__bar.html#gac86fd88b3682aa50484ee18a114ad175">WBMenuBarWindow</a> *pSelf, <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pItem)</td></tr>
 <tr class="separator:a055ddd49ef21cec1f8f2009d763542f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,18 +198,15 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>iInitColorFlag<
 <tr class="memitem:aa1014362318ab178dd459542ebaae0c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1014362318ab178dd459542ebaae0c7"></a>
 static XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><b>pDefaultMenuFont</b> = NULL</td></tr>
 <tr class="separator:aa1014362318ab178dd459542ebaae0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce3b4925bb98df9b162d4f638d9b887"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adce3b4925bb98df9b162d4f638d9b887"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__bar_8c.html#adce3b4925bb98df9b162d4f638d9b887">aMENU_RESIZE</a> = 0</td></tr>
-<tr class="memdesc:adce3b4925bb98df9b162d4f638d9b887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'RESIZE' client event. <br/></td></tr>
-<tr class="separator:adce3b4925bb98df9b162d4f638d9b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb78060999bc8a63cfb4f3c507fb834"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0eb78060999bc8a63cfb4f3c507fb834"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__bar_8c.html#a0eb78060999bc8a63cfb4f3c507fb834">aMENU_ACTIVATE</a> = 0</td></tr>
-<tr class="memdesc:a0eb78060999bc8a63cfb4f3c507fb834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'ACTIVATE' client event. <br/></td></tr>
-<tr class="separator:a0eb78060999bc8a63cfb4f3c507fb834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7fb3ec6362c7171da1bd4fc5ea2450a"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__bar_8c.html#ad7fb3ec6362c7171da1bd4fc5ea2450a">aMENU_DISPLAY_POPUP</a> = 0</td></tr>
-<tr class="memdesc:ad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atom for 'DISPLAY POPUP' client event. <br/></td></tr>
-<tr class="separator:ad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadce3b4925bb98df9b162d4f638d9b887"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gadce3b4925bb98df9b162d4f638d9b887">aMENU_RESIZE</a></td></tr>
+<tr class="memdesc:gadce3b4925bb98df9b162d4f638d9b887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Client Message Atom for 'RESIZE' notification (tells menu bar to resize itself)  <a href="group__menu__bar.html#gadce3b4925bb98df9b162d4f638d9b887">More...</a><br/></td></tr>
+<tr class="separator:gadce3b4925bb98df9b162d4f638d9b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#ga0eb78060999bc8a63cfb4f3c507fb834">aMENU_ACTIVATE</a></td></tr>
+<tr class="memdesc:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Client Message Atom for 'ACTIVATE' notification.  <a href="group__menu__bar.html#ga0eb78060999bc8a63cfb4f3c507fb834">More...</a><br/></td></tr>
+<tr class="separator:ga0eb78060999bc8a63cfb4f3c507fb834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu__bar.html#gad7fb3ec6362c7171da1bd4fc5ea2450a">aMENU_DISPLAY_POPUP</a></td></tr>
+<tr class="memdesc:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Client Message Atom for 'DISPLAY POPUP' action.  <a href="group__menu__bar.html#gad7fb3ec6362c7171da1bd4fc5ea2450a">More...</a><br/></td></tr>
+<tr class="separator:gad7fb3ec6362c7171da1bd4fc5ea2450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation file for menu bar windows. </p>
@@ -219,7 +219,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="menu__bar_8c.html">menu_bar.c</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

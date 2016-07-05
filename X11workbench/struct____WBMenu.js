@@ -6,5 +6,6 @@ var struct____WBMenu =
     [ "nMaxPopups", "struct____WBMenu.html#a6f97d99954ffe66592d514cd8f57ed50", null ],
     [ "nPopups", "struct____WBMenu.html#ae15309f5e39a6efbc70fe8d9b8222535", null ],
     [ "ppItems", "struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c", null ],
-    [ "ppPopups", "struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff", null ]
+    [ "ppPopups", "struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff", null ],
+    [ "uiTag", "struct____WBMenu.html#a9242290baf4201fe01c6b88b162a2fb0", null ]
 ];

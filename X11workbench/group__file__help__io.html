@@ -133,7 +133,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a 'Directory List' object, or NULL on error</dd></dl>
 <p>Use this function to list a directory by creating a 'Directory List' object and then subsequently passing it to 'WBNextDirectoryEntry' to obtain information about each entry in the directory. This function does NOT return '.' or '..' as valid file names.<br/>
- The pointer returned by this function must be destroyed using <a class="el" href="group__file__help__io.html#gafcb8dd0803743cc8ce74b491bf19c769">WBDestroyDirectoryList()</a><br/>
+</p>
+<p>The pointer returned by this function must be destroyed using <a class="el" href="group__file__help__io.html#gafcb8dd0803743cc8ce74b491bf19c769">WBDestroyDirectoryList()</a><br/>
 </p>
 <p>NOTE: you may not specify a wildcard within a directory name unless it is the the specification for the file name that you are searching for within its parent directory. The directory name must also exist or the function will return a NULL (error). If the specified path name ends in a '/' the file spec will be assumed to be '*'. </p>
 
@@ -189,8 +190,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A malloc'd buffer containing the canonical path, or NULL on error.</dd></dl>
-<p>Use this function to determine the canonical name for a specified path. If the path does not exist, those elements of the path that DO exist will be resolved, and the remaining parts of the name will be added to form the canonical path. If an element of the specified directory name is NOT actually a directory (or a symlink to a directory), the function will return NULL indicating an error. </p>
+<dl class="section return"><dt>Returns</dt><dd>A WBAlloc'd buffer containing the canonical path, or NULL on error.</dd></dl>
+<p>Use this function to determine the canonical name for a specified path. If the path does not exist, those elements of the path that DO exist will be resolved, and the remaining parts of the name will be added to form the canonical path. If an element of the specified directory name is NOT actually a directory (or a symlink to a directory), the function will return NULL indicating an error.</p>
+<p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a> </p>
 
 <p>Definition at line <a class="el" href="file__help_8c_source.html#l00660">660</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
@@ -212,7 +214,7 @@ Functions</h2></td></tr>
 
 <p>Return allocated string containing the current working directory. </p>
 <dl class="section return"><dt>Returns</dt><dd>valid pointer or NULL on error</dd></dl>
-<p>A convenience function that wraps the 'getcwd()' API and returns a 'malloc'd pointer to a string </p>
+<p>A convenience function that wraps the 'getcwd()' API and returns a 'WBAlloc'd pointer to a string. The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a> </p>
 
 <p>Definition at line <a class="el" href="file__help_8c_source.html#l00603">603</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
@@ -250,8 +252,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd buffer containing the fully qualified file name as an ASCII string.</dd></dl>
-<p>Use this function to get a canonical file name for a file within a directory listing. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd buffer containing the fully qualified file name as an ASCII string.</dd></dl>
+<p>Use this function to get a canonical file name for a file within a directory listing.</p>
+<p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a> </p>
 
 <p>Definition at line <a class="el" href="file__help_8c_source.html#l01348">1348</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
@@ -335,8 +338,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd buffer containing the unmodified link target path as an ASCII string</dd></dl>
-<p>Use this function to retrieve a symbolic link's target file name with respect to a 'Directory List' object (for relative paths). The link target is unmodified, and may be a relative path. For a canonical equivalent, use <a class="el" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion)">WBGetCanonicalPath()</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd buffer containing the unmodified link target path as an ASCII string</dd></dl>
+<p>Use this function to retrieve a symbolic link's target file name with respect to a 'Directory List' object (for relative paths). The link target is unmodified, and may be a relative path. For a canonical equivalent, use <a class="el" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion)">WBGetCanonicalPath()</a></p>
+<p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a> </p>
 
 <p>Definition at line <a class="el" href="file__help_8c_source.html#l01414">1414</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
@@ -363,8 +367,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd buffer containing the link target path as an ASCII string (unaltered)</dd></dl>
-<p>Use this function to retrieve a symbolic link's target file name. May be a relative path. For a canonical equivalent, use <a class="el" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion)">WBGetCanonicalPath()</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd buffer containing the link target path as an ASCII string (unaltered)</dd></dl>
+<p>Use this function to retrieve a symbolic link's target file name. May be a relative path. For a canonical equivalent, use <a class="el" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion)">WBGetCanonicalPath()</a></p>
+<p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a> </p>
 
 <p>Definition at line <a class="el" href="file__help_8c_source.html#l01395">1395</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
@@ -534,7 +539,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -15,12 +15,5 @@ var draw__text_8c =
     [ "DTPreRender", "draw__text_8c.html#gab2a6008375cb90a9c61ddf0b97002407", null ],
     [ "DTRender", "draw__text_8c.html#ga0eec4d84392b9beedbef1be27bcd22ba", null ],
     [ "InternalCalcIdealBounds", "draw__text_8c.html#gae5f101f0a67ceb151d658b01c66efc26", null ],
-    [ "InternalDebugDumpWords", "draw__text_8c.html#a2191cf9865900ba9fb7b22c93bb291b9", null ],
-    [ "WBCatString", "draw__text_8c.html#ga3cd9dc296e11519265f83431edcad082", null ],
-    [ "WBCatStringN", "draw__text_8c.html#ga4af5e6852bf30948fc71dc9ee4432ce6", null ],
-    [ "WBCopyString", "draw__text_8c.html#ga01c938dde1b777421803b3e31c4717aa", null ],
-    [ "WBCopyStringN", "draw__text_8c.html#ga892d4fcc14f538f9c2e2475bce9c1279", null ],
-    [ "WBDeQuoteString", "draw__text_8c.html#ga970cc5651dadf44ab9335c64ef67283b", null ],
-    [ "WBStringLineCount", "draw__text_8c.html#ga11ada3ca2b715b8d12a9237ff5b8edcb", null ],
-    [ "WBStringNextLine", "draw__text_8c.html#gacbabd0b058670415d5c851858e9f6784", null ]
+    [ "InternalDebugDumpWords", "draw__text_8c.html#a2191cf9865900ba9fb7b22c93bb291b9", null ]
 ];

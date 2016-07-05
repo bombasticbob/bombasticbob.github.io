@@ -253,102 +253,102 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>'vtable' structure for TEXT_OBJECT </p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__vtable__.html" title="&#39;vtable&#39; structure for TEXT_OBJECT">_text_object_vtable_</a></div>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__vtable__.html" title="&#39;vtable&#39; structure for TEXT_OBJECT ">_text_object_vtable_</a></div>
 <div class="line">{</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a2fb22f286811008ff3c343bedc870ba0" title="Call this prior to de-allocating memory to free up any internal objects or storage.">destroy</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a714cc74d3897b2d022afa7834edcef00" title="Call this to initialize or re-initialize an object. Must call &#39;destroy&#39; first for an existing object...">init</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a2fb22f286811008ff3c343bedc870ba0" title="Call this prior to de-allocating memory to free up any internal objects or storage.">destroy</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a714cc74d3897b2d022afa7834edcef00" title="Call this to initialize or re-initialize an object. Must call &#39;destroy&#39; first for an existing object...">init</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a443c4dac3bed9bc2223cec7d747804d3" title="Call this to assign the highlight colors. Default colors are GC&#39;s BG and FG.">highlight_colors</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, XColor <a class="code" href="struct__text__object__.html#a8ef53d03edb4519ef96166a599cc5471" title="highlight FG color">clrHFG</a>, XColor <a class="code" href="struct__text__object__.html#afbb76e6ad6c0d940a7fce363f8008fa6" title="highlight BG color">clrHBG</a>);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a443c4dac3bed9bc2223cec7d747804d3" title="Call this to assign the highlight colors. Default colors are GC&#39;s BG and FG.">highlight_colors</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, XColor <a class="code" href="struct__text__object__.html#a8ef53d03edb4519ef96166a599cc5471" title="highlight FG color">clrHFG</a>, XColor <a class="code" href="struct__text__object__.html#afbb76e6ad6c0d940a7fce363f8008fa6" title="highlight BG color">clrHBG</a>);</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">char</span> * (* get_text)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ab2ff66231974c0a2f308bb972135a4e7" title="Call this function to re-assign all text in the control.">set_text</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <span class="keywordtype">char</span> *szText, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cbLen);</div>
+<div class="line">  <span class="keywordtype">char</span> * (* get_text)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ab2ff66231974c0a2f308bb972135a4e7" title="Call this function to re-assign all text in the control.">set_text</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keyword">const</span> <span class="keywordtype">char</span> *szText, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cbLen);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a1456e48fd3cd69e47458cac7a5c5aa7f" title="Call this function to obtain the total number of rows for display purposes.">get_rows</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#aa5e6e3fe3a89258349f243826f9d607c" title="Call this function to obtain the estimated column extent of the document.">get_cols</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a1456e48fd3cd69e47458cac7a5c5aa7f" title="Call this function to obtain the total number of rows for display purposes.">get_rows</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#aa5e6e3fe3a89258349f243826f9d607c" title="Call this function to obtain the estimated column extent of the document.">get_cols</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#ad2bd0e4649d467b5cecac29f3d92504d" title="Get the current linefeed type for the object.">get_filetype</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a6742fe78c62e7a94db582b4b5bf2d525" title="Set the current file type for the object.">set_filetype</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#aac4ae59152ec703a75a9bea60f98b42f" title="linefeed type (see enum). LineFeed_NONE implies SINGLE LINE">iLineFeed</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#ad2bd0e4649d467b5cecac29f3d92504d" title="Get the current linefeed type for the object.">get_filetype</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a6742fe78c62e7a94db582b4b5bf2d525" title="Set the current file type for the object.">set_filetype</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#aac4ae59152ec703a75a9bea60f98b42f" title="linefeed type (see enum). LineFeed_NONE implies SINGLE LINE">iLineFeed</a>);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a5e969ba09863f7e1c4752c923259bd25" title="Get the current linefeed type for the object.">get_linefeed</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a013e87fc827507913e1511ac3eb74732" title="Set the current linefeed type for the object.">set_linefeed</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#aac4ae59152ec703a75a9bea60f98b42f" title="linefeed type (see enum). LineFeed_NONE implies SINGLE LINE">iLineFeed</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a5e969ba09863f7e1c4752c923259bd25" title="Get the current linefeed type for the object.">get_linefeed</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a013e87fc827507913e1511ac3eb74732" title="Set the current linefeed type for the object.">set_linefeed</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#aac4ae59152ec703a75a9bea60f98b42f" title="linefeed type (see enum). LineFeed_NONE implies SINGLE LINE">iLineFeed</a>);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#abd25dc8a3d3c58144099f90e21c29dfb" title="Get the current insert mode for the object.">get_insmode</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a66eb97e2c14e2d709a43e53373f0c960" title="Set the current insert mode for the object.">set_insmode</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#afdbc13156212b35cb825a303336e6162" title="insert mode - 0=overwrite, 1=insert">iInsMode</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#abd25dc8a3d3c58144099f90e21c29dfb" title="Get the current insert mode for the object.">get_insmode</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a66eb97e2c14e2d709a43e53373f0c960" title="Set the current insert mode for the object.">set_insmode</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#afdbc13156212b35cb825a303336e6162" title="insert mode - 0=overwrite, 1=insert">iInsMode</a>);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a559f73f1bee45ebb06b5d789ffcffedc" title="Get the current selection mode for the object.">get_selmode</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad687ee16cdacb066348368647941a7ed" title="Set the current selection mode for the object.">set_selmode</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a8256ccdc367d57d944793dd59e8d24bb" title="selection mode - 0=normal, 1=line, 2=box">iSelMode</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a559f73f1bee45ebb06b5d789ffcffedc" title="Get the current selection mode for the object.">get_selmode</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad687ee16cdacb066348368647941a7ed" title="Set the current selection mode for the object.">set_selmode</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a8256ccdc367d57d944793dd59e8d24bb" title="selection mode - 0=normal, 1=line, 2=box">iSelMode</a>);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a3794015c7e98926d0988ad8d4abb2c0e" title="Get the current tab type for the object.">get_tab</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a006f26d775a9411fb5d8557aa5727052" title="Set the current tab type for the object.">set_tab</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a760c7fcee56dbbf2730283e37700c480" title="tab width in characters (0 = system default)">iTab</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a3794015c7e98926d0988ad8d4abb2c0e" title="Get the current tab type for the object.">get_tab</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a006f26d775a9411fb5d8557aa5727052" title="Set the current tab type for the object.">set_tab</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a760c7fcee56dbbf2730283e37700c480" title="tab width in characters (0 = system default)">iTab</a>);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a535ddd98db34379815658a6f1d0fcf64" title="Get the current scroll mode for the object.">get_scrollmode</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9ba6800d2c906cfaa1ddf8b157ae8be8" title="Set the current scroll mode for the object.">set_scrollmode</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a32b54760de261f88914c291c13aed559" title="scroll mode - 0=normal, 1=&#39;scroll lock&#39;">iScrollMode</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a535ddd98db34379815658a6f1d0fcf64" title="Get the current scroll mode for the object.">get_scrollmode</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9ba6800d2c906cfaa1ddf8b157ae8be8" title="Set the current scroll mode for the object.">set_scrollmode</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a32b54760de261f88914c291c13aed559" title="scroll mode - 0=normal, 1=&#39;scroll lock&#39;">iScrollMode</a>);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a843ddc0bf60069bc9b4cab7f7bad1446" title="Get the current selection rectangle as WB_RECT.">get_select</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aaebe6798ade450589bdecceb374c372f" title="Set the current selection rectangle as WB_RECT.">set_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#aa254521505cd2c51b353c3ddb76e9a66" title="Returns a non-zero value if there is currently a &#39;selection&#39;.">has_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a843ddc0bf60069bc9b4cab7f7bad1446" title="Get the current selection rectangle as WB_RECT.">get_select</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aaebe6798ade450589bdecceb374c372f" title="Set the current selection rectangle as WB_RECT.">set_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#aa254521505cd2c51b353c3ddb76e9a66" title="Returns a non-zero value if there is currently a &#39;selection&#39;.">has_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">char</span>* (* get_sel_text)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
+<div class="line">  <span class="keywordtype">char</span>* (* get_sel_text)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a119aa196b01a4f4ec75c4a76b550115f" title="Get the current row cursor for the object.">get_row</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ac3c7f8fd47c995aa85b463cb9bf390a8" title="Set the current row cursor for the object.">set_row</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a431c133f885a93bf46af818cc5cad82e" title="current row (cursor)">iRow</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a119aa196b01a4f4ec75c4a76b550115f" title="Get the current row cursor for the object.">get_row</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ac3c7f8fd47c995aa85b463cb9bf390a8" title="Set the current row cursor for the object.">set_row</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a431c133f885a93bf46af818cc5cad82e" title="current row (cursor)">iRow</a>);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a6d7370f866324f06314c5a4be031548b" title="Get the current column cursor for the object.">get_col</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a184c927a06f92c05ba4dc0b0a5f835b0" title="Set the current column cursor for the object.">set_col</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a45704caa26eec073e116c7f544047e5e" title="current col (cursor)">iCol</a>);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a6d7370f866324f06314c5a4be031548b" title="Get the current column cursor for the object.">get_col</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a184c927a06f92c05ba4dc0b0a5f835b0" title="Set the current column cursor for the object.">set_col</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a45704caa26eec073e116c7f544047e5e" title="current col (cursor)">iCol</a>);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a920218ed888e252ed4fff53a5d735262" title="Delete the current selection assigned via &#39;set_select&#39;.">del_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a387f4354d1145419fe9a7baf53a953e9" title="Replace the current selection assigned via &#39;set_select&#39; with new text.">replace_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <span class="keywordtype">char</span> *szText, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cbLen);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a920218ed888e252ed4fff53a5d735262" title="Delete the current selection assigned via &#39;set_select&#39;.">del_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a387f4354d1145419fe9a7baf53a953e9" title="Replace the current selection assigned via &#39;set_select&#39; with new text.">replace_select</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keyword">const</span> <span class="keywordtype">char</span> *szText, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cbLen);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad73f486a3af7f89b14615ec964ed44e4" title="Delete &#39;n&#39; characters from the current cursor. Negative deletes BEFORE the cursor. &#39;newline&#39; counts as 1 character.">del_chars</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> nChar);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae38ee712f4bf23864ffc8d5982ec68d5" title="Insert &#39;n&#39; characters (including new lines) from the current cursor.">ins_chars</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <span class="keywordtype">char</span> *pChar, <span class="keywordtype">int</span> nChar);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad73f486a3af7f89b14615ec964ed44e4" title="Delete &#39;n&#39; characters from the current cursor. Negative deletes BEFORE the cursor. &#39;newline&#39; counts as 1 character.">del_chars</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> nChar);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae38ee712f4bf23864ffc8d5982ec68d5" title="Insert &#39;n&#39; characters (including new lines) from the current cursor.">ins_chars</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keyword">const</span> <span class="keywordtype">char</span> *pChar, <span class="keywordtype">int</span> nChar);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a0dcc0f139ab4e795bf7f9264df0d3546" title="Indent selected text by &#39;n&#39; columns.">indent</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> nCol);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a0dcc0f139ab4e795bf7f9264df0d3546" title="Indent selected text by &#39;n&#39; columns.">indent</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> nCol);</div>
 <div class="line"></div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a465ba5963ebda051a9c9602a8cc8c32a" title="Indicate whether an &#39;undo&#39; operation is possible (mostly for menu UI)">can_undo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9704b400577ef50d3f89e01afec63a30" title="Perform a single &#39;undo&#39; operation.">undo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#ae49018424ae41a09dbd4f449a9d9f860" title="Indicate whether a &#39;redo&#39; operation is possible (mostly for menu UI)">can_redo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ab5afd8f1c750307122d505cabdc87616" title="Perform a single &#39;redo&#39; operation.">redo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#a465ba5963ebda051a9c9602a8cc8c32a" title="Indicate whether an &#39;undo&#39; operation is possible (mostly for menu UI)">can_undo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9704b400577ef50d3f89e01afec63a30" title="Perform a single &#39;undo&#39; operation.">undo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  int (* <a class="code" href="struct__text__object__vtable__.html#ae49018424ae41a09dbd4f449a9d9f860" title="Indicate whether a &#39;redo&#39; operation is possible (mostly for menu UI)">can_redo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ab5afd8f1c750307122d505cabdc87616" title="Perform a single &#39;redo&#39; operation.">redo</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a74d6ed3d4ab361e703a88454e9dbc102" title="Get the current viewport (in characters). The return value is not relevant if the expose method has n...">get_view</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a39dfe60fc24619dd1c1ae766e5a0d6c0" title="Set the current viewport (in characters). Only &#39;left&#39; and &#39;top&#39; are relevant if the expose method has...">set_view</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a74d6ed3d4ab361e703a88454e9dbc102" title="Get the current viewport (in characters). The return value is not relevant if the expose method has n...">get_view</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a39dfe60fc24619dd1c1ae766e5a0d6c0" title="Set the current viewport (in characters). Only &#39;left&#39; and &#39;top&#39; are relevant if the expose method has...">set_view</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keyword">const</span> <a class="code" href="struct__WBRect__.html" title="internal wrapper struct for &#39;rectangle&#39; definition ">WB_RECT</a> *pRct);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9a2c626038ad5814001485d66cd45f93" title="Begin a highlight block.">begin_highlight</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae36da8a9fc3354ae133d269f76ee2274" title="End a highlight block.">end_highlight</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9a2c626038ad5814001485d66cd45f93" title="Begin a highlight block.">begin_highlight</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae36da8a9fc3354ae133d269f76ee2274" title="End a highlight block.">end_highlight</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// mouse conversion</span></div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a83edb3b3711a3aa4db4315c8c1c0e74b" title="Translate mouse cursor position into actual row/column. This function is irrelevant if the expose met...">mouse_click</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> iMouseXDelta, <span class="keywordtype">int</span> iMouseYDelta, <span class="keywordtype">int</span> iType, <span class="keywordtype">int</span> iACS);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a6d8712c3baad30f15a4cc3a42702793f" title="Begin a mouse &#39;drag&#39; operation.">begin_mouse_drag</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a83edb3b3711a3aa4db4315c8c1c0e74b" title="Translate mouse cursor position into actual row/column. This function is irrelevant if the expose met...">mouse_click</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> iMouseXDelta, <span class="keywordtype">int</span> iMouseYDelta, <span class="keywordtype">int</span> iType, <span class="keywordtype">int</span> iACS);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a6d8712c3baad30f15a4cc3a42702793f" title="Begin a mouse &#39;drag&#39; operation.">begin_mouse_drag</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// cursor motion</span></div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a6c13b819f430f83386978434140e5d2a" title="Move the current cursor position up one line.">cursor_up</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a54ec49ecb1ed3d5c46431f500a60fce3" title="Move the current cursor position down one line.">cursor_down</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae75d5ad7d261529eff4ccdf10a8971e4" title="Move the current cursor position left one column.">cursor_left</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aea81e3e71bd57c85ec99f1c8d26bc55c" title="Move the current cursor position right one column.">cursor_right</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a6c13b819f430f83386978434140e5d2a" title="Move the current cursor position up one line.">cursor_up</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a54ec49ecb1ed3d5c46431f500a60fce3" title="Move the current cursor position down one line.">cursor_down</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae75d5ad7d261529eff4ccdf10a8971e4" title="Move the current cursor position left one column.">cursor_left</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aea81e3e71bd57c85ec99f1c8d26bc55c" title="Move the current cursor position right one column.">cursor_right</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a49a68639f55044d0beec1c0969fe8f4c" title="Move the current cursor position up one page.">page_up</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aae2aa39434750c41327f0383ff5973a8" title="Move the current cursor position down one page.">page_down</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a687daee8061c57eccb25e876826ad5a7" title="Move the current cursor position left one page.">page_left</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad7cc773122871d7fd6fb1271b0cfbd00" title="Move the current cursor position right one page.">page_right</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a49a68639f55044d0beec1c0969fe8f4c" title="Move the current cursor position up one page.">page_up</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aae2aa39434750c41327f0383ff5973a8" title="Move the current cursor position down one page.">page_down</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a687daee8061c57eccb25e876826ad5a7" title="Move the current cursor position left one page.">page_left</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad7cc773122871d7fd6fb1271b0cfbd00" title="Move the current cursor position right one page.">page_right</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad65c80884826628ab66153ce8129385c" title="Move the cursor &#39;home&#39; (left or BOL)">cursor_home</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aaa161024ba4af0b77405db47a8f94030" title="Move the cursor to &#39;end&#39; (full doc width or EOL)">cursor_end</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae5d1f188088515710625bc4e1fee3382" title="Move the cursor to the top line.">cursor_top</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad28cf552c4c03bab0dc7b6d483521889" title="Move the cursor to the last line.">cursor_bottom</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad65c80884826628ab66153ce8129385c" title="Move the cursor &#39;home&#39; (left or BOL)">cursor_home</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#aaa161024ba4af0b77405db47a8f94030" title="Move the cursor to &#39;end&#39; (full doc width or EOL)">cursor_end</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ae5d1f188088515710625bc4e1fee3382" title="Move the cursor to the top line.">cursor_top</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#ad28cf552c4c03bab0dc7b6d483521889" title="Move the cursor to the last line.">cursor_bottom</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis);</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// handling expose events for the text area</span></div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a879a069fddf9b9f6fd8b1ab71cf1e62c" title="Member function to properly render the text in a window (Expose event)">do_expose</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, Display *pDisplay, Window wID,</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a879a069fddf9b9f6fd8b1ab71cf1e62c" title="Member function to properly render the text in a window (Expose event)">do_expose</a>)(<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, Display *pDisplay, Window wID,</div>
 <div class="line">                   GC gc, <span class="keyword">const</span> <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pPaintGeom, <span class="keyword">const</span> <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pViewGeom,</div>
 <div class="line">                   XFontSet rFontSet);</div>
 <div class="line"></div>
-<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a655fff134d9f6213027d788e80027505" title="Periodic callback to &#39;blink&#39; the cursor.">cursor_blink</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a> *pThis, <span class="keywordtype">int</span> bHasFocus);</div>
+<div class="line">  void (* <a class="code" href="struct__text__object__vtable__.html#a655fff134d9f6213027d788e80027505" title="Periodic callback to &#39;blink&#39; the cursor.">cursor_blink</a>)(<span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a> *pThis, <span class="keywordtype">int</span> bHasFocus);</div>
 <div class="line"></div>
-<div class="line">} <a class="code" href="group__text__object.html#ga44726f48c6cbcc4ef5e670740db73a8d" title="&#39;vtable&#39; structure for TEXT_OBJECT">TEXT_OBJECT_VTABLE</a>;</div>
+<div class="line">} <a class="code" href="group__text__object.html#ga47fb27d1f2a968b64a65476649b52f36" title="&#39;vtable&#39; structure for TEXT_OBJECT">TEXT_OBJECT_VTABLE</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00259">259</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00265">265</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a9a2c626038ad5814001485d66cd45f93"></a>
 <div class="memitem">
@@ -371,7 +371,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>This function is essentially a UI helper for cursor select. When a cursor keystroke should cause a highlight to occur, call this function to start a highlight block. The current cursor will become the anchor, and subsequent cursor motion will extend the highlight block. A <a class="el" href="struct__text__object__vtable__.html#a9a2c626038ad5814001485d66cd45f93" title="Begin a highlight block.">begin_highlight()</a> will effectively do an <a class="el" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag()</a> but will not clear the current selection. It is safe to call this function multiple times while selecting with cursor keys from the keyboard; hence, a 'shift' cursor should call this every time to avoid state flag checks. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00578">578</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00600">600</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ Data Fields</h2></td></tr>
 </dl>
 <p>This function is essentially a UI helper for mouse drag-select. Call this function in response to a WB_POINTER_DRAG notification, then call <a class="el" href="struct__text__object__vtable__.html#a83edb3b3711a3aa4db4315c8c1c0e74b" title="Translate mouse cursor position into actual row/column. This function is irrelevant if the expose met...">mouse_click()</a> with the WB_POINTER_MOVE notifications. When the WB_POINTER_DROP notification arrives, call <a class="el" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag()</a> to complete the operation. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00616">616</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00638">638</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating whether 'undo' is possible. A non-zero value is 'TRUE', zero 'FALSE. </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00541">541</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00562">562</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating whether 'undo' is possible. A non-zero value is 'TRUE', zero 'FALSE. </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00531">531</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00550">550</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +464,7 @@ Data Fields</h2></td></tr>
 </dl>
 <p>This function will alter the 'blink' state of the cursor, generating Expose events as needed to re-paint it within the window. An owning window should call this function using the time period specified by the system settings, but ONLY AFTER at least one 'do_expose' call. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00728">728</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00759">759</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00677">677</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00708">708</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00635">635</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00658">658</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +530,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00669">669</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00698">698</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00665">665</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00693">693</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -574,7 +574,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00639">639</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00663">663</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00643">643</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00668">668</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00673">673</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00703">703</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +640,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00631">631</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00653">653</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00500">500</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00518">518</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +687,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00486">486</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00503">503</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +710,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00265">265</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00271">271</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -746,7 +746,7 @@ Data Fields</h2></td></tr>
 </p>
 <p>TODO: a 'context text color' callback function that can be assigned either to the vtable, or as a function pointer, in which the default text color would be the GC foreground color. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00716">716</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00747">747</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -771,7 +771,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>This function is essentially a UI helper for cursor select. Normally a keystroke that is NOT a cursor motion will automatically end the highlighting. Calling this function does not affect the highlighted area. It is safe to call this function at any time, whether highlighting is taking place or not. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00588">588</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00610">610</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +794,7 @@ Data Fields</h2></td></tr>
 </dl>
 <p>This function is essentially a UI helper for mouse drag-select. It is safe to call this function at any time, whether highlighting is taking place or not. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00624">624</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00646">646</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +817,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current column (independent of hard tabs or end of line) </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00470">470</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00486">486</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +842,7 @@ Data Fields</h2></td></tr>
 <p>This function returns the estimated column count, the maximum extent of any line within the text object. While editing, if the column count of a single line exceeds the current 'maximum', a new maximum will be calculated in "tab widths". Periodically this value will be re-estimated as needed to accomodate changes to the text.<br/>
  NOTE: the pointer to the TEXT_OBJECT cannot be a 'const' in this case, since cached values may need to be re-evaluated as part of the process of obtaining the desired information. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00325">325</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00333">333</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current file type, one of the 'file type' definitions</dd></dl>
 <p>A file type of 0 is 'plain text'. A file type of '-1' is 'Makefile' and by default, preserves hard tabs. Other file types are defined as one of the 'file type' constants </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00334">334</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00342">342</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current insert mode </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00365">365</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00375">375</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -913,7 +913,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current 'linefeed' type for end of line</dd></dl>
 <p>iLineFeed values: 0 (single line) 1 (newline) 2 (return) 3 (crlf) 4 (lfcr) </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00351">351</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00360">360</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -936,7 +936,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current row </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00458">458</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00473">473</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -960,7 +960,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The total row count including the last row, even if it is blank. If the text is empty, the return value is zero</dd></dl>
 <p>This function returns the row count. If the final line is blank, the row count will still include it. The return value is intended to assist scrolling the viewable area, so a final blank line must still be counted. Single-line text always returns a 1 unless the text is empty. A zero is always returned whenever there is no text in the object. This allows you to detect an 'empty' text object. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00312">312</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00319">319</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +983,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current scroll mode </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00413">413</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00426">426</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1010,7 @@ Data Fields</h2></td></tr>
  If the select mode is 'block', individual lines will always end in &lt;LF&gt;, and tabs will expand to &lt;space&gt; characters except for the 'special case' noted below<br/>
  In the special case of *pRct == {0,0,0,0}, all of the text will be copied, regardless of the select mode, in a format consistent with saving the text as a file, using the assigned line ending. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00452">452</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00467">467</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1034,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00426">426</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00440">440</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1057,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current selection mode </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00377">377</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00388">388</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1083,7 @@ Data Fields</h2></td></tr>
  NOTE: Existing hard tabs within the text will be preserved even if a negative tab type is selected, so long as the white space covered by the tab is not modified.<br/>
  A tab type of zero uses the 'default' behavior for the application and file type. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00395">395</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00407">407</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1107,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A 'malloc'd pointer to the selected text.</dd></dl>
 <p>This function allocates a buffer, then copies all of the text to the buffer using the specified line endings and other information. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00287">287</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00294">294</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1132,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>The 'viewport' is the currently visible area (in characters). It is independent of the cursor's row and column. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00556">556</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00578">578</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1155,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero integer if the selection rectangle is valid and not empty, otherwise zero. </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00438">438</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00453">453</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1180,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00278">278</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00285">285</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1205,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>indents the selected text by 'n' columns. Indent starts at the cursor and continues for each line within the selected text. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00525">525</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00544">544</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1228,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00270">270</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00277">277</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1254,7 +1254,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>The behavior of multi-line insert depends upon the selection mode. If 'char' or 'line' mode is selected, a 'newline' inserts a new line following the newline character. "\r\n", "\r", "\n", and "\n\r" are all treated the same. Multiple LF and CR combinations that vary in order/construct may produce unexpected results. if 'box' mode is selected, each subsequent line will be inserted at the next line's 'col' position. Hard tabs will be evaluated during insertion and converted to white space. It is assumed that the length of each line in 'box' select mode will be identical, but if it is not, the results will follow the length of the actual text. If the 'box' select length exceeds the last line of the file, the additional lines will be added as if in 'line' mode. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00515">515</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00534">534</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1283,7 @@ Data Fields</h2></td></tr>
 <p>Call this function to process mouse clicks properly. It will cause the cursor to move, or a highlighted area to be extended, depending on the nature of the mouse click. Use <a class="el" href="struct__text__object__vtable__.html#a6d8712c3baad30f15a4cc3a42702793f" title="Begin a mouse &#39;drag&#39; operation.">begin_mouse_drag()</a> and <a class="el" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag()</a> to indicate if a mouse drag operation (highlight an area) is in progress.<br/>
  Mouse clicks automatically do an <a class="el" href="struct__text__object__vtable__.html#ae36da8a9fc3354ae133d269f76ee2274" title="End a highlight block.">end_highlight()</a> and clear the highlight area if a 'drag' is not in progress. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00606">606</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00628">628</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +1305,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00652">652</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00678">678</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1327,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00656">656</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00683">683</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1349,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00660">660</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00688">688</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1371,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00648">648</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00673">673</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1394,7 +1394,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00546">546</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00568">568</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1419,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00493">493</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00511">511</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1446,7 @@ Data Fields</h2></td></tr>
  Passing '-2' for the 'iCol' parameter will place the cursor at the end of the line, excluding any trailing white space.<br/>
  Passing any other negative value is the same as passing '0'. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00480">480</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00497">497</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1471,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>A file type of 0 is 'plain text'. A file type of '-1' is 'Makefile' and by default, preserves hard tabs. Other file types are defined as one of the 'file type' constants </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00343">343</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00352">352</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1495,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00371">371</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00382">382</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1520,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>iLineFeed values: 0 (single line) 1 (newline) 2 (return) 3 (crlf) 4 (lfcr) </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00359">359</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00369">369</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1544,7 +1544,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00464">464</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00480">480</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1562,13 +1562,13 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pThis</td><td>A pointer to the TEXT_OBJECT structure </td></tr>
-    <tr><td class="paramname">iSelMode</td><td>An integer indicating the new selection mode </td></tr>
+    <tr><td class="paramname">iScrollMode</td><td>An integer indicating the new scroll mode </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00419">419</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00433">433</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1592,7 +1592,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00432">432</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00447">447</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1616,7 +1616,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00383">383</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00395">395</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1643,7 +1643,7 @@ Data Fields</h2></td></tr>
  NOTE: Existing hard tabs within the text will be preserved even if a negative tab type is selected, so long as the white space covered by the tab is not modified.<br/>
  A tab type of zero uses the 'default' behavior for the application and file type. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00407">407</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00420">420</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1670,7 @@ Data Fields</h2></td></tr>
 <p>Typically this is called when a file is (re)loaded or when the 'caption' is changed for the control. Calling this function will perform a number of related functions, such as cursor positioning.<br/>
  You should manually force a re-draw of the control displaying the text. It will not happen automatically. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00300">300</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00307">307</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1695,7 +1695,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>The 'viewport' is the currently visible area (in characters). It is independent of the cursor's row and column. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00565">565</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00587">587</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1718,7 +1718,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00536">536</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00556">556</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1731,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__text__object__vtable__.html">_text_object_vtable_</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

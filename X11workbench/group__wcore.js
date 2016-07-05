@@ -1,5 +1,25 @@
 var group__wcore =
 [
+    [ "__EVENT_ENTRY__", "struct____EVENT__ENTRY____.html", [
+      [ "iNext", "struct____EVENT__ENTRY____.html#a7055b113747e55de4bbbf2e0acea4c9f", null ],
+      [ "padding", "struct____EVENT__ENTRY____.html#a7c8f82dda24c1283ff9652ba67f74549", null ],
+      [ "pDisplay", "struct____EVENT__ENTRY____.html#a0e5b4ba1b30f7c298b82d7592e78a8e3", null ],
+      [ "wID", "struct____EVENT__ENTRY____.html#ac1bf4c310535451938ef5b31b2b0c51b", null ],
+      [ "xEvt", "struct____EVENT__ENTRY____.html#a114f1556b111c3a4ef43127f40e05974", null ]
+    ] ],
+    [ "__TIMER_ENTRY__", "struct____TIMER__ENTRY____.html", [
+      [ "lID", "struct____TIMER__ENTRY____.html#a77b5a925deceabc1aa62e62c4bad6994", null ],
+      [ "lTimeIndex", "struct____TIMER__ENTRY____.html#aa08153fbc694812488e75be1021d9a88", null ],
+      [ "lTimeInterval", "struct____TIMER__ENTRY____.html#a1ad232a18e0e7456f5e4e851e0e65f10", null ],
+      [ "pDisplay", "struct____TIMER__ENTRY____.html#a0e5b4ba1b30f7c298b82d7592e78a8e3", null ],
+      [ "pNext", "struct____TIMER__ENTRY____.html#af8abe45df24f2a3272d00110da69f844", null ],
+      [ "wID", "struct____TIMER__ENTRY____.html#ac1bf4c310535451938ef5b31b2b0c51b", null ]
+    ] ],
+    [ "__DELAYED_EVENT_ENTRY__", "struct____DELAYED__EVENT__ENTRY____.html", [
+      [ "event", "struct____DELAYED__EVENT__ENTRY____.html#ad695247486d89834d82f80cea4f163dd", null ],
+      [ "lTimeIndex", "struct____DELAYED__EVENT__ENTRY____.html#aa08153fbc694812488e75be1021d9a88", null ],
+      [ "pNext", "struct____DELAYED__EVENT__ENTRY____.html#a30e091d789acbeae17db67510863ddba", null ]
+    ] ],
     [ "WB_KEYBOARD_INPUT_MASK", "group__wcore.html#ga686aaff005092ee3cde10c1967dddedb", null ],
     [ "WB_MOUSE_INPUT_MASK", "group__wcore.html#ga47804029d8dd10d0590dbea7cace452a", null ],
     [ "WB_STANDARD_INPUT_MASK", "group__wcore.html#gabf332a9e9be0d42e529b972eee8dd696", null ],
@@ -8,6 +28,9 @@ var group__wcore =
     [ "WBPointInGeom", "group__wcore.html#gacbf422a1a4a3db6ccac2b9213b3ae93d", null ],
     [ "WBPointInRect", "group__wcore.html#ga85fc7b30e4d22796448591954b3fc257", null ],
     [ "WBRectOverlapped", "group__wcore.html#gac63e4883a78e0a46f209f23294367d9d", null ],
+    [ "DELAYED_EVENT_ENTRY", "group__wcore.html#ga44fd462d402d3afa7d52a5df7c986bc3", null ],
+    [ "EVENT_ENTRY", "group__wcore.html#gab87e06659103cb899c8b6aea8e84ef8c", null ],
+    [ "TIMER_ENTRY", "group__wcore.html#ga64abeb023c491d85aa6d0cafd5cdffa3", null ],
     [ "WBLocateWindowCallback", "group__wcore.html#gadcb399e29e07d0122f00a111fc607577", null ],
     [ "WMPropertiesWindowType", "group__wcore.html#ga393c61affbc5766ce678224558be0b16", null ],
     [ "WMPropertiesWMProtocols", "group__wcore.html#ga720fc619923711fbdeb2191d4b094077", null ],

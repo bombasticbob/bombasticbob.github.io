@@ -140,10 +140,10 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____LISTINFO____.html#afbc77915ccefbcbd8fc8b27867a46c57" title="flags (sorted, etc.)">nFlags</a>;                         <span class="comment">// flags (sorted, etc.)</span></div>
 <div class="line">  Window <a class="code" href="struct____LISTINFO____.html#af2479329d50a78c07f034e58942003c1" title="owning window [to be notified on change]">wOwner</a>;                      <span class="comment">// owning window [to be notified on change]</span></div>
 <div class="line">  <span class="keywordtype">void</span> *(*pfnAllocator)(<span class="keyword">const</span> <span class="keywordtype">void</span> *, int); <span class="comment">// copy constructor to call for each item that&#39;s added</span></div>
-<div class="line">                                      <span class="comment">// typically this will call &#39;malloc&#39; followed by &#39;memcpy&#39;</span></div>
+<div class="line">                                      <span class="comment">// typically this will call &#39;WBAlloc&#39; followed by &#39;memcpy&#39;</span></div>
 <div class="line">                                      <span class="comment">// if NULL, the caller-supplied pointer is assigned to &#39;aItems&#39; as-is</span></div>
 <div class="line">  void (*<a class="code" href="struct____LISTINFO____.html#af1658b79f8e73b6d2348d9629c070682" title="destructor to call for each item that&#39;s removed">pfnDestructor</a>)(<span class="keywordtype">void</span> *);      <span class="comment">// destructor to call for each item that&#39;s removed</span></div>
-<div class="line">                                      <span class="comment">// typically this will point to &#39;free&#39;</span></div>
+<div class="line">                                      <span class="comment">// typically this will point to &#39;WBFree&#39;</span></div>
 <div class="line">                                      <span class="comment">// if NULL, the caller-supplied pointer is ignored</span></div>
 <div class="line"></div>
 <div class="line">  void (*<a class="code" href="struct____LISTINFO____.html#ab74186ce12ef0ab5a06e5c8a054e9d93" title="display callback function to paint the entry on the display surface">pfnDisplay</a>)(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control. ">WBDialogControl</a> *pControl, <span class="keywordtype">void</span> *pData, <span class="keywordtype">int</span> iSelected, GC gcPaint, <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pGeom);</div>
@@ -169,7 +169,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><div class="memdoc">
 
 <p>pointer to the copy constructor to call for each item that's added </p>
-<p>typically this will call 'malloc' followed by 'memcpy' to construct a new pointer<br/>
+<p>typically this will call 'WBAlloc' followed by 'memcpy' to construct a new pointer<br/>
  if this is NULL, the caller-supplied pointer is assigned to 'aItems' as-is </p>
 
 <p>Definition at line <a class="el" href="dialog__support_8h_source.html#l00122">122</a> of file <a class="el" href="dialog__support_8h_source.html">dialog_support.h</a>.</p>
@@ -187,7 +187,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><div class="memdoc">
 
 <p>destructor to call for each item that's removed </p>
-<p>typically this will point to 'free()'. if it is NULL, the caller-supplied pointer is ignored on cleanup </p>
+<p>typically this will point to '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>'. if it is NULL, the caller-supplied pointer is ignored on cleanup </p>
 
 <p>Definition at line <a class="el" href="dialog__support_8h_source.html#l00127">127</a> of file <a class="el" href="dialog__support_8h_source.html">dialog_support.h</a>.</p>
 
@@ -220,7 +220,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____LISTINFO____.html">__LISTINFO__</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

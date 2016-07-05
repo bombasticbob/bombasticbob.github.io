@@ -19,6 +19,8 @@ var menu_8c =
     [ "MBDestroyMenu", "menu_8c.html#ga3fa651757859fd2a4f2940935edada84", null ],
     [ "MBDestroyMenuItem", "menu_8c.html#ga8521ca9e318811d811e1b107a8c3bcce", null ],
     [ "MBFindPopupMenu", "menu_8c.html#ga2819a159c3084a9729b0ecf879f60870", null ],
+    [ "MBIsMenuItemValid", "menu_8c.html#gaa05b432c0074446ae12cbb06708592b2", null ],
+    [ "MBIsMenuValid", "menu_8c.html#ga41a8c143ed28cc1a63089d04a6cd8db9", null ],
     [ "MBMenuProcessHotKey", "menu_8c.html#ga9abd89ca1ddde3b72752e1a4c99f6b7f", null ],
     [ "MBRemoveMenuItem", "menu_8c.html#gae33f4d3b3630ffca3fa17cecd46d2e0b", null ],
     [ "MBRemovePopupMenu", "menu_8c.html#ga9d1262510d030d74d5cb9fb296481030", null ],

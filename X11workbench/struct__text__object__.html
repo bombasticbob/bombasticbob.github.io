@@ -80,7 +80,7 @@ $(document).ready(function(){initNavTree('struct__text__object__.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a0ee4145be39cb511f58e63bead7e3f56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ee4145be39cb511f58e63bead7e3f56"></a>
-const <a class="el" href="group__text__object.html#ga44726f48c6cbcc4ef5e670740db73a8d">TEXT_OBJECT_VTABLE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__.html#a0ee4145be39cb511f58e63bead7e3f56">vtable</a></td></tr>
+const <a class="el" href="group__text__object.html#ga47fb27d1f2a968b64a65476649b52f36">TEXT_OBJECT_VTABLE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__.html#a0ee4145be39cb511f58e63bead7e3f56">vtable</a></td></tr>
 <tr class="memdesc:a0ee4145be39cb511f58e63bead7e3f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">method function pointers (similar to C++ virtual member functions) <br/></td></tr>
 <tr class="separator:a0ee4145be39cb511f58e63bead7e3f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cad1622f4396ded0afaf6a8d8a5727a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cad1622f4396ded0afaf6a8d8a5727a"></a>
@@ -195,20 +195,12 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__.html#a355e83ad058b285ae34793636253d4bb">pRedo</a></td></tr>
 <tr class="memdesc:a355e83ad058b285ae34793636253d4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to 'redo' buffer. NULL if empty. <br/></td></tr>
 <tr class="separator:a355e83ad058b285ae34793636253d4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcdddd174fbc347ee5916159d71233f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcdddd174fbc347ee5916159d71233f2"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__.html#afcdddd174fbc347ee5916159d71233f2">pDesc</a></td></tr>
-<tr class="memdesc:afcdddd174fbc347ee5916159d71233f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">descriptive text (optional, owner-maintained) <br/></td></tr>
-<tr class="separator:afcdddd174fbc347ee5916159d71233f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de8eea2d4f75d7ce6525c58cb81ea8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5de8eea2d4f75d7ce6525c58cb81ea8c"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__.html#a5de8eea2d4f75d7ce6525c58cb81ea8c">pFileName</a></td></tr>
-<tr class="memdesc:a5de8eea2d4f75d7ce6525c58cb81ea8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename (optional, owner-maintained) <br/></td></tr>
-<tr class="separator:a5de8eea2d4f75d7ce6525c58cb81ea8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>'base class' structure for TEXT_OBJECT </p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT">_text_object_</a></div>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__text__object__.html" title="&#39;base class&#39; structure for TEXT_OBJECT ">_text_object_</a></div>
 <div class="line">{</div>
-<div class="line">  <span class="keyword">const</span> <a class="code" href="struct__text__object__vtable__.html" title="&#39;vtable&#39; structure for TEXT_OBJECT">TEXT_OBJECT_VTABLE</a> *<a class="code" href="struct__text__object__.html#a0ee4145be39cb511f58e63bead7e3f56" title="method function pointers (similar to C++ virtual member functions)">vtable</a>;  <span class="comment">// method function pointers (similar to C++ virtual members)</span></div>
+<div class="line">  <span class="keyword">const</span> <a class="code" href="struct__text__object__vtable__.html" title="&#39;vtable&#39; structure for TEXT_OBJECT ">TEXT_OBJECT_VTABLE</a> *<a class="code" href="struct__text__object__.html#a0ee4145be39cb511f58e63bead7e3f56" title="method function pointers (similar to C++ virtual member functions)">vtable</a>;  <span class="comment">// method function pointers (similar to C++ virtual members)</span></div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a9cad1622f4396ded0afaf6a8d8a5727a" title="tag word, always assigned to TEXT_OBJECT_TAG">ulTag</a>;        <span class="comment">// tag word, always assigned to TEXT_OBJECT_TAG</span></div>
 <div class="line">  Window <a class="code" href="struct__text__object__.html#a8ee54f42851c33959157c826f2847e83" title="owner window (cached from paint/expose handling and/or cursor blink)">wIDOwner</a>;           <span class="comment">// owner window (cached from paint/expose handling and/or cursor blink)</span></div>
@@ -237,9 +229,9 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a1474cbc280412d6e48a669b13d46652e" title="cursor blink state">iBlinkState</a>;           <span class="comment">// cursor blink state</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#ac00d2e93196930c2171eb9ee2dfa52c9" title="if &#39;1&#39; bit is set, cursor drag. if &#39;2&#39; bit is set, mouse drag">iDragState</a>;            <span class="comment">// if &#39;1&#39; bit is set, cursor drag.  if &#39;2&#39; bit is set, mouse drag</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a86241a6b92c4dfcff53ab3e6876cd857" title="font height ascension">iAsc</a>;                  <span class="comment">// font height ascension</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a0c77aca45d55dbeedcf0f02fa266d2d2" title="font height descension">iDesc</a>;                 <span class="comment">// font height descension</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#ac47c42052f16d55340ece84f121d13c8" title="width of font in pixels (fixed pitch) - assigned by &#39;expose&#39; handler">iFontWidth</a>;            <span class="comment">// width of font in pixels (fixed pitch) - assigned by &#39;expose&#39; handler</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a86241a6b92c4dfcff53ab3e6876cd857" title="font height ascension">iAsc</a>;                  <span class="comment">// font height ascension (cached)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#a0c77aca45d55dbeedcf0f02fa266d2d2" title="font height descension">iDesc</a>;                 <span class="comment">// font height descension (cached)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__text__object__.html#ac47c42052f16d55340ece84f121d13c8" title="width of font in pixels (fixed pitch) - assigned by &#39;expose&#39; handler">iFontWidth</a>;            <span class="comment">// width of font in pixels (fixed pitch) - cached by &#39;expose&#39; handler</span></div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// viewport</span></div>
 <div class="line"></div>
@@ -255,15 +247,9 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div class="line">  <span class="keywordtype">void</span> *<a class="code" href="struct__text__object__.html#a2a920e0de6468bc3189bdb73f6369826" title="pointer to &#39;undo&#39; buffer. NULL if empty.">pUndo</a>;               <span class="comment">// pointer to &#39;undo&#39; buffer.  NULL if empty.</span></div>
 <div class="line">  <span class="keywordtype">void</span> *<a class="code" href="struct__text__object__.html#a355e83ad058b285ae34793636253d4bb" title="pointer to &#39;redo&#39; buffer. NULL if empty.">pRedo</a>;               <span class="comment">// pointer to &#39;redo&#39; buffer.  NULL if empty.</span></div>
 <div class="line"></div>
-<div class="line"></div>
-<div class="line">  <span class="comment">// user-defined members - owner maintains these exclusively.  They should be</span></div>
-<div class="line">  <span class="comment">// pre-assigned to NULL by the owner, and are not re-initialized on destroy() or init()</span></div>
-<div class="line"></div>
-<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct__text__object__.html#afcdddd174fbc347ee5916159d71233f2" title="descriptive text (optional, owner-maintained)">pDesc</a>;               <span class="comment">// descriptive text (optional, owner-maintained)</span></div>
-<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct__text__object__.html#a5de8eea2d4f75d7ce6525c58cb81ea8c" title="filename (optional, owner-maintained)">pFileName</a>;           <span class="comment">// filename (optional, owner-maintained)</span></div>
-<div class="line">} <a class="code" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d" title="&#39;base class&#39; structure for TEXT_OBJECT">TEXT_OBJECT</a>;</div>
+<div class="line">} <a class="code" href="group__text__object.html#ga7953714ac52297d4eab55b7ea5f3dc7d" title="&#39;base class&#39; structure for TEXT_OBJECT">TEXT_OBJECT</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00812">812</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00846">846</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="text__object_8h_source.html">text_object.h</a></li>
 </ul>
@@ -273,7 +259,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__text__object__.html">_text_object_</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

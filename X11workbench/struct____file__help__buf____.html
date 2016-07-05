@@ -109,7 +109,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="separator:aa554ac4b7e21f28462750b92ad87add8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7175999d612098c350d12adb888840d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7175999d612098c350d12adb888840d"></a>
 char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d">ppLineBuf</a></td></tr>
-<tr class="memdesc:ac7175999d612098c350d12adb888840d"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of pointers to beginning of each line (malloc'd TODO: make it part of 'cData'?) <br/></td></tr>
+<tr class="memdesc:ac7175999d612098c350d12adb888840d"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of pointers to beginning of each line (WBAlloc'd TODO: make it part of 'cData'?) <br/></td></tr>
 <tr class="separator:ac7175999d612098c350d12adb888840d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fa9b91fa1975d59de84cf999f530924"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fa9b91fa1975d59de84cf999f530924"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924">cData</a> [sizeof(char *)]</td></tr>
@@ -128,7 +128,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>;                 <span class="comment">// number of lines in &#39;cData&#39; when ppLineBuf not NULL</span></div>
 <div class="line">  <span class="keywordtype">long</span> <a class="code" href="struct____file__help__buf____.html#ae2a560aa453934694159998937774996" title="size of memory block pointed to by &#39;ppLineBuf&#39;">lLineBufSize</a>;               <span class="comment">// size of memory block pointed to by &#39;ppLineBuf&#39;</span></div>
 <div class="line">  <span class="keywordtype">int</span>  <a class="code" href="struct____file__help__buf____.html#aa554ac4b7e21f28462750b92ad87add8" title="various bit flags">iFlags</a>;                     <span class="comment">// various bit flags</span></div>
-<div class="line">  <span class="keywordtype">char</span> **<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>;                <span class="comment">// array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)</span></div>
+<div class="line">  <span class="keywordtype">char</span> **<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>;                <span class="comment">// array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)</span></div>
 <div class="line">  <span class="keywordtype">char</span> <a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>[<span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *)];      <span class="comment">// the data itself (aligned to size of a pointer)</span></div>
 <div class="line">} <a class="code" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs">file_help_buf_t</a>;</div>
 </div><!-- fragment --><p>TODO: 'ppLineBuf' should point to an area within cData. If 'pNext' is valid, subsequent lines could be pointed to by the 'ppLineBuf' within the structure pointed to by 'pNext'. In this way line pointers can be re-structured without re-allocating memory. Additionally, there is no reason why lines must be contiguous, so inserting and removing lines can make use of the additional allocated space pointed to by 'pNext'.<br/>
@@ -144,7 +144,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____file__help__buf____.html">__file_help_buf__</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

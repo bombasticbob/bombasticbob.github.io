@@ -1,7 +1,7 @@
 var menu__bar_8c =
 [
     [ "BORDER", "menu__bar_8c.html#a6d0652ae6ea6a5c4fef68baf139fd085", null ],
-    [ "DEBUG_TEST", "menu__bar_8c.html#a16338d0a87c8ce47570e30a485500e6e", null ],
+    [ "DEBUG_VALIDATE", "menu__bar_8c.html#afcde85bd7b6fbbbd694f518a7e6e457f", null ],
     [ "LOAD_COLOR", "menu__bar_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
     [ "MENU_ALT_FONT", "menu__bar_8c.html#ae2f8506360aad9abe8fd8ad17585bd61", null ],
     [ "MENU_FONT", "menu__bar_8c.html#a04d46f28d25d5b97d577aa8ddc949fee", null ],
@@ -16,10 +16,11 @@ var menu__bar_8c =
     [ "MBMenuParentEvent", "menu__bar_8c.html#adae68bdab62bb6ebac6d467d70555e30", null ],
     [ "MBMenuWinEvent", "menu__bar_8c.html#a7ae4012050dca497506cbfde20d59863", null ],
     [ "MBReCalcMenuBarWindow", "menu__bar_8c.html#ga95dbee77c70d489a5ff8eac3718e89c9", null ],
+    [ "MBSetMenuBarMenuResource", "menu__bar_8c.html#gaabea0f500adbe4ec3840f2478302eb5d", null ],
     [ "MenuBarDoExposeEvent", "menu__bar_8c.html#a7db4b7a8ebb32490a0f5cc361c2e22b7", null ],
-    [ "aMENU_ACTIVATE", "menu__bar_8c.html#a0eb78060999bc8a63cfb4f3c507fb834", null ],
-    [ "aMENU_DISPLAY_POPUP", "menu__bar_8c.html#ad7fb3ec6362c7171da1bd4fc5ea2450a", null ],
-    [ "aMENU_RESIZE", "menu__bar_8c.html#adce3b4925bb98df9b162d4f638d9b887", null ],
+    [ "aMENU_ACTIVATE", "menu__bar_8c.html#ga0eb78060999bc8a63cfb4f3c507fb834", null ],
+    [ "aMENU_DISPLAY_POPUP", "menu__bar_8c.html#gad7fb3ec6362c7171da1bd4fc5ea2450a", null ],
+    [ "aMENU_RESIZE", "menu__bar_8c.html#gadce3b4925bb98df9b162d4f638d9b887", null ],
     [ "clrMenuActiveBG", "menu__bar_8c.html#ae66b9952c4021239d39c31dcd331d5bd", null ],
     [ "clrMenuActiveDisabledFG", "menu__bar_8c.html#a90af25d82149c8b2aa70deedf803f3e1", null ],
     [ "clrMenuActiveFG", "menu__bar_8c.html#ada41579200b04d23cae552c85b126d16", null ],

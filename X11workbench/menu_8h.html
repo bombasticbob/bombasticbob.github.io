@@ -67,6 +67,7 @@ $(document).ready(function(){initNavTree('menu_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -90,12 +91,20 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a209c6e39176a271f787d3b7a8f24ea0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a209c6e39176a271f787d3b7a8f24ea0a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WBMENU_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)&quot;WBMM&quot;))</td></tr>
+<tr class="separator:a209c6e39176a271f787d3b7a8f24ea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe95d67b7e3d7e9a3994876741220a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfe95d67b7e3d7e9a3994876741220a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WBMENUITEM_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)&quot;WBMI&quot;))</td></tr>
+<tr class="separator:adfe95d67b7e3d7e9a3994876741220a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ga9f0180efa72232c0547a7d489bad40a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9f0180efa72232c0547a7d489bad40a1">WBMENU_RESERVE_DEFAULT</a>&#160;&#160;&#160;(256 * sizeof(void *))</td></tr>
 <tr class="separator:ga9f0180efa72232c0547a7d489bad40a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga789ce61d76d2e8f8255210cc915577e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga789ce61d76d2e8f8255210cc915577e7">WBMENU_POPUP_HIGH_BIT</a>&#160;&#160;&#160;0x80000000</td></tr>
 <tr class="separator:ga789ce61d76d2e8f8255210cc915577e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6a71fec90db85a5246b1f973ccba163"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gaa6a71fec90db85a5246b1f973ccba163">WBMENU_POPUP_MASK</a>&#160;&#160;&#160;0x7fffffff</td></tr>
+<tr class="memitem:gab44db5d5d421803fa6a04d4019ff28cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gab44db5d5d421803fa6a04d4019ff28cf">WBMENU_DYNAMIC_HIGH_BIT</a>&#160;&#160;&#160;0x40000000</td></tr>
+<tr class="separator:gab44db5d5d421803fa6a04d4019ff28cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6a71fec90db85a5246b1f973ccba163"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gaa6a71fec90db85a5246b1f973ccba163">WBMENU_POPUP_MASK</a>&#160;&#160;&#160;0x3fffffff</td></tr>
 <tr class="separator:gaa6a71fec90db85a5246b1f973ccba163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04aed99a89eae4695c9fe534d7896bc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga04aed99a89eae4695c9fe534d7896bc1">WBMENU_SEPARATOR</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:ga04aed99a89eae4695c9fe534d7896bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,12 +129,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga94dfff2b4db5b2b42040562928a3b880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga94dfff2b4db5b2b42040562928a3b880">MBCopyMenu</a> (const <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, int iReserveSpace)</td></tr>
 <tr class="memdesc:ga94dfff2b4db5b2b42040562928a3b880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a copy of a WBMenu from an existing WBMenu.  <a href="group__menu.html#ga94dfff2b4db5b2b42040562928a3b880">More...</a><br/></td></tr>
 <tr class="separator:ga94dfff2b4db5b2b42040562928a3b880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41a8c143ed28cc1a63089d04a6cd8db9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga41a8c143ed28cc1a63089d04a6cd8db9">MBIsMenuValid</a> (const <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu)</td></tr>
+<tr class="memdesc:ga41a8c143ed28cc1a63089d04a6cd8db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a 'WBMenu' pointer is valid.  <a href="group__menu.html#ga41a8c143ed28cc1a63089d04a6cd8db9">More...</a><br/></td></tr>
+<tr class="separator:ga41a8c143ed28cc1a63089d04a6cd8db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae4ae91f9fbdc1475432289b7a72d06bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae4ae91f9fbdc1475432289b7a72d06bc">MBCreateMenuItem</a> (const char **ppszResource)</td></tr>
 <tr class="memdesc:gae4ae91f9fbdc1475432289b7a72d06bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a single allocated WBMenuItem structure from a text menu resource, advancing the source text pointer to the next menu item.  <a href="group__menu.html#gae4ae91f9fbdc1475432289b7a72d06bc">More...</a><br/></td></tr>
 <tr class="separator:gae4ae91f9fbdc1475432289b7a72d06bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8521ca9e318811d811e1b107a8c3bcce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga8521ca9e318811d811e1b107a8c3bcce">MBDestroyMenuItem</a> (<a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem)</td></tr>
 <tr class="memdesc:ga8521ca9e318811d811e1b107a8c3bcce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a WBMenuItem created by <a class="el" href="group__menu.html#gae4ae91f9fbdc1475432289b7a72d06bc" title="Create a single allocated WBMenuItem structure from a text menu resource, advancing the source text p...">MBCreateMenuItem()</a>, freeing up its resources.  <a href="group__menu.html#ga8521ca9e318811d811e1b107a8c3bcce">More...</a><br/></td></tr>
 <tr class="separator:ga8521ca9e318811d811e1b107a8c3bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa05b432c0074446ae12cbb06708592b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gaa05b432c0074446ae12cbb06708592b2">MBIsMenuItemValid</a> (const <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem)</td></tr>
+<tr class="memdesc:gaa05b432c0074446ae12cbb06708592b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a 'WBMenuItem' pointer is valid.  <a href="group__menu.html#gaa05b432c0074446ae12cbb06708592b2">More...</a><br/></td></tr>
+<tr class="separator:gaa05b432c0074446ae12cbb06708592b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbc231c300917a9d36eaa222f1614823"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gafbc231c300917a9d36eaa222f1614823">MBAddMenuItem</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, const <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem, int iPos)</td></tr>
 <tr class="memdesc:gafbc231c300917a9d36eaa222f1614823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a WBMenuItem menu item to an existing WBMenu.  <a href="group__menu.html#gafbc231c300917a9d36eaa222f1614823">More...</a><br/></td></tr>
 <tr class="separator:gafbc231c300917a9d36eaa222f1614823"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +174,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="menu_8h.html">menu.h</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

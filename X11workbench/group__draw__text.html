@@ -126,8 +126,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae5f101f0a67ceb151d658b01c66efc26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae5f101f0a67ceb151d658b01c66efc26"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIdealBounds</b> (XFontStruct *pFont, <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, int iTabWidth, unsigned int iTabOrigin, const <a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcSource, <a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcDest, int iAlignment, int iStartLine, int iEndLine)</td></tr>
+<tr class="memitem:gae5f101f0a67ceb151d658b01c66efc26"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gae5f101f0a67ceb151d658b01c66efc26">InternalCalcIdealBounds</a> (XFontStruct *pFont, <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, int iTabWidth, unsigned int iTabOrigin, const <a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcSource, <a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcDest, int iAlignment, int iStartLine, int iEndLine)</td></tr>
+<tr class="memdesc:gae5f101f0a67ceb151d658b01c66efc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate ideal bounds rectangle for text given a font, tab spacing, tab origin, and alignment  <a href="#gae5f101f0a67ceb151d658b01c66efc26">More...</a><br/></td></tr>
 <tr class="separator:gae5f101f0a67ceb151d658b01c66efc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab939f0546f74387edba83043440de77d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gab939f0546f74387edba83043440de77d">DTGetTextWidth</a> (XFontStruct *pFont, const char *szUTF8, int nLength)</td></tr>
 <tr class="memdesc:gab939f0546f74387edba83043440de77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextWidth equivalent for MBCS and UTF-8 strings.  <a href="#gab939f0546f74387edba83043440de77d">More...</a><br/></td></tr>
@@ -297,7 +297,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="draw__text_8h_source.html#l00241">241</a> of file <a class="el" href="draw__text_8h_source.html">draw_text.h</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8h_source.html#l00073">73</a> of file <a class="el" href="draw__text_8h_source.html">draw_text.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 <p>NOTE: tab width is negative for pixels, positive for avg char width, beginning at the left most position of the specified rectangle. Tab Origin is always in pixels using the absolute position (relative to the same origin as prcSource).</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00833">833</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00474">474</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 <p>sometimes you want to adjust text size to fit within a particular rectangle. This function determines how to do that by adjusting the font size.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00531">531</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00172">172</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 <p>NOTE: tabs begin at the 'left most' position, adjusted by 'iTabOrigin'.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01611">1611</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01252">1252</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -600,7 +600,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 <p>NOTE: tabs begin at the 'left most' text position, adjusted by 'iTabOrigin'.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01584">1584</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01225">1225</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -647,7 +647,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 <p>Use this function in lieu of XTextWidth for MBCS and UTF-8 strings.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00491">491</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00132">132</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -690,11 +690,11 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd pointer to a DT_WORDS structure (variable length). use 'free()' to de-allocate the memory block.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd pointer to a DT_WORDS structure (variable length). use '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>' to de-allocate the memory block.</dd></dl>
 <p>The 'DT_WORDS' structure is intended to be used to cache rendering information, particularly for a large block of text that may be calculation-expensive to re-render. Call '<a class="el" href="group__draw__text.html#gab2a6008375cb90a9c61ddf0b97002407" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display.">DTPreRender()</a>' and '<a class="el" href="group__draw__text.html#ga0eec4d84392b9beedbef1be27bcd22ba" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display.">DTRender()</a>' to manage rendering with the DT_WORDS structure.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00619">619</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00260">260</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -783,7 +783,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
  Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'infinite' display area by specifying a value of 0x7fffffffL for the 'right' and 'bottom' members. Then, you can use '<a class="el" href="group__draw__text.html#ga0eec4d84392b9beedbef1be27bcd22ba" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display.">DTRender()</a>' and specify 'iHScrollBy' and 'iVScrollBy' to modify the location of the 'viewport' area using scroll bars.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01798">1798</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01439">1439</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -878,7 +878,104 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 <p>This function will scan the DT_WORDS structure 'pWords', and using the other parameters, render the text within the 'prcBounds' rectangle on the specified Drawable.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on.">draw_text.h</a> </p>
 
-<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01852">1852</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l01493">1493</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae5f101f0a67ceb151d658b01c66efc26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int InternalCalcIdealBounds </td>
+          <td>(</td>
+          <td class="paramtype">XFontStruct *&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *&#160;</td>
+          <td class="paramname"><em>pWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTabWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>iTabOrigin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
+          <td class="paramname"><em>prcSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
+          <td class="paramname"><em>prcDest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iAlignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStartLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iEndLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>calculate ideal bounds rectangle for text given a font, tab spacing, tab origin, and alignment </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct (NULL implies system default font) </td></tr>
+    <tr><td class="paramname">pWords</td><td>The DT_WORDS structure for the text (this function modifies <a class="el" href="struct____DT__WORD____.html#aa46fd71a7485fa548df5fd9356167814" title="Relative &#39;X&#39; pixel position for the beginning of this element (when pre-rendered, else -1)...">DT_WORD::iX</a>, <a class="el" href="struct____DT__WORD____.html#a40c1eea16ed01cb492c2faf0eeb8a6e7" title="Relative &#39;Y&#39; pixel position for the beginning of this element (when pre-rendered, else -1)...">DT_WORD::iY</a>) </td></tr>
+    <tr><td class="paramname">iTabWidth</td><td>A positive integer in 'characters', or negative integer in pixels, indicating tab width </td></tr>
+    <tr><td class="paramname">iTabOrigin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
+    <tr><td class="paramname">prcSource</td><td>A pointer to the 'source' bounding rectangle in which the text is intended to fit </td></tr>
+    <tr><td class="paramname">prcDest</td><td>A pointer to the 'destination' bounding rectangle, based on the actual text size </td></tr>
+    <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags </td></tr>
+    <tr><td class="paramname">iStartLine</td><td>The starting line for which to calculate ideal bounds (0-based) </td></tr>
+    <tr><td class="paramname">iEndLine</td><td>The ending line for which to calculate ideal bounds (0-based). A value of -1 implies "all lines" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>zero if the text will fit within prcSource, -1 error, or 1 to indicate that prcDest is larger than prcSource</dd></dl>
+<p>Internal utility to calculate the bounding rectangle for formatted multi-line text, including word wrap, tab aligment, and multiple line feeds. The pre-parsed 'DT_WORDS' contains the text, and 'prcSource' indicates the desired bounding rectangle. This function is CURRENTLY for internal use only, but this may change as code requirements develop</p>
+<p>This function is used internally and should not be invoked. It is declared 'static' and not visible outside of the file it's defined in. </p>
+
+<p>Definition at line <a class="el" href="draw__text_8c_source.html#l00583">583</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -887,7 +984,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCalcIde
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

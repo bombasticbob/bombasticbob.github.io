@@ -23,6 +23,7 @@ var group__menu__bar =
     [ "MBInitGlobal", "group__menu__bar.html#ga9fb073faa3c0e7053b27a35991512df0", null ],
     [ "MBReCalcMenuBarWindow", "group__menu__bar.html#ga95dbee77c70d489a5ff8eac3718e89c9", null ],
     [ "MBSetMenuBarMenu", "group__menu__bar.html#ga3d736bf29568c4bfd7b24d82b6f59585", null ],
+    [ "MBSetMenuBarMenuResource", "group__menu__bar.html#gaabea0f500adbe4ec3840f2478302eb5d", null ],
     [ "aMENU_ACTIVATE", "group__menu__bar.html#ga0eb78060999bc8a63cfb4f3c507fb834", null ],
     [ "aMENU_DISPLAY_POPUP", "group__menu__bar.html#gad7fb3ec6362c7171da1bd4fc5ea2450a", null ],
     [ "aMENU_RESIZE", "group__menu__bar.html#gadce3b4925bb98df9b162d4f638d9b887", null ],

@@ -93,14 +93,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a list of printer names. </p>
-<dl class="section return"><dt>Returns</dt><dd>a 'malloc'd pointer to a list of zero-byte terminated strings containing the printer names, ending with 2 zero-bytes</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a> pointer to a list of zero-byte terminated strings containing the printer names, ending with 2 zero-bytes</dd></dl>
 <p>Use this function to get a list of printer names that can be used with <a class="el" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687" title="Send postscript file to a printer (using lpr-cups or lpr on POSIX systems)">WBPrintPostScriptFile()</a>. On POSIX systems, it will be information from '/usr/local/etc/printcap' or '/etc/printcap'. When CUPS is installed, the '/usr/local/etc/printcap' or '/etc/printcap' file is maintained by CUPS. On non-POSIX systems, this function generates a system-dependent list of printers, which might consist of port names, or actual printer names, or a combination thereof.<br/>
  NOTE: for IPP see RFC2911 section 4.4 and other related RFCs to request printer info. 'ipptest' may help resolve how to make these things work.<br/>
  NOTE 2: for CUPS, use 'lpstat -s' and filter the output to get the printer names. URL should be <a href="http://localhost:631/printers/printername">http://localhost:631/printers/printername</a><br/>
  NOTE 3: fallback to /etc/printcap /usr/local/etc/printcap and other sources</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02703">2703</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l03942">3942</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -146,7 +146,7 @@ Functions</h2></td></tr>
  example: ipptool -4 -t <a href="http://localhost:631/printers/printername">http://localhost:631/printers/printername</a> get-printer-attributes.test</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02690">2690</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l03919">3919</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

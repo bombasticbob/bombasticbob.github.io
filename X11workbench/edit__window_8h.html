@@ -67,8 +67,10 @@ $(document).ready(function(){initNavTree('edit__window_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">edit_window.h File Reference</div>  </div>
 </div><!--header-->
@@ -88,6 +90,13 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure that defines an Edit Window.  <a href="struct____WBEditWindow____.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga512b80efd2e8ade6ac6a95b1e90a5a25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga512b80efd2e8ade6ac6a95b1e90a5a25"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga512b80efd2e8ade6ac6a95b1e90a5a25">EDIT_WINDOW_TAG</a>&#160;&#160;&#160;(*((const unsigned int * const)&quot;FWEW&quot;))</td></tr>
+<tr class="memdesc:ga512b80efd2e8ade6ac6a95b1e90a5a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG for the WBEditWindow structure. <br/></td></tr>
+<tr class="separator:ga512b80efd2e8ade6ac6a95b1e90a5a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gab0739851c618da43225f6cfac53c0ac2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____WBEditWindow____.html">__WBEditWindow__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a></td></tr>
@@ -105,6 +114,30 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5948fc6822c873c0918420b63c237878"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878">WBEditWindowFromWindowID</a> (Window wID)</td></tr>
 <tr class="memdesc:ga5948fc6822c873c0918420b63c237878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the associated WBEditWindow structure pointer for a Window ID.  <a href="group__edit__window.html#ga5948fc6822c873c0918420b63c237878">More...</a><br/></td></tr>
 <tr class="separator:ga5948fc6822c873c0918420b63c237878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabceafd985439f4260d6752a5e7a9eb56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gabceafd985439f4260d6752a5e7a9eb56">WBEditWindowLoadFile</a> (<a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a> *pEditWindow, const char *pszFileName)</td></tr>
+<tr class="memdesc:gabceafd985439f4260d6752a5e7a9eb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an existing file and read its contents into the Edit Window, storing the file name for later reference.  <a href="group__edit__window.html#gabceafd985439f4260d6752a5e7a9eb56">More...</a><br/></td></tr>
+<tr class="separator:gabceafd985439f4260d6752a5e7a9eb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3653130304f49cc03e77b1f0608678c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gaa3653130304f49cc03e77b1f0608678c">WBEditWindowSaveFile</a> (<a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a> *pEditWindow, const char *pszFileName)</td></tr>
+<tr class="memdesc:gaa3653130304f49cc03e77b1f0608678c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the contents from the Edit Window to a file, overwriting the file if it already exists.  <a href="group__edit__window.html#gaa3653130304f49cc03e77b1f0608678c">More...</a><br/></td></tr>
+<tr class="separator:gaa3653130304f49cc03e77b1f0608678c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeeb1cee912a31bdf59a31de2b7e3b9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gaaeeb1cee912a31bdf59a31de2b7e3b9b">WBEditWindowClear</a> (<a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a> *pEditWindow)</td></tr>
+<tr class="memdesc:gaaeeb1cee912a31bdf59a31de2b7e3b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the contents in the Edit Window, and NULL the stored file name.  <a href="group__edit__window.html#gaaeeb1cee912a31bdf59a31de2b7e3b9b">More...</a><br/></td></tr>
+<tr class="separator:gaaeeb1cee912a31bdf59a31de2b7e3b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacda2be9036ff90cd17819b5100b3f173"><td class="memItemLeft" align="right" valign="top">static __inline int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gacda2be9036ff90cd17819b5100b3f173">WBIsValidEditWindow</a> (<a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a> *pEditWindow)</td></tr>
+<tr class="memdesc:gacda2be9036ff90cd17819b5100b3f173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for valid WBEditWindow pointer.  <a href="group__edit__window.html#gacda2be9036ff90cd17819b5100b3f173">More...</a><br/></td></tr>
+<tr class="separator:gacda2be9036ff90cd17819b5100b3f173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2d1055807ccbbb9697f77ff386005a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gaa2d1055807ccbbb9697f77ff386005a6">WBEditWindowRegisterCallback</a> (<a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a> *pEditWindow, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback)</td></tr>
+<tr class="memdesc:gaa2d1055807ccbbb9697f77ff386005a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the contents in the Edit Window, and NULL the stored file name.  <a href="group__edit__window.html#gaa2d1055807ccbbb9697f77ff386005a6">More...</a><br/></td></tr>
+<tr class="separator:gaa2d1055807ccbbb9697f77ff386005a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga47f1b36bb51955a5dfba02f7bd84502f"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#ga47f1b36bb51955a5dfba02f7bd84502f">aEW_HOVER_NOTIFY</a></td></tr>
+<tr class="memdesc:ga47f1b36bb51955a5dfba02f7bd84502f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hover notification to user-callback, sent via ClientMessage event.  <a href="group__edit__window.html#ga47f1b36bb51955a5dfba02f7bd84502f">More...</a><br/></td></tr>
+<tr class="separator:ga47f1b36bb51955a5dfba02f7bd84502f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd56c142c336ac6edeca40467b1ebcfc"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gafd56c142c336ac6edeca40467b1ebcfc">aEW_EDIT_CHANGE</a></td></tr>
+<tr class="memdesc:gafd56c142c336ac6edeca40467b1ebcfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Edit Change' notification to user-callback, sent via ClientMessage event  <a href="group__edit__window.html#gafd56c142c336ac6edeca40467b1ebcfc">More...</a><br/></td></tr>
+<tr class="separator:gafd56c142c336ac6edeca40467b1ebcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Edit Window API functions. </p>
@@ -118,7 +151,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="edit__window_8h.html">edit_window.h</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

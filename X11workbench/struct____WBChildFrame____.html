@@ -85,7 +85,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a9cad1622f4396ded0afaf6a8d8a5727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1bf4c310535451938ef5b31b2b0c51b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1bf4c310535451938ef5b31b2b0c51b"></a>
 Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#ac1bf4c310535451938ef5b31b2b0c51b">wID</a></td></tr>
-<tr class="memdesc:ac1bf4c310535451938ef5b31b2b0c51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">window identifier for the 'Child Frame' window <br/></td></tr>
+<tr class="memdesc:ac1bf4c310535451938ef5b31b2b0c51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">window identifier for the 'Child Frame' window. may contain 'None' while being destroyed <br/></td></tr>
 <tr class="separator:ac1bf4c310535451938ef5b31b2b0c51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a27a7812434437ed11908f962b6bfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49a27a7812434437ed11908f962b6bfc"></a>
 <a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc">pOwner</a></td></tr>
@@ -95,6 +95,10 @@ Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a0cd81e00633325fed14ac2fd8d991734">pFont</a></td></tr>
 <tr class="memdesc:a0cd81e00633325fed14ac2fd8d991734"><td class="mdescLeft">&#160;</td><td class="mdescRight">default font for the window <br/></td></tr>
 <tr class="separator:a0cd81e00633325fed14ac2fd8d991734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c954535c57f8d693e63e7c18c4731f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0c954535c57f8d693e63e7c18c4731f"></a>
+<a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#af0c954535c57f8d693e63e7c18c4731f">geom</a></td></tr>
+<tr class="memdesc:af0c954535c57f8d693e63e7c18c4731f"><td class="mdescLeft">&#160;</td><td class="mdescRight">client-area geometry (excludes scroll bars) <br/></td></tr>
+<tr class="separator:af0c954535c57f8d693e63e7c18c4731f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3ca9af6c497b1ae41a842e149cba2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd3ca9af6c497b1ae41a842e149cba2a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#afd3ca9af6c497b1ae41a842e149cba2a">iTop</a></td></tr>
 <tr class="memdesc:afd3ca9af6c497b1ae41a842e149cba2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">0-based position of the top of the current viewport (in lines or pixels) <br/></td></tr>
@@ -113,11 +117,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="separator:a339c9f28b92af29925c235e75f37bd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6948ef92b69b4f4fd0ad84a39f7d1bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6948ef92b69b4f4fd0ad84a39f7d1bc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#ac6948ef92b69b4f4fd0ad84a39f7d1bc">iXExtent</a></td></tr>
-<tr class="memdesc:ac6948ef92b69b4f4fd0ad84a39f7d1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">X extent for the display surface (determines scrolling behavior) <br/></td></tr>
+<tr class="memdesc:ac6948ef92b69b4f4fd0ad84a39f7d1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">cached X extent for the display surface (determines scrolling behavior) <br/></td></tr>
 <tr class="separator:ac6948ef92b69b4f4fd0ad84a39f7d1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1120df23e659e4099959760cce52e611"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1120df23e659e4099959760cce52e611"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a1120df23e659e4099959760cce52e611">iYExtent</a></td></tr>
-<tr class="memdesc:a1120df23e659e4099959760cce52e611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y extent for the display surface (determines scrolling behavior) <br/></td></tr>
+<tr class="memdesc:a1120df23e659e4099959760cce52e611"><td class="mdescLeft">&#160;</td><td class="mdescRight">cached Y extent for the display surface (determines scrolling behavior) <br/></td></tr>
 <tr class="separator:a1120df23e659e4099959760cce52e611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7927b1a39e5de20d8824c8c0d51c3245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7927b1a39e5de20d8824c8c0d51c3245"></a>
 <a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a7927b1a39e5de20d8824c8c0d51c3245">scroll</a></td></tr>
@@ -125,16 +129,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="separator:a7927b1a39e5de20d8824c8c0d51c3245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbeb6624eec2723842ebacaced2422be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbeb6624eec2723842ebacaced2422be"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#afbeb6624eec2723842ebacaced2422be">iSplit</a></td></tr>
-<tr class="memdesc:afbeb6624eec2723842ebacaced2422be"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserved - position for 'split' <br/></td></tr>
+<tr class="memdesc:afbeb6624eec2723842ebacaced2422be"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserved - position for 'split' (-1 for 'no split') <br/></td></tr>
 <tr class="separator:afbeb6624eec2723842ebacaced2422be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b071d37a5058ddadde9dff72de06fb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b071d37a5058ddadde9dff72de06fb7"></a>
 <a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a4b071d37a5058ddadde9dff72de06fb7">scrollSplit</a></td></tr>
-<tr class="memdesc:a4b071d37a5058ddadde9dff72de06fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">'scroll info' for 'split' area (vertical only) <br/></td></tr>
+<tr class="memdesc:a4b071d37a5058ddadde9dff72de06fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">'scroll info' for 'split' area (implementation-defined) <br/></td></tr>
 <tr class="separator:a4b071d37a5058ddadde9dff72de06fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a404c7229e16d61dd1e305066dbd3b2f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a404c7229e16d61dd1e305066dbd3b2f4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a404c7229e16d61dd1e305066dbd3b2f4">iTabIndex</a></td></tr>
-<tr class="memdesc:a404c7229e16d61dd1e305066dbd3b2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current tab index (for tabbed versions; -1 for "no tabs") - set by owner. <br/></td></tr>
-<tr class="separator:a404c7229e16d61dd1e305066dbd3b2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8923c9253dc2f4b2186a564941c06794"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8923c9253dc2f4b2186a564941c06794"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a8923c9253dc2f4b2186a564941c06794">fFlags</a></td></tr>
 <tr class="memdesc:a8923c9253dc2f4b2186a564941c06794"><td class="mdescLeft">&#160;</td><td class="mdescRight">various bitflags defining features. See WBChildFrame_FLAGS enum. <br/></td></tr>
@@ -147,13 +147,33 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a7542563daf460d8496807608ae40232f">aImageAtom</a></td></tr>
 <tr class="memdesc:a7542563daf460d8496807608ae40232f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'image' atom for display in tabs. default is 'None'. You should not alter this member directly. <br/></td></tr>
 <tr class="separator:a7542563daf460d8496807608ae40232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196b0cda9efae24073bb27c1bde81cdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a196b0cda9efae24073bb27c1bde81cdf"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a196b0cda9efae24073bb27c1bde81cdf">szStatusText</a></td></tr>
+<tr class="memdesc:a196b0cda9efae24073bb27c1bde81cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status text ('WBAlloc'd) to display when this child frame window has the input focus. Updated by 'superclass'. can be NULL. <br/></td></tr>
+<tr class="separator:a196b0cda9efae24073bb27c1bde81cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d0d2bddab3b244568a7b8fd7995278"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4d0d2bddab3b244568a7b8fd7995278"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#ae4d0d2bddab3b244568a7b8fd7995278">pszMenuResource</a></td></tr>
+<tr class="memdesc:ae4d0d2bddab3b244568a7b8fd7995278"><td class="mdescLeft">&#160;</td><td class="mdescRight">resource string for this child frame's menu (NULL = 'use default') <br/></td></tr>
+<tr class="separator:ae4d0d2bddab3b244568a7b8fd7995278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc16695d018877c93e89552d9d85376"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabc16695d018877c93e89552d9d85376"></a>
+<a class="el" href="group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b">WBFWMenuHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#aabc16695d018877c93e89552d9d85376">pMenuHandler</a></td></tr>
+<tr class="memdesc:aabc16695d018877c93e89552d9d85376"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu handler for this child frame's menu (NULL = 'use default') <br/></td></tr>
+<tr class="separator:aabc16695d018877c93e89552d9d85376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128b559603a87806509de798256669e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a128b559603a87806509de798256669e3"></a>
 <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3">pUserCallback</a></td></tr>
 <tr class="memdesc:a128b559603a87806509de798256669e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">message callback function pointer (can be NULL) <br/></td></tr>
 <tr class="separator:a128b559603a87806509de798256669e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879fb260613d50534c85946958fbfdc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a879fb260613d50534c85946958fbfdc4"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a879fb260613d50534c85946958fbfdc4">destructor</a> )(struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a> *)</td></tr>
+<tr class="memdesc:a879fb260613d50534c85946958fbfdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to a 'superclass' destructor. If not NULL, will be called by <a class="el" href="group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d" title="Destroy an Child Frame.">FWDestroyChildFrame()</a> <br/></td></tr>
+<tr class="separator:a879fb260613d50534c85946958fbfdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c6b271ce48324bcd96efb5c01fac21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88c6b271ce48324bcd96efb5c01fac21"></a>
+struct <a class="el" href="struct____WBChildFrameUI____.html">__WBChildFrameUI__</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a88c6b271ce48324bcd96efb5c01fac21">pUI</a></td></tr>
+<tr class="memdesc:a88c6b271ce48324bcd96efb5c01fac21"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to 'WBChildFrameUI' function pointer table (assigned by 'superclass') <br/></td></tr>
+<tr class="separator:a88c6b271ce48324bcd96efb5c01fac21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ff573276cdf8f82da916cb0f95e80f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34ff573276cdf8f82da916cb0f95e80f"></a>
 struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a34ff573276cdf8f82da916cb0f95e80f">pNext</a></td></tr>
-<tr class="memdesc:a34ff573276cdf8f82da916cb0f95e80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Next Object' pointer in an internally stored linked list <br/></td></tr>
+<tr class="memdesc:a34ff573276cdf8f82da916cb0f95e80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Next Object' pointer in an internally stored linked list (do not alter or use this) <br/></td></tr>
 <tr class="separator:a34ff573276cdf8f82da916cb0f95e80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -161,39 +181,73 @@ struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>
 <p>The WBFWMenuHandler structure is designed to be initialized via macros, so that a set of callback functions can then be easily used to handle menu events. If no menu handler is present for a menu item, or if the menu UI handler is NOT NULL and returns a non-zero value, the menu item will be disabled and displayed accordingly. It will not be possible to use its hotkey nor select it. Otherwise, the menu will be displayed normally and be selectable, and its hotkey will be able to activate it.</p>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">__WBChildFrame__</a></div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a9cad1622f4396ded0afaf6a8d8a5727a" title="tag indicating I&#39;m a &#39;Child Frame&#39; window">ulTag</a>;               <span class="comment">// tag indicating I&#39;m a &#39;Child Frame&#39; window</span></div>
-<div class="line">  Window <a class="code" href="struct____WBChildFrame____.html#ac1bf4c310535451938ef5b31b2b0c51b" title="window identifier for the &#39;Child Frame&#39; window">wID</a>;                       <span class="comment">// window identifier for the &#39;Child Frame&#39; window</span></div>
-<div class="line">  <a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows ">WBFrameWindow</a> *<a class="code" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc" title="a pointer to the WBFrameWindow owner">pOwner</a>;            <span class="comment">// a pointer to the WBFrameWindow owner</span></div>
-<div class="line">  XFontStruct *<a class="code" href="struct____WBChildFrame____.html#a0cd81e00633325fed14ac2fd8d991734" title="default font for the window">pFont</a>;               <span class="comment">// default font for the window</span></div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a9cad1622f4396ded0afaf6a8d8a5727a" title="tag indicating I&#39;m a &#39;Child Frame&#39; window">ulTag</a>;</div>
+<div class="line">    <span class="comment">// tag indicating I&#39;m a &#39;Child Frame&#39; window</span></div>
+<div class="line">  Window <a class="code" href="struct____WBChildFrame____.html#ac1bf4c310535451938ef5b31b2b0c51b" title="window identifier for the &#39;Child Frame&#39; window. may contain &#39;None&#39; while being destroyed">wID</a>;</div>
+<div class="line">    <span class="comment">// window identifier for the &#39;Child Frame&#39; window.  may contain &#39;None&#39; while being destroyed</span></div>
+<div class="line">  <a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows ">WBFrameWindow</a> *<a class="code" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc" title="a pointer to the WBFrameWindow owner">pOwner</a>;</div>
+<div class="line">    <span class="comment">// a pointer to the WBFrameWindow owner</span></div>
+<div class="line">  XFontStruct *<a class="code" href="struct____WBChildFrame____.html#a0cd81e00633325fed14ac2fd8d991734" title="default font for the window">pFont</a>;</div>
+<div class="line">    <span class="comment">// default font for the window</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#afd3ca9af6c497b1ae41a842e149cba2a" title="0-based position of the top of the current viewport (in lines or pixels)">iTop</a>;                         <span class="comment">// 0-based position of the top of the current viewport (in lines or pixels)</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a2884aa55a9f2544c59a08976071b1d64" title="0-based height of the current viewport (in lines or pixels)">iHeight</a>;                      <span class="comment">// 0-based height of the current viewport (in lines or pixels)</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a6248b51e93ab761c577f2824d0c3a14f" title="0-based position of the left of the current viewport (in characters or pixels)">iLeft</a>;                        <span class="comment">// 0-based position of the left of the current viewport (in characters or pixels)</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a339c9f28b92af29925c235e75f37bd11" title="0-based width of the current viewport (in characters or pixels)">iWidth</a>;                       <span class="comment">// 0-based width of the current viewport (in characters or pixels)</span></div>
+<div class="line">  <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> <a class="code" href="struct____WBChildFrame____.html#af0c954535c57f8d693e63e7c18c4731f" title="client-area geometry (excludes scroll bars)">geom</a>;                     </div>
+<div class="line">    <span class="comment">// client-area geometry (excludes scroll bars)</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#ac6948ef92b69b4f4fd0ad84a39f7d1bc" title="X extent for the display surface (determines scrolling behavior)">iXExtent</a>;                     <span class="comment">// X extent for the display surface (determines scrolling behavior)</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a1120df23e659e4099959760cce52e611" title="Y extent for the display surface (determines scrolling behavior)">iYExtent</a>;                     <span class="comment">// Y extent for the display surface (determines scrolling behavior)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#afd3ca9af6c497b1ae41a842e149cba2a" title="0-based position of the top of the current viewport (in lines or pixels)">iTop</a>;</div>
+<div class="line">    <span class="comment">// 0-based position of the top of the current viewport (in lines or pixels)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a2884aa55a9f2544c59a08976071b1d64" title="0-based height of the current viewport (in lines or pixels)">iHeight</a>;</div>
+<div class="line">    <span class="comment">// 0-based height of the current viewport (in lines or pixels)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a6248b51e93ab761c577f2824d0c3a14f" title="0-based position of the left of the current viewport (in characters or pixels)">iLeft</a>;</div>
+<div class="line">    <span class="comment">// 0-based position of the left of the current viewport (in characters or pixels)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a339c9f28b92af29925c235e75f37bd11" title="0-based width of the current viewport (in characters or pixels)">iWidth</a>;</div>
+<div class="line">    <span class="comment">// 0-based width of the current viewport (in characters or pixels)</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="struct____WB__SCROLLINFO____.html" title="Structure that defines scroll bar info for both horizontal and vertical scroll bars. ">WB_SCROLLINFO</a> <a class="code" href="struct____WBChildFrame____.html#a7927b1a39e5de20d8824c8c0d51c3245" title="&#39;scroll info&#39; (horizontal and vertical min/max/pos and other details)">scroll</a>;             <span class="comment">// &#39;scroll info&#39; (horizontal and vertical min/max/pos and other details)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#ac6948ef92b69b4f4fd0ad84a39f7d1bc" title="cached X extent for the display surface (determines scrolling behavior)">iXExtent</a>;</div>
+<div class="line">    <span class="comment">// cached X extent for the display surface (determines scrolling behavior)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a1120df23e659e4099959760cce52e611" title="cached Y extent for the display surface (determines scrolling behavior)">iYExtent</a>;</div>
+<div class="line">    <span class="comment">// cached Y extent for the display surface (determines scrolling behavior)</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#afbeb6624eec2723842ebacaced2422be" title="reserved - position for &#39;split&#39;">iSplit</a>;                       <span class="comment">// reserved - position for &#39;split&#39;</span></div>
+<div class="line">  <a class="code" href="struct____WB__SCROLLINFO____.html" title="Structure that defines scroll bar info for both horizontal and vertical scroll bars. ">WB_SCROLLINFO</a> <a class="code" href="struct____WBChildFrame____.html#a7927b1a39e5de20d8824c8c0d51c3245" title="&#39;scroll info&#39; (horizontal and vertical min/max/pos and other details)">scroll</a>;</div>
+<div class="line">    <span class="comment">// &#39;scroll info&#39; (horizontal and vertical min/max/pos and other details)</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="struct____WB__SCROLLINFO____.html" title="Structure that defines scroll bar info for both horizontal and vertical scroll bars. ">WB_SCROLLINFO</a> <a class="code" href="struct____WBChildFrame____.html#a4b071d37a5058ddadde9dff72de06fb7" title="&#39;scroll info&#39; for &#39;split&#39; area (vertical only)">scrollSplit</a>;        <span class="comment">// &#39;scroll info&#39; for &#39;split&#39; area (vertical only)</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#afbeb6624eec2723842ebacaced2422be" title="reserved - position for &#39;split&#39; (-1 for &#39;no split&#39;)">iSplit</a>;</div>
+<div class="line">    <span class="comment">// reserved - position for &#39;split&#39; (-1 for &#39;no split&#39;)</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a404c7229e16d61dd1e305066dbd3b2f4" title="Current tab index (for tabbed versions; -1 for &quot;no tabs&quot;) - set by owner.">iTabIndex</a>;                    <span class="comment">// Current tab index (for tabbed versions; -1 for &quot;no tabs&quot;) - set by owner</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a8923c9253dc2f4b2186a564941c06794" title="various bitflags defining features. See WBChildFrame_FLAGS enum.">fFlags</a>;                       <span class="comment">// various bitflags defining features.</span></div>
+<div class="line">  <a class="code" href="struct____WB__SCROLLINFO____.html" title="Structure that defines scroll bar info for both horizontal and vertical scroll bars. ">WB_SCROLLINFO</a> <a class="code" href="struct____WBChildFrame____.html#a4b071d37a5058ddadde9dff72de06fb7" title="&#39;scroll info&#39; for &#39;split&#39; area (implementation-defined)">scrollSplit</a>;</div>
+<div class="line">    <span class="comment">// &#39;scroll info&#39; for &#39;split&#39; area (implementation-defined)</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____WBChildFrame____.html#a495794af48dde1f64ab785bd60b86c4b" title="display name shown in tab and title bar. You should not alter this member directly.">szDisplayName</a>;              <span class="comment">// display name shown in tab and title bar.  You should not alter this member directly.</span></div>
-<div class="line">  Atom <a class="code" href="struct____WBChildFrame____.html#a7542563daf460d8496807608ae40232f" title="&#39;image&#39; atom for display in tabs. default is &#39;None&#39;. You should not alter this member directly...">aImageAtom</a>;                  <span class="comment">// &#39;image&#39; atom for display in tabs.  default is &#39;None&#39;.  You should not alter this member directly.</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#a8923c9253dc2f4b2186a564941c06794" title="various bitflags defining features. See WBChildFrame_FLAGS enum.">fFlags</a>;</div>
+<div class="line">    <span class="comment">// various bitflags defining features.</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c" title="event callback function type for window events">WBWinEvent</a> <a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>;         <span class="comment">// message callback function pointer (can be NULL)</span></div>
+<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____WBChildFrame____.html#a495794af48dde1f64ab785bd60b86c4b" title="display name shown in tab and title bar. You should not alter this member directly.">szDisplayName</a>;</div>
+<div class="line">    <span class="comment">// display name shown in tab and title bar.  You should not alter this member directly.</span></div>
+<div class="line">  Atom <a class="code" href="struct____WBChildFrame____.html#a7542563daf460d8496807608ae40232f" title="&#39;image&#39; atom for display in tabs. default is &#39;None&#39;. You should not alter this member directly...">aImageAtom</a>;</div>
+<div class="line">    <span class="comment">// &#39;image&#39; atom for display in tabs.  default is &#39;None&#39;.  You should not alter this member directly.</span></div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">__WBChildFrame__</a> *<a class="code" href="struct____WBChildFrame____.html#a34ff573276cdf8f82da916cb0f95e80f" title="&#39;Next Object&#39; pointer in an internally stored linked list">pNext</a>;   <span class="comment">// &#39;Next Object&#39; pointer in an internally stored linked list</span></div>
+<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____WBChildFrame____.html#a196b0cda9efae24073bb27c1bde81cdf" title="Status text (&#39;WBAlloc&#39;d) to display when this child frame window has the input focus. Updated by &#39;superclass&#39;. can be NULL.">szStatusText</a>;</div>
+<div class="line">    <span class="comment">// Status text (&#39;WBAlloc&#39;d) to display when this child frame window has the input focus.</span></div>
+<div class="line">    <span class="comment">// Updated by &#39;superclass&#39;.  Can be NULL.</span></div>
+<div class="line"></div>
+<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____WBChildFrame____.html#ae4d0d2bddab3b244568a7b8fd7995278" title="resource string for this child frame&#39;s menu (NULL = &#39;use default&#39;)">pszMenuResource</a>;</div>
+<div class="line">    <span class="comment">// WBAlloc&#39;d resource string for this child frame&#39;s menu (NULL = &#39;use default&#39;)</span></div>
+<div class="line">  <a class="code" href="struct____WB__FW__MENU__HANDLER____.html" title="structure for managing menu callbacks ">WBFWMenuHandler</a> *<a class="code" href="struct____WBChildFrame____.html#aabc16695d018877c93e89552d9d85376" title="menu handler for this child frame&#39;s menu (NULL = &#39;use default&#39;)">pMenuHandler</a>;</div>
+<div class="line">    <span class="comment">// WBAlloc&#39;d menu handler for this child frame&#39;s menu (NULL = &#39;use default&#39;)</span></div>
+<div class="line"></div>
+<div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c" title="event callback function type for window events">WBWinEvent</a> <a class="code" href="struct____WBChildFrame____.html#a128b559603a87806509de798256669e3" title="message callback function pointer (can be NULL)">pUserCallback</a>;</div>
+<div class="line">    <span class="comment">// message callback function pointer (can be NULL)</span></div>
+<div class="line">  void (*<a class="code" href="struct____WBChildFrame____.html#a879fb260613d50534c85946958fbfdc4" title="pointer to a &#39;superclass&#39; destructor. If not NULL, will be called by FWDestroyChildFrame()">destructor</a>)(<span class="keyword">struct </span><a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">__WBChildFrame__</a> *);</div>
+<div class="line">    <span class="comment">// pointer to a destructor.  if not NULL, will be called by FWDestroyChildFrame()</span></div>
+<div class="line"></div>
+<div class="line">  <a class="code" href="struct____WBChildFrameUI____.html" title="Structure that defines a Child Frame&#39;s UI, mainly for a &#39;superclass&#39;. ">WBChildFrameUI</a> *<a class="code" href="struct____WBChildFrame____.html#a88c6b271ce48324bcd96efb5c01fac21" title="pointer to &#39;WBChildFrameUI&#39; function pointer table (assigned by &#39;superclass&#39;)">pUI</a>;</div>
+<div class="line">    <span class="comment">// pointer to &#39;WBChildFrameUI&#39; function pointer table (assigned by &#39;superclass&#39;)</span></div>
+<div class="line"></div>
+<div class="line">  <span class="keyword">struct </span><a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">__WBChildFrame__</a> *<a class="code" href="struct____WBChildFrame____.html#a34ff573276cdf8f82da916cb0f95e80f" title="&#39;Next Object&#39; pointer in an internally stored linked list (do not alter or use this)">pNext</a>;</div>
+<div class="line">    <span class="comment">// &#39;Next Object&#39; pointer in an internally stored linked list (do not alter or use this)</span></div>
 <div class="line">} <a class="code" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98" title="Structure that defines a Child Frame within a Frame Window.">WBChildFrame</a>;</div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame.html">Frame Windows</a></dd></dl>
 <p>NOTE: you should not attempt to modify any of these structure members directly. Use the appropriate API functions to modify their values. If this were C++, these members would be marked 'protected'. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00374">374</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00405">405</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="frame__window_8h_source.html">frame_window.h</a></li>
 </ul>
@@ -203,7 +257,7 @@ struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

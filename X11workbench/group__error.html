@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <p>Call this function to decrement the error output supression counter. Error output will be restored whenever the supression counter returns to zero. Each call to the <a class="el" href="group__error.html#ga70d0d1f97b689823e303b794124537a2" title="Supress X11 XErrorEvent output to stderr.">WBSupressErrorOutput()</a> function should be balanced with a call to this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l02977">2977</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l03013">3013</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +210,7 @@ Functions</h2></td></tr>
 <p>Call this function to check to see if an XErrorEvent has been processed and stored in the internal WB_ERROR_INFO structure. It is necessary to FIRST call <a class="el" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42" title="Clear the &#39;last error&#39; information obtained via WBGetLastError()">WBErrorClear()</a> before any operation that might result in an error that can THEN be checked for using this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08985">8985</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l09243">9243</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -233,7 +233,7 @@ Functions</h2></td></tr>
 <p>Call this function to check to see if an XErrorEvent has been processed and stored in the internal WB_ERROR_INFO structure, and if a retry is possible based on the type and condition of the error. It is necessary to FIRST call <a class="el" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42" title="Clear the &#39;last error&#39; information obtained via WBGetLastError()">WBErrorClear()</a> before any operation that might result in an error that can THEN be checked for retryability using this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08990">8990</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l09248">9248</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Functions</h2></td></tr>
 <p>Clear the 'last error' information obtained via <a class="el" href="group__error.html#ga93cb9008e2362ce06c2795838274f472" title="Obtain a const pointer to the internal WB_ERROR_INFO structure.">WBGetLastError()</a> </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l08980">8980</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l09238">9238</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -277,7 +277,7 @@ Functions</h2></td></tr>
 <p>Call this function to obtain details about the last error from the XErrorEvent passed to the error handler. If there has been no error event, the 'pDisplay' member will always be NULL. You should always call <a class="el" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42" title="Clear the &#39;last error&#39; information obtained via WBGetLastError()">WBErrorClear()</a> to clear out this structure before performing an operation that might result in an XErrorEvent.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l09002">9002</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l09260">9260</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Functions</h2></td></tr>
 <p>Call this function to increment the error output supression counter. Error output will be restored whenever the supression counter returns to zero. Each call to this function should be balanced with a call to <a class="el" href="group__error.html#ga35b0078efe9871577c382d8a6a3ff5f4" title="Restore X11 XErrorEvent output to stderr.">WBAllowErrorOutput()</a>.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="window__helper_8h_source.html#l02961">2961</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8h_source.html#l02997">2997</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

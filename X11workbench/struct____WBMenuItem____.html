@@ -79,6 +79,10 @@ $(document).ready(function(){initNavTree('struct____WBMenuItem____.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a9242290baf4201fe01c6b88b162a2fb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9242290baf4201fe01c6b88b162a2fb0"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBMenuItem____.html#a9242290baf4201fe01c6b88b162a2fb0">uiTag</a></td></tr>
+<tr class="memdesc:a9242290baf4201fe01c6b88b162a2fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">a 'tag' identifying this as a WBMenuItem <br/></td></tr>
+<tr class="separator:a9242290baf4201fe01c6b88b162a2fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4773ce2c0a2045039203efefdf81c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed4773ce2c0a2045039203efefdf81c0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBMenuItem____.html#aed4773ce2c0a2045039203efefdf81c0">iMenuItemText</a></td></tr>
 <tr class="memdesc:aed4773ce2c0a2045039203efefdf81c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">offset in 'data' to null-byte terminated strings (-1 if none) <br/></td></tr>
@@ -123,6 +127,8 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <p>Definition for the structure that defines a single menu item.</p>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBMenuItem____.html" title="structure for managing menu items ">__WBMenuItem__</a></div>
 <div class="line">{</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a9242290baf4201fe01c6b88b162a2fb0" title="a &#39;tag&#39; identifying this as a WBMenuItem">uiTag</a>;    <span class="comment">// a &#39;tag&#39; identifying this as a WBMenuItem</span></div>
+<div class="line"></div>
 <div class="line">  <span class="comment">// the following data members are offsets from &#39;data&#39; for each component of the menu item</span></div>
 <div class="line">  <span class="comment">// &#39;-1&#39; generically indicates &quot;none&quot;</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#aed4773ce2c0a2045039203efefdf81c0" title="offset in &#39;data&#39; to null-byte terminated strings (-1 if none)">iMenuItemText</a>;     <span class="comment">// offset in &#39;data&#39; to null-byte terminated strings (-1 if none)</span></div>
@@ -131,8 +137,8 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#aa952e7b1e353d2d10725e0adb34c989f" title="hotkey description (-1 if none)">iHotKey</a>;           <span class="comment">// hotkey description (-1 if none)</span></div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// the following data members are numeric properties (not offsets)</span></div>
-<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a6afcd9b6e57229f2cb0822631939f73d">iAction</a>;           <span class="comment">// high bit set for popup; -1 for separator; otherwise, it&#39;s a message</span></div>
-<div class="line">                         <span class="comment">// if hight bit set, corresponding lower bits are the popup menu ID</span></div>
+<div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a6afcd9b6e57229f2cb0822631939f73d">iAction</a>;           <span class="comment">// high bit set for popup; -1 for separator, -2 for dynamic; otherwise, it&#39;s a message</span></div>
+<div class="line">                         <span class="comment">// if high bit set, corresponding lower bits are the popup menu ID</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a28b2937d5c94a3f034d2ae3c3b29af8a" title="hotkey character translation (0 if none)">nHotKey</a>;           <span class="comment">// hotkey character translation (0 if none)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a7edb30334c0aee836b64400457fc937f" title="width of menu text (in pixels; assign &#39;-1&#39; to calculate it)">iTextWidth</a>;        <span class="comment">// width of menu text (in pixels; assign &#39;-1&#39; to calculate it)</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBMenuItem____.html#a5d95487df73075e613c66baba4097a6e" title="horizontal/vertical position of menu (in pixels; assign &#39;-1&#39; to calculate it)">iPosition</a>;         <span class="comment">// horizontal/vertical position of menu (in pixels; assign &#39;-1&#39; to calculate it)</span></div>
@@ -143,7 +149,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <div class="line">} <a class="code" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4" title="structure for managing menu items">WBMenuItem</a>;</div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759" title="structure for managing menu items">WBMenu</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="menu_8h_source.html#l00122">122</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+<p>Definition at line <a class="el" href="menu_8h_source.html#l00125">125</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a6afcd9b6e57229f2cb0822631939f73d"></a>
 <div class="memitem">
@@ -154,10 +160,10 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">           high bit set for popup; -1 for separator; otherwise, it's a message
+<pre class="fragment">           high bit set for popup; -1 for separator, -2 for dynamic; otherwise, it's a message
 </pre><p> if hight bit set, corresponding lower bits are the popup menu ID </p>
 
-<p>Definition at line <a class="el" href="menu_8h_source.html#l00132">132</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+<p>Definition at line <a class="el" href="menu_8h_source.html#l00137">137</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -170,7 +176,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WBMenuItem____.html">__WBMenuItem__</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

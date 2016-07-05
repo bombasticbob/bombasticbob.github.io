@@ -138,27 +138,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga01c938dde1b777421803b3e31c4717aa"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga01c938dde1b777421803b3e31c4717aa">WBCopyString</a> (const char *pSrc)</td></tr>
-<tr class="memdesc:ga01c938dde1b777421803b3e31c4717aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple utility that returns a malloc'd copy of a 0-byte terminated string.  <a href="group__text.html#ga01c938dde1b777421803b3e31c4717aa">More...</a><br/></td></tr>
-<tr class="separator:ga01c938dde1b777421803b3e31c4717aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga892d4fcc14f538f9c2e2475bce9c1279"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga892d4fcc14f538f9c2e2475bce9c1279">WBCopyStringN</a> (const char *pSrc, unsigned int nMaxChars)</td></tr>
-<tr class="memdesc:ga892d4fcc14f538f9c2e2475bce9c1279"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple utility that returns a malloc'd copy of a string up to a maximum length (can also be 0-byte terminated)  <a href="group__text.html#ga892d4fcc14f538f9c2e2475bce9c1279">More...</a><br/></td></tr>
-<tr class="separator:ga892d4fcc14f538f9c2e2475bce9c1279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3cd9dc296e11519265f83431edcad082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga3cd9dc296e11519265f83431edcad082">WBCatString</a> (char **ppDest, const char *pSrc)</td></tr>
-<tr class="memdesc:ga3cd9dc296e11519265f83431edcad082"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple utility that concatenates a string onto the end of a 0-byte terminated malloc'd string.  <a href="group__text.html#ga3cd9dc296e11519265f83431edcad082">More...</a><br/></td></tr>
-<tr class="separator:ga3cd9dc296e11519265f83431edcad082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4af5e6852bf30948fc71dc9ee4432ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga4af5e6852bf30948fc71dc9ee4432ce6">WBCatStringN</a> (char **ppDest, const char *pSrc, unsigned int nMaxChars)</td></tr>
-<tr class="memdesc:ga4af5e6852bf30948fc71dc9ee4432ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple utility that concatenates a string onto the end of a 0-byte terminated malloc'd string up to a maximum length (can also be 0-byte terminated)  <a href="group__text.html#ga4af5e6852bf30948fc71dc9ee4432ce6">More...</a><br/></td></tr>
-<tr class="separator:ga4af5e6852bf30948fc71dc9ee4432ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga970cc5651dadf44ab9335c64ef67283b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga970cc5651dadf44ab9335c64ef67283b">WBDeQuoteString</a> (char *pszStr)</td></tr>
-<tr class="memdesc:ga970cc5651dadf44ab9335c64ef67283b"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-Quote a string 'in place', that is modifying the original string by removing quotes.  <a href="group__text.html#ga970cc5651dadf44ab9335c64ef67283b">More...</a><br/></td></tr>
-<tr class="separator:ga970cc5651dadf44ab9335c64ef67283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11ada3ca2b715b8d12a9237ff5b8edcb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">WBStringLineCount</a> (const char *pSrc, unsigned int nMaxChars)</td></tr>
-<tr class="memdesc:ga11ada3ca2b715b8d12a9237ff5b8edcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine how many 'lines' are in a block of text by counting 'linefeed' characters.  <a href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">More...</a><br/></td></tr>
-<tr class="separator:ga11ada3ca2b715b8d12a9237ff5b8edcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacbabd0b058670415d5c851858e9f6784"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#gacbabd0b058670415d5c851858e9f6784">WBStringNextLine</a> (const char *pSrc, unsigned int *pnMaxChars)</td></tr>
-<tr class="memdesc:gacbabd0b058670415d5c851858e9f6784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate the next line in a block of text, returning its pointer (and updating remaining length)  <a href="group__text.html#gacbabd0b058670415d5c851858e9f6784">More...</a><br/></td></tr>
-<tr class="separator:gacbabd0b058670415d5c851858e9f6784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab939f0546f74387edba83043440de77d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gab939f0546f74387edba83043440de77d">DTGetTextWidth</a> (XFontStruct *pFont, const char *szUTF8, int nLength)</td></tr>
 <tr class="memdesc:gab939f0546f74387edba83043440de77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextWidth equivalent for MBCS and UTF-8 strings.  <a href="group__draw__text.html#gab939f0546f74387edba83043440de77d">More...</a><br/></td></tr>
 <tr class="separator:gab939f0546f74387edba83043440de77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,7 +174,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="draw__text_8h.html">draw_text.h</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

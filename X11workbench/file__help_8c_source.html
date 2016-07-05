@@ -141,26 +141,26 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span> i1;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *p1;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span>(WB_UNLIKELY((<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13" title="Returns the current debug level assigned by WBSetDebugLevel.">WBGetDebugLevel</a>() &amp; <a class="code" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395a304703570910b87339564edb7e95c23a" title="mask for allowed &#39;level&#39; values (none through Excessive)">DebugLevel_MASK</a>) &gt;= ((<a class="code" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395af6c35af37db62f546f6d74147730b0a7" title="chatty, implies details about flow decisions">DebugLevel_Chatty</a>) &amp; <a class="code" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395a304703570910b87339564edb7e95c23a" title="mask for allowed &#39;level&#39; values (none through Excessive)">DebugLevel_MASK</a>)))</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a>((<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13" title="Returns the current debug level assigned by WBSetDebugLevel.">WBGetDebugLevel</a>() &amp; <a class="code" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395a304703570910b87339564edb7e95c23a" title="mask for allowed &#39;level&#39; values (none through Excessive)">DebugLevel_MASK</a>) &gt;= ((<a class="code" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395af6c35af37db62f546f6d74147730b0a7" title="chatty, implies details about flow decisions">DebugLevel_Chatty</a>) &amp; <a class="code" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395a304703570910b87339564edb7e95c23a" title="mask for allowed &#39;level&#39; values (none through Excessive)">DebugLevel_MASK</a>)))</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="group__debug.html#gaff552460367fbdb1397a29e364800f49" title="conditional debug message output">WBDebugPrint</a>(<span class="stringliteral">&quot;dumping file buf - %d lines\n&quot;</span>, (<span class="keywordtype">int</span>)pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span>(i1=0; i1 &lt; (int)pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>; i1++)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      p1 = pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1 + 1];</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      p1 = pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1 + 1];</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">if</span>(!p1)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        p1 = pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1] + strlen(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1]);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        p1 = pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1] + strlen(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1]);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">while</span>(p1 &gt; pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1] &amp;&amp; (*(p1 - 1) == <span class="charliteral">&#39;\n&#39;</span> || *(p1 - 1) == <span class="charliteral">&#39;\r&#39;</span>))</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">while</span>(p1 &gt; pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1] &amp;&amp; (*(p1 - 1) == <span class="charliteral">&#39;\n&#39;</span> || *(p1 - 1) == <span class="charliteral">&#39;\r&#39;</span>))</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        p1--;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">if</span>(p1 &gt; pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1])</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">if</span>(p1 &gt; pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1])</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="group__debug.html#gaff552460367fbdb1397a29e364800f49" title="conditional debug message output">WBDebugPrint</a>(<span class="stringliteral">&quot;%3d:  \&quot;%.*s\&quot;..\n&quot;</span>, i1, (<span class="keywordtype">int</span>)(p1 - pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1]), pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1]);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="group__debug.html#gaff552460367fbdb1397a29e364800f49" title="conditional debug message output">WBDebugPrint</a>(<span class="stringliteral">&quot;%3d:  \&quot;%.*s\&quot;..\n&quot;</span>, i1, (<span class="keywordtype">int</span>)(p1 - pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1]), pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1]);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      {</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  pRval = (<a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">file_help_buf_t</a> *)malloc(<span class="keyword">sizeof</span>(*pRval) + ((lFileSize + 256 + 128) &amp; 0xffffff00L));</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  pRval = (<a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">file_help_buf_t</a> *)<a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(<span class="keyword">sizeof</span>(*pRval) + ((lFileSize + 256 + 128) &amp; 0xffffff00L));</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span>(pRval)</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  {</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keywordflow">if</span>(read(iFile, pRval-&gt;<a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>, lFileSize) != lFileSize)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        free(pRval);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        pRval = NULL;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  pRval = (<a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">file_help_buf_t</a> *)malloc(<span class="keyword">sizeof</span>(*pRval) + ((cbBuf + 256 + 128) &amp; 0xffffff00L));</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  pRval = (<a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">file_help_buf_t</a> *)<a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(<span class="keyword">sizeof</span>(*pRval) + ((cbBuf + 256 + 128) &amp; 0xffffff00L));</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">if</span>(pRval)</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  {</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    bzero(pRval, <span class="keyword">sizeof</span>(*pRval)); <span class="comment">// this also takes care of pNext, pPrev</span></div>
@@ -264,14 +264,14 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a6918c3f3d28b36832e6773df57b3586e" title="pointer to &#39;next&#39; item in linked list (NULL for last object)">pNext</a> = NULL;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  }</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="comment">// TODO:  ppLineBuf should be part of &#39;cData&#39;.  For now it&#39;s malloc&#39;d</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="comment">// TODO:  ppLineBuf should be part of &#39;cData&#39;.  For now it&#39;s WBAlloc&#39;d</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">if</span>(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">if</span>(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    free(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  free(pBuf);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00207"></a><span class="lineno"><a class="code" href="group__file__help__buf.html#ga4473fb94d70c15cb95277ef19cb564e0">  207</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__file__help__buf.html#ga4473fb94d70c15cb95277ef19cb564e0" title="Parse or Re-Parse the data for a file_help_buf_t object.">FBParseFileBuf</a>(<a class="code" href="struct____file__help__buf____.html" title="basic &#39;buffered I/O&#39; object structure for &#39;FileBuf&#39; APIs ">file_help_buf_t</a> *pBuf)</div>
@@ -279,12 +279,12 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordtype">int</span> i1, iLines;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> *p1, <span class="comment">/* *p2,*/</span> *pEnd;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="comment">// TODO:  ppLineBuf should be part of &#39;cData&#39;.  For now it&#39;s malloc&#39;d</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="comment">// TODO:  ppLineBuf should be part of &#39;cData&#39;.  For now it&#39;s WBAlloc&#39;d</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">if</span>(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">if</span>(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    free(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a> = NULL;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a> = NULL;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a> = 0;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ae2a560aa453934694159998937774996" title="size of memory block pointed to by &#39;ppLineBuf&#39;">lLineBufSize</a> = 0;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  }</div>
@@ -310,12 +310,12 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="comment">// now allocate memory and REALLY assign the pointers</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  iLines = i1;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">// TODO:  ppLineBuf should be part of &#39;cData&#39;.  For now it&#39;s malloc&#39;d</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">// TODO:  ppLineBuf should be part of &#39;cData&#39;.  For now it&#39;s WBAlloc&#39;d</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="comment">//        if I need room for more lines, attach another file_help_buf_t</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="comment">//        and chain it to &#39;pNext&#39;</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a> = (<span class="keywordtype">char</span> **)malloc((iLines + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> **));</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span>(!pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a> = (<span class="keywordtype">char</span> **)<a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>((iLines + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> **));</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span>(!pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  }</div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">for</span>(i1=0, p1 = pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>, pEnd = pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a> + pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a75e0d422e416b24dbdb71a446b37f633" title="number of bytes of valid data">lBufferCount</a>; p1 &lt; pEnd &amp;&amp; i1 &lt; iLines; i1++)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1] = (<span class="keywordtype">char</span> *)p1;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[i1] = (<span class="keywordtype">char</span> *)p1;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">while</span>(p1 &lt; pEnd &amp;&amp; *p1 != <span class="charliteral">&#39;\n&#39;</span>)</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    {</div>
@@ -337,7 +337,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  }</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[iLines] = NULL;  <span class="comment">// always (to mark &quot;the end&quot;)</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[iLines] = NULL;  <span class="comment">// always (to mark &quot;the end&quot;)</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#ifndef NO_DEBUG</span></div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span>  FBDumpParsedFileBuf(pBuf);</div>
@@ -446,7 +446,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <a class="code" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output.">WB_DEBUG_PRINT</a>(<a class="code" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395aac6172aaff83cf50d7215730f1acbed7" title="excessive, implies more information that you probably want">DebugLevel_Excessive</a>, <span class="stringliteral">&quot;TEMPORARY:  reallocating - %d %d %d\n&quot;</span>,</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                 (<span class="keywordtype">int</span>)(*ppBuf)-&gt;lBufferSize, (<span class="keywordtype">int</span>)lActualBufSize, (<span class="keywordtype">int</span>)lNewSize);</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  pNew = (<span class="keywordtype">char</span> *)realloc(*ppBuf, lNewSize);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  pNew = (<span class="keywordtype">char</span> *)<a class="code" href="group__sub__alloc.html#gaf2228924f510dc4b6f6b86b44c0e4e11" title="High performance memory sub-allocator &#39;re-allocate&#39;.">WBReAlloc</a>(*ppBuf, lNewSize);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordflow">if</span>(pNew)</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  {</div>
@@ -596,14 +596,14 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="keywordtype">long</span> lOffset, lEndOffset;</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="comment">//  char *pDest;</span></div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordflow">if</span>(!pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordflow">if</span>(!pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>)</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  {</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <a class="code" href="group__file__help__buf.html#ga4473fb94d70c15cb95277ef19cb564e0" title="Parse or Re-Parse the data for a file_help_buf_t object.">FBParseFileBuf</a>(pBuf);</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  }</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="comment">// if &#39;lLineNum&#39; exceeds the current line count, just return</span></div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordflow">if</span>(!pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a> || lLineNum &gt; pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>)</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordflow">if</span>(!pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a> || lLineNum &gt; pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a784da442c51b7035c38b8253a0bdfae2" title="number of lines in &#39;cData&#39; when ppLineBuf not NULL">lLineCount</a>)</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  {</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  }</div>
@@ -613,10 +613,10 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  }</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  {</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    lEndOffset = (<span class="keywordtype">char</span> *)pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[lLineNum + 1] - (<span class="keywordtype">char</span> *)(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    lEndOffset = (<span class="keywordtype">char</span> *)pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[lLineNum + 1] - (<span class="keywordtype">char</span> *)(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>);</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;  }</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  lOffset = (<span class="keywordtype">char</span> *)pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (malloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[lLineNum] - (<span class="keywordtype">char</span> *)(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>);</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  lOffset = (<span class="keywordtype">char</span> *)pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#ac7175999d612098c350d12adb888840d" title="array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)">ppLineBuf</a>[lLineNum] - (<span class="keywordtype">char</span> *)(pBuf-&gt;<a class="code" href="struct____file__help__buf____.html#a8fa9b91fa1975d59de84cf999f530924" title="the data itself (aligned to size of a pointer)">cData</a>);</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <span class="keywordflow">if</span>(lOffset &lt; lEndOffset)</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  {</div>
@@ -672,14 +672,14 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
 <div class="line"><a name="l00603"></a><span class="lineno"><a class="code" href="group__file__help__io.html#ga5bac00244e895567cfbbfcac9d5d8d72">  603</a></span>&#160;<span class="keywordtype">char</span> *<a class="code" href="group__file__help__io.html#ga5bac00244e895567cfbbfcac9d5d8d72" title="Return allocated string containing the current working directory.">WBGetCurrentDirectory</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;{</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="keywordtype">char</span> *pRval = malloc(MAXPATHLEN + 2);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="keywordtype">char</span> *pRval = <a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(MAXPATHLEN + 2);</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="keywordtype">int</span> i1;</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  <span class="keywordflow">if</span>(pRval)</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  {</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <span class="keywordflow">if</span>(!getcwd(pRval, MAXPATHLEN))</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    {</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;      free(pRval);</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;      pRval = NULL;</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    }</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  }</div>
@@ -732,7 +732,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="keywordtype">char</span> *pTemp, *p1, *p2, *p3, *p4, *pRval = NULL;</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="keyword">struct </span>stat sF;</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  pTemp = <a class="code" href="group__text.html#ga01c938dde1b777421803b3e31c4717aa" title="A simple utility that returns a malloc&#39;d copy of a 0-byte terminated string.">WBCopyString</a>(szFileName);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  pTemp = <a class="code" href="group__text.html#ga01c938dde1b777421803b3e31c4717aa" title="A simple utility that returns a WBAlloc() copy of a 0-byte terminated string.">WBCopyString</a>(szFileName);</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;  <span class="keywordflow">if</span>(!pTemp)</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  {</div>
@@ -769,16 +769,16 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    }</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    {</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;      p3 = <a class="code" href="group__text.html#ga01c938dde1b777421803b3e31c4717aa" title="A simple utility that returns a malloc&#39;d copy of a 0-byte terminated string.">WBCopyString</a>(p1);</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;      p3 = <a class="code" href="group__text.html#ga01c938dde1b777421803b3e31c4717aa" title="A simple utility that returns a WBAlloc() copy of a 0-byte terminated string.">WBCopyString</a>(p1);</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;      <span class="keywordflow">if</span>(!p3)</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;      {</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        free(pTemp);</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pTemp);</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;      }</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      <span class="keywordflow">if</span>(p3[strlen(p3) - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;      {</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;p3, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;p3, <span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;      }</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      p2 = pTemp + 1;</div>
@@ -789,10 +789,10 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;      <span class="keywordflow">if</span>(*p2)</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;      {</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;p3, p2);</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;p3, p2);</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;      }</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;      free(pTemp);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pTemp);</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      pTemp = p3;</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    }</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  }</div>
@@ -808,7 +808,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordflow">if</span>((p1[1] == <span class="charliteral">&#39;.&#39;</span> &amp;&amp; !p1[2]) || !p1[1])</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        {</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;          p2 = pTemp; <span class="comment">// temporary</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;          <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;pTemp, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;          <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;pTemp, <span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;          p1 = (p1 - p2) + pTemp; <span class="comment">// restore relative pointer</span></div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
@@ -829,13 +829,13 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        }</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;      }</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;pRval, p1);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;pRval, p1);</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    }</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(p2 == p1)</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    {</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;      pRval = <a class="code" href="group__text.html#ga01c938dde1b777421803b3e31c4717aa" title="A simple utility that returns a malloc&#39;d copy of a 0-byte terminated string.">WBCopyString</a>(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;      pRval = <a class="code" href="group__text.html#ga01c938dde1b777421803b3e31c4717aa" title="A simple utility that returns a WBAlloc() copy of a 0-byte terminated string.">WBCopyString</a>(<span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    }</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    {</div>
@@ -876,7 +876,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        {</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;          <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s:%d - did not find preceding &#39;/&#39; - %s\n&quot;</span>, __FUNCTION__, __LINE__, pRval);</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;          free(pRval);</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;          <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;          pRval = NULL;</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;          <span class="keywordflow">break</span>;</div>
@@ -887,7 +887,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;      <span class="comment">// TEMPORARY:  just copy as-is to test basic logic</span></div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;      <a class="code" href="group__text.html#ga4af5e6852bf30948fc71dc9ee4432ce6" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string up to...">WBCatStringN</a>(&amp;pRval, p1, p2 - p1 + 1); <span class="comment">// include the &#39;/&#39; at the end</span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;      <a class="code" href="group__text.html#ga4af5e6852bf30948fc71dc9ee4432ce6" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string up t...">WBCatStringN</a>(&amp;pRval, p1, p2 - p1 + 1); <span class="comment">// include the &#39;/&#39; at the end</span></div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;      <span class="keywordflow">if</span>(!pRval)</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;      {</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s:%d - WBCatStringN returned NULL pointer\n&quot;</span>, __FUNCTION__, __LINE__);</div>
@@ -916,13 +916,13 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;          <span class="comment">// now I get to put the symlink contents &quot;in place&quot;.  If the symlink is</span></div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;          <span class="comment">// relative to the current directory, I&#39;ll want that.</span></div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;          p4 = (<span class="keywordtype">char</span> *)malloc(MAXPATHLEN + 2);</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;          p4 = (<span class="keywordtype">char</span> *)<a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(MAXPATHLEN + 2);</div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;          <span class="keywordflow">if</span>(!p4)</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;          {</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;            <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s:%d - not enough memory for buffer\n&quot;</span>, __FUNCTION__, __LINE__);</div>
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;            free(pRval);</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;            <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            pRval = NULL;</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;          }</div>
@@ -934,8 +934,8 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            {</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;              <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s:%d - readlink returned %d for %s\n&quot;</span>, __FUNCTION__, __LINE__, iLen, pRval);</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;              free(p4);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;              free(pRval);</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;              <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(p4);</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;              <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;              pRval = NULL;</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;              <span class="keywordflow">break</span>;</div>
@@ -944,7 +944,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            p4[iLen] = 0; <span class="comment">// assume &lt; MAXPATHLEN for now...</span></div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;            <span class="keywordflow">if</span>(p4[0] == <span class="charliteral">&#39;/&#39;</span>) <span class="comment">// it&#39;s an absolute path</span></div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            {</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;              free(pRval);</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;              <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;              pRval = p4;</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            }</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            <span class="keywordflow">else</span></div>
@@ -955,27 +955,27 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;              }</div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
 <div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;              *p3 = 0;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;              <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;pRval, p4); <span class="comment">// sub in the relative path</span></div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;              free(p4);</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;              <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;pRval, p4); <span class="comment">// sub in the relative path</span></div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;              <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(p4);</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;            }</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="group__file__help__io.html#ga9715a9ac3d249a59526ca45ff741f619" title="Return whether a file is a directory or a symlink to a directory.">WBIsDirectory</a>(pRval)) <span class="comment">// must be a directory!</span></div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            {</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;              <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s:%d - %s not a directory\n&quot;</span>, __FUNCTION__, __LINE__, pRval);</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;              free(pRval);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;              <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;              pRval = NULL;</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;              <span class="keywordflow">break</span>; <span class="comment">// this is an error</span></div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;            }</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;            {</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;              <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;pRval, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;              <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;pRval, <span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;              <span class="keywordflow">if</span>(pRval)</div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;              {</div>
 <div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;                p4 = <a class="code" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion)">WBGetCanonicalPath</a>(pRval); <span class="comment">// recurse</span></div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                free(pRval);</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                pRval = p4; <span class="comment">// new canonical version of symlink path</span></div>
 <div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;              }</div>
 <div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;</div>
@@ -1010,14 +1010,14 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;      {</div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        <span class="keywordflow">if</span>(S_ISDIR(sF.st_mode)) <span class="comment">// an actual directory - end with a &#39;/&#39;</span></div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;        {</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;          <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;pRval, <span class="stringliteral">&quot;/&quot;</span>); <span class="comment">// add ending &#39;/&#39;</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;          <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;pRval, <span class="stringliteral">&quot;/&quot;</span>); <span class="comment">// add ending &#39;/&#39;</span></div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        }</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(S_ISLNK(sF.st_mode)) <span class="comment">// symlink</span></div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        {</div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;          <span class="comment">// now I get to put the symlink contents &quot;in place&quot;.  If the symlink is</span></div>
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;          <span class="comment">// relative to the current directory, I&#39;ll want that.</span></div>
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;          p4 = (<span class="keywordtype">char</span> *)malloc(MAXPATHLEN + 2);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;          p4 = (<span class="keywordtype">char</span> *)<a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(MAXPATHLEN + 2);</div>
 <div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;</div>
 <div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;          <span class="keywordflow">if</span>(!p4)</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;          {</div>
@@ -1033,8 +1033,8 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;            {</div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;              <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;%s:%d - readlink returned %d for %s\n&quot;</span>, __FUNCTION__, __LINE__, iLen, pRval);</div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;              free(p4);</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;              free(pRval);</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;              <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(p4);</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;              <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;              pRval = NULL;</div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;            }</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;            <span class="keywordflow">else</span></div>
@@ -1042,7 +1042,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;              p4[iLen] = 0; <span class="comment">// assume &lt; MAXPATHLEN for now...</span></div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;              <span class="keywordflow">if</span>(p4[0] == <span class="charliteral">&#39;/&#39;</span>) <span class="comment">// it&#39;s an absolute path</span></div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;              {</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;                free(pRval); <span class="comment">// new path for old</span></div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;                <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval); <span class="comment">// new path for old</span></div>
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                pRval = p4;</div>
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;              }</div>
 <div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;              <span class="keywordflow">else</span></div>
@@ -1054,20 +1054,20 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;                }</div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;</div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;                *p3 = 0;</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;pRval, p4); <span class="comment">// sub in the relative path</span></div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;                free(p4);</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;pRval, p4); <span class="comment">// sub in the relative path</span></div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;                <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(p4);</div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;              }</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;              <span class="keywordflow">if</span>(pRval &amp;&amp; <a class="code" href="group__file__help__io.html#ga9715a9ac3d249a59526ca45ff741f619" title="Return whether a file is a directory or a symlink to a directory.">WBIsDirectory</a>(pRval)) <span class="comment">// is the result a directory?</span></div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;              {</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;                <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated malloc&#39;d string...">WBCatString</a>(&amp;pRval, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;                <a class="code" href="group__text.html#ga3cd9dc296e11519265f83431edcad082" title="A simple utility that concatenates a string onto the end of a 0-byte terminated WBAlloc() string...">WBCatString</a>(&amp;pRval, <span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;              }</div>
 <div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;</div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;              <span class="keywordflow">if</span>(pRval)</div>
 <div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;              {</div>
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;                p4 = <a class="code" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion)">WBGetCanonicalPath</a>(pRval); <span class="comment">// recurse to make sure I&#39;m canonical (deal with &#39;..&#39; and &#39;.&#39; and so on)</span></div>
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                free(pRval);</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;                pRval = p4; <span class="comment">// new canonical version of symlink path</span></div>
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;              }</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;            }</div>
@@ -1079,7 +1079,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;</div>
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;  <span class="keywordflow">if</span>(pTemp)</div>
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;  {</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    free(pTemp);</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pTemp);</div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    pTemp = NULL; <span class="comment">// by convention</span></div>
 <div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  }</div>
 <div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;</div>
@@ -1127,7 +1127,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;  iLen = strlen(szDirSpec);</div>
 <div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;  nMaxLen = iLen + 32;</div>
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;</div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;  pBuf = malloc(nMaxLen);</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;  pBuf = <a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(nMaxLen);</div>
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;  <span class="keywordflow">if</span>(!pBuf)</div>
 <div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;  {</div>
 <div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;ERROR - %s - Unable to allocate memory for buffer size %d\n&quot;</span>, __FUNCTION__, nMaxLen);</div>
@@ -1238,7 +1238,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;<span class="preprocessor"></span>    }</div>
 <div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  }</div>
 <div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;  pRval = malloc(<span class="keyword">sizeof</span>(DIRLIST) + iLen + strlen(p1) + 2);</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;  pRval = <a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(<span class="keyword">sizeof</span>(DIRLIST) + iLen + strlen(p1) + 2);</div>
 <div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;</div>
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;  <span class="keywordflow">if</span>(pRval)</div>
 <div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;  {</div>
@@ -1256,8 +1256,8 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;<span class="preprocessor"></span>    pRval-&gt;hFF = FindFirstFile(p2, &amp;(pRval-&gt;fd))</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;    <span class="keywordflow">if</span>(pRval-&gt;hFF == <a class="code" href="group__platform.html#ga5fdc7facea201bfce4ad308105f88d0c" title="INVALID HANDLE VALUE equivalent.">INVALID_HANDLE_VALUE</a>)</div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;    {</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;      free(pBuf);</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;      free(pRval);</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf);</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;</div>
 <div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;      pRval = NULL;</div>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;    }</div>
@@ -1270,8 +1270,8 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;    {</div>
 <div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;      <a class="code" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47" title="Preferred method of implementing a &#39;warning level&#39; debug message for all subsystems.">WB_WARN_PRINT</a>(<span class="stringliteral">&quot;WARNING - %s - Unable to open dir \&quot;%s\&quot;, errno=%d\n&quot;</span>, __FUNCTION__, pBuf, errno);</div>
 <div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;      free(pBuf);</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;      free(pRval);</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf);</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;</div>
 <div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;      pRval = NULL;</div>
 <div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    }</div>
@@ -1280,7 +1280,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;  {</div>
 <div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    <a class="code" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c" title="Preferred method of implementing an &#39;error level&#39; debug message for all subsystems.">WB_ERROR_PRINT</a>(<span class="stringliteral">&quot;ERROR - %s - Unable to allocate memory for DIRLIST\n&quot;</span>, __FUNCTION__);</div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;    free(pBuf);  <span class="comment">// no need to keep this around</span></div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;    <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf);  <span class="comment">// no need to keep this around</span></div>
 <div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;  }</div>
 <div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;</div>
 <div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;  <span class="keywordflow">return</span> pRval;</div>
@@ -1305,10 +1305,10 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;<span class="preprocessor">#endif // WIN32,!WIN32</span></div>
 <div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span>(pD-&gt;szPath)</div>
 <div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    {</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;      free((<span class="keywordtype">void</span> *)(pD-&gt;szPath));</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>((<span class="keywordtype">void</span> *)(pD-&gt;szPath));</div>
 <div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    }</div>
 <div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    free(pDirectoryList);</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pDirectoryList);</div>
 <div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;  }</div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;}</div>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;</div>
@@ -1334,7 +1334,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;  }</div>
 <div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;</div>
 <div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;  <span class="comment">// TODO:  improve this, maybe cache buffer or string length...</span></div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;  pBuf = malloc(strlen(pDL-&gt;szPath) + 8 + NAME_MAX);</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;  pBuf = <a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(strlen(pDL-&gt;szPath) + 8 + NAME_MAX);</div>
 <div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;</div>
 <div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;  <span class="keywordflow">if</span>(!pBuf)</div>
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;  {</div>
@@ -1408,7 +1408,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;  <span class="keywordflow">if</span>(pBuf)</div>
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;  {</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    free(pBuf);</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf);</div>
 <div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;  }</div>
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;</div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;  <span class="keywordflow">return</span> iRval;</div>
@@ -1436,7 +1436,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;  }</div>
 <div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;</div>
 <div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;  <span class="comment">// TODO:  improve this, maybe cache buffer or string length...</span></div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;  pBuf = (<span class="keywordtype">char</span> *)malloc(strlen(pDL-&gt;szPath) + 8 + (szFileName ? strlen(szFileName) : 0) + NAME_MAX);</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;  pBuf = (<span class="keywordtype">char</span> *)<a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(strlen(pDL-&gt;szPath) + 8 + (szFileName ? strlen(szFileName) : 0) + NAME_MAX);</div>
 <div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;</div>
 <div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;  <span class="keywordflow">if</span>(!pBuf)</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;  {</div>
@@ -1457,21 +1457,21 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;  }</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  pRval = <a class="code" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion)">WBGetCanonicalPath</a>(pBuf);</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;  free(pBuf);</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;  <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pBuf);</div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;  <span class="keywordflow">return</span> pRval;</div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;}</div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;</div>
 <div class="line"><a name="l01395"></a><span class="lineno"><a class="code" href="group__file__help__io.html#ga483771ede18c3b3b38a0c22b0d860db2"> 1395</a></span>&#160;<span class="keywordtype">char</span> *<a class="code" href="group__file__help__io.html#ga483771ede18c3b3b38a0c22b0d860db2" title="Obtain the target of a symbolic link.">WBGetSymLinkTarget</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName)</div>
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;{</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="keywordtype">char</span> *pRval = malloc(MAXPATHLEN + 2);</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="keywordtype">char</span> *pRval = <a class="code" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc</a>(MAXPATHLEN + 2);</div>
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;</div>
 <div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;  <span class="keywordflow">if</span>(pRval)</div>
 <div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;  {</div>
 <div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    <span class="keywordtype">int</span> iLen = readlink(szFileName, pRval, MAXPATHLEN);</div>
 <div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    <span class="keywordflow">if</span>(iLen &lt;= 0)</div>
 <div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;    {</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;      free(pRval);</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;      <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pRval);</div>
 <div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    }</div>
 <div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;</div>
@@ -1493,7 +1493,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;  }</div>
 <div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;</div>
 <div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;  pRval = <a class="code" href="group__file__help__io.html#ga483771ede18c3b3b38a0c22b0d860db2" title="Obtain the target of a symbolic link.">WBGetSymLinkTarget</a>(pTemp);</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;  free(pTemp);</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;  <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pTemp);</div>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;  <span class="keywordflow">return</span> pRval;</div>
 <div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;}</div>
@@ -1529,7 +1529,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;<span class="comment">//  WB_ERROR_PRINT(&quot;TEMPORARY:  stat on &#39;%s&#39; - \&quot;%s\&quot;\n&quot;, szFileName, pTemp);</span></div>
 <div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;</div>
 <div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;  iRval = <a class="code" href="group__file__help__io.html#ga7a8eddd977095a97b19c852a484e9feb" title="Obtain the &#39;stat&#39; flags for a file name, resolving links as needed.">WBStat</a>(pTemp, pdwModeAttrReturn);</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;  free(pTemp);</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;  <a class="code" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree</a>(pTemp);</div>
 <div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;</div>
 <div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;  <span class="keywordflow">return</span> iRval;</div>
 <div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;}</div>
@@ -1540,7 +1540,7 @@ $(document).ready(function(){initNavTree('file__help_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><b>file_help.c</b></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:13 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

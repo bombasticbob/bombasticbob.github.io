@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae8aa6305ea75cbfc9db1a10cce1b4958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a special purpose dialog window that retrieves a character string as input.  <a href="#gae8aa6305ea75cbfc9db1a10cce1b4958">More...</a><br/></td></tr>
 <tr class="separator:gae8aa6305ea75cbfc9db1a10cce1b4958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61c93635fb125b35d904e4e13e0169c6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6">DLGFileDialog</a> (int iType, Window wIDOwner, const char *szDefPath, const char *szDefName, const char *szExtAndDescList)</td></tr>
-<tr class="memdesc:ga61c93635fb125b35d904e4e13e0169c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal File Dialog window, returning a malloc'd pointer to a null-byte terminated string containing a fully qualified file or path name.  <a href="#ga61c93635fb125b35d904e4e13e0169c6">More...</a><br/></td></tr>
+<tr class="memdesc:ga61c93635fb125b35d904e4e13e0169c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal File Dialog window, returning a WBAlloc'd pointer to a null-byte terminated string containing a fully qualified file or path name.  <a href="#ga61c93635fb125b35d904e4e13e0169c6">More...</a><br/></td></tr>
 <tr class="separator:ga61c93635fb125b35d904e4e13e0169c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9ac41453b238c153917fcd3a33a587d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gaa9ac41453b238c153917fcd3a33a587d">DLGSplashScreen</a> (char *aXPM[], const char *szCopyright, unsigned long clrText)</td></tr>
 <tr class="memdesc:gaa9ac41453b238c153917fcd3a33a587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a splash screen for 5 seconds (with animation and copyright string), and then return.  <a href="#gaa9ac41453b238c153917fcd3a33a587d">More...</a><br/></td></tr>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>FileDialog enumeration. </p>
-<p>Enumeration of bit flags for <a class="el" href="group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6" title="Display a modal File Dialog window, returning a malloc&#39;d pointer to a null-byte terminated string con...">DLGFileDialog()</a><br/>
+<p>Enumeration of bit flags for <a class="el" href="group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6" title="Display a modal File Dialog window, returning a WBAlloc&#39;d pointer to a null-byte terminated string co...">DLGFileDialog()</a><br/>
  Specify one of the 'Type Flag' bits, and any 'Modifier Bits' that apply </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ga92ee7dbf8c990b8a2b7fd764ee1c938ea6ccb72f13a6a373cb375149968d4f8f6"></a>FileDialog_Open</em>&nbsp;</td><td class="fielddoc">
@@ -230,7 +230,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00716">716</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00720">720</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -423,12 +423,12 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line">BEGIN_DIALOG FONT:Variable HEIGHT:50 WIDTH:200 TITLE:<span class="stringliteral">&quot;Sample Message Box Dialog Window&quot;</span></div>
 <div class="line">  CONTROL:Icon ID:1000 X:2 Y:2 HEIGHT:20 WIDTH:20 VISIBLE</div>
 <div class="line">  CONTROL:Text ID:1001 X:24 Y:2 HEIGHT:20 WIDTH:172 VISIBLE</div>
-<div class="line">  CONTROL:DefPushButton ID:IDOK TITLE:OK X:80 Y:28 WIDTH:40 HEIGHT:18 VISIBLE</div>
+<div class="line">  CONTROL:DefPushButton ID:<a class="code" href="group__dlgctrl.html#ga77644707f6801a795c75d2f37913fbc1">IDOK</a> TITLE:OK X:80 Y:28 WIDTH:40 HEIGHT:18 VISIBLE</div>
 <div class="line">END_DIALOG</div>
 </div><!-- fragment --><p>For more information, see <a class="el" href="dialog_resource.html">Dialog Box Resources</a> .</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00251">251</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00247">247</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -474,18 +474,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Display a modal File Dialog window, returning a malloc'd pointer to a null-byte terminated string containing a fully qualified file or path name. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns either a NULL on cancel/error, or a malloc'd pointer to a null-byte terminated string containing a fully qualified file or path name </dd></dl>
+<p>Display a modal File Dialog window, returning a WBAlloc'd pointer to a null-byte terminated string containing a fully qualified file or path name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">iType</td><td>See the <a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68ca">MessageBoxEnum</a> enumeration for a list of possible values </td></tr>
     <tr><td class="paramname">wIDOwner</td><td>The owner's Window ID (or None) </td></tr>
     <tr><td class="paramname">szDefPath</td><td>A null-byte terminated string containing the default path name (may be NULL for current directory) </td></tr>
     <tr><td class="paramname">szDefName</td><td>A null-byte terminated string contianing the default file name (may be NULL, no path specifiers allowed) </td></tr>
-    <tr><td class="paramname">szExtAndDescList</td><td>Information containing the known extensions and file types. May be NULL. See below for format.</td></tr>
+    <tr><td class="paramname">szExtAndDescList</td><td>Information containing the known extensions and file types. May be NULL. See below for format. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Either a NULL on cancel/error, or a WBAlloc'd pointer to a null-byte terminated string containing a fully qualified file or path name</dd></dl>
 <p>Use this to display an X11 Work Bench Toolkit custom File Dialog based on the specified parameters. These file dialogs have been intionally tweeked for better UI performance than other file dialogs.<br/>
 </p>
 <p>When specifying the 'szExtAndDescList' parameter, point it to a string similar to the following:<br/>
@@ -496,9 +496,10 @@ Functions</h2></td></tr>
 <div class="line">  <span class="stringliteral">&quot;*.sh\tShell Script Files\n&quot;</span></div>
 <div class="line">  <span class="stringliteral">&quot;*.*\tOther Files\n&quot;</span>;</div>
 </div><!-- fragment --><p>This describes 3 file types with extensions '.txt', '.doc', and '.sh' with a 4th file type of 'other files' that encompasses everything else. Simple pattern matching is applied to each file name for the selected pattern.</p>
+<p>NOTE: non-NULL return values must be free'd by the caller using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a></p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00823">823</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00854">854</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
 </div>
 </div>
@@ -551,7 +552,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Displays a special purpose dialog window that retrieves a character string as input. </p>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd memory block containing a null-byte terminated input string, or NULL on cancel/error </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wIDOwner</td><td>Owner Window ID (or None) </td></tr>
@@ -559,10 +559,13 @@ Functions</h2></td></tr>
     <tr><td class="paramname">szPrompt</td><td>A null-byte terminated string that is to be displayed in a message area on the dialog window </td></tr>
     <tr><td class="paramname">szDefault</td><td>A null-byte terminated string containing the default value. May be NULL </td></tr>
     <tr><td class="paramname">iWidth</td><td>The specified width of the dialog window, or -1 for default </td></tr>
-    <tr><td class="paramname">iMaxChar</td><td>The maximum number of characters in the input string</td></tr>
+    <tr><td class="paramname">iMaxChar</td><td>The maximum number of characters in the input string </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd memory block containing a null-byte terminated input string, or NULL on cancel/error</dd></dl>
+<p>Use this function to display an 'Input' box, and return back the text in an allocated buffer.</p>
+<p>NOTE: non-NULL return values must be free'd by the caller using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a></p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
 <p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00450">450</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
@@ -666,7 +669,7 @@ Functions</h2></td></tr>
 <p>The copyright string can be multi-line. Care should be taken that it is not too wide for the display or the results of horizontally and vertically centering the string in the lower half may be unpredictable.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00922">922</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00955">955</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
 </div>
 </div>
@@ -675,7 +678,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

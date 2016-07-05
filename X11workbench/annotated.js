@@ -1,10 +1,13 @@
 var annotated =
 [
+    [ "__DELAYED_EVENT_ENTRY__", "struct____DELAYED__EVENT__ENTRY____.html", "struct____DELAYED__EVENT__ENTRY____" ],
     [ "__DIALOG_WINDOW__", "struct____DIALOG__WINDOW____.html", "struct____DIALOG__WINDOW____" ],
     [ "__DT_WORD__", "struct____DT__WORD____.html", "struct____DT__WORD____" ],
     [ "__DT_WORDS__", "struct____DT__WORDS____.html", "struct____DT__WORDS____" ],
+    [ "__EVENT_ENTRY__", "struct____EVENT__ENTRY____.html", "struct____EVENT__ENTRY____" ],
     [ "__file_help_buf__", "struct____file__help__buf____.html", "struct____file__help__buf____" ],
     [ "__LISTINFO__", "struct____LISTINFO____.html", "struct____LISTINFO____" ],
+    [ "__TIMER_ENTRY__", "struct____TIMER__ENTRY____.html", "struct____TIMER__ENTRY____" ],
     [ "__WB_DIALOG_CONTROL__", "struct____WB__DIALOG__CONTROL____.html", "struct____WB__DIALOG__CONTROL____" ],
     [ "__WB_DIALOG_ENTRY__", "struct____WB__DIALOG__ENTRY____.html", "struct____WB__DIALOG__ENTRY____" ],
     [ "__WB_DIALOG_PROP__", "struct____WB__DIALOG__PROP____.html", "struct____WB__DIALOG__PROP____" ],
@@ -15,6 +18,7 @@ var annotated =
     [ "__WB_FW_MENU_HANDLER__", "struct____WB__FW__MENU__HANDLER____.html", "struct____WB__FW__MENU__HANDLER____" ],
     [ "__WB_SCROLLINFO__", "struct____WB__SCROLLINFO____.html", "struct____WB__SCROLLINFO____" ],
     [ "__WBChildFrame__", "struct____WBChildFrame____.html", "struct____WBChildFrame____" ],
+    [ "__WBChildFrameUI__", "struct____WBChildFrameUI____.html", "struct____WBChildFrameUI____" ],
     [ "__WBEditWindow__", "struct____WBEditWindow____.html", "struct____WBEditWindow____" ],
     [ "__WBMenu", "struct____WBMenu.html", "struct____WBMenu" ],
     [ "__WBMenuBarWindow__", "struct____WBMenuBarWindow____.html", "struct____WBMenuBarWindow____" ],

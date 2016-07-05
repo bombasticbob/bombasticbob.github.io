@@ -123,9 +123,6 @@ Macros</h2></td></tr>
 <tr class="separator:addb290e57a097588a94864f6fdef2fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a159330f420ab980327b68ce804de7ba4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>NORMALIZE_SEL_RECT</b>(X)</td></tr>
 <tr class="separator:a159330f420ab980327b68ce804de7ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad24c7783d9f89f2f4ee5ac34b1a2ec13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad24c7783d9f89f2f4ee5ac34b1a2ec13"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>WB_ALLOC_TAG</b>&#160;&#160;&#160;(*((const unsigned int *)szWBAllocTag))</td></tr>
-<tr class="separator:ad24c7783d9f89f2f4ee5ac34b1a2ec13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe0b3a771bd5fb49b94248e1cceb3a8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe0b3a771bd5fb49b94248e1cceb3a8c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_TEXT_BUFFER_LINES</b>&#160;&#160;&#160;16384</td></tr>
 <tr class="separator:abe0b3a771bd5fb49b94248e1cceb3a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,19 +306,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_cur
 <tr class="memitem:a85cee4e26abfb326bcc24bcef7cec176"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85cee4e26abfb326bcc24bcef7cec176"></a>
 static __inline__ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_get_line_ending_text</b> (enum <a class="el" href="group__text__object.html#ga1dfaf31d98729de91c6eed721db8fd1e">_LineFeed_</a> iIndex)</td></tr>
 <tr class="separator:a85cee4e26abfb326bcc24bcef7cec176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">WBAlloc</a> (int nSize)</td></tr>
-<tr class="memdesc:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">High performance memory sub-allocator 'allocate'.  <a href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">More...</a><br/></td></tr>
-<tr class="separator:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaebf9d7c0cd9aa525a93d0c5cc5376a1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">WBFree</a> (void *pBuf)</td></tr>
-<tr class="memdesc:gaebf9d7c0cd9aa525a93d0c5cc5376a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">High performance memory sub-allocator 'free'.  <a href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">More...</a><br/></td></tr>
-<tr class="separator:gaebf9d7c0cd9aa525a93d0c5cc5376a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2228924f510dc4b6f6b86b44c0e4e11"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sub__alloc.html#gaf2228924f510dc4b6f6b86b44c0e4e11">WBReAlloc</a> (void *pBuf, int nNewSize)</td></tr>
-<tr class="memdesc:gaf2228924f510dc4b6f6b86b44c0e4e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">High performance memory sub-allocator 're-allocate'.  <a href="group__sub__alloc.html#gaf2228924f510dc4b6f6b86b44c0e4e11">More...</a><br/></td></tr>
-<tr class="separator:gaf2228924f510dc4b6f6b86b44c0e4e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7941a53075e5f5ce27eba95c524aae5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7941a53075e5f5ce27eba95c524aae5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sub__alloc.html#ga7941a53075e5f5ce27eba95c524aae5f">WBSubAllocTrashMasher</a> (void)</td></tr>
-<tr class="memdesc:ga7941a53075e5f5ce27eba95c524aae5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">High performance memory sub-allocator 'trash masher' - call periodically to minimize wasted memory. <br/></td></tr>
-<tr class="separator:ga7941a53075e5f5ce27eba95c524aae5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3161994482cbb54c3a35e1c9330c7d1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga3161994482cbb54c3a35e1c9330c7d1f">WBAllocTextBuffer</a> (const char *pBuf, unsigned int cbBufSize)</td></tr>
 <tr class="memdesc:ga3161994482cbb54c3a35e1c9330c7d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor for a TEXT_BUFFER using defaults.  <a href="group__text__object.html#ga3161994482cbb54c3a35e1c9330c7d1f">More...</a><br/></td></tr>
 <tr class="separator:ga3161994482cbb54c3a35e1c9330c7d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -337,12 +321,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">WBTextBufferRefreshCache</a> (<a class="el" href="group__text__object.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *pBuf)</td></tr>
 <tr class="memdesc:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text buffer 'cached information' refresh function.  <a href="group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">More...</a><br/></td></tr>
 <tr class="separator:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb89e8eacd7f963104ed12b034482e7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d">TEXT_OBJECT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">WBTextObjectConstructor</a> (unsigned long cbStructSize, const char *szText, unsigned long cbLen, Window wIDOwner)</td></tr>
+<tr class="memitem:gafb89e8eacd7f963104ed12b034482e7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">WBTextObjectConstructor</a> (unsigned long cbStructSize, const char *szText, unsigned long cbLen, Window wIDOwner)</td></tr>
 <tr class="memdesc:gafb89e8eacd7f963104ed12b034482e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor for a TEXT_OBJECT using defaults.  <a href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">More...</a><br/></td></tr>
 <tr class="separator:gafb89e8eacd7f963104ed12b034482e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">WBTextObjectDestructor</a> (<a class="el" href="group__text__object.html#ga444a831dc1519c93326499ba16e24a4d">TEXT_OBJECT</a> *pObj)</td></tr>
+<tr class="memitem:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">WBTextObjectDestructor</a> (<a class="el" href="group__text__object.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pObj)</td></tr>
 <tr class="memdesc:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic detructor for a TEXT_OBJECT.  <a href="group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">More...</a><br/></td></tr>
 <tr class="separator:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1f8ddf1de53987c95b923e2b7f5f2ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce">WBTextObjectCalculateLineHeight</a> (int iAscent, int iDescent)</td></tr>
+<tr class="memdesc:gae1f8ddf1de53987c95b923e2b7f5f2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the correct per-line height (in pixels) for a specified font ascent and descent.  <a href="group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce">More...</a><br/></td></tr>
+<tr class="separator:gae1f8ddf1de53987c95b923e2b7f5f2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b84b3336492611172f4e9d0b7b7e96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31b84b3336492611172f4e9d0b7b7e96"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_free_undo_redo_buffer</b> (void *pBuffer)</td></tr>
 <tr class="separator:a31b84b3336492611172f4e9d0b7b7e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,11 +355,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_mer
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a5363de736f610c46c399c8b8d672d4a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5363de736f610c46c399c8b8d672d4a5"></a>
-const <a class="el" href="group__text__object.html#ga44726f48c6cbcc4ef5e670740db73a8d">TEXT_OBJECT_VTABLE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WBDefaultTextObjectVTable</b></td></tr>
+const <a class="el" href="group__text__object.html#ga47fb27d1f2a968b64a65476649b52f36">TEXT_OBJECT_VTABLE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WBDefaultTextObjectVTable</b></td></tr>
 <tr class="separator:a5363de736f610c46c399c8b8d672d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83cc10f2dfc168b7f767bebc118e14d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83cc10f2dfc168b7f767bebc118e14d5"></a>
-static const char&#160;</td><td class="memItemRight" valign="bottom"><b>szWBAllocTag</b> [] =&quot;WB_M&quot;</td></tr>
-<tr class="separator:a83cc10f2dfc168b7f767bebc118e14d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utilities for copying and drawing text, determining text extents, and so on. </p>
@@ -396,7 +380,7 @@ static const char&#160;</td><td class="memItemRight" valign="bottom"><b>szWBAllo
 <b>Value:</b><div class="fragment"><div class="line">{<span class="keywordflow">if</span>((X).top &gt; (X).bottom || ((X).top == (X).bottom &amp;&amp; (X).left &gt; (X).right)) \</div>
 <div class="line">                               { <span class="keywordtype">int</span> i1 = (X).left; (X).left = (X).right; (X).right = i1; i1 = (X).top; (X).top = (X).bottom; (X).bottom = i1; }}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00136">136</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00127">127</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -406,7 +390,7 @@ static const char&#160;</td><td class="memItemRight" valign="bottom"><b>szWBAllo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="text__object_8c.html">text_object.c</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

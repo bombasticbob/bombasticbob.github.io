@@ -9,5 +9,6 @@ var struct____WBMenuItem____ =
     [ "iTooltipText", "struct____WBMenuItem____.html#a379bda790791742d87163a7e9c4aa331", null ],
     [ "iUnderscore", "struct____WBMenuItem____.html#a9fbeb92f9390bf28646ccba81cdb8ace", null ],
     [ "nDataSize", "struct____WBMenuItem____.html#a11868eb3d48b4fda9f66ea0bc586ae6c", null ],
-    [ "nHotKey", "struct____WBMenuItem____.html#a28b2937d5c94a3f034d2ae3c3b29af8a", null ]
+    [ "nHotKey", "struct____WBMenuItem____.html#a28b2937d5c94a3f034d2ae3c3b29af8a", null ],
+    [ "uiTag", "struct____WBMenuItem____.html#a9242290baf4201fe01c6b88b162a2fb0", null ]
 ];

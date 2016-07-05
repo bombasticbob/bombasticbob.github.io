@@ -120,7 +120,7 @@ Functions</h2></td></tr>
 <p>This function is identical to FreeLibrary() under Windows, and calls 'dlfree()' on POSIX systems</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02090">2090</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l03277">3277</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 <p>This function is identical to GetProcAddress() under Windows, and calls 'dlproc()' on POSIX systems</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02095">2095</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l03282">3282</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
 <p>This function is identical to LoadLibrary() under Windows, and calls 'dlopen()' on POSIX systems</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02085">2085</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l03272">3272</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Functions</h2></td></tr>
 <p>Use this function to spawn an asynchronous process. The function returns an invalid process ID or process handle on error. If the process ID is an allocated resource, the caller must free it. Each additional parameter passed to this function is a parameter that is to be passed to the program. The final parameter in the list must be NULL, so any call to this function will need to have at least 2 parameters.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01747">1747</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02925">2925</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Functions</h2></td></tr>
  You can monitor 'WB_PROCESS_ID' to find out if the process is running. Additionally, you can use the output of hStdOut and hStdErr by re-directing them to anonymous pipes and monitoring their activity.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01771">1771</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02949">2949</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Functions</h2></td></tr>
 <p>This function is used internally by the other process control functions, and is defined here in case you need to write a customized version of one of the process control functions. A typical example might be the use of stderr rather than stdout for <a class="el" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983" title="Run an application synchronously, returning &#39;stdout&#39; output in a character buffer.">WBRunResult()</a>.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01284">1284</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l02462">2462</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -390,11 +390,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A malloc'd pointer to a buffer containing the 'stdout' output from the application.</dd></dl>
-<p>Use this function to run an external process and capture its output. This function will ignore the error return code from the program, so if this information is necessary, you should write a different function (based on this one) using 'WBRunAsync' and a wait loop, etc. that checks the application's return value on exit. Each additional parameter passed to this function is a parameter that is to be passed to the program. The final parameter in the list must be NULL, so any call to this function will need to have at least 2 parameters. On error this function returns a NULL value. Any non-NULL value must be 'free'd by the caller.</p>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a> pointer to a buffer containing the 'stdout' output from the application.</dd></dl>
+<p>Use this function to run an external process and capture its output. This function will ignore the error return code from the program, so if this information is necessary, you should write a different function (based on this one) using 'WBRunAsync' and a wait loop, etc. that checks the application's return value on exit. Each additional parameter passed to this function is a parameter that is to be passed to the program. The final parameter in the list must be NULL, so any call to this function will need to have at least 2 parameters. On error this function returns a NULL value. Any non-NULL value must be 'free'd by the caller using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01953">1953</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l03131">3131</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -436,13 +436,13 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A malloc'd pointer to a buffer containing the 'stdout' output from the application.</dd></dl>
-<p>Use this function to run an external process, providing a buffer that contains data to be sent to the applications 'stdin', and in the process, capture its output. This function will ignore the error return code from the program, so if this information is necessary, you should write a different function (based on this one) using 'WBRunAsync' and a wait loop, etc. that checks the application's return value on exit. Each additional parameter passed to this function is a parameter that is to be passed to the program. The final parameter in the list must be NULL, so any call to this function will need to have at least 2 parameters. On error this function returns a NULL value. Any non-NULL value must be 'free'd by the caller.<br/>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a> pointer to a buffer containing the 'stdout' output from the application.</dd></dl>
+<p>Use this function to run an external process, providing a buffer that contains data to be sent to the applications 'stdin', and in the process, capture its output. This function will ignore the error return code from the program, so if this information is necessary, you should write a different function (based on this one) using 'WBRunAsync' and a wait loop, etc. that checks the application's return value on exit. Each additional parameter passed to this function is a parameter that is to be passed to the program. The final parameter in the list must be NULL, so any call to this function will need to have at least 2 parameters. On error this function returns a NULL value. Any non-NULL value must be 'free'd by the caller using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>.<br/>
 </p>
 <p>To create piped output, pass the result of the previous 'WBRunResult' or 'WBRunResultPipe' as the 'szStdInBuf' parameter to a subsequent 'WBRunResultPipe' call.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l01970">1970</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l03148">3148</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

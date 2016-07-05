@@ -10,7 +10,8 @@ var group__menu =
       [ "iTooltipText", "struct____WBMenuItem____.html#a379bda790791742d87163a7e9c4aa331", null ],
       [ "iUnderscore", "struct____WBMenuItem____.html#a9fbeb92f9390bf28646ccba81cdb8ace", null ],
       [ "nDataSize", "struct____WBMenuItem____.html#a11868eb3d48b4fda9f66ea0bc586ae6c", null ],
-      [ "nHotKey", "struct____WBMenuItem____.html#a28b2937d5c94a3f034d2ae3c3b29af8a", null ]
+      [ "nHotKey", "struct____WBMenuItem____.html#a28b2937d5c94a3f034d2ae3c3b29af8a", null ],
+      [ "uiTag", "struct____WBMenuItem____.html#a9242290baf4201fe01c6b88b162a2fb0", null ]
     ] ],
     [ "__WBMenu", "struct____WBMenu.html", [
       [ "iMenuID", "struct____WBMenu.html#a2bb21eec20254688020158712a7914cc", null ],
@@ -19,8 +20,10 @@ var group__menu =
       [ "nMaxPopups", "struct____WBMenu.html#a6f97d99954ffe66592d514cd8f57ed50", null ],
       [ "nPopups", "struct____WBMenu.html#ae15309f5e39a6efbc70fe8d9b8222535", null ],
       [ "ppItems", "struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c", null ],
-      [ "ppPopups", "struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff", null ]
+      [ "ppPopups", "struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff", null ],
+      [ "uiTag", "struct____WBMenu.html#a9242290baf4201fe01c6b88b162a2fb0", null ]
     ] ],
+    [ "WBMENU_DYNAMIC_HIGH_BIT", "group__menu.html#gab44db5d5d421803fa6a04d4019ff28cf", null ],
     [ "WBMENU_POPUP_HIGH_BIT", "group__menu.html#ga789ce61d76d2e8f8255210cc915577e7", null ],
     [ "WBMENU_POPUP_MASK", "group__menu.html#gaa6a71fec90db85a5246b1f973ccba163", null ],
     [ "WBMENU_RESERVE_DEFAULT", "group__menu.html#ga9f0180efa72232c0547a7d489bad40a1", null ],
@@ -35,6 +38,8 @@ var group__menu =
     [ "MBDestroyMenu", "group__menu.html#ga3fa651757859fd2a4f2940935edada84", null ],
     [ "MBDestroyMenuItem", "group__menu.html#ga8521ca9e318811d811e1b107a8c3bcce", null ],
     [ "MBFindPopupMenu", "group__menu.html#ga2819a159c3084a9729b0ecf879f60870", null ],
+    [ "MBIsMenuItemValid", "group__menu.html#gaa05b432c0074446ae12cbb06708592b2", null ],
+    [ "MBIsMenuValid", "group__menu.html#ga41a8c143ed28cc1a63089d04a6cd8db9", null ],
     [ "MBMenuIsPopup", "group__menu.html#ga8760438ac31188bac506659b28fecc33", null ],
     [ "MBMenuProcessHotKey", "group__menu.html#ga9abd89ca1ddde3b72752e1a4c99f6b7f", null ],
     [ "MBRemoveMenuItem", "group__menu.html#gae33f4d3b3630ffca3fa17cecd46d2e0b", null ],

@@ -175,11 +175,11 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">union</span></div>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordtype">int</span> <a class="code" href="struct__CHXSetting__.html#a467ba57b62803194f79e661ffd6dc73a" title="The data as an integer value.">iData</a>;                     <span class="comment">// The data as an integer value</span></div>
-<div class="line">    <a class="code" href="group__platform.html#gabcd15160d38595f6368937f45005d11d" title="Platform abstract 64-bit integer.">WB_INT64</a> <a class="code" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37" title="Reserved element, forces 64-bit size.">llData</a>;               <span class="comment">// Reserved element, forces 64-bit size</span></div>
+<div class="line">    <a class="code" href="group__platform.html#ga63e50b5bd3d4dc7ee134c20772268f0f" title="Platform abstract 64-bit integer.">WB_INT64</a> <a class="code" href="struct__CHXSetting__.html#a7eca3badeedc59e9d0f1e65e1387ff37" title="Reserved element, forces 64-bit size.">llData</a>;               <span class="comment">// Reserved element, forces 64-bit size</span></div>
 <div class="line">    <a class="code" href="struct____XSETTINGS__DATA__COLOR____.html" title="Structure for storing configuration color information, XSettingsTypeColor. ">XSETTINGS_DATA_COLOR</a> <a class="code" href="struct__CHXSetting__.html#ae240c7f4192f75473ba7c40c874c692f" title="The data as a color value.">clrData</a>;  <span class="comment">// The data as a color value</span></div>
 <div class="line">    <span class="keywordtype">void</span> *<a class="code" href="struct__CHXSetting__.html#aa92f08987c51e4eb7b92e84944ca2af3" title="un-typed pointer to data within string area">pData</a>;                   <span class="comment">// un-typed pointer to data within string area</span></div>
 <div class="line">    <span class="keywordtype">char</span> *<a class="code" href="struct__CHXSetting__.html#abe24f5f3933a24906a280ca25840a717" title="&#39;char&#39; typed pointer to data within string area">szData</a>;                  <span class="comment">// &#39;char&#39; typed pointer to data within string area</span></div>
-<div class="line">  } <a class="code" href="struct__CHXSetting__.html#a8b33c8d10b726935fbf10c694235ebe0" title="union of the data alias&#39;">uData</a>;                         <span class="comment">// union of the data alias&#39;</span></div>
+<div class="line">  } <a class="code" href="struct__CHXSetting__.html#acf29d0d1c02860f234d7c10a06600777" title="union of the data alias&#39;">uData</a>;                         <span class="comment">// union of the data alias&#39;</span></div>
 <div class="line">}  <a class="code" href="group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec" title="PACKED definition.">__PACKED__</a> <a class="code" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426" title="Structure for storing settings information internally.">CHXSetting</a>;</div>
 </div><!-- fragment --> 
 </div>
@@ -369,8 +369,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>'malloc'd pointer to a zero-byte terminated character string containing the desired information</dd></dl>
-<p>This function will return NULL on error, or a malloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function.</p>
+<dl class="section return"><dt>Returns</dt><dd>'WBAlloc'd pointer to a zero-byte terminated character string containing the desired information</dd></dl>
+<p>This function will return NULL on error, or a WBAlloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function, using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a></p>
 <p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
 
 <p>Definition at line <a class="el" href="conf__help_8c_source.html#l02687">2687</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
@@ -485,8 +485,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>'malloc'd pointer to a zero-byte terminated character string containing the MIME type</dd></dl>
-<p>This function will return NULL on error, or a malloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function.</p>
+<dl class="section return"><dt>Returns</dt><dd>'WBAlloc'd pointer to a zero-byte terminated character string containing the MIME type</dd></dl>
+<p>This function will return NULL on error, or a WBAlloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function, using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a></p>
 <p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
 
 <p>Definition at line <a class="el" href="conf__help_8c_source.html#l02634">2634</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
@@ -514,9 +514,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>'malloc'd pointer to a zero-byte terminated character string containing the default application name</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>'WBAlloc'd pointer to a zero-byte terminated character string containing the default application name</dd></dl>
 <p>In the case of a '.desktop' file name being returned, use <a class="el" href="group__desktop__settings.html#gad91dd92dce9eb3289074d64f982b1ab6" title="Get the default application for a particular MIME type.">CHGetDesktopFileInfo()</a> to obtain the actual path name and other information associated with the application.</p>
-<p>This function will return NULL on error, or a malloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function.</p>
+<p>This function will return NULL on error, or a WBAlloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function, using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a></p>
 <p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
 
 <p>Definition at line <a class="el" href="conf__help_8c_source.html#l02656">2656</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
@@ -716,7 +716,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

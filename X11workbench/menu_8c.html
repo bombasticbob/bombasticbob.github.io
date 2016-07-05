@@ -127,6 +127,12 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>InternalPopulat
 <tr class="memitem:ga3fa651757859fd2a4f2940935edada84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga3fa651757859fd2a4f2940935edada84">MBDestroyMenu</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu)</td></tr>
 <tr class="memdesc:ga3fa651757859fd2a4f2940935edada84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a WBMenu created by <a class="el" href="group__menu.html#gac010d65a14eae65d7ed441f85421afc4" title="Create a WBMenu from a text menu resource.">MBCreateMenu()</a>, freeing up its resources.  <a href="group__menu.html#ga3fa651757859fd2a4f2940935edada84">More...</a><br/></td></tr>
 <tr class="separator:ga3fa651757859fd2a4f2940935edada84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41a8c143ed28cc1a63089d04a6cd8db9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga41a8c143ed28cc1a63089d04a6cd8db9">MBIsMenuValid</a> (const <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu)</td></tr>
+<tr class="memdesc:ga41a8c143ed28cc1a63089d04a6cd8db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a 'WBMenu' pointer is valid.  <a href="group__menu.html#ga41a8c143ed28cc1a63089d04a6cd8db9">More...</a><br/></td></tr>
+<tr class="separator:ga41a8c143ed28cc1a63089d04a6cd8db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa05b432c0074446ae12cbb06708592b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gaa05b432c0074446ae12cbb06708592b2">MBIsMenuItemValid</a> (const <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem)</td></tr>
+<tr class="memdesc:gaa05b432c0074446ae12cbb06708592b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a 'WBMenuItem' pointer is valid.  <a href="group__menu.html#gaa05b432c0074446ae12cbb06708592b2">More...</a><br/></td></tr>
+<tr class="separator:gaa05b432c0074446ae12cbb06708592b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8521ca9e318811d811e1b107a8c3bcce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga8521ca9e318811d811e1b107a8c3bcce">MBDestroyMenuItem</a> (<a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem)</td></tr>
 <tr class="memdesc:ga8521ca9e318811d811e1b107a8c3bcce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a WBMenuItem created by <a class="el" href="group__menu.html#gae4ae91f9fbdc1475432289b7a72d06bc" title="Create a single allocated WBMenuItem structure from a text menu resource, advancing the source text p...">MBCreateMenuItem()</a>, freeing up its resources.  <a href="group__menu.html#ga8521ca9e318811d811e1b107a8c3bcce">More...</a><br/></td></tr>
 <tr class="separator:ga8521ca9e318811d811e1b107a8c3bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,7 +217,7 @@ static <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">
 <b>Value:</b><div class="fragment"><div class="line">{ <span class="keywordflow">while</span>(*X &amp;&amp; *X &lt;= <span class="charliteral">&#39; &#39;</span> &amp;&amp; *X != <span class="charliteral">&#39;\t&#39;</span> &amp;&amp; *X != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; X &lt; Z) X++; \</div>
 <div class="line">                          Y=X; <span class="keywordflow">while</span>(*X &amp;&amp; *X != <span class="charliteral">&#39;\t&#39;</span> &amp;&amp; *X != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; X &lt; Z) X++; <span class="keywordflow">if</span>(*X == <span class="charliteral">&#39;\t&#39;</span> || *X == <span class="charliteral">&#39;\n&#39;</span>) X++; }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="menu_8c_source.html#l00254">254</a> of file <a class="el" href="menu_8c_source.html">menu.c</a>.</p>
+<p>Definition at line <a class="el" href="menu_8c_source.html#l00361">361</a> of file <a class="el" href="menu_8c_source.html">menu.c</a>.</p>
 
 </div>
 </div>
@@ -221,7 +227,7 @@ static <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="menu_8c.html">menu.c</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -55,5 +55,6 @@ var group__draw__text =
     [ "DTGetTextWidth", "group__draw__text.html#gab939f0546f74387edba83043440de77d", null ],
     [ "DTGetWordsFromText", "group__draw__text.html#ga622bdff494230c3a68db989121878679", null ],
     [ "DTPreRender", "group__draw__text.html#gab2a6008375cb90a9c61ddf0b97002407", null ],
-    [ "DTRender", "group__draw__text.html#ga0eec4d84392b9beedbef1be27bcd22ba", null ]
+    [ "DTRender", "group__draw__text.html#ga0eec4d84392b9beedbef1be27bcd22ba", null ],
+    [ "InternalCalcIdealBounds", "group__draw__text.html#gae5f101f0a67ceb151d658b01c66efc26", null ]
 ];

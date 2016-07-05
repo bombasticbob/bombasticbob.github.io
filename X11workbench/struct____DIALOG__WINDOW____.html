@@ -83,7 +83,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:abbd3348b2419dc3237a6a963cc6aa704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb4686b7633f8696696761533a37b4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cb4686b7633f8696696761533a37b4a"></a>
 <a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____DIALOG__WINDOW____.html#a8cb4686b7633f8696696761533a37b4a">pwContents</a></td></tr>
-<tr class="memdesc:a8cb4686b7633f8696696761533a37b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">malloc'd array of child window/control information as <a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a> following order of windows creation and tab order <br/></td></tr>
+<tr class="memdesc:a8cb4686b7633f8696696761533a37b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WBAlloc'd array of child window/control information as <a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a> following order of windows creation and tab order. <br/></td></tr>
 <tr class="separator:a8cb4686b7633f8696696761533a37b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45b1722dcd4bfec379e336b4ddb3870c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45b1722dcd4bfec379e336b4ddb3870c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____DIALOG__WINDOW____.html#a45b1722dcd4bfec379e336b4ddb3870c">nContents</a></td></tr>
@@ -95,7 +95,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="separator:adf4e1559b888de60b9fc1cf1771875ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1024bebb223853fcd34131aae6c549"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b1024bebb223853fcd34131aae6c549"></a>
 char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____DIALOG__WINDOW____.html#a1b1024bebb223853fcd34131aae6c549">szTitle</a></td></tr>
-<tr class="memdesc:a1b1024bebb223853fcd34131aae6c549"><td class="mdescLeft">&#160;</td><td class="mdescRight">title bar string (malloc'd pointer, must free on destroy) <br/></td></tr>
+<tr class="memdesc:a1b1024bebb223853fcd34131aae6c549"><td class="mdescLeft">&#160;</td><td class="mdescRight">title bar string (WBAlloc'd pointer, must WBFree on destroy) <br/></td></tr>
 <tr class="separator:a1b1024bebb223853fcd34131aae6c549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b5ac90ba23f881854d08b7f7b9385c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75b5ac90ba23f881854d08b7f7b9385c"></a>
 <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____DIALOG__WINDOW____.html#a75b5ac90ba23f881854d08b7f7b9385c">pDLGCallback</a></td></tr>
@@ -112,12 +112,12 @@ struct <a class="el" href="struct____DIALOG__WINDOW____.html">__DIALOG_WINDOW__<
 <div class="line">{</div>
 <div class="line">  <a class="code" href="struct____WB__DIALOG__WINDOW____.html" title="Structure identifying a dialog (frame) window. ">WBDialogWindow</a> <a class="code" href="struct____DIALOG__WINDOW____.html#abbd3348b2419dc3237a6a963cc6aa704" title="WBDialogWIndow structure, required to be at the beginning.">wbDLG</a>;            <span class="comment">// WBDialogWIndow structure, required to be at the beginning</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="struct____WB__DIALOG__ENTRY____.html" title="Structure identifying one of the controls that appears on a dialog window. ">WBDialogEntry</a> *<a class="code" href="struct____DIALOG__WINDOW____.html#a8cb4686b7633f8696696761533a37b4a" title="malloc&#39;d array of child window/control information as WBDialogEntry following order of windows creati...">pwContents</a>;       <span class="comment">// malloc&#39;d array of child window/control information as</span></div>
+<div class="line">  <a class="code" href="struct____WB__DIALOG__ENTRY____.html" title="Structure identifying one of the controls that appears on a dialog window. ">WBDialogEntry</a> *<a class="code" href="struct____DIALOG__WINDOW____.html#a8cb4686b7633f8696696761533a37b4a" title="WBAlloc&#39;d array of child window/control information as WBDialogEntry following order of windows creat...">pwContents</a>;       <span class="comment">// WBAlloc&#39;d array of child window/control information as</span></div>
 <div class="line">                                   <span class="comment">// WBDialogEntry following order of windows creation and tab order</span></div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DIALOG__WINDOW____.html#a45b1722dcd4bfec379e336b4ddb3870c" title="size of &#39;pwContents&#39; when pwContents is not NULL">nContents</a>;                   <span class="comment">// size of &#39;pwContents&#39; when pwContents is not NULL</span></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____DIALOG__WINDOW____.html#adf4e1559b888de60b9fc1cf1771875ad" title="extent of &#39;pwContents&#39; when pwContents is not NULL">nMaxContents</a>;                <span class="comment">// extent of &#39;pwContents&#39; when pwContents is not NULL</span></div>
-<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____DIALOG__WINDOW____.html#a1b1024bebb223853fcd34131aae6c549" title="title bar string (malloc&#39;d pointer, must free on destroy)">szTitle</a>;                   <span class="comment">// title bar string (malloc&#39;d pointer, must free on destroy)</span></div>
+<div class="line">  <span class="keywordtype">char</span> *<a class="code" href="struct____DIALOG__WINDOW____.html#a1b1024bebb223853fcd34131aae6c549" title="title bar string (WBAlloc&#39;d pointer, must WBFree on destroy)">szTitle</a>;                   <span class="comment">// title bar string (WBAlloc&#39;d pointer, must WBFree on destroy)</span></div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c" title="event callback function type for window events">WBWinEvent</a> <a class="code" href="struct____DIALOG__WINDOW____.html#a75b5ac90ba23f881854d08b7f7b9385c" title="pointer to dialog window callback function">pDLGCallback</a>;         <span class="comment">// pointer to dialog window callback function</span></div>
 <div class="line"></div>
@@ -128,7 +128,7 @@ struct <a class="el" href="struct____DIALOG__WINDOW____.html">__DIALOG_WINDOW__<
 </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad" title="Structure identifying one of the controls that appears on a dialog window.">WBDialogEntry</a>, <a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a" title="Structure identifying a dialog (frame) window.">WBDialogWindow</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00119">119</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8c_source.html#l00111">111</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="dialog__window_8c_source.html">dialog_window.c</a></li>
 </ul>
@@ -138,7 +138,7 @@ struct <a class="el" href="struct____DIALOG__WINDOW____.html">__DIALOG_WINDOW__<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____DIALOG__WINDOW____.html">__DIALOG_WINDOW__</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:15 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

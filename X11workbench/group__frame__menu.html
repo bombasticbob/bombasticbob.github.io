@@ -114,6 +114,8 @@ Typedefs</h2></td></tr>
 <div class="line">                       <span class="stringliteral">&quot;_Open File\tIDM_FILE_OPEN\tOpen File\tCtrl+O\n&quot;</span></div>
 <div class="line">                       <span class="stringliteral">&quot;_Save File\tIDM_FILE_SAVE\tSave File\tCtrl+S\n&quot;</span></div>
 <div class="line">                       <span class="stringliteral">&quot;\tseparator\n&quot;</span></div>
+<div class="line">                       <span class="stringliteral">&quot;\tdynamic\tIDM_RECENT_FILESn&quot;</span></div>
+<div class="line">                       <span class="stringliteral">&quot;\tseparator\n&quot;</span></div>
 <div class="line">                       <span class="stringliteral">&quot;E_xit\tIDM_FILE_EXIT\tClose Application\tAlt+F4\n&quot;</span></div>
 <div class="line">                       <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"></div>
@@ -123,6 +125,7 @@ Typedefs</h2></td></tr>
 <div class="line">  <a class="code" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624" title="Use this macro to define an entry for a WBFWMenuHandler array.">FW_MENU_HANDLER_ENTRY</a>(<span class="stringliteral">&quot;IDM_FILE_EXIT&quot;</span>,FileExitHandler,NULL)</div>
 <div class="line">  <a class="code" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624" title="Use this macro to define an entry for a WBFWMenuHandler array.">FW_MENU_HANDLER_ENTRY</a>(&quot;IDM_FILE_OPEN&quot;,FileOpenHandler,NULL)</div>
 <div class="line">  <a class="code" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624" title="Use this macro to define an entry for a WBFWMenuHandler array.">FW_MENU_HANDLER_ENTRY</a>(&quot;IDM_FILE_SAVE&quot;,FileSaveHandler,NULL)</div>
+<div class="line">  <a class="code" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624" title="Use this macro to define an entry for a WBFWMenuHandler array.">FW_MENU_HANDLER_ENTRY</a>(&quot;IDM_RECENT_FILES&quot;,NULL,RecentFilesUIHandler)</div>
 <div class="line"><a class="code" href="group__frame__menu.html#ga10289c47ba568d1a721f19b817d7a6b7" title="Use this macro to complete the definition of a WBFWMenuHandler array.">FW_MENU_HANDLER_END</a></div>
 <div class="line"></div>
 <div class="line">---</div>
@@ -154,7 +157,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00568">568</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00869">869</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -198,7 +201,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00577">577</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00878">878</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +227,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00617">617</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00918">918</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +262,7 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

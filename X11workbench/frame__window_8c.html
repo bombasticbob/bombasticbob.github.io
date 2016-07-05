@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('frame__window_8c.html','');});
 <code>#include &quot;<a class="el" href="child__frame_8h_source.html">child_frame.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="conf__help_8h_source.html">conf_help.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="draw__text_8h_source.html">draw_text.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>&quot;</code><br/>
 </div>
 <p><a href="frame__window_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -118,12 +119,33 @@ Macros</h2></td></tr>
 <tr class="memitem:af1d999f7c8eb0101e808c7427c775831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1d999f7c8eb0101e808c7427c775831"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_STATUS_BAR_TAB</b>&#160;&#160;&#160;16 /* default 16 characters per column */</td></tr>
 <tr class="separator:af1d999f7c8eb0101e808c7427c775831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf71ca30587f3cc7b8d19ba3ccd06a38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf71ca30587f3cc7b8d19ba3ccd06a38"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_STATUS_STRING</b>&#160;&#160;&#160;&quot;Status: none&quot;</td></tr>
+<tr class="separator:adf71ca30587f3cc7b8d19ba3ccd06a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60bcefc485841a62e300b663381c76eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60bcefc485841a62e300b663381c76eb"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>FRAME_WINDOW_MIN_WIDTH</b>&#160;&#160;&#160;(100 + 12 * TAB_BAR_TAB_WIDTH)             /* re-sizable window absolute minimum width */</td></tr>
 <tr class="separator:a60bcefc485841a62e300b663381c76eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae961b11e76723e5db75781f0a3b3f07b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae961b11e76723e5db75781f0a3b3f07b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>FRAME_WINDOW_MIN_HEIGHT</b>&#160;&#160;&#160;(100 + TAB_BAR_HEIGHT + STATUS_BAR_HEIGHT) /* re-sizable window absolute minimum height */</td></tr>
 <tr class="separator:ae961b11e76723e5db75781f0a3b3f07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5a1b574cf1d233d3c2ce49b52fbbdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add5a1b574cf1d233d3c2ce49b52fbbdf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NEW_TAB_MESSAGE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:add5a1b574cf1d233d3c2ce49b52fbbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbab7c2f09939bbd0f445456a349c70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dbab7c2f09939bbd0f445456a349c70"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NEXT_TAB_MESSAGE</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a6dbab7c2f09939bbd0f445456a349c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3be59347f26af5f0aac1cffdcdc2d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a3be59347f26af5f0aac1cffdcdc2d3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PREV_TAB_MESSAGE</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a7a3be59347f26af5f0aac1cffdcdc2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad032b4394c13f3ca62b8588256aa62d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad032b4394c13f3ca62b8588256aa62d8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SET_TAB_MESSAGE</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ad032b4394c13f3ca62b8588256aa62d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ae13de23b5d06a9e497a605ce2461e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6ae13de23b5d06a9e497a605ce2461e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CLOSE_TAB_MESSAGE</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:aa6ae13de23b5d06a9e497a605ce2461e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789cef8277daa2c4062c8e8a87797e76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a789cef8277daa2c4062c8e8a87797e76"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>REORDER_TAB_MESSAGE</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a789cef8277daa2c4062c8e8a87797e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa7dab283c25528f228e1e938a30726"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaa7dab283c25528f228e1e938a30726"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR0</b>(X, Y)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &gt; 0) {  }</td></tr>
 <tr class="separator:adaa7dab283c25528f228e1e938a30726"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,14 +250,23 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCheckF
 <tr class="memdesc:gad77acdf96e4649b642dee2c3e2cd1145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a 'contained' window and returns the tab order index.  <a href="group__frame__window.html#gad77acdf96e4649b642dee2c3e2cd1145">More...</a><br/></td></tr>
 <tr class="separator:gad77acdf96e4649b642dee2c3e2cd1145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga513685b0d832f1000133d2a3e603f17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga513685b0d832f1000133d2a3e603f17f">FWRemoveContainedWindow</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pCont)</td></tr>
-<tr class="memdesc:ga513685b0d832f1000133d2a3e603f17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a 'contained' window from a frame window (does not destroy the window)  <a href="group__frame__window.html#ga513685b0d832f1000133d2a3e603f17f">More...</a><br/></td></tr>
+<tr class="memdesc:ga513685b0d832f1000133d2a3e603f17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a 'contained' window from a frame window. Does not destroy the 'contained' window.  <a href="group__frame__window.html#ga513685b0d832f1000133d2a3e603f17f">More...</a><br/></td></tr>
 <tr class="separator:ga513685b0d832f1000133d2a3e603f17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd956d539704b06dba135469d0158d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gadd956d539704b06dba135469d0158d34">FWReplaceContainedWindow</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pCont, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pContNew)</td></tr>
+<tr class="memdesc:gadd956d539704b06dba135469d0158d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a 'contained' window from a frame window.  <a href="group__frame__window.html#gadd956d539704b06dba135469d0158d34">More...</a><br/></td></tr>
+<tr class="separator:gadd956d539704b06dba135469d0158d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7360907bb6b8d7e5fd33b220e3c7ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa7360907bb6b8d7e5fd33b220e3c7ed6">FWSetFocusWindow</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pCont)</td></tr>
 <tr class="memdesc:gaa7360907bb6b8d7e5fd33b220e3c7ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using the Window ID.  <a href="group__frame__window.html#gaa7360907bb6b8d7e5fd33b220e3c7ed6">More...</a><br/></td></tr>
 <tr class="separator:gaa7360907bb6b8d7e5fd33b220e3c7ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">FWSetFocusWindowIndex</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, int iIndex)</td></tr>
 <tr class="memdesc:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using its tab order index.  <a href="group__frame__window.html#ga777ed52e4e0bfdfbcc417eebc61a95f6">More...</a><br/></td></tr>
 <tr class="separator:ga777ed52e4e0bfdfbcc417eebc61a95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c75350918499eaa9f07b02dd696a082"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga2c75350918499eaa9f07b02dd696a082">FWGetChildFrameIndex</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pCont)</td></tr>
+<tr class="memdesc:ga2c75350918499eaa9f07b02dd696a082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to a specific contained window using its tab order index.  <a href="group__frame__window.html#ga2c75350918499eaa9f07b02dd696a082">More...</a><br/></td></tr>
+<tr class="separator:ga2c75350918499eaa9f07b02dd696a082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3de9b87094d9632e65715cad8ba316c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa3de9b87094d9632e65715cad8ba316c">FWMoveChildFrameTabIndex</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, <a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pCont, int iIndex)</td></tr>
+<tr class="memdesc:gaa3de9b87094d9632e65715cad8ba316c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the specific contained window to a particular index in the tab order.  <a href="group__frame__window.html#gaa3de9b87094d9632e65715cad8ba316c">More...</a><br/></td></tr>
+<tr class="separator:gaa3de9b87094d9632e65715cad8ba316c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa4295a8606405987f556ef11fb5c3130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">FWSetStatusText</a> (<a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *pFW, const char *szText)</td></tr>
 <tr class="memdesc:gaa4295a8606405987f556ef11fb5c3130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the 'status' text for a Frame Window with a status bar, forcing a re-paint.  <a href="group__frame__window.html#gaa4295a8606405987f556ef11fb5c3130">More...</a><br/></td></tr>
 <tr class="separator:gaa4295a8606405987f556ef11fb5c3130"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,30 +307,10 @@ static XColor&#160;</td><td class="memItemRight" valign="bottom"><b>clrABG</b></
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>iInitColorFlag</b> = 0</td></tr>
 <tr class="separator:a1a11c961eb8bca06493ff34845ff295d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ga8e7bcc25a5d006d292f5663ed782b3c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8e7bcc25a5d006d292f5663ed782b3c7"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga8e7bcc25a5d006d292f5663ed782b3c7">aNEW_TAB</a></td></tr>
-<tr class="memdesc:ga8e7bcc25a5d006d292f5663ed782b3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to create a new tab (also ctrl+N) <br/></td></tr>
-<tr class="separator:ga8e7bcc25a5d006d292f5663ed782b3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64ff8b29e4e60e540d7ea7c3f30cbc92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga64ff8b29e4e60e540d7ea7c3f30cbc92"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga64ff8b29e4e60e540d7ea7c3f30cbc92">aNEXT_TAB</a> = None</td></tr>
-<tr class="memdesc:ga64ff8b29e4e60e540d7ea7c3f30cbc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to switch to the next tab (also ctrl+alt+pgdn) <br/></td></tr>
-<tr class="separator:ga64ff8b29e4e60e540d7ea7c3f30cbc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55e58ce57171fd2262b770acd16628f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga55e58ce57171fd2262b770acd16628f3"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga55e58ce57171fd2262b770acd16628f3">aPREV_TAB</a> = None</td></tr>
-<tr class="memdesc:ga55e58ce57171fd2262b770acd16628f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to switch to the previous tab (also ctrl+alt+pgup) <br/></td></tr>
-<tr class="separator:ga55e58ce57171fd2262b770acd16628f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab51a72fe3341130fe6a2676c533459c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab51a72fe3341130fe6a2676c533459c8"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gab51a72fe3341130fe6a2676c533459c8">aSET_TAB</a> = None</td></tr>
-<tr class="memdesc:gab51a72fe3341130fe6a2676c533459c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to switch to the specified tab <br/></td></tr>
-<tr class="separator:gab51a72fe3341130fe6a2676c533459c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad55393797c041c077ef8a290480a5d8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad55393797c041c077ef8a290480a5d8a"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gad55393797c041c077ef8a290480a5d8a">aCLOSE_TAB</a> = None</td></tr>
-<tr class="memdesc:gad55393797c041c077ef8a290480a5d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to close the specified tab <br/></td></tr>
-<tr class="separator:gad55393797c041c077ef8a290480a5d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae62f98d2f0948bedf52faaa46b503ec5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae62f98d2f0948bedf52faaa46b503ec5"></a>
-Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#gae62f98d2f0948bedf52faaa46b503ec5">aREORDER_TAB</a> = None</td></tr>
-<tr class="memdesc:gae62f98d2f0948bedf52faaa46b503ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message to re-order the specified tab (activate with mouse-drag) <br/></td></tr>
-<tr class="separator:gae62f98d2f0948bedf52faaa46b503ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a8d6f297223d5d6299e239ddeac2391"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6a8d6f297223d5d6299e239ddeac2391"></a>
+Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__window.html#ga6a8d6f297223d5d6299e239ddeac2391">aTAB_MESSAGE</a></td></tr>
+<tr class="memdesc:ga6a8d6f297223d5d6299e239ddeac2391"><td class="mdescLeft">&#160;</td><td class="mdescRight">command sent by Client Message related to 'tab' operations <br/></td></tr>
+<tr class="separator:ga6a8d6f297223d5d6299e239ddeac2391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Frame Window API function implementation. </p>
@@ -312,7 +323,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="frame__window_8c.html">frame_window.c</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

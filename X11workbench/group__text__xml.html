@@ -72,7 +72,7 @@ $(document).ready(function(){initNavTree('group__text__xml.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga10c208e293c69c4f9c29da367747d3a3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga10c208e293c69c4f9c29da367747d3a3">CHParseXMLTagContents</a> (const char *pTagContents, int cbLength)</td></tr>
-<tr class="memdesc:ga10c208e293c69c4f9c29da367747d3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of an XML tag, returning as malloc'd string list similar to environment strings.  <a href="#ga10c208e293c69c4f9c29da367747d3a3">More...</a><br/></td></tr>
+<tr class="memdesc:ga10c208e293c69c4f9c29da367747d3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of an XML tag, returning as WBAlloc'd string list similar to environment strings.  <a href="#ga10c208e293c69c4f9c29da367747d3a3">More...</a><br/></td></tr>
 <tr class="separator:ga10c208e293c69c4f9c29da367747d3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43c717f2411e18efc0f0f181bbbb5bda"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga43c717f2411e18efc0f0f181bbbb5bda">CHFindEndOfXMLTag</a> (const char *pTagContents)</td></tr>
 <tr class="memdesc:ga43c717f2411e18efc0f0f181bbbb5bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of an XML tag to find the end of it.  <a href="#ga43c717f2411e18efc0f0f181bbbb5bda">More...</a><br/></td></tr>
@@ -134,7 +134,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parses contents of an XML tag, returning as malloc'd string list similar to environment strings. </p>
+<p>Parses contents of an XML tag, returning as WBAlloc'd string list similar to environment strings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pTagContents</td><td>A pointer to the string position just past the tag name </td></tr>
@@ -142,7 +142,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A malloc'd string list, similar in format to 'environ'; i.e. "VALUE=xxxx xxxx xxxx\0" with possible embedded quotes (not doubled or '\'d) ending in a zero byte. The end is marked with an additional '\0'</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A WBAlloc'd string list, similar in format to 'environ'; i.e. "VALUE=xxxx xxxx xxxx\0" with possible embedded quotes (not doubled or '\'d) ending in a zero byte. The end is marked with an additional '\0'</dd></dl>
 <p>Generic XML tag parsing. Parse the tag to 'just past the tag name', find the ending '&gt;', and pass that length as 'cbLength'.</p>
 <p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API">conf_help.h</a> </p>
 
@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -83,9 +83,13 @@ $(document).ready(function(){initNavTree('child__frame_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga346eb89f04d577c38d82cfddda0b784e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga346eb89f04d577c38d82cfddda0b784e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga346eb89f04d577c38d82cfddda0b784e">CHILD_FRAME_TAG</a>&#160;&#160;&#160;(*((const unsigned int *)&quot;FWCF&quot;))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga346eb89f04d577c38d82cfddda0b784e">CHILD_FRAME_TAG</a>&#160;&#160;&#160;(*((const unsigned int * const)&quot;FWCF&quot;))</td></tr>
 <tr class="memdesc:ga346eb89f04d577c38d82cfddda0b784e"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG for the WBChildFrame structure. <br/></td></tr>
 <tr class="separator:ga346eb89f04d577c38d82cfddda0b784e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c807af8271dd02780992cd027f2b15f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9c807af8271dd02780992cd027f2b15f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga9c807af8271dd02780992cd027f2b15f">CHILD_FRAME_UI_TAG</a>&#160;&#160;&#160;((<a class="el" href="group__platform.html#gad218d279d60b555a8a8a1e4e2e959469">WB_UINT32</a>)'F' | ((<a class="el" href="group__platform.html#gad218d279d60b555a8a8a1e4e2e959469">WB_UINT32</a>)'W' &lt;&lt; 8) | ((<a class="el" href="group__platform.html#gad218d279d60b555a8a8a1e4e2e959469">WB_UINT32</a>)'C' &lt;&lt; 16) | ((<a class="el" href="group__platform.html#gad218d279d60b555a8a8a1e4e2e959469">WB_UINT32</a>)'U' &lt;&lt; 24)) /* FWCU */</td></tr>
+<tr class="memdesc:ga9c807af8271dd02780992cd027f2b15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG for the WBChildFrameUI structure. <br/></td></tr>
+<tr class="separator:ga9c807af8271dd02780992cd027f2b15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -110,9 +114,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6120d2aa568176b2006560aeaea1678d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d">FWSetChildFrameExtent</a> (<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pChildFrame, int iXExtent, int iYExtent)</td></tr>
 <tr class="memdesc:ga6120d2aa568176b2006560aeaea1678d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the X,Y extent for the child frame (notifies everything)  <a href="group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d">More...</a><br/></td></tr>
 <tr class="separator:ga6120d2aa568176b2006560aeaea1678d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac64307725da134959a85bbc1f51eb68f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#gac64307725da134959a85bbc1f51eb68f">FWSetChildFrameScrollInfo</a> (<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pChildFrame, int iRow, int iMaxRow, int iCol, int iMaxCol, int iRowHeight, int iColWidth)</td></tr>
+<tr class="memdesc:gac64307725da134959a85bbc1f51eb68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the X,Y extent for the child frame (notifies everything)  <a href="group__child__frame.html#gac64307725da134959a85bbc1f51eb68f">More...</a><br/></td></tr>
+<tr class="separator:gac64307725da134959a85bbc1f51eb68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga93f05b54d49824d28c163247f61ee42e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e">FWChildFrameRecalcLayout</a> (<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pChildFrame)</td></tr>
 <tr class="memdesc:ga93f05b54d49824d28c163247f61ee42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child frame notification callback (called by frame window)  <a href="group__child__frame.html#ga93f05b54d49824d28c163247f61ee42e">More...</a><br/></td></tr>
 <tr class="separator:ga93f05b54d49824d28c163247f61ee42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga599d5935965bdabbbd018689833b9023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga599d5935965bdabbbd018689833b9023">FWChildFrameStatusChanged</a> (<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pChildFrame)</td></tr>
+<tr class="memdesc:ga599d5935965bdabbbd018689833b9023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify Child Frame to update status text in Frame Window.  <a href="group__child__frame.html#ga599d5935965bdabbbd018689833b9023">More...</a><br/></td></tr>
+<tr class="separator:ga599d5935965bdabbbd018689833b9023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa38c638db7054a5a3ed6b6063df3cee0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#gaa38c638db7054a5a3ed6b6063df3cee0">FWChildFrameQueryClose</a> (<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *pChildFrame)</td></tr>
+<tr class="memdesc:gaa38c638db7054a5a3ed6b6063df3cee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if it's safe to close the child frame; prompts user as needed.  <a href="group__child__frame.html#gaa38c638db7054a5a3ed6b6063df3cee0">More...</a><br/></td></tr>
+<tr class="separator:gaa38c638db7054a5a3ed6b6063df3cee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3549da86196bcc4f4e9c3a06b20eff03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03">FWChildFrameEvent</a> (Window wID, XEvent *pEvent)</td></tr>
 <tr class="memdesc:ga3549da86196bcc4f4e9c3a06b20eff03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default event handler for Child Frame window.  <a href="group__child__frame.html#ga3549da86196bcc4f4e9c3a06b20eff03">More...</a><br/></td></tr>
 <tr class="separator:ga3549da86196bcc4f4e9c3a06b20eff03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +150,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="child__frame_8h.html">child_frame.h</a></li>
-    <li class="footer">Generated on Sun Jun 19 2016 22:56:14 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 5 2016 10:18:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

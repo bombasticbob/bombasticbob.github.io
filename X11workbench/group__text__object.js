@@ -1,5 +1,14 @@
 var group__text__object =
 [
+    [ "_text_buffer_", "struct__text__buffer__.html", [
+      [ "aLineCache", "struct__text__buffer__.html#ae9a4b92150316f5a769055e23209ab2c", null ],
+      [ "aLineCacheLen", "struct__text__buffer__.html#a68cec487379287db8032b3eec05947ca", null ],
+      [ "aLines", "struct__text__buffer__.html#aee080731ae557ecd8a2569f10a61ef2a", null ],
+      [ "nArraySize", "struct__text__buffer__.html#a7f4fae9f2d922e3c85d3dab45f1dbfe3", null ],
+      [ "nEntries", "struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac", null ],
+      [ "nMaxCol", "struct__text__buffer__.html#a0734be45c637f24ee988b84b76ebf18c", null ],
+      [ "nMinMaxCol", "struct__text__buffer__.html#a50d3960714722658ff5105bbba79a538", null ]
+    ] ],
     [ "_text_object_vtable_", "struct__text__object__vtable__.html", [
       [ "begin_highlight", "struct__text__object__vtable__.html#a9a2c626038ad5814001485d66cd45f93", null ],
       [ "begin_mouse_drag", "struct__text__object__vtable__.html#a6d8712c3baad30f15a4cc3a42702793f", null ],
@@ -79,8 +88,6 @@ var group__text__object =
       [ "iScrollMode", "struct__text__object__.html#a32b54760de261f88914c291c13aed559", null ],
       [ "iSelMode", "struct__text__object__.html#a8256ccdc367d57d944793dd59e8d24bb", null ],
       [ "iTab", "struct__text__object__.html#a760c7fcee56dbbf2730283e37700c480", null ],
-      [ "pDesc", "struct__text__object__.html#afcdddd174fbc347ee5916159d71233f2", null ],
-      [ "pFileName", "struct__text__object__.html#a5de8eea2d4f75d7ce6525c58cb81ea8c", null ],
       [ "pRedo", "struct__text__object__.html#a355e83ad058b285ae34793636253d4bb", null ],
       [ "pText", "struct__text__object__.html#a4e0404e72138c4969eba392c67bd54b1", null ],
       [ "pUndo", "struct__text__object__.html#a2a920e0de6468bc3189bdb73f6369826", null ],
@@ -92,15 +99,6 @@ var group__text__object =
       [ "vtable", "struct__text__object__.html#a0ee4145be39cb511f58e63bead7e3f56", null ],
       [ "wIDOwner", "struct__text__object__.html#a8ee54f42851c33959157c826f2847e83", null ]
     ] ],
-    [ "_text_buffer_", "struct__text__buffer__.html", [
-      [ "aLineCache", "struct__text__buffer__.html#ae9a4b92150316f5a769055e23209ab2c", null ],
-      [ "aLineCacheLen", "struct__text__buffer__.html#a68cec487379287db8032b3eec05947ca", null ],
-      [ "aLines", "struct__text__buffer__.html#aee080731ae557ecd8a2569f10a61ef2a", null ],
-      [ "nArraySize", "struct__text__buffer__.html#a7f4fae9f2d922e3c85d3dab45f1dbfe3", null ],
-      [ "nEntries", "struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac", null ],
-      [ "nMaxCol", "struct__text__buffer__.html#a0734be45c637f24ee988b84b76ebf18c", null ],
-      [ "nMinMaxCol", "struct__text__buffer__.html#a50d3960714722658ff5105bbba79a538", null ]
-    ] ],
     [ "AUTO_HSCROLL_SIZE", "group__text__object.html#ga6d2de9fd259fcb3250751408a3c2f17f", null ],
     [ "DEFAULT_TAB_WIDTH", "group__text__object.html#ga93debe6aabce250a2dbec2f9281774c4", null ],
     [ "HARD_TAB_CHAR", "group__text__object.html#ga4825ca14c3c4b39203dc6530181587e3", null ],
@@ -108,8 +106,8 @@ var group__text__object =
     [ "MIN_LINE_SPACING", "group__text__object.html#ga62718777d64cfa4175e4d1eb273a4d03", null ],
     [ "TEXT_OBJECT_TAG", "group__text__object.html#gaece410745c1fa1a575dbc858f7aa93da", null ],
     [ "TEXT_BUFFER", "group__text__object.html#ga5833900dbf06c8ec0f32459f8d151df6", null ],
-    [ "TEXT_OBJECT", "group__text__object.html#ga444a831dc1519c93326499ba16e24a4d", null ],
-    [ "TEXT_OBJECT_VTABLE", "group__text__object.html#ga44726f48c6cbcc4ef5e670740db73a8d", null ],
+    [ "TEXT_OBJECT", "group__text__object.html#ga7953714ac52297d4eab55b7ea5f3dc7d", null ],
+    [ "TEXT_OBJECT_VTABLE", "group__text__object.html#ga47fb27d1f2a968b64a65476649b52f36", null ],
     [ "_DragState_", "group__text__object.html#ga37a3e5c5f3772578e4ddfe9ed6c9f924", [
       [ "DragState_NONE", "group__text__object.html#gga37a3e5c5f3772578e4ddfe9ed6c9f924af8e2c264c4758cc7ef1eaa54b932c2a7", null ],
       [ "DragState_CURSOR", "group__text__object.html#gga37a3e5c5f3772578e4ddfe9ed6c9f924aeaea3ec6fd34a2930fa8ed1056ac68cb", null ],
@@ -138,12 +136,18 @@ var group__text__object =
     ] ],
     [ "WBAllocTextBuffer", "group__text__object.html#ga3161994482cbb54c3a35e1c9330c7d1f", null ],
     [ "WBCheckReAllocTextBuffer", "group__text__object.html#ga4625b33f8ab15d8646546257af958d45", null ],
+    [ "WBDelMBChars", "group__text__object.html#gae699443621648d8ba3b8f728ba42bbe4", null ],
+    [ "WBDestroyInPlaceTextObject", "group__text__object.html#gabd728e00e574c713e0897d98f3cbf5f4", null ],
     [ "WBFreeTextBuffer", "group__text__object.html#gaaa875345ecadd735f983b8a37ba7ce11", null ],
     [ "WBGetDefaultTextObjectVTable", "group__text__object.html#ga7c20ed24f57275db985803f47263a694", null ],
-    [ "WBInitializeTextObject", "group__text__object.html#ga6d211ea9d328993027c889d8f79ea7f9", null ],
+    [ "WBGetMBCharPtr", "group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e", null ],
+    [ "WBGetMBLength", "group__text__object.html#gaf5214029ea5b7c039297f90386a2c4ab", null ],
+    [ "WBInitializeInPlaceTextObject", "group__text__object.html#ga288a073741ae3c2486370b7130e8dd73", null ],
+    [ "WBInsertMBChars", "group__text__object.html#gaa4461f9446c41342c87282e8b36edd22", null ],
     [ "WBIsValidTextObject", "group__text__object.html#gab5a5a199098d57dc59f58090ae22af47", null ],
     [ "WBTextBufferLineChange", "group__text__object.html#ga21cd50513992d6b1687006d260f69f42", null ],
     [ "WBTextBufferRefreshCache", "group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf", null ],
+    [ "WBTextObjectCalculateLineHeight", "group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce", null ],
     [ "WBTextObjectConstructor", "group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c", null ],
     [ "WBTextObjectDestructor", "group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29", null ]
 ];

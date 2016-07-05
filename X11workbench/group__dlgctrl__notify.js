@@ -1,8 +1,8 @@
 var group__dlgctrl__notify =
 [
-    [ "WB_LIST_DBLCLICK", "group__dlgctrl__notify.html#ga074da80011e8901568efd37eb427c094", null ],
-    [ "WB_LIST_NONE", "group__dlgctrl__notify.html#ga4807335556062c6ff3b2418d8c79981f", null ],
-    [ "WB_LIST_SELCHANGE", "group__dlgctrl__notify.html#ga567afa72cc44823df20cbebfcf4e85e6", null ],
+    [ "WB_LIST_DBLCLICK", "group__dlgctrl.html#ga074da80011e8901568efd37eb427c094", null ],
+    [ "WB_LIST_NONE", "group__dlgctrl.html#ga4807335556062c6ff3b2418d8c79981f", null ],
+    [ "WB_LIST_SELCHANGE", "group__dlgctrl.html#ga567afa72cc44823df20cbebfcf4e85e6", null ],
     [ "aBUTTON_PRESS", "group__dlgctrl__notify.html#gaeb02c5e008d0b479f8d59bdcba8b6001", null ],
     [ "aGOTFOCUS", "group__dlgctrl__notify.html#gaa174736d518e24c9f837d3d3f9d92dad", null ],
     [ "aKEY_DOWN", "group__dlgctrl__notify.html#gaac3eff298c273a21567dfccbd062d536", null ],

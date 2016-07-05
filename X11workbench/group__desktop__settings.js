@@ -15,7 +15,7 @@ var group__desktop__settings =
       [ "pData", "struct__CHXSetting__.html#aa92f08987c51e4eb7b92e84944ca2af3", null ],
       [ "szData", "struct__CHXSetting__.html#abe24f5f3933a24906a280ca25840a717", null ],
       [ "szName", "struct__CHXSetting__.html#aa988d6f93c746b6c6e1d869b52ba92a0", null ],
-      [ "uData", "struct__CHXSetting__.html#a8b33c8d10b726935fbf10c694235ebe0", null ],
+      [ "uData", "struct__CHXSetting__.html#acf29d0d1c02860f234d7c10a06600777", null ],
       [ "uiSerial", "struct__CHXSetting__.html#a74bf6b69faca68501bfca1269185bc35", null ]
     ] ],
     [ "_CHXSettings_", "struct__CHXSettings__.html", [

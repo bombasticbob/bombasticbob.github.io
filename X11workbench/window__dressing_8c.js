@@ -1,6 +1,5 @@
 var window__dressing_8c =
 [
-    [ "GCAll", "window__dressing_8c.html#a2e85284677c8665134da365f761894e9", null ],
     [ "LOAD_COLOR", "window__dressing_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
     [ "LOAD_COLOR0", "window__dressing_8c.html#adaa7dab283c25528f228e1e938a30726", null ],
     [ "CheckInitScrollColors", "window__dressing_8c.html#a3805e54a9e2f35a9274b583657ec1e19", null ],
@@ -11,7 +10,7 @@ var window__dressing_8c =
     [ "WBCalcVScrollBar", "window__dressing_8c.html#gacb470b52479a3b6a6571abe9962e6e85", null ],
     [ "WBCalcVScrollDragPos", "window__dressing_8c.html#gae88951710b059bd5e537665b0d8ce886", null ],
     [ "WBDraw3DBorderRect", "window__dressing_8c.html#ga2ebd818d333c3475bdcf5fa0299545b7", null ],
-    [ "WBDraw3DBorderTab", "window__dressing_8c.html#gaa993f5db24c32a45042efeaf3f90a879", null ],
+    [ "WBDraw3DBorderTab", "window__dressing_8c.html#gafaf7cb2597e19dc869bf2e142b1c43f7", null ],
     [ "WBDrawBorderRect", "window__dressing_8c.html#gaf85e7c61f3170d19da3e0b051a9d6d06", null ],
     [ "WBDrawDashedRect", "window__dressing_8c.html#gad617bf61913a94e557dd18fe2094830f", null ],
     [ "WBDrawDownArrow", "window__dressing_8c.html#ga43da8059f5926c745279d643499490bf", null ],

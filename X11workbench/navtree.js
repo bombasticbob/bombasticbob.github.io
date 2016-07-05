@@ -7,6 +7,7 @@ var NAVTREE =
     [ "X11workbench Toolkit Coding Style Guidelines", "mainpage_2.html", null ],
     [ "Additional Information", "mainpage_3.html", null ],
     [ "X11workbench Toolkit - Hello World sample", "mainpage_4.html", null ],
+    [ "Menu Resources and Menu Callbacks", "menu_resource.html", null ],
     [ "Dialog Box Resources", "dialog_resource.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
@@ -34,19 +35,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "X11workbenchToolkit__config_8h_source.html",
-"dialog__controls_8h.html#ga564e6facfeb6cf38c1bf8a334577c956",
-"dialog__window_8h.html#ga8a22360f03f14357a2b22dfbff2894b1",
-"draw__text_8h.html#ga970cc5651dadf44ab9335c64ef67283b",
-"frame__window_8h.html#ga7d38ec4032b321a227904d3d34293f37",
-"group__dlgctrl.html#ga3efd6729ac89a13b7cd729bc574227bd",
-"group__events.html#ga3f7502f7a233be633097abdefeb3db21",
-"group__startup.html#ga7eec5756f1781b9fdcd556abe5f60bdb",
-"menu_8c.html#aeab6a095afeed0b9e64e415c5a5c669a",
-"refactor_8c_source.html",
-"struct____WB__SCROLLINFO____.html#a28febfaf5faa20e0b8359fb5975aad2a",
-"text__object_8h.html#gaaa875345ecadd735f983b8a37ba7ce11",
-"window__helper_8c.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7",
-"window__helper_8h.html#ga82131f2b559763bb5091f2ce5a0e3fff"
+"dialog__controls_8h.html#ga5490e27238ec770eac36831273b673ef",
+"dialog__window_8h.html#ga39053c006797afbd6c436823dac75dcb",
+"edit__window_8h.html#ga1905f55b320db416741d55866a92ebd5",
+"frame__window_8h.html#ga74597022b33ab1ab995f3ffe711524e9",
+"group__dlgctrl.html#ga00b0b7132f186e401098da949dcc851d",
+"group__dlgctrl.html#ggabed82baf7f470b522273a3e37c24c600ac27b2ab3efb84c0283ad1ff8b5e15256",
+"group__keyboard.html#gafaae36149bab385b09d7be806f535e4a",
+"group__timer.html#gac0847f36d2cbc0d28cfa9ebb727ad3c9",
+"menu__bar_8h.html#gac86fd88b3682aa50484ee18a114ad175",
+"struct__WBGeom__.html#ab2e78c61905b4419fcc7b4cfc500fe85",
+"struct____WB__DIALOG__ENTRY____.html#ac1bf4c310535451938ef5b31b2b0c51b",
+"text__object_8c.html#ae59eea1fdd8a21ce67fb7779326c7272",
+"window__helper_8c.html#adc29c2ff13d900c2f185ee95427fb06caa0dfc5e1682e4f0f974eaadf20b670ee",
+"window__helper_8h.html#ga4a3789b26732b720b3e1b4334ec2e3e5",
+"window__helper_8h.html#gga393c61affbc5766ce678224558be0b16ac694a7ec52d972f02108545267359fc9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
