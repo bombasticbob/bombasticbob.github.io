@@ -10,7 +10,7 @@ var struct____LISTINFO____ =
     [ "nTop", "struct____LISTINFO____.html#adf10e19a2ea7ef40bde221b24094f48f", null ],
     [ "pfnAllocator", "struct____LISTINFO____.html#a590f1e804b018064cc3766b59a256f6e", null ],
     [ "pfnDestructor", "struct____LISTINFO____.html#af1658b79f8e73b6d2348d9629c070682", null ],
-    [ "pfnDisplay", "struct____LISTINFO____.html#ab74186ce12ef0ab5a06e5c8a054e9d93", null ],
+    [ "pfnDisplay", "struct____LISTINFO____.html#acd5482f40ff8767badd979616ab5b18c", null ],
     [ "pfnSort", "struct____LISTINFO____.html#a3e3cf99e2496af3d59658fb2e21f3761", null ],
     [ "wOwner", "struct____LISTINFO____.html#af2479329d50a78c07f034e58942003c1", null ]
 ];

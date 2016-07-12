@@ -27,7 +27,7 @@ var dialog__controls_8c =
     [ "EditDoPointerEvent", "dialog__controls_8c.html#a281afa4a8a4e8e3eb96b467446ef6c81", null ],
     [ "file_combo_callback", "dialog__controls_8c.html#aafc25fcb241fcc57d6c2c44a0eb53260", null ],
     [ "file_list_callback", "dialog__controls_8c.html#a506fbf2f121f5f0e7f232ab143756b26", null ],
-    [ "FileListControlDisplayProc", "dialog__controls_8c.html#a5d23431b9c2a0c605eaba5b7a15913a7", null ],
+    [ "FileListControlDisplayProc", "dialog__controls_8c.html#a7f819c1f4720601e48528497ddec6593", null ],
     [ "GetWBDialogControlStructSize", "dialog__controls_8c.html#a3cbd670abdf5f3b83fb250035ba18ea7", null ],
     [ "IMPLEMENT_CREATE_CONTROL", "dialog__controls_8c.html#ae1e5e9ed2b863abf6d1615e0572b707a", null ],
     [ "IMPLEMENT_CREATE_CONTROL", "dialog__controls_8c.html#a0024622e46b663f3e0348dd1044ba9bc", null ],

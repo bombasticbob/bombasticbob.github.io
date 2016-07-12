@@ -36,6 +36,7 @@ var dialog__window_8h =
       [ "MessageBox_Barney", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa886593515476e632c59f097fcfd89927", null ],
       [ "MessageBox_App", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa1107a78e77de6d683f2aea4d37306982", null ],
       [ "MessageBox_ICON_MASK", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa998b8139e16cc7664683e0bebab55fe7", null ],
+      [ "MessageBox_Default", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa320121bedc7be6e6a1d396bce1048f27", null ],
       [ "MessageBox_OK", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caaaf0c98bc1ec36c54f675d0285cbef6ca", null ],
       [ "MessageBox_Yes", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caaea4744a7077098fffbff0314291daf80", null ],
       [ "MessageBox_No", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa0d1a9d1a00e2ff064e3a5f4f04b71ffb", null ],
@@ -43,6 +44,11 @@ var dialog__window_8h =
       [ "MessageBox_Retry", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa8054253e65aecde4044802d2c2169f35", null ],
       [ "MessageBox_Ignore", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa42e69b7e24eb77401dd688a95e0b5127", null ],
       [ "MessageBox_Cancel", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caaf4cdf96f685d30a16e451e7d39bf2ee3", null ],
+      [ "MessageBox_OKCancel", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa1b0d43fef0a4c2ea331a2dfadcdde1db", null ],
+      [ "MessageBox_YesNo", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa9788b5f37a8ebfffab4ade6f99382788", null ],
+      [ "MessageBox_YesNoCancel", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa1a61967799fdfac791665fd4f82b15c8", null ],
+      [ "MessageBox_AbortRetry", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa6509a477da4871863128f5817be897a1", null ],
+      [ "MessageBox_AbortRetryIgnore", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa98fab6617afa5233cbaab0b1170a6cad", null ],
       [ "MessageBox_BUTTON_MASK", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa2d916aab18b9e7f4f74c31c1bff0ea5a", null ]
     ] ],
     [ "WBDialogEntryFlags", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7", [

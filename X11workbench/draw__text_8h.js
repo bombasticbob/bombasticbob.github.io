@@ -28,12 +28,17 @@ var draw__text_8h =
       [ "DTAlignment_UNDERSCORE", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da", null ],
       [ "DTAlignment_PRINTING", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6", null ]
     ] ],
-    [ "DTCalcIdealBounds", "draw__text_8h.html#ga7756edfa886e88fdf7f7726910f3c1cc", null ],
+    [ "DTCalcIdealBounds", "draw__text_8h.html#ga099334a78bb3ab7bf43a23cbba14c74e", null ],
+    [ "DTCalcIdealBounds0", "draw__text_8h.html#ga1de43b31c53880fc492cdee82eb24fd8", null ],
     [ "DTCalcIdealFont", "draw__text_8h.html#ga90aef0f5e842682e7e493d9a87cd0f80", null ],
-    [ "DTDrawMultiLineText", "draw__text_8h.html#ga5a6c2d8e7650da251465c55bd981baaa", null ],
-    [ "DTDrawSingleLineText", "draw__text_8h.html#gac52fd81c2eb3caf63074333e7c2cbcd2", null ],
-    [ "DTGetTextWidth", "draw__text_8h.html#gab939f0546f74387edba83043440de77d", null ],
-    [ "DTGetWordsFromText", "draw__text_8h.html#ga622bdff494230c3a68db989121878679", null ],
-    [ "DTPreRender", "draw__text_8h.html#gab2a6008375cb90a9c61ddf0b97002407", null ],
-    [ "DTRender", "draw__text_8h.html#ga0eec4d84392b9beedbef1be27bcd22ba", null ]
+    [ "DTCalcIdealFontSet", "draw__text_8h.html#ga666863b311e17529b16ccb1b6a8eb6b3", null ],
+    [ "DTDrawMultiLineText", "draw__text_8h.html#gad4da904e0c113d55962a2de21fb67855", null ],
+    [ "DTDrawMultiLineText0", "draw__text_8h.html#gadb29b7821f47f595fb02d03adb5d3942", null ],
+    [ "DTDrawSingleLineText", "draw__text_8h.html#ga5dd37bc0aba9e49ae026168f8cf62cb3", null ],
+    [ "DTDrawSingleLineText0", "draw__text_8h.html#ga168f550d3ac067ea051520264064a1a0", null ],
+    [ "DTGetTextWidth", "draw__text_8h.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7", null ],
+    [ "DTGetWordsFromText", "draw__text_8h.html#ga7ef57be18660df443c4a4a2df1931ce6", null ],
+    [ "DTGetWordsFromText0", "draw__text_8h.html#gac1a755eebf48ea4c552045d9e9d0d175", null ],
+    [ "DTPreRender", "draw__text_8h.html#ga099adfb0d10d744206bc69e633f73fc6", null ],
+    [ "DTRender", "draw__text_8h.html#ga42637c7b6244ae91b63c89e5a6a1a4e1", null ]
 ];

@@ -91,15 +91,6 @@ $(document).ready(function(){initNavTree('text__object_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae41279cef060c5a4cd578eef2d1be205"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae41279cef060c5a4cd578eef2d1be205"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>WB_TEXT_EXTENTS</b>&#160;&#160;&#160;XmbTextExtents</td></tr>
-<tr class="separator:ae41279cef060c5a4cd578eef2d1be205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e51c6603b3f8ea32ad7b4e94e548c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0e51c6603b3f8ea32ad7b4e94e548c5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>WB_TEXT_ESCAPEMENT</b>&#160;&#160;&#160;XmbTextEscapement</td></tr>
-<tr class="separator:ac0e51c6603b3f8ea32ad7b4e94e548c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb2e0a2ede4994aa57807e3fdb89df3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdb2e0a2ede4994aa57807e3fdb89df3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>WB_DRAW_STRING</b>&#160;&#160;&#160;XmbDrawString</td></tr>
-<tr class="separator:acdb2e0a2ede4994aa57807e3fdb89df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59eea1fdd8a21ce67fb7779326c7272"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae59eea1fdd8a21ce67fb7779326c7272"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>UNDO_SELECT</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ae59eea1fdd8a21ce67fb7779326c7272"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,6 +342,36 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_cal
 <tr class="memitem:a057fe0929f651dcf769ff99a8cd0585b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a057fe0929f651dcf769ff99a8cd0585b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_merge_rect</b> (const struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, <a class="el" href="group__core.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect, int iStartRow, int iStartCol, int iEndRow, int iEndCol)</td></tr>
 <tr class="separator:a057fe0929f651dcf769ff99a8cd0585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59067f8eb1df3d2a6a69990639ae6d17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59067f8eb1df3d2a6a69990639ae6d17"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>internal_IsMBCharValid</b> (const char *pChar, int *piLen)</td></tr>
+<tr class="separator:a59067f8eb1df3d2a6a69990639ae6d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac013f980e2385156de318a4ed0388c81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac013f980e2385156de318a4ed0388c81"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>internal_MBstrlen</b> (const char *pString)</td></tr>
+<tr class="separator:ac013f980e2385156de318a4ed0388c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0d26b8a1f0b73cf96d91795ef46e2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff0d26b8a1f0b73cf96d91795ef46e2e"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>internal_MBColIndex</b> (const char *pString, int iCol)</td></tr>
+<tr class="separator:aff0d26b8a1f0b73cf96d91795ef46e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd1b3ec805c8d00f9ba746101a5d518d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gafd1b3ec805c8d00f9ba746101a5d518d">WBInsertMBChars</a> (char *pString, int iCol, const char *pszMBString, int cbString, int fTab, int fOverwrite, int *piNewCol, char **ppInserted)</td></tr>
+<tr class="memdesc:gafd1b3ec805c8d00f9ba746101a5d518d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert multi-byte characters into a WBAlloc'd string, at a specified column.  <a href="group__text__object.html#gafd1b3ec805c8d00f9ba746101a5d518d">More...</a><br/></td></tr>
+<tr class="separator:gafd1b3ec805c8d00f9ba746101a5d518d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b4a09352d4b23604e1d0b25625ad040"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga7b4a09352d4b23604e1d0b25625ad040">WBSplitMBLine</a> (char *pString, int iCol)</td></tr>
+<tr class="memdesc:ga7b4a09352d4b23604e1d0b25625ad040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a multi-byte characters into a WBAlloc'd string, at a specified column, terminating the original string at that column with a zero byte.  <a href="group__text__object.html#ga7b4a09352d4b23604e1d0b25625ad040">More...</a><br/></td></tr>
+<tr class="separator:ga7b4a09352d4b23604e1d0b25625ad040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a1f42232e1c3223db546a002c01c44d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d">WBJoinMBLine</a> (char *pString, int iCol, const char *pJoin)</td></tr>
+<tr class="memdesc:ga2a1f42232e1c3223db546a002c01c44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a multi-byte characters into a WBAlloc'd string, at a specified column, terminating the original string at that column with a zero byte.  <a href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d">More...</a><br/></td></tr>
+<tr class="separator:ga2a1f42232e1c3223db546a002c01c44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54cc2ecb4502af386dd0f2174a169996"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga54cc2ecb4502af386dd0f2174a169996">WBDelMBChars</a> (char *pString, int iCol, int nDel, int *piNewCol, char **ppDeleted)</td></tr>
+<tr class="memdesc:ga54cc2ecb4502af386dd0f2174a169996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a specified number of multi-byte characters from a string 'in place', starting at a specified column.  <a href="group__text__object.html#ga54cc2ecb4502af386dd0f2174a169996">More...</a><br/></td></tr>
+<tr class="separator:ga54cc2ecb4502af386dd0f2174a169996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f19ac06ff8893b882341c1044f3b46a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a">WBGetMBLength</a> (const char *pString)</td></tr>
+<tr class="memdesc:ga9f19ac06ff8893b882341c1044f3b46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the length of a multi-byte character string in 'characters' (not bytes)  <a href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a">More...</a><br/></td></tr>
+<tr class="separator:ga9f19ac06ff8893b882341c1044f3b46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea3af6adcbbc837928e8e87f00d3cc0e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e">WBGetMBCharPtr</a> (char *pString, int iCol, int *pcbLen)</td></tr>
+<tr class="memdesc:gaea3af6adcbbc837928e8e87f00d3cc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the pointer to a specific multi-byte character within a multi-byte character string, by specifying it's column.  <a href="group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e">More...</a><br/></td></tr>
+<tr class="separator:gaea3af6adcbbc837928e8e87f00d3cc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga158a023bde6f7acbfe114d13dd934109"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109">WBGetMBColIndex</a> (const char *pString, const char *pChar)</td></tr>
+<tr class="memdesc:ga158a023bde6f7acbfe114d13dd934109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the column index from a pointer within a multi-byte character string.  <a href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109">More...</a><br/></td></tr>
+<tr class="separator:ga158a023bde6f7acbfe114d13dd934109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -380,7 +401,7 @@ const <a class="el" href="group__text__object.html#ga47fb27d1f2a968b64a65476649b
 <b>Value:</b><div class="fragment"><div class="line">{<span class="keywordflow">if</span>((X).top &gt; (X).bottom || ((X).top == (X).bottom &amp;&amp; (X).left &gt; (X).right)) \</div>
 <div class="line">                               { <span class="keywordtype">int</span> i1 = (X).left; (X).left = (X).right; (X).right = i1; i1 = (X).top; (X).top = (X).bottom; (X).bottom = i1; }}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00127">127</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00099">99</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -390,7 +411,7 @@ const <a class="el" href="group__text__object.html#ga47fb27d1f2a968b64a65476649b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="text__object_8c.html">text_object.c</a></li>
-    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 12 2016 14:35:57 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -49,6 +49,7 @@ var group__dlgctrl =
     ] ],
     [ "_WB_LIST_CONTROL_", "struct__WB__LIST__CONTROL__.html", [
       [ "cbBitmap", "struct__WB__LIST__CONTROL__.html#a43edc860b77f7e3fb9bdf29a7379beef", null ],
+      [ "fsBold", "struct__WB__LIST__CONTROL__.html#a615cbd15f807b0280459d29849d00e06", null ],
       [ "pSelBitmap", "struct__WB__LIST__CONTROL__.html#a95f76c48501ae974d786fbdc9a5f5ca4", null ],
       [ "sel", "struct__WB__LIST__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
       [ "wbDLGCtrl", "struct__WB__LIST__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
@@ -59,6 +60,7 @@ var group__dlgctrl =
       [ "xTextObject", "struct__WB__COMBO__CONTROL__.html#ae0d2ba439b30720b797c108c4009a769", null ]
     ] ],
     [ "_WB_TREE_CONTROL_", "struct__WB__TREE__CONTROL__.html", [
+      [ "fsBold", "struct__WB__TREE__CONTROL__.html#a615cbd15f807b0280459d29849d00e06", null ],
       [ "sel", "struct__WB__TREE__CONTROL__.html#a9f88b3556d33a904a227e44f03844d31", null ],
       [ "wbDLGCtrl", "struct__WB__TREE__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f", null ]
     ] ],
@@ -195,10 +197,10 @@ var group__dlgctrl =
       [ "ListInfoFlags_RESERVED7", "group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47a90575d82b325c06d5cdebcaf2f3fc138", null ]
     ] ],
     [ "DLGAddControlListEntry", "group__dlgctrl.html#ga91c094a37f470da65a045d316eb117b3", null ],
-    [ "DLGCDefaultListControlDisplayProc", "group__dlgctrl.html#ga18316afbd1e068e95d9730531c7d8179", null ],
+    [ "DLGCDefaultListControlDisplayProc", "group__dlgctrl.html#ga276b1065e6b38d484fd51d4c002f08fc", null ],
     [ "DLGCDefaultListInfoAllocator", "group__dlgctrl.html#gad37ea0f014795844f165efbcd5dd8df3", null ],
     [ "DLGCDestroyProperties", "group__dlgctrl.html#gafee2e3046aee420104741e48706675aa", null ],
-    [ "DLGCListInfoConstructor", "group__dlgctrl.html#ga3fed966bae3ca47d3e6ebe14930da6ce", null ],
+    [ "DLGCListInfoConstructor", "group__dlgctrl.html#gaa8ff4b741c435267db5a40997d207648", null ],
     [ "DLGCListInfoDestructor", "group__dlgctrl.html#gae25ada5d37c28a484c29b8ef184f3d1e", null ],
     [ "DLGDelControlListEntry", "group__dlgctrl.html#gae7969d1d81ebc3c597d3d74f9accc1d7", null ],
     [ "DLGGetControlCaption", "group__dlgctrl.html#ga5667ed3db4dc0cdd90f971417ddbfd5e", null ],
@@ -211,8 +213,8 @@ var group__dlgctrl =
     [ "DLGGetControlText", "group__dlgctrl.html#ga296842a0a9a21a3fedea4f8c4cbee5b0", null ],
     [ "DLGGetDialogControlStruct", "group__dlgctrl.html#ga4b4f9ecdaeb8ba0163f595fb0f827c76", null ],
     [ "DLGGetDialogControlStructFromID", "group__dlgctrl.html#ga1fe2b967785a3c0beb774375aeaeb32e", null ],
-    [ "DLGInitControlListInfo", "group__dlgctrl.html#gac016370ae1aa425ebf70345b562b8500", null ],
-    [ "DLGModifyControlListInfo", "group__dlgctrl.html#gad76df2338f411cc555e0abe3ed546526", null ],
+    [ "DLGInitControlListInfo", "group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b", null ],
+    [ "DLGModifyControlListInfo", "group__dlgctrl.html#ga25cfa4ea854ca13b4553d7e043c8cc86", null ],
     [ "DLGNotifyOwner", "group__dlgctrl.html#ga438add5cbf864bf61dd081d80e47b7e5", null ],
     [ "DLGNotifyOwnerAsync", "group__dlgctrl.html#ga25c0a7ad6eb9e0086dd305aca25f4599", null ],
     [ "DLGNotifySelf", "group__dlgctrl.html#ga5f11771a07c69bfe4c13e353f387214c", null ],

@@ -39,7 +39,7 @@ var group__window__dressing =
     [ "WBCalcVScrollBar", "group__window__dressing.html#gacb470b52479a3b6a6571abe9962e6e85", null ],
     [ "WBCalcVScrollDragPos", "group__window__dressing.html#gae88951710b059bd5e537665b0d8ce886", null ],
     [ "WBDraw3DBorderRect", "group__window__dressing.html#ga2ebd818d333c3475bdcf5fa0299545b7", null ],
-    [ "WBDraw3DBorderTab", "group__window__dressing.html#gafaf7cb2597e19dc869bf2e142b1c43f7", null ],
+    [ "WBDraw3DBorderTab", "group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7", null ],
     [ "WBDrawBorderRect", "group__window__dressing.html#gaf85e7c61f3170d19da3e0b051a9d6d06", null ],
     [ "WBDrawDashedRect", "group__window__dressing.html#gad617bf61913a94e557dd18fe2094830f", null ],
     [ "WBDrawDownArrow", "group__window__dressing.html#ga43da8059f5926c745279d643499490bf", null ],
@@ -53,5 +53,5 @@ var group__window__dressing =
     [ "WBSetHScrollRange", "group__window__dressing.html#gae3b977e539eee76cfffc238d7f1b019d", null ],
     [ "WBSetVScrollPos", "group__window__dressing.html#ga90a6f39329b178b719f70c11c6a49f76", null ],
     [ "WBSetVScrollRange", "group__window__dressing.html#gae0e3c8fb6fc629edff6af4046964751c", null ],
-    [ "WBUpdateScrollBarGeometry", "group__window__dressing.html#gaae31e0bc284aba0411eccfb35ea858aa", null ]
+    [ "WBUpdateScrollBarGeometry", "group__window__dressing.html#ga7a248d35a52528818882628963dc3103", null ]
 ];

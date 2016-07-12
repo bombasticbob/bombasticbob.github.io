@@ -92,15 +92,22 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa1107a78e77de6d683f2aea4d37306982">MessageBox_App</a> =16, 
 <a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa998b8139e16cc7664683e0bebab55fe7">MessageBox_ICON_MASK</a> = 0x1f, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa320121bedc7be6e6a1d396bce1048f27">MessageBox_Default</a> = 0, 
 <a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaaf0c98bc1ec36c54f675d0285cbef6ca">MessageBox_OK</a> = 0x20, 
-<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaea4744a7077098fffbff0314291daf80">MessageBox_Yes</a> = 0x40, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa0d1a9d1a00e2ff064e3a5f4f04b71ffb">MessageBox_No</a> = 0x80, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaea4744a7077098fffbff0314291daf80">MessageBox_Yes</a> = 0x40, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa0d1a9d1a00e2ff064e3a5f4f04b71ffb">MessageBox_No</a> = 0x80, 
 <a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa73f288d44f0f73d94a5f10a0dbc8fc0d">MessageBox_Abort</a> = 0x100, 
 <a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa8054253e65aecde4044802d2c2169f35">MessageBox_Retry</a> = 0x200, 
-<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa42e69b7e24eb77401dd688a95e0b5127">MessageBox_Ignore</a> = 0x400, 
 <br/>
-&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaf4cdf96f685d30a16e451e7d39bf2ee3">MessageBox_Cancel</a> = 0x800, 
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa42e69b7e24eb77401dd688a95e0b5127">MessageBox_Ignore</a> = 0x400, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caaf4cdf96f685d30a16e451e7d39bf2ee3">MessageBox_Cancel</a> = 0x800, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa1b0d43fef0a4c2ea331a2dfadcdde1db">MessageBox_OKCancel</a> = 0x820, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa9788b5f37a8ebfffab4ade6f99382788">MessageBox_YesNo</a> = 0xc0, 
+<br/>
+&#160;&#160;<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa1a61967799fdfac791665fd4f82b15c8">MessageBox_YesNoCancel</a> = 0x8c0, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa6509a477da4871863128f5817be897a1">MessageBox_AbortRetry</a> = 0x500, 
+<a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa98fab6617afa5233cbaab0b1170a6cad">MessageBox_AbortRetryIgnore</a> = 0x700, 
 <a class="el" href="group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68caa2d916aab18b9e7f4f74c31c1bff0ea5a">MessageBox_BUTTON_MASK</a> = 0xfe0
 <br/>
  }</td></tr>
@@ -230,7 +237,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00720">720</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00737">737</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +253,16 @@ Functions</h2></td></tr>
 
 <p>Message Box flag enumeration. </p>
 <p>Use these bit-flags and masks for calls to <a class="el" href="group__dialog__api.html#gac1927b5f46aa6fb8e57a3786db1d0ea0" title="Display a modal &#39;message box&#39; dialog window with a specific title, message, and button combination...">DLGMessageBox()</a><br/>
- You should 'or' one or more of the 'Button Bits' constants with one of the 'Icon' constants </p>
+ You should 'or' one or more of the 'Button Bits' constants with one of the 'Icon' constants.</p>
+<p>Legal combinations of 'or'd button bits include only the following:<br/>
+ </p>
+<ul>
+<li>MessageBox_OKCancel : MessageBox_OK | MessageBox_Cancel </li>
+<li>MessageBox_YesNo : MessageBox_Yes | MessageBox_No </li>
+<li>MessageBox_YesNoCancel : MessageBox_Yes | MessageBox_No | MessageBox_Cancel </li>
+<li>MessageBox_AbortRetry : MessageBox_Abort | MessageBox_Retry </li>
+<li>MessageBox_AbortRetryIgnore : MessageBox_Abort | MessageBox_Retry | MessageBox_Ignore </li>
+</ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa127322709f37d1ffb23ef5b8db642e4b"></a>MessageBox_Error</em>&nbsp;</td><td class="fielddoc">
 <p>Icon - red stop sign. </p>
@@ -302,6 +318,9 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa998b8139e16cc7664683e0bebab55fe7"></a>MessageBox_ICON_MASK</em>&nbsp;</td><td class="fielddoc">
 <p>mask for icon bits </p>
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa320121bedc7be6e6a1d396bce1048f27"></a>MessageBox_Default</em>&nbsp;</td><td class="fielddoc">
+<p>Button Bits - default button (currently 'OK') </p>
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caaaf0c98bc1ec36c54f675d0285cbef6ca"></a>MessageBox_OK</em>&nbsp;</td><td class="fielddoc">
 <p>Button Bits - OK button. </p>
 </td></tr>
@@ -323,12 +342,27 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caaf4cdf96f685d30a16e451e7d39bf2ee3"></a>MessageBox_Cancel</em>&nbsp;</td><td class="fielddoc">
 <p>Button Bits - Cancel button. </p>
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa1b0d43fef0a4c2ea331a2dfadcdde1db"></a>MessageBox_OKCancel</em>&nbsp;</td><td class="fielddoc">
+<p>Button Bits - OK button plus Cancel button. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa9788b5f37a8ebfffab4ade6f99382788"></a>MessageBox_YesNo</em>&nbsp;</td><td class="fielddoc">
+<p>Button Bits - Yes button plus No button. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa1a61967799fdfac791665fd4f82b15c8"></a>MessageBox_YesNoCancel</em>&nbsp;</td><td class="fielddoc">
+<p>Button Bits - Yes button plus No button and Cancel button. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa6509a477da4871863128f5817be897a1"></a>MessageBox_AbortRetry</em>&nbsp;</td><td class="fielddoc">
+<p>Button Bits - Abort button plus Retry button. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa98fab6617afa5233cbaab0b1170a6cad"></a>MessageBox_AbortRetryIgnore</em>&nbsp;</td><td class="fielddoc">
+<p>Button Bits - Abort button plus Retry button and Ignore button. </p>
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gac4414a7e45fa6331cd4a0e7faf6e68caa2d916aab18b9e7f4f74c31c1bff0ea5a"></a>MessageBox_BUTTON_MASK</em>&nbsp;</td><td class="fielddoc">
 <p>mask for button bits </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00639">639</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p>Definition at line <a class="el" href="dialog__window_8h_source.html#l00647">647</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +533,7 @@ Functions</h2></td></tr>
 <p>NOTE: non-NULL return values must be free'd by the caller using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a></p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00854">854</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00960">960</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
 </div>
 </div>
@@ -568,7 +602,7 @@ Functions</h2></td></tr>
 <p>NOTE: non-NULL return values must be free'd by the caller using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a></p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00450">450</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00556">556</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
 </div>
 </div>
@@ -669,7 +703,7 @@ Functions</h2></td></tr>
 <p>The copyright string can be multi-line. Care should be taken that it is not too wide for the display or the results of horizontally and vertically centering the string in the lower half may be unpredictable.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l00955">955</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
+<p>Definition at line <a class="el" href="dialog__impl_8c_source.html#l01061">1061</a> of file <a class="el" href="dialog__impl_8c_source.html">dialog_impl.c</a>.</p>
 
 </div>
 </div>
@@ -678,7 +712,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

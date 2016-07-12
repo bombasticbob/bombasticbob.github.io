@@ -161,13 +161,13 @@ var NAVTREEINDEX0 =
 "dialog__controls_8c.html#a512020e3328747cad70511eaf20f5139":[10,0,5,60],
 "dialog__controls_8c.html#a5252f7a590d21369afb8231ec58046ad":[10,0,5,51],
 "dialog__controls_8c.html#a54a35321bb26b694245944fb8ab1ca50":[10,0,5,19],
-"dialog__controls_8c.html#a5d23431b9c2a0c605eaba5b7a15913a7":[10,0,5,27],
 "dialog__controls_8c.html#a61b54ca275d4d228b63c0bab30424630":[10,0,5,9],
 "dialog__controls_8c.html#a62204396c48b4047bb2f5d1933e10e2d":[10,0,5,59],
 "dialog__controls_8c.html#a641087cf1eb7b921b2eec6e0f605a67a":[10,0,5,1],
 "dialog__controls_8c.html#a65546edb25a721864678bd65fb01f028":[10,0,5,34],
 "dialog__controls_8c.html#a739f5e4d903aa5563c32e61f6f06e207":[10,0,5,23],
 "dialog__controls_8c.html#a7aac29966d468a7325b101fe5f0c4a74":[10,0,5,3],
+"dialog__controls_8c.html#a7f819c1f4720601e48528497ddec6593":[10,0,5,27],
 "dialog__controls_8c.html#a7ffe2be2fdc02f843160d322b33d4ace":[10,0,5,33],
 "dialog__controls_8c.html#a881ba7d729d4142a1f83191987288f90":[10,0,5,48],
 "dialog__controls_8c.html#a8f045e9ebf02503a33e56a547a8ac46a":[10,0,5,16],
@@ -224,6 +224,7 @@ var NAVTREEINDEX0 =
 "dialog__controls_8h.html#ga2489985cc89f996f99b89f6448b3f31c":[10,0,6,88],
 "dialog__controls_8h.html#ga24c1cfc00e0cc803af1e5091586adba8":[10,0,6,101],
 "dialog__controls_8h.html#ga25c0a7ad6eb9e0086dd305aca25f4599":[10,0,6,75],
+"dialog__controls_8h.html#ga25cfa4ea854ca13b4553d7e043c8cc86":[10,0,6,73],
 "dialog__controls_8h.html#ga28f4d68e774791c2a0671f70415cb67e":[10,0,6,15],
 "dialog__controls_8h.html#ga296842a0a9a21a3fedea4f8c4cbee5b0":[10,0,6,69],
 "dialog__controls_8h.html#ga3376b89d9c4291d2af7e7cf1080a2f59":[10,0,6,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "dialog__controls_8h.html#ga4c2d4017fe583dff0db9dced65ab9520":[10,0,6,4],
 "dialog__controls_8h.html#ga4dec9020ce48d47e49062e5dee27a484":[10,0,6,125],
 "dialog__controls_8h.html#ga5084a0e424a59296fc80ca3ed65a8f09":[10,0,6,115],
-"dialog__controls_8h.html#ga50ae323d293f50dfa7b6574fc05e617d":[10,0,6,38],
-"dialog__controls_8h.html#ga543b38a2f84c071b422c8a2369836fe1":[10,0,6,107]
+"dialog__controls_8h.html#ga50ae323d293f50dfa7b6574fc05e617d":[10,0,6,38]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"dialog__controls_8h.html#ga543b38a2f84c071b422c8a2369836fe1":[10,0,6,107],
 "dialog__controls_8h.html#ga5490e27238ec770eac36831273b673ef":[10,0,6,29],
 "dialog__controls_8h.html#ga564e6facfeb6cf38c1bf8a334577c956":[10,0,6,34],
 "dialog__controls_8h.html#ga5667ed3db4dc0cdd90f971417ddbfd5e":[10,0,6,62],
@@ -17,6 +18,7 @@ var NAVTREEINDEX1 =
 "dialog__controls_8h.html#ga64820398794760b87a79b476f376a44f":[10,0,6,106],
 "dialog__controls_8h.html#ga67eea89df8ea0f2b875de3d07e979c66":[10,0,6,2],
 "dialog__controls_8h.html#ga6da00c31614f0d04ef418701181c5466":[10,0,6,139],
+"dialog__controls_8h.html#ga6e2908aa1ad9b30f392d8585f10e893b":[10,0,6,72],
 "dialog__controls_8h.html#ga72b1f39553e56a7f1d3ac93c239c55f8":[10,0,6,143],
 "dialog__controls_8h.html#ga7383ddec5ff0d112f7e60fefa3f6a59e":[10,0,6,1],
 "dialog__controls_8h.html#ga73cbcb89ffd7dd9602788c7e11f0ff7f":[10,0,6,92],
@@ -56,7 +58,6 @@ var NAVTREEINDEX1 =
 "dialog__controls_8h.html#gab66b1d14ae6f35990cd8b942da929846":[10,0,6,118],
 "dialog__controls_8h.html#gaba45abe7ce242732728ee2f6edb0fb04":[10,0,6,27],
 "dialog__controls_8h.html#gabdd58e30b5ba5fd23d075455907d42e8":[10,0,6,85],
-"dialog__controls_8h.html#gac016370ae1aa425ebf70345b562b8500":[10,0,6,72],
 "dialog__controls_8h.html#gac0203d71fd0e6653e0721c03151c3e95":[10,0,6,114],
 "dialog__controls_8h.html#gac7cedbd722c52ac56de7a58dea7155b6":[10,0,6,33],
 "dialog__controls_8h.html#gacbd581d981459f107eb29a6e946506a6":[10,0,6,39],
@@ -64,7 +65,6 @@ var NAVTREEINDEX1 =
 "dialog__controls_8h.html#gad37ea0f014795844f165efbcd5dd8df3":[10,0,6,60],
 "dialog__controls_8h.html#gad45027025876acd1f23051795e07ecc6":[10,0,6,82],
 "dialog__controls_8h.html#gad61d91b063ee898bc4604bfae718ee6f":[10,0,6,105],
-"dialog__controls_8h.html#gad76df2338f411cc555e0abe3ed546526":[10,0,6,73],
 "dialog__controls_8h.html#gad87263ad8cb84fc89ef18be39ab561d9":[10,0,6,140],
 "dialog__controls_8h.html#gad8c6831ab8dadf79f440f5c9f6f79636":[10,0,6,22],
 "dialog__controls_8h.html#gad9e515b399700e4b084a5dfc34f001b6":[10,0,6,20],

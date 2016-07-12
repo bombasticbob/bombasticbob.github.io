@@ -447,34 +447,41 @@ $(document).ready(function(){initNavTree('text__object_8h_source.html','');});
 <div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;</div>
 <div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;<span class="comment">// MBCS-related utilities</span></div>
 <div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__text__object.html#gaa4461f9446c41342c87282e8b36edd22" title="Insert multi-byte characters into a malloc&#39;d string, at a specified column.">WBInsertMBChars</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol, <span class="keyword">const</span> <span class="keywordtype">char</span> *pszMBString, <span class="keywordtype">int</span> cbString, <span class="keywordtype">int</span> bOverwrite);</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__text__object.html#gae699443621648d8ba3b8f728ba42bbe4" title="Delete a specified number of multi-byte characters from a string &#39;in place&#39;, starting at a specified ...">WBDelMBChars</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol, <span class="keywordtype">int</span> nDel);</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__text__object.html#gaf5214029ea5b7c039297f90386a2c4ab" title="Obtain the length of a multi-byte character string in &#39;characters&#39; (not bytes)">WBGetMBLength</a>(<span class="keywordtype">char</span> *pString);</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e" title="Obtain the pointer to a specific multi-byte character within a multi-byte character string...">WBGetMBCharPtr</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol, <span class="keywordtype">int</span> *pcbLen);</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__text__object.html#gafd1b3ec805c8d00f9ba746101a5d518d" title="Insert multi-byte characters into a WBAlloc&#39;d string, at a specified column.">WBInsertMBChars</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol, <span class="keyword">const</span> <span class="keywordtype">char</span> *pszMBString, <span class="keywordtype">int</span> cbString,</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;                       <span class="keywordtype">int</span> fTab, <span class="keywordtype">int</span> fOverwrite, <span class="keywordtype">int</span> *piNewCol, <span class="keywordtype">char</span> **ppInserted);</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__text__object.html#ga7b4a09352d4b23604e1d0b25625ad040" title="Split a multi-byte characters into a WBAlloc&#39;d string, at a specified column, terminating the origina...">WBSplitMBLine</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol);</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d" title="Split a multi-byte characters into a WBAlloc&#39;d string, at a specified column, terminating the origina...">WBJoinMBLine</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol, <span class="keyword">const</span> <span class="keywordtype">char</span> *pJoin);</div>
 <div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;</div>
 <div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;<span class="preprocessor">#endif // _TEXT_OBJECT_H_INCLUDED_</span></div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__text__object.html#ga54cc2ecb4502af386dd0f2174a169996" title="Delete a specified number of multi-byte characters from a string &#39;in place&#39;, starting at a specified ...">WBDelMBChars</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol, <span class="keywordtype">int</span> nDel, <span class="keywordtype">int</span> *piNewCol, <span class="keywordtype">char</span> **ppDeleted);</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a" title="Obtain the length of a multi-byte character string in &#39;characters&#39; (not bytes)">WBGetMBLength</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pString);</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e" title="Obtain the pointer to a specific multi-byte character within a multi-byte character string...">WBGetMBCharPtr</a>(<span class="keywordtype">char</span> *pString, <span class="keywordtype">int</span> iCol, <span class="keywordtype">int</span> *pcbLen);</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109" title="Obtain the column index from a pointer within a multi-byte character string.">WBGetMBColIndex</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pString, <span class="keyword">const</span> <span class="keywordtype">char</span> *pChar);</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;<span class="preprocessor">#endif // _TEXT_OBJECT_H_INCLUDED_</span></div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="text__object_8h.html">text_object.h</a></li>
-    <li class="footer">Generated on Tue Jul 5 2016 10:18:01 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 12 2016 14:35:57 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

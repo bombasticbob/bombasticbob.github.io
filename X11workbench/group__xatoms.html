@@ -128,7 +128,7 @@ Variables</h2></td></tr>
  data.l[2] is window ID<br/>
  </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00242">242</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00244">244</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -145,7 +145,7 @@ Variables</h2></td></tr>
 <p>notify parent that child is being destroyed </p>
 <p>RESERVED - not yet implemented TODO document DESTROY_NOTIFY format here </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00228">228</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00230">230</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ Variables</h2></td></tr>
 </ul>
 <p>data.l[1] is the control id to set focus to (for data.l[0] == 0) </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00282">282</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00284">284</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -196,7 +196,7 @@ Variables</h2></td></tr>
  data.l[2] Window ID of the menu bar<br/>
  </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00164">164</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00165">165</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -223,11 +223,11 @@ Variables</h2></td></tr>
 </p>
 <p>A Frame Window returns '0' to indicate that the menu should be displayed normally (same as 'not handled')<br/>
  Other return values alter the display of the menu.</p>
-<p>For a popup menu: -1 : disables the menu 0 : enables the menu (default behavior if no handler present)</p>
+<p>For a popup menu: -1 : disables the menu 1 : enables the menu (default behavior if no UI handler present, but menu handler IS present) 0 : menu item NOT handled (menu item will be greyed)</p>
 <p>For a dynamic menu: (preliminary) - popup menu items only (not found in top-level menus) -1 : disabled the menu 0 : 'not handled' or 'error' (no dynamic menu will be added or displayed) &gt;0 : a 'secure internal pointer hash' representing an actual pointer value (preliminary, RESERVED) this pointer will be to a WBAlloc'd block of memory describing the menu items (as text). It will be necessary for the caller to interpret this text to create the dynamic memory items. PRELIMINARY: the text will be 'menu text\tAtom Name' - no hotkeys, no tooltip text. The menu text can include underscores which will only work when the popup is available</p>
 <p>TODO: change this to be 'less dangerous' with respect to getting invalid pointers jammed into the queue. It is theoretically possible for a different application to post Client Message events using faked values. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00200">200</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00202">202</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ Variables</h2></td></tr>
 <p>Whenever data.l[0] contains a non-zero value, and it's ok to close the window, the window event handler should destroy all of its private data, zero out data element '0' for the window data (if it pointed to the private data), and call <a class="el" href="group__wcore.html#gaba341876375df2c16fe7981839671e19" title="un-register the window&#39;s callback function (implies resource destruction)">WBUnregisterWindowCallback()</a> for itself. The window will be destroyed by the sender as soon as the callback returns.</p>
 <p>If the callback returns a non-zero value, it should not destroy any of its own private data. The sender will assume that it's not ok to close the window and will try to leave everything 'as-is'.command sent by Client Message to . Return 0 if ok to close 1 if NOT ok to close, '-1' on error </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00265">265</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00267">267</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Variables</h2></td></tr>
 <p>The return value is ignored. It is typically sent via a direct call to the message callback function. Since it is merely a notification message, it does not need to be handled. The specified coordinates are in 'client' coordinates relative to the upper left corner of the client area, which is always (0,0).<br/>
  </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00219">219</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00221">221</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Variables</h2></td></tr>
  When sent to a frame window, you are requesting that it set the focus to the appropriate window, similar to <a class="el" href="group__xatoms.html#ga769c0948e0f7f257eff23a9f7d89a0f0">aDLG_FOCUS</a><br/>
  Assigning 'data.l[0]' to 'None' tells a frame window to set focus to the default. When sent to the application, a value of 'None' is meaningless. </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00304">304</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00306">306</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Variables</h2></td></tr>
 </p>
 <p>see also: <a class="el" href="group__keyboard.html#ga36d3a3da71f9de6e179166f627565af4" title="Generic keyboard event translation utility.">WBKeyEventProcessKey()</a>character notifications (generated by API; avoids key up/down handling) </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00324">324</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00326">326</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ Variables</h2></td></tr>
  data.l[4] is translated Y coordinate<br/>
 'pointer' notifications (generated by API) </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00380">380</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00382">382</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -443,7 +443,7 @@ Variables</h2></td></tr>
  format == 32 (always)<br/>
  data.l[0] is the unique identifier associated with the timertimer notifications (generated by API) </p>
 
-<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00340">340</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="window__helper_8c_source.html#l00342">342</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

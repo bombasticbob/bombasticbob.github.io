@@ -112,9 +112,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gad9cda3c76d25d3053908256495d3e23c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gad9cda3c76d25d3053908256495d3e23c">WBSetHScrollPos</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pSI, int iPos)</td></tr>
 <tr class="memdesc:gad9cda3c76d25d3053908256495d3e23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the scroll range for a horizontal scrollbar in the WB_SCROLLINFO structure.  <a href="#gad9cda3c76d25d3053908256495d3e23c">More...</a><br/></td></tr>
 <tr class="separator:gad9cda3c76d25d3053908256495d3e23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae31e0bc284aba0411eccfb35ea858aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaae31e0bc284aba0411eccfb35ea858aa">WBUpdateScrollBarGeometry</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pSI, XFontStruct *pfontReference, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomUsable)</td></tr>
-<tr class="memdesc:gaae31e0bc284aba0411eccfb35ea858aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the scroll bar geometry within the WB_SCROLLINFO structure.  <a href="#gaae31e0bc284aba0411eccfb35ea858aa">More...</a><br/></td></tr>
-<tr class="separator:gaae31e0bc284aba0411eccfb35ea858aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a248d35a52528818882628963dc3103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103">WBUpdateScrollBarGeometry</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pSI, XFontSet fontSetRef, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomUsable)</td></tr>
+<tr class="memdesc:ga7a248d35a52528818882628963dc3103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the scroll bar geometry within the WB_SCROLLINFO structure.  <a href="#ga7a248d35a52528818882628963dc3103">More...</a><br/></td></tr>
+<tr class="separator:ga7a248d35a52528818882628963dc3103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae88951710b059bd5e537665b0d8ce886"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gae88951710b059bd5e537665b0d8ce886">WBCalcVScrollDragPos</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, int iY)</td></tr>
 <tr class="memdesc:gae88951710b059bd5e537665b0d8ce886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate and assign the correct vertical scroll bar position from mouse coordinates.  <a href="#gae88951710b059bd5e537665b0d8ce886">More...</a><br/></td></tr>
 <tr class="separator:gae88951710b059bd5e537665b0d8ce886"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga43da8059f5926c745279d643499490bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga43da8059f5926c745279d643499490bf">WBDrawDownArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
 <tr class="memdesc:ga43da8059f5926c745279d643499490bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a down arrow in a window within a specified geometry.  <a href="#ga43da8059f5926c745279d643499490bf">More...</a><br/></td></tr>
 <tr class="separator:ga43da8059f5926c745279d643499490bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafaf7cb2597e19dc869bf2e142b1c43f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gafaf7cb2597e19dc869bf2e142b1c43f7">WBDraw3DBorderTab</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomOutline, int fFocus, unsigned long lFGColor, unsigned long lBGColor, unsigned long lBorderColor1, unsigned long lBorderColor2, unsigned long lHighlightColor, XFontStruct *pFont, XFontStruct *pBoldFont, Atom aGraphic, const char *szText)</td></tr>
-<tr class="memdesc:gafaf7cb2597e19dc869bf2e142b1c43f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'tab' within a specified 'outline' rectangle.  <a href="#gafaf7cb2597e19dc869bf2e142b1c43f7">More...</a><br/></td></tr>
-<tr class="separator:gafaf7cb2597e19dc869bf2e142b1c43f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7">WBDraw3DBorderTab</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomOutline, int fFocus, unsigned long lFGColor, unsigned long lBGColor, unsigned long lBorderColor1, unsigned long lBorderColor2, unsigned long lHighlightColor, XFontSet fontSet, XFontSet fontSetBold, Atom aGraphic, const char *szText)</td></tr>
+<tr class="memdesc:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'tab' within a specified 'outline' rectangle.  <a href="#ga8a43f2bfb2f71ee03622c93b082ca3a7">More...</a><br/></td></tr>
+<tr class="separator:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>GC Utility functions for drawing 'Window Dressing', i.e. various standard windows components</p>
@@ -173,7 +173,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Structure that defines scroll bar info for both horizontal and vertical scroll bars. </p>
-<p>This structure defines the scroll bar information for both vertical and horizontal scroll bars. You can have both a horizontal AND a vertical scroll bar at the same time. This structure is maintained by various API functions, particularly <a class="el" href="group__window__dressing.html#gaae31e0bc284aba0411eccfb35ea858aa" title="Update the scroll bar geometry within the WB_SCROLLINFO structure.">WBUpdateScrollBarGeometry()</a>.</p>
+<p>This structure defines the scroll bar information for both vertical and horizontal scroll bars. You can have both a horizontal AND a vertical scroll bar at the same time. This structure is maintained by various API functions, particularly <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103" title="Update the scroll bar geometry within the WB_SCROLLINFO structure.">WBUpdateScrollBarGeometry()</a>.</p>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__SCROLLINFO____.html" title="Structure that defines scroll bar info for both horizontal and vertical scroll bars. ">__WB_SCROLLINFO__</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a3976c7ed1cd88ec817924702f55744fb" title="scroll state flags - see enumeration WBScrollState_ENUM">iScrollState</a>;         <span class="comment">// scroll state flags - see enumeration \ref WBScrollState_ENUM</span></div>
@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 <div class="line">  <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a933484ed544ebd8124b30d7081a0af4f" title="geometry for the vertical scroll bar &#39;down&#39; button (empty if not visible)">geomVDown</a>;        <span class="comment">// geometry for the vertical scroll bar &#39;down&#39; button (empty if not visible)</span></div>
 <div class="line">  <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a621f7995ddc359065225e0c8c3e59afe" title="geometry for the vertical scroll bar &#39;knob&#39; (empty if not visible)">geomVKnob</a>;        <span class="comment">// geometry for the vertical scroll bar &#39;knob&#39; (empty if not visible)</span></div>
 <div class="line">} <a class="code" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff" title="Structure that defines scroll bar info for both horizontal and vertical scroll bars.">WB_SCROLLINFO</a>;</div>
-</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__window__dressing.html#gab712a9fc90508bcc5606733188b34d7b" title="Initialization function for a &#39;WB_SCROLLINFO&#39; structure.">WBInitScrollInfo()</a>, <a class="el" href="group__window__dressing.html#gaae31e0bc284aba0411eccfb35ea858aa" title="Update the scroll bar geometry within the WB_SCROLLINFO structure.">WBUpdateScrollBarGeometry()</a> </dd></dl>
+</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__window__dressing.html#gab712a9fc90508bcc5606733188b34d7b" title="Initialization function for a &#39;WB_SCROLLINFO&#39; structure.">WBInitScrollInfo()</a>, <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103" title="Update the scroll bar geometry within the WB_SCROLLINFO structure.">WBUpdateScrollBarGeometry()</a> </dd></dl>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gafaf7cb2597e19dc869bf2e142b1c43f7"></a>
+<a class="anchor" id="ga8a43f2bfb2f71ee03622c93b082ca3a7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -594,14 +594,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontStruct *&#160;</td>
-          <td class="paramname"><em>pFont</em>, </td>
+          <td class="paramtype">XFontSet&#160;</td>
+          <td class="paramname"><em>fontSet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontStruct *&#160;</td>
-          <td class="paramname"><em>pBoldFont</em>, </td>
+          <td class="paramtype">XFontSet&#160;</td>
+          <td class="paramname"><em>fontSetBold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -641,8 +641,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">lBorderColor1</td><td>The upper, left 'Pixel' color to use when drawing the tab </td></tr>
     <tr><td class="paramname">lBorderColor2</td><td>The lower, right 'Pixel' color to use when drawing the tab </td></tr>
     <tr><td class="paramname">lHighlightColor</td><td>The 'highlight' 'Pixel' color to use for a tab that has the focus </td></tr>
-    <tr><td class="paramname">pFont</td><td>The 'normal' font to render text in </td></tr>
-    <tr><td class="paramname">pBoldFont</td><td>The 'bold' font to render text in (this includes the 'x' close button on the tab) </td></tr>
+    <tr><td class="paramname">fontSet</td><td>The 'normal' font to render text in </td></tr>
+    <tr><td class="paramname">fontSetBold</td><td>The 'bold' font to render text in (this includes the 'x' close button on the tab) </td></tr>
     <tr><td class="paramname">aGraphic</td><td>An atom for the current (registered) pixmap graphic, or 'None' for no graphic </td></tr>
     <tr><td class="paramname">szText</td><td>A const pointer to a character string containing the descriptive text for the tab</td></tr>
   </table>
@@ -1335,7 +1335,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaae31e0bc284aba0411eccfb35ea858aa"></a>
+<a class="anchor" id="ga7a248d35a52528818882628963dc3103"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1348,8 +1348,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontStruct *&#160;</td>
-          <td class="paramname"><em>pfontReference</em>, </td>
+          <td class="paramtype">XFontSet&#160;</td>
+          <td class="paramname"><em>fontSetRef</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1375,7 +1375,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pSI</td><td>A pointer to the WB_SCROLLINFO structure </td></tr>
-    <tr><td class="paramname">pfontReference</td><td>The reference font for scroll bar size. Pass NULL to use the 'Default' font. </td></tr>
+    <tr><td class="paramname">fontSetRef</td><td>The reference font set for scroll bar size. Pass None to use the 'Default' font set. </td></tr>
     <tr><td class="paramname">pgeomClient</td><td>The geometry of the client area where the scroll bars will be displayed. </td></tr>
     <tr><td class="paramname">pgeomUsable</td><td>Returns the resulting 'usable' client area after scroll bar geometry calculations are done.</td></tr>
   </table>
@@ -1391,7 +1391,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 12 2016 14:35:57 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

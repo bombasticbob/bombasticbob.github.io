@@ -208,18 +208,27 @@ static __inline__ const <br class="typebreak"/>
 <tr class="memitem:gae1f8ddf1de53987c95b923e2b7f5f2ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce">WBTextObjectCalculateLineHeight</a> (int iAscent, int iDescent)</td></tr>
 <tr class="memdesc:gae1f8ddf1de53987c95b923e2b7f5f2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the correct per-line height (in pixels) for a specified font ascent and descent.  <a href="#gae1f8ddf1de53987c95b923e2b7f5f2ce">More...</a><br/></td></tr>
 <tr class="separator:gae1f8ddf1de53987c95b923e2b7f5f2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4461f9446c41342c87282e8b36edd22"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gaa4461f9446c41342c87282e8b36edd22">WBInsertMBChars</a> (char *pString, int iCol, const char *pszMBString, int cbString, int bOverwrite)</td></tr>
-<tr class="memdesc:gaa4461f9446c41342c87282e8b36edd22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert multi-byte characters into a malloc'd string, at a specified column.  <a href="#gaa4461f9446c41342c87282e8b36edd22">More...</a><br/></td></tr>
-<tr class="separator:gaa4461f9446c41342c87282e8b36edd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae699443621648d8ba3b8f728ba42bbe4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gae699443621648d8ba3b8f728ba42bbe4">WBDelMBChars</a> (char *pString, int iCol, int nDel)</td></tr>
-<tr class="memdesc:gae699443621648d8ba3b8f728ba42bbe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a specified number of multi-byte characters from a string 'in place', starting at a specified column.  <a href="#gae699443621648d8ba3b8f728ba42bbe4">More...</a><br/></td></tr>
-<tr class="separator:gae699443621648d8ba3b8f728ba42bbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5214029ea5b7c039297f90386a2c4ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gaf5214029ea5b7c039297f90386a2c4ab">WBGetMBLength</a> (char *pString)</td></tr>
-<tr class="memdesc:gaf5214029ea5b7c039297f90386a2c4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the length of a multi-byte character string in 'characters' (not bytes)  <a href="#gaf5214029ea5b7c039297f90386a2c4ab">More...</a><br/></td></tr>
-<tr class="separator:gaf5214029ea5b7c039297f90386a2c4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd1b3ec805c8d00f9ba746101a5d518d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gafd1b3ec805c8d00f9ba746101a5d518d">WBInsertMBChars</a> (char *pString, int iCol, const char *pszMBString, int cbString, int fTab, int fOverwrite, int *piNewCol, char **ppInserted)</td></tr>
+<tr class="memdesc:gafd1b3ec805c8d00f9ba746101a5d518d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert multi-byte characters into a WBAlloc'd string, at a specified column.  <a href="#gafd1b3ec805c8d00f9ba746101a5d518d">More...</a><br/></td></tr>
+<tr class="separator:gafd1b3ec805c8d00f9ba746101a5d518d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b4a09352d4b23604e1d0b25625ad040"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga7b4a09352d4b23604e1d0b25625ad040">WBSplitMBLine</a> (char *pString, int iCol)</td></tr>
+<tr class="memdesc:ga7b4a09352d4b23604e1d0b25625ad040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a multi-byte characters into a WBAlloc'd string, at a specified column, terminating the original string at that column with a zero byte.  <a href="#ga7b4a09352d4b23604e1d0b25625ad040">More...</a><br/></td></tr>
+<tr class="separator:ga7b4a09352d4b23604e1d0b25625ad040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a1f42232e1c3223db546a002c01c44d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d">WBJoinMBLine</a> (char *pString, int iCol, const char *pJoin)</td></tr>
+<tr class="memdesc:ga2a1f42232e1c3223db546a002c01c44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a multi-byte characters into a WBAlloc'd string, at a specified column, terminating the original string at that column with a zero byte.  <a href="#ga2a1f42232e1c3223db546a002c01c44d">More...</a><br/></td></tr>
+<tr class="separator:ga2a1f42232e1c3223db546a002c01c44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54cc2ecb4502af386dd0f2174a169996"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga54cc2ecb4502af386dd0f2174a169996">WBDelMBChars</a> (char *pString, int iCol, int nDel, int *piNewCol, char **ppDeleted)</td></tr>
+<tr class="memdesc:ga54cc2ecb4502af386dd0f2174a169996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a specified number of multi-byte characters from a string 'in place', starting at a specified column.  <a href="#ga54cc2ecb4502af386dd0f2174a169996">More...</a><br/></td></tr>
+<tr class="separator:ga54cc2ecb4502af386dd0f2174a169996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f19ac06ff8893b882341c1044f3b46a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a">WBGetMBLength</a> (const char *pString)</td></tr>
+<tr class="memdesc:ga9f19ac06ff8893b882341c1044f3b46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the length of a multi-byte character string in 'characters' (not bytes)  <a href="#ga9f19ac06ff8893b882341c1044f3b46a">More...</a><br/></td></tr>
+<tr class="separator:ga9f19ac06ff8893b882341c1044f3b46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea3af6adcbbc837928e8e87f00d3cc0e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e">WBGetMBCharPtr</a> (char *pString, int iCol, int *pcbLen)</td></tr>
 <tr class="memdesc:gaea3af6adcbbc837928e8e87f00d3cc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the pointer to a specific multi-byte character within a multi-byte character string, by specifying it's column.  <a href="#gaea3af6adcbbc837928e8e87f00d3cc0e">More...</a><br/></td></tr>
 <tr class="separator:gaea3af6adcbbc837928e8e87f00d3cc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga158a023bde6f7acbfe114d13dd934109"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109">WBGetMBColIndex</a> (const char *pString, const char *pChar)</td></tr>
+<tr class="memdesc:ga158a023bde6f7acbfe114d13dd934109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the column index from a pointer within a multi-byte character string.  <a href="#ga158a023bde6f7acbfe114d13dd934109">More...</a><br/></td></tr>
+<tr class="separator:ga158a023bde6f7acbfe114d13dd934109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Generic utility functions and objects for editing text. </p>
@@ -665,10 +674,10 @@ static __inline__ const <br class="typebreak"/>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd pointer to a TEXT_BUFFER object. Use 'WBFreeTextBuffer' to free it safely.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd pointer to a TEXT_BUFFER object. Use 'WBFreeTextBuffer' to free it safely.</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00304">304</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00276">276</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -707,11 +716,11 @@ static __inline__ const <br class="typebreak"/>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero value on error, or zero on success</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00411">411</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00383">383</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gae699443621648d8ba3b8f728ba42bbe4"></a>
+<a class="anchor" id="ga54cc2ecb4502af386dd0f2174a169996"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -731,7 +740,19 @@ static __inline__ const <br class="typebreak"/>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nDel</em>&#160;</td>
+          <td class="paramname"><em>nDel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piNewCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>ppDeleted</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -747,13 +768,18 @@ static __inline__ const <br class="typebreak"/>
     <tr><td class="paramname">pString</td><td>A pointer to a buffer containing a multi-byte character string. The string must terminate with a zero byte. </td></tr>
     <tr><td class="paramname">iCol</td><td>A zero-based column at which point to delete the text. </td></tr>
     <tr><td class="paramname">nDel</td><td>An integer indicating the number of multi-byte characters to delete. A negative number will delete 'backspace' style, starting with the PREVIOUS character. Positive deletes beginning with the character at 'iCol'. </td></tr>
+    <tr><td class="paramname">piNewCol</td><td>An optional pointer to an integer that receives the new column that the cursor is on after the operation completes. May be NULL. </td></tr>
+    <tr><td class="paramname">ppDeleted</td><td>An optional pointer to a char * that will be assigned a WBAlloc'd pointer to a string containing the deleted characters. May be NULL. The caller must free any non-NULL returned value via <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of deletions remaining (preserving the sign of 'nDel') after the operation completes.</dd></dl>
 <p>This function performs the somewhat complicated 'delete a multi-byte character' functionality in a consistent AND column-based manner, so that a string that has multi-byte characters can be edited in the same way as a string that has characters with consistent length. It also returns the number of delete operations remaining.</p>
 <p>In many cases, a series of 'backspaces' or 'deletes' may extend into a previous or subsequent line. In these cases, they must be handled in a separate call involving the previous or next line's multi-byte character buffer. The caller is responsible for handlnig this, as well as for collapsing the lines or joining them together.</p>
+<p>If a 'ppDeleted' pointer value is specified, this function will store the deleted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l04820">4820</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -818,7 +844,7 @@ static __inline__ const <br class="typebreak"/>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00446">446</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00418">418</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -864,16 +890,57 @@ static __inline__ const <br class="typebreak"/>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the multi-byte character located at the 'iCol' position within the string. If 'iCol' is out range, the return value will point to the terminating zero byte. On error, the return value will be NULL.</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l04994">4994</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="gaf5214029ea5b7c039297f90386a2c4ab"></a>
+<a class="anchor" id="ga158a023bde6f7acbfe114d13dd934109"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBGetMBColIndex </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pChar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain the column index from a pointer within a multi-byte character string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pString</td><td>A pointer to a buffer containing a multi-byte character string. The string must terminate with a zero byte. </td></tr>
+    <tr><td class="paramname">pChar</td><td>A (const) pointer to a character within 'pString'. This must be a pointer to the start of a valid UTF-8 character within 'pString'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The zero-based column index of the character pointed to by 'pChar' within 'pString. If 'pChar' is out range, or points to an invalid character, the return value will be zero.</dd></dl>
+<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l05026">5026</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9f19ac06ff8893b882341c1044f3b46a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int WBGetMBLength </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>pString</em></td><td>)</td>
           <td></td>
         </tr>
@@ -889,6 +956,8 @@ static __inline__ const <br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The length of the multi-byte character string in 'characters'</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l04984">4984</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -940,7 +1009,7 @@ static __inline__ const <br class="typebreak"/>
 
 </div>
 </div>
-<a class="anchor" id="gaa4461f9446c41342c87282e8b36edd22"></a>
+<a class="anchor" id="gafd1b3ec805c8d00f9ba746101a5d518d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -972,7 +1041,25 @@ static __inline__ const <br class="typebreak"/>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bOverwrite</em>&#160;</td>
+          <td class="paramname"><em>fTab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fOverwrite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>piNewCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>ppInserted</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -982,20 +1069,27 @@ static __inline__ const <br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 
-<p>Insert multi-byte characters into a malloc'd string, at a specified column. </p>
+<p>Insert multi-byte characters into a WBAlloc'd string, at a specified column. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pString</td><td>A pointer to a malloc'd buffer containing a multi-byte character string. The string must terminate with a zero byte. </td></tr>
+    <tr><td class="paramname">pString</td><td>A pointer to a WBAlloc'd buffer containing a multi-byte character string. The string must terminate with a zero byte. </td></tr>
     <tr><td class="paramname">iCol</td><td>A zero-based column at which point to insert the text. </td></tr>
-    <tr><td class="paramname">pszMBString</td><td>A pointer to a buffer containing the multi-byte characters to insert </td></tr>
+    <tr><td class="paramname">pszMBString</td><td>A pointer to a buffer containing the multi-byte characters to insert. It must NOT contain any return or line feed characters. Tabs will be translated as specified. Other control characters will become spaces (including line feeds, if present) </td></tr>
     <tr><td class="paramname">cbString</td><td>The length of the multi-byte character string (in bytes, not characters), or -1 to use a terminating zero byte as 'end of string' </td></tr>
-    <tr><td class="paramname">bOverwrite</td><td>Non-zero to 'overwrite' rather than insert the characters. Overwrite can extend the length of the string. </td></tr>
+    <tr><td class="paramname">fTab</td><td>An integer indicating how tabs should be handled. A value of 0 indicates 'no tabs', '-1' is the 'default' tab, and any other value, the number of spaces that a tab will align with. </td></tr>
+    <tr><td class="paramname">fOverwrite</td><td>Non-zero to 'overwrite' rather than insert the characters. Overwrite can extend the length of the string. </td></tr>
+    <tr><td class="paramname">piNewCol</td><td>A pointer to an integer to receive the 0-based 'new' column at which the cursor is pointing after the insert. See '<a class="el" href="group__text__object.html#ga7b4a09352d4b23604e1d0b25625ad040" title="Split a multi-byte characters into a WBAlloc&#39;d string, at a specified column, terminating the origina...">WBSplitMBLine()</a>' for a method to insert a line feed at this point. </td></tr>
+    <tr><td class="paramname">ppInserted</td><td>An optional pointer to a char * that will be assigned a WBAlloc'd pointer to a string containing the inserted characters. May be NULL. The caller must free any non-NULL returned value via <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a malloc'd string containing the results. If different from 'pString', the 'pString' pointer value will no longer be valid. On error, it will return NULL</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a WBAlloc'd string containing the results. If different from 'pString', the 'pString' pointer value will no longer be valid. On error, it will return NULL</dd></dl>
 <p>This function performs the somewhat complicated 'insert a multi-byte character' functionality in a consistent AND column-based manner, so that a string that has multi-byte characters can be edited in the same way as a string that has characters with consistent length. In this way, ANY multi-byte character that is available at a future point in time can be supported. The alternative would be to convert to "a unicode format", which may limit the character set that could be used; as an example, 16-bit unicode characters won't include characters that are available in the 24-bit Unicode character set. Having a ridiculously large bit-length for a single character is not much of a consolation, and so this function (and others) will deal with multiple byte characters as they are, in an independent manner.</p>
+<p>It is the caller's responsibility to filter out line feed characters, and insert new lines into a line buffer.</p>
+<p>If a 'ppInserted' pointer value is specified, this function will store the inserted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l04726">4726</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1032,6 +1126,93 @@ static __inline__ const <br class="typebreak"/>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
 <p>Definition at line <a class="el" href="text__object_8h_source.html#l00903">903</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2a1f42232e1c3223db546a002c01c44d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* WBJoinMBLine </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pJoin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split a multi-byte characters into a WBAlloc'd string, at a specified column, terminating the original string at that column with a zero byte. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pString</td><td>A pointer to a WBAlloc'd buffer containing a multi-byte character string. The string must terminate with a zero byte. </td></tr>
+    <tr><td class="paramname">iCol</td><td>A 0-based column index value. If the value is greater than the length of 'pString', then 'pString' will be padded with spaces up to that column before 'joining'. </td></tr>
+    <tr><td class="paramname">pJoin</td><td>A (const) poitner to a buffer containing a multi-byte character string, terminated with a zero byte. This </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a WBAlloc'd string containing the resulting 'join'ed string. If different from 'pString', the 'pString' pointer value will no longer be valid. On error, it will return NULL</dd></dl>
+<p>This function will 'join' a 2nd string to an existing (WBAlloc'd) multi-byte character string, optionally at a specified column (padding it with white space, as needed). The 'pString' pointer must have been allocated via WBAlloc for this to function properly. However, the 'pJoin' string can be from any source.</p>
+<p>The caller is expected to remove the subsequent string pointer from being the 'next' line, as needed, following the line join. </p>
+
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l04783">4783</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7b4a09352d4b23604e1d0b25625ad040"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* WBSplitMBLine </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split a multi-byte characters into a WBAlloc'd string, at a specified column, terminating the original string at that column with a zero byte. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pString</td><td>A pointer to a WBAlloc'd buffer containing a multi-byte character string. The string must terminate with a zero byte. </td></tr>
+    <tr><td class="paramname">iCol</td><td>A zero-based column at which point to split the line. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a WBAlloc'd string containing the next line to insert. On error, it will return NULL without any changes being made.</dd></dl>
+<p>This function will 'split' a string at a particular column, returning a WBAlloc'd pointer to the 'remainder' of the line, which is intended to be inserted as a new line. The new line will NOT be indented, and leading white space will be left 'as-is'. Trailing white space on the original line, however, will automatically be trimmed.</p>
+<p>The caller is expected to insert the returned string pointer as the 'next' line, following the line split. The caller is also responsible for any 'auto indent' functionality that might be needed for a line split. </p>
+
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l04746">4746</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1261,7 @@ static __inline__ const <br class="typebreak"/>
  If you join a pair of lines, call this function once for the deleted line, then again for the new (joined) line.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00469">469</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00441">441</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1291,7 @@ static __inline__ const <br class="typebreak"/>
  You should call this function following an 'undo' or other complex edit operation, in lieu of <a class="el" href="group__text__object.html#ga21cd50513992d6b1687006d260f69f42" title="Text buffer &#39;cached information&#39; update function indicating a change to a line&#39;s length.">WBTextBufferLineChange()</a>. Also, for single-line edits, it may be better to ALWAYS use this function.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00610">610</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00582">582</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1150,7 +1331,7 @@ static __inline__ const <br class="typebreak"/>
 <p>Use this function to consistently get the line height from font information. The Text Object expose handler uses this calculation exclusively. Sometimes owning objects need to know exactly how this is being calculated to properly handle scrolling, etc. and this function returns the same results that the expose handler will use to determine where to draw text in the display geometry.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00768">768</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00740">740</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1200,11 +1381,11 @@ static __inline__ const <br class="typebreak"/>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'malloc'd and initialized TEXT_OBJECT pointer - call WBTextObjectDestructor to destroy it</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd and initialized TEXT_OBJECT pointer - call WBTextObjectDestructor to destroy it</dd></dl>
 <p>This is being implemented as an object, similar to a C++ class with virtual member functions, for the purpose of being able to re-assign the vtable and thereby overload its functionality.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00736">736</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00708">708</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1414,7 @@ static __inline__ const <br class="typebreak"/>
 <p>Use this function to SAFELY destroy an object allocated using WBTextObjectConstructor</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p>Definition at line <a class="el" href="text__object_8c_source.html#l00758">758</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8c_source.html#l00730">730</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1423,7 @@ static __inline__ const <br class="typebreak"/>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 5 2016 10:18:02 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

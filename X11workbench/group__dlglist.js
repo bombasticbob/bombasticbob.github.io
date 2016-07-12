@@ -11,7 +11,7 @@ var group__dlglist =
       [ "nTop", "struct____LISTINFO____.html#adf10e19a2ea7ef40bde221b24094f48f", null ],
       [ "pfnAllocator", "struct____LISTINFO____.html#a590f1e804b018064cc3766b59a256f6e", null ],
       [ "pfnDestructor", "struct____LISTINFO____.html#af1658b79f8e73b6d2348d9629c070682", null ],
-      [ "pfnDisplay", "struct____LISTINFO____.html#ab74186ce12ef0ab5a06e5c8a054e9d93", null ],
+      [ "pfnDisplay", "struct____LISTINFO____.html#acd5482f40ff8767badd979616ab5b18c", null ],
       [ "pfnSort", "struct____LISTINFO____.html#a3e3cf99e2496af3d59658fb2e21f3761", null ],
       [ "wOwner", "struct____LISTINFO____.html#af2479329d50a78c07f034e58942003c1", null ]
     ] ],
@@ -50,8 +50,8 @@ var group__dlglist =
     [ "DLGGetControlListSelectionBits", "group__dlgctrl.html#ga82e78b9e3cb6c02187c28bc930035473", null ],
     [ "DLGGetControlListSelectionText", "group__dlgctrl.html#ga23d7ef52be3f365fffdd779e5b7d5ab2", null ],
     [ "DLGGetControlListText", "group__dlgctrl.html#gaec3c1d6afe290b443d6d0c0b9ae3e471", null ],
-    [ "DLGInitControlListInfo", "group__dlgctrl.html#gac016370ae1aa425ebf70345b562b8500", null ],
-    [ "DLGModifyControlListInfo", "group__dlgctrl.html#gad76df2338f411cc555e0abe3ed546526", null ],
+    [ "DLGInitControlListInfo", "group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b", null ],
+    [ "DLGModifyControlListInfo", "group__dlgctrl.html#ga25cfa4ea854ca13b4553d7e043c8cc86", null ],
     [ "DLGSetControlListSelection", "group__dlgctrl.html#ga984bfd97bcde8e168e38897ee5acf16d", null ],
     [ "DLGSetControlListSelectionValue", "group__dlgctrl.html#gad45027025876acd1f23051795e07ecc6", null ]
 ];

@@ -117,9 +117,9 @@ Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memitem:af1658b79f8e73b6d2348d9629c070682"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____LISTINFO____.html#af1658b79f8e73b6d2348d9629c070682">pfnDestructor</a> )(void *)</td></tr>
 <tr class="memdesc:af1658b79f8e73b6d2348d9629c070682"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor to call for each item that's removed  <a href="#af1658b79f8e73b6d2348d9629c070682">More...</a><br/></td></tr>
 <tr class="separator:af1658b79f8e73b6d2348d9629c070682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74186ce12ef0ab5a06e5c8a054e9d93"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____LISTINFO____.html#ab74186ce12ef0ab5a06e5c8a054e9d93">pfnDisplay</a> )(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pControl, void *pData, int iSelected, GC gcPaint, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td></tr>
-<tr class="memdesc:ab74186ce12ef0ab5a06e5c8a054e9d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">display callback function to paint the entry on the display surface  <a href="#ab74186ce12ef0ab5a06e5c8a054e9d93">More...</a><br/></td></tr>
-<tr class="separator:ab74186ce12ef0ab5a06e5c8a054e9d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5482f40ff8767badd979616ab5b18c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____LISTINFO____.html#acd5482f40ff8767badd979616ab5b18c">pfnDisplay</a> )(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pControl, void *pData, int iSelected, GC gcPaint, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom, XFontSet fontSet)</td></tr>
+<tr class="memdesc:acd5482f40ff8767badd979616ab5b18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">display callback function to paint the entry on the display surface  <a href="#acd5482f40ff8767badd979616ab5b18c">More...</a><br/></td></tr>
+<tr class="separator:acd5482f40ff8767badd979616ab5b18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e3cf99e2496af3d59658fb2e21f3761"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e3cf99e2496af3d59658fb2e21f3761"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____LISTINFO____.html#a3e3cf99e2496af3d59658fb2e21f3761">pfnSort</a> )(const void *, const void *)</td></tr>
 <tr class="memdesc:a3e3cf99e2496af3d59658fb2e21f3761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional sort comparison function. NULL implies 'strcmp'. <br/></td></tr>
@@ -146,7 +146,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div class="line">                                      <span class="comment">// typically this will point to &#39;WBFree&#39;</span></div>
 <div class="line">                                      <span class="comment">// if NULL, the caller-supplied pointer is ignored</span></div>
 <div class="line"></div>
-<div class="line">  void (*<a class="code" href="struct____LISTINFO____.html#ab74186ce12ef0ab5a06e5c8a054e9d93" title="display callback function to paint the entry on the display surface">pfnDisplay</a>)(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control. ">WBDialogControl</a> *pControl, <span class="keywordtype">void</span> *pData, <span class="keywordtype">int</span> iSelected, GC gcPaint, <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pGeom);</div>
+<div class="line">  void (*<a class="code" href="struct____LISTINFO____.html#acd5482f40ff8767badd979616ab5b18c" title="display callback function to paint the entry on the display surface">pfnDisplay</a>)(<a class="code" href="struct____WB__DIALOG__CONTROL____.html" title="Structure identifying the properties of a dialog box control. ">WBDialogControl</a> *pControl, <span class="keywordtype">void</span> *pData, <span class="keywordtype">int</span> iSelected, GC gcPaint, <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> *pGeom, XFontSet fontSet);</div>
 <div class="line">                                      <span class="comment">// generic function to display contents of item within &#39;pGeom&#39; using GC</span></div>
 <div class="line">                                      <span class="comment">// typically one of the listbox &#39;display item&#39; functions</span></div>
 <div class="line"></div>
@@ -154,7 +154,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">void</span> *<a class="code" href="struct____LISTINFO____.html#a911a9d918389b496e3cbe8c49d290f7f" title="The array of item data, integrated into the memory block containing this structure.">aItems</a>[1];                    <span class="comment">// array of item data (remainder of struct)</span></div>
 <div class="line">} <a class="code" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389" title="Structure containing data for list-related dialog controls.">LISTINFO</a>;</div>
-</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlglist.html#gac016370ae1aa425ebf70345b562b8500" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags.">DLGInitControlListInfo()</a> </dd></dl>
+</div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags.">DLGInitControlListInfo()</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="dialog__support_8h_source.html#l00107">107</a> of file <a class="el" href="dialog__support_8h_source.html">dialog_support.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
@@ -193,12 +193,12 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a class="anchor" id="ab74186ce12ef0ab5a06e5c8a054e9d93"></a>
+<a class="anchor" id="acd5482f40ff8767badd979616ab5b18c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pControl, void *pData, int iSelected, GC gcPaint, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td>
+          <td class="memname">void(* pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pControl, void *pData, int iSelected, GC gcPaint, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom, XFontSet fontSet)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,7 +220,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____LISTINFO____.html">__LISTINFO__</a></li>
-    <li class="footer">Generated on Tue Jul 5 2016 10:18:03 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
