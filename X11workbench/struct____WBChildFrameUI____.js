@@ -18,6 +18,7 @@ var struct____WBChildFrameUI____ =
     [ "home", "struct____WBChildFrameUI____.html#a3f483b69326a0a0d534680e401d4cf2a", null ],
     [ "hover_cancel", "struct____WBChildFrameUI____.html#a2dc8edd16a73bf09fa4f6f5909d6c38d", null ],
     [ "hover_notify", "struct____WBChildFrameUI____.html#ae0228ecf34aee8e4f08c445264233375", null ],
+    [ "is_empty", "struct____WBChildFrameUI____.html#afa488dfc28c2a41f16adbb5bfbc15076", null ],
     [ "is_ins_mode", "struct____WBChildFrameUI____.html#af498a390bf7abd3d39f1dbf8bdb670f5", null ],
     [ "leftarrow", "struct____WBChildFrameUI____.html#a2633ce5db41fc9e2b77105152ba42881", null ],
     [ "mouse_cancel", "struct____WBChildFrameUI____.html#ac9d3329b84aa62adb586e2848b04c951", null ],

@@ -35,21 +35,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "X11workbenchToolkit__config_8h_source.html",
-"dialog__controls_8h.html#ga543b38a2f84c071b422c8a2369836fe1",
-"dialog__window_8h.html#ga39053c006797afbd6c436823dac75dcb",
-"draw__text_8h.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9",
-"frame__window_8c.html#af1d999f7c8eb0101e808c7427c775831",
-"group__debug.html#gaea40bfd99822e6845b9f0e2244574b0f",
-"group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a3d8a3e8a137016ea5587b1cfc7f7c5ee",
-"group__font.html",
-"group__text__object.html#ga5833900dbf06c8ec0f32459f8d151df6",
-"menu_8h.html#ga41a8c143ed28cc1a63089d04a6cd8db9",
-"platform__helper_8h.html#ga71d10c657cde4801e8f2214f0d2c85d3",
-"struct____WBMenu.html#a9242290baf4201fe01c6b88b162a2fb0",
-"text__object_8c.html",
-"window__helper_8c.html#a2d33686abe789aedda19e32ae159cdcf",
-"window__helper_8c.html#gae4ea07cf5fe7953619b9c5e879890b42",
-"window__helper_8h.html#gabff70a128dddc8634658e93cfd7b51bb"
+"dialog__controls_8h.html#ga3376b89d9c4291d2af7e7cf1080a2f59",
+"dialog__window_8c.html#af8e643515805cf3031739584d81e2389aeb4bc2cae5833ae95d56ed73ead27890",
+"draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804",
+"frame__window_8c.html#a88916ec26e42aac5c5954cb44e0d29f7",
+"group__child__frame.html#gae1a423b335f825feb491a91a45099db2",
+"group__dlgctrl.html#gad45027025876acd1f23051795e07ecc6",
+"group__expose.html#ga1cbd545c3fa47148b5458186c2666507",
+"group__startup.html#ga25ecc057a42a10c41d4b324cd79957ed",
+"group__xatoms.html#gab4133b83c97fa7100e2a2e8cd3445830",
+"platform__helper_8c.html#gaefaa2afddaf082501611eef7339b1edf",
+"struct____WBChildFrameUI____.html#acc3fbdf9289a330b704debf91e919819",
+"struct__text__object__vtable__.html#a2fb22f286811008ff3c343bedc870ba0",
+"window__dressing_8h.html#ga978574a25d8082910a8a811fa55dccff",
+"window__helper_8c.html#gaa167210aeb180faba995a7b464bbfd69",
+"window__helper_8h.html#gab658e6d84759440dbf3c890446075395a8c0dbd5a6a424171b8605a9a9a2cde16"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

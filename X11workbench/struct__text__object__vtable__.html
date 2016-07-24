@@ -348,7 +348,7 @@ Data Fields</h2></td></tr>
 <div class="line"></div>
 <div class="line">} <a class="code" href="group__text__object.html#ga47fb27d1f2a968b64a65476649b52f36" title="&#39;vtable&#39; structure for TEXT_OBJECT">TEXT_OBJECT_VTABLE</a>;</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00265">265</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00267">267</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a9a2c626038ad5814001485d66cd45f93"></a>
 <div class="memitem">
@@ -371,7 +371,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>This function is essentially a UI helper for cursor select. When a cursor keystroke should cause a highlight to occur, call this function to start a highlight block. The current cursor will become the anchor, and subsequent cursor motion will extend the highlight block. A <a class="el" href="struct__text__object__vtable__.html#a9a2c626038ad5814001485d66cd45f93" title="Begin a highlight block.">begin_highlight()</a> will effectively do an <a class="el" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag()</a> but will not clear the current selection. It is safe to call this function multiple times while selecting with cursor keys from the keyboard; hence, a 'shift' cursor should call this every time to avoid state flag checks. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00600">600</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00602">602</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ Data Fields</h2></td></tr>
 </dl>
 <p>This function is essentially a UI helper for mouse drag-select. Call this function in response to a WB_POINTER_DRAG notification, then call <a class="el" href="struct__text__object__vtable__.html#a83edb3b3711a3aa4db4315c8c1c0e74b" title="Translate mouse cursor position into actual row/column. This function is irrelevant if the expose met...">mouse_click()</a> with the WB_POINTER_MOVE notifications. When the WB_POINTER_DROP notification arrives, call <a class="el" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag()</a> to complete the operation. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00638">638</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00640">640</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating whether 'undo' is possible. A non-zero value is 'TRUE', zero 'FALSE. </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00562">562</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00564">564</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating whether 'undo' is possible. A non-zero value is 'TRUE', zero 'FALSE. </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00550">550</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00552">552</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +464,7 @@ Data Fields</h2></td></tr>
 </dl>
 <p>This function will alter the 'blink' state of the cursor, generating Expose events as needed to re-paint it within the window. An owning window should call this function using the time period specified by the system settings, but ONLY AFTER at least one 'do_expose' call. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00759">759</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00761">761</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00708">708</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00710">710</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00658">658</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00660">660</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +530,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00698">698</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00700">700</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00693">693</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00695">695</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -574,7 +574,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00663">663</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00665">665</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00668">668</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00670">670</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00703">703</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00705">705</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +640,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00653">653</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00655">655</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00518">518</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00520">520</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +687,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00503">503</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00505">505</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +710,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00271">271</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00273">273</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -746,7 +746,7 @@ Data Fields</h2></td></tr>
 </p>
 <p>TODO: a 'context text color' callback function that can be assigned either to the vtable, or as a function pointer, in which the default text color would be the GC foreground color. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00747">747</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00749">749</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -771,7 +771,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>This function is essentially a UI helper for cursor select. Normally a keystroke that is NOT a cursor motion will automatically end the highlighting. Calling this function does not affect the highlighted area. It is safe to call this function at any time, whether highlighting is taking place or not. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00610">610</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00612">612</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +794,7 @@ Data Fields</h2></td></tr>
 </dl>
 <p>This function is essentially a UI helper for mouse drag-select. It is safe to call this function at any time, whether highlighting is taking place or not. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00646">646</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00648">648</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +817,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current column (independent of hard tabs or end of line) </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00486">486</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00488">488</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +842,7 @@ Data Fields</h2></td></tr>
 <p>This function returns the estimated column count, the maximum extent of any line within the text object. While editing, if the column count of a single line exceeds the current 'maximum', a new maximum will be calculated in "tab widths". Periodically this value will be re-estimated as needed to accomodate changes to the text.<br/>
  NOTE: the pointer to the TEXT_OBJECT cannot be a 'const' in this case, since cached values may need to be re-evaluated as part of the process of obtaining the desired information. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00333">333</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00335">335</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current file type, one of the 'file type' definitions</dd></dl>
 <p>A file type of 0 is 'plain text'. A file type of '-1' is 'Makefile' and by default, preserves hard tabs. Other file types are defined as one of the 'file type' constants </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00342">342</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00344">344</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current insert mode </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00375">375</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00377">377</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -913,7 +913,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current 'linefeed' type for end of line</dd></dl>
 <p>iLineFeed values: 0 (single line) 1 (newline) 2 (return) 3 (crlf) 4 (lfcr) </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00360">360</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00362">362</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -936,7 +936,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current row </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00473">473</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00475">475</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -960,7 +960,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The total row count including the last row, even if it is blank. If the text is empty, the return value is zero</dd></dl>
 <p>This function returns the row count. If the final line is blank, the row count will still include it. The return value is intended to assist scrolling the viewable area, so a final blank line must still be counted. Single-line text always returns a 1 unless the text is empty. A zero is always returned whenever there is no text in the object. This allows you to detect an 'empty' text object. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00319">319</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00321">321</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +983,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current scroll mode </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00426">426</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00428">428</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1010,7 @@ Data Fields</h2></td></tr>
  If the select mode is 'block', individual lines will always end in &lt;LF&gt;, and tabs will expand to &lt;space&gt; characters except for the 'special case' noted below<br/>
  In the special case of *pRct == {0,0,0,0}, all of the text will be copied, regardless of the select mode, in a format consistent with saving the text as a file, using the assigned line ending. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00467">467</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00469">469</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1034,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00440">440</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00442">442</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1057,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer indicating the current selection mode </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00388">388</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00390">390</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1083,7 @@ Data Fields</h2></td></tr>
  NOTE: Existing hard tabs within the text will be preserved even if a negative tab type is selected, so long as the white space covered by the tab is not modified.<br/>
  A tab type of zero uses the 'default' behavior for the application and file type. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00407">407</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00409">409</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1107,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd pointer to the selected text.</dd></dl>
 <p>This function allocates a buffer, then copies all of the text to the buffer using the specified line endings and other information. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00294">294</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00296">296</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1132,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>The 'viewport' is the currently visible area (in characters). It is independent of the cursor's row and column. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00578">578</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00580">580</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1155,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero integer if the selection rectangle is valid and not empty, otherwise zero. </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00453">453</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00455">455</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1180,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00285">285</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00287">287</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1205,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>indents the selected text by 'n' columns. Indent starts at the cursor and continues for each line within the selected text. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00544">544</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00546">546</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1228,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00277">277</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00279">279</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1254,7 +1254,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>The behavior of multi-line insert depends upon the selection mode. If 'char' or 'line' mode is selected, a 'newline' inserts a new line following the newline character. "\r\n", "\r", "\n", and "\n\r" are all treated the same. Multiple LF and CR combinations that vary in order/construct may produce unexpected results. if 'box' mode is selected, each subsequent line will be inserted at the next line's 'col' position. Hard tabs will be evaluated during insertion and converted to white space. It is assumed that the length of each line in 'box' select mode will be identical, but if it is not, the results will follow the length of the actual text. If the 'box' select length exceeds the last line of the file, the additional lines will be added as if in 'line' mode. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00534">534</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00536">536</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1283,7 @@ Data Fields</h2></td></tr>
 <p>Call this function to process mouse clicks properly. It will cause the cursor to move, or a highlighted area to be extended, depending on the nature of the mouse click. Use <a class="el" href="struct__text__object__vtable__.html#a6d8712c3baad30f15a4cc3a42702793f" title="Begin a mouse &#39;drag&#39; operation.">begin_mouse_drag()</a> and <a class="el" href="struct__text__object__vtable__.html#a9df444901140ebc82696d0f6b46f547d" title="End a mouse &#39;drag&#39; operation.">end_mouse_drag()</a> to indicate if a mouse drag operation (highlight an area) is in progress.<br/>
  Mouse clicks automatically do an <a class="el" href="struct__text__object__vtable__.html#ae36da8a9fc3354ae133d269f76ee2274" title="End a highlight block.">end_highlight()</a> and clear the highlight area if a 'drag' is not in progress. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00628">628</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00630">630</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +1305,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00678">678</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00680">680</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1327,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00683">683</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00685">685</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1349,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00688">688</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00690">690</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1371,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00673">673</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00675">675</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1394,7 +1394,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00568">568</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00570">570</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1419,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00511">511</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00513">513</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1446,7 @@ Data Fields</h2></td></tr>
  Passing '-2' for the 'iCol' parameter will place the cursor at the end of the line, excluding any trailing white space.<br/>
  Passing any other negative value is the same as passing '0'. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00497">497</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00499">499</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1471,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>A file type of 0 is 'plain text'. A file type of '-1' is 'Makefile' and by default, preserves hard tabs. Other file types are defined as one of the 'file type' constants </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00352">352</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00354">354</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1495,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00382">382</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00384">384</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1520,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>iLineFeed values: 0 (single line) 1 (newline) 2 (return) 3 (crlf) 4 (lfcr) </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00369">369</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00371">371</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1544,7 +1544,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00480">480</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00482">482</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1568,7 +1568,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00433">433</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00435">435</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1592,7 +1592,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00447">447</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00449">449</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1616,7 +1616,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00395">395</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00397">397</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1643,7 +1643,7 @@ Data Fields</h2></td></tr>
  NOTE: Existing hard tabs within the text will be preserved even if a negative tab type is selected, so long as the white space covered by the tab is not modified.<br/>
  A tab type of zero uses the 'default' behavior for the application and file type. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00420">420</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00422">422</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1670,7 @@ Data Fields</h2></td></tr>
 <p>Typically this is called when a file is (re)loaded or when the 'caption' is changed for the control. Calling this function will perform a number of related functions, such as cursor positioning.<br/>
  You should manually force a re-draw of the control displaying the text. It will not happen automatically. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00307">307</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00309">309</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1695,7 +1695,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>The 'viewport' is the currently visible area (in characters). It is independent of the cursor's row and column. </p>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00587">587</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00589">589</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1718,7 +1718,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="text__object_8h_source.html#l00556">556</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p>Definition at line <a class="el" href="text__object_8h_source.html#l00558">558</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1731,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__text__object__vtable__.html">_text_object_vtable_</a></li>
-    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jul 24 2016 12:54:22 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

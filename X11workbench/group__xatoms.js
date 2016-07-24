@@ -6,6 +6,7 @@ var group__xatoms =
     [ "aMENU_COMMAND", "group__xatoms.html#gab6bfa5084348ab4142dcbe45aa80fe27", null ],
     [ "aMENU_UI_COMMAND", "group__xatoms.html#gaeb25670661b53eb8107b18530ff73995", null ],
     [ "aQUERY_CLOSE", "group__xatoms.html#ga25ac0335964170e06db908fc35cd893a", null ],
+    [ "aRECALC_LAYOUT", "group__xatoms.html#gae4b061109ac54ddf38a178e67209dae3", null ],
     [ "aRESIZE_NOTIFY", "group__xatoms.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe", null ],
     [ "aSCROLL_NOTIFY", "group__xatoms.html#gabcf163874e105067053fa2b3e7e659e4", null ],
     [ "aSET_FOCUS", "group__xatoms.html#gab4133b83c97fa7100e2a2e8cd3445830", null ],

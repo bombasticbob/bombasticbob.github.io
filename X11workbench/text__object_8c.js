@@ -1,6 +1,7 @@
 var text__object_8c =
 [
     [ "DEFAULT_TEXT_BUFFER_LINES", "text__object_8c.html#abe0b3a771bd5fb49b94248e1cceb3a8c", null ],
+    [ "LOAD_COLOR", "text__object_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
     [ "NORMALIZE_SEL_RECT", "text__object_8c.html#a159330f420ab980327b68ce804de7ba4", null ],
     [ "SEL_RECT_ALL", "text__object_8c.html#a77ca013744dd30e10aab470bbc06ecf9", null ],
     [ "SEL_RECT_EMPTY", "text__object_8c.html#addb290e57a097588a94864f6fdef2fb5", null ],

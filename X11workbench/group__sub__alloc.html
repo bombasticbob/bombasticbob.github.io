@@ -116,7 +116,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the allocated buffer, always aligned on a 'pointer size' boundary. Do NOT overrun the buffer!</dd></dl>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00225">225</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00227">227</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -145,7 +145,7 @@ Functions</h2></td></tr>
 <p>Use this function to determine how big a memory block REALLY is, particularly if 'malloc_usable_size' is supported. The sub-allocators use power-of-two allocation sizes in order to minimize the need to re-allocate blocks of memory. The assumption is that memory re-allocation is likely. To minimize the need to flip pointers around all of the time, and copy blocks of memory from one place to another via re-allocation, you can use this function to determine how much memory is REALLY available in the memory block. (this function is used internally within <a class="el" href="group__sub__alloc.html#gaf2228924f510dc4b6f6b86b44c0e4e11" title="High performance memory sub-allocator &#39;re-allocate&#39;.">WBReAlloc()</a>, and is generally 'advisory' when used for other purposes).</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00282">282</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00288">288</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -173,7 +173,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00305">305</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00311">311</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the new allocated memory block, or NULL on error. If the return value is NOT NULL, the previous pointer becomes invalid.</dd></dl>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00337">337</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00352">352</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ Functions</h2></td></tr>
 <p>Sub-allocation sometimes leaves 'holes' in memory. This function is intended to minimize that, by freeing up blocks of allocated memory that are no longer in use. It is not the same as 'garbage collection', but it may have the same basic effect. Call this function within the main message loop in the main thread.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00426">426</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p>Definition at line <a class="el" href="platform__helper_8c_source.html#l00441">441</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jul 24 2016 12:54:22 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

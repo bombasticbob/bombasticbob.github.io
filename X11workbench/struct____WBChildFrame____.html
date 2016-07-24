@@ -91,10 +91,10 @@ Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <a class="el" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc">pOwner</a></td></tr>
 <tr class="memdesc:a49a27a7812434437ed11908f962b6bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">a pointer to the WBFrameWindow owner <br/></td></tr>
 <tr class="separator:a49a27a7812434437ed11908f962b6bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd81e00633325fed14ac2fd8d991734"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cd81e00633325fed14ac2fd8d991734"></a>
-XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#a0cd81e00633325fed14ac2fd8d991734">pFont</a></td></tr>
-<tr class="memdesc:a0cd81e00633325fed14ac2fd8d991734"><td class="mdescLeft">&#160;</td><td class="mdescRight">default font for the window <br/></td></tr>
-<tr class="separator:a0cd81e00633325fed14ac2fd8d991734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9da630adc5cc981be1eaaa1aa945f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd9da630adc5cc981be1eaaa1aa945f4"></a>
+XFontSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#abd9da630adc5cc981be1eaaa1aa945f4">rFontSet</a></td></tr>
+<tr class="memdesc:abd9da630adc5cc981be1eaaa1aa945f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">default font for the window <br/></td></tr>
+<tr class="separator:abd9da630adc5cc981be1eaaa1aa945f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0c954535c57f8d693e63e7c18c4731f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0c954535c57f8d693e63e7c18c4731f"></a>
 <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrame____.html#af0c954535c57f8d693e63e7c18c4731f">geom</a></td></tr>
 <tr class="memdesc:af0c954535c57f8d693e63e7c18c4731f"><td class="mdescLeft">&#160;</td><td class="mdescRight">client-area geometry (excludes scroll bars) <br/></td></tr>
@@ -187,10 +187,10 @@ struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>
 <div class="line">    <span class="comment">// window identifier for the &#39;Child Frame&#39; window.  may contain &#39;None&#39; while being destroyed</span></div>
 <div class="line">  <a class="code" href="struct____WB__FRAME__WINDOW____.html" title="main controlling structure for frame windows ">WBFrameWindow</a> *<a class="code" href="struct____WBChildFrame____.html#a49a27a7812434437ed11908f962b6bfc" title="a pointer to the WBFrameWindow owner">pOwner</a>;</div>
 <div class="line">    <span class="comment">// a pointer to the WBFrameWindow owner</span></div>
-<div class="line">  XFontStruct *<a class="code" href="struct____WBChildFrame____.html#a0cd81e00633325fed14ac2fd8d991734" title="default font for the window">pFont</a>;</div>
-<div class="line">    <span class="comment">// default font for the window</span></div>
+<div class="line">  XFontSet <a class="code" href="struct____WBChildFrame____.html#abd9da630adc5cc981be1eaaa1aa945f4" title="default font for the window">rFontSet</a>;</div>
+<div class="line">    <span class="comment">// default font set for the window</span></div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> <a class="code" href="struct____WBChildFrame____.html#af0c954535c57f8d693e63e7c18c4731f" title="client-area geometry (excludes scroll bars)">geom</a>;                     </div>
+<div class="line">  <a class="code" href="struct__WBGeom__.html" title="internal wrapper struct for X11 &#39;geometry&#39; definition ">WB_GEOM</a> <a class="code" href="struct____WBChildFrame____.html#af0c954535c57f8d693e63e7c18c4731f" title="client-area geometry (excludes scroll bars)">geom</a>;</div>
 <div class="line">    <span class="comment">// client-area geometry (excludes scroll bars)</span></div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrame____.html#afd3ca9af6c497b1ae41a842e149cba2a" title="0-based position of the top of the current viewport (in lines or pixels)">iTop</a>;</div>
@@ -247,7 +247,7 @@ struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__frame.html">Frame Windows</a></dd></dl>
 <p>NOTE: you should not attempt to modify any of these structure members directly. Use the appropriate API functions to modify their values. If this were C++, these members would be marked 'protected'. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00405">405</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00407">407</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="frame__window_8h_source.html">frame_window.h</a></li>
 </ul>
@@ -257,7 +257,7 @@ struct <a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WBChildFrame____.html">__WBChildFrame__</a></li>
-    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jul 24 2016 12:54:22 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

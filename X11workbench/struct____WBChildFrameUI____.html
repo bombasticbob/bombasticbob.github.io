@@ -212,6 +212,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:afc4b26bda0ef9e1ff2778c50c28fe358"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrameUI____.html#afc4b26bda0ef9e1ff2778c50c28fe358">can_redo</a> )(<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *)</td></tr>
 <tr class="memdesc:afc4b26bda0ef9e1ff2778c50c28fe358"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if 'can redo'  <a href="#afc4b26bda0ef9e1ff2778c50c28fe358">More...</a><br/></td></tr>
 <tr class="separator:afc4b26bda0ef9e1ff2778c50c28fe358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa488dfc28c2a41f16adbb5bfbc15076"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrameUI____.html#afa488dfc28c2a41f16adbb5bfbc15076">is_empty</a> )(<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *)</td></tr>
+<tr class="memdesc:afa488dfc28c2a41f16adbb5bfbc15076"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if contents are 'empty'  <a href="#afa488dfc28c2a41f16adbb5bfbc15076">More...</a><br/></td></tr>
+<tr class="separator:afa488dfc28c2a41f16adbb5bfbc15076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure that defines a Child Frame's UI, mainly for a 'superclass'. </p>
@@ -363,7 +366,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="line">    <span class="comment">// Both are 1-based values (&lt;= 0 is &#39;error&#39; or &#39;NA&#39;)</span></div>
 <div class="line"></div>
 <div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#a318397e507b63e8b70193900545adaf6" title="returns non-zero value if there is a selection">has_selection</a>)(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *);</div>
-<div class="line">    <span class="comment">// returns non-zero value if there is a selection                                                              </span></div>
+<div class="line">    <span class="comment">// returns non-zero value if there is a selection</span></div>
 <div class="line"></div>
 <div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a214dc07869eee4b86e70be04b53b4c2c" title="perform an undo operation">undo</a>)(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *);</div>
 <div class="line">    <span class="comment">// perform an undo</span></div>
@@ -377,6 +380,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#afc4b26bda0ef9e1ff2778c50c28fe358" title="returns non-zero value if &#39;can redo&#39;">can_redo</a>)(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *);</div>
 <div class="line">    <span class="comment">// returns non-zero value if &#39;can redo&#39;</span></div>
 <div class="line"></div>
+<div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#afa488dfc28c2a41f16adbb5bfbc15076" title="returns non-zero value if contents are &#39;empty&#39;">is_empty</a>)(<a class="code" href="struct____WBChildFrame____.html" title="Structure that defines a Child Frame within a Frame Window. ">WBChildFrame</a> *);</div>
+<div class="line">    <span class="comment">// returns non-zero value if contents are &#39;empty&#39; (cannot select anything)</span></div>
+<div class="line"></div>
 <div class="line">} <a class="code" href="group__child__frame.html#gaef35967785afcadb1b6ede35ac972349" title="Structure that defines a Child Frame&#39;s UI, mainly for a &#39;superclass&#39;.">WBChildFrameUI</a>;</div>
 </div><!-- fragment --><p>A window interface derived from 'WBChildFrame' needs a way for the 'abstract class' to invoke the UI functionality. To make this work, the 'superclass' (i.e. derived) window interface can populate a WBChildFrameUI structure with function pointers, as needed, to implement the necessary elements.</p>
 <p>For those elements that are NOT implemented, you can use NULL for the function pointer. That way if the derived window interface does not need 'hover' support, you can leave the 'hover_notify' and 'hover_cancel' function pointers as NULL, but populate everything else.</p>
@@ -384,7 +390,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>The basic difference between 'do_char' and 'scancode' is that the 'character' events will be passed along to the 'do_char' callback, but 'scan code' events (NOT processed by one of the other callbacks) will be passed along via the 'scancode' callback. This will allow your custom UI handler to interpret additional 'special' keys as needed. The ones normally processed are: insert, delete, home, end, pgup, pgdown, and the 'F1' key.</p>
 <p>NOTE: if a menu defines hotkey combinations, no 'WM_CHAR' event will be generated for any of those. Instead, the menu handler needs to interpret them correctly if the UI callback will need to be invoked. One example in the <a class="el" href="X11workbench_8c_source.html">X11workbench.c</a> handler (for the main edit window UI) is the handling of the 'Edit' sub-menu, which includes hotkey combinations such as 'CTRL+V' for 'paste'. When the 'paste' menu is invoked, the handler will need to grab the WBChildFrameUI structure for the currently active Child Window, and invoke its 'paste_from_cb' callback function directly. Similarly, if 'F1' is invoked, it will need to call the 'help' function directly, passing the correct 'iACS' parameter value. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00656">656</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00661">661</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a16b268f69e1c06b00e7f646b980a5167"></a>
 <div class="memitem">
@@ -400,7 +406,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00661">661</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00666">666</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +423,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>returns non-zero value if 'can redo' </p>
 <p>Interfaces/Objects that support 're-do' AND have a non-empty re-do buffer will return non-zero. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00709">709</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00714">714</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -434,7 +440,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>returns non-zero value if 'can undo' </p>
 <p>Interfaces/Objects that support 'undo' AND have a non-empty undo buffer will return non-zero. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00708">708</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00713">713</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +457,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>copy selection to clipboard </p>
 <p>implements 'copy' functionality. The current selection will be copied to the clipboard </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00680">680</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00685">685</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +474,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>delete selection, copying to clipboard first </p>
 <p>implements 'cut' functionality </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00682">682</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00687">687</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +492,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00662">662</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00667">667</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +509,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>delete selection only </p>
 <p>deletes the current selection, but has no effect if there is no selection. To delete a character, see '<a class="el" href="struct____WBChildFrameUI____.html#afa9316aae817b2f32883858c4f76867a" title="&#39;delete&#39; char under cursor (delete equivalent), or perform related &#39;delete&#39; operation via ctrl/alt/sh...">del()</a>' </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00683">683</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00688">688</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +526,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>handler for regular WM_CHAR Client Messages (typed-in characters). </p>
 <p>The XClientMessageEvent will be interpreted and characters added to the associated document or object. This function should NOT be called for 'special' characters, like cursors, backspace, and so on. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00659">659</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00664">664</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +544,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00666">666</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00671">671</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +562,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00670">670</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00675">675</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -574,7 +580,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00664">664</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00669">669</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -591,7 +597,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>get a (const) pointer to the file name string </p>
 <p>Use this function to find out what the currently assigned file name is. The returned pointer is NOT persistent across function calls. If you need a copy, use SBCopyString() or similar </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00688">688</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00693">693</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +614,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Obtain the current row/column cursor locationfor UI notification. </p>
 <p>'piR' points to an integer to get the row, and 'piC' points to an integer to get the column. Both are 1-based values, so a value &lt;\= 0 is considered 'error' or 'NA' </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00704">704</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00709">709</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -625,7 +631,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>returns non-zero value if there is a selection </p>
 <p>Since this affects specific UI behavior, you should use this to control enabling of the 'copy' and 'cut' menus, as an example </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00705">705</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00710">710</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +649,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00675">675</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00680">680</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -661,7 +667,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00669">669</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00674">674</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -678,7 +684,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse hover' cancel notification </p>
 <p>This will cancel any 'hover' action </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00677">677</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00682">682</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +701,24 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse hover' notification </p>
 <p>x and y are pixel coords with respect to upper left corner </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00676">676</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00681">681</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa488dfc28c2a41f16adbb5bfbc15076"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* is_empty)(<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns non-zero value if contents are 'empty' </p>
+<p>If the contents are such that a selection cannot be made, this function will return a non-zero value </p>
+
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00715">715</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -712,7 +735,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Use this to determine whether you are in 'insert' or 'overwrite' mode. </p>
 <p>returns non-zero if in 'insert' mode, 0 for 'overwrite' </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00678">678</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00683">683</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +753,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00667">667</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00672">672</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -748,7 +771,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>This is a notification only (any mouse capture must already have been handled).</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7" title="pointer click/double-click/drag notifications generated by API">aWM_POINTER</a> , <a class="el" href="group__events.html#ga1f2b00666adc4ae2587894bcd3ae8d7f" title="low-level event processing, internal handling of Expose events">WBMouseCancel()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00703">703</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00708">708</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -765,7 +788,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse click' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00690">690</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00695">695</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -782,7 +805,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse double click' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00692">692</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00697">697</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -799,7 +822,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse drag' (begin) notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00694">694</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00699">699</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +839,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse drop' (drag end) notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00696">696</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00701">701</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -833,7 +856,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse motion' notification. </p>
 <p>part of the mouse UI handling. 'iX' and 'iY' are copied from the aWM_POINTER Client Message event. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00698">698</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00703">703</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -850,7 +873,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse scroll down' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00701">701</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00706">706</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -867,7 +890,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse scroll up' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00699">699</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00704">704</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -884,7 +907,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>paste from clipboard </p>
 <p>implements 'paste' functionality. The current clipboard contents will be pasted, either at the cursor location, or replacing the current selection </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00681">681</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00686">686</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +925,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00672">672</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00677">677</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -920,7 +943,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00673">673</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00678">678</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +961,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00674">674</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00679">679</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -956,7 +979,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00671">671</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00676">676</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -973,7 +996,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>perform a re-do </p>
 <p>Use '<a class="el" href="struct____WBChildFrameUI____.html#afc4b26bda0ef9e1ff2778c50c28fe358" title="returns non-zero value if &#39;can redo&#39;">can_redo()</a>' to determine whether a re-do is possible </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00707">707</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00712">712</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1014,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00668">668</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00673">673</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1031,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>save to specified file name </p>
 <p>A value of 'NULL' will keep same file name. If the file name is also NULL (or blank), nothing will be saved. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00686">686</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00691">691</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1048,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>handler for 'other scan code' WM_CHAR Client Messages. </p>
 <p>For those characters NOT already processed as actual characters or 'special' characters, call this function. The XClientMessageEvent will be interpreted, and characters may be added to the associated document or object. In some cases, there may be additional actions performed. This function should rarely be needed. </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00660">660</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00665">665</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1065,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>select all </p>
 <p>implements the 'select all' functionality </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00684">684</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00689">689</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1082,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>select none </p>
 <p>implements the 'select none' functionality </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00685">685</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00690">690</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1100,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00663">663</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00668">668</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1117,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>toggles insert mode on or off </p>
 <p>You can determine the current insert/overwrite state by calling <a class="el" href="struct____WBChildFrameUI____.html#af498a390bf7abd3d39f1dbf8bdb670f5" title="Use this to determine whether you are in &#39;insert&#39; or &#39;overwrite&#39; mode.">is_ins_mode()</a> </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00679">679</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00684">684</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1134,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>perform an undo operation </p>
 <p>Use '<a class="el" href="struct____WBChildFrameUI____.html#a340912564037e8db56a7459fa1d8e0eb" title="returns non-zero value if &#39;can undo&#39;">can_undo()</a>' to determine whether an undo is possible </p>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00706">706</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00711">711</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +1152,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'iACS' is the Alt/Ctrl/Shift flags.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API">aWM_CHAR</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00665">665</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p>Definition at line <a class="el" href="frame__window_8h_source.html#l00670">670</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1165,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WBChildFrameUI____.html">__WBChildFrameUI__</a></li>
-    <li class="footer">Generated on Tue Jul 12 2016 14:35:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sun Jul 24 2016 12:54:22 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

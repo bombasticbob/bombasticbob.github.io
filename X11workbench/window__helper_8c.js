@@ -224,6 +224,7 @@ var window__helper_8c =
     [ "aPIXMAP", "window__helper_8c.html#gac2ea7c123be41dae7602c5157deb7f55", null ],
     [ "aPRIMARY", "window__helper_8c.html#ga77559cdccba23fa66d8c43bf01fada9a", null ],
     [ "aQUERY_CLOSE", "window__helper_8c.html#ga25ac0335964170e06db908fc35cd893a", null ],
+    [ "aRECALC_LAYOUT", "window__helper_8c.html#gae4b061109ac54ddf38a178e67209dae3", null ],
     [ "aRESIZE_NOTIFY", "window__helper_8c.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe", null ],
     [ "aSECONDARY", "window__helper_8c.html#gaa445a25cc4b4927c9ae9efa262740fd9", null ],
     [ "aSET_FOCUS", "window__helper_8c.html#gab4133b83c97fa7100e2a2e8cd3445830", null ],

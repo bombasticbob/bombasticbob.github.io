@@ -22,6 +22,8 @@ var files =
     [ "font_helper.h", "font__helper_8h.html", "font__helper_8h" ],
     [ "frame_window.c", "frame__window_8c.html", "frame__window_8c" ],
     [ "frame_window.h", "frame__window_8h.html", "frame__window_8h" ],
+    [ "gdb_helper.c", "gdb__helper_8c_source.html", null ],
+    [ "gdb_helper.h", "gdb__helper_8h_source.html", null ],
     [ "gizzard.c", "gizzard_8c_source.html", null ],
     [ "gizzard.h", "gizzard_8h_source.html", null ],
     [ "menu.c", "menu_8c.html", "menu_8c" ],
