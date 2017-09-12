@@ -20,7 +20,7 @@ var dialog__controls_8c =
     [ "combo_tree_callback", "dialog__controls_8c.html#aac36f9130f61bcc8e7381dcc58fc5d12", null ],
     [ "dialog_control_get_display", "dialog__controls_8c.html#a999e3fce69e6530869739f82c749333a", null ],
     [ "DLGControlDefaultCallback", "dialog__controls_8c.html#a54a35321bb26b694245944fb8ab1ca50", null ],
-    [ "DLGRegisterControlCallback", "dialog__controls_8c.html#ga9ae4f252cf5a010789b5e0bbf587d39a", null ],
+    [ "DLGRegisterControlCallback", "group__dlgctrl.html#ga9ae4f252cf5a010789b5e0bbf587d39a", null ],
     [ "edit_callback", "dialog__controls_8c.html#ae4fc49c8471645751ccb32b577849441", null ],
     [ "EditDoCharEvent", "dialog__controls_8c.html#a1802e803efe6e854d8bbfa0856c181e7", null ],
     [ "EditDoExposeEvent", "dialog__controls_8c.html#a739f5e4d903aa5563c32e61f6f06e207", null ],
@@ -62,5 +62,5 @@ var dialog__controls_8c =
     [ "static_callback", "dialog__controls_8c.html#a62204396c48b4047bb2f5d1933e10e2d", null ],
     [ "StaticDoExposeEvent", "dialog__controls_8c.html#a512020e3328747cad70511eaf20f5139", null ],
     [ "tree_callback", "dialog__controls_8c.html#a1b1b2be16013775ea52918836819dfab", null ],
-    [ "WBDialogControlCreate", "dialog__controls_8c.html#gabdd58e30b5ba5fd23d075455907d42e8", null ]
+    [ "WBDialogControlCreate", "group__dlgctrl.html#gabdd58e30b5ba5fd23d075455907d42e8", null ]
 ];

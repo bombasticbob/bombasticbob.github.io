@@ -1,11 +1,11 @@
 var font__helper_8h =
 [
-    [ "WB_DRAW_STRING", "font__helper_8h.html#gacdb2e0a2ede4994aa57807e3fdb89df3", null ],
-    [ "WB_DRAW_TEXT", "font__helper_8h.html#ga3d1cd51395ac636ab6fd9bd23e91e0db", null ],
-    [ "WB_LOOKUP_STRING", "font__helper_8h.html#ga63cb78a78e65fca43cc76e5a1a1764dc", null ],
-    [ "WB_TEXT_ESCAPEMENT", "font__helper_8h.html#gac0e51c6603b3f8ea32ad7b4e94e548c5", null ],
-    [ "WB_TEXT_EXTENTS", "font__helper_8h.html#gae41279cef060c5a4cd578eef2d1be205", null ],
-    [ "WBFontFlags", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ff", [
+    [ "WB_DRAW_STRING", "group__font.html#gacdb2e0a2ede4994aa57807e3fdb89df3", null ],
+    [ "WB_DRAW_TEXT", "group__font.html#ga3d1cd51395ac636ab6fd9bd23e91e0db", null ],
+    [ "WB_LOOKUP_STRING", "group__font.html#ga63cb78a78e65fca43cc76e5a1a1764dc", null ],
+    [ "WB_TEXT_ESCAPEMENT", "group__font.html#gac0e51c6603b3f8ea32ad7b4e94e548c5", null ],
+    [ "WB_TEXT_EXTENTS", "group__font.html#gae41279cef060c5a4cd578eef2d1be205", null ],
+    [ "WBFontFlags", "group__font.html#ga8f49d87ff2fe8588132f90e0f257f6ff", [
       [ "WBFontFlag_PITCH_FIXED", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa36cbb5eb7a08f150506081590e08ec0a", null ],
       [ "WBFontFlag_PITCH_VARIABLE", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffac53b8a1df1c849a3b64e6f8a54b0f6f0", null ],
       [ "WBFontFlag_PITCH_CONDENSED", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffad112dba8b044ae5e6d5f417d13999b71", null ],
@@ -63,19 +63,19 @@ var font__helper_8h =
       [ "WBFontFlag_REG_MASK", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa4555d046caac25e5a688fbc31d357cdf", null ],
       [ "WBFontFlag_WHATEVER", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffaafa5c99ce6f0271c325d49c9dd629c83", null ]
     ] ],
-    [ "WBCopyFont", "font__helper_8h.html#ga736827e64c95112cea24d236b2d7785d", null ],
-    [ "WBCopyModifyFontSet", "font__helper_8h.html#ga24a334e3be360f53e37de85c28227bbe", null ],
-    [ "WBDumpFontInfo", "font__helper_8h.html#ga0305ec6ca26b97ff4283d83867d78def", null ],
-    [ "WBFontAvgCharWidth", "font__helper_8h.html#gaf129efae522b6800670aed6758cb92cc", null ],
-    [ "WBFontFromFontSet", "font__helper_8h.html#ga1f665c724f1614d10b0893a5c83a4113", null ],
-    [ "WBFontSetAscent", "font__helper_8h.html#gab78afe3ee90a2aad3e508ae30495c5bd", null ],
-    [ "WBFontSetAvgCharWidth", "font__helper_8h.html#gaeb0cc857d49e6b9f08527edaef773a46", null ],
-    [ "WBFontSetDescent", "font__helper_8h.html#ga7d9ea6fa1202b63da4a3f990cafdad63", null ],
-    [ "WBFontSetFromFont", "font__helper_8h.html#ga79162ae03e23d84e9325fb655286a282", null ],
-    [ "WBFontSetFromFontSingle", "font__helper_8h.html#ga5e43a2148b4a99411b70ec6e838eb48e", null ],
-    [ "WBFontSetHeight", "font__helper_8h.html#ga14f15cfcbaadf932f50f95ae49cc062a", null ],
-    [ "WBFontSetMaxBounds", "font__helper_8h.html#gaa062b9a5a133a7e5262476ba69177558", null ],
-    [ "WBLoadFont", "font__helper_8h.html#gad7562debef3c6912b163e22d0d931dbe", null ],
-    [ "WBLoadModifyFont", "font__helper_8h.html#ga26240a73b1a75e2e5eb0ea37bf7e3748", null ],
-    [ "WBTextWidth", "font__helper_8h.html#ga4446640beb73e3c0b9c2600394defa27", null ]
+    [ "WBCopyFont", "group__font.html#ga736827e64c95112cea24d236b2d7785d", null ],
+    [ "WBCopyModifyFontSet", "group__font.html#ga24a334e3be360f53e37de85c28227bbe", null ],
+    [ "WBDumpFontInfo", "group__debug.html#ga0305ec6ca26b97ff4283d83867d78def", null ],
+    [ "WBFontAvgCharWidth", "group__font.html#gaf129efae522b6800670aed6758cb92cc", null ],
+    [ "WBFontFromFontSet", "group__font.html#ga1f665c724f1614d10b0893a5c83a4113", null ],
+    [ "WBFontSetAscent", "group__font.html#gab78afe3ee90a2aad3e508ae30495c5bd", null ],
+    [ "WBFontSetAvgCharWidth", "group__font.html#gaeb0cc857d49e6b9f08527edaef773a46", null ],
+    [ "WBFontSetDescent", "group__font.html#ga7d9ea6fa1202b63da4a3f990cafdad63", null ],
+    [ "WBFontSetFromFont", "group__font.html#ga79162ae03e23d84e9325fb655286a282", null ],
+    [ "WBFontSetFromFontSingle", "group__font.html#ga5e43a2148b4a99411b70ec6e838eb48e", null ],
+    [ "WBFontSetHeight", "group__font.html#ga14f15cfcbaadf932f50f95ae49cc062a", null ],
+    [ "WBFontSetMaxBounds", "group__font.html#gaa062b9a5a133a7e5262476ba69177558", null ],
+    [ "WBLoadFont", "group__font.html#gad7562debef3c6912b163e22d0d931dbe", null ],
+    [ "WBLoadModifyFont", "group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748", null ],
+    [ "WBTextWidth", "group__font.html#ga4446640beb73e3c0b9c2600394defa27", null ]
 ];

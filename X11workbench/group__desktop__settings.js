@@ -24,6 +24,12 @@ var group__desktop__settings =
       [ "pDisplay", "struct__CHXSettings__.html#a0e5b4ba1b30f7c298b82d7592e78a8e3", null ],
       [ "uiSerial", "struct__CHXSettings__.html#a74bf6b69faca68501bfca1269185bc35", null ]
     ] ],
+    [ "_CHXMLEntry_", "struct__CHXMLEntry__.html", [
+      [ "iContentsIndex", "struct__CHXMLEntry__.html#a18284d62701b4b25cf642bf09b54529c", null ],
+      [ "iNextIndex", "struct__CHXMLEntry__.html#a1fa20917bd6c65fc11a5e73975756828", null ],
+      [ "nDataOffset", "struct__CHXMLEntry__.html#ae15ca83b37811d6a3fcb090fdb0948e1", null ],
+      [ "nLabelOffset", "struct__CHXMLEntry__.html#a22f6679d807c3adea7383509eda2d44d", null ]
+    ] ],
     [ "CHXSetting", "group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426", null ],
     [ "CHXSettings", "group__desktop__settings.html#ga78d9a6c66a95454b2fc898da68562c95", null ],
     [ "XSETTINGS_DATA_COLOR", "group__desktop__settings.html#gae01fd313d4d5127b45782b652e5eb5e3", null ],

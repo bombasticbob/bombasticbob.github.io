@@ -15,6 +15,7 @@ var group__pixmap =
     [ "PXM_GetIconPixmapFromAtom", "group__pixmap.html#ga0fa81602beac3ccf34d3e5de23ec5c47", null ],
     [ "PXM_GetImageDataLength", "group__pixmap.html#ga1cec7fb8befb8844c4f6f45af3517b7f", null ],
     [ "PXM_GetImageDataPtr", "group__pixmap.html#gad09e5f5ab8a87c69778ce68dabe8ff5c", null ],
+    [ "PXM_HSVToRGB", "group__pixmap.html#ga623db2fc60eaa7479b0a4e57dd7bd821", null ],
     [ "PXM_ImageToPixmap", "group__pixmap.html#ga48509d33c2979ebc9404d9ab7c60351c", null ],
     [ "PXM_ImageToPixmap0", "group__pixmap.html#ga8a167fe485e5b20bbccb69340ca7fd3e", null ],
     [ "PXM_LoadPixmap", "group__pixmap.html#ga8d4bf82e252edb337d85ada8a9486963", null ],
@@ -22,6 +23,7 @@ var group__pixmap =
     [ "PXM_PixmapToImage", "group__pixmap.html#ga1a8c10602b009710fc048b977ab62ac1", null ],
     [ "PXM_RegisterAppIcons", "group__pixmap.html#gaf6c256a5a97c5770125191ec0caa3d19", null ],
     [ "PXM_RegisterPixmapResource", "group__pixmap.html#gafbf77d08feec964f09ad0c4511381381", null ],
+    [ "PXM_RGBToHSV", "group__pixmap.html#ga073ef9c6d455df52f20b0d0dfcaf597b", null ],
     [ "PXM_RGBToPixel", "group__pixmap.html#ga8d5263b0ba8461654d76bda4409b6634", null ],
     [ "PXM_RGBToYUV", "group__pixmap.html#ga61dcf89abade545723acc8767c8f00d1", null ],
     [ "PXM_YUVToRGB", "group__pixmap.html#gae2cae55acc3e44d1f869a22bfe4f0110", null ]

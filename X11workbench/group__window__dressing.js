@@ -49,6 +49,7 @@ var group__window__dressing =
     [ "WBInitScrollInfo", "group__window__dressing.html#gab712a9fc90508bcc5606733188b34d7b", null ],
     [ "WBPaintHScrollBar", "group__window__dressing.html#gab320df64511bdefe4e3544da85164482", null ],
     [ "WBPaintVScrollBar", "group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d", null ],
+    [ "WBScrollBarEvent", "group__window__dressing.html#ga59552cfbf1360ada86f84e4d662570df", null ],
     [ "WBSetHScrollPos", "group__window__dressing.html#gad9cda3c76d25d3053908256495d3e23c", null ],
     [ "WBSetHScrollRange", "group__window__dressing.html#gae3b977e539eee76cfffc238d7f1b019d", null ],
     [ "WBSetVScrollPos", "group__window__dressing.html#ga90a6f39329b178b719f70c11c6a49f76", null ],

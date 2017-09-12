@@ -1,8 +1,8 @@
 var draw__text_8h =
 [
-    [ "DT_WORD", "draw__text_8h.html#ga0438c7249c6116b4d483a1651af2847a", null ],
-    [ "DT_WORDS", "draw__text_8h.html#ga2aa53ab555af841f2aa3bd5e5ef21e52", null ],
-    [ "DTAlignment", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40", [
+    [ "DT_WORD", "group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a", null ],
+    [ "DT_WORDS", "group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52", null ],
+    [ "DTAlignment", "group__draw__text.html#ga082c206bfd406e64f16e934644548d40", [
       [ "DTAlignment_HLEFT", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a72306f5eca801e824103a1fd0b53188d", null ],
       [ "DTAlignment_HCENTER", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9", null ],
       [ "DTAlignment_HRIGHT", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a4517739f660ece9cdab37ba10c495efa", null ],
@@ -28,17 +28,17 @@ var draw__text_8h =
       [ "DTAlignment_UNDERSCORE", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da", null ],
       [ "DTAlignment_PRINTING", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6", null ]
     ] ],
-    [ "DTCalcIdealBounds", "draw__text_8h.html#ga099334a78bb3ab7bf43a23cbba14c74e", null ],
-    [ "DTCalcIdealBounds0", "draw__text_8h.html#ga1de43b31c53880fc492cdee82eb24fd8", null ],
-    [ "DTCalcIdealFont", "draw__text_8h.html#ga90aef0f5e842682e7e493d9a87cd0f80", null ],
-    [ "DTCalcIdealFontSet", "draw__text_8h.html#ga666863b311e17529b16ccb1b6a8eb6b3", null ],
-    [ "DTDrawMultiLineText", "draw__text_8h.html#gad4da904e0c113d55962a2de21fb67855", null ],
-    [ "DTDrawMultiLineText0", "draw__text_8h.html#gadb29b7821f47f595fb02d03adb5d3942", null ],
-    [ "DTDrawSingleLineText", "draw__text_8h.html#ga5dd37bc0aba9e49ae026168f8cf62cb3", null ],
-    [ "DTDrawSingleLineText0", "draw__text_8h.html#ga168f550d3ac067ea051520264064a1a0", null ],
-    [ "DTGetTextWidth", "draw__text_8h.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7", null ],
-    [ "DTGetWordsFromText", "draw__text_8h.html#ga7ef57be18660df443c4a4a2df1931ce6", null ],
-    [ "DTGetWordsFromText0", "draw__text_8h.html#gac1a755eebf48ea4c552045d9e9d0d175", null ],
-    [ "DTPreRender", "draw__text_8h.html#ga099adfb0d10d744206bc69e633f73fc6", null ],
-    [ "DTRender", "draw__text_8h.html#ga42637c7b6244ae91b63c89e5a6a1a4e1", null ]
+    [ "DTCalcIdealBounds", "group__draw__text.html#ga099334a78bb3ab7bf43a23cbba14c74e", null ],
+    [ "DTCalcIdealBounds0", "group__draw__text.html#ga1de43b31c53880fc492cdee82eb24fd8", null ],
+    [ "DTCalcIdealFont", "group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80", null ],
+    [ "DTCalcIdealFontSet", "group__draw__text.html#ga666863b311e17529b16ccb1b6a8eb6b3", null ],
+    [ "DTDrawMultiLineText", "group__draw__text.html#gad4da904e0c113d55962a2de21fb67855", null ],
+    [ "DTDrawMultiLineText0", "group__draw__text.html#gadb29b7821f47f595fb02d03adb5d3942", null ],
+    [ "DTDrawSingleLineText", "group__draw__text.html#ga5dd37bc0aba9e49ae026168f8cf62cb3", null ],
+    [ "DTDrawSingleLineText0", "group__draw__text.html#ga168f550d3ac067ea051520264064a1a0", null ],
+    [ "DTGetTextWidth", "group__draw__text.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7", null ],
+    [ "DTGetWordsFromText", "group__draw__text.html#ga7ef57be18660df443c4a4a2df1931ce6", null ],
+    [ "DTGetWordsFromText0", "group__draw__text.html#gac1a755eebf48ea4c552045d9e9d0d175", null ],
+    [ "DTPreRender", "group__draw__text.html#ga099adfb0d10d744206bc69e633f73fc6", null ],
+    [ "DTRender", "group__draw__text.html#ga42637c7b6244ae91b63c89e5a6a1a4e1", null ]
 ];

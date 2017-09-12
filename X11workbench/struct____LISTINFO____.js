@@ -8,9 +8,9 @@ var struct____LISTINFO____ =
     [ "nMaxItems", "struct____LISTINFO____.html#a63473adbe2109db2b71cfba9efff0df6", null ],
     [ "nPos", "struct____LISTINFO____.html#aab21bf45159b912d5deb21b4cc54c377", null ],
     [ "nTop", "struct____LISTINFO____.html#adf10e19a2ea7ef40bde221b24094f48f", null ],
-    [ "pfnAllocator", "struct____LISTINFO____.html#a590f1e804b018064cc3766b59a256f6e", null ],
-    [ "pfnDestructor", "struct____LISTINFO____.html#af1658b79f8e73b6d2348d9629c070682", null ],
-    [ "pfnDisplay", "struct____LISTINFO____.html#acd5482f40ff8767badd979616ab5b18c", null ],
-    [ "pfnSort", "struct____LISTINFO____.html#a3e3cf99e2496af3d59658fb2e21f3761", null ],
+    [ "pfnAllocator", "struct____LISTINFO____.html#a9ea1b76d8a4850ded2fd0b3b60da49b1", null ],
+    [ "pfnDestructor", "struct____LISTINFO____.html#ab8d21949541b0e8d8e8eaf585e3b8eee", null ],
+    [ "pfnDisplay", "struct____LISTINFO____.html#abc3090759abeb14f3f18dab21125f2e8", null ],
+    [ "pfnSort", "struct____LISTINFO____.html#a28f9d6c1e4a4c1d32834d6abd9097430", null ],
     [ "wOwner", "struct____LISTINFO____.html#af2479329d50a78c07f034e58942003c1", null ]
 ];

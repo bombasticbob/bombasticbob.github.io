@@ -1,8 +1,22 @@
 var group__wcore =
 [
     [ "__EVENT_ENTRY__", "struct____EVENT__ENTRY____.html", [
+      [ "WB_SCROLL_DEFAULT", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a283d7836973fc4cd386fae001266dc17", null ],
+      [ "WB_SCROLL_HORIZONTAL", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600ab721303d414a9b53a65ba336a5db7b6f", null ],
+      [ "WB_SCROLL_VERTICAL", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600aad68f61a838ef3b2b761039b75126cc8", null ],
+      [ "WB_SCROLL_KNOB", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a48b672d82979cd4b521b1a51a672a545", null ],
+      [ "WB_SCROLL_FORWARD", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a83a90584170839c696533222da01d2e3", null ],
+      [ "WB_SCROLL_BACKWARD", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a8c69eac0b90e6178ff504e41cdf28393", null ],
+      [ "WB_SCROLL_PAGEFWD", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a0e4235d4b01941ee13b9069fe88ae862", null ],
+      [ "WB_SCROLL_PAGEBACK", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a830a342759df75b81adc097fb97385be", null ],
+      [ "WB_SCROLL_FIRST", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600ac172c93a92b2d1215685ff35f7dea664", null ],
+      [ "WB_SCROLL_LAST", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a953cac4b0bf9ee06423fad2a7168c663", null ],
+      [ "WB_SCROLL_DBLCLICK", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600ac27b2ab3efb84c0283ad1ff8b5e15256", null ],
+      [ "WB_SCROLL_ABSOLUTE", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a839029034d7678e584b8018d2e1ac532", null ],
+      [ "WB_SCROLL_RELATIVE", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600aacdf3382fc11dae57020e7815f34052d", null ],
+      [ "WB_SCROLL_NA", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a50e9929a4979d1640a72e448cbffdd84", null ],
       [ "iNext", "struct____EVENT__ENTRY____.html#a7055b113747e55de4bbbf2e0acea4c9f", null ],
-      [ "padding", "struct____EVENT__ENTRY____.html#a7c8f82dda24c1283ff9652ba67f74549", null ],
+      [ "padding", "struct____EVENT__ENTRY____.html#aea2ac8ada91e3b785218fd064829ca23", null ],
       [ "pDisplay", "struct____EVENT__ENTRY____.html#a0e5b4ba1b30f7c298b82d7592e78a8e3", null ],
       [ "wID", "struct____EVENT__ENTRY____.html#ac1bf4c310535451938ef5b31b2b0c51b", null ],
       [ "xEvt", "struct____EVENT__ENTRY____.html#a114f1556b111c3a4ef43127f40e05974", null ]
@@ -31,7 +45,7 @@ var group__wcore =
     [ "DELAYED_EVENT_ENTRY", "group__wcore.html#ga44fd462d402d3afa7d52a5df7c986bc3", null ],
     [ "EVENT_ENTRY", "group__wcore.html#gab87e06659103cb899c8b6aea8e84ef8c", null ],
     [ "TIMER_ENTRY", "group__wcore.html#ga64abeb023c491d85aa6d0cafd5cdffa3", null ],
-    [ "WBLocateWindowCallback", "group__wcore.html#gadcb399e29e07d0122f00a111fc607577", null ],
+    [ "WBLocateWindowCallback", "group__wcore.html#gab37976e62900c9fd328045c33317a369", null ],
     [ "WMPropertiesWindowType", "group__wcore.html#ga393c61affbc5766ce678224558be0b16", null ],
     [ "WMPropertiesWMProtocols", "group__wcore.html#ga720fc619923711fbdeb2191d4b094077", null ],
     [ "WBAddMenuWindow", "group__wcore.html#ga695df2e819b6c11e8ddf547c6629ac80", null ],
