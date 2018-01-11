@@ -290,6 +290,18 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>WBXIOErrorHandl
 <tr class="memitem:a5aab361575853123ace59c7dfd4cc363"><td class="memItemLeft" align="right" valign="top"><a id="a5aab361575853123ace59c7dfd4cc363"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>WBXErrorHandler</b> (Display *pDisplay, XErrorEvent *pError)</td></tr>
 <tr class="separator:a5aab361575853123ace59c7dfd4cc363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401cd49e71e88660779d0f2355238946"><td class="memItemLeft" align="right" valign="top"><a id="a401cd49e71e88660779d0f2355238946"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_display</b> (const char *szVal)</td></tr>
+<tr class="separator:a401cd49e71e88660779d0f2355238946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b53931bda597c97f82916e8add4bd3"><td class="memItemLeft" align="right" valign="top"><a id="ab9b53931bda597c97f82916e8add4bd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_minimize</b> (void)</td></tr>
+<tr class="separator:ab9b53931bda597c97f82916e8add4bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2d539fa8a2aba670397c9be12bc276"><td class="memItemLeft" align="right" valign="top"><a id="a0b2d539fa8a2aba670397c9be12bc276"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_maximize</b> (void)</td></tr>
+<tr class="separator:a0b2d539fa8a2aba670397c9be12bc276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1225a7bf036007d2f593e6a56ee130e8"><td class="memItemLeft" align="right" valign="top"><a id="a1225a7bf036007d2f593e6a56ee130e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_geometry</b> (const char *szVal)</td></tr>
+<tr class="separator:a1225a7bf036007d2f593e6a56ee130e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab921a58954031f69ec22295ce106bde3"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3">WBInit</a> (const char *szDisplayName)</td></tr>
 <tr class="memdesc:gab921a58954031f69ec22295ce106bde3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes default objects for the specified Display (required)  <a href="group__startup.html#gab921a58954031f69ec22295ce106bde3">More...</a><br /></td></tr>
 <tr class="separator:gab921a58954031f69ec22295ce106bde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,30 +320,21 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>WBXErrorHandler
 <tr class="memitem:ga7a1bc590572b555cc78840cd857e6824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit</a> ()</td></tr>
 <tr class="memdesc:ga7a1bc590572b555cc78840cd857e6824"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes any remaining global objects, frees the Display pointer, and terminates event processing  <a href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">More...</a><br /></td></tr>
 <tr class="separator:ga7a1bc590572b555cc78840cd857e6824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59e964570bd9a7a7bf893796a83606a3"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">WBThreadInitDisplay</a> (void)</td></tr>
-<tr class="memdesc:ga59e964570bd9a7a7bf893796a83606a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes default Display for a thread (must call <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required) ">WBInit()</a> first)  <a href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">More...</a><br /></td></tr>
-<tr class="separator:ga59e964570bd9a7a7bf893796a83606a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc195384568f9fb8ed6d2a7704722395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">WBThreadFreeDisplay</a> (Display *pThreadDisplay)</td></tr>
-<tr class="memdesc:gabc195384568f9fb8ed6d2a7704722395"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-initializes a Display for a thread that was allocated by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first) ">WBThreadInitDisplay()</a>  <a href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">More...</a><br /></td></tr>
-<tr class="separator:gabc195384568f9fb8ed6d2a7704722395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga576673ed5710c0711a453f935b5043aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments</a> (int *pargc, char ***pargv, char ***penvp)</td></tr>
-<tr class="memdesc:ga576673ed5710c0711a453f935b5043aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses standard C arguments as passed to 'main()'  <a href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">More...</a><br /></td></tr>
-<tr class="separator:ga576673ed5710c0711a453f935b5043aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5cee3f4b704525ba89117af6616593e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">WBToolkitUsage</a> (void)</td></tr>
-<tr class="memdesc:ga5cee3f4b704525ba89117af6616593e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays 'usage' for toolkit options to stderr.  <a href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">More...</a><br /></td></tr>
-<tr class="separator:ga5cee3f4b704525ba89117af6616593e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e32c84e39bafa6723df9943dbfdb657"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga9e32c84e39bafa6723df9943dbfdb657">GetStartupDisplayName</a> (void)</td></tr>
 <tr class="memdesc:ga9e32c84e39bafa6723df9943dbfdb657"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns character name of the display to be opened and passed to WBInit  <a href="group__startup.html#ga9e32c84e39bafa6723df9943dbfdb657">More...</a><br /></td></tr>
 <tr class="separator:ga9e32c84e39bafa6723df9943dbfdb657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">GetStartupAppName</a> (void)</td></tr>
-<tr class="memdesc:ga412c75eb0f657d771d6aa386b4d178ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to a copy of the application name from argv[0]  <a href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">More...</a><br /></td></tr>
-<tr class="separator:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga524ee3467a88a398fdab2629d41b6eb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga524ee3467a88a398fdab2629d41b6eb4">GetStartupGeometry</a> (<a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td></tr>
 <tr class="memdesc:ga524ee3467a88a398fdab2629d41b6eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the startup geometry based on command line parameters  <a href="group__startup.html#ga524ee3467a88a398fdab2629d41b6eb4">More...</a><br /></td></tr>
 <tr class="separator:ga524ee3467a88a398fdab2629d41b6eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f4076a7c8a10f405e8f40e45d4662b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga8f4076a7c8a10f405e8f40e45d4662b6">GetStartupMinMax</a> (void)</td></tr>
 <tr class="memdesc:ga8f4076a7c8a10f405e8f40e45d4662b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the min/max/normal window state for startup  <a href="group__startup.html#ga8f4076a7c8a10f405e8f40e45d4662b6">More...</a><br /></td></tr>
 <tr class="separator:ga8f4076a7c8a10f405e8f40e45d4662b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59e964570bd9a7a7bf893796a83606a3"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">WBThreadInitDisplay</a> (void)</td></tr>
+<tr class="memdesc:ga59e964570bd9a7a7bf893796a83606a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes default Display for a thread (must call <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required) ">WBInit()</a> first)  <a href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">More...</a><br /></td></tr>
+<tr class="separator:ga59e964570bd9a7a7bf893796a83606a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc195384568f9fb8ed6d2a7704722395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">WBThreadFreeDisplay</a> (Display *pThreadDisplay)</td></tr>
+<tr class="memdesc:gabc195384568f9fb8ed6d2a7704722395"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-initializes a Display for a thread that was allocated by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first) ">WBThreadInitDisplay()</a>  <a href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">More...</a><br /></td></tr>
+<tr class="separator:gabc195384568f9fb8ed6d2a7704722395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacad4fcff08891dd42c7cd889e9d0c35a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gacad4fcff08891dd42c7cd889e9d0c35a">WBInitWindowAttributes</a> (XSetWindowAttributes *pXSWA, unsigned long lBorderPixel, unsigned long lBackgroundPixel, Colormap clrMap, int iBitGravity)</td></tr>
 <tr class="memdesc:gacad4fcff08891dd42c7cd889e9d0c35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the XSetWIndowAttributes structure with minimal attributes  <a href="group__startup.html#gacad4fcff08891dd42c7cd889e9d0c35a">More...</a><br /></td></tr>
 <tr class="separator:gacad4fcff08891dd42c7cd889e9d0c35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -686,15 +689,6 @@ Region&#160;</td><td class="memItemRight" valign="bottom"><b>WBCopyRegion</b> (R
 <tr class="memitem:ga64cd93bb3d9b9ed06f787c7a1ee7df7f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga64cd93bb3d9b9ed06f787c7a1ee7df7f">WBEventName</a> (int iEventID)</td></tr>
 <tr class="memdesc:ga64cd93bb3d9b9ed06f787c7a1ee7df7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">debug function to return the name of an X11 event  <a href="group__events.html#ga64cd93bb3d9b9ed06f787c7a1ee7df7f">More...</a><br /></td></tr>
 <tr class="separator:ga64cd93bb3d9b9ed06f787c7a1ee7df7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a09380df755537647684f30f7bfab3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">WBSetDebugLevel</a> (unsigned int iNew)</td></tr>
-<tr class="memdesc:ga2a09380df755537647684f30f7bfab3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set debug level  <a href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">More...</a><br /></td></tr>
-<tr class="separator:ga2a09380df755537647684f30f7bfab3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16676859b839f0b368355cbe2f72b34"><td class="memItemLeft" align="right" valign="top"><a id="ac16676859b839f0b368355cbe2f72b34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WBDebugPrint</b> (const char *fmt,...)</td></tr>
-<tr class="separator:ac16676859b839f0b368355cbe2f72b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b403292a2ce065b57db74db5809dfea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga1b403292a2ce065b57db74db5809dfea">WBDebugDump</a> (const char *szTitle, void *pData, int cbData)</td></tr>
-<tr class="memdesc:ga1b403292a2ce065b57db74db5809dfea"><td class="mdescLeft">&#160;</td><td class="mdescRight">conditionally dumps binary data to debug message output  <a href="group__debug.html#ga1b403292a2ce065b57db74db5809dfea">More...</a><br /></td></tr>
-<tr class="separator:ga1b403292a2ce065b57db74db5809dfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga690f2acca275614c06c2e8afc55db18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga690f2acca275614c06c2e8afc55db18b">WBDebugDumpGC</a> (Display *pDisplay, GC hGC)</td></tr>
 <tr class="memdesc:ga690f2acca275614c06c2e8afc55db18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps a GC's settings  <a href="group__debug.html#ga690f2acca275614c06c2e8afc55db18b">More...</a><br /></td></tr>
 <tr class="separator:ga690f2acca275614c06c2e8afc55db18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -736,12 +730,6 @@ XFontSet&#160;</td><td class="memItemRight" valign="bottom"><b>fontsetDefault</b
 <tr class="memitem:ac075c17fa7e658ca2f14766e17000825"><td class="memItemLeft" align="right" valign="top"><a id="ac075c17fa7e658ca2f14766e17000825"></a>
 Display *&#160;</td><td class="memItemRight" valign="bottom"><b>pDefaultDisplay</b> = NULL</td></tr>
 <tr class="separator:ac075c17fa7e658ca2f14766e17000825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">bQuitFlag</a></td></tr>
-<tr class="memdesc:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Quit' Flag - you should check this periodically in your main message loop and exit whenever it is TRUE (non-zero)  <a href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">More...</a><br /></td></tr>
-<tr class="separator:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf52b4b2deddd3f452646bf57070ace"><td class="memItemLeft" align="right" valign="top"><a id="a6bf52b4b2deddd3f452646bf57070ace"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>iWBDebugLevel</b> = 0</td></tr>
-<tr class="separator:a6bf52b4b2deddd3f452646bf57070ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a362ead7071238efd861e3be5d0aa37"><td class="memItemLeft" align="right" valign="top"><a id="a5a362ead7071238efd861e3be5d0aa37"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>iStartupMinMax</b> = 0</td></tr>
 <tr class="separator:a5a362ead7071238efd861e3be5d0aa37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -969,9 +957,6 @@ static char&#160;</td><td class="memItemRight" valign="bottom"><b>szStartupDispl
 <tr class="memitem:aa0a654963ae9440964e29fb5be440043"><td class="memItemLeft" align="right" valign="top"><a id="aa0a654963ae9440964e29fb5be440043"></a>
 static char&#160;</td><td class="memItemRight" valign="bottom"><b>szDefaultDisplayName</b> [512] = &quot;&quot;</td></tr>
 <tr class="separator:aa0a654963ae9440964e29fb5be440043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d8677391088b62e87a83e154871463"><td class="memItemLeft" align="right" valign="top"><a id="a65d8677391088b62e87a83e154871463"></a>
-static char&#160;</td><td class="memItemRight" valign="bottom"><b>szAppName</b> [PATH_MAX *2] =&quot;&quot;</td></tr>
-<tr class="separator:a65d8677391088b62e87a83e154871463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59957a55f3a69f7e0cc57b8472960549"><td class="memItemLeft" align="right" valign="top"><a id="a59957a55f3a69f7e0cc57b8472960549"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>iMouseState</b> = 0</td></tr>
 <tr class="separator:a59957a55f3a69f7e0cc57b8472960549"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1036,7 +1021,7 @@ struct {</td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(((((<span class="keywordtype">unsigned</span> long)X &amp; 0xf00) + \</div><div class="line">                                (((<span class="keywordtype">unsigned</span> long)X &gt;&gt; 3) &amp; 0x1f) + \</div><div class="line">                                (((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)X &lt;&lt; 5) &amp; 0xe0)) ^ \</div><div class="line">                               ((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)X &gt;&gt; 12)) &amp; WINDOW_ENTRY_ARRAY_MAX)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l00717">717</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l00713">713</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1064,7 @@ struct {</td></tr>
 <p>This function works ONLY for windows that have been registered with a callback. It checks to see if the internal window information exists and returns a non-zero value if the internal information exists AND the window itself has not been destroyed. This works whether or not the window was ever mapped.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05657">5657</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05356">5356</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1074,7 @@ struct {</td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="window__helper_8c.html">window_helper.c</a></li>
-    <li class="footer">Generated on Tue Sep 12 2017 16:41:59 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jan 11 2018 10:51:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

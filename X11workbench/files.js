@@ -5,6 +5,7 @@ var files =
     [ "clipboard_helper.c", "clipboard__helper_8c.html", "clipboard__helper_8c" ],
     [ "conf_help.c", "conf__help_8c.html", "conf__help_8c" ],
     [ "conf_help.h", "conf__help_8h.html", "conf__help_8h" ],
+    [ "debug_helper.h", "debug__helper_8h_source.html", null ],
     [ "dialog_controls.c", "dialog__controls_8c.html", "dialog__controls_8c" ],
     [ "dialog_controls.h", "dialog__controls_8h.html", "dialog__controls_8h" ],
     [ "dialog_impl.c", "dialog__impl_8c.html", "dialog__impl_8c" ],

@@ -64,6 +64,8 @@ var text__object_8c =
     [ "__internal_page_up", "text__object_8c.html#a54161bf39f52ef89079bb027dde2f8ce", null ],
     [ "__internal_redo", "text__object_8c.html#a56e832462157c627f75a86a327894a80", null ],
     [ "__internal_replace_select", "text__object_8c.html#a812845e824622f269c7123e820d4a66e", null ],
+    [ "__internal_scroll_horizontal", "text__object_8c.html#acd8baa67a7bd3a771197a477fc44c7f8", null ],
+    [ "__internal_scroll_vertical", "text__object_8c.html#ae3f37ad1dafe8b1ac3df26f4f9938a3f", null ],
     [ "__internal_set_col", "text__object_8c.html#ab32fb04649b50ce43c4c1ea9206d3c78", null ],
     [ "__internal_set_filetype", "text__object_8c.html#af07a35f9ec637952571e7f07555f88c9", null ],
     [ "__internal_set_insmode", "text__object_8c.html#ada20d731fd76fd4a399ead8e7caebbd4", null ],

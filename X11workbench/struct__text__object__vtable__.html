@@ -238,6 +238,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a02427340d3b6837ed8ebac05e2a0cd8f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__vtable__.html#a02427340d3b6837ed8ebac05e2a0cd8f">cursor_bottom</a> )(struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis)</td></tr>
 <tr class="memdesc:a02427340d3b6837ed8ebac05e2a0cd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the cursor to the last line.  <a href="#a02427340d3b6837ed8ebac05e2a0cd8f">More...</a><br /></td></tr>
 <tr class="separator:a02427340d3b6837ed8ebac05e2a0cd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d1a17552ec7c460ab7ba09aaa6859d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__vtable__.html#a64d1a17552ec7c460ab7ba09aaa6859d">scroll_vertical</a> )(struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int nRows)</td></tr>
+<tr class="memdesc:a64d1a17552ec7c460ab7ba09aaa6859d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll the viewport up/down by the specified number of rows.  <a href="#a64d1a17552ec7c460ab7ba09aaa6859d">More...</a><br /></td></tr>
+<tr class="separator:a64d1a17552ec7c460ab7ba09aaa6859d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa3fa11adbfeafa2b51d77bc52c59f6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__vtable__.html#aafa3fa11adbfeafa2b51d77bc52c59f6">scroll_horizontal</a> )(struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int nCols)</td></tr>
+<tr class="memdesc:aafa3fa11adbfeafa2b51d77bc52c59f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll the cursor to the right/left a specified number of columns.  <a href="#aafa3fa11adbfeafa2b51d77bc52c59f6">More...</a><br /></td></tr>
+<tr class="separator:aafa3fa11adbfeafa2b51d77bc52c59f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59178294aea6da4ed34434526f2580ff"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__object__vtable__.html#a59178294aea6da4ed34434526f2580ff">do_expose</a> )(struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, Display *pDisplay, Window wID, GC gc, const <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pPaintGeom, const <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pViewGeom, XFontSet rFontSet)</td></tr>
 <tr class="memdesc:a59178294aea6da4ed34434526f2580ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Member function to properly render the text in a window (Expose event)  <a href="#a59178294aea6da4ed34434526f2580ff">More...</a><br /></td></tr>
 <tr class="separator:a59178294aea6da4ed34434526f2580ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,7 +380,7 @@ Data Fields</h2></td></tr>
 </dl>
 <p>This function will alter the 'blink' state of the cursor, generating Expose events as needed to re-paint it within the window. An owning window should call this function using the time period specified by the system settings, but ONLY AFTER at least one 'do_expose' call. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8h_source.html#l00761">761</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8h_source.html#l00773">773</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -677,7 +683,7 @@ Data Fields</h2></td></tr>
 <p>NOTE: text color may be adjusted based on the type of buffer data being stored. Some buffered text data might have color information associated with it and as such the text will be rendered using the appropriate color. Color information is object-specific.<br />
  TODO: a 'context text color' callback function that can be assigned either to the vtable, or as a function pointer, in which the default text color would be the GC foreground color. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8h_source.html#l00749">749</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8h_source.html#l00761">761</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 
 </div>
 </div>
@@ -1410,6 +1416,56 @@ Mouse clicks automatically do an <a class="el" href="struct__text__object__vtabl
 
 </div>
 </div>
+<a id="aafa3fa11adbfeafa2b51d77bc52c59f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa3fa11adbfeafa2b51d77bc52c59f6">&#9670;&nbsp;</a></span>scroll_horizontal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(*  scroll_horizontal) (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int nCols)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scroll the cursor to the right/left a specified number of columns. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pThis</td><td>A pointer to the TEXT_OBJECT structure </td></tr>
+    <tr><td class="paramname">nCols</td><td>The number of columns to scroll by; negative scrolls left, positive right </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="text__object_8h_source.html#l00722">722</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+
+</div>
+</div>
+<a id="a64d1a17552ec7c460ab7ba09aaa6859d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d1a17552ec7c460ab7ba09aaa6859d">&#9670;&nbsp;</a></span>scroll_vertical</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(*  scroll_vertical) (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int nRows)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scroll the viewport up/down by the specified number of rows. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pThis</td><td>A pointer to the TEXT_OBJECT structure </td></tr>
+    <tr><td class="paramname">nRows</td><td>The number of rows to scroll by; negative scrolls up, positive down </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="text__object_8h_source.html#l00716">716</a> of file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
+
+</div>
+</div>
 <a id="a4fe95d3631fe96c751037089ce1ff445"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fe95d3631fe96c751037089ce1ff445">&#9670;&nbsp;</a></span>set_col</h2>
 
@@ -1742,7 +1798,7 @@ You should manually force a re-draw of the control displaying the text. It will 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__text__object__vtable__.html">_text_object_vtable_</a></li>
-    <li class="footer">Generated on Tue Sep 12 2017 16:42:00 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jan 11 2018 10:51:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

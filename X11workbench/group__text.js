@@ -7,6 +7,7 @@ var group__text =
     [ "WBCopyString", "group__text.html#ga01c938dde1b777421803b3e31c4717aa", null ],
     [ "WBCopyStringN", "group__text.html#ga892d4fcc14f538f9c2e2475bce9c1279", null ],
     [ "WBDeQuoteString", "group__text.html#ga970cc5651dadf44ab9335c64ef67283b", null ],
+    [ "WBNormalizeXMLString", "group__text.html#ga37672be02736c8986ecb307317184513", null ],
     [ "WBStringLineCount", "group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb", null ],
     [ "WBStringNextLine", "group__text.html#gacbabd0b058670415d5c851858e9f6784", null ]
 ];

@@ -45,6 +45,8 @@ var struct__text__object__vtable__ =
     [ "page_up", "struct__text__object__vtable__.html#aaf217b78d3e0cb7e70e33a5449ac549f", null ],
     [ "redo", "struct__text__object__vtable__.html#a52c7a9948d8338a3a46d7ddef6407f82", null ],
     [ "replace_select", "struct__text__object__vtable__.html#a64335225ab3a57ef09f66910c364e24e", null ],
+    [ "scroll_horizontal", "struct__text__object__vtable__.html#aafa3fa11adbfeafa2b51d77bc52c59f6", null ],
+    [ "scroll_vertical", "struct__text__object__vtable__.html#a64d1a17552ec7c460ab7ba09aaa6859d", null ],
     [ "set_col", "struct__text__object__vtable__.html#a4fe95d3631fe96c751037089ce1ff445", null ],
     [ "set_filetype", "struct__text__object__vtable__.html#a142f198131b214d2c156712ed393c919", null ],
     [ "set_insmode", "struct__text__object__vtable__.html#ae512a8ffb4d89d95431204bb067020cd", null ],

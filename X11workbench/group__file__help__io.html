@@ -68,6 +68,12 @@ $(document).ready(function(){initNavTree('group__file__help__io.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga70947d3caeac0a08ef677a58d81e87de"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__help__io.html#ga70947d3caeac0a08ef677a58d81e87de">WBReadFileIntoBuffer</a> (const char *szFileName, char **ppBuf)</td></tr>
+<tr class="memdesc:ga70947d3caeac0a08ef677a58d81e87de"><td class="mdescLeft">&#160;</td><td class="mdescRight">read a file's contents into a buffer, returning the length of the buffer  <a href="#ga70947d3caeac0a08ef677a58d81e87de">More...</a><br /></td></tr>
+<tr class="separator:ga70947d3caeac0a08ef677a58d81e87de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d9a26b4eebba93b89eaba360ab5cd98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__help__io.html#ga3d9a26b4eebba93b89eaba360ab5cd98">WBWriteFileFromBuffer</a> (const char *szFileName, const char *pBuf, size_t cbBuf)</td></tr>
+<tr class="memdesc:ga3d9a26b4eebba93b89eaba360ab5cd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">read a file's contents into a buffer, returning the length of the buffer  <a href="#ga3d9a26b4eebba93b89eaba360ab5cd98">More...</a><br /></td></tr>
+<tr class="separator:ga3d9a26b4eebba93b89eaba360ab5cd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8ac866c19ba5ad4646e25f1bdea32d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__help__io.html#gac8ac866c19ba5ad4646e25f1bdea32d1">WBReplicateFilePermissions</a> (const char *szProto, const char *szTarget)</td></tr>
 <tr class="memdesc:gac8ac866c19ba5ad4646e25f1bdea32d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">replicate permissions on a target file based on another file's permissions  <a href="#gac8ac866c19ba5ad4646e25f1bdea32d1">More...</a><br /></td></tr>
 <tr class="separator:gac8ac866c19ba5ad4646e25f1bdea32d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,7 +144,7 @@ Functions</h2></td></tr>
  The pointer returned by this function must be destroyed using <a class="el" href="group__file__help__io.html#gafcb8dd0803743cc8ce74b491bf19c769">WBDestroyDirectoryList()</a><br />
  NOTE: you may not specify a wildcard within a directory name unless it is the the specification for the file name that you are searching for within its parent directory. The directory name must also exist or the function will return a NULL (error). If the specified path name ends in a '/' the file spec will be assumed to be '*'. </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01046">1046</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01191">1191</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -167,7 +173,7 @@ Functions</h2></td></tr>
 </dl>
 <p>Use this function to destroy a 'Directory List' object allocated by <a class="el" href="group__file__help__io.html#gaba70dab567cb5f5f7709041da7d1f244">WBAllocDirectoryList()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01221">1221</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01366">1366</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -198,7 +204,7 @@ Functions</h2></td></tr>
 <p>Use this function to determine the canonical name for a specified path. If the path does not exist, those elements of the path that DO exist will be resolved, and the remaining parts of the name will be added to form the canonical path. If an element of the specified directory name is NOT actually a directory (or a symlink to a directory), the function will return NULL indicating an error.</p>
 <p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00662">662</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00807">807</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -222,7 +228,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>valid pointer or NULL on error</dd></dl>
 <p>A convenience function that wraps the 'getcwd()' API and returns a 'WBAlloc'd pointer to a string. The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00605">605</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00750">750</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -264,7 +270,7 @@ Functions</h2></td></tr>
 <p>Use this function to get a canonical file name for a file within a directory listing.</p>
 <p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01350">1350</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01495">1495</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -312,7 +318,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A zero value if successful, non-zero otherwise (same return as 'stat()')</dd></dl>
 <p>Use this function to retrieve flags for a regular file, directory, or the target of a symbolic link with respect to a 'Directory List' object (for relative paths) </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01448">1448</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01593">1593</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -354,7 +360,7 @@ Functions</h2></td></tr>
 <p>Use this function to retrieve a symbolic link's target file name with respect to a 'Directory List' object (for relative paths). The link target is unmodified, and may be a relative path. For a canonical equivalent, use <a class="el" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion) ...">WBGetCanonicalPath()</a></p>
 <p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01416">1416</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01561">1561</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -385,7 +391,7 @@ Functions</h2></td></tr>
 <p>Use this function to retrieve a symbolic link's target file name. May be a relative path. For a canonical equivalent, use <a class="el" href="group__file__help__io.html#ga092ea927c16b0b170a64498dd6def104" title="Return the canonical path for a file name (similar to POSIX &#39;realpath()&#39; funtion) ...">WBGetCanonicalPath()</a></p>
 <p>The caller must free any non-NULL return values using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01397">1397</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01542">1542</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -415,7 +421,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>non-zero if the file is (or the symlink points to) a directory, 0 otherwise</dd></dl>
 <p>Use this function to determine if the specified file is a directory, or is a symbolic link that points to a directory. </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00635">635</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00780">780</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -470,7 +476,48 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An integer value &lt; 0 on error, &gt; 0 on EOF, or 0 if a matching entry was found</dd></dl>
 <p>Use this function to get the next file name from the contents of a directory listing that is specified by a 'Directory List' object created by <a class="el" href="group__file__help__io.html#gaba70dab567cb5f5f7709041da7d1f244">WBAllocDirectoryList()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01249">1249</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01394">1394</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+
+</div>
+</div>
+<a id="ga70947d3caeac0a08ef677a58d81e87de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70947d3caeac0a08ef677a58d81e87de">&#9670;&nbsp;</a></span>WBReadFileIntoBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t WBReadFileIntoBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>ppBuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read a file's contents into a buffer, returning the length of the buffer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szFileName</td><td>A const pointer to a string containing the file name </td></tr>
+    <tr><td class="paramname">ppBuf</td><td>A pointer to a 'char *' buffer that is allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a> and returned by the function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a positive value on success indicating the length of the data in the returned buffer, or negative on error. A return value of zero indicates an empty file.</dd></dl>
+<p>Use this function to read the entire contents of a file into a memory buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00572">572</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -511,7 +558,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>non-zero on error, zero on success</dd></dl>
 <p>Use this function to replicate the permissions of one file onto another. Useful when making a backup of an original file, and/or creating a new file with the same name/characteristics as the old file, but not necessarily 'written in place'. </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00572">572</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00717">717</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -552,7 +599,55 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A zero value if successful, non-zero otherwise (same return as 'stat()')</dd></dl>
 <p>Use this function to retrieve flags for a regular file, directory, or the target of a symbolic link </p>
 
-<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01433">1433</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l01578">1578</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
+
+</div>
+</div>
+<a id="ga3d9a26b4eebba93b89eaba360ab5cd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d9a26b4eebba93b89eaba360ab5cd98">&#9670;&nbsp;</a></span>WBWriteFileFromBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBWriteFileFromBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>cbBuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read a file's contents into a buffer, returning the length of the buffer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szFileName</td><td>A const pointer to a string containing the file name </td></tr>
+    <tr><td class="paramname">pBuf</td><td>A const pointer to a buffer that contains the data to write </td></tr>
+    <tr><td class="paramname">cbBuf</td><td>The length of data to write to the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a value of zero on success, or non-zero on error (the actual error should be in 'errno')</dd></dl>
+<p>Use this function to write the entire contents of a buffer to a file. The file will be overwritten if it already exists. </p>
+
+<p class="definition">Definition at line <a class="el" href="file__help_8c_source.html#l00657">657</a> of file <a class="el" href="file__help_8c_source.html">file_help.c</a>.</p>
 
 </div>
 </div>
@@ -561,7 +656,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 12 2017 16:42:00 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jan 11 2018 10:51:02 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

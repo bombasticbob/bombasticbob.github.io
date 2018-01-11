@@ -63,7 +63,8 @@ $(document).ready(function(){initNavTree('platform__helper_8h.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">platform_helper.h File Reference</div>  </div>
 </div><!--header-->
@@ -96,9 +97,6 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#gabcb99ccc1b92686f4d81fc4d421f1324">HAS_WB_UINT64_BUILTIN</a></td></tr>
 <tr class="memdesc:gabcb99ccc1b92686f4d81fc4d421f1324"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined whenever the 'WB_UINT64' data type is a 'built in' data type <br /></td></tr>
 <tr class="separator:gabcb99ccc1b92686f4d81fc4d421f1324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd657ce95940b7c6087cf5aa54d5280"><td class="memItemLeft" align="right" valign="top"><a id="a8bd657ce95940b7c6087cf5aa54d5280"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>__SIZEOF_POINTER__</b>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a8bd657ce95940b7c6087cf5aa54d5280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c9e81a67bfbc5514362c8c1eab18226"><td class="memItemLeft" align="right" valign="top"><a id="a2c9e81a67bfbc5514362c8c1eab18226"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>WB_C99_INITIALIZERS</b>&#160;&#160;&#160;/* allow C99-style initializers */</td></tr>
 <tr class="separator:a2c9e81a67bfbc5514362c8c1eab18226"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +183,33 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a401cd49e71e88660779d0f2355238946"><td class="memItemLeft" align="right" valign="top"><a id="a401cd49e71e88660779d0f2355238946"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_display</b> (const char *szVal)</td></tr>
+<tr class="separator:a401cd49e71e88660779d0f2355238946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b53931bda597c97f82916e8add4bd3"><td class="memItemLeft" align="right" valign="top"><a id="ab9b53931bda597c97f82916e8add4bd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_minimize</b> (void)</td></tr>
+<tr class="separator:ab9b53931bda597c97f82916e8add4bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2d539fa8a2aba670397c9be12bc276"><td class="memItemLeft" align="right" valign="top"><a id="a0b2d539fa8a2aba670397c9be12bc276"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_maximize</b> (void)</td></tr>
+<tr class="separator:a0b2d539fa8a2aba670397c9be12bc276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1225a7bf036007d2f593e6a56ee130e8"><td class="memItemLeft" align="right" valign="top"><a id="a1225a7bf036007d2f593e6a56ee130e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_geometry</b> (const char *szVal)</td></tr>
+<tr class="separator:a1225a7bf036007d2f593e6a56ee130e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">WBPlatformOnInit</a> (void)</td></tr>
+<tr class="memdesc:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource initialization on startup.  <a href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">More...</a><br /></td></tr>
+<tr class="separator:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga186e21ce3badbba01435fa3e30bacd16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">WBPlatformOnExit</a> (void)</td></tr>
+<tr class="memdesc:ga186e21ce3badbba01435fa3e30bacd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource 'free-up' on exit (must call)  <a href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">More...</a><br /></td></tr>
+<tr class="separator:ga186e21ce3badbba01435fa3e30bacd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga576673ed5710c0711a453f935b5043aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments</a> (int *pargc, char ***pargv, char ***penvp)</td></tr>
+<tr class="memdesc:ga576673ed5710c0711a453f935b5043aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses standard C arguments as passed to 'main()'  <a href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">More...</a><br /></td></tr>
+<tr class="separator:ga576673ed5710c0711a453f935b5043aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cee3f4b704525ba89117af6616593e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">WBToolkitUsage</a> (void)</td></tr>
+<tr class="memdesc:ga5cee3f4b704525ba89117af6616593e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays 'usage' for toolkit options to stderr.  <a href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">More...</a><br /></td></tr>
+<tr class="separator:ga5cee3f4b704525ba89117af6616593e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">GetStartupAppName</a> (void)</td></tr>
+<tr class="memdesc:ga412c75eb0f657d771d6aa386b4d178ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to a copy of the application name from argv[0]  <a href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">More...</a><br /></td></tr>
+<tr class="separator:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">WBAlloc</a> (int nSize)</td></tr>
 <tr class="memdesc:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">High performance memory sub-allocator 'allocate'.  <a href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">More...</a><br /></td></tr>
 <tr class="separator:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +240,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga970cc5651dadf44ab9335c64ef67283b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga970cc5651dadf44ab9335c64ef67283b">WBDeQuoteString</a> (char *pszStr)</td></tr>
 <tr class="memdesc:ga970cc5651dadf44ab9335c64ef67283b"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-Quote a string 'in place', that is modifying the original string by removing quotes.  <a href="group__text.html#ga970cc5651dadf44ab9335c64ef67283b">More...</a><br /></td></tr>
 <tr class="separator:ga970cc5651dadf44ab9335c64ef67283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37672be02736c8986ecb307317184513"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga37672be02736c8986ecb307317184513">WBNormalizeXMLString</a> (char *pString)</td></tr>
+<tr class="memdesc:ga37672be02736c8986ecb307317184513"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-Quote and 'normalize' an XML string 'in place', that is modifying the original string by removing quotes and translationg things like '&amp;' '&gt;' etc.  <a href="group__text.html#ga37672be02736c8986ecb307317184513">More...</a><br /></td></tr>
+<tr class="separator:ga37672be02736c8986ecb307317184513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga11ada3ca2b715b8d12a9237ff5b8edcb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">WBStringLineCount</a> (const char *pSrc, unsigned int nMaxChars)</td></tr>
 <tr class="memdesc:ga11ada3ca2b715b8d12a9237ff5b8edcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine how many 'lines' are in a block of text by counting 'linefeed' characters.  <a href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">More...</a><br /></td></tr>
 <tr class="separator:ga11ada3ca2b715b8d12a9237ff5b8edcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,12 +255,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaa2be84e6aa35494ef5c78db3fe19886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886">my_qsort_r</a> (void *base, int nmemb, int size, void *thunk, int(*compar)(void *, const void *, const void *))</td></tr>
 <tr class="memdesc:gaaa2be84e6aa35494ef5c78db3fe19886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local implementation of qsort_r() for operating systems that do not have it.  <a href="group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886">More...</a><br /></td></tr>
 <tr class="separator:gaaa2be84e6aa35494ef5c78db3fe19886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">WBPlatformOnInit</a> (void)</td></tr>
-<tr class="memdesc:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource initialization on startup.  <a href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">More...</a><br /></td></tr>
-<tr class="separator:ga4231ddc6f845891d9be8f4f1f3c0aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga186e21ce3badbba01435fa3e30bacd16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">WBPlatformOnExit</a> (void)</td></tr>
-<tr class="memdesc:ga186e21ce3badbba01435fa3e30bacd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource 'free-up' on exit (must call)  <a href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">More...</a><br /></td></tr>
-<tr class="separator:ga186e21ce3badbba01435fa3e30bacd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99ffb9b6c8c93ea9e20706c62b4b7713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#gad218d279d60b555a8a8a1e4e2e959469">WB_UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga99ffb9b6c8c93ea9e20706c62b4b7713">WBCreatePointerHash</a> (void *pPointer)</td></tr>
 <tr class="memdesc:ga99ffb9b6c8c93ea9e20706c62b4b7713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create/obtain a 32-bit 'secure' hash for a pointer.  <a href="group__platform.html#ga99ffb9b6c8c93ea9e20706c62b4b7713">More...</a><br /></td></tr>
 <tr class="separator:ga99ffb9b6c8c93ea9e20706c62b4b7713"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,6 +384,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gacbe84588820dd08c5b1f1c3cc1a2e568"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">WBGetPrinterList</a> (void)</td></tr>
 <tr class="memdesc:gacbe84588820dd08c5b1f1c3cc1a2e568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of printer names.  <a href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">More...</a><br /></td></tr>
 <tr class="separator:gacbe84588820dd08c5b1f1c3cc1a2e568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">bQuitFlag</a></td></tr>
+<tr class="memdesc:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Quit' Flag - you should check this periodically in your main (message) loop and exit whenever it is TRUE (non-zero)  <a href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">More...</a><br /></td></tr>
+<tr class="separator:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae106384a618f9454b4b2e78934aa8e93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#gae106384a618f9454b4b2e78934aa8e93">WB_SECURE_HASH_TIMEOUT</a>&#160;&#160;&#160;60000</td></tr>
 <tr class="separator:gae106384a618f9454b4b2e78934aa8e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbebee81dd0645b706d5d9ffe4e3e977"><td class="memItemLeft" align="right" valign="top">
@@ -384,7 +412,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="platform__helper_8h.html">platform_helper.h</a></li>
-    <li class="footer">Generated on Tue Sep 12 2017 16:41:59 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jan 11 2018 10:51:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

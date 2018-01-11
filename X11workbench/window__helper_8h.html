@@ -75,6 +75,7 @@ $(document).ready(function(){initNavTree('window__helper_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>&quot;</code><br />
+<code>#include &quot;debug_helper.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="font__helper_8h_source.html">font_helper.h</a>&quot;</code><br />
 </div>
 <p><a href="window__helper_8h_source.html">Go to the source code of this file.</a></p>
@@ -134,27 +135,6 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63">END_XCALL_DEBUG_WRAPPER</a>&#160;&#160;&#160;} <a class="el" href="group__debug.html#ga61491e06febc120b12e741142c45c89a">sz_xcall_func</a> = __szOldXCallFunc__;  <a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a> = __iOldXCallLine__; }</td></tr>
 <tr class="memdesc:gaecce059895600af7ce5b6ad5bf88ff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrapper macro for calls into the X11 library. This macro follows the call(s) <br /></td></tr>
 <tr class="separator:gaecce059895600af7ce5b6ad5bf88ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c0fc7cbc16080fb7336bfc18dfb6c0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d">WB_DEBUG_PRINT</a>(L, ...)</td></tr>
-<tr class="memdesc:ga3c0fc7cbc16080fb7336bfc18dfb6c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing conditional debug output.  <a href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d">More...</a><br /></td></tr>
-<tr class="separator:ga3c0fc7cbc16080fb7336bfc18dfb6c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07195be75eaddbb7ddd020b30638f921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga07195be75eaddbb7ddd020b30638f921">WB_DEBUG_DUMP</a>(L,  X,  Y,  Z)</td></tr>
-<tr class="memdesc:ga07195be75eaddbb7ddd020b30638f921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing conditional debug 'dump' output.  <a href="group__debug.html#ga07195be75eaddbb7ddd020b30638f921">More...</a><br /></td></tr>
-<tr class="separator:ga07195be75eaddbb7ddd020b30638f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6ac5dd5ac445f238b70bcb3050254f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gad6ac5dd5ac445f238b70bcb3050254f3">WB_IF_DEBUG_LEVEL</a>(L)</td></tr>
-<tr class="memdesc:gad6ac5dd5ac445f238b70bcb3050254f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing conditional debug 'if block' code.  <a href="group__debug.html#gad6ac5dd5ac445f238b70bcb3050254f3">More...</a><br /></td></tr>
-<tr class="separator:gad6ac5dd5ac445f238b70bcb3050254f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7733e6c6e9386c713bbe06010f3b6b47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(...)&#160;&#160;&#160;<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d">WB_DEBUG_PRINT</a>(<a class="el" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395add4365820f2ebd966840d4733b9ab6ae">DebugLevel_WARN</a>, __VA_ARGS__)</td></tr>
-<tr class="memdesc:ga7733e6c6e9386c713bbe06010f3b6b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing a 'warning level' debug message for all subsystems.  <a href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">More...</a><br /></td></tr>
-<tr class="separator:ga7733e6c6e9386c713bbe06010f3b6b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a1d182c6caeb2224b7f5cee41250e6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c">WB_ERROR_PRINT</a>(...)&#160;&#160;&#160;<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d">WB_DEBUG_PRINT</a>(<a class="el" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395a5dc878414fb869e463b2fdf86edb2b11">DebugLevel_ERROR</a>, __VA_ARGS__)</td></tr>
-<tr class="memdesc:ga1a1d182c6caeb2224b7f5cee41250e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing an 'error level' debug message for all subsystems.  <a href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c">More...</a><br /></td></tr>
-<tr class="separator:ga1a1d182c6caeb2224b7f5cee41250e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea40bfd99822e6845b9f0e2244574b0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaea40bfd99822e6845b9f0e2244574b0f">WB_WARN_DUMP</a>(X,  Y,  Z)&#160;&#160;&#160;<a class="el" href="group__debug.html#ga07195be75eaddbb7ddd020b30638f921">WB_DEBUG_DUMP</a>(<a class="el" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395add4365820f2ebd966840d4733b9ab6ae">DebugLevel_WARN</a>, X,Y,Z)</td></tr>
-<tr class="memdesc:gaea40bfd99822e6845b9f0e2244574b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing a 'warning level' binary dump for all subsystems.  <a href="group__debug.html#gaea40bfd99822e6845b9f0e2244574b0f">More...</a><br /></td></tr>
-<tr class="separator:gaea40bfd99822e6845b9f0e2244574b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2176241b3a65e78f4d9e88ecdc9c5354"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga2176241b3a65e78f4d9e88ecdc9c5354">WB_ERROR_DUMP</a>(X,  Y,  Z)&#160;&#160;&#160;<a class="el" href="group__debug.html#ga07195be75eaddbb7ddd020b30638f921">WB_DEBUG_DUMP</a>(<a class="el" href="window__helper_8h.html#gab658e6d84759440dbf3c890446075395a5dc878414fb869e463b2fdf86edb2b11">DebugLevel_ERROR</a>, X,Y,Z)</td></tr>
-<tr class="memdesc:ga2176241b3a65e78f4d9e88ecdc9c5354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing an 'error level' binary dump for all subsystems.  <a href="group__debug.html#ga2176241b3a65e78f4d9e88ecdc9c5354">More...</a><br /></td></tr>
-<tr class="separator:ga2176241b3a65e78f4d9e88ecdc9c5354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabf332a9e9be0d42e529b972eee8dd696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gabf332a9e9be0d42e529b972eee8dd696">WB_STANDARD_INPUT_MASK</a>&#160;&#160;&#160;(FocusChangeMask | PropertyChangeMask | ExposureMask | StructureNotifyMask | VisibilityChangeMask | SubstructureNotifyMask)</td></tr>
 <tr class="memdesc:gabf332a9e9be0d42e529b972eee8dd696"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Standard' input mask, bit flag for window creation  <a href="group__wcore.html#gabf332a9e9be0d42e529b972eee8dd696">More...</a><br /></td></tr>
 <tr class="separator:gabf332a9e9be0d42e529b972eee8dd696"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,48 +265,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gab658e6d84759440dbf3c890446075395"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a> { <br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a27ff7bc1690558c50b810e4268e4e5c5">DebugLevel_None</a> = 0, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a5dc878414fb869e463b2fdf86edb2b11">DebugLevel_ERROR</a> = 0, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395add4365820f2ebd966840d4733b9ab6ae">DebugLevel_WARN</a> = 1, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a4835681737ff43948f053b160b22ac89">DebugLevel_Minimal</a> = 1, 
-<br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a2ac0769cb6ff083bc9d55f7b06b6b31a">DebugLevel_Light</a> = 2, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a92f2a3efe413c1fd3c30bce022b01998">DebugLevel_Medium</a> = 3, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395ad0f9a067a6dd3fb930806c328d9b00d7">DebugLevel_Heavy</a> = 4, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395af6c35af37db62f546f6d74147730b0a7">DebugLevel_Chatty</a> = 5, 
-<br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a7dbe310e018c250c841a085c97865c6d">DebugLevel_Verbose</a> = 6, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395aac6172aaff83cf50d7215730f1acbed7">DebugLevel_Excessive</a> = 7, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a304703570910b87339564edb7e95c23a">DebugLevel_MASK</a> = 7, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395ac09de01b247071d5f57ebc0813bf92b1">DebugSubSystem_ALL</a> = 0, 
-<br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395aff36e0631e5f6bb41ef1efae8f6eff79">DebugSubSystem_RESTRICT</a> = 0x80000000, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a3a22a0e044f0f596d589ef6d749b3ea4">DebugSubSystem_BITSHIFT</a> = 3, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395aff21dac39a22e8e9b78e0fbca544f94a">DebugSubSystem_Init</a> = 0x00000008, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a625638decaf37fdac506251528408f11">DebugSubSystem_Application</a> = 0x00000010, 
-<br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a678d5f91e7b30f665585b18d5f5b2290">DebugSubSystem_Window</a> = 0x00000020, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a7f0d76d6c1603ef19c57ac4a6102b992">DebugSubSystem_Menu</a> = 0x00000040, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a93a2b49a1b0df4d3c9aa0b4519f329a1">DebugSubSystem_Event</a> = 0x00000080, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a5d392cfb111976ff4b03454919a64137">DebugSubSystem_Dialog</a> = 0x00000100, 
-<br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395ace32e920c434463479fa621033ebf4df">DebugSubSystem_DialogCtrl</a> = 0x00000200, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395ab3721a59071c6f8c65d024238ee72dbc">DebugSubSystem_Frame</a> = 0x00000400, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395adfbdc17d1723bb4c950fdf5a0d95c44f">DebugSubSystem_Keyboard</a> = 0x00000800, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a9894481a9b01a2468d0de4c0d54ad648">DebugSubSystem_Mouse</a> = 0x00001000, 
-<br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a65fce82f598992eb34b1dda5d50f889a">DebugSubSystem_Font</a> = 0x00002000, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a8c0dbd5a6a424171b8605a9a9a2cde16">DebugSubSystem_Settings</a> = 0x00004000, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395a9f60cbc5957ceeda886a8559056ae4de">DebugSubSystem_Selection</a> = 0x00008000, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395af692ff7eba270cc2a3a7cce224f81047">DebugSubSystem_Pixmap</a> = 0x00010000, 
-<br />
-&#160;&#160;<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395ab8ce6d5213b0808ca71cd39214720380">DebugSubSystem_Expose</a> = 0x00020000, 
-<a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395afa49443a6c0642dafe1286c5a37bbcc8">DebugSubSystem_MASK</a> = ~7L
-<br />
- }<tr class="memdesc:gab658e6d84759440dbf3c890446075395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug level enumeration.  <a href="group__debug.html#gab658e6d84759440dbf3c890446075395">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:gab658e6d84759440dbf3c890446075395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabed82baf7f470b522273a3e37c24c600"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<a class="el" href="group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a283d7836973fc4cd386fae001266dc17">WB_SCROLL_DEFAULT</a> = 0, 
 <a class="el" href="group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600ab721303d414a9b53a65ba336a5db7b6f">WB_SCROLL_HORIZONTAL</a> = 1, 
@@ -437,15 +375,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gabc195384568f9fb8ed6d2a7704722395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">WBThreadFreeDisplay</a> (Display *pThreadDisplay)</td></tr>
 <tr class="memdesc:gabc195384568f9fb8ed6d2a7704722395"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-initializes a Display for a thread that was allocated by <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3" title="initializes default Display for a thread (must call WBInit() first) ">WBThreadInitDisplay()</a>  <a href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">More...</a><br /></td></tr>
 <tr class="separator:gabc195384568f9fb8ed6d2a7704722395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga576673ed5710c0711a453f935b5043aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments</a> (int *pargc, char ***pargv, char ***penvp)</td></tr>
-<tr class="memdesc:ga576673ed5710c0711a453f935b5043aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses standard C arguments as passed to 'main()'  <a href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">More...</a><br /></td></tr>
-<tr class="separator:ga576673ed5710c0711a453f935b5043aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5cee3f4b704525ba89117af6616593e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">WBToolkitUsage</a> (void)</td></tr>
-<tr class="memdesc:ga5cee3f4b704525ba89117af6616593e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays 'usage' for toolkit options to stderr.  <a href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">More...</a><br /></td></tr>
-<tr class="separator:ga5cee3f4b704525ba89117af6616593e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">GetStartupAppName</a> (void)</td></tr>
-<tr class="memdesc:ga412c75eb0f657d771d6aa386b4d178ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to a copy of the application name from argv[0]  <a href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">More...</a><br /></td></tr>
-<tr class="separator:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e32c84e39bafa6723df9943dbfdb657"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga9e32c84e39bafa6723df9943dbfdb657">GetStartupDisplayName</a> (void)</td></tr>
 <tr class="memdesc:ga9e32c84e39bafa6723df9943dbfdb657"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns character name of the display to be opened and passed to WBInit  <a href="group__startup.html#ga9e32c84e39bafa6723df9943dbfdb657">More...</a><br /></td></tr>
 <tr class="separator:ga9e32c84e39bafa6723df9943dbfdb657"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,27 +393,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga832d717d9276cf16a656c105c6ce667a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga832d717d9276cf16a656c105c6ce667a">WBInitSizeHints</a> (XSizeHints *pSH, Display *pDisplay, int iMinHeight, int iMinWidth)</td></tr>
 <tr class="memdesc:ga832d717d9276cf16a656c105c6ce667a"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the XSizeHints structure with standard attributes  <a href="group__startup.html#ga832d717d9276cf16a656c105c6ce667a">More...</a><br /></td></tr>
 <tr class="separator:ga832d717d9276cf16a656c105c6ce667a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a09380df755537647684f30f7bfab3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">WBSetDebugLevel</a> (unsigned int iLevel)</td></tr>
-<tr class="memdesc:ga2a09380df755537647684f30f7bfab3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set debug level  <a href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">More...</a><br /></td></tr>
-<tr class="separator:ga2a09380df755537647684f30f7bfab3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeed1620ced80e88fa15ec89c3d03de13"><td class="memItemLeft" align="right" valign="top">static __inline__ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a> (void)</td></tr>
-<tr class="memdesc:gaeed1620ced80e88fa15ec89c3d03de13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current debug level assigned by WBSetDebugLevel.  <a href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">More...</a><br /></td></tr>
-<tr class="separator:gaeed1620ced80e88fa15ec89c3d03de13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff552460367fbdb1397a29e364800f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaff552460367fbdb1397a29e364800f49">WBDebugPrint</a> (const char *pFmt,...) __attribute__((format(printf</td></tr>
-<tr class="memdesc:gaff552460367fbdb1397a29e364800f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">conditional debug message output  <a href="group__debug.html#gaff552460367fbdb1397a29e364800f49">More...</a><br /></td></tr>
-<tr class="separator:gaff552460367fbdb1397a29e364800f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b403292a2ce065b57db74db5809dfea"><td class="memItemLeft" align="right" valign="top">void void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga1b403292a2ce065b57db74db5809dfea">WBDebugDump</a> (const char *szTitle, void *pData, int cbData)</td></tr>
-<tr class="memdesc:ga1b403292a2ce065b57db74db5809dfea"><td class="mdescLeft">&#160;</td><td class="mdescRight">conditionally dumps binary data to debug message output  <a href="group__debug.html#ga1b403292a2ce065b57db74db5809dfea">More...</a><br /></td></tr>
-<tr class="separator:ga1b403292a2ce065b57db74db5809dfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga690f2acca275614c06c2e8afc55db18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga690f2acca275614c06c2e8afc55db18b">WBDebugDumpGC</a> (Display *pDisplay, GC hGC)</td></tr>
-<tr class="memdesc:ga690f2acca275614c06c2e8afc55db18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps a GC's settings  <a href="group__debug.html#ga690f2acca275614c06c2e8afc55db18b">More...</a><br /></td></tr>
-<tr class="separator:ga690f2acca275614c06c2e8afc55db18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87f581d644796a185b48611c5c8c163d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga87f581d644796a185b48611c5c8c163d">WBDebugDumpRegion</a> (Region hRgn, int bRotate)</td></tr>
-<tr class="memdesc:ga87f581d644796a185b48611c5c8c163d"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps contents of a region  <a href="group__debug.html#ga87f581d644796a185b48611c5c8c163d">More...</a><br /></td></tr>
-<tr class="separator:ga87f581d644796a185b48611c5c8c163d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa39191469018c352801b1178befdd5b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaa39191469018c352801b1178befdd5b2">WBDebugDumpEvent</a> (XEvent *pEvent)</td></tr>
-<tr class="memdesc:gaa39191469018c352801b1178befdd5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps the contents of an XEvent  <a href="group__debug.html#gaa39191469018c352801b1178befdd5b2">More...</a><br /></td></tr>
-<tr class="separator:gaa39191469018c352801b1178befdd5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac57c3a0127f4b7f69684ebee98e1e203"><td class="memItemLeft" align="right" valign="top">static __inline__ Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a> (void)</td></tr>
 <tr class="memdesc:gac57c3a0127f4b7f69684ebee98e1e203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default Display.  <a href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">More...</a><br /></td></tr>
 <tr class="separator:gac57c3a0127f4b7f69684ebee98e1e203"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -850,9 +758,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0">i_xcall_line</a></td></tr>
 <tr class="memdesc:gadf69fb1eee4bd95c8ef094865bfcdfd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">debug helper variable indicating the line number of the function calling into the X11 library <br /></td></tr>
 <tr class="separator:gadf69fb1eee4bd95c8ef094865bfcdfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">bQuitFlag</a></td></tr>
-<tr class="memdesc:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Quit' Flag - you should check this periodically in your main message loop and exit whenever it is TRUE (non-zero)  <a href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">More...</a><br /></td></tr>
-<tr class="separator:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab6bfa5084348ab4142dcbe45aa80fe27"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#gab6bfa5084348ab4142dcbe45aa80fe27">aMENU_COMMAND</a></td></tr>
 <tr class="memdesc:gab6bfa5084348ab4142dcbe45aa80fe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">commands sent by menus via ClientMessage  <a href="group__xatoms.html#gab6bfa5084348ab4142dcbe45aa80fe27">More...</a><br /></td></tr>
 <tr class="separator:gab6bfa5084348ab4142dcbe45aa80fe27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1035,7 +940,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>This function works ONLY for windows that have been registered with a callback. It checks to see if the internal window information exists and returns a non-zero value if the internal information exists AND the window itself has not been destroyed. This works whether or not the window was ever mapped.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05657">5657</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05356">5356</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +950,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="window__helper_8h.html">window_helper.h</a></li>
-    <li class="footer">Generated on Tue Sep 12 2017 16:41:59 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jan 11 2018 10:51:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

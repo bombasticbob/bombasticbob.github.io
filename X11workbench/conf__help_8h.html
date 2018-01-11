@@ -97,7 +97,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>GLOBAL_PATH</b>&#160;&#160;&#160;&quot;/usr/local/etc&quot;</td></tr>
 <tr class="separator:a3186d57934c6f719aae12ec4d8cf191e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b65a606d6e11ed8fd41afdd4524439"><td class="memItemLeft" align="right" valign="top"><a id="a93b65a606d6e11ed8fd41afdd4524439"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GLOBAL_XPATH</b>&#160;&#160;&#160;&quot;/usr/X11R6/etc&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GLOBAL_XPATH</b>&#160;&#160;&#160;&quot;/etc/X11&quot;</td></tr>
 <tr class="separator:a93b65a606d6e11ed8fd41afdd4524439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8841199e7e5fe3e103bbaddfabbcac32"><td class="memItemLeft" align="right" valign="top"><a id="a8841199e7e5fe3e103bbaddfabbcac32"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LOCAL_PATH</b>&#160;&#160;&#160;&quot;~/&quot;</td></tr>
@@ -115,6 +115,12 @@ Macros</h2></td></tr>
 <tr class="separator:ga6fa81276a8edf7ddfefc8407ad2a54e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a682e8869312600f11789dabdf1f0ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#ga4a682e8869312600f11789dabdf1f0ec">CH_FLAGS_WRITE</a>&#160;&#160;&#160;0x2</td></tr>
 <tr class="separator:ga4a682e8869312600f11789dabdf1f0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga243bf1509391226a7b97534efb4c3467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#ga243bf1509391226a7b97534efb4c3467">CHPARSEXML_DEFAULT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga243bf1509391226a7b97534efb4c3467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2db42ab007d647e9529905ca74a98ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#gac2db42ab007d647e9529905ca74a98ea">CHPARSEXML_PAREN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gac2db42ab007d647e9529905ca74a98ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c7d5f970b120c9f3b98a618d794f89f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#ga4c7d5f970b120c9f3b98a618d794f89f">CHPARSEXML_BRACKET</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga4c7d5f970b120c9f3b98a618d794f89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -208,15 +214,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5c467f8c1758effdf5927f65ce480144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__xml.html#gac928c3c11df0103bce607a99eb4b13fb">CHXMLEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga5c467f8c1758effdf5927f65ce480144">CHParseXML</a> (const char *pXMLData, int cbLength)</td></tr>
 <tr class="memdesc:ga5c467f8c1758effdf5927f65ce480144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of an XML tag, returning as WBAlloc'd string list similar to environment strings.  <a href="group__text__xml.html#ga5c467f8c1758effdf5927f65ce480144">More...</a><br /></td></tr>
 <tr class="separator:ga5c467f8c1758effdf5927f65ce480144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4780b0bb551504b80db25ee1cbed42e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga4780b0bb551504b80db25ee1cbed42e0">CHDebugDumpXML</a> (<a class="el" href="group__text__xml.html#gac928c3c11df0103bce607a99eb4b13fb">CHXMLEntry</a> *pEntry)</td></tr>
+<tr class="memdesc:ga4780b0bb551504b80db25ee1cbed42e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of an XML tag, returning as WBAlloc'd string list similar to environment strings.  <a href="group__text__xml.html#ga4780b0bb551504b80db25ee1cbed42e0">More...</a><br /></td></tr>
+<tr class="separator:ga4780b0bb551504b80db25ee1cbed42e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10c208e293c69c4f9c29da367747d3a3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga10c208e293c69c4f9c29da367747d3a3">CHParseXMLTagContents</a> (const char *pTagContents, int cbLength)</td></tr>
 <tr class="memdesc:ga10c208e293c69c4f9c29da367747d3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of a single XML tag, returning as WBAlloc'd string list similar to environment strings.  <a href="group__text__xml.html#ga10c208e293c69c4f9c29da367747d3a3">More...</a><br /></td></tr>
 <tr class="separator:ga10c208e293c69c4f9c29da367747d3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga741fc830b447a06bcf9aefe377df48d3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga741fc830b447a06bcf9aefe377df48d3">CHFindNextXMLTag</a> (const char *pTagContents, int cbLength)</td></tr>
-<tr class="memdesc:ga741fc830b447a06bcf9aefe377df48d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of a XML to find the next tag, skipping comments along the way.  <a href="group__text__xml.html#ga741fc830b447a06bcf9aefe377df48d3">More...</a><br /></td></tr>
-<tr class="separator:ga741fc830b447a06bcf9aefe377df48d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb0f933136df81620b95526eb5771876"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#gacb0f933136df81620b95526eb5771876">CHFindNextXMLTag</a> (const char *pTagContents, int cbLength, int nNestingFlags)</td></tr>
+<tr class="memdesc:gacb0f933136df81620b95526eb5771876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of a XML to find the next tag, skipping comments along the way.  <a href="group__text__xml.html#gacb0f933136df81620b95526eb5771876">More...</a><br /></td></tr>
+<tr class="separator:gacb0f933136df81620b95526eb5771876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71e7128deb674f9d591c96a1617acb90"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga71e7128deb674f9d591c96a1617acb90">CHFindEndOfXMLTag</a> (const char *pTagContents, int cbLength)</td></tr>
 <tr class="memdesc:ga71e7128deb674f9d591c96a1617acb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses contents of an XML tag to find the end of it.  <a href="group__text__xml.html#ga71e7128deb674f9d591c96a1617acb90">More...</a><br /></td></tr>
 <tr class="separator:ga71e7128deb674f9d591c96a1617acb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03426513ad234ba47a743a905b995671"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__xml.html#ga03426513ad234ba47a743a905b995671">CHFindEndOfXMLSection</a> (const char *pTagContents, int cbLength, char cEndChar, int bUseQuotes)</td></tr>
+<tr class="memdesc:ga03426513ad234ba47a743a905b995671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses XML text for the end of a 'section', typically ending in '&gt;' ')' or ']'.  <a href="group__text__xml.html#ga03426513ad234ba47a743a905b995671">More...</a><br /></td></tr>
+<tr class="separator:ga03426513ad234ba47a743a905b995671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeebc97d4a9924bbbb84a4b1040abd990"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__desktop__settings.html#gaeebc97d4a9924bbbb84a4b1040abd990">CHGetFileMimeType</a> (const char *szFileName)</td></tr>
 <tr class="memdesc:gaeebc97d4a9924bbbb84a4b1040abd990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MIME type for a particular file name or extension.  <a href="group__desktop__settings.html#gaeebc97d4a9924bbbb84a4b1040abd990">More...</a><br /></td></tr>
 <tr class="separator:gaeebc97d4a9924bbbb84a4b1040abd990"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,7 +253,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="conf__help_8h.html">conf_help.h</a></li>
-    <li class="footer">Generated on Tue Sep 12 2017 16:41:59 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jan 11 2018 10:51:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

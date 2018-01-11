@@ -7,6 +7,7 @@ var struct____WBChildFrame____ =
     [ "geom", "struct____WBChildFrame____.html#af0c954535c57f8d693e63e7c18c4731f", null ],
     [ "geomEntire", "struct____WBChildFrame____.html#a9e681dc938cdfe58d022d0181f88ca93", null ],
     [ "iColWidth", "struct____WBChildFrame____.html#ae0fbcc2f7866acb6705dfc2d9f32158a", null ],
+    [ "iContextMenuID", "struct____WBChildFrame____.html#a26e41e6640cc0c7900ca1a478f9e6230", null ],
     [ "iRowHeight", "struct____WBChildFrame____.html#ab34480c6f1fc391b5ede9d85f853e846", null ],
     [ "iSplit", "struct____WBChildFrame____.html#afbeb6624eec2723842ebacaced2422be", null ],
     [ "origin", "struct____WBChildFrame____.html#ab78ce17a0ab4be39cdc5815133b9a89e", null ],

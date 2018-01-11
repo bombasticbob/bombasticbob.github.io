@@ -1,7 +1,6 @@
 var platform__helper_8h =
 [
     [ "__PACKED__", "group__platform.html#ga440b53a71a770adf0a937dd35c6cc2ec", null ],
-    [ "__SIZEOF_POINTER__", "platform__helper_8h.html#a8bd657ce95940b7c6087cf5aa54d5280", null ],
     [ "DECLARE_SORT_FUNCTION", "group__platform.html#ga8e072186273813195bb5c42ec9b978c2", null ],
     [ "FALSE", "platform__helper_8h.html#aa93f0eb578d23995850d61f7d61c55c1", null ],
     [ "HAS_WB_UINT64_BUILTIN", "group__platform.html#gabcb99ccc1b92686f4d81fc4d421f1324", null ],
@@ -33,6 +32,11 @@ var platform__helper_8h =
     [ "WB_UINT64", "group__platform.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a", null ],
     [ "WB_UINTPTR", "group__platform.html#gaf2e76d8f9feb32fb9105142299c90a5a", null ],
     [ "XPM_ATTRIBUTES", "group__pixmap.html#ga1bb15776f1bc24315c53197bacf5164a", null ],
+    [ "__internal_startup_display", "platform__helper_8h.html#a401cd49e71e88660779d0f2355238946", null ],
+    [ "__internal_startup_geometry", "platform__helper_8h.html#a1225a7bf036007d2f593e6a56ee130e8", null ],
+    [ "__internal_startup_maximize", "platform__helper_8h.html#a0b2d539fa8a2aba670397c9be12bc276", null ],
+    [ "__internal_startup_minimize", "platform__helper_8h.html#ab9b53931bda597c97f82916e8add4bd3", null ],
+    [ "GetStartupAppName", "group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca", null ],
     [ "my_qsort_r", "group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886", null ],
     [ "MyLoadPixmapFromData", "group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61", null ],
     [ "WBAlloc", "group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c", null ],
@@ -67,6 +71,8 @@ var platform__helper_8h =
     [ "WBMutexFree", "group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66", null ],
     [ "WBMutexLock", "group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d", null ],
     [ "WBMutexUnlock", "group__threads.html#gaa57c76153ca0af21cc2525c605854832", null ],
+    [ "WBNormalizeXMLString", "group__text.html#ga37672be02736c8986ecb307317184513", null ],
+    [ "WBParseStandardArguments", "group__startup.html#ga576673ed5710c0711a453f935b5043aa", null ],
     [ "WBPlatformOnExit", "group__startup.html#ga186e21ce3badbba01435fa3e30bacd16", null ],
     [ "WBPlatformOnInit", "group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5", null ],
     [ "WBPrintPostScriptFile", "group__printer.html#ga737f9fed2f56848dc08d1cb608b49687", null ],
@@ -91,5 +97,7 @@ var platform__helper_8h =
     [ "WBThreadGetLocal", "group__threads.html#ga621a6f3683fa965609b642178ddd6fa3", null ],
     [ "WBThreadRunning", "group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6", null ],
     [ "WBThreadSetLocal", "group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8", null ],
-    [ "WBThreadWait", "group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d", null ]
+    [ "WBThreadWait", "group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d", null ],
+    [ "WBToolkitUsage", "group__startup.html#ga5cee3f4b704525ba89117af6616593e2", null ],
+    [ "bQuitFlag", "group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f", null ]
 ];

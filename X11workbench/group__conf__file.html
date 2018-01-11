@@ -98,6 +98,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga6fa81276a8edf7ddfefc8407ad2a54e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a682e8869312600f11789dabdf1f0ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#ga4a682e8869312600f11789dabdf1f0ec">CH_FLAGS_WRITE</a>&#160;&#160;&#160;0x2</td></tr>
 <tr class="separator:ga4a682e8869312600f11789dabdf1f0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga243bf1509391226a7b97534efb4c3467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#ga243bf1509391226a7b97534efb4c3467">CHPARSEXML_DEFAULT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga243bf1509391226a7b97534efb4c3467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2db42ab007d647e9529905ca74a98ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#gac2db42ab007d647e9529905ca74a98ea">CHPARSEXML_PAREN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gac2db42ab007d647e9529905ca74a98ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c7d5f970b120c9f3b98a618d794f89f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conf__file.html#ga4c7d5f970b120c9f3b98a618d794f89f">CHPARSEXML_BRACKET</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga4c7d5f970b120c9f3b98a618d794f89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Configuration File Utilities, for application or user-defined config files. </p>
@@ -115,7 +121,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>default flags for <a class="el" href="group__conf__file.html#ga3eb399f31125de85322cce21639c82a5">CHOpenConfFile()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00109">109</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00113">113</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
 
 </div>
 </div>
@@ -132,7 +138,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>set this for 'global only' for <a class="el" href="group__conf__file.html#ga3eb399f31125de85322cce21639c82a5">CHOpenConfFile()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00110">110</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00114">114</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
 
 </div>
 </div>
@@ -149,7 +155,58 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>set this to enable GLOBAL write (local write automatically enabled) for <a class="el" href="group__conf__file.html#ga3eb399f31125de85322cce21639c82a5">CHOpenConfFile()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00111">111</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00115">115</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+
+</div>
+</div>
+<a id="ga4c7d5f970b120c9f3b98a618d794f89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c7d5f970b120c9f3b98a618d794f89f">&#9670;&nbsp;</a></span>CHPARSEXML_BRACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHPARSEXML_BRACKET&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For '<a class="el" href="group__text__xml.html#gacb0f933136df81620b95526eb5771876" title="Parses contents of a XML to find the next tag, skipping comments along the way. ">CHFindNextXMLTag()</a>', stop parsing on detection of '[' or ']' </p>
+
+<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00119">119</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+
+</div>
+</div>
+<a id="ga243bf1509391226a7b97534efb4c3467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga243bf1509391226a7b97534efb4c3467">&#9670;&nbsp;</a></span>CHPARSEXML_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHPARSEXML_DEFAULT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default behavior for '<a class="el" href="group__text__xml.html#gacb0f933136df81620b95526eb5771876" title="Parses contents of a XML to find the next tag, skipping comments along the way. ">CHFindNextXMLTag()</a>' (just look for '&lt;') </p>
+
+<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00117">117</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
+
+</div>
+</div>
+<a id="gac2db42ab007d647e9529905ca74a98ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2db42ab007d647e9529905ca74a98ea">&#9670;&nbsp;</a></span>CHPARSEXML_PAREN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHPARSEXML_PAREN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For '<a class="el" href="group__text__xml.html#gacb0f933136df81620b95526eb5771876" title="Parses contents of a XML to find the next tag, skipping comments along the way. ">CHFindNextXMLTag()</a>', stop parsing on detection of '(' or ')' </p>
+
+<p class="definition">Definition at line <a class="el" href="conf__help_8h_source.html#l00118">118</a> of file <a class="el" href="conf__help_8h_source.html">conf_help.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +547,7 @@ The function may block as needed. Use <a class="el" href="group__conf__file.html
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 12 2017 16:42:00 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Jan 11 2018 10:51:01 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
