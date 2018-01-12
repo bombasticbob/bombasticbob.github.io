@@ -7,7 +7,7 @@ var frame__window_8h =
     [ "FWGetFocusWindow", "group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb", null ],
     [ "WBChildFrame", "group__child__frame.html#gaf06650d056e926657cc94548674c1d98", null ],
     [ "WBChildFrameUI", "group__child__frame.html#gaef35967785afcadb1b6ede35ac972349", null ],
-    [ "WBFrameWindow", "group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5", null ],
+    [ "WBFrameWindow", "frame__window_8h.html#a54551f4cd3a77998576ba4bd6a8c23e9", null ],
     [ "WBFWMenuHandler", "group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b", null ],
     [ "WBChildFrame_FLAGS", "group__child__frame.html#ga8876436ba7e43c85f832361df3e05a9e", [
       [ "WBChildFrame_NO_TAB", "frame__window_8h.html#ga8876436ba7e43c85f832361df3e05a9ea2d205951e2714825deddcfebe15a53a2", null ],
