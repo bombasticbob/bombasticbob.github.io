@@ -202,7 +202,7 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>This function allows you to create an Edit Window that is a regular child of a frame window or dialog box, as a 'single document' handler. To create a window that uses the maximum available space within the client area of the parent, specify '-1' for iTop, iLeft, iWidth, and iHeight.</p>
 <p>Header File: <a class="el" href="edit__window_8h.html" title="Edit Window API functions. ">edit_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00250">250</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00266">266</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -233,7 +233,7 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>Call this function on any pointer returned by WBCreateEditWindow to destroy it and free its resources.</p>
 <p>Header File: <a class="el" href="edit__window_8h.html" title="Edit Window API functions. ">edit_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00380">380</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00396">396</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>Use this function to clear an Edit Window, setting the file name to NULL</p>
 <p>Header File: <a class="el" href="edit__window_8h.html" title="Edit Window API functions. ">edit_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00551">551</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00569">569</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>Use this function to safely obtain the correct WBEditWindow structure for a given Window ID.</p>
 <p>Header File: <a class="el" href="edit__window_8h.html" title="Edit Window API functions. ">edit_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00422">422</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00438">438</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -336,7 +336,7 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>Use this function to read a file into the Edit Window, replacing any existing contents.</p>
 <p>Header File: <a class="el" href="edit__window_8h.html" title="Edit Window API functions. ">edit_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00436">436</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00452">452</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>Edit Windows can generate a number of custom Client Message events that are specific to Edit Windows.</p>
 <p>Header File: <a class="el" href="edit__window_8h.html" title="Edit Window API functions. ">edit_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00565">565</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00583">583</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -421,7 +421,7 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>Use this function to write the contents of an Edit Window to a file, overwriting any existing file of the same name.</p>
 <p>Header File: <a class="el" href="edit__window_8h.html" title="Edit Window API functions. ">edit_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00527">527</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00545">545</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ data.l[0] A value of 1 to indicate text added or deleted, 2 for a 're-do', or 0 
 data.l[2] The current column (0-based) (hover notify only)<br />
  The Edit Window sends this event directly to the callback specified by <a class="el" href="group__edit__window.html#gaa2d1055807ccbbb9697f77ff386005a6" title="Clear the contents in the Edit Window, and NULL the stored file name. ">WBEditWindowRegisterCallback()</a> whenever the Edit Window text has been modified due to UI interaction. If no user callback is specified (i.e. it is NULL) no such event will be generated the window itself. </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00192">192</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00208">208</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -512,7 +512,7 @@ data.l[1] The current row (0-based) (hover notify only)<br />
 data.l[2] The current column (0-based) (hover notify only)<br />
  The Edit Window sends this event directly to the callback specified by <a class="el" href="group__edit__window.html#gaa2d1055807ccbbb9697f77ff386005a6" title="Clear the contents in the Edit Window, and NULL the stored file name. ">WBEditWindowRegisterCallback()</a> whenever the Edit Window receives a hover notification. If no user callback is specified (i.e. it is NULL) no such event will be generated the window itself. </p>
 
-<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00174">174</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edit__window_8c_source.html#l00190">190</a> of file <a class="el" href="edit__window_8c_source.html">edit_window.c</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ data.l[2] The current column (0-based) (hover notify only)<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:17 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -34,6 +34,7 @@ var struct____WBChildFrameUI____ =
     [ "pgleft", "struct____WBChildFrameUI____.html#a27705c2219f825bab214cc4b566a5dd5", null ],
     [ "pgright", "struct____WBChildFrameUI____.html#aa1b5992d1115e3c76117569cf18cf9ae", null ],
     [ "pgup", "struct____WBChildFrameUI____.html#afcc8e5b02c81608938cf284f5087ff74", null ],
+    [ "properties", "struct____WBChildFrameUI____.html#a42716996360ba6650d70af4613ed107a", null ],
     [ "redo", "struct____WBChildFrameUI____.html#a354dce66d4a735289d204ac811629909", null ],
     [ "rightarrow", "struct____WBChildFrameUI____.html#a9c6925d64487dd515a8842cee0d02ea1", null ],
     [ "save", "struct____WBChildFrameUI____.html#a4f5d6941d59940bde93a720cd1d92104", null ],

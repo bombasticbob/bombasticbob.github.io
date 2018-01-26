@@ -209,8 +209,10 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>main controlling structure for frame windows </p>
 <p>By default a frame window can handle multiple documents. Documents are selected via tabs. At least one tab will always be visible unless there are no 'contents'. The contained windows will be re-sized automatically as needed. Contained windows may also register their own menus and/or menu handlers.</p>
-<p>The WBFrameWindow structure maintains the basic window state information. You should not manipulate this structure directly. Use the appropriate API functions.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__FRAME__WINDOW____.html">__WB_FRAME_WINDOW__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a9cad1622f4396ded0afaf6a8d8a5727a">ulTag</a>;                  <span class="comment">// tag indicating I&#39;m a frame window</span></div><div class="line">  Window <a class="code" href="struct____WB__FRAME__WINDOW____.html#ac1bf4c310535451938ef5b31b2b0c51b">wID</a>;                          <span class="comment">// Window id for the frame window</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#aa554ac4b7e21f28462750b92ad87add8">iFlags</a>;                          <span class="comment">// bitmask of attribute flags (see \ref WBFrameWindow_FLAGS enumeration)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#ab7853bf1a94cfbc4acf1198eb8e557d5">iClientX</a>;                        <span class="comment">// The current X position of the frame window&#39;s client area</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a357ee914afb0052f18c556589b678566">iClientY</a>;                        <span class="comment">// The current Y position of the frame window&#39;s client area</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a27424747da84f0a941eabfa48faf916b">iClientWidth</a>;                    <span class="comment">// The current width of the frame window&#39;s client area</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a611ee0649d456278be1b38dffce515a5">iClientHeight</a>;                   <span class="comment">// The current height of the frame window&#39;s client area</span></div><div class="line"></div><div class="line">} <a class="code" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a>;</div></div><!-- fragment --> 
+<p>The WBFrameWindow structure maintains the basic window state information, and contains additional data members that are not declared in WBFrameWindow. You should not create any derived 'superclass' versions that contain this structure as an embedded member. Instead, you should use a pointer to a WBFrameWindow structure within your implementation, and not rely on any data members within the structure that are not accessible through the use of an API function.</p>
+<p>This structure is created using <a class="el" href="group__frame__window.html#gac6e419a4d4627321ddfaaf48711fc211" title="Create a frame window. ">FWCreateFrameWindow()</a>, and destroyed using either <a class="el" href="group__frame__window.html#gab70af043c2c00dbf97c2a531905be2b3" title="Function to destroy a frame window based on the Window id. ">FWDestroyFrameWindow()</a> (using the Window ID) or <a class="el" href="group__frame__window.html#ga9f5408fb92f895dea9fc09203fd32217" title="Function to destroy a frame window based on the WBFrameWindow structure. ">FWDestroyFrameWindow2()</a> (using the structure pointer).</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__FRAME__WINDOW____.html">__WB_FRAME_WINDOW__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a9cad1622f4396ded0afaf6a8d8a5727a">ulTag</a>;                  <span class="comment">// tag indicating I&#39;m a frame window</span></div><div class="line">  Window <a class="code" href="struct____WB__FRAME__WINDOW____.html#ac1bf4c310535451938ef5b31b2b0c51b">wID</a>;                          <span class="comment">// Window id for the frame window</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#aa554ac4b7e21f28462750b92ad87add8">iFlags</a>;                          <span class="comment">// bitmask of attribute flags (see \ref WBFrameWindow_FLAGS enumeration)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#ab7853bf1a94cfbc4acf1198eb8e557d5">iClientX</a>;                        <span class="comment">// The current X position of the frame window&#39;s client area</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a357ee914afb0052f18c556589b678566">iClientY</a>;                        <span class="comment">// The current Y position of the frame window&#39;s client area</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a27424747da84f0a941eabfa48faf916b">iClientWidth</a>;                    <span class="comment">// The current width of the frame window&#39;s client area</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__FRAME__WINDOW____.html#a611ee0649d456278be1b38dffce515a5">iClientHeight</a>;                   <span class="comment">// The current height of the frame window&#39;s client area</span></div><div class="line"></div><div class="line">} <a class="code" href="group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5">WBFrameWindow</a>;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__frame__window.html">Frame Window APIs and Structures</a> </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="X11workbench_8h_source.html#l00090">90</a> of file <a class="el" href="X11workbench_8h_source.html">X11workbench.h</a>.</p>
 
 </div>
@@ -243,7 +245,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00285">285</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00293">293</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +281,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00301">301</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00309">309</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -668,7 +670,7 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>Use this function to safely obtain the correct WBFrameWindow structure for a given Window ID.</p>
 <p>Header File: <a class="el" href="frame__window_8h.html" title="Frame Window API functions and definitions. ">frame_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00819">819</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00835">835</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1144,7 @@ This function forces a re-paint of the status bar. If you also want to change th
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

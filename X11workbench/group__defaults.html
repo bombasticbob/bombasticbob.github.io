@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: Default Parameters</title>
+<title>X11 Work Bench Toolkit: Default Parameters and Definitions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,12 +60,43 @@ $(document).ready(function(){initNavTree('group__defaults.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Default Parameters<div class="ingroups"><a class="el" href="group__core.html">Core API</a></div></div>  </div>
+<div class="title">Default Parameters and Definitions<div class="ingroups"><a class="el" href="group__core.html">Core API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaa3f68398eddd018b389e0c1609a369c4"><td class="memItemLeft" align="right" valign="top"><a id="gaa3f68398eddd018b389e0c1609a369c4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#gaa3f68398eddd018b389e0c1609a369c4">WB_DEFAULT_CURSOR</a>&#160;&#160;&#160;XC_left_ptr</td></tr>
+<tr class="memdesc:gaa3f68398eddd018b389e0c1609a369c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default window cursor (this is what xterm uses) <br /></td></tr>
+<tr class="separator:gaa3f68398eddd018b389e0c1609a369c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45c0e949c2da8dc36a78ee649206756c"><td class="memItemLeft" align="right" valign="top"><a id="ga45c0e949c2da8dc36a78ee649206756c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#ga45c0e949c2da8dc36a78ee649206756c">WB_WAIT_CURSOR</a>&#160;&#160;&#160;XC_watch /*XC_clock*/</td></tr>
+<tr class="memdesc:ga45c0e949c2da8dc36a78ee649206756c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 'wait' cursor (this is what xterm uses) <br /></td></tr>
+<tr class="separator:ga45c0e949c2da8dc36a78ee649206756c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac447551bc0b3c9b870dd3e4b84c580fe"><td class="memItemLeft" align="right" valign="top"><a id="gac447551bc0b3c9b870dd3e4b84c580fe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#gac447551bc0b3c9b870dd3e4b84c580fe">WB_DEFAULT_FONT</a>&#160;&#160;&#160;&quot;fixed&quot;</td></tr>
+<tr class="memdesc:gac447551bc0b3c9b870dd3e4b84c580fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default X11 font name (currently "fixed") <br /></td></tr>
+<tr class="separator:gac447551bc0b3c9b870dd3e4b84c580fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacec55c19c632c0d8a5bbe64b2bd975f6"><td class="memItemLeft" align="right" valign="top"><a id="gacec55c19c632c0d8a5bbe64b2bd975f6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#gacec55c19c632c0d8a5bbe64b2bd975f6">WB_DEFAULT_FONT_SIZE</a>&#160;&#160;&#160;13 /* override via settings */</td></tr>
+<tr class="memdesc:gacec55c19c632c0d8a5bbe64b2bd975f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default X11 font size (currently 13) <br /></td></tr>
+<tr class="separator:gacec55c19c632c0d8a5bbe64b2bd975f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d6d0cbd8dc3c2a8c603b9458a984847"><td class="memItemLeft" align="right" valign="top"><a id="ga9d6d0cbd8dc3c2a8c603b9458a984847"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#ga9d6d0cbd8dc3c2a8c603b9458a984847">WINDOW_DATA_SIZE</a>&#160;&#160;&#160;4 /* size of a 'void *' array that stores per-window data */</td></tr>
+<tr class="memdesc:ga9d6d0cbd8dc3c2a8c603b9458a984847"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 'window data' array size (currently 4 void pointers) <br /></td></tr>
+<tr class="separator:ga9d6d0cbd8dc3c2a8c603b9458a984847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6135f35a01d8ed77af06c7d770cc7cd5"><td class="memItemLeft" align="right" valign="top"><a id="ga6135f35a01d8ed77af06c7d770cc7cd5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#ga6135f35a01d8ed77af06c7d770cc7cd5">EVENT_ALL_MASK</a>&#160;&#160;&#160;0x01ffffffL /* 2^24 | 2^23 ... 2^0 - see X.h */</td></tr>
+<tr class="memdesc:ga6135f35a01d8ed77af06c7d770cc7cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event mask for ALL events, with bits 0 through 24 set - see X.h which only defines bits 0 to 24 for an event mask. <br /></td></tr>
+<tr class="separator:ga6135f35a01d8ed77af06c7d770cc7cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e85284677c8665134da365f761894e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#ga2e85284677c8665134da365f761894e9">GCAll</a></td></tr>
+<tr class="memdesc:ga2e85284677c8665134da365f761894e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bit mask for ALL GC properties (used when copying a GC)  <a href="#ga2e85284677c8665134da365f761894e9">More...</a><br /></td></tr>
+<tr class="separator:ga2e85284677c8665134da365f761894e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gac57c3a0127f4b7f69684ebee98e1e203"><td class="memItemLeft" align="right" valign="top">static __inline__ Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a> (void)</td></tr>
@@ -82,7 +113,26 @@ Functions</h2></td></tr>
 <tr class="separator:gafc45dcd9ad8846fcd775841481f0e7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Functions and variables associated with default parameters </p>
+<p>Functions and variables associated with default parameters, and default definitions </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga2e85284677c8665134da365f761894e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e85284677c8665134da365f761894e9">&#9670;&nbsp;</a></span>GCAll</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GCAll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(GCFunction | GCPlaneMask | GCForeground | GCBackground | GCLineWidth | \</div><div class="line">               GCLineStyle | GCCapStyle | GCJoinStyle | GCFillStyle | GCFillRule | \</div><div class="line">               GCTile | GCStipple | GCTileStipXOrigin | GCTileStipYOrigin | GCFont | \</div><div class="line">               GCSubwindowMode | GCGraphicsExposures | GCClipXOrigin | GCClipYOrigin | \</div><div class="line">               GCClipMask | GCDashOffset | GCDashList | GCArcMode)</div></div><!-- fragment -->
+<p>A bit mask for ALL GC properties (used when copying a GC) </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00129">129</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gac57c3a0127f4b7f69684ebee98e1e203"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac57c3a0127f4b7f69684ebee98e1e203">&#9670;&nbsp;</a></span>WBGetDefaultDisplay()</h2>
@@ -113,7 +163,7 @@ Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c" title="returns the Display associated with a window ">WBGetWindowDisplay()</a></dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00570">570</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00565">565</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -138,7 +188,7 @@ Functions</h2></td></tr>
 <p>The default XFontStruct is allocated at startup. This function returns a pointer to this XFontStruct, which can be used in a case where the 'in use' XFontStruct is not known, or when an overriding font has not been specified.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01219">1219</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01213">1213</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -169,7 +219,7 @@ Functions</h2></td></tr>
 <p>The default XFontSet is allocated at startup from the default XFontStruct. This function returns this XFontSet, which can be used in a case where the 'in use' XFontSet is not known, or when an overriding font set has not been specified.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01231">1231</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01225">1225</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -193,7 +243,7 @@ Functions</h2></td></tr>
 <p>This function returns a special window that was created for information purposes. If you need a window for query purposes that belongs to the default display, you can use the one returned by this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01250">1250</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01244">1244</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -202,7 +252,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -227,7 +227,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a>((<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>() &amp; DebugLevel_MASK) &gt;= ((L) &amp; DebugLevel_MASK))) \</div><div class="line">  { \</div><div class="line">    if(!((L) &amp; DebugSubSystem_MASK) || !(<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>() &amp; DebugSubSystem_MASK) \</div><div class="line">       || (((L) &amp; <a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>()) &amp; DebugSubSystem_MASK) != 0) \</div><div class="line">    { \</div><div class="line">      WBDebugDump(X,Y,Z); \</div><div class="line">    } \</div><div class="line">  }</div><div class="ttc" id="group__debug_html_gaeed1620ced80e88fa15ec89c3d03de13"><div class="ttname"><a href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a></div><div class="ttdeci">static __inline__ unsigned int WBGetDebugLevel(void)</div><div class="ttdoc">Returns the current debug level assigned by WBSetDebugLevel. </div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00068">debug_helper.h:68</a></div></div>
-<div class="ttc" id="group__platform_html_ga71d10c657cde4801e8f2214f0d2c85d3"><div class="ttname"><a href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a></div><div class="ttdeci">#define WB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00163">platform_helper.h:163</a></div></div>
+<div class="ttc" id="group__platform_html_ga71d10c657cde4801e8f2214f0d2c85d3"><div class="ttname"><a href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a></div><div class="ttdeci">#define WB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00173">platform_helper.h:173</a></div></div>
 </div><!-- fragment -->
 <p>Preferred method of implementing conditional debug 'dump' output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -274,7 +274,7 @@ The remainng 3 parameters are passed to WBDebugDump as the title, data pointer, 
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a>((<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>() &amp; DebugLevel_MASK) &gt;= ((L) &amp; DebugLevel_MASK))) \</div><div class="line">  { \</div><div class="line">    if(!((L) &amp; DebugSubSystem_MASK) || !(<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>() &amp; DebugSubSystem_MASK) \</div><div class="line">       || (((L) &amp; <a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>()) &amp; DebugSubSystem_MASK) != 0) \</div><div class="line">    { \</div><div class="line">      WBDebugPrint(__VA_ARGS__); \</div><div class="line">    } \</div><div class="line">  }</div><div class="ttc" id="group__debug_html_gaeed1620ced80e88fa15ec89c3d03de13"><div class="ttname"><a href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a></div><div class="ttdeci">static __inline__ unsigned int WBGetDebugLevel(void)</div><div class="ttdoc">Returns the current debug level assigned by WBSetDebugLevel. </div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00068">debug_helper.h:68</a></div></div>
-<div class="ttc" id="group__platform_html_ga71d10c657cde4801e8f2214f0d2c85d3"><div class="ttname"><a href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a></div><div class="ttdeci">#define WB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00163">platform_helper.h:163</a></div></div>
+<div class="ttc" id="group__platform_html_ga71d10c657cde4801e8f2214f0d2c85d3"><div class="ttname"><a href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a></div><div class="ttdeci">#define WB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00173">platform_helper.h:173</a></div></div>
 </div><!-- fragment -->
 <p>Preferred method of implementing conditional debug output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -378,7 +378,7 @@ The remaining parameters, format string (and a variable number of parameters), a
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a>((<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>() &amp; DebugLevel_MASK) &gt;= ((L) &amp; DebugLevel_MASK)) &amp;&amp; \</div><div class="line">                                (!((L) &amp; DebugSubSystem_MASK) || !(<a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>() &amp; DebugSubSystem_MASK) \</div><div class="line">                                   || (((L) &amp; <a class="code" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a>()) &amp; DebugSubSystem_MASK) != 0))</div><div class="ttc" id="group__debug_html_gaeed1620ced80e88fa15ec89c3d03de13"><div class="ttname"><a href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a></div><div class="ttdeci">static __inline__ unsigned int WBGetDebugLevel(void)</div><div class="ttdoc">Returns the current debug level assigned by WBSetDebugLevel. </div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00068">debug_helper.h:68</a></div></div>
-<div class="ttc" id="group__platform_html_ga71d10c657cde4801e8f2214f0d2c85d3"><div class="ttname"><a href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a></div><div class="ttdeci">#define WB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00163">platform_helper.h:163</a></div></div>
+<div class="ttc" id="group__platform_html_ga71d10c657cde4801e8f2214f0d2c85d3"><div class="ttname"><a href="group__platform.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a></div><div class="ttdeci">#define WB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00173">platform_helper.h:173</a></div></div>
 </div><!-- fragment -->
 <p>Preferred method of implementing conditional debug 'if block' code. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -533,7 +533,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00555">555</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00557">557</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08738">8738</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08659">8659</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -606,7 +606,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08698">8698</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08619">8619</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -648,7 +648,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08807">8807</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08728">8728</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -776,7 +776,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Pass the debug level as 'iLevel' 0 for none, 1 for minimal, 2 for more, etc. up to 7</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00528">528</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00530">530</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -785,7 +785,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

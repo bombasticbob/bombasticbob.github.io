@@ -95,6 +95,10 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:aa13569bf2112cdee84abe25242c6cb3d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrameUI____.html#aa13569bf2112cdee84abe25242c6cb3d">enter</a> )(<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *, int iACS)</td></tr>
 <tr class="memdesc:aa13569bf2112cdee84abe25242c6cb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">'enter' char, or 'enter' for navigation.  <a href="#aa13569bf2112cdee84abe25242c6cb3d">More...</a><br /></td></tr>
 <tr class="separator:aa13569bf2112cdee84abe25242c6cb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42716996360ba6650d70af4613ed107a"><td class="memItemLeft" align="right" valign="top"><a id="a42716996360ba6650d70af4613ed107a"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrameUI____.html#a42716996360ba6650d70af4613ed107a">properties</a> )(<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *)</td></tr>
+<tr class="memdesc:a42716996360ba6650d70af4613ed107a"><td class="mdescLeft">&#160;</td><td class="mdescRight">display the property sheet for the displayed document (optional) <br /></td></tr>
+<tr class="separator:a42716996360ba6650d70af4613ed107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45ec03e7d93b9c51e3893bb7f0b24833"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBChildFrameUI____.html#a45ec03e7d93b9c51e3893bb7f0b24833">uparrow</a> )(<a class="el" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> *, int iACS)</td></tr>
 <tr class="memdesc:a45ec03e7d93b9c51e3893bb7f0b24833"><td class="mdescLeft">&#160;</td><td class="mdescRight">'up' arrow navigation.  <a href="#a45ec03e7d93b9c51e3893bb7f0b24833">More...</a><br /></td></tr>
 <tr class="separator:a45ec03e7d93b9c51e3893bb7f0b24833"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,13 +217,13 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure that defines a Child Frame's UI, mainly for a 'superclass'. </p>
 <p>The base user interface for a child frame does very little except interact with tabs and the Frame Window. To make it really do something, you need some kind of interface. This function table defines the UI interface for a Child Frame that will allow it to perform basic editing and navigation functions. If you need additional capabilities, you can hook the messages with the assigned callback function. Otherwise, most of the work will already be done for your custom child frame.<br />
- </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBChildFrameUI____.html">__WBChildFrameUI__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrameUI____.html#a9cad1622f4396ded0afaf6a8d8a5727a">ulTag</a>;</div><div class="line">    <span class="comment">// tag indicating I&#39;m a &#39;Child Frame UI&#39; structure</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aa08aa674e60a18b35e154e50f19e4fb8">do_char</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, XClientMessageEvent *);</div><div class="line">    <span class="comment">// handler for regular WM_CHAR Client Messages (typed-in characters).</span></div><div class="line">    <span class="comment">// NOT called for &#39;special&#39; characters.</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a91f3aa0d3091840668f9019165e55a54">scancode</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, XClientMessageEvent *);</div><div class="line">    <span class="comment">// handler for &#39;other scan code&#39; WM_CHAR Client Messages (typed-in characters)</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a99cd168c164a60c851a3908995c043cb">bkspace</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;backspace&#39; delete character (backspace equivalent).</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#affc94e2203ee9972dcfdf719f8184ae1">del</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;delete&#39; char under cursor (delete equivalent).</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a3cf4d35ac0203b7eb291673af982e5fa">tab</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;tab&#39; char, or tab navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aa13569bf2112cdee84abe25242c6cb3d">enter</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;enter&#39; char, or &#39;enter&#39; for navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a45ec03e7d93b9c51e3893bb7f0b24833">uparrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;up&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#afc9f2480251806b67a3cf95cf95c717e">downarrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;down&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a03fd2b1f1a19abc6f24a4844b5b8c582">leftarrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;left&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a9c6925d64487dd515a8842cee0d02ea1">rightarrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;right&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ad5b0f6ffee0e924607f84fd4870abbb8">home</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;home&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a2daf2d82a9a1094af66f3fd4dd9b7495">end</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;end&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#afcc8e5b02c81608938cf284f5087ff74">pgup</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page up&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a29f74042e6e075f8dec7b3207f8a9e5b">pgdown</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page down&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a27705c2219f825bab214cc4b566a5dd5">pgleft</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page left&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aa1b5992d1115e3c76117569cf18cf9ae">pgright</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page right&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a4874817a11129bd1bfd94e7b1307e388">help</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;help&#39; context (F1).</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a0f0685a82c2313d60db7201df8c149f5">hover_notify</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line">    <span class="comment">// &#39;mouse hover&#39; notification (x and y are pixel coords with respect to upper left corner)</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a94b881d5e8c6bcd233434d111c2b18ed">hover_cancel</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// &#39;mouse hover&#39; cancel notification (cancel any &#39;hover&#39; action)</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#af8b59b8e84e49249e95108f5e1139a99">is_ins_mode</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero if in &#39;insert&#39; mode, 0 for &#39;overwrite&#39;</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a2987e38856954ee9ab0cd332dfabf6d1">toggle_ins_mode</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// toggles insert mode on/off (press &#39;INS&#39; key)</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#add2bb6116d579fc8700b2e9b8cb91ea8">copy_to_cb</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// copy selection to clipboard</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#acd5f089fc18a333d7ec481755cdda70a">paste_from_cb</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// paste from clipboard</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a39b747fe6061f2bf95a42a2f48f59f4d">cut_to_cb</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// delete selection, copying to clipboard first</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#abe824b0db0b67a43c6b8614d611a647b">delete_sel</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// delete selection only</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ae3169035962f7a014b9b55b285dacb74">select_all</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// select all</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a457518f90900497321d86196a67ad1c8">select_none</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// select none</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a4f5d6941d59940bde93a720cd1d92104">save</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName);</div><div class="line">    <span class="comment">// save to specified file name (NULL to keep same file name)</span></div><div class="line"></div><div class="line">  <a class="code" href="group__platform.html#ga60eae15c5ce7bd699bea5ff126df6212">WB_PCSTR</a> (* <a class="code" href="struct____WBChildFrameUI____.html#a686e54d9c77edce910059a86c459f0fc">get_file_name</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// get (const) pointer to file name string</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aee4285d30db8e2215a658d13c891f191">mouse_click</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                      <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse click&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a077b4ca3b0234e4b5305f6b45d81013b">mouse_dblclick</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                         <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse double click&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aeaff39dae1f444fdf6848c7a756827af">mouse_drag</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                     <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse drag&#39; (begin) notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a9a322c0b43ae381b70c8a6c8088d88a9">mouse_drop</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                     <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse drop&#39; (drag end) notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ad4925870757db9ff8c7fd9fc2c8b5f4d">mouse_move</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY);</div><div class="line">    <span class="comment">// &#39;mouse motion&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ad3fb55e841decf6d7cac68c046f7e73e">mouse_scrollup</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                         <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse scroll up&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a46fe0aa0c85602a744ffcbe6cff5eea9">mouse_scrolldown</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                           <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse scroll down&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a7a0c50a4dbfc5dc1508c0fb3bb7f9c1c">mouse_cancel</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// &#39;mouse cancel&#39; notification (cancel &#39;drag&#39;, etc.).</span></div><div class="line">    <span class="comment">// See Also:  aWM_POINTER , WBMouseCancel()</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#acb8b160ab9a6514a3e91c8b8b88a60a1">get_row_col</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> *piR, <span class="keywordtype">int</span> *piC);</div><div class="line">    <span class="comment">// Obtain the current row/column cursor location for UI notification.</span></div><div class="line">    <span class="comment">// &#39;piR&#39; points to an integer to get the row, and</span></div><div class="line">    <span class="comment">// &#39;piC&#39; points to an integer to get the column.</span></div><div class="line">    <span class="comment">// Both are 1-based values (&lt;= 0 is &#39;error&#39; or &#39;NA&#39;)</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#acad98b61b15873af03bd714733e33798">has_selection</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if there is a selection</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a1a80b11e1294248600771eb93a4cffd6">undo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// perform an undo</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a354dce66d4a735289d204ac811629909">redo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// perform a re-do</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#af6597893108c51d42683d7699ec8f639">can_undo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if &#39;can undo&#39;</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#a81b9268570ee3052f23b80373b2fa78a">can_redo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if &#39;can redo&#39;</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#aada997ecd5baf92c190d67c8100fc1c0">is_empty</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if contents are &#39;empty&#39; (cannot select anything)</span></div><div class="line"></div><div class="line">} <a class="code" href="group__child__frame.html#gaef35967785afcadb1b6ede35ac972349">WBChildFrameUI</a>;</div></div><!-- fragment --><p>A window interface derived from 'WBChildFrame' needs a way for the 'abstract class' to invoke the UI functionality. To make this work, the 'superclass' (i.e. derived) window interface can populate a WBChildFrameUI structure with function pointers, as needed, to implement the necessary elements.</p>
+ </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WBChildFrameUI____.html">__WBChildFrameUI__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct____WBChildFrameUI____.html#a9cad1622f4396ded0afaf6a8d8a5727a">ulTag</a>;</div><div class="line">    <span class="comment">// tag indicating I&#39;m a &#39;Child Frame UI&#39; structure</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aa08aa674e60a18b35e154e50f19e4fb8">do_char</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, XClientMessageEvent *);</div><div class="line">    <span class="comment">// handler for regular WM_CHAR Client Messages (typed-in characters).</span></div><div class="line">    <span class="comment">// NOT called for &#39;special&#39; characters.</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a91f3aa0d3091840668f9019165e55a54">scancode</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, XClientMessageEvent *);</div><div class="line">    <span class="comment">// handler for &#39;other scan code&#39; WM_CHAR Client Messages (typed-in characters)</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a99cd168c164a60c851a3908995c043cb">bkspace</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;backspace&#39; delete character (backspace equivalent).</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#affc94e2203ee9972dcfdf719f8184ae1">del</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;delete&#39; char under cursor (delete equivalent).</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a3cf4d35ac0203b7eb291673af982e5fa">tab</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;tab&#39; char, or tab navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aa13569bf2112cdee84abe25242c6cb3d">enter</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;enter&#39; char, or &#39;enter&#39; for navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a42716996360ba6650d70af4613ed107a">properties</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// display the property sheet for the displayed document</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a45ec03e7d93b9c51e3893bb7f0b24833">uparrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;up&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#afc9f2480251806b67a3cf95cf95c717e">downarrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;down&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a03fd2b1f1a19abc6f24a4844b5b8c582">leftarrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;left&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a9c6925d64487dd515a8842cee0d02ea1">rightarrow</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;right&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ad5b0f6ffee0e924607f84fd4870abbb8">home</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;home&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a2daf2d82a9a1094af66f3fd4dd9b7495">end</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;end&#39; arrow navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#afcc8e5b02c81608938cf284f5087ff74">pgup</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page up&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a29f74042e6e075f8dec7b3207f8a9e5b">pgdown</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page down&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a27705c2219f825bab214cc4b566a5dd5">pgleft</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page left&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aa1b5992d1115e3c76117569cf18cf9ae">pgright</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;page right&#39; navigation.</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a4874817a11129bd1bfd94e7b1307e388">help</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;help&#39; context (F1).</span></div><div class="line">    <span class="comment">// &#39;iACS&#39; is the Alt/Ctrl/Shift flags. See Also:  aWM_CHAR</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a0f0685a82c2313d60db7201df8c149f5">hover_notify</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line">    <span class="comment">// &#39;mouse hover&#39; notification (x and y are pixel coords with respect to upper left corner)</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a94b881d5e8c6bcd233434d111c2b18ed">hover_cancel</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// &#39;mouse hover&#39; cancel notification (cancel any &#39;hover&#39; action)</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#af8b59b8e84e49249e95108f5e1139a99">is_ins_mode</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero if in &#39;insert&#39; mode, 0 for &#39;overwrite&#39;</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a2987e38856954ee9ab0cd332dfabf6d1">toggle_ins_mode</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// toggles insert mode on/off (press &#39;INS&#39; key)</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#add2bb6116d579fc8700b2e9b8cb91ea8">copy_to_cb</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// copy selection to clipboard</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#acd5f089fc18a333d7ec481755cdda70a">paste_from_cb</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// paste from clipboard</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a39b747fe6061f2bf95a42a2f48f59f4d">cut_to_cb</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// delete selection, copying to clipboard first</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#abe824b0db0b67a43c6b8614d611a647b">delete_sel</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// delete selection only</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ae3169035962f7a014b9b55b285dacb74">select_all</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// select all</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a457518f90900497321d86196a67ad1c8">select_none</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// select none</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a4f5d6941d59940bde93a720cd1d92104">save</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName);</div><div class="line">    <span class="comment">// save to specified file name (NULL to keep same file name)</span></div><div class="line"></div><div class="line">  <a class="code" href="group__platform.html#ga60eae15c5ce7bd699bea5ff126df6212">WB_PCSTR</a> (* <a class="code" href="struct____WBChildFrameUI____.html#a686e54d9c77edce910059a86c459f0fc">get_file_name</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// get (const) pointer to file name string</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aee4285d30db8e2215a658d13c891f191">mouse_click</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                      <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse click&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a077b4ca3b0234e4b5305f6b45d81013b">mouse_dblclick</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                         <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse double click&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#aeaff39dae1f444fdf6848c7a756827af">mouse_drag</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                     <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse drag&#39; (begin) notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a9a322c0b43ae381b70c8a6c8088d88a9">mouse_drop</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                     <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse drop&#39; (drag end) notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ad4925870757db9ff8c7fd9fc2c8b5f4d">mouse_move</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY);</div><div class="line">    <span class="comment">// &#39;mouse motion&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#ad3fb55e841decf6d7cac68c046f7e73e">mouse_scrollup</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                         <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse scroll up&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a46fe0aa0c85602a744ffcbe6cff5eea9">mouse_scrolldown</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> iX, <span class="keywordtype">int</span> iY,</div><div class="line">                           <span class="keywordtype">int</span> iButtonMask, <span class="keywordtype">int</span> iACS);</div><div class="line">    <span class="comment">// &#39;mouse scroll down&#39; notification.  See Also: aWM_POINTER</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a7a0c50a4dbfc5dc1508c0fb3bb7f9c1c">mouse_cancel</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// &#39;mouse cancel&#39; notification (cancel &#39;drag&#39;, etc.).</span></div><div class="line">    <span class="comment">// See Also:  aWM_POINTER , WBMouseCancel()</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#acb8b160ab9a6514a3e91c8b8b88a60a1">get_row_col</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *, <span class="keywordtype">int</span> *piR, <span class="keywordtype">int</span> *piC);</div><div class="line">    <span class="comment">// Obtain the current row/column cursor location for UI notification.</span></div><div class="line">    <span class="comment">// &#39;piR&#39; points to an integer to get the row, and</span></div><div class="line">    <span class="comment">// &#39;piC&#39; points to an integer to get the column.</span></div><div class="line">    <span class="comment">// Both are 1-based values (&lt;= 0 is &#39;error&#39; or &#39;NA&#39;)</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#acad98b61b15873af03bd714733e33798">has_selection</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if there is a selection</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a1a80b11e1294248600771eb93a4cffd6">undo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// perform an undo</span></div><div class="line"></div><div class="line">  void (*<a class="code" href="struct____WBChildFrameUI____.html#a354dce66d4a735289d204ac811629909">redo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// perform a re-do</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#af6597893108c51d42683d7699ec8f639">can_undo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if &#39;can undo&#39;</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#a81b9268570ee3052f23b80373b2fa78a">can_redo</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if &#39;can redo&#39;</span></div><div class="line"></div><div class="line">  int (*<a class="code" href="struct____WBChildFrameUI____.html#aada997ecd5baf92c190d67c8100fc1c0">is_empty</a>)(<a class="code" href="struct____WBChildFrame____.html">WBChildFrame</a> *);</div><div class="line">    <span class="comment">// returns non-zero value if contents are &#39;empty&#39; (cannot select anything)</span></div><div class="line"></div><div class="line">} <a class="code" href="group__child__frame.html#gaef35967785afcadb1b6ede35ac972349">WBChildFrameUI</a>;</div></div><!-- fragment --><p>A window interface derived from 'WBChildFrame' needs a way for the 'abstract class' to invoke the UI functionality. To make this work, the 'superclass' (i.e. derived) window interface can populate a WBChildFrameUI structure with function pointers, as needed, to implement the necessary elements.</p>
 <p>For those elements that are NOT implemented, you can use NULL for the function pointer. That way if the derived window interface does not need 'hover' support, you can leave the 'hover_notify' and 'hover_cancel' function pointers as NULL, but populate everything else.</p>
 <p>For the 'iACS' parameters, use the 'iACS' information from the aWM_CHAR. This is the 'Alt/Ctrl/Shift' flag that indicates which of those buttons were being held down at the time of the character translation. For more information on THAT, see <a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">WM_CHAR</a>.</p>
 <p>The basic difference between 'do_char' and 'scancode' is that the 'character' events will be passed along to the 'do_char' callback, but 'scan code' events (NOT processed by one of the other callbacks) will be passed along via the 'scancode' callback. This will allow your custom UI handler to interpret additional 'special' keys as needed. The ones normally processed are: insert, delete, home, end, pgup, pgdown, and the 'F1' key.</p>
 <p>NOTE: if a menu defines hotkey combinations, no 'WM_CHAR' event will be generated for any of those. Instead, the menu handler needs to interpret them correctly if the UI callback will need to be invoked. One example in the <a class="el" href="X11workbench_8c_source.html">X11workbench.c</a> handler (for the main edit window UI) is the handling of the 'Edit' sub-menu, which includes hotkey combinations such as 'CTRL+V' for 'paste'. When the 'paste' menu is invoked, the handler will need to grab the WBChildFrameUI structure for the currently active Child Window, and invoke its 'paste_from_cb' callback function directly. Similarly, if 'F1' is invoked, it will need to call the 'help' function directly, passing the correct 'iACS' parameter value. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00662">662</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00677">677</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a99cd168c164a60c851a3908995c043cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99cd168c164a60c851a3908995c043cb">&#9670;&nbsp;</a></span>bkspace</h2>
@@ -236,7 +240,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'backspace' delete character (backspace equivalent), or perform related 'backspace' operation via ctrl/alt/shift. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00667">667</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00682">682</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +259,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>returns non-zero value if 'can redo' </p>
 <p>Interfaces/Objects that support 're-do' AND have a non-empty re-do buffer will return non-zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00715">715</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00731">731</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +278,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>returns non-zero value if 'can undo' </p>
 <p>Interfaces/Objects that support 'undo' AND have a non-empty undo buffer will return non-zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00714">714</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00730">730</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +297,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>copy selection to clipboard </p>
 <p>implements 'copy' functionality. The current selection will be copied to the clipboard </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00686">686</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00702">702</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +316,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>delete selection, copying to clipboard first </p>
 <p>implements 'cut' functionality </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00688">688</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00704">704</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -331,7 +335,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'delete' char under cursor (delete equivalent), or perform related 'delete' operation via ctrl/alt/shift. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00668">668</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00683">683</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +354,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>delete selection only </p>
 <p>deletes the current selection, but has no effect if there is no selection. To delete a character, see '<a class="el" href="struct____WBChildFrameUI____.html#affc94e2203ee9972dcfdf719f8184ae1" title="&#39;delete&#39; char under cursor (delete equivalent), or perform related &#39;delete&#39; operation via ctrl/alt/sh...">del()</a>' </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00689">689</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00705">705</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +373,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>handler for regular WM_CHAR Client Messages (typed-in characters). </p>
 <p>The XClientMessageEvent will be interpreted and characters added to the associated document or object. This function should NOT be called for 'special' characters, like cursors, backspace, and so on. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00665">665</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00680">680</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +392,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'down' arrow navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00672">672</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00688">688</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +411,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'end' arrow navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00676">676</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00692">692</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +430,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'enter' char, or 'enter' for navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00670">670</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00685">685</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +449,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>get a (const) pointer to the file name string </p>
 <p>Use this function to find out what the currently assigned file name is. The returned pointer is NOT persistent across function calls. If you need a copy, use SBCopyString() or similar </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00694">694</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00710">710</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +468,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Obtain the current row/column cursor locationfor UI notification. </p>
 <p>'piR' points to an integer to get the row, and 'piC' points to an integer to get the column. Both are 1-based values, so a value &lt;\= 0 is considered 'error' or 'NA' </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00710">710</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00726">726</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -483,7 +487,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>returns non-zero value if there is a selection </p>
 <p>Since this affects specific UI behavior, you should use this to control enabling of the 'copy' and 'cut' menus, as an example </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00711">711</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00727">727</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +506,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'help' context (F1). </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00681">681</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00697">697</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +525,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'home' arrow navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00675">675</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00691">691</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +544,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse hover' cancel notification </p>
 <p>This will cancel any 'hover' action </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00683">683</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00699">699</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -559,7 +563,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse hover' notification </p>
 <p>x and y are pixel coords with respect to upper left corner </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00682">682</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00698">698</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +582,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>returns non-zero value if contents are 'empty' </p>
 <p>If the contents are such that a selection cannot be made, this function will return a non-zero value </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00716">716</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00732">732</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +601,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Use this to determine whether you are in 'insert' or 'overwrite' mode. </p>
 <p>returns non-zero if in 'insert' mode, 0 for 'overwrite' </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00684">684</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00700">700</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +620,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'left' arrow navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00673">673</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00689">689</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +639,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse cancel' notification (cancel 'drag', etc.). </p>
 <p>This is a notification only (any mouse capture must already have been handled). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7" title="pointer click/double-click/drag notifications generated by API ">aWM_POINTER</a> , <a class="el" href="group__events.html#ga1f2b00666adc4ae2587894bcd3ae8d7f" title="low-level event processing, internal handling of Expose events ">WBMouseCancel()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00709">709</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00725">725</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +658,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse click' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00696">696</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00712">712</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -673,7 +677,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse double click' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00698">698</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00714">714</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +696,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse drag' (begin) notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00700">700</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00716">716</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +715,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse drop' (drag end) notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00702">702</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00718">718</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +734,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse motion' notification. </p>
 <p>part of the mouse UI handling. 'iX' and 'iY' are copied from the aWM_POINTER Client Message event. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00704">704</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00720">720</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +753,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse scroll down' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00707">707</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00723">723</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -768,7 +772,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'mouse scroll up' notification. </p>
 <p>part of the mouse UI handling. 'iX', 'iY', 'iButtonMask', and 'iACS' are copied from the aWM_POINTER Client Message event. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00705">705</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00721">721</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +791,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>paste from clipboard </p>
 <p>implements 'paste' functionality. The current clipboard contents will be pasted, either at the cursor location, or replacing the current selection </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00687">687</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00703">703</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +810,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'page down' navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00678">678</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00694">694</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +829,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'page left' navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00679">679</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00695">695</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +848,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'page right' navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00680">680</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00696">696</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +867,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'page up' navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00677">677</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00693">693</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -882,7 +886,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>perform a re-do </p>
 <p>Use '<a class="el" href="struct____WBChildFrameUI____.html#a81b9268570ee3052f23b80373b2fa78a" title="returns non-zero value if &#39;can redo&#39; ">can_redo()</a>' to determine whether a re-do is possible </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00713">713</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00729">729</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -901,7 +905,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'right' arrow navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00674">674</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00690">690</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -920,7 +924,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>save to specified file name </p>
 <p>A value of 'NULL' will keep same file name. If the file name is also NULL (or blank), nothing will be saved. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00692">692</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00708">708</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +943,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>handler for 'other scan code' WM_CHAR Client Messages. </p>
 <p>For those characters NOT already processed as actual characters or 'special' characters, call this function. The XClientMessageEvent will be interpreted, and characters may be added to the associated document or object. In some cases, there may be additional actions performed. This function should rarely be needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00666">666</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00681">681</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -958,7 +962,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>select all </p>
 <p>implements the 'select all' functionality </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00690">690</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00706">706</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -977,7 +981,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>select none </p>
 <p>implements the 'select none' functionality </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00691">691</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00707">707</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -996,7 +1000,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'tab' char, or tab navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00669">669</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00684">684</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1019,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>toggles insert mode on or off </p>
 <p>You can determine the current insert/overwrite state by calling <a class="el" href="struct____WBChildFrameUI____.html#af8b59b8e84e49249e95108f5e1139a99" title="Use this to determine whether you are in &#39;insert&#39; or &#39;overwrite&#39; mode. ">is_ins_mode()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00685">685</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00701">701</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1038,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>perform an undo operation </p>
 <p>Use '<a class="el" href="struct____WBChildFrameUI____.html#af6597893108c51d42683d7699ec8f639" title="returns non-zero value if &#39;can undo&#39; ">can_undo()</a>' to determine whether an undo is possible </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00712">712</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00728">728</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1053,7 +1057,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>'up' arrow navigation. </p>
 <p>'iACS' is the Alt/Ctrl/Shift flags. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7" title="keystroke/character notifications generated by API ">aWM_CHAR</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00671">671</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00687">687</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1070,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WBChildFrameUI____.html">__WBChildFrameUI__</a></li>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:07 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

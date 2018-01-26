@@ -73,6 +73,7 @@ $(document).ready(function(){initNavTree('platform__helper_8h.html','');});
 <p>Definition file for platform-specific utility functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;X11/Xlib.h&gt;</code><br />
 <code>#include &lt;X11/Xutil.h&gt;</code><br />
 <code>#include &lt;X11/Xmd.h&gt;</code><br />
@@ -138,6 +139,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga71d10c657cde4801e8f2214f0d2c85d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5703d8802f856a5daf543e0c35caa48f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga5703d8802f856a5daf543e0c35caa48f">WB_LIKELY</a>(x)&#160;&#160;&#160;(__builtin_expect (!!(x), 1))</td></tr>
 <tr class="separator:ga5703d8802f856a5daf543e0c35caa48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46643c5e1b93235a48a6acf67664ecb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga46643c5e1b93235a48a6acf67664ecb3">WB_UNUSED</a>&#160;&#160;&#160;__attribute__((unused))</td></tr>
+<tr class="separator:ga46643c5e1b93235a48a6acf67664ecb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8bad3985812a598774350fb2a70839e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga8bad3985812a598774350fb2a70839e3">WB_INTERNAL_ATOM_MIN_VAL</a>&#160;&#160;&#160;0x3f000000L</td></tr>
 <tr class="memdesc:ga8bad3985812a598774350fb2a70839e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum 'internal' Atom value used by the toolkit.  <a href="group__platform.html#ga8bad3985812a598774350fb2a70839e3">More...</a><br /></td></tr>
 <tr class="separator:ga8bad3985812a598774350fb2a70839e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +213,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_startup_ge
 <tr class="memitem:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">GetStartupAppName</a> (void)</td></tr>
 <tr class="memdesc:ga412c75eb0f657d771d6aa386b4d178ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to a copy of the application name from argv[0]  <a href="group__startup.html#ga412c75eb0f657d771d6aa386b4d178ca">More...</a><br /></td></tr>
 <tr class="separator:ga412c75eb0f657d771d6aa386b4d178ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc42f83070453daa04ccf39dc842d93b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a">WB_UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#gadc42f83070453daa04ccf39dc842d93b">WBGetTimeIndex</a> (void)</td></tr>
+<tr class="memdesc:gadc42f83070453daa04ccf39dc842d93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current 'time index' (in microseconds)  <a href="group__platform.html#gadc42f83070453daa04ccf39dc842d93b">More...</a><br /></td></tr>
+<tr class="separator:gadc42f83070453daa04ccf39dc842d93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94004281108be87acc4fb37deef0a104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga94004281108be87acc4fb37deef0a104">WBDelay</a> (uint32_t uiDelay)</td></tr>
+<tr class="memdesc:ga94004281108be87acc4fb37deef0a104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay for a specified period in microseconds.  <a href="group__platform.html#ga94004281108be87acc4fb37deef0a104">More...</a><br /></td></tr>
+<tr class="separator:ga94004281108be87acc4fb37deef0a104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">WBAlloc</a> (int nSize)</td></tr>
 <tr class="memdesc:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">High performance memory sub-allocator 'allocate'.  <a href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">More...</a><br /></td></tr>
 <tr class="separator:ga8ee962cea8e2f0cb52d1cab9057ffe6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,7 +421,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="platform__helper_8h.html">platform_helper.h</a></li>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:17 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:05 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

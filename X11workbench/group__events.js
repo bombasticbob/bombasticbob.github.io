@@ -1,5 +1,7 @@
 var group__events =
 [
+    [ "Keyboard Event Handling", "group__keyboard.html", "group__keyboard" ],
+    [ "Mouse Pointer Event Handling", "group__pointer.html", "group__pointer" ],
     [ "WBAppEvent", "group__events.html#ga2648b749bede99874e9ed979ce861f44", null ],
     [ "WBWinEvent", "group__events.html#ga873795f7442d970037a691cd4e51792c", null ],
     [ "WBAppDispatch", "group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5", null ],

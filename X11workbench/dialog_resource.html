@@ -122,6 +122,7 @@ $(document).ready(function(){initNavTree('dialog_resource.html','');});
 <p>FONT: The desired font face name and/or size. When specified for a dialog box, it alters the base dialog units accordingly, and applies for all controls that do not specify a font. Otherwise, it only applies to a single control.</p>
 <p>TITLE: The 'title' string associated with a dialog box or control. The title for a control is normally stored as the 'CAPTION' property value. The value is required and must be a string, though quotes are only required when embedded white space is present.</p>
 <p>VISIBLE: This property has no value, and its presence carries with it an implied value of TRUE for 'visibility'.</p>
+<p>VALIGN_TEXT_*, HALIGN_TEXT_*: These properties define the text alignment for certain controls.</p>
 <p>DIALOG RESOURCE SUMMARY<br />
  RESERVED: symbol name registration for dialog controls<br />
  The current list of pre-defined symbols is as follows:<br />
@@ -148,16 +149,22 @@ $(document).ready(function(){initNavTree('dialog_resource.html','');});
 <li>WIDTH - specifies the width of the object (dialog or control) in dialog units </li>
 <li>HEIGHT - specifies the height of the object (dialog or conrol) in dialog units </li>
 <li>VISIBLE - indicates that the object is initially visible </li>
-<li>TITLE - specifies the title of the object</li>
+<li>TITLE - specifies the title (or caption) of the object </li>
+<li>HALIGN_TEXT_LEFT - align text left in title/caption (default) </li>
+<li>HALIGN_TEXT_RIGHT - align text right in title/caption </li>
+<li>HALIGN_TEXT_CENTER - align text horizontally centered in title/caption </li>
+<li>VALIGN_TEXT_TOP - top align text in title/caption </li>
+<li>VALIGN_TEXT_BOTTOM - bottom align text in title/caption </li>
+<li>VALIGN_TEXT_CENTER - vertically center text in title/caption (default)</li>
 </ul>
 <p>Other text keywords and identifiers are reserved.<br />
- Internally defined controls - see also</p>
+ Internally defined controls - see also <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define FRAME_CONTROL_STR            &quot;Frame&quot;</span></div><div class="line"><span class="preprocessor">#define TEXT_CONTROL_STR             &quot;Text&quot;</span></div><div class="line"><span class="preprocessor">#define ICON_CONTROL_STR             &quot;Icon&quot;</span></div><div class="line"><span class="preprocessor">#define IMAGE_CONTROL_STR            &quot;Image&quot;</span></div><div class="line"><span class="preprocessor">#define EDIT_CONTROL_STR             &quot;Edit&quot;</span></div><div class="line"><span class="preprocessor">#define PUSHBUTTON_CONTROL_STR       &quot;PushButton&quot;</span></div><div class="line"><span class="preprocessor">#define DEFPUSHBUTTON_CONTROL_STR    &quot;DefPushButton&quot;</span></div><div class="line"><span class="preprocessor">#define CANCELBUTTON_CONTROL_STR     &quot;CancelButton&quot;</span></div><div class="line"><span class="preprocessor">#define RADIOBUTTON_CONTROL_STR      &quot;RadioButton&quot;</span></div><div class="line"><span class="preprocessor">#define FIRSTRADIOBUTTON_CONTROL_STR &quot;FirstRadioButton&quot;</span></div><div class="line"><span class="preprocessor">#define CHECKBUTTON_CONTROL_STR      &quot;CheckButton&quot;</span></div><div class="line"><span class="preprocessor">#define TRISTATEBUTTON_CONTROL_STR   &quot;TriStateButton&quot;</span></div><div class="line"><span class="preprocessor">#define HSCROLL_CONTROL_STR          &quot;HScroll&quot;</span></div><div class="line"><span class="preprocessor">#define VSCROLL_CONTROL_STR          &quot;VScroll&quot;</span></div><div class="line"><span class="preprocessor">#define SLIDER_CONTROL_STR           &quot;Slider&quot;</span></div><div class="line"><span class="preprocessor">#define KNOB_CONTROL_STR             &quot;Knob&quot;</span></div><div class="line"><span class="preprocessor">#define LIST_CONTROL_STR             &quot;List&quot;</span></div><div class="line"><span class="preprocessor">#define COMBO_CONTROL_STR            &quot;Combo&quot;</span></div><div class="line"><span class="preprocessor">#define TREE_CONTROL_STR             &quot;Tree&quot;</span></div><div class="line"><span class="preprocessor">#define COMBOTREE_CONTROL_STR        &quot;ComboTree&quot;</span></div><div class="line"><span class="preprocessor">#define FILE_LIST_CONTROL_STR        &quot;FileList&quot;</span></div><div class="line"><span class="preprocessor">#define FILE_COMBO_CONTROL_STR       &quot;FileCombo&quot;</span></div><div class="line"><span class="preprocessor">#define PATH_TREE_CONTROL_STR        &quot;PathTree&quot;</span></div><div class="line"><span class="preprocessor">#define TAB_CONTROL_STR              &quot;Tab&quot;</span></div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:17 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

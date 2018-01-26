@@ -204,6 +204,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5e3b42b51a7c7cb4c5d4d7ee8cbd9ea9"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga5e3b42b51a7c7cb4c5d4d7ee8cbd9ea9">WBDialogControlGetIconPixmap</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, Pixmap *pPixmap2)</td></tr>
 <tr class="memdesc:ga5e3b42b51a7c7cb4c5d4d7ee8cbd9ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the assigned ICON (image) property for a control, which consists of 2 pixmaps.  <a href="#ga5e3b42b51a7c7cb4c5d4d7ee8cbd9ea9">More...</a><br /></td></tr>
 <tr class="separator:ga5e3b42b51a7c7cb4c5d4d7ee8cbd9ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae63cfdf9f99506cc849eca92f442ec3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gae63cfdf9f99506cc849eca92f442ec3d">WBDialogControlSetCheck</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iCheck)</td></tr>
+<tr class="memdesc:gae63cfdf9f99506cc849eca92f442ec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the TEXT property for a control, which is different from the CAPTION or Title.  <a href="#gae63cfdf9f99506cc849eca92f442ec3d">More...</a><br /></td></tr>
+<tr class="separator:gae63cfdf9f99506cc849eca92f442ec3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac55ae05f38d893f77afe5dfbd71bad6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gac55ae05f38d893f77afe5dfbd71bad6c">WBDialogControlGetCheck</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl)</td></tr>
+<tr class="memdesc:gac55ae05f38d893f77afe5dfbd71bad6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the 'CHECKED' property from a dialog control. Returns '0' (un-checked) if not applicable.  <a href="#gac55ae05f38d893f77afe5dfbd71bad6c">More...</a><br /></td></tr>
+<tr class="separator:gac55ae05f38d893f77afe5dfbd71bad6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37431f25e5020e3c576ebd50e8e8b418"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga37431f25e5020e3c576ebd50e8e8b418">WBDialogControlSetText</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, const char *szText)</td></tr>
 <tr class="memdesc:ga37431f25e5020e3c576ebd50e8e8b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the TEXT property for a control, which is different from the CAPTION or Title.  <a href="#ga37431f25e5020e3c576ebd50e8e8b418">More...</a><br /></td></tr>
 <tr class="separator:ga37431f25e5020e3c576ebd50e8e8b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,18 +240,24 @@ Functions</h2></td></tr>
 <tr class="memitem:gafee2e3046aee420104741e48706675aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gafee2e3046aee420104741e48706675aa">DLGCDestroyProperties</a> (<a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a> *pPropList)</td></tr>
 <tr class="memdesc:gafee2e3046aee420104741e48706675aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy Properties for a dialog control.  <a href="#gafee2e3046aee420104741e48706675aa">More...</a><br /></td></tr>
 <tr class="separator:gafee2e3046aee420104741e48706675aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa8ff4b741c435267db5a40997d207648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389">LISTINFO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gaa8ff4b741c435267db5a40997d207648">DLGCListInfoConstructor</a> (Window wOwner, int nMax, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int(*pfnSort)(const void *, const void *))</td></tr>
+<tr class="memitem:gaa8ff4b741c435267db5a40997d207648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389">LISTINFO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gaa8ff4b741c435267db5a40997d207648">DLGCListInfoConstructor</a> (Window wOwner, int nMax, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int(*pfnSort)(const void *, const void *))</td></tr>
 <tr class="memdesc:gaa8ff4b741c435267db5a40997d207648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create LISTINFO structure for a list type control.  <a href="#gaa8ff4b741c435267db5a40997d207648">More...</a><br /></td></tr>
 <tr class="separator:gaa8ff4b741c435267db5a40997d207648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae25ada5d37c28a484c29b8ef184f3d1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gae25ada5d37c28a484c29b8ef184f3d1e">DLGCListInfoDestructor</a> (<a class="el" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389">LISTINFO</a> *pListInfo)</td></tr>
 <tr class="memdesc:gae25ada5d37c28a484c29b8ef184f3d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a LISTINFO structure.  <a href="#gae25ada5d37c28a484c29b8ef184f3d1e">More...</a><br /></td></tr>
 <tr class="separator:gae25ada5d37c28a484c29b8ef184f3d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga276b1065e6b38d484fd51d4c002f08fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga276b1065e6b38d484fd51d4c002f08fc">DLGCDefaultListControlDisplayProc</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pList, void *pData, int iSelected, GC gc, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom, XFontSet fontSet)</td></tr>
+<tr class="memitem:ga276b1065e6b38d484fd51d4c002f08fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga276b1065e6b38d484fd51d4c002f08fc">DLGCDefaultListControlDisplayProc</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pList, void *pData, int iSelected, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom, XFontSet fontSet)</td></tr>
 <tr class="memdesc:ga276b1065e6b38d484fd51d4c002f08fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 'display proc' for displaying a list item from a LISTINFO structure.  <a href="#ga276b1065e6b38d484fd51d4c002f08fc">More...</a><br /></td></tr>
 <tr class="separator:ga276b1065e6b38d484fd51d4c002f08fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga0c63d7ac4d22053cc663a933438ffc51"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga0c63d7ac4d22053cc663a933438ffc51">aDLGC_CONTROL_SET</a></td></tr>
+<tr class="memdesc:ga0c63d7ac4d22053cc663a933438ffc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">CONTROL_SET ClientMessage - use this to set specific supported control properties by sending it to the control's window callback.  <a href="#ga0c63d7ac4d22053cc663a933438ffc51">More...</a><br /></td></tr>
+<tr class="separator:ga0c63d7ac4d22053cc663a933438ffc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cf0a3f7273bfbd57d8910ae5b71f5f1"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga2cf0a3f7273bfbd57d8910ae5b71f5f1">aDLGC_CONTROL_GET</a></td></tr>
+<tr class="memdesc:ga2cf0a3f7273bfbd57d8910ae5b71f5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CONTROL_GET ClientMessage - use this to get specific supported control properties by sending it to the control's window callback.  <a href="#ga2cf0a3f7273bfbd57d8910ae5b71f5f1">More...</a><br /></td></tr>
+<tr class="separator:ga2cf0a3f7273bfbd57d8910ae5b71f5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2a3ccabb1f0e2ad5875ab951962f5fd0"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga2a3ccabb1f0e2ad5875ab951962f5fd0">aDLGC_TEXT</a></td></tr>
 <tr class="memdesc:ga2a3ccabb1f0e2ad5875ab951962f5fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">dialog control TEXT property - see <a class="el" href="group__dlgctrl.html#ga7d186da0ec8507e5fa5ca11e64502ed7" title="Obtain the assigned TEXT property for a control, which is different from the CAPTION or Title...">WBDialogControlGetText()</a>  <a href="#ga2a3ccabb1f0e2ad5875ab951962f5fd0">More...</a><br /></td></tr>
 <tr class="separator:ga2a3ccabb1f0e2ad5875ab951962f5fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,6 +277,10 @@ Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:gab07b215679f0b6114b15d159dc41f8ee"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gab07b215679f0b6114b15d159dc41f8ee">aDLGC_PATH</a></td></tr>
 <tr class="memdesc:gab07b215679f0b6114b15d159dc41f8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">dialog control PATH property, for file and directory controls  <a href="#gab07b215679f0b6114b15d159dc41f8ee">More...</a><br /></td></tr>
 <tr class="separator:gab07b215679f0b6114b15d159dc41f8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf65d5519495883990e716ff30ba563ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gaf65d5519495883990e716ff30ba563ec">ControlGetSetProperties</a> { <a class="el" href="group__dlgctrl.html#ggaf65d5519495883990e716ff30ba563eca133733ed10d22396a50b3b9afd395184">ControlGetSet_CHECKED</a> = 1
+ }<tr class="memdesc:gaf65d5519495883990e716ff30ba563ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control 'Get/Set' properties used by aDLGC_CONTROL_SET and aDLGC_CONTROL_GET.  <a href="group__dlgctrl.html#gaf65d5519495883990e716ff30ba563ec">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gaf65d5519495883990e716ff30ba563ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa66d958dbfe799dbf9fd51f20a3a8c72"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gaa66d958dbfe799dbf9fd51f20a3a8c72">CONTROL_FLAGS</a> { <br />
 &#160;&#160;<a class="el" href="group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a0f55921451cf61fe173a11903780a75d">CONTROL_Reserved00</a> = 0x00000001, 
 <a class="el" href="group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a0a05828dcc7ad20fa9649b4406eb2c00">CONTROL_Reserved01</a> = 0x00000002, 
@@ -522,10 +538,10 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <tr class="memitem:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga9c22b88b8abffc7bb60b4fbe4edea96e">DLGGetControlListData</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
 <tr class="memdesc:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the data pointer for a single list entry (listbox, combo, and tree controls only)  <a href="#ga9c22b88b8abffc7bb60b4fbe4edea96e">More...</a><br /></td></tr>
 <tr class="separator:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int(*pfnSort)(const void *, const void *))</td></tr>
+<tr class="memitem:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int(*pfnSort)(const void *, const void *))</td></tr>
 <tr class="memdesc:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the 'List Entry' for a control, specifying various callbacks and flags.  <a href="#ga6e2908aa1ad9b30f392d8585f10e893b">More...</a><br /></td></tr>
 <tr class="separator:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga25cfa4ea854ca13b4553d7e043c8cc86">DLGModifyControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int bFlags, int nFlags, int bAllocator, void *(*pfnAllocator)(const void *, int), int bDestructor, void(*pfnDestructor)(void *), int bDisplay, void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int bSort, int(*pfnSort)(const void *, const void *))</td></tr>
+<tr class="memitem:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga25cfa4ea854ca13b4553d7e043c8cc86">DLGModifyControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int bFlags, int nFlags, int bAllocator, void *(*pfnAllocator)(const void *, int), int bDestructor, void(*pfnDestructor)(void *), int bDisplay, void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int bSort, int(*pfnSort)(const void *, const void *))</td></tr>
 <tr class="memdesc:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the 'List Entry' for a control, specifying various callbacks and flags.  <a href="#ga25cfa4ea854ca13b4553d7e043c8cc86">More...</a><br /></td></tr>
 <tr class="separator:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91c094a37f470da65a045d316eb117b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga91c094a37f470da65a045d316eb117b3">DLGAddControlListEntry</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, const char *pData, long cbData, int iIndex)</td></tr>
@@ -643,7 +659,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Cancel Push Button Control - <a class="el" href="group__dlgctrl.html#gad61d91b063ee898bc4604bfae718ee6f">aCANCELBUTTON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00798">798</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00856">856</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -660,7 +676,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Checkbox Button Control - <a class="el" href="group__dlgctrl.html#ga64820398794760b87a79b476f376a44f">aCHECKBUTTON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00804">804</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00862">862</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -677,7 +693,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Combo Box Control - <a class="el" href="group__dlgctrl.html#ga543b38a2f84c071b422c8a2369836fe1">aCOMBO_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00818">818</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00876">876</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -694,7 +710,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Combo Tree Control - <a class="el" href="group__dlgctrl.html#ga1fdfa31d397b559dc5248d603c20536b">aCOMBOTREE_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00822">822</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00880">880</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +727,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Default Push Button Control - <a class="el" href="group__dlgctrl.html#gaf04c4a26dc05b3580612d3dff059e45d">aDEFPUSHBUTTON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00796">796</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00854">854</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -734,7 +750,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>wrapper macro for <a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> for standard WBAlloc'd text data </p>
 <p>This macro creates a standard WBAlloc'd text data list entry using <a class="el" href="group__dlgctrl.html#gad37ea0f014795844f165efbcd5dd8df3" title="The default &#39;List Info&#39; data allocator for a control&#39;s list info. ">DLGCDefaultListInfoAllocator()</a> and WBFree, for sorted text data with standard display and sort comparison functions NOTE: using DLGInitControlListInfoDefault implies string data that's WBAlloc'd. For some other scheme of maintaining and copying data pointers for a listbox, substitute your own function pointers as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01136">1136</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01205">1205</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +767,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Edit (Text) Control - <a class="el" href="group__dlgctrl.html#ga207f34f0a919d42aa5c5b29c7b04c62d">aEDIT_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00792">792</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00850">850</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -768,7 +784,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>File Combo Control - <a class="el" href="group__dlgctrl.html#gac0203d71fd0e6653e0721c03151c3e95">aFILE_COMBO_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00826">826</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00884">884</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -785,7 +801,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>File List Control - <a class="el" href="group__dlgctrl.html#ga5084a0e424a59296fc80ca3ed65a8f09">aFILE_LIST_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00824">824</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00882">882</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +818,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>First Radio Button Control - <a class="el" href="group__dlgctrl.html#ga5de9ae8f336e5ce4bf827c87e9cc1f7c">aFIRSTRADIOBUTTON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00802">802</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00860">860</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -819,7 +835,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Static Frame Control - <a class="el" href="group__dlgctrl.html#ga39213c27d56786b7bf6ae74c63181a75">aFRAME_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00784">784</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00842">842</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +852,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Horizontal Scroll Bar Control - <a class="el" href="group__dlgctrl.html#gad1da6e121d34dae082fbce652ec6fec6">aHSCROLL_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00808">808</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00866">866</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +869,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Static Icon Control - <a class="el" href="group__dlgctrl.html#ga7fa98e9fd1f0cd6ab88a1f1f13cdb126">aICON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00788">788</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00846">846</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +886,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'ABORT' button </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00773">773</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00831">831</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -887,7 +903,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'CANCEL' button </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00776">776</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00834">834</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -904,7 +920,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'IGNORE' button </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00775">775</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00833">833</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -921,7 +937,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'NO' button </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00771">771</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00829">829</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +954,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'no ID' - this may be repeated as needed for things that need no ID </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00778">778</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00836">836</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -955,7 +971,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'OK' button </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00770">770</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00828">828</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -972,7 +988,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'RETRY' button </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00774">774</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00832">832</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1005,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>non-unique 'static' item; may exist more than once within a dialog resource </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00777">777</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00835">835</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1022,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'YES' button </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00772">772</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00830">830</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1039,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Static Image Control - <a class="el" href="group__dlgctrl.html#gab258695c6ef0bee89b07da088c94581d">aIMAGE_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00790">790</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00848">848</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1056,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'Volume' Knob Control - <a class="el" href="group__dlgctrl.html#ga4dec9020ce48d47e49062e5dee27a484">aKNOB_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00814">814</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00872">872</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1073,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>List Box Control - <a class="el" href="group__dlgctrl.html#ga16d4ca7aa5738f71f68c55481b002799">aLIST_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00816">816</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00874">874</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1090,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Path Tree Control - <a class="el" href="group__dlgctrl.html#gaf58b3a30b325ec001be9d7c10c2ada00">aPATH_TREE_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00828">828</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00886">886</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1107,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Push Button Control - <a class="el" href="group__dlgctrl.html#gaaf636999565434cec26a050c8e221bf4">aPUSHBUTTON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00794">794</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00852">852</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1124,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Radio Button Control - <a class="el" href="group__dlgctrl.html#ga7c988e0539a86849aee81c57744b482a">aRADIOBUTTON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00800">800</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00858">858</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1141,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Sliding Bar Control - <a class="el" href="group__dlgctrl.html#gae9b0bf2fc7e3e7242573998d1dcfb286">aSLIDER_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00812">812</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00870">870</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1158,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Tab Control - <a class="el" href="group__dlgctrl.html#ga40e0efa5597fead1e8582b85d015e4fb">aTAB_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00830">830</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00888">888</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1175,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Static Text Control - <a class="el" href="group__dlgctrl.html#ga6da00c31614f0d04ef418701181c5466">aTEXT_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00786">786</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00844">844</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1192,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Tree Control - <a class="el" href="group__dlgctrl.html#ga9fc27d8a72333f4fbfbe812b2d05f217">aTREE_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00820">820</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00878">878</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1209,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Tri-State Button Control - <a class="el" href="group__dlgctrl.html#gae4921e970dec96490f7bc272db94bfa2">aTRISTATEBUTTON_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00806">806</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00864">864</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1226,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>Vertical Scroll Bar Control - <a class="el" href="group__dlgctrl.html#ga72b1f39553e56a7f1d3ac93c239c55f8">aVSCROLL_CONTROL</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00810">810</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00868">868</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1243,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>double click by default drives an 'End Dialog' with IDOK </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00947">947</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01005">1005</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1260,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>'default' notification value (no action needed) </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00943">943</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01001">1001</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1277,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>simple notification that the selection has changed </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00945">945</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01003">1003</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1278,7 +1294,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><div class="memdoc">
 <p>minimum value for standard dialog control ID </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00769">769</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00827">827</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1573,7 +1589,29 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01003">1003</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01072">1072</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+
+</div>
+</div>
+<a id="gaf65d5519495883990e716ff30ba563ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf65d5519495883990e716ff30ba563ec">&#9670;&nbsp;</a></span>ControlGetSetProperties</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__dlgctrl.html#gaf65d5519495883990e716ff30ba563ec">ControlGetSetProperties</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control 'Get/Set' properties used by aDLGC_CONTROL_SET and aDLGC_CONTROL_GET. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf65d5519495883990e716ff30ba563eca133733ed10d22396a50b3b9afd395184"></a>ControlGetSet_CHECKED&#160;</td><td class="fielddoc"><p>'checked' flag. when 'setting', -1 'toggles', 1 sets it, 0 clears it. when 'getting', zero is 'unchecked', non-zero 'checked' </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01055">1055</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1644,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00964">964</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01022">1022</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1642,7 +1680,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00978">978</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01036">1036</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -1700,7 +1738,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>Although there are some specific nuances associated with the use of this function (such as 'string copy') the 'pData' and 'cbData' parameters are passed along without modification to the allocator function. Whenever DefaultListInfoAllocator() is used, a cbData value less than zero indicates that pData points to a null-byte terminated string, and whenever cbData is equal to zero, the pointer value of 'pData' is assigned to the internal list entry 'as-is'.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01363">1363</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01446">1446</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -1737,7 +1775,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
           <td class="paramname"><em>pGeom</em>, </td>
         </tr>
         <tr>
@@ -1770,7 +1808,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>Pass this function's address as 'pfnDisplay' when calling DLGCListInfoConstructor to get a default display handler for your listbox items.</p>
 <p>Header File: <a class="el" href="dialog__support_8h_source.html">dialog_support.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01698">1698</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01781">1781</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -1803,7 +1841,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>The default 'List Info' data allocator for a control's list info. </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01046">1046</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01129">1129</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1872,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>Call this function to destroy the property list for a dialog control</p>
 <p>Header File: <a class="el" href="dialog__support_8h_source.html">dialog_support.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00983">983</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01066">1066</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -1877,7 +1915,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
           <td class="paramname"><em>pfnDisplay</em>, </td>
         </tr>
         <tr>
@@ -1912,7 +1950,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389" title="Structure containing data for list-related dialog controls. ">LISTINFO</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__support_8h_source.html">dialog_support.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01198">1198</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01281">1281</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -1943,7 +1981,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>Call this function to destroy the LISTINFO structure created by <a class="el" href="group__dlgctrl.html#gaa8ff4b741c435267db5a40997d207648" title="Create LISTINFO structure for a list type control. ">DLGCListInfoConstructor()</a></p>
 <p>Header File: <a class="el" href="dialog__support_8h_source.html">dialog_support.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01237">1237</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01320">1320</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -1984,7 +2022,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>Use this function to remove one or all entries from the control's list info</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01534">1534</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01617">1617</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2033,7 +2071,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>Often it is desirable to query control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the final query. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to query for the caption.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00604">604</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00662">662</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2066,7 +2104,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>Retrieve the data pointer for a single list entry (listbox, combo, and tree controls only) </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01323">1323</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01406">1406</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2097,7 +2135,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>In a single-selection list, or in a list where multiple selection operations are being performed, there is one item that has a 'selected' state. This function returns the index for that item.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01617">1617</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01700">1700</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2147,7 +2185,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
  </p><div class="fragment"><div class="line">piBits[(iIndex &gt;&gt; 32)] &amp; (1 &lt;&lt; (iIndex &amp; 31)) ? TRUE : FALSE</div></div><!-- fragment --><p>where 'iIndex' represents the index of the bit you wish to query.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01673">1673</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01756">1756</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2173,7 +2211,7 @@ The return value is NULL if there are no selections or on error.<br />
 For non-NULL return values, the caller must use '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' to destroy the allocated buffer.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01678">1678</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01761">1761</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2206,7 +2244,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Retrieve the text poiner for a single list entry (listbox, combo, and tree controls only) </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01293">1293</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01376">1376</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2264,7 +2302,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#ga9f287b3ff99758d680f27e212cdf1202">WBDialogControlGetProperty()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00745">745</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00803">803</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2313,7 +2351,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Often it is desirable to query control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the final query. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to query for the caption.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00669">669</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00727">727</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2352,7 +2390,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>This is the preferred function for obtaining a pointer to the WBDialogControl structure for a dialog control window</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00401">401</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00424">424</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2402,7 +2440,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>This is the preferred function for obtaining a pointer to the WBDialogControl structure for a dialog control window using the control ID and owning dialog window</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00542">542</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00600">600</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2439,7 +2477,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
           <td class="paramname"><em>pfnDisplay</em>, </td>
         </tr>
         <tr>
@@ -2472,7 +2510,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>This is a generic method by which a control's list entry can be initialized. If the control's list consists entirely of text data, you can simplify the process by using <a class="el" href="group__dlgctrl.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01084">1084</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01167">1167</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2533,7 +2571,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
           <td class="paramname"><em>pfnDisplay</em>, </td>
         </tr>
         <tr>
@@ -2577,7 +2615,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>This is a generic method by which the parameters of a control's list entry can be modified. If the entry does not already exist, a new entry will be initialized with 'default' parameters assigned using the same values you would get with <a class="el" href="group__dlgctrl.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01119">1119</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01202">1202</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -2650,7 +2688,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#ga25c0a7ad6eb9e0086dd305aca25f4599" title="Notify Owner by posting an event that will ASYNCHRONOUSLY be sent to the owner window&#39;s callback func...">DLGNotifyOwnerAsync()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01317">1317</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01386">1386</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2723,7 +2761,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#ga438add5cbf864bf61dd081d80e47b7e5" title="Notify Owner by calling the owner window&#39;s callback function directly with an event. ">DLGNotifyOwner()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01407">1407</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01476">1476</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2797,7 +2835,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#gade2a325900bc7c4446891fc5b20cdf55" title="Notify &#39;self&#39; by posting an event that will ASYNCHRONOUSLY be sent to the window&#39;s callback function...">DLGNotifySelfAsync()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01371">1371</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01440">1440</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2871,7 +2909,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#ga5f11771a07c69bfe4c13e353f387214c" title="Notify &#39;self&#39; by calling the window&#39;s own callback function directly with an event. ">DLGNotifySelf()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01451">1451</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01520">1520</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -2969,7 +3007,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
  Scroll events are send via a ClientMessage using <a class="el" href="group__xatoms.html#gabcf163874e105067053fa2b3e7e659e4">aSCROLL_NOTIFY</a> .</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01788">1788</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01871">1871</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3025,7 +3063,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Often it is desirable to assign control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the assignment. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to assign the caption.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00573">573</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00631">631</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -3066,7 +3104,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>In a single-selection list, or in a list where multiple selection operations are being performed, there is one item that has a 'selected' state. This function assigns the index for that item.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01630">1630</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01713">1713</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3114,7 +3152,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>In a multi-selection list, each item has a specified 'selection state' that identifies whether or not the item is selected. This function assigns that value for a single item.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01669">1669</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01752">1752</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3178,7 +3216,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#gaf5841f51955c21f7348fd192b6dc598b">WBDialogControlSetProperty()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00708">708</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00766">766</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -3234,7 +3272,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Often it is desirable to assign control properties using the WBDialogWindow structure for the dialog (frame) window and the control's ID, rather than writing several lines of code to query for the correct information, test for validity, etc. and THEN make the assignment. When the control ID is known, but the Window or WBDialogControl structure pointer is not, use THIS function to assign the caption.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00638">638</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00696">696</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -3359,7 +3397,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Low-level dialog control property removal. </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00889">889</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00972">972</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3383,7 +3421,38 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>The CAPTION property is a standard property for a dialog control. Since it has its own data member in the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure, you should only query it using this function. It is equivalent to the 'Title'.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00511">511</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00548">548</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+
+</div>
+</div>
+<a id="gac55ae05f38d893f77afe5dfbd71bad6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac55ae05f38d893f77afe5dfbd71bad6c">&#9670;&nbsp;</a></span>WBDialogControlGetCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDialogControlGetCheck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramname"><em>pCtrl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the 'CHECKED' property from a dialog control. Returns '0' (un-checked) if not applicable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A value of '1' if the dialog box control is 'checked'; otherwise, zero (unchecked)</dd></dl>
+<p>The CHECKED property is a special case, not represente by the property list. Assigning it carries some specific implications, which are managed by <a class="el" href="group__dlgctrl.html#gae63cfdf9f99506cc849eca92f442ec3d" title="Assign the TEXT property for a control, which is different from the CAPTION or Title. ">WBDialogControlSetCheck()</a>.</p>
+<p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00759">759</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3416,7 +3485,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Low-level dialog control property retrieval. </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00960">960</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01043">1043</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3458,7 +3527,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>The ICON property is a standard property for a dialog control. Since it has its own data member in the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure, you should only maintain it using this function. It is equivalent to the IMAGE or PIXMAP property.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00667">667</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00704">704</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3482,7 +3551,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>The PIXMAP property is a standard property for a dialog control. Since it has its own data member in the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure, you should only query it using this function. It is equivalent to the IMAGE or ICON property.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00583">583</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00620">620</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3513,10 +3582,18 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 </div><div class="memdoc">
 
 <p>Mid-level dialog control property retrieval (character string) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+    <tr><td class="paramname">aPropName</td><td>An atom representing the property name to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A const char pointer to the actual property data. May be NULL.</dd></dl>
 <p>This function returns the actual string pointer stored within the property list, and may be NULL. To modify an existing sring value, you should first make a copy of the string (as needed), then modify the copy and re-assign teh value via <a class="el" href="group__dlgctrl.html#gaf5841f51955c21f7348fd192b6dc598b" title="Mid-level dialog control property assignment (character string) ">WBDialogControlSetProperty()</a>.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00735">735</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00818">818</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3547,10 +3624,19 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 </div><div class="memdoc">
 
 <p>Mid-level dialog control property list retrieval (generic pointer) </p>
-<p>Pointers assigned as a property must have been allocated using '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>'. Any existing pointer already assigned to this property will be automatically destroyed using '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>'. The property itself is considered to be 'owned' by the property list, and will be cleaned up when the control window is destroyed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+    <tr><td class="paramname">aPropName</td><td>An atom representing the property name to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The actual pointer stored for the specified property. May be NULL.</dd></dl>
+<p>Pointers assigned as a property must have been allocated using '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>'. Any existing pointer already assigned to this property will be automatically destroyed using '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>'. The memory block itself is considered to be 'owned' by the property list, and will be cleaned up when the control window is destroyed.</p>
+<p>NOTE: use <a class="el" href="group__dlgctrl.html#ga7f9bbf250f6515cecc1ce6f67d5f7969" title="Mid-level dialog control property list assignment (generic pointer) ">WBDialogControlSetProperty2()</a> to directly assign WBAlloc'd pointer, and modify actual data returned by above Assigning different pointer in <a class="el" href="group__dlgctrl.html#ga73cbcb89ffd7dd9602788c7e11f0ff7f" title="Mid-level dialog control property list retrieval (generic pointer) ">WBDialogControlGetProperty2()</a> 'WBFree's the existing pointer. Destroying property list does the same thing.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00747">747</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00830">830</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3581,7 +3667,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Low-level dialog control property list retrieval. </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00325">325</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00326">326</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -3610,10 +3696,17 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 </div><div class="memdoc">
 
 <p>Obtain the assigned TEXT property for a control, which is different from the CAPTION or Title. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A const char pointer to the text property value. May be NULL</dd></dl>
 <p>The TEXT property is a standard property for a dialog control. To preserve consistency use this function to query it, rather than querying the TEXT property directly.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00515">515</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00573">573</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -3647,7 +3740,48 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>The CAPTION property is a standard property for a dialog control. Since it has its own data member in the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure, you should maintain it using this function. It is equivalent to the 'Title'.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00494">494</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00531">531</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+
+</div>
+</div>
+<a id="gae63cfdf9f99506cc849eca92f442ec3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae63cfdf9f99506cc849eca92f442ec3d">&#9670;&nbsp;</a></span>WBDialogControlSetCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBDialogControlSetCheck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramname"><em>pCtrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCheck</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assign the TEXT property for a control, which is different from the CAPTION or Title. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+    <tr><td class="paramname">iCheck</td><td>An integer containing a positive number to set the 'check' state, zero to clear it, or a negative number to toggle it.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The CHECKED property is a special case, not represente by the property list. Assigning it carries some specific implications, which are managed by this function.</p>
+<p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00736">736</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3680,7 +3814,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Low-level dialog control property assignment. </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00782">782</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00865">865</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3728,7 +3862,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>The ICON property is a standard property for a dialog control. Since it has its own data member in the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure, you should only maintain it using this function. It is equivalent to the IMAGE or PIXMAP property.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00605">605</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00642">642</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3762,7 +3896,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>The PIXMAP property is a standard property for a dialog control. Since it has its own data member in the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure, you should only maintain it using this function. It is equivalent to the IMAGE or ICON property.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00521">521</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00558">558</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3799,10 +3933,18 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 </div><div class="memdoc">
 
 <p>Mid-level dialog control property assignment (character string) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+    <tr><td class="paramname">aPropName</td><td>An atom representing the property name to query </td></tr>
+    <tr><td class="paramname">szPropVal</td><td>A const pointer to a string representing the property value. May be NULL</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Strings are stored internally within the property list as a memory block allocated via '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>'. If an existing pointer is already present when a new string is assigned, it is destroyed via '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>'. The assigned value is then copied into a memory block allocated via '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>' and stored in the property list.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00707">707</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00790">790</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3839,10 +3981,19 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 </div><div class="memdoc">
 
 <p>Mid-level dialog control property list assignment (generic pointer) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+    <tr><td class="paramname">aPropName</td><td>An atom representing the property name to query </td></tr>
+    <tr><td class="paramname">szPropVal</td><td>A WBAlloc'd pointer to binary data to be stored as the property, and owned by the control. May be NULL</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Pointers assigned as a property must have been allocated using '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>' (or NULL). Any existing pointer already assigned to this property will be automatically destroyed using '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>'. The property itself is considered to be 'owned' by the property list, and will be cleaned up when the control window is destroyed.</p>
+<p>NOTE: use WBDialogControlSetProperty2 to directly assign WBAlloc'd pointer, and modify the actual data. You should make sure you do not re-use the same pointer unless you take this into consideration. Assigning different pointer in <a class="el" href="group__dlgctrl.html#ga73cbcb89ffd7dd9602788c7e11f0ff7f" title="Mid-level dialog control property list retrieval (generic pointer) ">WBDialogControlGetProperty2()</a> 'WBFree's the existing pointer. Destroying property list does the same thing.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00724">724</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00807">807</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3875,7 +4026,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Mid-level dialog control property list assignment. </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00700">700</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00783">783</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3914,10 +4065,17 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 </div><div class="memdoc">
 
 <p>Assign the TEXT property for a control, which is different from the CAPTION or Title. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtrl</td><td>A ponter to the WBDialogControl structure for the control </td></tr>
+    <tr><td class="paramname">szText</td><td>A const pointer to a string representing the 'TEXT' property value. May be NULL</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>The TEXT property is a standard property for a dialog control. To preserve consistency use this function to assign it, rather than assigning the TEXT property directly.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00494">494</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00549">549</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -3941,7 +4099,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>This function must be called once before using any of the Dialog Control functions. Normally an explicit call to this won't be necessary since Dialog (frame) Window support code in <a class="el" href="dialog__window_8c.html">dialog_window.c</a> does this automatically.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00431">431</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00465">465</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -3965,7 +4123,7 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aBUTTON_PRESS<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogControl structure<br />
+data.l[2] == the hashed (32-bit) pointer to WBDialogControl structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
 </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00195">195</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -3995,6 +4153,56 @@ format == 32 (always)<br />
 
 </div>
 </div>
+<a id="ga2cf0a3f7273bfbd57d8910ae5b71f5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2cf0a3f7273bfbd57d8910ae5b71f5f1">&#9670;&nbsp;</a></span>aDLGC_CONTROL_GET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aDLGC_CONTROL_GET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CONTROL_GET ClientMessage - use this to get specific supported control properties by sending it to the control's window callback. </p>
+<p>CONTROL_GET message format (relative to XEvent.xclient)<br />
+type == ClientMessage<br />
+message_type == aCONTROL_GET<br />
+format == 32 (always)<br />
+data.l[0] == control property identifier<br />
+ The return value from the message will be the desired property, either as an Atom or as a 32-bit integer. A value of '0' or 'None' may be returned if this property is not supported; control properties should be carefully set up to allow for this.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#gaf65d5519495883990e716ff30ba563ec" title="Control &#39;Get/Set&#39; properties used by aDLGC_CONTROL_SET and aDLGC_CONTROL_GET. ">ControlGetSetProperties</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00411">411</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+
+</div>
+</div>
+<a id="ga0c63d7ac4d22053cc663a933438ffc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c63d7ac4d22053cc663a933438ffc51">&#9670;&nbsp;</a></span>aDLGC_CONTROL_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aDLGC_CONTROL_SET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CONTROL_SET ClientMessage - use this to set specific supported control properties by sending it to the control's window callback. </p>
+<p>CONTROL_SET message format (relative to XEvent.xclient)<br />
+type == ClientMessage<br />
+message_type == aCONTROL_SET<br />
+format == 32 (always)<br />
+data.l[0] == control property identifier<br />
+data.l[1] == new value (Atom or 32-bit integer)<br />
+ </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#gaf65d5519495883990e716ff30ba563ec" title="Control &#39;Get/Set&#39; properties used by aDLGC_CONTROL_SET and aDLGC_CONTROL_GET. ">ControlGetSetProperties</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00393">393</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+
+</div>
+</div>
 <a id="gadac7f5a8dbd13b82dd245f2a64eb3fbc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadac7f5a8dbd13b82dd245f2a64eb3fbc">&#9670;&nbsp;</a></span>aDLGC_FONT</h2>
 
@@ -4010,7 +4218,7 @@ format == 32 (always)<br />
 <p>dialog control FONT property - reserved </p>
 <p>This is used internally and should not be invoked directly </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00398">398</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00432">432</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -4030,7 +4238,7 @@ format == 32 (always)<br />
 <p>Contains the listbox 'info' structure, to be maintained by APIs only</p>
 <p>This is used internally and should not be invoked directly </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00417">417</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00451">451</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -4050,7 +4258,7 @@ format == 32 (always)<br />
 <p>Text property identifying a directory name, standard for file and directory controls. Can be maintained and queried directly using property API functions.</p>
 <p>This is used internally and should not be invoked directly </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00428">428</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00462">462</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -4070,7 +4278,7 @@ format == 32 (always)<br />
 <p>Text property identifying a directory name, standard for file and directory controls. Can be maintained and queried directly using property API functions.</p>
 <p>This is used internally and should not be invoked directly </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00428">428</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00462">462</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -4114,7 +4322,7 @@ data.l[0] == Atom of property that changed<br />
 <p>Property contains the WB_SCROLLINFO structure, to be maintained by APIs only.</p>
 <p>This is used internally and should not be invoked directly </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00407">407</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00441">441</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -4133,7 +4341,7 @@ data.l[0] == Atom of property that changed<br />
 <p>dialog control TEXT property - see <a class="el" href="group__dlgctrl.html#ga7d186da0ec8507e5fa5ca11e64502ed7" title="Obtain the assigned TEXT property for a control, which is different from the CAPTION or Title...">WBDialogControlGetText()</a> </p>
 <p>This is used internally and should not be invoked directly </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00386">386</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00420">420</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -4156,7 +4364,7 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aGOTFOCUS<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogConrol structure<br />
+data.l[2] == hashed (32-bit) pointer to WBDialogConrol structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
 </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00250">250</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -4283,7 +4491,7 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aLOSTFOCUS<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogConrol structure<br />
+data.l[2] == hashed (32-bit) pointer to WBDialogConrol structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
 </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00263">263</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -4384,7 +4592,8 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aTEXT_CHANGED<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogConrol structure </p>
+data.l[2] == hashed (32-bit) pointer to WBDialogConrol structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
+</p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00222">222</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
@@ -4423,7 +4632,7 @@ data.l[4] == reserved (TODO: implement)<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -163,6 +163,9 @@ var group__dlgctrl =
       [ "CUSTOM_Reserved30", "group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a31ab745f732a3935066de4ed1beb9664", null ],
       [ "CUSTOM_Reserved31", "group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a4cd3721dfa8bbdda73ff6051bbcdb5e4", null ]
     ] ],
+    [ "ControlGetSetProperties", "group__dlgctrl.html#gaf65d5519495883990e716ff30ba563ec", [
+      [ "ControlGetSet_CHECKED", "group__dlgctrl.html#ggaf65d5519495883990e716ff30ba563eca133733ed10d22396a50b3b9afd395184", null ]
+    ] ],
     [ "ControlListIndex", "group__dlgctrl.html#ga9b3c5293fad294d782ff4f6e20c63b93", [
       [ "ControlListIndex_FIRST", "group__dlglist.html#gga9b3c5293fad294d782ff4f6e20c63b93a59486f4a46ef398b1c28dc67c0d32726", null ],
       [ "ControlListIndex_LAST", "group__dlglist.html#gga9b3c5293fad294d782ff4f6e20c63b93a1ba327796736e3c1b0bfd7d222d37906", null ],
@@ -214,6 +217,7 @@ var group__dlgctrl =
     [ "WBDialogControlCreate", "group__dlgctrl.html#gabdd58e30b5ba5fd23d075455907d42e8", null ],
     [ "WBDialogControlDelDialogProp", "group__dlgctrl.html#ga41788127833ab991c56a1f50490a4298", null ],
     [ "WBDialogControlGetCaption", "group__dlgctrl.html#ga924059365580ff89163fe2b506979977", null ],
+    [ "WBDialogControlGetCheck", "group__dlgctrl.html#gac55ae05f38d893f77afe5dfbd71bad6c", null ],
     [ "WBDialogControlGetDialogProp", "group__dlgctrl.html#ga2489985cc89f996f99b89f6448b3f31c", null ],
     [ "WBDialogControlGetIconPixmap", "group__dlgctrl.html#ga5e3b42b51a7c7cb4c5d4d7ee8cbd9ea9", null ],
     [ "WBDialogControlGetPixmap", "group__dlgctrl.html#ga3efd6729ac89a13b7cd729bc574227bd", null ],
@@ -222,6 +226,7 @@ var group__dlgctrl =
     [ "WBDialogControlGetPropList", "group__dlgctrl.html#ga9af8115d804002ce4a2e2ff3fbb54af4", null ],
     [ "WBDialogControlGetText", "group__dlgctrl.html#ga7d186da0ec8507e5fa5ca11e64502ed7", null ],
     [ "WBDialogControlSetCaption", "group__dlgctrl.html#gae796104ddd91bd255e948d0808570a8b", null ],
+    [ "WBDialogControlSetCheck", "group__dlgctrl.html#gae63cfdf9f99506cc849eca92f442ec3d", null ],
     [ "WBDialogControlSetDialogProp", "group__dlgctrl.html#ga973efc98dbe6c013ea7c7de26413a290", null ],
     [ "WBDialogControlSetIconPixmap", "group__dlgctrl.html#gaef6fb795d27bdce488807b6ac6160fec", null ],
     [ "WBDialogControlSetPixmap", "group__dlgctrl.html#gaf2e4376a500298d25344ec4deeb2ea27", null ],
@@ -238,6 +243,8 @@ var group__dlgctrl =
     [ "aDEFPUSHBUTTON_CONTROL", "group__dlgctrl.html#gaf04c4a26dc05b3580612d3dff059e45d", null ],
     [ "aDIALOG_INIT", "group__dlgctrl.html#ga0a0a4e3a0312ee26111fde1528cc7a96", null ],
     [ "aDLGC_CAPTION", "group__dlgctrl.html#ga3bce1639919b375deeb81262df4a7200", null ],
+    [ "aDLGC_CONTROL_GET", "group__dlgctrl.html#ga2cf0a3f7273bfbd57d8910ae5b71f5f1", null ],
+    [ "aDLGC_CONTROL_SET", "group__dlgctrl.html#ga0c63d7ac4d22053cc663a933438ffc51", null ],
     [ "aDLGC_FONT", "group__dlgctrl.html#gadac7f5a8dbd13b82dd245f2a64eb3fbc", null ],
     [ "aDLGC_LISTINFO", "group__dlgctrl.html#ga77a470bb683847adb2f93419375f798b", null ],
     [ "aDLGC_PATH", "group__dlgctrl.html#gab07b215679f0b6114b15d159dc41f8ee", null ],

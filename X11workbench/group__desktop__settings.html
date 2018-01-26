@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 
 <p>Array wrapper for <a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a> cache. </p>
 <p>This structure wraps the array of <a class="el" href="group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426">CHXSetting</a> structures and any variable length data that it might reference. It is the internal format for the settings array and can be retrieved by calling <a class="el" href="group__desktop__settings.html#gaebab9086a01ee73d7d3ec5a26a6ed576">CHGetXSettings()</a></p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__CHXSettings__.html">_CHXSettings_</a></div><div class="line">{</div><div class="line">  Display *<a class="code" href="struct__CHXSettings__.html#a0e5b4ba1b30f7c298b82d7592e78a8e3">pDisplay</a>;      <span class="comment">// identifies which display it belongs to (reserved)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__CHXSettings__.html#a20dadca04de7a0fac91cae9cc2974b8a">nSettings</a>;          <span class="comment">// the total number of settings in aData</span></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__CHXSettings__.html#a74bf6b69faca68501bfca1269185bc35">uiSerial</a>;  <span class="comment">// serial number from last XSETTINGS query</span></div><div class="line">  CHXSetting <a class="code" href="struct__CHXSettings__.html#afb4f3d2c83e670d1f57ee2750bca723e">aData</a>[1];    <span class="comment">// An array of &#39;nSettings&#39; \ref CHXSetting structures.  Binary and string data directly follows the array.</span></div><div class="line">} <a class="code" href="group__desktop__settings.html#ga78d9a6c66a95454b2fc898da68562c95">CHXSettings</a>;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__CHXSettings__.html">_CHXSettings_</a></div><div class="line">{</div><div class="line">  Display *<a class="code" href="struct__CHXSettings__.html#a0e5b4ba1b30f7c298b82d7592e78a8e3">pDisplay</a>;      <span class="comment">// identifies which display it belongs to (reserved)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__CHXSettings__.html#a20dadca04de7a0fac91cae9cc2974b8a">nSettings</a>;          <span class="comment">// the total number of settings in aData</span></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__CHXSettings__.html#a74bf6b69faca68501bfca1269185bc35">uiSerial</a>;  <span class="comment">// serial number from last XSETTINGS query</span></div><div class="line">  <a class="code" href="struct__CHXSetting__.html">CHXSetting</a> <a class="code" href="struct__CHXSettings__.html#afb4f3d2c83e670d1f57ee2750bca723e">aData</a>[1];    <span class="comment">// An array of &#39;nSettings&#39; \ref CHXSetting structures.  Binary and string data directly follows the array.</span></div><div class="line">} <a class="code" href="group__desktop__settings.html#ga78d9a6c66a95454b2fc898da68562c95">CHXSettings</a>;</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="gae01fd313d4d5127b45782b652e5eb5e3"></a>
@@ -255,7 +255,7 @@ Functions</h2></td></tr>
 <p>Debug function to dump config information using the debug output functions</p>
 <p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API ">conf_help.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="conf__help_8c_source.html#l03192">3192</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conf__help_8c_source.html#l03226">3226</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Functions</h2></td></tr>
 <p>This function will return NULL on error, or a WBAlloc'd pointer to a string. Caller must free any non-NULL pointer returned by this function, using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a></p>
 <p>Header File: <a class="el" href="conf__help_8h.html" title="&#39;configuration helper&#39; main header file for the X11 Work Bench Toolkit API ">conf_help.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="conf__help_8c_source.html#l03087">3087</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conf__help_8c_source.html#l03104">3104</a> of file <a class="el" href="conf__help_8c_source.html">conf_help.c</a>.</p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

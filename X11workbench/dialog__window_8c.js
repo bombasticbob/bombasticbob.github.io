@@ -24,7 +24,15 @@ var dialog__window_8c =
       [ "DlgResourceKW__HARIGHT", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a4f561fdf654c2abd0d5a353fcea5e8fe", null ],
       [ "DlgResourceKW__HACENTER", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a854e7bec0b2b0907f7b9c567bae9619c", null ],
       [ "DlgResourceKW__VRESIZE", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a2dc194b9c8ffafb536f6cd92a9b11bc5", null ],
-      [ "DlgResourceKW__HRESIZE", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389af45d272eab03126db6c9359b7e5b5665", null ]
+      [ "DlgResourceKW__HRESIZE", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389af45d272eab03126db6c9359b7e5b5665", null ],
+      [ "DlgResourceKW__NOBORDER", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389ac7d198c1e71af200408cdd258b632949", null ],
+      [ "DlgResourceKW__CHECKED", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a8e532724db423dc71cc5473ca42c0d98", null ],
+      [ "DlgResourceKW__VA_TEXT_TOP", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a31afd2c968fa086a9d34c896dd50c045", null ],
+      [ "DlgResourceKW__VA_TEXT_BOTTOM", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a05031d898a5f74cb8a87b541ecf34c0c", null ],
+      [ "DlgResourceKW__VA_TEXT_CENTER", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389ad6ac1fc59fb9ff103674fd97a4e61617", null ],
+      [ "DlgResourceKW__HA_TEXT_LEFT", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389aa7451a92dec0f9fb68949ec893a46142", null ],
+      [ "DlgResourceKW__HA_TEXT_RIGHT", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a5c153c951b9b2c5e70f5d0427cddf001", null ],
+      [ "DlgResourceKW__HA_TEXT_CENTER", "dialog__window_8c.html#af8e643515805cf3031739584d81e2389a0d3dacc96eee169849c2b16d883abf3d", null ]
     ] ],
     [ "__internal_destroy_dialog_window", "dialog__window_8c.html#a4b15f7cff96c930a7b0941e3b85eeb4f", null ],
     [ "DLGAssignOwner", "group__dlgwindow.html#gab7bdf5b39d9df41d00817eb0ffda16ef", null ],

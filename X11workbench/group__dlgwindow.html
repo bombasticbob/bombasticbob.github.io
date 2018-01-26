@@ -109,10 +109,25 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr class="separator:gaf4b1dd7894610596e141bc8242e7c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97c244cac0ae5750288fa38b47a10da7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7">WBDialogEntryFlags</a> { <br />
-&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a2768590644e2ec98df6717d61619dfaa">WBDialogEntry_VISIBLE</a> = 0x1, 
-<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a71de1e9af5e009725770fd44f777b79c">WBDialogEntry_EDIT</a> = 0x2, 
-<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a5b0214bcda8dad4c9bc6c2716b9d91dc">WBDialogEntry_MULTILINE</a> = 0x4, 
-<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abbce8aedc48563ae152a6af9ead402fa">WBDialogEntry_ALLCHARS</a> = 0x8, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a2768590644e2ec98df6717d61619dfaa">WBDialogEntry_VISIBLE</a> = 0x00000001, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a71de1e9af5e009725770fd44f777b79c">WBDialogEntry_EDIT</a> = 0x00000002, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a5b0214bcda8dad4c9bc6c2716b9d91dc">WBDialogEntry_MULTILINE</a> = 0x00000004, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abbce8aedc48563ae152a6af9ead402fa">WBDialogEntry_ALLCHARS</a> = 0x00000008, 
+<br />
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a59235044ffbbdfb0d6ceb4e24757ff20">WBDialogEntry_TRISTATE</a> = 0x00000010, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a788a2a61bddf1f58336180c07201af85">WBDialogEntry_CHECKED</a> = 0x00000020, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ac992d531983091537732b1d8b48974e5">WBDialogEntry_NO_BORDER</a> = 0x00000040, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a93058e891bcd790565078bbcdb1424b1">WBDialogEntry_VA_TEXT_CENTER</a> = 0x00000000, 
+<br />
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a54c52b9c7d6397f48195636d88352dda">WBDialogEntry_VA_TEXT_TOP</a> = 0x00000100, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abd8f13448020df1d81029d0bcbdb08bb">WBDialogEntry_VA_TEXT_BOTTOM</a> = 0x00000200, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ab8cf311a843618e9578ea69a78742520">WBDialogEntry_VA_TEXT_MASK</a> = 0x00000300, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a6052c5ed017192309c5b6a045c1f00c6">WBDialogEntry_HA_TEXT_LEFT</a> = 0x00000000, 
+<br />
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a18c899d615e99a98e564eaf8cdb49468">WBDialogEntry_HA_TEXT_CENTER</a> = 0x00000400, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a613620f48c6db3bad8e5c7a4e28e9ccb">WBDialogEntry_HA_TEXT_RIGHT</a> = 0x00000800, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a13aaf2fe72ad8abba810005bc36311a2">WBDialogEntry_HA_TEXT_MASK</a> = 0x00000c00, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a21ec5311708cadd0a09a6fd225089a5a">WBDialogEntry_ALIGN_TEXT_MASK</a> = 0x00000f00, 
 <br />
 &#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a8279226ad2a6e25c03d576ef65e59884">WBDialogEntry_HResize</a> = 0x00040000, 
 <a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a93348195e1b70d1cb25768003fe5def8">WBDialogEntry_VResize</a> = 0x00080000, 
@@ -282,6 +297,30 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 </td></tr>
 <tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7abbce8aedc48563ae152a6af9ead402fa"></a>WBDialogEntry_ALLCHARS&#160;</td><td class="fielddoc"><p>prevents trapping &lt;ESC&gt; &lt;ENTER&gt; and anything else </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a59235044ffbbdfb0d6ceb4e24757ff20"></a>WBDialogEntry_TRISTATE&#160;</td><td class="fielddoc"><p>'tri-stated' state (overrides 'checked' state) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a788a2a61bddf1f58336180c07201af85"></a>WBDialogEntry_CHECKED&#160;</td><td class="fielddoc"><p>'checked' state </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7ac992d531983091537732b1d8b48974e5"></a>WBDialogEntry_NO_BORDER&#160;</td><td class="fielddoc"><p>'no border' flag (don't display a border - statics, typically) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a93058e891bcd790565078bbcdb1424b1"></a>WBDialogEntry_VA_TEXT_CENTER&#160;</td><td class="fielddoc"><p>Vertically align text center (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a54c52b9c7d6397f48195636d88352dda"></a>WBDialogEntry_VA_TEXT_TOP&#160;</td><td class="fielddoc"><p>Vertically align text top. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7abd8f13448020df1d81029d0bcbdb08bb"></a>WBDialogEntry_VA_TEXT_BOTTOM&#160;</td><td class="fielddoc"><p>Vertically align text bottom. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7ab8cf311a843618e9578ea69a78742520"></a>WBDialogEntry_VA_TEXT_MASK&#160;</td><td class="fielddoc"><p>Vertical text alignment bits. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a6052c5ed017192309c5b6a045c1f00c6"></a>WBDialogEntry_HA_TEXT_LEFT&#160;</td><td class="fielddoc"><p>Horizontally align text left (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a18c899d615e99a98e564eaf8cdb49468"></a>WBDialogEntry_HA_TEXT_CENTER&#160;</td><td class="fielddoc"><p>Horizontally align text center. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a613620f48c6db3bad8e5c7a4e28e9ccb"></a>WBDialogEntry_HA_TEXT_RIGHT&#160;</td><td class="fielddoc"><p>Horizontally align text right. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a13aaf2fe72ad8abba810005bc36311a2"></a>WBDialogEntry_HA_TEXT_MASK&#160;</td><td class="fielddoc"><p>Horizontal text alignment bits. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a21ec5311708cadd0a09a6fd225089a5a"></a>WBDialogEntry_ALIGN_TEXT_MASK&#160;</td><td class="fielddoc"><p>All text alignment bits. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a8279226ad2a6e25c03d576ef65e59884"></a>WBDialogEntry_HResize&#160;</td><td class="fielddoc"><p>dialog box flag, can be resized horizontally </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga97c244cac0ae5750288fa38b47a10da7a93348195e1b70d1cb25768003fe5def8"></a>WBDialogEntry_VResize&#160;</td><td class="fielddoc"><p>dialog box flag, can be resized vertically </p>
@@ -406,7 +445,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>The 'owning' window defines the window that the dialog belongs to such that when the dialog is destroyed (and currently has focus) this window will automatically be raised and assigned the input focus. This is NOT the same as the parent window!</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00518">518</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00520">520</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -430,7 +469,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Use this function to destroy a modeless dialog window using the window ID of the dialog (frame) window. This also causes the 'WBDialogWindow' structure to be destroyed. Use caution if you retained a pointer to it.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00528">528</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00530">530</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -454,7 +493,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Use this function to destroy a modeless dialog window using the WBDialogWindow for the dialog (frame) window. This also causes the 'WBDialogWindow' structure to be destroyed. Use caution if you retained a pointer to it, to avoid re-using the (now) invalid pointer.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00533">533</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00535">535</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -488,7 +527,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>To obtain the Window ID of a member control, using the control's ID, call this function.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01235">1235</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01315">1315</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -522,7 +561,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>This is usually the preferred method of obtaining information about a dialog control. Call this function to obtain a pointer to the WBDialogEntry for a control, passing the WBDialogWindow pointer and the window ID. The return value from <a class="el" href="group__dlgwindow.html#gaa4434295b82ee7f976033c303c088320" title="returns the Window ID of a member control of the dialog window using the &#39;control ID&#39; ...">DLGGetDialogControl()</a> can be passed directly as the control's Window ID.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01254">1254</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01334">1334</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -554,7 +593,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Use this function to obtain a pointer to the WBDialogWindow structure for the dialog (frame) window.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8h_source.html#l00442">442</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8h_source.html#l00458">458</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +617,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Use this function to obtain a pointer to the 'user data' for the dialog (frame) window. This function returns NULL if there is no <a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a> structure associated with the window, or if there is no user data assigned.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01223">1223</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01303">1303</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -602,7 +641,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Each dialog window has what can be called a 'tab order' in which the FIRST control listed in the resource is the FIRST control in the tab order, the next control listed in the resource is the NEXT control, and so on. Tab order has nothing to do with the control's position within the dialog window. It is solely dependent on its order in the resource.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01273">1273</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01353">1353</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -637,7 +676,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 If the specified control ID is the LAST one, this function returns the FIRST dialog control's window ID</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01283">1283</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01363">1363</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -672,7 +711,7 @@ If the specified control ID is the LAST one, this function returns the FIRST dia
 If the specified control ID is the FIRST one, this function returns the LAST dialog control's window ID</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01307">1307</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01387">1387</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -745,7 +784,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgwindow.html#ga9d2e85a542eea2eafa3f1ec876ae4b58" title="Notify dialog window by posting an event that will ASYNCHRONOUSLY be sent to the dialog window&#39;s call...">DLGNotifyDlgAsync()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8h_source.html#l00571">571</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8h_source.html#l00587">587</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +857,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgwindow.html#gaac3073b3241ae6190c29372ff58f4203" title="Notify dialog window by calling the window&#39;s own callback function directly with an event...">DLGNotifyDlg()</a></dd></dl>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8h_source.html#l00606">606</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8h_source.html#l00622">622</a> of file <a class="el" href="dialog__window_8h_source.html">dialog_window.h</a>.</p>
 
 </div>
 </div>
@@ -852,7 +891,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <p>Return the height of a dialog unit, in pixels. Currently hard-coded to '1'</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00176">176</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00178">178</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -886,7 +925,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <p>Return the width of a dialog unit, in pixels. Currently hard-coded to '1'</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00181">181</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00183">183</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -910,7 +949,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <p>Forcing re-calculation of the layout implies that size, position, and content information is to be re-evaluated and updated, as needed, in an implementation-specific manner.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01216">1216</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01296">1296</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -945,7 +984,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 NOTE: not all events will pass through the callback. Some are handled solely by the dialog window default processing</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00581">581</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00583">583</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -954,7 +993,7 @@ NOTE: not all events will pass through the callback. Some are handled solely by 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

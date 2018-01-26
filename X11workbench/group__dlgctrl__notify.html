@@ -130,7 +130,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>double click by default drives an 'End Dialog' with IDOK </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00947">947</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01005">1005</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -147,7 +147,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>'default' notification value (no action needed) </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00943">943</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01001">1001</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -164,7 +164,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>simple notification that the selection has changed </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00945">945</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01003">1003</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -188,7 +188,7 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aBUTTON_PRESS<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogControl structure<br />
+data.l[2] == the hashed (32-bit) pointer to WBDialogControl structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
 </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00195">195</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -214,7 +214,7 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aGOTFOCUS<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogConrol structure<br />
+data.l[2] == hashed (32-bit) pointer to WBDialogConrol structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
 </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00250">250</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -366,7 +366,7 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aLOSTFOCUS<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogConrol structure<br />
+data.l[2] == hashed (32-bit) pointer to WBDialogConrol structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
 </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00263">263</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -467,7 +467,8 @@ message_type == aCONTROL_NOTIFY<br />
 format == 32 (always)<br />
 data.l[0] == aTEXT_CHANGED<br />
 data.l[1] == Control ID of originating conrol window<br />
-data.l[2] == truncated (32-bit) pointer to WBDialogConrol structure </p>
+data.l[2] == hashed (32-bit) pointer to WBDialogConrol structure - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a><br />
+</p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l00222">222</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
@@ -506,7 +507,7 @@ data.l[4] == reserved (TODO: implement)<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:18 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

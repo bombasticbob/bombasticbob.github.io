@@ -48,6 +48,5 @@ var files =
     [ "X11workbench.c", "X11workbench_8c_source.html", null ],
     [ "X11workbench.h", "X11workbench_8h_source.html", null ],
     [ "X11workbenchToolkit_config.h", "X11workbenchToolkit__config_8h_source.html", null ],
-    [ "X11workbenchToolkit_install_config.h", "X11workbenchToolkit__install__config_8h_source.html", null ],
-    [ "xclip.py", "xclip_8py_source.html", null ]
+    [ "X11workbenchToolkit_install_config.h", "X11workbenchToolkit__install__config_8h_source.html", null ]
 ];

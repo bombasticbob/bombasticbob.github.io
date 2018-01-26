@@ -123,7 +123,6 @@ var window__helper_8c =
     [ "WBGetMenuWindow", "group__wcore.html#gacaed7cb87bdeec0bbcaf56f49c7eada9", null ],
     [ "WBGetPaintRegion", "group__expose.html#ga6ea25dd7cb6614999c868d647813f8e1", null ],
     [ "WBGetParentWindow", "group__wcore.html#gadf830503e3f54f60be04355855df308f", null ],
-    [ "WBGetTimeIndex", "group__timer.html#gadc42f83070453daa04ccf39dc842d93b", null ],
     [ "WBGetWindowBGColor", "group__wcore.html#gac876324ffc644272a81a9f72645d3f54", null ],
     [ "WBGetWindowClassName", "group__wcore.html#ga0e6fb416cedc09aa260c0a39929d0614", null ],
     [ "WBGetWindowCopyGC", "group__wcore.html#gaf7342f5d4ee06c0d55af2cc5ef6c5b0d", null ],

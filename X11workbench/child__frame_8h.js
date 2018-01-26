@@ -9,6 +9,8 @@ var child__frame_8h =
     [ "FW_EDIT_DELETE_MENU", "group__child__frame.html#ga185e94476be2bfd0ce3316a64bbd2f4d", null ],
     [ "FW_EDIT_PASTE_ACCEL", "group__child__frame.html#ga94acc8482323e3ea3a62fc7c624e2766", null ],
     [ "FW_EDIT_PASTE_MENU", "group__child__frame.html#ga8af46e31338282e5c71d8fee1ed46d80", null ],
+    [ "FW_EDIT_PROPERTIES_ACCEL", "group__child__frame.html#ga879be1b67b18ffc4c82fd86fd753e9ad", null ],
+    [ "FW_EDIT_PROPERTIES_MENU", "group__child__frame.html#ga5fc46cec22fb2cb7e9413b6317edf9c3", null ],
     [ "FW_EDIT_SELECT_ALL_ACCEL", "group__child__frame.html#gace7c49590a7430086126eaa80366a7d9", null ],
     [ "FW_EDIT_SELECT_ALL_MENU", "group__child__frame.html#gac82eedf26fc5bcb04c833ae3f01fce78", null ],
     [ "FW_EDIT_SELECT_NONE_ACCEL", "group__child__frame.html#gaae1170f62422c2e8033563a4d6bb6520", null ],

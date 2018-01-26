@@ -114,10 +114,25 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr class="separator:gaf4b1dd7894610596e141bc8242e7c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97c244cac0ae5750288fa38b47a10da7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7">WBDialogEntryFlags</a> { <br />
-&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a2768590644e2ec98df6717d61619dfaa">WBDialogEntry_VISIBLE</a> = 0x1, 
-<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a71de1e9af5e009725770fd44f777b79c">WBDialogEntry_EDIT</a> = 0x2, 
-<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a5b0214bcda8dad4c9bc6c2716b9d91dc">WBDialogEntry_MULTILINE</a> = 0x4, 
-<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abbce8aedc48563ae152a6af9ead402fa">WBDialogEntry_ALLCHARS</a> = 0x8, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a2768590644e2ec98df6717d61619dfaa">WBDialogEntry_VISIBLE</a> = 0x00000001, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a71de1e9af5e009725770fd44f777b79c">WBDialogEntry_EDIT</a> = 0x00000002, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a5b0214bcda8dad4c9bc6c2716b9d91dc">WBDialogEntry_MULTILINE</a> = 0x00000004, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abbce8aedc48563ae152a6af9ead402fa">WBDialogEntry_ALLCHARS</a> = 0x00000008, 
+<br />
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a59235044ffbbdfb0d6ceb4e24757ff20">WBDialogEntry_TRISTATE</a> = 0x00000010, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a788a2a61bddf1f58336180c07201af85">WBDialogEntry_CHECKED</a> = 0x00000020, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ac992d531983091537732b1d8b48974e5">WBDialogEntry_NO_BORDER</a> = 0x00000040, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a93058e891bcd790565078bbcdb1424b1">WBDialogEntry_VA_TEXT_CENTER</a> = 0x00000000, 
+<br />
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a54c52b9c7d6397f48195636d88352dda">WBDialogEntry_VA_TEXT_TOP</a> = 0x00000100, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7abd8f13448020df1d81029d0bcbdb08bb">WBDialogEntry_VA_TEXT_BOTTOM</a> = 0x00000200, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ab8cf311a843618e9578ea69a78742520">WBDialogEntry_VA_TEXT_MASK</a> = 0x00000300, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a6052c5ed017192309c5b6a045c1f00c6">WBDialogEntry_HA_TEXT_LEFT</a> = 0x00000000, 
+<br />
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a18c899d615e99a98e564eaf8cdb49468">WBDialogEntry_HA_TEXT_CENTER</a> = 0x00000400, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a613620f48c6db3bad8e5c7a4e28e9ccb">WBDialogEntry_HA_TEXT_RIGHT</a> = 0x00000800, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a13aaf2fe72ad8abba810005bc36311a2">WBDialogEntry_HA_TEXT_MASK</a> = 0x00000c00, 
+<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a21ec5311708cadd0a09a6fd225089a5a">WBDialogEntry_ALIGN_TEXT_MASK</a> = 0x00000f00, 
 <br />
 &#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a8279226ad2a6e25c03d576ef65e59884">WBDialogEntry_HResize</a> = 0x00040000, 
 <a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a93348195e1b70d1cb25768003fe5def8">WBDialogEntry_VResize</a> = 0x00080000, 
@@ -293,7 +308,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="dialog__window_8h.html">dialog_window.h</a></li>
-    <li class="footer">Generated on Fri Jan 12 2018 15:10:17 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Fri Jan 19 2018 12:11:05 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

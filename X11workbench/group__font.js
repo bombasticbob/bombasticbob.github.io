@@ -1,14 +1,10 @@
 var group__font =
 [
-    [ "EVENT_ALL_MASK", "group__font.html#ga6135f35a01d8ed77af06c7d770cc7cd5", null ],
-    [ "WB_DEFAULT_FONT", "group__font.html#gac447551bc0b3c9b870dd3e4b84c580fe", null ],
-    [ "WB_DEFAULT_FONT_SIZE", "group__font.html#gacec55c19c632c0d8a5bbe64b2bd975f6", null ],
     [ "WB_DRAW_STRING", "group__font.html#gacdb2e0a2ede4994aa57807e3fdb89df3", null ],
     [ "WB_DRAW_TEXT", "group__font.html#ga3d1cd51395ac636ab6fd9bd23e91e0db", null ],
     [ "WB_LOOKUP_STRING", "group__font.html#ga63cb78a78e65fca43cc76e5a1a1764dc", null ],
     [ "WB_TEXT_ESCAPEMENT", "group__font.html#gac0e51c6603b3f8ea32ad7b4e94e548c5", null ],
     [ "WB_TEXT_EXTENTS", "group__font.html#gae41279cef060c5a4cd578eef2d1be205", null ],
-    [ "WINDOW_DATA_SIZE", "group__font.html#ga9d6d0cbd8dc3c2a8c603b9458a984847", null ],
     [ "WBFontFlags", "group__font.html#ga8f49d87ff2fe8588132f90e0f257f6ff", [
       [ "WBFontFlag_PITCH_FIXED", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa36cbb5eb7a08f150506081590e08ec0a", null ],
       [ "WBFontFlag_PITCH_VARIABLE", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffac53b8a1df1c849a3b64e6f8a54b0f6f0", null ],
