@@ -16,7 +16,7 @@ var dialog__controls_8c =
     [ "alloc_control_colors", "dialog__controls_8c.html#a2e059d5f4f97ebee8593f369abd6b259", null ],
     [ "button_callback", "dialog__controls_8c.html#a2ea6ef423b38224da4efa56a1882d4d0", null ],
     [ "ButtonDoExposeEvent", "dialog__controls_8c.html#a0abf2971d4341ac6e877df094e5546b3", null ],
-    [ "ButtonHandleCheckEvent", "dialog__controls_8c.html#a141a8a4a481466cc0fc092f092a474d5", null ],
+    [ "ButtonHandleCheckEvent", "dialog__controls_8c.html#acdf11868bb04e7997f0417ba20f9aed9", null ],
     [ "combo_callback", "dialog__controls_8c.html#a8f045e9ebf02503a33e56a547a8ac46a", null ],
     [ "combo_tree_callback", "dialog__controls_8c.html#aac36f9130f61bcc8e7381dcc58fc5d12", null ],
     [ "dialog_control_get_display", "dialog__controls_8c.html#a999e3fce69e6530869739f82c749333a", null ],

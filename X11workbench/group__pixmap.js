@@ -5,7 +5,9 @@ var group__pixmap =
       [ "height", "struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534", null ],
       [ "width", "struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4", null ]
     ] ],
+    [ "RGB255_FROM_XCOLOR", "group__pixmap.html#gad417b255477034815d6289b3c075260b", null ],
     [ "RGB255_TO_XCOLOR", "group__pixmap.html#ga8f0e531e62635c381c282b4485cfd025", null ],
+    [ "RGB_FROM_XCOLOR", "group__pixmap.html#ga8f6b974be899dbc8ee48a8fcaac1c763", null ],
     [ "RGB_TO_XCOLOR", "group__pixmap.html#gae8f4928e2429bed23e6e1aa2d1a684a3", null ],
     [ "XPM_CREATE_PIXMAP_FROM_DATA", "group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1", null ],
     [ "XPM_FREE_ATTRIBUTES", "group__pixmap.html#ga5cadde28513a5d92a6d0bce3505f3a53", null ],
@@ -26,5 +28,6 @@ var group__pixmap =
     [ "PXM_RGBToHSV", "group__pixmap.html#ga073ef9c6d455df52f20b0d0dfcaf597b", null ],
     [ "PXM_RGBToPixel", "group__pixmap.html#ga8d5263b0ba8461654d76bda4409b6634", null ],
     [ "PXM_RGBToYUV", "group__pixmap.html#ga61dcf89abade545723acc8767c8f00d1", null ],
+    [ "PXM_StandardColormapFromColormap", "group__pixmap.html#ga13e900f0ea2cff263ecb9feb7027c54a", null ],
     [ "PXM_YUVToRGB", "group__pixmap.html#gae2cae55acc3e44d1f869a22bfe4f0110", null ]
 ];

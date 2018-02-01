@@ -172,7 +172,7 @@ Typedefs</h2></td></tr>
 <p>wrapper macro for <a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> for standard WBAlloc'd text data </p>
 <p>This macro creates a standard WBAlloc'd text data list entry using <a class="el" href="group__dlgctrl.html#gad37ea0f014795844f165efbcd5dd8df3" title="The default &#39;List Info&#39; data allocator for a control&#39;s list info. ">DLGCDefaultListInfoAllocator()</a> and WBFree, for sorted text data with standard display and sort comparison functions NOTE: using DLGInitControlListInfoDefault implies string data that's WBAlloc'd. For some other scheme of maintaining and copying data pointers for a listbox, substitute your own function pointers as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01205">1205</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01350">1350</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ Typedefs</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01022">1022</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01161">1161</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Typedefs</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01036">1036</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01175">1175</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ Typedefs</h2></td></tr>
 <p>Although there are some specific nuances associated with the use of this function (such as 'string copy') the 'pData' and 'cbData' parameters are passed along without modification to the allocator function. Whenever DefaultListInfoAllocator() is used, a cbData value less than zero indicates that pData points to a null-byte terminated string, and whenever cbData is equal to zero, the pointer value of 'pData' is assigned to the internal list entry 'as-is'.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01446">1446</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01451">1451</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ Typedefs</h2></td></tr>
 <p>The default 'List Info' data allocator for a control's list info. </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01129">1129</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01134">1134</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ Typedefs</h2></td></tr>
 <p>Use this function to remove one or all entries from the control's list info</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01617">1617</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01622">1622</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ Typedefs</h2></td></tr>
 <p>Retrieve the data pointer for a single list entry (listbox, combo, and tree controls only) </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01406">1406</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01411">1411</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ Typedefs</h2></td></tr>
 <p>In a single-selection list, or in a list where multiple selection operations are being performed, there is one item that has a 'selected' state. This function returns the index for that item.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01700">1700</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01705">1705</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -525,7 +525,7 @@ Typedefs</h2></td></tr>
  </p><div class="fragment"><div class="line">piBits[(iIndex &gt;&gt; 32)] &amp; (1 &lt;&lt; (iIndex &amp; 31)) ? TRUE : FALSE</div></div><!-- fragment --><p>where 'iIndex' represents the index of the bit you wish to query.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01756">1756</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01761">1761</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ The return value is NULL if there are no selections or on error.<br />
 For non-NULL return values, the caller must use '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' to destroy the allocated buffer.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01761">1761</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01766">1766</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -584,7 +584,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>Retrieve the text poiner for a single list entry (listbox, combo, and tree controls only) </p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01376">1376</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01381">1381</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -654,7 +654,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>This is a generic method by which a control's list entry can be initialized. If the control's list consists entirely of text data, you can simplify the process by using <a class="el" href="group__dlgctrl.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01167">1167</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01172">1172</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>This is a generic method by which the parameters of a control's list entry can be modified. If the entry does not already exist, a new entry will be initialized with 'default' parameters assigned using the same values you would get with <a class="el" href="group__dlgctrl.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01202">1202</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01207">1207</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>In a single-selection list, or in a list where multiple selection operations are being performed, there is one item that has a 'selected' state. This function assigns the index for that item.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01713">1713</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01718">1718</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <p>In a multi-selection list, each item has a specified 'selection state' that identifies whether or not the item is selected. This function assigns that value for a single item.</p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01752">1752</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01757">1757</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jan 27 2018 11:18:29 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

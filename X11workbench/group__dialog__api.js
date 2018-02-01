@@ -49,8 +49,10 @@ var group__dialog__api =
       [ "MessageBox_AbortRetryIgnore", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa98fab6617afa5233cbaab0b1170a6cad", null ],
       [ "MessageBox_BUTTON_MASK", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa2d916aab18b9e7f4f74c31c1bff0ea5a", null ]
     ] ],
+    [ "DLGColorDialog", "group__dialog__api.html#ga3f432d9d8e76f234d58a53082ed9bd6c", null ],
     [ "DLGCreateDialogWindow", "group__dialog__api.html#ga39053c006797afbd6c436823dac75dcb", null ],
     [ "DLGFileDialog", "group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6", null ],
+    [ "DLGFontDialog", "group__dialog__api.html#gac953f8471bde9acd98a9cb464838daba", null ],
     [ "DLGInputBox", "group__dialog__api.html#gae8aa6305ea75cbfc9db1a10cce1b4958", null ],
     [ "DLGMessageBox", "group__dialog__api.html#gac1927b5f46aa6fb8e57a3786db1d0ea0", null ],
     [ "DLGSplashScreen", "group__dialog__api.html#gaa9ac41453b238c153917fcd3a33a587d", null ]

@@ -173,6 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0305ec6ca26b97ff4283d83867d78def"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga0305ec6ca26b97ff4283d83867d78def">WBDumpFontInfo</a> (const char *pSpec)</td></tr>
 <tr class="memdesc:ga0305ec6ca26b97ff4283d83867d78def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump debug information about fonts according to pSpec.  <a href="#ga0305ec6ca26b97ff4283d83867d78def">More...</a><br /></td></tr>
 <tr class="separator:ga0305ec6ca26b97ff4283d83867d78def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f9fde057ff0240583f9aefcca0ad5b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga2f9fde057ff0240583f9aefcca0ad5b5">WBDebugDumpXColor</a> (const char *szTitle, const XColor *pColor)</td></tr>
+<tr class="memdesc:ga2f9fde057ff0240583f9aefcca0ad5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump XColor members for debugging.  <a href="#ga2f9fde057ff0240583f9aefcca0ad5b5">More...</a><br /></td></tr>
+<tr class="separator:ga2f9fde057ff0240583f9aefcca0ad5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ef1c98bae517a021a3d110ddbf42525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga7ef1c98bae517a021a3d110ddbf42525">WBDebugDumpColormap</a> (const char *szTitle, const XStandardColormap *pMap)</td></tr>
+<tr class="memdesc:ga7ef1c98bae517a021a3d110ddbf42525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump XStandardColormap members for debugging.  <a href="#ga7ef1c98bae517a021a3d110ddbf42525">More...</a><br /></td></tr>
+<tr class="separator:ga7ef1c98bae517a021a3d110ddbf42525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -533,7 +539,48 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00557">557</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00576">576</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga7ef1c98bae517a021a3d110ddbf42525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ef1c98bae517a021a3d110ddbf42525">&#9670;&nbsp;</a></span>WBDebugDumpColormap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBDebugDumpColormap </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szTitle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XStandardColormap *&#160;</td>
+          <td class="paramname"><em>pMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dump XStandardColormap members for debugging. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szTitle</td><td>A const pointer to a string, to be displayed as the title for debug output </td></tr>
+    <tr><td class="paramname">pMap</td><td>A const pointer to an XStandardColormap structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Call this to do a debug dump of XStandardColormap information</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01080">1080</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -649,6 +696,47 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08728">8728</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga2f9fde057ff0240583f9aefcca0ad5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f9fde057ff0240583f9aefcca0ad5b5">&#9670;&nbsp;</a></span>WBDebugDumpXColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBDebugDumpXColor </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szTitle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XColor *&#160;</td>
+          <td class="paramname"><em>pColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dump XColor members for debugging. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szTitle</td><td>A const pointer to a string, to be displayed as the title for debug output </td></tr>
+    <tr><td class="paramname">pColor</td><td>A const pointer to an XColor structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Call this to do a debug dump of XColor information</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01100">1100</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -776,7 +864,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Pass the debug level as 'iLevel' 0 for none, 1 for minimal, 2 for more, etc. up to 7</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00530">530</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00549">549</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -785,7 +873,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jan 27 2018 11:18:29 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -70,7 +70,7 @@ var group__dlgwindow =
       [ "WBDialogEntry_AlignMask", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a2c3388618c0000696539bc2b0aa32d21", null ],
       [ "WBDialogEntry_Reserved24", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a0550bab0c7f13b243a0e87634fcdf296", null ],
       [ "WBDialogEntry_Reserved25", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a4c543fcce486e519d2ebe98ee675face", null ],
-      [ "WBDialogEntry_Reserved26", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7afa4a6155791b05214b04d30132413668", null ],
+      [ "WBDialogEntry_DISABLED", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7ab6a6c8cfb8ecc8275b3249f6e2f49eb4", null ],
       [ "WBDialogEntry_PRESSED", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7ac1e87bf8de35ab3b292459a50be95369", null ],
       [ "WBDialogEntry_CAN_HAVE_FOCUS", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a440cbaea09245a637fbc487199b693c6", null ],
       [ "WBDialogEntry_HAS_FOCUS", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a47c84e65ed5e6ab0d957bc00a29f6102", null ],

@@ -118,7 +118,7 @@ Since I have seen 'malloc a boatload of tiny memory fragments' cause PERFORMANCE
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the allocated buffer, always aligned on a 'pointer size' boundary. Do NOT overrun the buffer!</dd></dl>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00704">704</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00723">723</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -149,7 +149,7 @@ Since I have seen 'malloc a boatload of tiny memory fragments' cause PERFORMANCE
 <p>Use this function to determine how big a memory block REALLY is, particularly if 'malloc_usable_size' is supported. The sub-allocators use power-of-two allocation sizes in order to minimize the need to re-allocate blocks of memory. The assumption is that memory re-allocation is likely. To minimize the need to flip pointers around all of the time, and copy blocks of memory from one place to another via re-allocation, you can use this function to determine how much memory is REALLY available in the memory block. (this function is used internally within <a class="el" href="group__sub__alloc.html#gaf2228924f510dc4b6f6b86b44c0e4e11" title="High performance memory sub-allocator &#39;re-allocate&#39;. ">WBReAlloc()</a>, and is generally 'advisory' when used for other purposes).</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00765">765</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00784">784</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -179,7 +179,7 @@ Since I have seen 'malloc a boatload of tiny memory fragments' cause PERFORMANCE
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00788">788</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00807">807</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@ Since I have seen 'malloc a boatload of tiny memory fragments' cause PERFORMANCE
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the new allocated memory block, or NULL on error. If the return value is NOT NULL, the previous pointer becomes invalid.</dd></dl>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00829">829</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00848">848</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ Since I have seen 'malloc a boatload of tiny memory fragments' cause PERFORMANCE
 <p>Sub-allocation sometimes leaves 'holes' in memory. This function is intended to minimize that, by freeing up blocks of allocated memory that are no longer in use. It is not the same as 'garbage collection', but it may have the same basic effect. Call this function within the main message loop in the main thread.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00922">922</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00941">941</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Since I have seen 'malloc a boatload of tiny memory fragments' cause PERFORMANCE
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -123,18 +123,17 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga9856ebbcda78c7da7c18524b5f11003f"><td class="memItemLeft" align="right" valign="top"><a id="ga9856ebbcda78c7da7c18524b5f11003f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga9856ebbcda78c7da7c18524b5f11003f">_FileType_</a> { <br />
-&#160;&#160;<b>FileType_MAKEFILE</b> = -1, 
-<b>FileType_PLAIN_TEXT</b> = 0, 
-<b>FileType_CLANG</b> = 1, 
-<b>FileType_JAVA</b> = 2, 
+&#160;&#160;<b>FileType_PLAIN_TEXT</b> = 0, 
+<b>FileType_PROGRAM</b> = 1, 
+<b>FileType_RESOURCE</b> = 2, 
+<b>FileType_XML</b> = 3, 
 <br />
-&#160;&#160;<b>FileType_PERL</b> = 3, 
-<b>FileType_PHP</b> = 4, 
-<b>FileType_SHELL</b> = 5, 
-<b>FileType_MASK</b> = 0x7fff, 
+&#160;&#160;<b>FileType_MAKEFILE</b> = 4, 
+<b>FileType_CUSTOM_FLAG</b> = 0x80, 
+<b>FileType_MASK</b> = 0xff, 
+<b>FileType_HARDTAB</b> = 0x10000, 
 <br />
-&#160;&#160;<b>FileType_HARDTAB</b> = 0x10000, 
-<b>FileType_RESERVED2</b> = 0x20000, 
+&#160;&#160;<b>FileType_RESERVED2</b> = 0x20000, 
 <b>FileType_RESERVED3</b> = 0x40000, 
 <b>FileType_RESERVED4</b> = 0x80000
 <br />
@@ -204,6 +203,9 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <tr class="memitem:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">WBTextBufferRefreshCache</a> (<a class="el" href="group__text__object.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *pBuf)</td></tr>
 <tr class="memdesc:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text buffer 'cached information' refresh function.  <a href="group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">More...</a><br /></td></tr>
 <tr class="separator:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13ddd8c043e9ea838b70fbe74b190c92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#ga13ddd8c043e9ea838b70fbe74b190c92">WBTextObjectSetColorContextCallback</a> (<a class="el" href="group__text__object.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pThis, unsigned long(*callback)(<a class="el" href="group__text__object.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pThis, int nRow, int nCol), void *pColorContextPointer)</td></tr>
+<tr class="memdesc:ga13ddd8c043e9ea838b70fbe74b190c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign callback function for 'color context' for a given character  <a href="group__text__object.html#ga13ddd8c043e9ea838b70fbe74b190c92">More...</a><br /></td></tr>
+<tr class="separator:ga13ddd8c043e9ea838b70fbe74b190c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb89e8eacd7f963104ed12b034482e7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">WBTextObjectConstructor</a> (unsigned long cbStructSize, const char *szText, unsigned long cbLen, Window wIDOwner)</td></tr>
 <tr class="memdesc:gafb89e8eacd7f963104ed12b034482e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor for a TEXT_OBJECT using defaults.  <a href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">More...</a><br /></td></tr>
 <tr class="separator:gafb89e8eacd7f963104ed12b034482e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,7 +248,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="text__object_8h.html">text_object.h</a></li>
-    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -16,13 +16,12 @@ var text__object_8h =
       [ "DragState_MOUSE", "group__text__object.html#gga37a3e5c5f3772578e4ddfe9ed6c9f924a9b6532c21012141bce39834afe4bea33", null ]
     ] ],
     [ "_FileType_", "group__text__object.html#ga9856ebbcda78c7da7c18524b5f11003f", [
-      [ "FileType_MAKEFILE", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa4de4ad34f2563a8c57cee1448d44e8c4", null ],
       [ "FileType_PLAIN_TEXT", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa1558365ab19cea1817e298849b80302e", null ],
-      [ "FileType_CLANG", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa1b8d6d41abc8f969d1bccf0d52ec8f35", null ],
-      [ "FileType_JAVA", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa7adf9cf1beb1f1ca9c5e0cda1c69c9c1", null ],
-      [ "FileType_PERL", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fabdaa023793cc8a453114ece7ddd03aac", null ],
-      [ "FileType_PHP", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa13a7ce2a0dfe4b46233adcd27e73cbb6", null ],
-      [ "FileType_SHELL", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003faadbcc7c28357c083210cb593ca09f2be", null ],
+      [ "FileType_PROGRAM", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa37d6cb2945c9a55827a6e29b6356aaaf", null ],
+      [ "FileType_RESOURCE", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003faef381fca548327e485c735249a3069a2", null ],
+      [ "FileType_XML", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fac5cc49ee47038cbf2c1a5bbf0e65d340", null ],
+      [ "FileType_MAKEFILE", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa4de4ad34f2563a8c57cee1448d44e8c4", null ],
+      [ "FileType_CUSTOM_FLAG", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa80105dd163713e070291786fcef7ecb9", null ],
       [ "FileType_MASK", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fa5dd7063b9fbfe53f0f12457480762639", null ],
       [ "FileType_HARDTAB", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fab1fc36a383c29fb8a9baf78bbc197673", null ],
       [ "FileType_RESERVED2", "group__text__object.html#gga9856ebbcda78c7da7c18524b5f11003fad2dbf710d95d67746db99ffe4ba2f994", null ],
@@ -67,5 +66,6 @@ var text__object_8h =
     [ "WBTextBufferRefreshCache", "group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf", null ],
     [ "WBTextObjectCalculateLineHeight", "group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce", null ],
     [ "WBTextObjectConstructor", "group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c", null ],
-    [ "WBTextObjectDestructor", "group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29", null ]
+    [ "WBTextObjectDestructor", "group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29", null ],
+    [ "WBTextObjectSetColorContextCallback", "group__text__object.html#ga13ddd8c043e9ea838b70fbe74b190c92", null ]
 ];

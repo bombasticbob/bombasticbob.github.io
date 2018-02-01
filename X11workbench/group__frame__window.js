@@ -10,6 +10,9 @@ var group__frame__window =
       [ "wID", "struct____WB__FRAME__WINDOW____.html#ac1bf4c310535451938ef5b31b2b0c51b", null ]
     ] ],
     [ "FRAME_WINDOW_TAG", "group__frame__window.html#gaf0816ee655e0dfe37f0889b7091f4058", null ],
+    [ "MOVE_CHILD_FRAME_TAB_INDEX_BEGINNING", "group__frame__window.html#gabc8edaf4afaeddf049731b751f54e0a7", null ],
+    [ "MOVE_CHILD_FRAME_TAB_INDEX_LEFT", "group__frame__window.html#ga6cf13a1c060bb910cc14208944c53462", null ],
+    [ "MOVE_CHILD_FRAME_TAB_INDEX_RIGHT", "group__frame__window.html#gaf3c30b075ad22663b37c3ca11540ceea", null ],
     [ "WBFrameWindow", "group__frame__window.html#gacf113fd95153c5a0de0876becf0a83a5", null ],
     [ "WBFrameWindow_FLAGS", "group__frame__window.html#ga21dd621be91fedb5d2a59b8d9711bab9", [
       [ "WBFrameWindow_APP_WINDOW", "frame__window_8h.html#ga21dd621be91fedb5d2a59b8d9711bab9a693325994a98569950cf59aeee196a69", null ],

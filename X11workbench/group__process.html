@@ -122,7 +122,7 @@ Functions</h2></td></tr>
 <p>This function is identical to FreeLibrary() under Windows, and calls 'dlfree()' on POSIX systems</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04086">4086</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04105">4105</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <p>This function is identical to GetProcAddress() under Windows, and calls 'dlproc()' on POSIX systems</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04091">4091</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04110">4110</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -195,7 +195,7 @@ Functions</h2></td></tr>
 <p>This function is identical to LoadLibrary() under Windows, and calls 'dlopen()' on POSIX systems</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04081">4081</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04100">4100</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Functions</h2></td></tr>
 <p>Use this function to spawn an asynchronous process. The function returns an invalid process ID or process handle on error. If the process ID is an allocated resource, the caller must free it. Each additional parameter passed to this function is a parameter that is to be passed to the program. The final parameter in the list must be NULL, so any call to this function will need to have at least 2 parameters.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03725">3725</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03744">3744</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -300,7 +300,7 @@ If you do not want to re-direct a file handle, pass 'WB_INVALID_FILE_HANDLE' for
 You can monitor 'WB_PROCESS_ID' to find out if the process is running. Additionally, you can use the output of hStdOut and hStdErr by re-directing them to anonymous pipes and monitoring their activity.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03749">3749</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03768">3768</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ You can monitor 'WB_PROCESS_ID' to find out if the process is running. Additiona
 <p>This function is used internally by the other process control functions, and is defined here in case you need to write a customized version of one of the process control functions. A typical example might be the use of stderr rather than stdout for <a class="el" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983" title="Run an application synchronously, returning &#39;stdout&#39; output in a character buffer. ">WBRunResult()</a>.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03249">3249</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03268">3268</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ You can monitor 'WB_PROCESS_ID' to find out if the process is running. Additiona
 <p>Use this function to run an external process and capture its output. This function will ignore the error return code from the program, so if this information is necessary, you should write a different function (based on this one) using 'WBRunAsync' and a wait loop, etc. that checks the application's return value on exit. Each additional parameter passed to this function is a parameter that is to be passed to the program. The final parameter in the list must be NULL, so any call to this function will need to have at least 2 parameters. On error this function returns a NULL value. Any non-NULL value must be 'free'd by the caller using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03940">3940</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03959">3959</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ You can monitor 'WB_PROCESS_ID' to find out if the process is running. Additiona
  To create piped output, pass the result of the previous 'WBRunResult' or 'WBRunResultPipe' as the 'szStdInBuf' parameter to a subsequent 'WBRunResultPipe' call.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03957">3957</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03976">3976</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -466,7 +466,7 @@ You can monitor 'WB_PROCESS_ID' to find out if the process is running. Additiona
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 19 2018 12:11:06 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

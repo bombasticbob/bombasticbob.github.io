@@ -96,5 +96,6 @@ var text__object_8c =
     [ "WBTextObjectCalculateLineHeight", "group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce", null ],
     [ "WBTextObjectConstructor", "group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c", null ],
     [ "WBTextObjectDestructor", "group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29", null ],
+    [ "WBTextObjectSetColorContextCallback", "text__object_8c.html#a420f36c71cdb366f156d09a7253378ac", null ],
     [ "WBDefaultTextObjectVTable", "text__object_8c.html#a5363de736f610c46c399c8b8d672d4a5", null ]
 ];

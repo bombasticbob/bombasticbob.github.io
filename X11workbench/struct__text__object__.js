@@ -19,6 +19,8 @@ var struct__text__object__ =
     [ "iScrollMode", "struct__text__object__.html#a32b54760de261f88914c291c13aed559", null ],
     [ "iSelMode", "struct__text__object__.html#a8256ccdc367d57d944793dd59e8d24bb", null ],
     [ "iTab", "struct__text__object__.html#a760c7fcee56dbbf2730283e37700c480", null ],
+    [ "pColorContext", "struct__text__object__.html#ac69d99c6a6d1770fd8d5206a60e3f0cf", null ],
+    [ "pColorContextCallback", "struct__text__object__.html#a7fdd3a4bb9c56f68b0ee8199c631bc61", null ],
     [ "pRedo", "struct__text__object__.html#a355e83ad058b285ae34793636253d4bb", null ],
     [ "pText", "struct__text__object__.html#a4e0404e72138c4969eba392c67bd54b1", null ],
     [ "pUndo", "struct__text__object__.html#a2a920e0de6468bc3189bdb73f6369826", null ],

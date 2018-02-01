@@ -154,7 +154,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a0550bab0c7f13b243a0e87634fcdf296">WBDialogEntry_Reserved24</a> = 0x01000000, 
 <a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a4c543fcce486e519d2ebe98ee675face">WBDialogEntry_Reserved25</a> = 0x02000000, 
 <br />
-&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7afa4a6155791b05214b04d30132413668">WBDialogEntry_Reserved26</a> = 0x04000000, 
+&#160;&#160;<a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ab6a6c8cfb8ecc8275b3249f6e2f49eb4">WBDialogEntry_DISABLED</a> = 0x04000000, 
 <a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7ac1e87bf8de35ab3b292459a50be95369">WBDialogEntry_PRESSED</a> = 0x08000000, 
 <a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a440cbaea09245a637fbc487199b693c6">WBDialogEntry_CAN_HAVE_FOCUS</a> = 0x10000000, 
 <a class="el" href="group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7a47c84e65ed5e6ab0d957bc00a29f6102">WBDialogEntry_HAS_FOCUS</a> = 0x20000000, 
@@ -294,6 +294,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga61c93635fb125b35d904e4e13e0169c6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6">DLGFileDialog</a> (int iType, Window wIDOwner, const char *szDefPath, const char *szDefName, const char *szExtAndDescList)</td></tr>
 <tr class="memdesc:ga61c93635fb125b35d904e4e13e0169c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal File Dialog window, returning a WBAlloc'd pointer to a null-byte terminated string containing a fully qualified file or path name.  <a href="group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6">More...</a><br /></td></tr>
 <tr class="separator:ga61c93635fb125b35d904e4e13e0169c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f432d9d8e76f234d58a53082ed9bd6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#ga3f432d9d8e76f234d58a53082ed9bd6c">DLGColorDialog</a> (Window wIDOwner, XStandardColormap *pColorMap, XColor *pColor)</td></tr>
+<tr class="memdesc:ga3f432d9d8e76f234d58a53082ed9bd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal Color Dialog window, returning the selected color in the XColor structure pointed to by 'pColor'.  <a href="group__dialog__api.html#ga3f432d9d8e76f234d58a53082ed9bd6c">More...</a><br /></td></tr>
+<tr class="separator:ga3f432d9d8e76f234d58a53082ed9bd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac953f8471bde9acd98a9cb464838daba"><td class="memItemLeft" align="right" valign="top">XFontSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gac953f8471bde9acd98a9cb464838daba">DLGFontDialog</a> (Display *pDisplay, Window wIDOwner, XFontSet fsDefault)</td></tr>
+<tr class="memdesc:gac953f8471bde9acd98a9cb464838daba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a modal Font Dialog window, returning the selected font in the XColor structure pointed to by 'pColor'.  <a href="group__dialog__api.html#gac953f8471bde9acd98a9cb464838daba">More...</a><br /></td></tr>
+<tr class="separator:gac953f8471bde9acd98a9cb464838daba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9ac41453b238c153917fcd3a33a587d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dialog__api.html#gaa9ac41453b238c153917fcd3a33a587d">DLGSplashScreen</a> (char *aXPM[], const char *szCopyright, unsigned long clrText)</td></tr>
 <tr class="memdesc:gaa9ac41453b238c153917fcd3a33a587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a splash screen for 5 seconds (with animation and copyright string), and then return.  <a href="group__dialog__api.html#gaa9ac41453b238c153917fcd3a33a587d">More...</a><br /></td></tr>
 <tr class="separator:gaa9ac41453b238c153917fcd3a33a587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +314,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="dialog__window_8h.html">dialog_window.h</a></li>
-    <li class="footer">Generated on Fri Jan 19 2018 12:11:05 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

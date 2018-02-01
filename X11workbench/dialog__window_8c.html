@@ -131,25 +131,31 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>DlgResourceKW__HEIGHT</b>, 
 <b>DlgResourceKW__VISIBLE</b>, 
+<b>DlgResourceKW__INVISIBLE</b>, 
 <b>DlgResourceKW__TITLE</b>, 
-<b>DlgResourceKW__VATOP</b>, 
 <br />
-&#160;&#160;<b>DlgResourceKW__VABOTTOM</b>, 
-<b>DlgResourceKW__VACENTER</b>, 
-<b>DlgResourceKW__HALEFT</b>, 
-<b>DlgResourceKW__HARIGHT</b>, 
+&#160;&#160;<b>DlgResourceKW__VA_DLGTOP</b>, 
+<b>DlgResourceKW__VA_DLGBOTTOM</b>, 
+<b>DlgResourceKW__VA_DLGCENTER</b>, 
+<b>DlgResourceKW__HA_DLGLEFT</b>, 
 <br />
-&#160;&#160;<b>DlgResourceKW__HACENTER</b>, 
+&#160;&#160;<b>DlgResourceKW__HA_DLGRIGHT</b>, 
+<b>DlgResourceKW__HA_DLGCENTER</b>, 
 <b>DlgResourceKW__VRESIZE</b>, 
 <b>DlgResourceKW__HRESIZE</b>, 
-<b>DlgResourceKW__NOBORDER</b>, 
 <br />
-&#160;&#160;<b>DlgResourceKW__CHECKED</b>, 
+&#160;&#160;<b>DlgResourceKW__BORDER</b>, 
+<b>DlgResourceKW__NOBORDER</b>, 
+<b>DlgResourceKW__CLICKABLE</b>, 
+<b>DlgResourceKW__CHECKED</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__ENABLED</b>, 
+<b>DlgResourceKW__DISABLED</b>, 
 <b>DlgResourceKW__VA_TEXT_TOP</b>, 
 <b>DlgResourceKW__VA_TEXT_BOTTOM</b>, 
-<b>DlgResourceKW__VA_TEXT_CENTER</b>, 
 <br />
-&#160;&#160;<b>DlgResourceKW__HA_TEXT_LEFT</b>, 
+&#160;&#160;<b>DlgResourceKW__VA_TEXT_CENTER</b>, 
+<b>DlgResourceKW__HA_TEXT_LEFT</b>, 
 <b>DlgResourceKW__HA_TEXT_RIGHT</b>, 
 <b>DlgResourceKW__HA_TEXT_CENTER</b>
 <br />
@@ -276,8 +282,8 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>iIDSymbol
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">={ <span class="stringliteral">&quot;BEGIN_DIALOG&quot;</span>,<span class="stringliteral">&quot;END_DIALOG&quot;</span>,<span class="stringliteral">&quot;FONT&quot;</span>,<span class="stringliteral">&quot;CONTROL&quot;</span>,<span class="stringliteral">&quot;ID&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;X&quot;</span>,<span class="stringliteral">&quot;Y&quot;</span>,<span class="stringliteral">&quot;WIDTH&quot;</span>,<span class="stringliteral">&quot;HEIGHT&quot;</span>,<span class="stringliteral">&quot;VISIBLE&quot;</span>,<span class="stringliteral">&quot;TITLE&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VALIGN_BOTTOM&quot;</span>,<span class="stringliteral">&quot;VALIGN_TOP&quot;</span>,<span class="stringliteral">&quot;VALIGN_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;HALIGN_LEFT&quot;</span>,<span class="stringliteral">&quot;HALIGN_RIGHT&quot;</span>,<span class="stringliteral">&quot;HALIGN_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VRESIZE&quot;</span>,<span class="stringliteral">&quot;HRESIZE&quot;</span>,<span class="stringliteral">&quot;NOBORDER&quot;</span>,<span class="stringliteral">&quot;CHECKED&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VALIGN_TEXT_TOP&quot;</span>,<span class="stringliteral">&quot;VALIGN_TEXT_BOTTOM&quot;</span>,<span class="stringliteral">&quot;VALIGN_TEXT_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;HALIGN_TEXT_LEFT&quot;</span>,<span class="stringliteral">&quot;HALIGN_TEXT_RIGHT&quot;</span>,<span class="stringliteral">&quot;HALIGN_TEXT_CENTER&quot;</span>,</div><div class="line">                                          NULL }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01706">1706</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">={ <span class="stringliteral">&quot;BEGIN_DIALOG&quot;</span>,<span class="stringliteral">&quot;END_DIALOG&quot;</span>,<span class="stringliteral">&quot;FONT&quot;</span>,<span class="stringliteral">&quot;CONTROL&quot;</span>,<span class="stringliteral">&quot;ID&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;X&quot;</span>,<span class="stringliteral">&quot;Y&quot;</span>,<span class="stringliteral">&quot;WIDTH&quot;</span>,<span class="stringliteral">&quot;HEIGHT&quot;</span>,<span class="stringliteral">&quot;VISIBLE&quot;</span>,<span class="stringliteral">&quot;INVISIBLE&quot;</span>,<span class="stringliteral">&quot;TITLE&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VALIGN_DIALOG_BOTTOM&quot;</span>,<span class="stringliteral">&quot;VALIGN_DIALOG_TOP&quot;</span>,<span class="stringliteral">&quot;VALIGN_DIALOG_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;HALIGN_DIALOG_LEFT&quot;</span>,<span class="stringliteral">&quot;HALIGN_DIALOG_RIGHT&quot;</span>,<span class="stringliteral">&quot;HALIGN_DIALOG_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VRESIZE&quot;</span>,<span class="stringliteral">&quot;HRESIZE&quot;</span>,<span class="stringliteral">&quot;BORDER&quot;</span>,<span class="stringliteral">&quot;NOBORDER&quot;</span>,<span class="stringliteral">&quot;CLICKABLE&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;CHECKED&quot;</span>,<span class="stringliteral">&quot;ENABLED&quot;</span>,<span class="stringliteral">&quot;DISABLED&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VALIGN_TEXT_TOP&quot;</span>,<span class="stringliteral">&quot;VALIGN_TEXT_BOTTOM&quot;</span>,<span class="stringliteral">&quot;VALIGN_TEXT_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;HALIGN_TEXT_LEFT&quot;</span>,<span class="stringliteral">&quot;HALIGN_TEXT_RIGHT&quot;</span>,<span class="stringliteral">&quot;HALIGN_TEXT_CENTER&quot;</span>,</div><div class="line">                                          NULL }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01753">1753</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -287,7 +293,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>iIDSymbol
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="dialog__window_8c.html">dialog_window.c</a></li>
-    <li class="footer">Generated on Fri Jan 19 2018 12:11:05 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
