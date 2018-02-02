@@ -33,6 +33,7 @@ var platform__helper_8c =
     [ "WBCondWaitMutex", "group__threads.html#ga04102292ada456ac24d5c3aeea524548", null ],
     [ "WBCopyString", "group__text.html#ga01c938dde1b777421803b3e31c4717aa", null ],
     [ "WBCopyStringN", "group__text.html#ga892d4fcc14f538f9c2e2475bce9c1279", null ],
+    [ "WBCPUCount", "group__platform.html#ga24fcd397013eb85afa4077ef76849a05", null ],
     [ "WBCreatePointerHash", "group__platform.html#ga99ffb9b6c8c93ea9e20706c62b4b7713", null ],
     [ "WBDebugDump", "group__debug.html#ga1b403292a2ce065b57db74db5809dfea", null ],
     [ "WBDebugPrint", "platform__helper_8c.html#ac16676859b839f0b368355cbe2f72b34", null ],

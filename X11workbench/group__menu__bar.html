@@ -562,7 +562,7 @@ Normally a menu bar will be part of a frame window, and will appear at the top. 
 <p>Internal Client Message Atom for 'ACTIVATE' notification. </p>
 <p>Atom for 'ACTIVATE' client event.</p>
 <p>XClientMessageEvent members: window = menu bar window ID message_type = aMENU_ACTIVATE format = 32</p>
-<p>To activate a specific menu item: data.l[0] = (long) pointer to WBMenuItem (advisory only; 32-bit truncation) data.l[1] = the index for menu item</p>
+<p>To activate a specific menu item: data.l[0] = Hashed pointer to WBMenuItem - see <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448" title="Obtain a pointer from a 32-bit &#39;secure&#39; pointer hash value. ">WBGetPointerFromHash()</a> data.l[1] = the index for menu item</p>
 <p>To move to the previous or next menu item in the list: data.l[0] = 0 data.l[1] = 1 or -1; 1 moves 'next', -1 'previous', 0 'first'. others undefined. </p>
 
 <p class="definition">Definition at line <a class="el" href="menu__bar_8c_source.html#l00150">150</a> of file <a class="el" href="menu__bar_8c_source.html">menu_bar.c</a>.</p>
@@ -615,7 +615,7 @@ Normally a menu bar will be part of a frame window, and will appear at the top. 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:29 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:59 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

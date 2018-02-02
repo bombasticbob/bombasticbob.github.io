@@ -2,7 +2,7 @@ var group__frame__menu =
 [
     [ "__WB_FW_MENU_HANDLER__", "struct____WB__FW__MENU__HANDLER____.html", [
       [ "callback", "struct____WB__FW__MENU__HANDLER____.html#a0d6b54d85fcb37c56abd3cd21e52b91e", null ],
-      [ "lMenuID", "struct____WB__FW__MENU__HANDLER____.html#a677acb025d0e13875e3f3ae55c6654f9", null ],
+      [ "lMenuID", "struct____WB__FW__MENU__HANDLER____.html#ab14d60964cad5d6bd5536c5ae577940c", null ],
       [ "UIcallback", "struct____WB__FW__MENU__HANDLER____.html#a6a295f38f2f978fe8bb4f94d91f72dc0", null ]
     ] ],
     [ "FW_MENU_HANDLER_BEGIN", "group__frame__menu.html#ga8a61ebc2ef84095119158df442cfca52", null ],

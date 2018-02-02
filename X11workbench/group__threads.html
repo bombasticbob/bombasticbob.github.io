@@ -169,7 +169,7 @@ Functions</h2></td></tr>
 This is roughly the equivalent of an 'Event' object on MS Windows</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04371">4371</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04556">4556</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -199,7 +199,7 @@ This is roughly the equivalent of an 'Event' object on MS Windows</p>
 <p>Use this function to free a WB_COND that was previously allocated with <a class="el" href="group__threads.html#gac0ad4b961cb862bdb58ff5ae561f3ccc" title="Create a signallable condition. ">WBCondCreate()</a></p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04427">4427</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04612">4612</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ This is roughly the equivalent of an 'Event' object on MS Windows</p>
 <p>This function signals a condition so that a waiting process will 'wake up' see <a class="el" href="group__threads.html#ga0dd28d2a22b1bad1d58fdc33048d7c66" title="Wait for a signal on a condition (event) ">WBCondWait()</a> and <a class="el" href="group__threads.html#ga04102292ada456ac24d5c3aeea524548" title="Wait for a signal on a condition (event) ">WBCondWaitMutex()</a></p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04509">4509</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04694">4694</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ This is roughly the equivalent of an 'Event' object on MS Windows</p>
 <p>This function waits up to a specified time (in microseconds), or indefinitely if the specified wait time is negative, until the condition object 'hCond' has been signaled. See <a class="el" href="group__threads.html#ga629d9054a9eb2bc9af270b7c8e859573" title="Signal a condition (event) ">WBCondSignal()</a></p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04525">4525</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04710">4710</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ Additionally, when the waiting process begins, the WB_MUTEX referenced by 'hMtx'
 Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be already locked before calling this function. It will remain unlocked during the wait state.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04598">4598</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04783">4783</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -354,7 +354,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>This function performs an interlocked 'atomic' decrement of an unsigned integer, guaranteeing that at the time the value is decremented, no other thread is allowed to read or modify the value until the function returns.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04665">4665</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04850">4850</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>This function performs an interlocked 'atomic' assignment of an unsigned integer, guaranteeing that at the time the value is assigned, no other thread is allowed to read or modify the value until the function returns. The previous value is returned by the function, effectively 'exchanging' the value with one that you specify.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04701">4701</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04886">4886</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -427,7 +427,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>This function performs an interlocked 'atomic' increment of an unsigned integer, guaranteeing that at the time the value is incremented, no other thread is allowed to read or modify the value until the function returns.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04683">4683</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04868">4868</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -458,7 +458,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>This function performs an interlocked 'atomic' read of an unsigned integer, guaranteeing that at the time the value is read, no other thread is allowed to modify the value. Once read, the value can still change; however, the value as-read will be 'atomic' i.e. not a partially changed value.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04718">4718</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04903">4903</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>Use this function to create a 'mutex' synchronization object that can be locked by only a single thread at a time</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04410">4410</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04595">4595</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>Use this function to free a WB_MUTEX that was previously allocated with <a class="el" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd" title="Create a lockable mutex. ">WBMutexCreate()</a></p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04449">4449</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04634">4634</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>This function attempts to lock the WB_MUTEX and returns a zero value if it succeeds, blocking for the period of time specified by 'nTimeout' (in microseconds). A negative 'nTimeout' causes an infinite waiting period. The function will return a positive value if the timeout period was exceeded, or a negative value on error.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04458">4458</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04643">4643</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>This function unlocks a previously locked mutex</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04500">4500</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04685">4685</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -617,7 +617,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 <p>Allocate thread local storage, returning the identifier to that local storage slot</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04135">4135</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04320">4320</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -648,7 +648,7 @@ Upon return, 'hMtx' will be locked again by the calling thread. 'hMtx' must be a
 NOTE: internally it calls either pthread_detach or CloseHandle (depending)</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04349">4349</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04534">4534</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -690,7 +690,7 @@ NOTE: internally it calls either pthread_detach or CloseHandle (depending)</p>
 <p>Call this function to create a new thread using standard attributes.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04272">4272</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04457">4457</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -721,7 +721,7 @@ NOTE: internally it calls either pthread_detach or CloseHandle (depending)</p>
 NOTE: when the thread proc returns, it implies a call to <a class="el" href="group__threads.html#ga319ef67fb43cc37ab703dc003322f79b" title="Exit the current thread immediately, specifying return code. ">WBThreadExit()</a> on completion, using the return value as the exit code.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04341">4341</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04526">4526</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -746,7 +746,7 @@ NOTE: when the thread proc returns, it implies a call to <a class="el" href="gro
 <p>Free an allocate thread local storage slot</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04149">4149</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04334">4334</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -771,7 +771,7 @@ NOTE: when the thread proc returns, it implies a call to <a class="el" href="gro
 <p>Returns a 'WB_THREAD' resource representing the current thread. This returned value should NOT be free'd using <a class="el" href="group__threads.html#ga73005b3b02a1f7490dba38fb4205dfe8" title="Close the specified WB_THREAD identifier. ">WBThreadClose()</a>, nor waited on with <a class="el" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d" title="Wait for a specified threat to exit. ">WBThreadWait()</a>.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04173">4173</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04358">4358</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -802,7 +802,7 @@ NOTE: when the thread proc returns, it implies a call to <a class="el" href="gro
 <p>Get the data associated with a thread local storage slot</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04157">4157</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04342">4342</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -834,7 +834,7 @@ NOTE: when the thread proc returns, it implies a call to <a class="el" href="gro
 NOTE: an active thread that has been suspended will return a value &gt; 0.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04308">4308</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04493">4493</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -875,7 +875,7 @@ NOTE: an active thread that has been suspended will return a value &gt; 0.</p>
 <p>Assign (set) the data associated with a thread local storage slot</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04165">4165</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04350">4350</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -906,7 +906,7 @@ NOTE: an active thread that has been suspended will return a value &gt; 0.</p>
 <p>Call this function to wait for a thread to complete and/or obtain its exit code. This function will block until the thread has terminated or is canceled (pthreads only).</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04292">4292</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l04477">4477</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -915,7 +915,7 @@ NOTE: an active thread that has been suspended will return a value &gt; 0.</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

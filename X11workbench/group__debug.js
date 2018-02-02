@@ -10,6 +10,7 @@ var group__debug =
     [ "WB_WARN_DUMP", "group__debug.html#gaea40bfd99822e6845b9f0e2244574b0f", null ],
     [ "WB_WARN_PRINT", "group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47", null ],
     [ "DebugLevel", "group__debug.html#gab658e6d84759440dbf3c890446075395", null ],
+    [ "WBCheckDebugLevel", "group__debug.html#gad1c641ef930388b2f1c8f2d011126059", null ],
     [ "WBDebugDump", "group__debug.html#ga1b403292a2ce065b57db74db5809dfea", null ],
     [ "WBDebugDumpColormap", "group__debug.html#ga7ef1c98bae517a021a3d110ddbf42525", null ],
     [ "WBDebugDumpEvent", "group__debug.html#gaa39191469018c352801b1178befdd5b2", null ],

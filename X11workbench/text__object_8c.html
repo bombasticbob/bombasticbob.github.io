@@ -292,8 +292,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_scr
 <tr class="memitem:acd8baa67a7bd3a771197a477fc44c7f8"><td class="memItemLeft" align="right" valign="top"><a id="acd8baa67a7bd3a771197a477fc44c7f8"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_scroll_horizontal</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int nCols)</td></tr>
 <tr class="separator:acd8baa67a7bd3a771197a477fc44c7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ac2446496657e94c78ef8e808bcc3d"><td class="memItemLeft" align="right" valign="top"><a id="a83ac2446496657e94c78ef8e808bcc3d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_do_expose</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, Display *pDisplay, Window wID, GC gc, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pPaintGeom, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pViewGeom, XFontSet rFontSet)</td></tr>
+<tr class="memitem:a83ac2446496657e94c78ef8e808bcc3d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text__object_8c.html#a83ac2446496657e94c78ef8e808bcc3d">__internal_do_expose</a> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, Display *pDisplay, Window wID, GC gc, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pPaintGeom, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pViewGeom, XFontSet rFontSet)</td></tr>
 <tr class="separator:a83ac2446496657e94c78ef8e808bcc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d9ef8a4262f86c9042296363edccd3"><td class="memItemLeft" align="right" valign="top"><a id="a85d9ef8a4262f86c9042296363edccd3"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_cursor_blink</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int bHasFocus)</td></tr>
@@ -349,6 +348,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_cal
 <tr class="memitem:a057fe0929f651dcf769ff99a8cd0585b"><td class="memItemLeft" align="right" valign="top"><a id="a057fe0929f651dcf769ff99a8cd0585b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_merge_rect</b> (const struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect, int iStartRow, int iStartCol, int iEndRow, int iEndCol)</td></tr>
 <tr class="separator:a057fe0929f651dcf769ff99a8cd0585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e05d48f9da0133dd1c370f34bd47805"><td class="memItemLeft" align="right" valign="top"><a id="a0e05d48f9da0133dd1c370f34bd47805"></a>
+static XFontSet&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((noinline))</td></tr>
+<tr class="separator:a0e05d48f9da0133dd1c370f34bd47805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59067f8eb1df3d2a6a69990639ae6d17"><td class="memItemLeft" align="right" valign="top"><a id="a59067f8eb1df3d2a6a69990639ae6d17"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>internal_IsMBCharValid</b> (const char *pChar, int *piLen)</td></tr>
 <tr class="separator:a59067f8eb1df3d2a6a69990639ae6d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,13 +414,83 @@ const <a class="el" href="group__text__object.html#ga47fb27d1f2a968b64a65476649b
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a83ac2446496657e94c78ef8e808bcc3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ac2446496657e94c78ef8e808bcc3d">&#9670;&nbsp;</a></span>__internal_do_expose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __internal_do_expose </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct__text__object__.html">_text_object_</a> *&#160;</td>
+          <td class="paramname"><em>pThis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GC&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
+          <td class="paramname"><em>pPaintGeom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
+          <td class="paramname"><em>pViewGeom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XFontSet&#160;</td>
+          <td class="paramname"><em>rFontSet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>memcmp(&amp;pThis-&gt;clrHFG, &amp;pThis-&gt;clrHBG, sizeof(XColor))) </p>
+
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l04611">4611</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="text__object_8c.html">text_object.c</a></li>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

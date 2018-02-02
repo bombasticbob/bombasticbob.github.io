@@ -122,9 +122,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804">DTAlignment_ALLOW_TRAILING</a> = 0x2000, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a204dff61b43cd0d49df26819f2a1984c">DTAlignment_NO_WORD_WRAP</a> = 0x4000, 
+<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a5747ce763c071a30cc7f19b5d66d724f">DTAlignment_ANTIALIAS</a> = 0x10000000, 
 <a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a196a3d7f39c98443cc28b2d35ba1108b">DTAlignment_SINGLELINE</a> = 0x20000000, 
 <a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da">DTAlignment_UNDERSCORE</a> = 0x40000000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6">DTAlignment_PRINTING</a> = 0x80000000
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6">DTAlignment_PRINTING</a> = 0x80000000
 <br />
  }<tr class="memdesc:ga082c206bfd406e64f16e934644548d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alignment flags for various 'draw text' API functions.  <a href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40">More...</a><br /></td></tr>
 </td></tr>
@@ -138,6 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7">DTGetTextWidth</a> (XFontSet fontSet, const char *szUTF8, int nLength)</td></tr>
 <tr class="memdesc:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextWidth equivalent for MBCS and UTF-8 strings.  <a href="group__draw__text.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7">More...</a><br /></td></tr>
 <tr class="separator:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga1e26f31d2a2142c9e0127c06a2a9ecd6">DTGetTextExtent</a> (XFontSet fontSet, const char *szUTF8, int nLength, <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">WB_EXTENT</a> *pExtent)</td></tr>
+<tr class="memdesc:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextExtent equivalent for MBCS and UTF-8 strings.  <a href="group__draw__text.html#ga1e26f31d2a2142c9e0127c06a2a9ecd6">More...</a><br /></td></tr>
+<tr class="separator:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80">DTCalcIdealFont</a> (XFontStruct *pRefFont, const char *szText, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *geomBounds)</td></tr>
 <tr class="memdesc:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal font based on the text and rectangle.  <a href="group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80">More...</a><br /></td></tr>
 <tr class="separator:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +191,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="draw__text_8h.html">draw_text.h</a></li>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -77,6 +77,7 @@ $(document).ready(function(){initNavTree('draw__text_8c.html','');});
 <code>#include &lt;strings.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="window__helper_8h_source.html">window_helper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="draw__text_8h_source.html">draw_text.h</a>&quot;</code><br />
+<code>#include &quot;pixmap_helper.h&quot;</code><br />
 </div>
 <p><a href="draw__text_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -98,6 +99,9 @@ Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__text_8c.html#a2191cf9865900ba9fb7b22c93bb291b9">InternalDebugDumpWords</a> (<a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords)</td></tr>
 <tr class="memdesc:a2191cf9865900ba9fb7b22c93bb291b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal debug function to dump 'DT_WORDS' 'words' object <br /></td></tr>
 <tr class="separator:a2191cf9865900ba9fb7b22c93bb291b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e0bd023f625ec322faea55c70dcc8b"><td class="memItemLeft" align="right" valign="top"><a id="af5e0bd023f625ec322faea55c70dcc8b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internalDoAntiAlias</b> (Display *pDisplay, Drawable dw, GC gc, int iX, int iY, int iWidth, int iHeight)</td></tr>
+<tr class="separator:af5e0bd023f625ec322faea55c70dcc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d243810deae01326217ba00d8471599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga8d243810deae01326217ba00d8471599">DTDrawString</a> (Display *pDisplay, Drawable drawable, XFontSet fontSet, GC gc, int x, int y, const char *pString, int nLength)</td></tr>
 <tr class="memdesc:ga8d243810deae01326217ba00d8471599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw text in a platform-independent manner for UTF-8 or multi-byte text.  <a href="group__draw__text.html#ga8d243810deae01326217ba00d8471599">More...</a><br /></td></tr>
 <tr class="separator:ga8d243810deae01326217ba00d8471599"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,6 +111,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DTGetTextWidth0</b> (X
 <tr class="memitem:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7">DTGetTextWidth</a> (XFontSet fontSet, const char *szUTF8, int nLength)</td></tr>
 <tr class="memdesc:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextWidth equivalent for MBCS and UTF-8 strings.  <a href="group__draw__text.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7">More...</a><br /></td></tr>
 <tr class="separator:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga1e26f31d2a2142c9e0127c06a2a9ecd6">DTGetTextExtent</a> (XFontSet fontSet, const char *szUTF8, int nLength, <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">WB_EXTENT</a> *pExtent)</td></tr>
+<tr class="memdesc:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextExtent equivalent for MBCS and UTF-8 strings.  <a href="group__draw__text.html#ga1e26f31d2a2142c9e0127c06a2a9ecd6">More...</a><br /></td></tr>
+<tr class="separator:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80">DTCalcIdealFont</a> (XFontStruct *pRefFont, const char *szText, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *geomBounds)</td></tr>
 <tr class="memdesc:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal font based on the text and rectangle.  <a href="group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80">More...</a><br /></td></tr>
 <tr class="separator:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +165,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DoHCenterWrapp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="draw__text_8c.html">draw_text.c</a></li>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -3,6 +3,8 @@ var group__expose =
     [ "WBBeginPaint", "group__expose.html#gaf12acdde095ac1a025ab91863140ba1f", null ],
     [ "WBBeginPaintGeom", "group__expose.html#ga0adc3dcf20bfb7cb3add1ac460056f6b", null ],
     [ "WBClearWindow", "group__expose.html#ga1cbd545c3fa47148b5458186c2666507", null ],
+    [ "WBDialogControlInvalidateGeom", "group__expose.html#ga85df4d055c4a62f990e9eae6c6522d7e", null ],
+    [ "WBDialogControlInvalidateRegion", "group__expose.html#ga35e4f78eb8d70235ad7c5012562d57fd", null ],
     [ "WBEndPaint", "group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e", null ],
     [ "WBGeomToRegion", "group__expose.html#ga365dbd8d44807bcbd0823d9bbdb5ddf5", null ],
     [ "WBGetInvalidRegion", "group__expose.html#ga0f6ecfbea92577d7b54a67af546f89d1", null ],

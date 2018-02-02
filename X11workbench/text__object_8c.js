@@ -11,6 +11,7 @@ var text__object_8c =
     [ "UNDO_LIMIT", "text__object_8c.html#afb1f07fab87a5963990f377d7352ad6e", null ],
     [ "UNDO_REPLACE", "text__object_8c.html#a5ec7f7048258f92f3e5ac64ea540411a", null ],
     [ "UNDO_SELECT", "text__object_8c.html#ae59eea1fdd8a21ce67fb7779326c7272", null ],
+    [ "__attribute__", "text__object_8c.html#a0e05d48f9da0133dd1c370f34bd47805", null ],
     [ "__internal_add_undo", "text__object_8c.html#a31f0929e762c72720b3af04e36087f4c", null ],
     [ "__internal_begin_highlight", "text__object_8c.html#a457e3d599a1eb5ce4e95ed4d87d61393", null ],
     [ "__internal_begin_mouse_drag", "text__object_8c.html#a1b568949f33da1382f0a5ded02e073c7", null ],

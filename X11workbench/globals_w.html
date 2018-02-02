@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__error.html#ga68ee9920c7b28343743907556c9102ca">window_helper.h</a>
 </li>
 <li>WB_EXTENT
-: <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">window_helper.h</a>
+: <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">font_helper.h</a>
 </li>
 <li>WB_GEOM
 : <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">window_helper.h</a>
@@ -433,6 +433,10 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__text.html#ga892d4fcc14f538f9c2e2475bce9c1279">platform_helper.c</a>
 , <a class="el" href="group__text.html#ga892d4fcc14f538f9c2e2475bce9c1279">platform_helper.h</a>
 </li>
+<li>WBCPUCount()
+: <a class="el" href="group__platform.html#ga24fcd397013eb85afa4077ef76849a05">platform_helper.c</a>
+, <a class="el" href="group__platform.html#ga24fcd397013eb85afa4077ef76849a05">platform_helper.h</a>
+</li>
 <li>WBCreateEditWindow()
 : <a class="el" href="group__edit__window.html#gaaeb22d3ea664441d9d09ce628e94557f">edit_window.h</a>
 </li>
@@ -514,6 +518,12 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <li>WBDialogControlGetCaption()
 : <a class="el" href="group__dlgctrl.html#ga924059365580ff89163fe2b506979977">dialog_controls.h</a>
 </li>
+<li>WBDialogControlGetCaptionInt()
+: <a class="el" href="group__dlgctrl.html#ga22118236784a29bc3c1848fae693ff25">dialog_controls.h</a>
+</li>
+<li>WBDialogControlGetCaptionLong()
+: <a class="el" href="group__dlgctrl.html#gafac7d423305e2a129eb5bae484ce4054">dialog_controls.h</a>
+</li>
 <li>WBDialogControlGetCheck()
 : <a class="el" href="group__dlgctrl.html#gac55ae05f38d893f77afe5dfbd71bad6c">dialog_controls.h</a>
 </li>
@@ -538,14 +548,20 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <li>WBDialogControlGetText()
 : <a class="el" href="group__dlgctrl.html#ga7d186da0ec8507e5fa5ca11e64502ed7">dialog_controls.h</a>
 </li>
+<li>WBDialogControlInvalidateGeom()
+: <a class="el" href="group__expose.html#ga85df4d055c4a62f990e9eae6c6522d7e">dialog_controls.h</a>
+</li>
+<li>WBDialogControlInvalidateRegion()
+: <a class="el" href="group__expose.html#ga35e4f78eb8d70235ad7c5012562d57fd">dialog_controls.h</a>
+</li>
 <li>WBDialogControlSetCaption()
 : <a class="el" href="group__dlgctrl.html#gae796104ddd91bd255e948d0808570a8b">dialog_controls.h</a>
 </li>
 <li>WBDialogControlSetCaptionInt()
-: <a class="el" href="group__dlgctrl.html#gab87d8c9b957be2cb98e9be043204fa43">dialog_controls.h</a>
+: <a class="el" href="group__dlgctrl.html#gaa4bdc2cd4f25f30b15621b562111784e">dialog_controls.h</a>
 </li>
 <li>WBDialogControlSetCaptionLong()
-: <a class="el" href="group__dlgctrl.html#gac0e1891f82bc1f1e70f92c597d04f4ed">dialog_controls.h</a>
+: <a class="el" href="group__dlgctrl.html#ga260b55ca98a018d94bd4cf772b2ec483">dialog_controls.h</a>
 </li>
 <li>WBDialogControlSetCheck()
 : <a class="el" href="group__dlgctrl.html#gae63cfdf9f99506cc849eca92f442ec3d">dialog_controls.h</a>
@@ -725,8 +741,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16b">dialog_window.h</a>
 </li>
 <li>WBDispatch()
-: <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">window_helper.c</a>
-, <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">window_helper.h</a>
+: <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">window_helper.h</a>
+, <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">window_helper.c</a>
 </li>
 <li>WBDraw3DBorderElipse()
 : <a class="el" href="group__window__dressing.html#ga2136e0b706c247ec476696db2ada244b">window_dressing.c</a>
@@ -737,8 +753,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__window__dressing.html#ga2ebd818d333c3475bdcf5fa0299545b7">window_dressing.h</a>
 </li>
 <li>WBDraw3DBorderTab()
-: <a class="el" href="group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7">window_dressing.h</a>
-, <a class="el" href="group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7">window_dressing.c</a>
+: <a class="el" href="group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7">window_dressing.c</a>
+, <a class="el" href="group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7">window_dressing.h</a>
 </li>
 <li>WBDrawBorderElipse()
 : <a class="el" href="group__window__dressing.html#ga73f5fb9c36bad6bfb301728bc5f4173a">window_dressing.c</a>
@@ -1094,98 +1110,98 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">window_helper.h</a>
 </li>
 <li>WBGetDefaultFont()
-: <a class="el" href="group__defaults.html#ga83eea3d816ace887a40c079d2991ea2a">window_helper.h</a>
-, <a class="el" href="group__defaults.html#ga83eea3d816ace887a40c079d2991ea2a">window_helper.c</a>
+: <a class="el" href="group__defaults.html#ga83eea3d816ace887a40c079d2991ea2a">window_helper.c</a>
+, <a class="el" href="group__defaults.html#ga83eea3d816ace887a40c079d2991ea2a">window_helper.h</a>
 </li>
 <li>WBGetDefaultFontSet()
-: <a class="el" href="group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15">window_helper.c</a>
-, <a class="el" href="group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15">window_helper.h</a>
+: <a class="el" href="group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15">window_helper.h</a>
+, <a class="el" href="group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15">window_helper.c</a>
 </li>
 <li>WBGetDefaultTextObjectVTable()
 : <a class="el" href="group__text__object.html#ga7c20ed24f57275db985803f47263a694">text_object.h</a>
 </li>
 <li>WBGetDialogEntryControlStruct()
-: <a class="el" href="group__dlgctrl.html#gabb67c95c5c2ac29c71ad1ebf33477e76">dialog_controls.h</a>
+: <a class="el" href="group__dlgctrl.html#ga2d2c4549e9de61d8dbfac24d7fbcfc04">dialog_controls.h</a>
 </li>
 <li>WBGetGCBGColor()
-: <a class="el" href="group__wcore.html#ga120c4cef4050c8cc6a798ef89ed015f7">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga120c4cef4050c8cc6a798ef89ed015f7">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga120c4cef4050c8cc6a798ef89ed015f7">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga120c4cef4050c8cc6a798ef89ed015f7">window_helper.c</a>
 </li>
 <li>WBGetGCFGColor()
-: <a class="el" href="group__wcore.html#ga8801eb38aa19654621780454be8526b5">window_helper.h</a>
-, <a class="el" href="group__wcore.html#ga8801eb38aa19654621780454be8526b5">window_helper.c</a>
+: <a class="el" href="group__wcore.html#ga8801eb38aa19654621780454be8526b5">window_helper.c</a>
+, <a class="el" href="group__wcore.html#ga8801eb38aa19654621780454be8526b5">window_helper.h</a>
 </li>
 <li>WBGetGCFont()
-: <a class="el" href="group__wcore.html#ga432ac0d50ad8f0f5832783ef4e8cb8cb">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga432ac0d50ad8f0f5832783ef4e8cb8cb">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga432ac0d50ad8f0f5832783ef4e8cb8cb">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga432ac0d50ad8f0f5832783ef4e8cb8cb">window_helper.c</a>
 </li>
 <li>WBGetHiddenHelperWindow()
-: <a class="el" href="group__defaults.html#gafc45dcd9ad8846fcd775841481f0e7a2">window_helper.h</a>
-, <a class="el" href="group__defaults.html#gafc45dcd9ad8846fcd775841481f0e7a2">window_helper.c</a>
+: <a class="el" href="group__defaults.html#gafc45dcd9ad8846fcd775841481f0e7a2">window_helper.c</a>
+, <a class="el" href="group__defaults.html#gafc45dcd9ad8846fcd775841481f0e7a2">window_helper.h</a>
 </li>
 <li>WBGetInvalidRegion()
 : <a class="el" href="group__expose.html#ga0f6ecfbea92577d7b54a67af546f89d1">window_helper.c</a>
 , <a class="el" href="group__expose.html#ga0f6ecfbea92577d7b54a67af546f89d1">window_helper.h</a>
 </li>
 <li>WBGetLastError()
-: <a class="el" href="group__error.html#ga93cb9008e2362ce06c2795838274f472">window_helper.h</a>
-, <a class="el" href="group__error.html#ga93cb9008e2362ce06c2795838274f472">window_helper.c</a>
+: <a class="el" href="group__error.html#ga93cb9008e2362ce06c2795838274f472">window_helper.c</a>
+, <a class="el" href="group__error.html#ga93cb9008e2362ce06c2795838274f472">window_helper.h</a>
 </li>
 <li>WBGetLastEventTime()
-: <a class="el" href="group__events.html#ga3f7502f7a233be633097abdefeb3db21">window_helper.c</a>
-, <a class="el" href="group__events.html#ga3f7502f7a233be633097abdefeb3db21">window_helper.h</a>
+: <a class="el" href="group__events.html#ga3f7502f7a233be633097abdefeb3db21">window_helper.h</a>
+, <a class="el" href="group__events.html#ga3f7502f7a233be633097abdefeb3db21">window_helper.c</a>
 </li>
 <li>WBGetMBCharPtr()
 : <a class="el" href="group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e">text_object.c</a>
 , <a class="el" href="group__text__object.html#gaea3af6adcbbc837928e8e87f00d3cc0e">text_object.h</a>
 </li>
 <li>WBGetMBColIndex()
-: <a class="el" href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109">text_object.c</a>
-, <a class="el" href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109">text_object.h</a>
+: <a class="el" href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109">text_object.h</a>
+, <a class="el" href="group__text__object.html#ga158a023bde6f7acbfe114d13dd934109">text_object.c</a>
 </li>
 <li>WBGetMBLength()
-: <a class="el" href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a">text_object.h</a>
-, <a class="el" href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a">text_object.c</a>
+: <a class="el" href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a">text_object.c</a>
+, <a class="el" href="group__text__object.html#ga9f19ac06ff8893b882341c1044f3b46a">text_object.h</a>
 </li>
 <li>WBGetMenuWindow()
-: <a class="el" href="group__wcore.html#gacaed7cb87bdeec0bbcaf56f49c7eada9">window_helper.c</a>
-, <a class="el" href="group__wcore.html#gacaed7cb87bdeec0bbcaf56f49c7eada9">window_helper.h</a>
+: <a class="el" href="group__wcore.html#gacaed7cb87bdeec0bbcaf56f49c7eada9">window_helper.h</a>
+, <a class="el" href="group__wcore.html#gacaed7cb87bdeec0bbcaf56f49c7eada9">window_helper.c</a>
 </li>
 <li>WBGetPaintRegion()
-: <a class="el" href="group__expose.html#ga6ea25dd7cb6614999c868d647813f8e1">window_helper.h</a>
-, <a class="el" href="group__expose.html#ga6ea25dd7cb6614999c868d647813f8e1">window_helper.c</a>
+: <a class="el" href="group__expose.html#ga6ea25dd7cb6614999c868d647813f8e1">window_helper.c</a>
+, <a class="el" href="group__expose.html#ga6ea25dd7cb6614999c868d647813f8e1">window_helper.h</a>
 </li>
 <li>WBGetParentWindow()
 : <a class="el" href="group__wcore.html#gadf830503e3f54f60be04355855df308f">window_helper.c</a>
 , <a class="el" href="group__wcore.html#gadf830503e3f54f60be04355855df308f">window_helper.h</a>
 </li>
 <li>WBGetPointerFromHash()
-: <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448">platform_helper.h</a>
-, <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448">platform_helper.c</a>
+: <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448">platform_helper.c</a>
+, <a class="el" href="group__platform.html#gab5193bbf0de01aa9cb4c1d3ea8923448">platform_helper.h</a>
 </li>
 <li>WBGetPrinterList()
-: <a class="el" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">platform_helper.c</a>
-, <a class="el" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">platform_helper.h</a>
+: <a class="el" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">platform_helper.h</a>
+, <a class="el" href="group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568">platform_helper.c</a>
 </li>
 <li>WBGetProcAddress()
 : <a class="el" href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97">platform_helper.c</a>
 , <a class="el" href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97">platform_helper.h</a>
 </li>
 <li>WBGetSelectionData()
-: <a class="el" href="group__clipboard.html#ga4643ccb84640e2e795aca06ddc15f11a">clipboard_helper.c</a>
-, <a class="el" href="group__clipboard.html#ga4643ccb84640e2e795aca06ddc15f11a">window_helper.h</a>
+: <a class="el" href="group__clipboard.html#ga4643ccb84640e2e795aca06ddc15f11a">window_helper.h</a>
+, <a class="el" href="group__clipboard.html#ga4643ccb84640e2e795aca06ddc15f11a">clipboard_helper.c</a>
 </li>
 <li>WBGetTimeIndex()
-: <a class="el" href="group__platform.html#gadc42f83070453daa04ccf39dc842d93b">platform_helper.h</a>
-, <a class="el" href="group__platform.html#gadc42f83070453daa04ccf39dc842d93b">platform_helper.c</a>
+: <a class="el" href="group__platform.html#gadc42f83070453daa04ccf39dc842d93b">platform_helper.c</a>
+, <a class="el" href="group__platform.html#gadc42f83070453daa04ccf39dc842d93b">platform_helper.h</a>
 </li>
 <li>WBGetWindowBGColor()
-: <a class="el" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">window_helper.c</a>
-, <a class="el" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">window_helper.h</a>
+: <a class="el" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">window_helper.h</a>
+, <a class="el" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">window_helper.c</a>
 </li>
 <li>WBGetWindowClassName()
-: <a class="el" href="group__wcore.html#ga0e6fb416cedc09aa260c0a39929d0614">window_helper.h</a>
-, <a class="el" href="group__wcore.html#ga0e6fb416cedc09aa260c0a39929d0614">window_helper.c</a>
+: <a class="el" href="group__wcore.html#ga0e6fb416cedc09aa260c0a39929d0614">window_helper.c</a>
+, <a class="el" href="group__wcore.html#ga0e6fb416cedc09aa260c0a39929d0614">window_helper.h</a>
 </li>
 <li>WBGetWindowCopyGC()
 : <a class="el" href="group__wcore.html#gaf7342f5d4ee06c0d55af2cc5ef6c5b0d">window_helper.c</a>
@@ -1296,34 +1312,34 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__expose.html#ga499fc00271ef3c2b81adbb457bdf17a7">window_helper.h</a>
 </li>
 <li>WBInvalidateRegion()
-: <a class="el" href="group__expose.html#ga615a77d3bbfba4f3e6f8c4509bce7598">window_helper.c</a>
-, <a class="el" href="group__expose.html#ga615a77d3bbfba4f3e6f8c4509bce7598">window_helper.h</a>
+: <a class="el" href="group__expose.html#ga615a77d3bbfba4f3e6f8c4509bce7598">window_helper.h</a>
+, <a class="el" href="group__expose.html#ga615a77d3bbfba4f3e6f8c4509bce7598">window_helper.c</a>
 </li>
 <li>WBIsChildWindow()
-: <a class="el" href="group__wcore.html#gaa22217ba9e1d6e96e68a39e71d5116ca">window_helper.h</a>
-, <a class="el" href="group__wcore.html#gaa22217ba9e1d6e96e68a39e71d5116ca">window_helper.c</a>
+: <a class="el" href="group__wcore.html#gaa22217ba9e1d6e96e68a39e71d5116ca">window_helper.c</a>
+, <a class="el" href="group__wcore.html#gaa22217ba9e1d6e96e68a39e71d5116ca">window_helper.h</a>
 </li>
 <li>WBIsMapped()
-: <a class="el" href="group__expose.html#gab3dc9c3d5b54256d75e2d37777a8e2d5">window_helper.c</a>
-, <a class="el" href="group__expose.html#gab3dc9c3d5b54256d75e2d37777a8e2d5">window_helper.h</a>
+: <a class="el" href="group__expose.html#gab3dc9c3d5b54256d75e2d37777a8e2d5">window_helper.h</a>
+, <a class="el" href="group__expose.html#gab3dc9c3d5b54256d75e2d37777a8e2d5">window_helper.c</a>
 </li>
 <li>WBIsValid()
-: <a class="el" href="window__helper_8c.html#a2a90faa7799fed7477bb8c1ca6a1a376">window_helper.c</a>
-, <a class="el" href="window__helper_8h.html#a2a90faa7799fed7477bb8c1ca6a1a376">window_helper.h</a>
+: <a class="el" href="window__helper_8h.html#a2a90faa7799fed7477bb8c1ca6a1a376">window_helper.h</a>
+, <a class="el" href="window__helper_8c.html#a2a90faa7799fed7477bb8c1ca6a1a376">window_helper.c</a>
 </li>
 <li>WBIsValidEditWindow()
-: <a class="el" href="group__edit__window.html#gacda2be9036ff90cd17819b5100b3f173">edit_window.h</a>
+: <a class="el" href="group__edit__window.html#ga3e40e9414d681985275cc0e37f789e1e">edit_window.h</a>
 </li>
 <li>WBIsValidTextObject()
 : <a class="el" href="group__text__object.html#gab5a5a199098d57dc59f58090ae22af47">text_object.h</a>
 </li>
 <li>WBJoinMBLine()
-: <a class="el" href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d">text_object.h</a>
-, <a class="el" href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d">text_object.c</a>
+: <a class="el" href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d">text_object.c</a>
+, <a class="el" href="group__text__object.html#ga2a1f42232e1c3223db546a002c01c44d">text_object.h</a>
 </li>
 <li>WBKeyEventProcessKey()
-: <a class="el" href="group__keyboard.html#ga36d3a3da71f9de6e179166f627565af4">window_helper.h</a>
-, <a class="el" href="group__keyboard.html#ga36d3a3da71f9de6e179166f627565af4">window_helper.c</a>
+: <a class="el" href="group__keyboard.html#ga36d3a3da71f9de6e179166f627565af4">window_helper.c</a>
+, <a class="el" href="group__keyboard.html#ga36d3a3da71f9de6e179166f627565af4">window_helper.h</a>
 </li>
 <li>WBLoadFont()
 : <a class="el" href="group__font.html#gad7562debef3c6912b163e22d0d931dbe">font_helper.c</a>
@@ -1338,23 +1354,23 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748">font_helper.h</a>
 </li>
 <li>WBLocateWindow()
-: <a class="el" href="group__wcore.html#gae9d6d01f936dee703f708e7e4120c099">window_helper.c</a>
-, <a class="el" href="group__wcore.html#gae9d6d01f936dee703f708e7e4120c099">window_helper.h</a>
+: <a class="el" href="group__wcore.html#gae9d6d01f936dee703f708e7e4120c099">window_helper.h</a>
+, <a class="el" href="group__wcore.html#gae9d6d01f936dee703f708e7e4120c099">window_helper.c</a>
 </li>
 <li>WBLocateWindowCallback
 : <a class="el" href="group__wcore.html#gab37976e62900c9fd328045c33317a369">window_helper.h</a>
 </li>
 <li>WBLookupAtom()
-: <a class="el" href="group__platform.html#gab9521326551eb30d23685ab9e4622666">platform_helper.h</a>
-, <a class="el" href="group__platform.html#gab9521326551eb30d23685ab9e4622666">platform_helper.c</a>
+: <a class="el" href="group__platform.html#gab9521326551eb30d23685ab9e4622666">platform_helper.c</a>
+, <a class="el" href="group__platform.html#gab9521326551eb30d23685ab9e4622666">platform_helper.h</a>
 </li>
 <li>WBMapRaised()
-: <a class="el" href="group__expose.html#ga838bf98ec6aa8f173dc6abb1c889eace">window_helper.c</a>
-, <a class="el" href="group__expose.html#ga838bf98ec6aa8f173dc6abb1c889eace">window_helper.h</a>
+: <a class="el" href="group__expose.html#ga838bf98ec6aa8f173dc6abb1c889eace">window_helper.h</a>
+, <a class="el" href="group__expose.html#ga838bf98ec6aa8f173dc6abb1c889eace">window_helper.c</a>
 </li>
 <li>WBMapWindow()
-: <a class="el" href="group__expose.html#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">window_helper.h</a>
-, <a class="el" href="group__expose.html#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">window_helper.c</a>
+: <a class="el" href="group__expose.html#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">window_helper.c</a>
+, <a class="el" href="group__expose.html#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">window_helper.h</a>
 </li>
 <li>WBMenu
 : <a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">menu.h</a>
@@ -1381,52 +1397,52 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">menu.h</a>
 </li>
 <li>WBMouseCancel()
-: <a class="el" href="group__events.html#ga1f2b00666adc4ae2587894bcd3ae8d7f">window_helper.c</a>
-, <a class="el" href="group__events.html#ga1f2b00666adc4ae2587894bcd3ae8d7f">window_helper.h</a>
+: <a class="el" href="group__events.html#ga1f2b00666adc4ae2587894bcd3ae8d7f">window_helper.h</a>
+, <a class="el" href="group__events.html#ga1f2b00666adc4ae2587894bcd3ae8d7f">window_helper.c</a>
 </li>
 <li>WBMutexCreate()
-: <a class="el" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd">platform_helper.h</a>
-, <a class="el" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd">platform_helper.c</a>
+: <a class="el" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd">platform_helper.c</a>
+, <a class="el" href="group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd">platform_helper.h</a>
 </li>
 <li>WBMutexFree()
 : <a class="el" href="group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66">platform_helper.h</a>
 , <a class="el" href="group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66">platform_helper.c</a>
 </li>
 <li>WBMutexLock()
-: <a class="el" href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d">platform_helper.h</a>
-, <a class="el" href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d">platform_helper.c</a>
+: <a class="el" href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d">platform_helper.c</a>
+, <a class="el" href="group__threads.html#ga1c803b1f6e3d4420636107bd18425e8d">platform_helper.h</a>
 </li>
 <li>WBMutexUnlock()
-: <a class="el" href="group__threads.html#gaa57c76153ca0af21cc2525c605854832">platform_helper.c</a>
-, <a class="el" href="group__threads.html#gaa57c76153ca0af21cc2525c605854832">platform_helper.h</a>
+: <a class="el" href="group__threads.html#gaa57c76153ca0af21cc2525c605854832">platform_helper.h</a>
+, <a class="el" href="group__threads.html#gaa57c76153ca0af21cc2525c605854832">platform_helper.c</a>
 </li>
 <li>WBNextEvent()
-: <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">window_helper.h</a>
-, <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">window_helper.c</a>
+: <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">window_helper.c</a>
+, <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5">window_helper.h</a>
 </li>
 <li>WBNormalizeXMLString()
-: <a class="el" href="group__text.html#ga37672be02736c8986ecb307317184513">platform_helper.c</a>
-, <a class="el" href="group__text.html#ga37672be02736c8986ecb307317184513">platform_helper.h</a>
+: <a class="el" href="group__text.html#ga37672be02736c8986ecb307317184513">platform_helper.h</a>
+, <a class="el" href="group__text.html#ga37672be02736c8986ecb307317184513">platform_helper.c</a>
 </li>
 <li>WBPaintHScrollBar()
 : <a class="el" href="group__window__dressing.html#gab320df64511bdefe4e3544da85164482">window_dressing.h</a>
 , <a class="el" href="group__window__dressing.html#gab320df64511bdefe4e3544da85164482">window_dressing.c</a>
 </li>
 <li>WBPaintVScrollBar()
-: <a class="el" href="group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d">window_dressing.c</a>
-, <a class="el" href="group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d">window_dressing.h</a>
+: <a class="el" href="group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d">window_dressing.h</a>
+, <a class="el" href="group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d">window_dressing.c</a>
 </li>
 <li>WBParseStandardArguments()
-: <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">platform_helper.h</a>
-, <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">platform_helper.c</a>
+: <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">platform_helper.c</a>
+, <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">platform_helper.h</a>
 </li>
 <li>WBPlatformOnExit()
 : <a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">platform_helper.h</a>
 , <a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">platform_helper.c</a>
 </li>
 <li>WBPlatformOnInit()
-: <a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">platform_helper.h</a>
-, <a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">platform_helper.c</a>
+: <a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">platform_helper.c</a>
+, <a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5">platform_helper.h</a>
 </li>
 <li>WBPointInGeom
 : <a class="el" href="group__wcore.html#gacbf422a1a4a3db6ccac2b9213b3ae93d">window_helper.h</a>
@@ -1435,36 +1451,36 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__wcore.html#ga85fc7b30e4d22796448591954b3fc257">window_helper.h</a>
 </li>
 <li>WBPointInWindow()
-: <a class="el" href="group__wcore.html#ga3e404238e502acadf531c26abd7e7cbe">window_helper.h</a>
-, <a class="el" href="group__wcore.html#ga3e404238e502acadf531c26abd7e7cbe">window_helper.c</a>
+: <a class="el" href="group__wcore.html#ga3e404238e502acadf531c26abd7e7cbe">window_helper.c</a>
+, <a class="el" href="group__wcore.html#ga3e404238e502acadf531c26abd7e7cbe">window_helper.h</a>
 </li>
 <li>WBPostAppEvent()
-: <a class="el" href="group__events.html#ga7db44fa0c4785345f944167a066209d3">window_helper.c</a>
-, <a class="el" href="group__events.html#ga7db44fa0c4785345f944167a066209d3">window_helper.h</a>
+: <a class="el" href="group__events.html#ga7db44fa0c4785345f944167a066209d3">window_helper.h</a>
+, <a class="el" href="group__events.html#ga7db44fa0c4785345f944167a066209d3">window_helper.c</a>
 </li>
 <li>WBPostDelayedEvent()
 : <a class="el" href="group__events.html#gae58733a08aa8a56986313c090d56fa9c">window_helper.h</a>
 , <a class="el" href="group__events.html#gae58733a08aa8a56986313c090d56fa9c">window_helper.c</a>
 </li>
 <li>WBPostDelayedSetFocusAppEvent()
-: <a class="el" href="group__events.html#ga26c444fc559879a0457ad3915dc95041">window_helper.c</a>
-, <a class="el" href="group__events.html#ga26c444fc559879a0457ad3915dc95041">window_helper.h</a>
+: <a class="el" href="group__events.html#ga26c444fc559879a0457ad3915dc95041">window_helper.h</a>
+, <a class="el" href="group__events.html#ga26c444fc559879a0457ad3915dc95041">window_helper.c</a>
 </li>
 <li>WBPostEvent()
-: <a class="el" href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">window_helper.h</a>
-, <a class="el" href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">window_helper.c</a>
+: <a class="el" href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">window_helper.c</a>
+, <a class="el" href="group__events.html#ga70cadee7dfde0a884dfdb5a36f4bf6b5">window_helper.h</a>
 </li>
 <li>WBPostPriorityEvent()
 : <a class="el" href="group__events.html#gad1379e7531ae4e2b7f901b6e187623fe">window_helper.h</a>
 , <a class="el" href="group__events.html#gad1379e7531ae4e2b7f901b6e187623fe">window_helper.c</a>
 </li>
 <li>WBPrintPostScriptFile()
-: <a class="el" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687">platform_helper.h</a>
-, <a class="el" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687">platform_helper.c</a>
+: <a class="el" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687">platform_helper.c</a>
+, <a class="el" href="group__printer.html#ga737f9fed2f56848dc08d1cb608b49687">platform_helper.h</a>
 </li>
 <li>WBProcessExposeEvent()
-: <a class="el" href="group__events.html#gafa43907ec0a4d340d1741d95c573d8de">window_helper.c</a>
-, <a class="el" href="group__events.html#gafa43907ec0a4d340d1741d95c573d8de">window_helper.h</a>
+: <a class="el" href="group__events.html#gafa43907ec0a4d340d1741d95c573d8de">window_helper.h</a>
+, <a class="el" href="group__events.html#gafa43907ec0a4d340d1741d95c573d8de">window_helper.c</a>
 </li>
 <li>WBReAlloc()
 : <a class="el" href="group__sub__alloc.html#gaf2228924f510dc4b6f6b86b44c0e4e11">platform_helper.h</a>
@@ -1482,44 +1498,44 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__wcore.html#gae168859f15eab09401ca4271e064b299">window_helper.h</a>
 </li>
 <li>WBRegisterMenuCallback()
-: <a class="el" href="group__wcore.html#gabff70a128dddc8634658e93cfd7b51bb">window_helper.h</a>
-, <a class="el" href="group__wcore.html#gabff70a128dddc8634658e93cfd7b51bb">window_helper.c</a>
+: <a class="el" href="group__wcore.html#gabff70a128dddc8634658e93cfd7b51bb">window_helper.c</a>
+, <a class="el" href="group__wcore.html#gabff70a128dddc8634658e93cfd7b51bb">window_helper.h</a>
 </li>
 <li>WBRegisterWindowCallback()
-: <a class="el" href="group__wcore.html#ga7785399731e3727be5b33170d9dd3625">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga7785399731e3727be5b33170d9dd3625">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga7785399731e3727be5b33170d9dd3625">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga7785399731e3727be5b33170d9dd3625">window_helper.c</a>
 </li>
 <li>WBRemoveMenuWindow()
 : <a class="el" href="group__wcore.html#ga4553d3a9b93d12308ca096aa4625b44e">window_helper.c</a>
 , <a class="el" href="group__wcore.html#ga4553d3a9b93d12308ca096aa4625b44e">window_helper.h</a>
 </li>
 <li>WBReparentWindow()
-: <a class="el" href="group__wcore.html#ga814d21556a9f1eb379e7e72fd6b72a51">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga814d21556a9f1eb379e7e72fd6b72a51">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga814d21556a9f1eb379e7e72fd6b72a51">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga814d21556a9f1eb379e7e72fd6b72a51">window_helper.c</a>
 </li>
 <li>WBRestoreDefaultCursor()
-: <a class="el" href="group__wcore.html#gabf0a0701e24130b74f7e3fe023ad66e7">window_helper.h</a>
-, <a class="el" href="group__wcore.html#gabf0a0701e24130b74f7e3fe023ad66e7">window_helper.c</a>
+: <a class="el" href="group__wcore.html#gabf0a0701e24130b74f7e3fe023ad66e7">window_helper.c</a>
+, <a class="el" href="group__wcore.html#gabf0a0701e24130b74f7e3fe023ad66e7">window_helper.h</a>
 </li>
 <li>WBRunAsync()
-: <a class="el" href="group__process.html#ga1bd64d7b39e976442d0b6a8f500c2353">platform_helper.c</a>
-, <a class="el" href="group__process.html#ga1bd64d7b39e976442d0b6a8f500c2353">platform_helper.h</a>
+: <a class="el" href="group__process.html#ga1bd64d7b39e976442d0b6a8f500c2353">platform_helper.h</a>
+, <a class="el" href="group__process.html#ga1bd64d7b39e976442d0b6a8f500c2353">platform_helper.c</a>
 </li>
 <li>WBRunAsyncPipe()
-: <a class="el" href="group__process.html#ga87b3e57d4acf34d5d353c646445d151c">platform_helper.c</a>
-, <a class="el" href="group__process.html#ga87b3e57d4acf34d5d353c646445d151c">platform_helper.h</a>
+: <a class="el" href="group__process.html#ga87b3e57d4acf34d5d353c646445d151c">platform_helper.h</a>
+, <a class="el" href="group__process.html#ga87b3e57d4acf34d5d353c646445d151c">platform_helper.c</a>
 </li>
 <li>WBRunAsyncPipeV()
-: <a class="el" href="group__process.html#gaf9c772c6392d057d17513176f3c65902">platform_helper.c</a>
-, <a class="el" href="group__process.html#gaf9c772c6392d057d17513176f3c65902">platform_helper.h</a>
+: <a class="el" href="group__process.html#gaf9c772c6392d057d17513176f3c65902">platform_helper.h</a>
+, <a class="el" href="group__process.html#gaf9c772c6392d057d17513176f3c65902">platform_helper.c</a>
 </li>
 <li>WBRunResult()
-: <a class="el" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983">platform_helper.h</a>
-, <a class="el" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983">platform_helper.c</a>
+: <a class="el" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983">platform_helper.c</a>
+, <a class="el" href="group__process.html#gaa80b13461787c69ce1f94092abf3e983">platform_helper.h</a>
 </li>
 <li>WBRunResultPipe()
-: <a class="el" href="group__process.html#gad56bc7d42510658b1f7ede13b2082986">platform_helper.c</a>
-, <a class="el" href="group__process.html#gad56bc7d42510658b1f7ede13b2082986">platform_helper.h</a>
+: <a class="el" href="group__process.html#gad56bc7d42510658b1f7ede13b2082986">platform_helper.h</a>
+, <a class="el" href="group__process.html#gad56bc7d42510658b1f7ede13b2082986">platform_helper.c</a>
 </li>
 <li>WBScrollBarEvent()
 : <a class="el" href="group__window__dressing.html#ga59552cfbf1360ada86f84e4d662570df">window_dressing.c</a>
@@ -1547,8 +1563,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="window__dressing_8h.html#gac6b4ec514aee9f08233471bf41bfd74dabce831b85b17801baf53f64fac8a4873">window_dressing.h</a>
 </li>
 <li>WBSearchPath()
-: <a class="el" href="group__platform.html#gaefaa2afddaf082501611eef7339b1edf">platform_helper.h</a>
-, <a class="el" href="group__platform.html#gaefaa2afddaf082501611eef7339b1edf">platform_helper.c</a>
+: <a class="el" href="group__platform.html#gaefaa2afddaf082501611eef7339b1edf">platform_helper.c</a>
+, <a class="el" href="group__platform.html#gaefaa2afddaf082501611eef7339b1edf">platform_helper.h</a>
 </li>
 <li>WBSetApplicationWindow()
 : <a class="el" href="group__wcore.html#ga930f1ec5fc0beea185925fd8ce889eaf">window_helper.h</a>
@@ -1562,8 +1578,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">platform_helper.c</a>
 </li>
 <li>WBSetHScrollPos()
-: <a class="el" href="group__window__dressing.html#gad9cda3c76d25d3053908256495d3e23c">window_dressing.c</a>
-, <a class="el" href="group__window__dressing.html#gad9cda3c76d25d3053908256495d3e23c">window_dressing.h</a>
+: <a class="el" href="group__window__dressing.html#gad9cda3c76d25d3053908256495d3e23c">window_dressing.h</a>
+, <a class="el" href="group__window__dressing.html#gad9cda3c76d25d3053908256495d3e23c">window_dressing.c</a>
 </li>
 <li>WBSetHScrollRange()
 : <a class="el" href="group__window__dressing.html#gae3b977e539eee76cfffc238d7f1b019d">window_dressing.c</a>
@@ -1578,8 +1594,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__wcore.html#gab66ea8bfa25867b907e5b4aa0e59513a">window_helper.h</a>
 </li>
 <li>WBSetSelectionData()
-: <a class="el" href="group__clipboard.html#gab5b028a78611236d9271db098b174db6">clipboard_helper.c</a>
-, <a class="el" href="group__clipboard.html#gab5b028a78611236d9271db098b174db6">window_helper.h</a>
+: <a class="el" href="group__clipboard.html#gab5b028a78611236d9271db098b174db6">window_helper.h</a>
+, <a class="el" href="group__clipboard.html#gab5b028a78611236d9271db098b174db6">clipboard_helper.c</a>
 </li>
 <li>WBSetVScrollPos()
 : <a class="el" href="group__window__dressing.html#ga90a6f39329b178b719f70c11c6a49f76">window_dressing.c</a>
@@ -1590,12 +1606,12 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__window__dressing.html#gae0e3c8fb6fc629edff6af4046964751c">window_dressing.c</a>
 </li>
 <li>WBSetWindowClassName()
-: <a class="el" href="group__wcore.html#ga8db225b7114ac9c93e83cf44f475002a">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga8db225b7114ac9c93e83cf44f475002a">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga8db225b7114ac9c93e83cf44f475002a">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga8db225b7114ac9c93e83cf44f475002a">window_helper.c</a>
 </li>
 <li>WBSetWindowCursor()
-: <a class="el" href="group__wcore.html#ga740d7fdf5934052f07ec18cdbd41d72a">window_helper.h</a>
-, <a class="el" href="group__wcore.html#ga740d7fdf5934052f07ec18cdbd41d72a">window_helper.c</a>
+: <a class="el" href="group__wcore.html#ga740d7fdf5934052f07ec18cdbd41d72a">window_helper.c</a>
+, <a class="el" href="group__wcore.html#ga740d7fdf5934052f07ec18cdbd41d72a">window_helper.h</a>
 </li>
 <li>WBSetWindowData()
 : <a class="el" href="group__wcore.html#ga9741aaa9e1b09f96c8580d0486f5001a">window_helper.c</a>
@@ -1618,8 +1634,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__wcore.html#gab39e8fae232a797d5ee27f936ddfa42c">window_helper.h</a>
 </li>
 <li>WBSetWindowIcon()
-: <a class="el" href="group__wcore.html#ga83a28296bf2c6738590fad0ea0bea9e8">window_helper.h</a>
-, <a class="el" href="group__wcore.html#ga83a28296bf2c6738590fad0ea0bea9e8">window_helper.c</a>
+: <a class="el" href="group__wcore.html#ga83a28296bf2c6738590fad0ea0bea9e8">window_helper.c</a>
+, <a class="el" href="group__wcore.html#ga83a28296bf2c6738590fad0ea0bea9e8">window_helper.h</a>
 </li>
 <li>WBSetWindowTitle()
 : <a class="el" href="group__wcore.html#ga230b8aa2544ae37a42578af7f6a29e10">window_helper.c</a>
@@ -1630,16 +1646,16 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__wcore.html#gaa37fcfe35d0ac3daf6d22ef6451a3cb7">window_helper.h</a>
 </li>
 <li>WBSetWMPropertiesWindowType()
-: <a class="el" href="group__wcore.html#gaeb94431d6bea312dcabae07242dba442">window_helper.h</a>
-, <a class="el" href="group__wcore.html#gaeb94431d6bea312dcabae07242dba442">window_helper.c</a>
+: <a class="el" href="group__wcore.html#gaeb94431d6bea312dcabae07242dba442">window_helper.c</a>
+, <a class="el" href="group__wcore.html#gaeb94431d6bea312dcabae07242dba442">window_helper.h</a>
 </li>
 <li>WBSetWMProtocols()
-: <a class="el" href="group__wcore.html#ga41ed2ee5aa49afcddfbf72c0903fb6ae">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga41ed2ee5aa49afcddfbf72c0903fb6ae">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga41ed2ee5aa49afcddfbf72c0903fb6ae">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga41ed2ee5aa49afcddfbf72c0903fb6ae">window_helper.c</a>
 </li>
 <li>WBShowModal()
-: <a class="el" href="group__events.html#ga0c303659d95901643983f88a38948b44">window_helper.h</a>
-, <a class="el" href="group__events.html#ga0c303659d95901643983f88a38948b44">window_helper.c</a>
+: <a class="el" href="group__events.html#ga0c303659d95901643983f88a38948b44">window_helper.c</a>
+, <a class="el" href="group__events.html#ga0c303659d95901643983f88a38948b44">window_helper.h</a>
 </li>
 <li>WBSplitMBLine()
 : <a class="el" href="group__text__object.html#ga7b4a09352d4b23604e1d0b25625ad040">text_object.c</a>
@@ -1673,8 +1689,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="frame__window_8h.html#gadacccd461d63825fec608ba6ff1254dda2058f174262c3b1cbf5aa6e1d0379ecd">frame_window.h</a>
 </li>
 <li>WBStringLineCount()
-: <a class="el" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">platform_helper.h</a>
-, <a class="el" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">platform_helper.c</a>
+: <a class="el" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">platform_helper.c</a>
+, <a class="el" href="group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb">platform_helper.h</a>
 </li>
 <li>WBStringNextLine()
 : <a class="el" href="group__text.html#gacbabd0b058670415d5c851858e9f6784">platform_helper.c</a>
@@ -1688,32 +1704,36 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="group__error.html#ga70d0d1f97b689823e303b794124537a2">window_helper.h</a>
 </li>
 <li>WBTempFile()
-: <a class="el" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f">platform_helper.c</a>
-, <a class="el" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f">platform_helper.h</a>
+: <a class="el" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f">platform_helper.h</a>
+, <a class="el" href="group__platform.html#gabaf82705f01778a667ddef2239899a2f">platform_helper.c</a>
 </li>
 <li>WBTempFile0()
-: <a class="el" href="group__platform.html#ga7f8541b2e7204cafe39d514198b82826">platform_helper.h</a>
-, <a class="el" href="group__platform.html#ga7f8541b2e7204cafe39d514198b82826">platform_helper.c</a>
+: <a class="el" href="group__platform.html#ga7f8541b2e7204cafe39d514198b82826">platform_helper.c</a>
+, <a class="el" href="group__platform.html#ga7f8541b2e7204cafe39d514198b82826">platform_helper.h</a>
 </li>
 <li>WBTextBufferLineChange()
-: <a class="el" href="group__text__object.html#ga21cd50513992d6b1687006d260f69f42">text_object.h</a>
-, <a class="el" href="group__text__object.html#ga21cd50513992d6b1687006d260f69f42">text_object.c</a>
+: <a class="el" href="group__text__object.html#ga21cd50513992d6b1687006d260f69f42">text_object.c</a>
+, <a class="el" href="group__text__object.html#ga21cd50513992d6b1687006d260f69f42">text_object.h</a>
 </li>
 <li>WBTextBufferRefreshCache()
 : <a class="el" href="group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">text_object.h</a>
 , <a class="el" href="group__text__object.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">text_object.c</a>
+</li>
+<li>WBTextExtent()
+: <a class="el" href="group__font.html#ga1853b5beb1facb182ca60b56ef73089b">font_helper.h</a>
+, <a class="el" href="group__font.html#ga1853b5beb1facb182ca60b56ef73089b">font_helper.c</a>
 </li>
 <li>WBTextObjectCalculateLineHeight()
 : <a class="el" href="group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce">text_object.h</a>
 , <a class="el" href="group__text__object.html#gae1f8ddf1de53987c95b923e2b7f5f2ce">text_object.c</a>
 </li>
 <li>WBTextObjectConstructor()
-: <a class="el" href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">text_object.h</a>
-, <a class="el" href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">text_object.c</a>
+: <a class="el" href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">text_object.c</a>
+, <a class="el" href="group__text__object.html#gafb89e8eacd7f963104ed12b034482e7c">text_object.h</a>
 </li>
 <li>WBTextObjectDestructor()
-: <a class="el" href="group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">text_object.h</a>
-, <a class="el" href="group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">text_object.c</a>
+: <a class="el" href="group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">text_object.c</a>
+, <a class="el" href="group__text__object.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">text_object.h</a>
 </li>
 <li>WBTextObjectSetColorContextCallback()
 : <a class="el" href="group__text__object.html#ga13ddd8c043e9ea838b70fbe74b190c92">text_object.h</a>
@@ -1723,28 +1743,28 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__font.html#ga4446640beb73e3c0b9c2600394defa27">font_helper.c</a>
 </li>
 <li>WBThreadAllocLocal()
-: <a class="el" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3">platform_helper.c</a>
-, <a class="el" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3">platform_helper.h</a>
+: <a class="el" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3">platform_helper.h</a>
+, <a class="el" href="group__threads.html#ga10dd362dd4fa868fcb48ff6e06b226e3">platform_helper.c</a>
 </li>
 <li>WBThreadClose()
 : <a class="el" href="group__threads.html#ga73005b3b02a1f7490dba38fb4205dfe8">platform_helper.h</a>
 , <a class="el" href="group__threads.html#ga73005b3b02a1f7490dba38fb4205dfe8">platform_helper.c</a>
 </li>
 <li>WBThreadCreate()
-: <a class="el" href="group__threads.html#ga5865aa74bdde3969125656acade2222d">platform_helper.c</a>
-, <a class="el" href="group__threads.html#ga5865aa74bdde3969125656acade2222d">platform_helper.h</a>
+: <a class="el" href="group__threads.html#ga5865aa74bdde3969125656acade2222d">platform_helper.h</a>
+, <a class="el" href="group__threads.html#ga5865aa74bdde3969125656acade2222d">platform_helper.c</a>
 </li>
 <li>WBThreadExit()
 : <a class="el" href="group__threads.html#ga319ef67fb43cc37ab703dc003322f79b">platform_helper.c</a>
 , <a class="el" href="group__threads.html#ga319ef67fb43cc37ab703dc003322f79b">platform_helper.h</a>
 </li>
 <li>WBThreadFreeDisplay()
-: <a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">window_helper.h</a>
-, <a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">window_helper.c</a>
+: <a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">window_helper.c</a>
+, <a class="el" href="group__startup.html#gabc195384568f9fb8ed6d2a7704722395">window_helper.h</a>
 </li>
 <li>WBThreadFreeLocal()
-: <a class="el" href="group__threads.html#ga349248d007124a85c817d40814dc0b4e">platform_helper.h</a>
-, <a class="el" href="group__threads.html#ga349248d007124a85c817d40814dc0b4e">platform_helper.c</a>
+: <a class="el" href="group__threads.html#ga349248d007124a85c817d40814dc0b4e">platform_helper.c</a>
+, <a class="el" href="group__threads.html#ga349248d007124a85c817d40814dc0b4e">platform_helper.h</a>
 </li>
 <li>WBThreadGetCurrent()
 : <a class="el" href="group__threads.html#gaf92228d0c21f601cc155fb97eeaa2304">platform_helper.h</a>
@@ -1759,16 +1779,16 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__startup.html#ga59e964570bd9a7a7bf893796a83606a3">window_helper.c</a>
 </li>
 <li>WBThreadRunning()
-: <a class="el" href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6">platform_helper.h</a>
-, <a class="el" href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6">platform_helper.c</a>
+: <a class="el" href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6">platform_helper.c</a>
+, <a class="el" href="group__threads.html#gae2815d76f9163c95a9b987e7ce8468a6">platform_helper.h</a>
 </li>
 <li>WBThreadSetLocal()
 : <a class="el" href="group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8">platform_helper.c</a>
 , <a class="el" href="group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8">platform_helper.h</a>
 </li>
 <li>WBThreadWait()
-: <a class="el" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d">platform_helper.h</a>
-, <a class="el" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d">platform_helper.c</a>
+: <a class="el" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d">platform_helper.c</a>
+, <a class="el" href="group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d">platform_helper.h</a>
 </li>
 <li>WBToolkitUsage()
 : <a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2">platform_helper.h</a>
@@ -1779,20 +1799,20 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__expose.html#ga5b33259a9ca1d159866bc544b87c62ef">window_helper.h</a>
 </li>
 <li>WBUnregisterAppCallback()
-: <a class="el" href="group__wcore.html#ga3c1835ae548b23c1b6ead80c4743ddee">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga3c1835ae548b23c1b6ead80c4743ddee">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga3c1835ae548b23c1b6ead80c4743ddee">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga3c1835ae548b23c1b6ead80c4743ddee">window_helper.c</a>
 </li>
 <li>WBUnregisterWindowCallback()
-: <a class="el" href="group__wcore.html#gaba341876375df2c16fe7981839671e19">window_helper.h</a>
-, <a class="el" href="group__wcore.html#gaba341876375df2c16fe7981839671e19">window_helper.c</a>
+: <a class="el" href="group__wcore.html#gaba341876375df2c16fe7981839671e19">window_helper.c</a>
+, <a class="el" href="group__wcore.html#gaba341876375df2c16fe7981839671e19">window_helper.h</a>
 </li>
 <li>WBUpdateScrollBarGeometry()
-: <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103">window_dressing.c</a>
-, <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103">window_dressing.h</a>
+: <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103">window_dressing.h</a>
+, <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103">window_dressing.c</a>
 </li>
 <li>WBUpdateWindow()
-: <a class="el" href="group__expose.html#ga509364383b786ccb743f14bad9b39984">window_helper.c</a>
-, <a class="el" href="group__expose.html#ga509364383b786ccb743f14bad9b39984">window_helper.h</a>
+: <a class="el" href="group__expose.html#ga509364383b786ccb743f14bad9b39984">window_helper.h</a>
+, <a class="el" href="group__expose.html#ga509364383b786ccb743f14bad9b39984">window_helper.c</a>
 </li>
 <li>WBUpdateWindowImmediately()
 : <a class="el" href="group__expose.html#gafc6e7d40bacb6f570c9954f928f44fc6">window_helper.h</a>
@@ -1810,8 +1830,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__expose.html#ga424b1bf6edbe03b7e9aefff3af680cb3">window_helper.c</a>
 </li>
 <li>WBWaitForEvent()
-: <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">window_helper.h</a>
-, <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">window_helper.c</a>
+: <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">window_helper.c</a>
+, <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60">window_helper.h</a>
 </li>
 <li>WBWindowDispatch()
 : <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21">window_helper.h</a>
@@ -1825,12 +1845,12 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="group__wcore.html#ga1ef37a916fec2cacab2c772ad915ff58">window_helper.h</a>
 </li>
 <li>WBXlatCoordPoint()
-: <a class="el" href="group__wcore.html#ga37248fbd87d296716633672fd98877f9">window_helper.c</a>
-, <a class="el" href="group__wcore.html#ga37248fbd87d296716633672fd98877f9">window_helper.h</a>
+: <a class="el" href="group__wcore.html#ga37248fbd87d296716633672fd98877f9">window_helper.h</a>
+, <a class="el" href="group__wcore.html#ga37248fbd87d296716633672fd98877f9">window_helper.c</a>
 </li>
 <li>WBXlatCoordRect()
-: <a class="el" href="group__wcore.html#ga1b344942d3e9ccc9c8fb3ca6f3ae45a8">window_helper.h</a>
-, <a class="el" href="group__wcore.html#ga1b344942d3e9ccc9c8fb3ca6f3ae45a8">window_helper.c</a>
+: <a class="el" href="group__wcore.html#ga1b344942d3e9ccc9c8fb3ca6f3ae45a8">window_helper.c</a>
+, <a class="el" href="group__wcore.html#ga1b344942d3e9ccc9c8fb3ca6f3ae45a8">window_helper.h</a>
 </li>
 <li>WINDOW_DATA_SIZE
 : <a class="el" href="group__defaults.html#ga9d6d0cbd8dc3c2a8c603b9458a984847">window_helper.h</a>
@@ -1847,7 +1867,7 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:29 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:59 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

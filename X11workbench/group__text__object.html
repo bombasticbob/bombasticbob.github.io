@@ -633,7 +633,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <p>If a 'ppDeleted' pointer value is specified, this function will store the deleted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden. ">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05724">5724</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05758">5758</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -750,7 +750,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the multi-byte character located at the 'iCol' position within the string. If 'iCol' is out range, the return value will point to the terminating zero byte. On error, the return value will be NULL.</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden. ">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05898">5898</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05932">5932</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -791,7 +791,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <dl class="section return"><dt>Returns</dt><dd>The zero-based column index of the character pointed to by 'pChar' within 'pString. If 'pChar' is out range, or points to an invalid character, the return value will be zero.</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden. ">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05930">5930</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05964">5964</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -821,7 +821,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <dl class="section return"><dt>Returns</dt><dd>The length of the multi-byte character string in 'characters'</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden. ">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05888">5888</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05922">5922</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -957,7 +957,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <p>If a 'ppInserted' pointer value is specified, this function will store the inserted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden. ">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05630">5630</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05664">5664</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1044,7 +1044,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <p>This function will 'join' a 2nd string to an existing (WBAlloc'd) multi-byte character string, optionally at a specified column (padding it with white space, as needed). The 'pString' pointer must have been allocated via WBAlloc for this to function properly. However, the 'pJoin' string can be from any source.</p>
 <p>The caller is expected to remove the subsequent string pointer from being the 'next' line, as needed, following the line join. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05687">5687</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05721">5721</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1086,7 +1086,7 @@ static __inline__ const <a class="el" href="group__text__object.html#ga47fb27d1f
 <p>This function will 'split' a string at a particular column, returning a WBAlloc'd pointer to the 'remainder' of the line, which is intended to be inserted as a new line. The new line will NOT be indented, and leading white space will be left 'as-is'. Trailing white space on the original line, however, will automatically be trimmed.</p>
 <p>The caller is expected to insert the returned string pointer as the 'next' line, following the line split. The caller is also responsible for any 'auto indent' functionality that might be needed for a line split. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05650">5650</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05684">5684</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1358,7 @@ You should call this function following an 'undo' or other complex edit operatio
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:29 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

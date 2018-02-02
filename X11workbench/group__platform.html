@@ -131,6 +131,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga94004281108be87acc4fb37deef0a104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga94004281108be87acc4fb37deef0a104">WBDelay</a> (uint32_t uiDelay)</td></tr>
 <tr class="memdesc:ga94004281108be87acc4fb37deef0a104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay for a specified period in microseconds.  <a href="#ga94004281108be87acc4fb37deef0a104">More...</a><br /></td></tr>
 <tr class="separator:ga94004281108be87acc4fb37deef0a104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24fcd397013eb85afa4077ef76849a05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#ga24fcd397013eb85afa4077ef76849a05">WBCPUCount</a> (void)</td></tr>
+<tr class="memdesc:ga24fcd397013eb85afa4077ef76849a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of available CPU cores.  <a href="#ga24fcd397013eb85afa4077ef76849a05">More...</a><br /></td></tr>
+<tr class="separator:ga24fcd397013eb85afa4077ef76849a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaa2be84e6aa35494ef5c78db3fe19886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886">my_qsort_r</a> (void *base, int nmemb, int size, void *thunk, int(*compar)(void *, const void *, const void *))</td></tr>
 <tr class="memdesc:gaaa2be84e6aa35494ef5c78db3fe19886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local implementation of qsort_r() for operating systems that do not have it.  <a href="#gaaa2be84e6aa35494ef5c78db3fe19886">More...</a><br /></td></tr>
 <tr class="separator:gaaa2be84e6aa35494ef5c78db3fe19886"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,7 +262,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div class="fragment"><div class="line"><a class="code" href="group__platform.html#ga8e072186273813195bb5c42ec9b978c2">DECLARE_SORT_FUNCTION</a>(MySort,pThunk,pParam1,pParam2)</div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> **pStringArray = (<span class="keyword">const</span> <span class="keywordtype">char</span> **)pThunk; <span class="comment">// the real data</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> *pP1 = (<span class="keyword">const</span> <span class="keywordtype">int</span> *)pParam1;</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> *pP2 = (<span class="keyword">const</span> <span class="keywordtype">int</span> *)pParam2;</div><div class="line"></div><div class="line">  <span class="comment">// I am sorting integer indices into an array of character strings so</span></div><div class="line">  <span class="comment">// that I can sort the integers and not the actual strings.  But I needed</span></div><div class="line">  <span class="comment">// a pointer to my string array, so I pass that in as &#39;pThunk&#39;.</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> strcmp(pStringArray[*pP1],pStringArray[*pP2]);</div><div class="line">}</div></div><!-- fragment --><p>this helps resolve the known platform differences in qsort_r() for POSIX systems</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__platform.html#gace47742235ba7c59804024b08432cf72" title="Local implementation of qsort_r() for operating systems that do not have it. ">QSORT_R</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01079">1079</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01109">1109</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +342,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <p>Use this UNIVERSALLY whenever you need to use qsort_r(), as it is platform independent and deals with the incompatibilities associated with the BSD version and the Linux version, as well as implementing qsort_r() for systems that do not support it directly. </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01095">1095</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01125">1125</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +713,33 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>This function implements the QSORT_R macro when there is no libc function for qsort_r()</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02091">2091</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02276">2276</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga24fcd397013eb85afa4077ef76849a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24fcd397013eb85afa4077ef76849a05">&#9670;&nbsp;</a></span>WBCPUCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBCPUCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of available CPU cores. </p>
+<dl class="section return"><dt>Returns</dt><dd>The total number of available CPU cores on the system. On a VM, only those cores that have been assigned to the VM will be counted.</dd></dl>
+<p>A generic delay utility that returns the total number of available cores on the system. This may be useful when determining how to divide up a parallel algorithm, for example.</p>
+<p>If the number of available cores is not known or cannot be determined for some reason, this function returns a value of 0.</p>
+<p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00759">759</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -744,7 +773,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>Passing a pointer asynchronously via a hash, particularly across thread boundaries, SHOULD implement its own method of reference counting to avoid re-using a pointer after the memory has been free'd. If you do not queue the message, this becomes less important. In any case, care needs to be taken to avoid using a pointer after it has been free'd.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01435">1435</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01593">1593</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -774,7 +803,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>A generic delay utility that will use 'nanosleep' (when available), or some other means (such as 'usleep') when it is not. On systems that do not support microsecond resolution on delays, this function will always delay at least one millisecond. On some systems, this delay may be interruptible. For exact timing, a non-interruptible loop that times execution by counting CPU instructions shyould be used instead. This function is approximate only.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00651">651</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00733">733</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -806,7 +835,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>You should call this function immediately, once you have completed using the 'secure' pointer hash. In some cases, this will be done for you (such as via <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly. ">WBWindowDispatch()</a> with certain ClientMessage events). In other cases, you will have to explicitly do this yourself.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01591">1591</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01749">1749</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -837,7 +866,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>You should call this function immediately before you free a pointer that might be referenced by a secure pointer hash, to prevent 'use after free' problems. This will NOT solve problems where the hash is being used across threads, however. You may need to provide a different method of synchronizing hashes under such a condition, such as thread-safe reference counting.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01659">1659</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01817">1817</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -882,7 +911,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>The X11 workbench toolkit makes use of Atoms for menu and dialog box events. To prevent flooding the X11 server with a lot of unnecessary proprietary Atom names, this function lets X11 workbench continue to use the Atom paradigm while simultaneously keeping its own separate, private list of Atoms.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01806">1806</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01964">1964</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -926,7 +955,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>A non-NULL return value must be free'd using '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' rather than 'XFree()' (as it would have been with 'XGetAtomName()'). This is primarily for future cross-platform compatibility.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01987">1987</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02152">2152</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -959,7 +988,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>NOTE: automatically freeing the reference does NOT free the pointer. Failure to handle these correctly can result in memory leaks, but that is preferable to security vulnerabilities</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01713">1713</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01871">1871</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1013,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>The 'time index' is the master timer that determines when a timer event will be generated. By design it uses a 64-bit integer that never 'wraps around' to zero. It is generally derived from the 'gettimeofday' API call for operating systems such as BSD and Linux that support the POSIX standard.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00632">632</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00714">714</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1031,7 +1060,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>The X11 workbench toolkit makes use of Atoms for menu and dialog box events. To prevent flooding the X11 server with a lot of unnecessary proprietary Atom names, this function lets X11 workbench continue to use the Atom paradigm while simultaneously keeping its own separate, private list of Atoms.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01928">1928</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02093">2093</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1092,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' any non-NULL pointer returned by this function.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02947">2947</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03132">3132</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1126,7 @@ The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a9
 This function preserves the name of the file in a list of temporary files that need to be deleted once the application has terminated. This way an external application can keep the file open indefinitely, or even re-read the file, without negative effects. The '<a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16" title="Resource &#39;free-up&#39; on exit (must call) ">WBPlatformOnExit()</a>' function will delete all temporary files that have been previously created by 'WBTempFile'.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03192">3192</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03377">3377</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1159,7 @@ The actual location of the temporary file depends upon platform-specific paramet
 The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' any non-NULL pointer returned by this function.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03076">3076</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03261">3261</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1168,7 @@ The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a9
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

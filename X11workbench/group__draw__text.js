@@ -44,6 +44,7 @@ var group__draw__text =
       [ "DTAlignment_NO_SHRINK", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a0fa654264f70855c10b5960fbdb5e94c", null ],
       [ "DTAlignment_ALLOW_TRAILING", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804", null ],
       [ "DTAlignment_NO_WORD_WRAP", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a204dff61b43cd0d49df26819f2a1984c", null ],
+      [ "DTAlignment_ANTIALIAS", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a5747ce763c071a30cc7f19b5d66d724f", null ],
       [ "DTAlignment_SINGLELINE", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a196a3d7f39c98443cc28b2d35ba1108b", null ],
       [ "DTAlignment_UNDERSCORE", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da", null ],
       [ "DTAlignment_PRINTING", "draw__text_8h.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6", null ]
@@ -57,6 +58,7 @@ var group__draw__text =
     [ "DTDrawSingleLineText", "group__draw__text.html#ga5dd37bc0aba9e49ae026168f8cf62cb3", null ],
     [ "DTDrawSingleLineText0", "group__draw__text.html#ga168f550d3ac067ea051520264064a1a0", null ],
     [ "DTDrawString", "group__draw__text.html#ga8d243810deae01326217ba00d8471599", null ],
+    [ "DTGetTextExtent", "group__draw__text.html#ga1e26f31d2a2142c9e0127c06a2a9ecd6", null ],
     [ "DTGetTextWidth", "group__draw__text.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7", null ],
     [ "DTGetWordsFromText", "group__draw__text.html#ga7ef57be18660df443c4a4a2df1931ce6", null ],
     [ "DTGetWordsFromText0", "group__draw__text.html#gac1a755eebf48ea4c552045d9e9d0d175", null ],

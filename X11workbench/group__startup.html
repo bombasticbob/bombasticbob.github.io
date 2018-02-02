@@ -285,7 +285,7 @@ Variables</h2></td></tr>
 <p>This function is only valid if you call <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39; ">WBParseStandardArguments()</a> on startup</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00531">531</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00585">585</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ Variables</h2></td></tr>
 <p>Call this to free resources allocated by the PXM functions. Called by <a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824">WBExit()</a></p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01017">1017</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00117">117</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -726,12 +726,23 @@ The preferred method for initialization is to use <a class="el" href="group__sta
 </div><div class="memdoc">
 
 <p>parses standard C arguments as passed to 'main()' </p>
-<p>In order to support a large number of default switches and parameters that are supported by the X11workbench Toolkit API, you should pass pointers to the parameters that were passed to 'main()' by the C startup code to this function.<br />
-Returns 0 on success, non-zero (or error code) otherwise.<br />
-The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will likely be modified from their original values as part of the processing. If you want to retain the original values, pass 'copies' to this function and use the copies for normal argument processing (as with 'getarg').</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pargc</td><td>A pointer to an integer, containing 'argc'. On exit, it is updated based on the arguments that were parsed. </td></tr>
+    <tr><td class="paramname">pargv</td><td>A pointer to a char **, initially the list of arguments passed as 'argv'. On exit, the char ** value may change; if it does, it will need to be free'd using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a> </td></tr>
+    <tr><td class="paramname">penvp</td><td>A pointer to a char **, initially the list of arguments passed as 'envp'. May be NULL. On exit, the char ** value may change; if it does, it will need to be free'd using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A negative value if an error occurred, a positive value if the application should exit, and a zero value if the arguments were parsed correctly.</dd></dl>
+<p>In order to support a large number of default switches and parameters that are supported by the X11workbench Toolkit API, you should pass pointers to the parameters that were passed to 'main()' by the C startup code to this function, before processing the arguments and environment strings with your own application.<br />
+The function will parse the parameters and environment, and then returns 0 on success, a negative value on error, and a positive value (indicating 'close the application') otherwise.<br />
+The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will likely be modified from their original values as part of the processing, using pointers that were allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>. If you want to retain the original values, make copies of the 'argc', 'argv', and 'envp' parameters, and then pass the address of the 'copies' to this function. Then, use the copies (which may be <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>'d) for normal argument processing (as with 'getarg').<br />
+ NOTE: you can compare the copy to the original pointer values for argv and envp to determine whether they were '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>'d in order to free them later. However, when an application exits its memory is typically free'd automatically, so the benefit of doing this is small.</p>
+<p>For consistency, a negative return should display a 'usage()' banner (see <a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2" title="Displays &#39;usage&#39; for toolkit options to stderr. ">WBToolkitUsage()</a>, below). Any non-zero return value should cause the application to close.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00198">198</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00202">202</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -756,7 +767,7 @@ The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will
 It should also be safe to call this function from within a 'signal' handler, prior to '__exit()'.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00167">167</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00171">171</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -780,7 +791,7 @@ It should also be safe to call this function from within a 'signal' handler, pri
 <p>Call this function right before using any 'platform_helper' functions to initialize any global resources from '<a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a>'. <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required) ">WBInit()</a> does this automatically. It should only be called once. It's ok to call it before calling <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required) ">WBInit()</a>, however.<br />
  Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00122">122</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00126">126</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -858,7 +869,7 @@ It should also be safe to call this function from within a 'signal' handler, pri
 <p>Displays 'usage' for toolkit options to stderr. </p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00510">510</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00563">563</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -879,7 +890,7 @@ It should also be safe to call this function from within a 'signal' handler, pri
 <p><code>Quit</code> <code>Flag</code> - assign to TRUE (non-zero) when it's time to exit. This may be done asynchronously at any point in time.<br />
  Signal procs that terminate the application, as well as the main frame window's 'Destroy' handler, and any 'Exit' functions, should all set this to TRUE (non-zero) to force the application to exit.</p>
 <div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">bQuitFlag</a>;</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00101">101</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00105">105</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -888,7 +899,7 @@ It should also be safe to call this function from within a 'signal' handler, pri
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:28 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -68,6 +68,12 @@ $(document).ready(function(){initNavTree('group__expose.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga85df4d055c4a62f990e9eae6c6522d7e"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga85df4d055c4a62f990e9eae6c6522d7e">WBDialogControlInvalidateGeom</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pDialogControl, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom, int bPaintFlag)</td></tr>
+<tr class="memdesc:ga85df4d055c4a62f990e9eae6c6522d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function, invalidates a Geom for a dialog box control.  <a href="#ga85df4d055c4a62f990e9eae6c6522d7e">More...</a><br /></td></tr>
+<tr class="separator:ga85df4d055c4a62f990e9eae6c6522d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35e4f78eb8d70235ad7c5012562d57fd"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga35e4f78eb8d70235ad7c5012562d57fd">WBDialogControlInvalidateRegion</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pDialogControl, Region rgn, int bPaintFlag)</td></tr>
+<tr class="memdesc:ga35e4f78eb8d70235ad7c5012562d57fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function, invalidates a region for a dialog box control.  <a href="#ga35e4f78eb8d70235ad7c5012562d57fd">More...</a><br /></td></tr>
+<tr class="separator:ga35e4f78eb8d70235ad7c5012562d57fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe0a3d2e602fb2791f2d0ef1d9ff8b30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">WBMapWindow</a> (Display *pDisplay, Window wID)</td></tr>
 <tr class="memdesc:gabe0a3d2e602fb2791f2d0ef1d9ff8b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XMapWindow, makes window visible.  <a href="#gabe0a3d2e602fb2791f2d0ef1d9ff8b30">More...</a><br /></td></tr>
 <tr class="separator:gabe0a3d2e602fb2791f2d0ef1d9ff8b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +270,118 @@ This particular function is more suited to updating a specific area outside of a
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07570">7570</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga85df4d055c4a62f990e9eae6c6522d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85df4d055c4a62f990e9eae6c6522d7e">&#9670;&nbsp;</a></span>WBDialogControlInvalidateGeom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static __inline__ void WBDialogControlInvalidateGeom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramname"><em>pDialogControl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
+          <td class="paramname"><em>pGeom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bPaintFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience function, invalidates a Geom for a dialog box control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDialogControl</td><td>A pointer to the WBDialogControl structure that is associated with the dialog control window </td></tr>
+    <tr><td class="paramname">pGeom</td><td>A pointer to a WB_GEOM structure specifying the invalid area, or NULL (implying the entire window) </td></tr>
+    <tr><td class="paramname">bPaintFlag</td><td>A non-zero value to force re-paint by generating an Expose message. Zero simply invalidates the specified area</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>convenience function for calling <a class="el" href="group__expose.html#ga615a77d3bbfba4f3e6f8c4509bce7598" title="&#39;Paint&#39; helper, invalidates a region for asynchronous Expose event generation ">WBInvalidateRegion()</a> for a dialog box control</p>
+<p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00315">315</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+
+</div>
+</div>
+<a id="ga35e4f78eb8d70235ad7c5012562d57fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35e4f78eb8d70235ad7c5012562d57fd">&#9670;&nbsp;</a></span>WBDialogControlInvalidateRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static __inline__ void WBDialogControlInvalidateRegion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramname"><em>pDialogControl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Region&#160;</td>
+          <td class="paramname"><em>rgn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bPaintFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience function, invalidates a region for a dialog box control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDialogControl</td><td>A pointer to the WBDialogControl structure that is associated with the dialog control window </td></tr>
+    <tr><td class="paramname">rgn</td><td>A Region identifier specifying the invalid area, or None (implying the entire window) </td></tr>
+    <tr><td class="paramname">bPaintFlag</td><td>A non-zero value to force re-paint by generating an Expose message. Zero simply invalidates the specified area</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>convenience function for calling <a class="el" href="group__expose.html#ga615a77d3bbfba4f3e6f8c4509bce7598" title="&#39;Paint&#39; helper, invalidates a region for asynchronous Expose event generation ">WBInvalidateRegion()</a> for a dialog box control</p>
+<p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00334">334</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -941,7 +1059,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:29 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

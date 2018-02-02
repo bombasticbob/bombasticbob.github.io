@@ -24,6 +24,7 @@ var group__platform =
     [ "WB_UINT64", "group__platform.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a", null ],
     [ "WB_UINTPTR", "group__platform.html#gaf2e76d8f9feb32fb9105142299c90a5a", null ],
     [ "my_qsort_r", "group__platform.html#gaaa2be84e6aa35494ef5c78db3fe19886", null ],
+    [ "WBCPUCount", "group__platform.html#ga24fcd397013eb85afa4077ef76849a05", null ],
     [ "WBCreatePointerHash", "group__platform.html#ga99ffb9b6c8c93ea9e20706c62b4b7713", null ],
     [ "WBDelay", "group__platform.html#ga94004281108be87acc4fb37deef0a104", null ],
     [ "WBDestroyPointerHash", "group__platform.html#ga966312c55d70aba382f3a9b714c024e2", null ],

@@ -73,10 +73,10 @@ $(document).ready(function(){initNavTree('struct____WB__FW__MENU__HANDLER____.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a677acb025d0e13875e3f3ae55c6654f9"><td class="memItemLeft" align="right" valign="top"><a id="a677acb025d0e13875e3f3ae55c6654f9"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FW__MENU__HANDLER____.html#a677acb025d0e13875e3f3ae55c6654f9">lMenuID</a></td></tr>
-<tr class="memdesc:a677acb025d0e13875e3f3ae55c6654f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu ID (&lt; 0x10000L) or const pointer to string <br /></td></tr>
-<tr class="separator:a677acb025d0e13875e3f3ae55c6654f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14d60964cad5d6bd5536c5ae577940c"><td class="memItemLeft" align="right" valign="top"><a id="ab14d60964cad5d6bd5536c5ae577940c"></a>
+uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FW__MENU__HANDLER____.html#ab14d60964cad5d6bd5536c5ae577940c">lMenuID</a></td></tr>
+<tr class="memdesc:ab14d60964cad5d6bd5536c5ae577940c"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu ID (&lt; 0x10000L) or const pointer to string <br /></td></tr>
+<tr class="separator:ab14d60964cad5d6bd5536c5ae577940c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d6b54d85fcb37c56abd3cd21e52b91e"><td class="memItemLeft" align="right" valign="top"><a id="a0d6b54d85fcb37c56abd3cd21e52b91e"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__FW__MENU__HANDLER____.html#a0d6b54d85fcb37c56abd3cd21e52b91e">callback</a> )(XClientMessageEvent *)</td></tr>
 <tr class="memdesc:a0d6b54d85fcb37c56abd3cd21e52b91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">menu callback (gets pointer to the 'XClientMessageEvent'). <br /></td></tr>
@@ -88,9 +88,9 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>structure for managing menu callbacks </p>
 <p>The WBFWMenuHandler structure is designed to be initialized via macros, so that a set of callback functions can then be easily used to handle menu events. If no menu handler is present for a menu item, or if the menu UI handler is NOT NULL and returns a non-zero value, the menu item will be disabled and displayed accordingly. It will not be possible to use its hotkey nor select it. Otherwise, the menu will be displayed normally and be selectable, and its hotkey will be able to activate it.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__FW__MENU__HANDLER____.html">__WB_FW_MENU_HANDLER__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct____WB__FW__MENU__HANDLER____.html#a677acb025d0e13875e3f3ae55c6654f9">lMenuID</a>;                       <span class="comment">// menu ID (&lt; 0x10000L) or const pointer to string</span></div><div class="line"></div><div class="line">  int (* <a class="code" href="struct____WB__FW__MENU__HANDLER____.html#a0d6b54d85fcb37c56abd3cd21e52b91e">callback</a>)(XClientMessageEvent *);     <span class="comment">// menu callback (gets pointer to the &#39;XClientMessageEvent&#39;)</span></div><div class="line">  int (* <a class="code" href="struct____WB__FW__MENU__HANDLER____.html#a6a295f38f2f978fe8bb4f94d91f72dc0">UIcallback</a>)(<a class="code" href="struct____WBMenu.html">WBMenu</a> *, <a class="code" href="struct____WBMenuItem____.html">WBMenuItem</a> *);  <span class="comment">// menu &#39;UI&#39; callback to handle displaying menu states</span></div><div class="line">                                               <span class="comment">// A return value of &#39;0&#39; displays normally, -1 disables</span></div><div class="line">                                               <span class="comment">// Other return values are reserved</span></div><div class="line">} <a class="code" href="group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b">WBFWMenuHandler</a>;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624">FW_MENU_HANDLER_ENTRY</a>, <a class="el" href="group__frame__menu.html#ga8a61ebc2ef84095119158df442cfca52">FW_MENU_HANDLER_BEGIN</a> </dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__FW__MENU__HANDLER____.html">__WB_FW_MENU_HANDLER__</a></div><div class="line">{</div><div class="line">  uintptr_t <a class="code" href="struct____WB__FW__MENU__HANDLER____.html#ab14d60964cad5d6bd5536c5ae577940c">lMenuID</a>;                           <span class="comment">// menu ID (&lt; 0x10000L) or const pointer to string</span></div><div class="line"></div><div class="line">  int (* <a class="code" href="struct____WB__FW__MENU__HANDLER____.html#a0d6b54d85fcb37c56abd3cd21e52b91e">callback</a>)(XClientMessageEvent *);     <span class="comment">// menu callback (gets pointer to the &#39;XClientMessageEvent&#39;)</span></div><div class="line">  int (* <a class="code" href="struct____WB__FW__MENU__HANDLER____.html#a6a295f38f2f978fe8bb4f94d91f72dc0">UIcallback</a>)(<a class="code" href="struct____WBMenu.html">WBMenu</a> *, <a class="code" href="struct____WBMenuItem____.html">WBMenuItem</a> *);  <span class="comment">// menu &#39;UI&#39; callback to handle displaying menu states</span></div><div class="line">                                               <span class="comment">// A return value of &#39;0&#39; displays normally, -1 disables</span></div><div class="line">                                               <span class="comment">// Other return values are reserved</span></div><div class="line">} <a class="code" href="group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b">WBFWMenuHandler</a>;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__frame__menu.html#ga229372f84c3decfd19c503e93bcd0624">FW_MENU_HANDLER_ENTRY</a>, <a class="el" href="group__frame__menu.html#ga8a61ebc2ef84095119158df442cfca52">FW_MENU_HANDLER_BEGIN</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00215">215</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00217">217</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a6a295f38f2f978fe8bb4f94d91f72dc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a295f38f2f978fe8bb4f94d91f72dc0">&#9670;&nbsp;</a></span>UIcallback</h2>
@@ -108,7 +108,7 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <p>This callback function handles the menu states. A return value of '0' displays normaly, -1 disables.<br />
 Other return values are reserved. </p>
 
-<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00226">226</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="frame__window_8h_source.html#l00228">228</a> of file <a class="el" href="frame__window_8h_source.html">frame_window.h</a>.</p>
 
 </div>
 </div>
@@ -121,7 +121,7 @@ Other return values are reserved. </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WB__FW__MENU__HANDLER____.html">__WB_FW_MENU_HANDLER__</a></li>
-    <li class="footer">Generated on Sat Jan 27 2018 11:18:29 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Thu Feb 1 2018 17:00:59 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -37,7 +37,7 @@ var window__helper_8h =
     [ "WBRectOverlapped", "group__wcore.html#gac63e4883a78e0a46f209f23294367d9d", null ],
     [ "WINDOW_DATA_SIZE", "group__defaults.html#ga9d6d0cbd8dc3c2a8c603b9458a984847", null ],
     [ "WB_ERROR_INFO", "group__error.html#ga68ee9920c7b28343743907556c9102ca", null ],
-    [ "WB_EXTENT", "group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b", null ],
+    [ "WB_EXTENT", "window__helper_8h.html#a1421fcc86ec8294ae98ed96daafc3361", null ],
     [ "WB_GEOM", "group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01", null ],
     [ "WB_POINT", "group__core__struct.html#ga925d8c11829be5075193d34c9c8aed64", null ],
     [ "WB_RECT", "group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718", null ],

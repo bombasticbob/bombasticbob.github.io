@@ -31,5 +31,6 @@ var font__helper_8c =
     [ "WBLoadFont", "group__font.html#gad7562debef3c6912b163e22d0d931dbe", null ],
     [ "WBLoadModifyFont", "group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748", null ],
     [ "WBParseFontName", "font__helper_8c.html#a46692fdc0a5ce465c1d2c5be3de1a310", null ],
+    [ "WBTextExtent", "group__font.html#ga1853b5beb1facb182ca60b56ef73089b", null ],
     [ "WBTextWidth", "group__font.html#ga4446640beb73e3c0b9c2600394defa27", null ]
 ];

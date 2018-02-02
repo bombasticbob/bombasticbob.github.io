@@ -16,7 +16,7 @@ var group__edit__window =
     [ "WBEditWindowLoadFile", "group__edit__window.html#gabceafd985439f4260d6752a5e7a9eb56", null ],
     [ "WBEditWindowRegisterCallback", "group__edit__window.html#gaa2d1055807ccbbb9697f77ff386005a6", null ],
     [ "WBEditWindowSaveFile", "group__edit__window.html#gaa3653130304f49cc03e77b1f0608678c", null ],
-    [ "WBIsValidEditWindow", "group__edit__window.html#gacda2be9036ff90cd17819b5100b3f173", null ],
+    [ "WBIsValidEditWindow", "group__edit__window.html#ga3e40e9414d681985275cc0e37f789e1e", null ],
     [ "aEW_EDIT_CHANGE", "group__edit__window.html#gafd56c142c336ac6edeca40467b1ebcfc", null ],
     [ "aEW_HOVER_NOTIFY", "group__edit__window.html#ga47f1b36bb51955a5dfba02f7bd84502f", null ]
 ];

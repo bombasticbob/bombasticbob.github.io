@@ -5,6 +5,7 @@ var font__helper_8h =
     [ "WB_LOOKUP_STRING", "group__font.html#ga63cb78a78e65fca43cc76e5a1a1764dc", null ],
     [ "WB_TEXT_ESCAPEMENT", "group__font.html#gac0e51c6603b3f8ea32ad7b4e94e548c5", null ],
     [ "WB_TEXT_EXTENTS", "group__font.html#gae41279cef060c5a4cd578eef2d1be205", null ],
+    [ "WB_EXTENT", "group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b", null ],
     [ "WBFontFlags", "group__font.html#ga8f49d87ff2fe8588132f90e0f257f6ff", [
       [ "WBFontFlag_PITCH_FIXED", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa36cbb5eb7a08f150506081590e08ec0a", null ],
       [ "WBFontFlag_PITCH_VARIABLE", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffac53b8a1df1c849a3b64e6f8a54b0f6f0", null ],
@@ -77,5 +78,6 @@ var font__helper_8h =
     [ "WBFontSetMaxBounds", "group__font.html#gaa062b9a5a133a7e5262476ba69177558", null ],
     [ "WBLoadFont", "group__font.html#gad7562debef3c6912b163e22d0d931dbe", null ],
     [ "WBLoadModifyFont", "group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748", null ],
+    [ "WBTextExtent", "group__font.html#ga1853b5beb1facb182ca60b56ef73089b", null ],
     [ "WBTextWidth", "group__font.html#ga4446640beb73e3c0b9c2600394defa27", null ]
 ];
