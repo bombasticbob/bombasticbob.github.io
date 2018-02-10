@@ -13,5 +13,6 @@ var group__pointer =
     [ "WB_POINTER_MOVE", "group__pointer.html#ga653cc740eb3540cfadde6c5c63a4e12a", null ],
     [ "WB_POINTER_SCROLLDOWN", "group__pointer.html#ga40ef82512b663867b96310bb215a849a", null ],
     [ "WB_POINTER_SCROLLUP", "group__pointer.html#ga61d6fd9517bc1c810c5dd53c3522479a", null ],
-    [ "WB_POINTER_UNSPECIFIED", "group__pointer.html#gaeb65a9e8154a30f6ea0430c8457a3c04", null ]
+    [ "WB_POINTER_UNSPECIFIED", "group__pointer.html#gaeb65a9e8154a30f6ea0430c8457a3c04", null ],
+    [ "aWB_POINTER", "group__pointer.html#ga5a71c68353174922427c05fd004e1f9a", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: Menu functions and structures</title>
+<title>X11workbench Toolkit: Menu functions and structures</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X11 Work Bench Toolkit
+   <div id="projectname">X11workbench Toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
@@ -61,8 +61,10 @@ $(document).ready(function(){initNavTree('group__menu.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Menu functions and structures<div class="ingroups"><a class="el" href="group__frame.html">Frame Window API</a></div></div>  </div>
 </div><!--header-->
@@ -76,6 +78,17 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WBMenu.html">__WBMenu</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for managing menu items  <a href="struct____WBMenu.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga209c6e39176a271f787d3b7a8f24ea0a"><td class="memItemLeft" align="right" valign="top"><a id="ga209c6e39176a271f787d3b7a8f24ea0a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga209c6e39176a271f787d3b7a8f24ea0a">WBMENU_TAG</a>&#160;&#160;&#160;(*((const unsigned int *)&quot;WBMM&quot;))</td></tr>
+<tr class="memdesc:ga209c6e39176a271f787d3b7a8f24ea0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG for WBMenu structure. <br /></td></tr>
+<tr class="separator:ga209c6e39176a271f787d3b7a8f24ea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfe95d67b7e3d7e9a3994876741220a2"><td class="memItemLeft" align="right" valign="top"><a id="gadfe95d67b7e3d7e9a3994876741220a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gadfe95d67b7e3d7e9a3994876741220a2">WBMENUITEM_TAG</a>&#160;&#160;&#160;(*((const unsigned int *)&quot;WBMI&quot;))</td></tr>
+<tr class="memdesc:gadfe95d67b7e3d7e9a3994876741220a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG for WBMenuItem structure. <br /></td></tr>
+<tr class="separator:gadfe95d67b7e3d7e9a3994876741220a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -130,6 +143,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9abd89ca1ddde3b72752e1a4c99f6b7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9abd89ca1ddde3b72752e1a4c99f6b7f">MBMenuProcessHotKey</a> (<a class="el" href="group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759">WBMenu</a> *pMenu, XKeyEvent *pEvent)</td></tr>
 <tr class="memdesc:ga9abd89ca1ddde3b72752e1a4c99f6b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for menu hotkeys.  <a href="#ga9abd89ca1ddde3b72752e1a4c99f6b7f">More...</a><br /></td></tr>
 <tr class="separator:ga9abd89ca1ddde3b72752e1a4c99f6b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gab6bfa5084348ab4142dcbe45aa80fe27"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gab6bfa5084348ab4142dcbe45aa80fe27">aMENU_COMMAND</a></td></tr>
+<tr class="memdesc:gab6bfa5084348ab4142dcbe45aa80fe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">commands sent by menus via ClientMessage  <a href="#gab6bfa5084348ab4142dcbe45aa80fe27">More...</a><br /></td></tr>
+<tr class="separator:gab6bfa5084348ab4142dcbe45aa80fe27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb25670661b53eb8107b18530ff73995"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gaeb25670661b53eb8107b18530ff73995">aMENU_UI_COMMAND</a></td></tr>
+<tr class="memdesc:gaeb25670661b53eb8107b18530ff73995"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI notifications sent by menus to owning Frame windows via ClientMessage using 'WBWindowDispatch'.  <a href="#gaeb25670661b53eb8107b18530ff73995">More...</a><br /></td></tr>
+<tr class="separator:gaeb25670661b53eb8107b18530ff73995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f0180efa72232c0547a7d489bad40a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga9f0180efa72232c0547a7d489bad40a1">WBMENU_RESERVE_DEFAULT</a>&#160;&#160;&#160;(256 * sizeof(void *))</td></tr>
 <tr class="separator:ga9f0180efa72232c0547a7d489bad40a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga789ce61d76d2e8f8255210cc915577e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga789ce61d76d2e8f8255210cc915577e7">WBMENU_POPUP_HIGH_BIT</a>&#160;&#160;&#160;0x80000000</td></tr>
@@ -690,7 +712,7 @@ If the pointer must be re-allocated, or a new popup menu is created to replace i
 <p>Use this function to indicate whether a 'WBMenu' refers to a popup menu</p>
 <p>Header File: <a class="el" href="menu_8h.html" title="Definition file for menus. ">menu.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00396">396</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00402">402</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -820,12 +842,75 @@ If the pointer must be re-allocated, or a new popup menu is created to replace i
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gab6bfa5084348ab4142dcbe45aa80fe27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6bfa5084348ab4142dcbe45aa80fe27">&#9670;&nbsp;</a></span>aMENU_COMMAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aMENU_COMMAND</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>commands sent by menus via ClientMessage </p>
+<p>MENU_COMMAND message format (relative to XEvent.xclient)<br />
+<br />
+type == ClientMessage<br />
+message_type == aMENU_COMMAND<br />
+format == 32 (always)<br />
+data.l[0] Menu command message ID (aka 'action')<br />
+data.l[1] secure hash for WBMenu object pointer - see <a class="el" href="group__platform__functions.html#ga99ffb9b6c8c93ea9e20706c62b4b7713" title="Create/obtain a 32-bit &#39;secure&#39; hash for a pointer. ">WBCreatePointerHash()</a><br />
+data.l[2] Window ID of the menu bar<br />
+<br />
+Whenever this message is received, you should NOT call <a class="el" href="group__platform__functions.html#ga966312c55d70aba382f3a9b714c024e2" title="Destroy a 32-bit &#39;secure&#39; hash for a pointer. ">WBDestroyPointerHash()</a> for the WBMenu object pointer. This will be done automatically by the message framework. </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l00160">160</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="gaeb25670661b53eb8107b18530ff73995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb25670661b53eb8107b18530ff73995">&#9670;&nbsp;</a></span>aMENU_UI_COMMAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aMENU_UI_COMMAND</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UI notifications sent by menus to owning Frame windows via ClientMessage using 'WBWindowDispatch'. </p>
+<p>MENU_COMMAND message format (relative to XEvent.xclient)<br />
+<br />
+type == ClientMessage<br />
+message_type == aMENU_UI_COMMAND<br />
+format == 32 (always)<br />
+data.l[0] Menu command message ID (aka 'action')<br />
+data.l[1] secure hash for WBMenu object pointer - see <a class="el" href="group__platform__functions.html#ga99ffb9b6c8c93ea9e20706c62b4b7713" title="Create/obtain a 32-bit &#39;secure&#39; hash for a pointer. ">WBCreatePointerHash()</a><br />
+data.l[2] secure hash for WBMenuItem object pointer - see <a class="el" href="group__platform__functions.html#ga99ffb9b6c8c93ea9e20706c62b4b7713" title="Create/obtain a 32-bit &#39;secure&#39; hash for a pointer. ">WBCreatePointerHash()</a><br />
+data.l[3] the value '0' (reserved)<br />
+data.l[4] the value '0' (reserved)<br />
+<br />
+A Frame Window returns '0' to indicate that the menu should be displayed normally (same as 'not handled')<br />
+Other return values alter the display of the menu.</p>
+<p>For a popup menu: -1 : disables the menu 1 : enables the menu (default behavior if no UI handler present, but menu handler IS present) 0 : menu item NOT handled (menu item will be greyed)</p>
+<p>For a dynamic menu: (preliminary) - popup menu items only (not found in top-level menus) -1 : disabled the menu 0 : 'not handled' or 'error' (no dynamic menu will be added or displayed) &gt;0 : a 'secure internal pointer hash' representing an actual pointer value (preliminary, RESERVED) this pointer will be to a WBAlloc'd block of memory describing the menu items (as text). It will be necessary for the caller to interpret this text to create the dynamic memory items. PRELIMINARY: the text will be 'menu text\tAtom Name' - no hotkeys, no tooltip text. The menu text can include underscores which will only work when the popup is available</p>
+<p>Whenever this message is received, you should NOT call <a class="el" href="group__platform__functions.html#ga966312c55d70aba382f3a9b714c024e2" title="Destroy a 32-bit &#39;secure&#39; hash for a pointer. ">WBDestroyPointerHash()</a> for the WBMenu object pointer, nor for the WBMenuItem object pointer. This will be done automatically by the message framework. </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l00198">198</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 15:26:49 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

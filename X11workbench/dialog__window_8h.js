@@ -1,10 +1,10 @@
 var dialog__window_8h =
 [
-    [ "DIALOG_ENTRY_TAG", "group__dialog__api.html#ga0623b88503df845f33680554b56796b4", null ],
-    [ "DIALOG_WINDOW_TAG", "group__dialog__api.html#gaab9fa27f246b823ca0392562e90326f9", null ],
+    [ "DIALOG_ENTRY_TAG", "group__dialog__api__definitions.html#ga0623b88503df845f33680554b56796b4", null ],
+    [ "DIALOG_WINDOW_TAG", "group__dialog__api__definitions.html#gaab9fa27f246b823ca0392562e90326f9", null ],
     [ "WBDialogEntry", "group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad", null ],
     [ "WBDialogWindow", "group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a", null ],
-    [ "FileDialogEnum", "group__dialog__api.html#ga92ee7dbf8c990b8a2b7fd764ee1c938e", [
+    [ "FileDialogEnum", "group__dialog__api__types.html#ga92ee7dbf8c990b8a2b7fd764ee1c938e", [
       [ "FileDialog_Open", "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea6ccb72f13a6a373cb375149968d4f8f6", null ],
       [ "FileDialog_Save", "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea1a1b15ca2f345064fbe08c5d5957c196", null ],
       [ "FileDialog_SaveAs", "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea87fdf63367b44e4737645c6e0ac6bb7d", null ],
@@ -17,7 +17,7 @@ var dialog__window_8h =
       [ "FileDialog_Simple", "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eaa1c9702296ce8aa04df0c0b01cfa8a34", null ],
       [ "FileDialog_MODIFIER_MASK", "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea0d500668130c4b62f49743236182585f", null ]
     ] ],
-    [ "MessageBoxEnum", "group__dialog__api.html#gac4414a7e45fa6331cd4a0e7faf6e68ca", [
+    [ "MessageBoxEnum", "group__dialog__api__types.html#gac4414a7e45fa6331cd4a0e7faf6e68ca", [
       [ "MessageBox_Error", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa127322709f37d1ffb23ef5b8db642e4b", null ],
       [ "MessageBox_Warning", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa85419374c58878bb9cc9bfa2f18a9e2a", null ],
       [ "MessageBox_Info", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa63cf915188d64ab930bcfe5deeb1bf85", null ],
@@ -51,7 +51,7 @@ var dialog__window_8h =
       [ "MessageBox_AbortRetryIgnore", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa98fab6617afa5233cbaab0b1170a6cad", null ],
       [ "MessageBox_BUTTON_MASK", "dialog__window_8h.html#gac4414a7e45fa6331cd4a0e7faf6e68caa2d916aab18b9e7f4f74c31c1bff0ea5a", null ]
     ] ],
-    [ "WBDialogEntryFlags", "group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7", [
+    [ "WBDialogEntryFlags", "group__dlgwindow__definitions.html#ga97c244cac0ae5750288fa38b47a10da7", [
       [ "WBDialogEntry_VISIBLE", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a2768590644e2ec98df6717d61619dfaa", null ],
       [ "WBDialogEntry_EDIT", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a71de1e9af5e009725770fd44f777b79c", null ],
       [ "WBDialogEntry_MULTILINE", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a5b0214bcda8dad4c9bc6c2716b9d91dc", null ],
@@ -91,7 +91,7 @@ var dialog__window_8h =
       [ "WBDialogEntry_PUSHBUTTON", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a3a12639f259a3f77b2dd89eac6c3d246", null ],
       [ "WBDialogEntry_DEFAULT", "dialog__window_8h.html#ga97c244cac0ae5750288fa38b47a10da7a3509f878ba2febe772c915f8b42c27dc", null ]
     ] ],
-    [ "WBDialogWindowFlags", "group__dlgwindow.html#gaf4b1dd7894610596e141bc8242e7c16b", [
+    [ "WBDialogWindowFlags", "group__dlgwindow__definitions.html#gaf4b1dd7894610596e141bc8242e7c16b", [
       [ "WBDialogWindow_APP_WINDOW", "dialog__window_8h.html#gaf4b1dd7894610596e141bc8242e7c16baaff19e58b8981d18f5f086c6d049893f", null ],
       [ "WBDialogWindow_VISIBLE", "dialog__window_8h.html#gaf4b1dd7894610596e141bc8242e7c16baabceb0e170c982584ea472587c38a356", null ],
       [ "WBDialogWindow_DOMODAL", "dialog__window_8h.html#gaf4b1dd7894610596e141bc8242e7c16ba0ed86dbea349cbb60a467710ffc37411", null ],
@@ -101,12 +101,12 @@ var dialog__window_8h =
       [ "WBDialogWindow_MAX", "dialog__window_8h.html#gaf4b1dd7894610596e141bc8242e7c16ba7eeea6655d0f11f67a76bfcb4c0f0728", null ]
     ] ],
     [ "DLGAssignOwner", "group__dlgwindow.html#gab7bdf5b39d9df41d00817eb0ffda16ef", null ],
-    [ "DLGColorDialog", "group__dialog__api.html#ga3f432d9d8e76f234d58a53082ed9bd6c", null ],
-    [ "DLGCreateDialogWindow", "group__dialog__api.html#ga39053c006797afbd6c436823dac75dcb", null ],
+    [ "DLGColorDialog", "group__dialog__api__functions.html#ga3f432d9d8e76f234d58a53082ed9bd6c", null ],
+    [ "DLGCreateDialogWindow", "group__dialog__api__functions.html#ga39053c006797afbd6c436823dac75dcb", null ],
     [ "DLGDestroyDialogWindow", "group__dlgwindow.html#ga5df6641a71a0a3cba3fcd03e6bf3410d", null ],
     [ "DLGDestroyDialogWindow2", "group__dlgwindow.html#ga1381388e003aa788fa312fd3fc583fd2", null ],
-    [ "DLGFileDialog", "group__dialog__api.html#ga61c93635fb125b35d904e4e13e0169c6", null ],
-    [ "DLGFontDialog", "group__dialog__api.html#gac953f8471bde9acd98a9cb464838daba", null ],
+    [ "DLGFileDialog", "group__dialog__api__functions.html#ga61c93635fb125b35d904e4e13e0169c6", null ],
+    [ "DLGFontDialog", "group__dialog__api__functions.html#gac953f8471bde9acd98a9cb464838daba", null ],
     [ "DLGGetDialogControl", "group__dlgwindow.html#gaa4434295b82ee7f976033c303c088320", null ],
     [ "DLGGetDialogControlEntry", "group__dlgwindow.html#gae22cb9544e033114a520120d143e2b1d", null ],
     [ "DLGGetDialogWindowStruct", "group__dlgwindow.html#ga8a22360f03f14357a2b22dfbff2894b1", null ],
@@ -114,8 +114,8 @@ var dialog__window_8h =
     [ "DLGGetFirstDialogControl", "group__dlgwindow.html#gaa4921590d7c29a691da816f0cc32ee48", null ],
     [ "DLGGetNextDialogControl", "group__dlgwindow.html#gab8fbcae0238f3fe2b95261261f0bcfde", null ],
     [ "DLGGetPrevDialogControl", "group__dlgwindow.html#gaa095b4df95497427153bc4bc886d3a49", null ],
-    [ "DLGInputBox", "group__dialog__api.html#gae8aa6305ea75cbfc9db1a10cce1b4958", null ],
-    [ "DLGMessageBox", "group__dialog__api.html#gac1927b5f46aa6fb8e57a3786db1d0ea0", null ],
+    [ "DLGInputBox", "group__dialog__api__functions.html#gae8aa6305ea75cbfc9db1a10cce1b4958", null ],
+    [ "DLGMessageBox", "group__dialog__api__functions.html#gac1927b5f46aa6fb8e57a3786db1d0ea0", null ],
     [ "DLGNotifyDlg", "group__dlgwindow.html#gaac3073b3241ae6190c29372ff58f4203", null ],
     [ "DLGNotifyDlgAsync", "group__dlgwindow.html#ga9d2e85a542eea2eafa3f1ec876ae4b58", null ],
     [ "DLGPixelHeight", "group__dlgwindow.html#ga90bfa7503b53fb4907fbcca284dca2fa", null ],
@@ -123,5 +123,5 @@ var dialog__window_8h =
     [ "DLGProcessHotKey", "group__dlgwindow.html#gad587396a2321f7a84bff4fa479d55739", null ],
     [ "DLGRecalcLayout", "group__dlgwindow.html#ga980821ba8cd425385c5d5ebceead5b3f", null ],
     [ "DLGSetUserCallback", "group__dlgwindow.html#gac6b967465d9c8f7b374238e65e355a89", null ],
-    [ "DLGSplashScreen", "group__dialog__api.html#gaa9ac41453b238c153917fcd3a33a587d", null ]
+    [ "DLGSplashScreen", "group__dialog__api__functions.html#gaa9ac41453b238c153917fcd3a33a587d", null ]
 ];

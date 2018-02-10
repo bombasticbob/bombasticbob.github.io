@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: __WB_DIALOG_PROPLIST__ Struct Reference</title>
+<title>X11workbench Toolkit: __WB_DIALOG_PROPLIST__ Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X11 Work Bench Toolkit
+   <div id="projectname">X11workbench Toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
@@ -62,11 +62,11 @@ $(document).ready(function(){initNavTree('struct____WB__DIALOG__PROPLIST____.htm
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">__WB_DIALOG_PROPLIST__ Struct Reference<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a> &raquo; <a class="el" href="group__dlgctrl.html">Dialog Box Controls</a></div></div>  </div>
+<div class="title">__WB_DIALOG_PROPLIST__ Struct Reference<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a> &raquo; <a class="el" href="group__dlgctrl.html">Dialog Box Controls</a> &raquo; <a class="el" href="group__dlgctrl__structures.html">Structures</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Dialog Property List, container for <a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>.  
+<p>Dialog Property List, container for <a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>.  
  <a href="struct____WB__DIALOG__PROPLIST____.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>&gt;</code></p>
@@ -79,16 +79,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="separator:a59d9bdd721255d3d839be3311297a110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95354a9d46dde12f72ffdb4250ad0a53"><td class="memItemLeft" align="right" valign="top"><a id="a95354a9d46dde12f72ffdb4250ad0a53"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__DIALOG__PROPLIST____.html#a95354a9d46dde12f72ffdb4250ad0a53">nMaxProps</a></td></tr>
-<tr class="memdesc:a95354a9d46dde12f72ffdb4250ad0a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum number of available <a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> structures in aDlgProp <br /></td></tr>
+<tr class="memdesc:a95354a9d46dde12f72ffdb4250ad0a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum number of available <a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> structures in aDlgProp <br /></td></tr>
 <tr class="separator:a95354a9d46dde12f72ffdb4250ad0a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfe479c03fcbcfa16b74edc538b69938"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__DIALOG__PROPLIST____.html#abfe479c03fcbcfa16b74edc538b69938">aDlgProp</a> [1]</td></tr>
+<tr class="memitem:abfe479c03fcbcfa16b74edc538b69938"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____WB__DIALOG__PROPLIST____.html#abfe479c03fcbcfa16b74edc538b69938">aDlgProp</a> [1]</td></tr>
 <tr class="memdesc:abfe479c03fcbcfa16b74edc538b69938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-allocated array of (contiguous) structures for property storage.  <a href="#abfe479c03fcbcfa16b74edc538b69938">More...</a><br /></td></tr>
 <tr class="separator:abfe479c03fcbcfa16b74edc538b69938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Dialog Property List, container for <a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>. </p>
-<p>Container structure for WB_DIALOG_PROP structures, pre-allocated to hold 'nMaxProps'. Can be re-allocated as necessary to increase the total number of properties so long as the pointer to this structure isn't being cached outside of the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a><br />
- </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__DIALOG__PROPLIST____.html">__WB_DIALOG_PROPLIST__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__DIALOG__PROPLIST____.html#a59d9bdd721255d3d839be3311297a110">nProps</a>, <a class="code" href="struct____WB__DIALOG__PROPLIST____.html#a95354a9d46dde12f72ffdb4250ad0a53">nMaxProps</a>;      <span class="comment">// total number of active properties and maximum size of aDlgProp</span></div><div class="line">  <a class="code" href="struct____WB__DIALOG__PROP____.html">WB_DIALOG_PROP</a> <a class="code" href="struct____WB__DIALOG__PROPLIST____.html#abfe479c03fcbcfa16b74edc538b69938">aDlgProp</a>[1]; <span class="comment">// Array of property definitions (contiguous, pre-allocated)</span></div><div class="line">} <a class="code" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a>;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6" title="Dialog property storage structure. ">WB_DIALOG_PROP</a></dd></dl>
+<div class="textblock"><p>Dialog Property List, container for <a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>. </p>
+<p>Container structure for WB_DIALOG_PROP structures, pre-allocated to hold 'nMaxProps'. Can be re-allocated as necessary to increase the total number of properties so long as the pointer to this structure isn't being cached outside of the <a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a><br />
+ </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__DIALOG__PROPLIST____.html">__WB_DIALOG_PROPLIST__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__DIALOG__PROPLIST____.html#a59d9bdd721255d3d839be3311297a110">nProps</a>, <a class="code" href="struct____WB__DIALOG__PROPLIST____.html#a95354a9d46dde12f72ffdb4250ad0a53">nMaxProps</a>;      <span class="comment">// total number of active properties and maximum size of aDlgProp</span></div><div class="line">  <a class="code" href="struct____WB__DIALOG__PROP____.html">WB_DIALOG_PROP</a> <a class="code" href="struct____WB__DIALOG__PROPLIST____.html#abfe479c03fcbcfa16b74edc538b69938">aDlgProp</a>[1]; <span class="comment">// Array of property definitions (contiguous, pre-allocated)</span></div><div class="line">} <a class="code" href="group__dlgctrl__types.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a>;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6" title="Dialog property storage structure. ">WB_DIALOG_PROP</a></dd></dl>
 <p>Properties are maintained using the following X11 Work Bench Toolkit API functions:<br />
  </p><ul>
 <li>low-level functions: <a class="el" href="group__dlgctrl.html#ga973efc98dbe6c013ea7c7de26413a290" title="Low-level dialog control property assignment. ">WBDialogControlSetDialogProp()</a>, <a class="el" href="group__dlgctrl.html#ga41788127833ab991c56a1f50490a4298" title="Low-level dialog control property removal. ">WBDialogControlDelDialogProp()</a>, <a class="el" href="group__dlgctrl.html#ga2489985cc89f996f99b89f6448b3f31c" title="Low-level dialog control property retrieval. ">WBDialogControlGetDialogProp()</a><br />
@@ -103,7 +103,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00155">155</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00180">180</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="abfe479c03fcbcfa16b74edc538b69938"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfe479c03fcbcfa16b74edc538b69938">&#9670;&nbsp;</a></span>aDlgProp</h2>
@@ -112,7 +112,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> aDlgProp[1]</td>
+          <td class="memname"><a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> aDlgProp[1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -120,7 +120,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <p>Pre-allocated array of (contiguous) structures for property storage. </p>
 <p>This structure integrates the pre-allocated array of WB_DIALOG_PROP structures and provides access to them via the aDlgProp array. Whenever adding a new property causes the total number to exceed nMaxProps, the entire structure must be re-allocated to accomodate the new entries, with all existing members of the array copied to the re-allocated structure. This is handled properly by use of the X11 Work Bench Toolkit API functions for dialog control property management. </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00169">169</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00194">194</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -133,7 +133,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WB__DIALOG__PROPLIST____.html">__WB_DIALOG_PROPLIST__</a></li>
-    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 15:26:49 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

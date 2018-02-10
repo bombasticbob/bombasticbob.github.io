@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: __WB_DIALOG_PROP__ Struct Reference</title>
+<title>X11workbench Toolkit: __WB_DIALOG_PROP__ Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X11 Work Bench Toolkit
+   <div id="projectname">X11workbench Toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
@@ -62,7 +62,7 @@ $(document).ready(function(){initNavTree('struct____WB__DIALOG__PROP____.html','
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">__WB_DIALOG_PROP__ Struct Reference<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a> &raquo; <a class="el" href="group__dlgctrl.html">Dialog Box Controls</a></div></div>  </div>
+<div class="title">__WB_DIALOG_PROP__ Struct Reference<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a> &raquo; <a class="el" href="group__dlgctrl.html">Dialog Box Controls</a> &raquo; <a class="el" href="group__dlgctrl__structures.html">Structures</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -88,11 +88,11 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dialog property storage structure. </p>
-<p>Internally dialog properties are stored using this structure. An array of these are stored as a <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a> for each dialog control that has properties. Certain properties, however, are mapped to structure members within the <a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure.<br />
-</p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__DIALOG__PROP____.html">__WB_DIALOG_PROP__</a></div><div class="line">{</div><div class="line">  Atom <a class="code" href="struct____WB__DIALOG__PROP____.html#a5b801cec3bddc4f53c446a664908cecd">aProp</a>;          <span class="comment">// Atom identifying the property</span></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct____WB__DIALOG__PROP____.html#a207d3b12e11bd65b305d6b0a82bf66bc">lVal</a>;  <span class="comment">// &#39;long&#39; data value, assigned as needed</span></div><div class="line">  <span class="keywordtype">void</span> *<a class="code" href="struct____WB__DIALOG__PROP____.html#a411564e7e66ed76e3a6346cfadc1ff4a">pVal</a>;          <span class="comment">// pointer to data, as needed (may be allocated, some property types auto-free the data)</span></div><div class="line">} <a class="code" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>;</div></div><!-- fragment --><p>Dialog property storage structure. Additional details can be found in the documentation for <a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> and <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a>.<br />
- </p><dl class="section see"><dt>See also</dt><dd><b><a class="el" href="group__dlgctrl.html#gacbd581d981459f107eb29a6e946506a6" title="Dialog property storage structure. ">WB_DIALOG_PROP</a></b> and <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4" title="Dialog Property List, container for WB_DIALOG_PROP. ">WBDialogPropList</a> </dd></dl>
+<p>Internally dialog properties are stored using this structure. An array of these are stored as a <a class="el" href="group__dlgctrl__types.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a> for each dialog control that has properties. Certain properties, however, are mapped to structure members within the <a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> structure.<br />
+</p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__DIALOG__PROP____.html">__WB_DIALOG_PROP__</a></div><div class="line">{</div><div class="line">  Atom <a class="code" href="struct____WB__DIALOG__PROP____.html#a5b801cec3bddc4f53c446a664908cecd">aProp</a>;          <span class="comment">// Atom identifying the property</span></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="struct____WB__DIALOG__PROP____.html#a207d3b12e11bd65b305d6b0a82bf66bc">lVal</a>;  <span class="comment">// &#39;long&#39; data value, assigned as needed</span></div><div class="line">  <span class="keywordtype">void</span> *<a class="code" href="struct____WB__DIALOG__PROP____.html#a411564e7e66ed76e3a6346cfadc1ff4a">pVal</a>;          <span class="comment">// pointer to data, as needed (may be allocated, some property types auto-free the data)</span></div><div class="line">} <a class="code" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a>;</div></div><!-- fragment --><p>Dialog property storage structure. Additional details can be found in the documentation for <a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> and <a class="el" href="group__dlgctrl__types.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList</a>.<br />
+ </p><dl class="section see"><dt>See also</dt><dd><b><a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6" title="Dialog property storage structure. ">WB_DIALOG_PROP</a></b> and <a class="el" href="group__dlgctrl__types.html#ga742fa86d160389012fe0a2efe1e7c0f4" title="Dialog Property List, container for WB_DIALOG_PROP. ">WBDialogPropList</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00113">113</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l00138">138</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a></li>
 </ul>
@@ -102,7 +102,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct____WB__DIALOG__PROP____.html">__WB_DIALOG_PROP__</a></li>
-    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 15:26:49 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

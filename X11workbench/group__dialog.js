@@ -1,8 +1,8 @@
 var group__dialog =
 [
-    [ "Main Dialog API Functions and definitions", "group__dialog__api.html", "group__dialog__api" ],
+    [ "High Level Dialog Box API Functions and definitions", "group__dialog__api.html", "group__dialog__api" ],
+    [ "ClientMessage Event Atoms", "group__dialog__events.html", "group__dialog__events" ],
     [ "Dialog (Frame) Windows", "group__dlgwindow.html", "group__dlgwindow" ],
     [ "Dialog Box Controls", "group__dlgctrl.html", "group__dlgctrl" ],
-    [ "List Support", "group__dlglist.html", "group__dlglist" ],
-    [ "Dialog Window ClientMessage Atoms", "group__dlgatom.html", "group__dlgatom" ]
+    [ "List Support", "group__dlglist.html", "group__dlglist" ]
 ];

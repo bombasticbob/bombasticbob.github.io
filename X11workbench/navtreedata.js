@@ -1,11 +1,14 @@
 var NAVTREE =
 [
-  [ "X11 Work Bench Toolkit", "index.html", [
-    [ "X11workbench Toolkit Documentation", "index.html", null ],
-    [ "Copyright and License Terms for the X11workbench Toolkit", "mainpage_1.html", null ],
-    [ "Design Goals for the X11workbench Toolkit", "mainpage_1a.html", null ],
-    [ "X11workbench Toolkit Coding Style Guidelines", "mainpage_2.html", null ],
-    [ "Additional Information", "mainpage_3.html", null ],
+  [ "X11workbench Toolkit", "index.html", [
+    [ "X11workbench Toolkit Documentation", "index.html", [
+      [ "Summary and Back Story", "index.html#summary", null ],
+      [ "Copyright and License Terms", "index.html#mainpage_copyright", null ],
+      [ "Design Goals for the X11workbench Toolkit", "index.html#mainpage_1a", null ],
+      [ "Additional Information", "index.html#mainpage_3", null ]
+    ] ],
+    [ "X11workbench Toolkit Coding Style Guidelines", "mainpage_style.html", null ],
+    [ "API Tutorials and Quick-Start guides", "mainpage_tutorial.html", null ],
     [ "'Hello World' sample using the X11workbench Toolkit", "mainpage_4.html", null ],
     [ "Menu Resources and Menu Callbacks", "menu_resource.html", null ],
     [ "Dialog Box Resources", "dialog_resource.html", null ],
@@ -39,18 +42,18 @@ var NAVTREEINDEX =
 "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0e001d8a2b73b0e9b2f6cf4a367910f1",
 "globals_c.html",
 "group__defaults.html#gaa3f68398eddd018b389e0c1609a369c4",
-"group__dlgctrl.html#ga5e2f88d6f5cb8fdca1a6c94a980f6289",
-"group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a77bc6f43abf2a268a036ef11f20cf6ab",
-"group__edit__window.html#ga1905f55b320db416741d55866a92ebd5",
-"group__font.html#gaf129efae522b6800670aed6758cb92cc",
-"group__pixmap.html#ga7d9834073f83c08f21062d27db35559a",
-"group__sub__alloc.html#ga7941a53075e5f5ce27eba95c524aae5f",
-"group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8",
-"group__wcore.html#gga393c61affbc5766ce678224558be0b16a0f2114d9be7b1ef2ebc45e8e4d7597e2",
-"group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600aacdf3382fc11dae57020e7815f34052d",
-"struct____EVENT__ENTRY____.html",
-"struct____XSETTINGS__DATA__COLOR____.html",
-"window__helper_8c.html#a08ad7d41fe6198c26315067e9e7b8dde"
+"group__dlgctrl__atom.html#ga5708dc68b3243c583fd52ac74ebc1636",
+"group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b",
+"group__events.html#gaded67a2919c5cb862d512803fbcf21b5",
+"group__frame__window.html#ga74597022b33ab1ab995f3ffe711524e9",
+"group__platform__definitions.html#ga440b53a71a770adf0a937dd35c6cc2ec",
+"group__text.html#ga37672be02736c8986ecb307317184513",
+"group__threads.html#gaf85c648847aaed2824c9f81168bf5157",
+"group__wcore.html#gga393c61affbc5766ce678224558be0b16a88c1beaede192b634275c583016ab1f9",
+"menu_resource.html",
+"struct____WBChildFrame____.html#a2227550f6cb6cd368c40c0e9d77efce6",
+"struct__text__object__vtable__.html#a4fb16d4b7afe240dbe3757c654d570f4",
+"window__helper_8c.html#ab737b57be0a940f5a837033f58ad74d7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: &#39;Window Dressing&#39; Graphics Drawing Utilities</title>
+<title>X11workbench Toolkit: &#39;Window Dressing&#39; Graphics Drawing Utilities</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X11 Work Bench Toolkit
+   <div id="projectname">X11workbench Toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
@@ -63,7 +63,8 @@ $(document).ready(function(){initNavTree('group__window__dressing.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">'Window Dressing' Graphics Drawing Utilities</div>  </div>
 </div><!--header-->
@@ -166,6 +167,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7">WBDraw3DBorderTab</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomOutline, int fFocus, unsigned long lFGColor, unsigned long lBGColor, unsigned long lBorderColor1, unsigned long lBorderColor2, unsigned long lHighlightColor, XFontSet fontSet, XFontSet fontSetBold, Atom aGraphic, const char *szText)</td></tr>
 <tr class="memdesc:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'tab' within a specified 'outline' rectangle.  <a href="#ga8a43f2bfb2f71ee03622c93b082ca3a7">More...</a><br /></td></tr>
 <tr class="separator:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gabcf163874e105067053fa2b3e7e659e4"><td class="memItemLeft" align="right" valign="top">Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gabcf163874e105067053fa2b3e7e659e4">aSCROLL_NOTIFY</a></td></tr>
+<tr class="separator:gabcf163874e105067053fa2b3e7e659e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>GC Utility functions for drawing 'Window Dressing', i.e. various standard windows components</p>
@@ -1593,12 +1599,52 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gabcf163874e105067053fa2b3e7e659e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabcf163874e105067053fa2b3e7e659e4">&#9670;&nbsp;</a></span>aSCROLL_NOTIFY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Atom aSCROLL_NOTIFY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scroll notifications via ClientMessage</p>
+<p>SCROLL_NOTIFY message format (relative to XEvent.xclient)<br />
+ <br />
+ type == ClientMessage<br />
+ message_type == aSCROLL_NOTIFY<br />
+ format == 32 (always)<br />
+ data.l[0] Identifies the bar (WB_SCROLL_VERTICAL, WB_SCROLL_HORIZONTAL, or WB_SCROLL_DEFAULT)<br />
+ data.l[1] Indicates the notification type, one of the following:<br />
+ </p><ul>
+<li>WB_SCROLL_KNOB 'knob track' - knob position will be in data.l[2] </li>
+<li>WB_SCROLL_FORWARD move down, or move right </li>
+<li>WB_SCROLL_BACKWARD move up, or move left </li>
+<li>WB_SCROLL_PAGEFWD page down or page right </li>
+<li>WB_SCROLL_PAGEBACK page up or page left </li>
+<li>WB_SCROLL_FIRST scroll to first entry, i.e. home or top </li>
+<li>WB_SCROLL_LAST scroll to last entry, i.e. bottom or end </li>
+<li>WB_SCROLL_DBLCLICK double-click detection (no selection info in data.l[2]) </li>
+<li>WB_SCROLL_ABSOLUTE absolute scroll, to the absolute position in data.l[2] </li>
+<li>WB_SCROLL_RELATIVE relative scroll, relative +/- position in data.l[2] </li>
+<li>WB_SCROLL_NA generic 'NA' or 'UNDEFINED' value</li>
+</ul>
+<p>data.l[2] Optional parameter, typically the absolute or relative scroll position <br />
+</p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l00278">278</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 15:26:49 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

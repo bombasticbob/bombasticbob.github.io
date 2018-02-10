@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: Dialog Box Resources</title>
+<title>X11workbench Toolkit: Dialog Box Resources</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X11 Work Bench Toolkit
+   <div id="projectname">X11workbench Toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
@@ -64,14 +64,14 @@ $(document).ready(function(){initNavTree('dialog_resource.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>To simplify the creation of one of the most COMMON types of windows, the Dialog Box, the X11workbench Toolkit uses a TEXT RESOURCE format that can be subsequently passed to a high-level function to create a dialog box, either modal or modeless. The return value from a modal dialog box will be based on the value passed to <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351">WBEndModal()</a>.</p>
-<p>For more information on creating a dialog box, see <a class="el" href="group__dialog__api.html#ga39053c006797afbd6c436823dac75dcb">DLGCreateDialogWindow()</a>.</p>
+<p>For more information on creating a dialog box, see <a class="el" href="group__dialog__api__functions.html#ga39053c006797afbd6c436823dac75dcb">DLGCreateDialogWindow()</a>.</p>
 <p>The format of the dialog box resource begins with the 'BEGIN_DIALOG' keyword, and ends with the 'END_DIALOG' keyword. In between are the various dialog controls, in their 'tab order', such that the first control in the list that is capable of receiving the input focus will get the focus when the window is made visible.</p>
 <p>A typical dialog window resource might look as follows:<br />
-</p><div class="fragment"><div class="line">BEGIN_DIALOG FONT:Variable HEIGHT:50 WIDTH:200 TITLE:<span class="stringliteral">&quot;Sample Message Box Dialog Window&quot;</span></div><div class="line">  CONTROL:Icon ID:1000 X:2 Y:2 HEIGHT:20 WIDTH:20 VISIBLE</div><div class="line">  CONTROL:Text ID:1001 X:24 Y:2 HEIGHT:20 WIDTH:172 VISIBLE</div><div class="line">  CONTROL:DefPushButton ID:<a class="code" href="group__dlgctrl.html#ga77644707f6801a795c75d2f37913fbc1">IDOK</a> TITLE:OK X:80 Y:28 WIDTH:40 HEIGHT:18 VISIBLE</div><div class="line">END_DIALOG</div></div><!-- fragment --><p>The general form of a dialog resource keyword is as follows:</p>
+</p><div class="fragment"><div class="line">BEGIN_DIALOG FONT:Variable HEIGHT:50 WIDTH:200 TITLE:<span class="stringliteral">&quot;Sample Message Box Dialog Window&quot;</span></div><div class="line">  CONTROL:Icon ID:1000 X:2 Y:2 HEIGHT:20 WIDTH:20 VISIBLE</div><div class="line">  CONTROL:Text ID:1001 X:24 Y:2 HEIGHT:20 WIDTH:172 VISIBLE</div><div class="line">  CONTROL:DefPushButton ID:<a class="code" href="group__dlgctrl__definitions.html#ga77644707f6801a795c75d2f37913fbc1">IDOK</a> TITLE:OK X:80 Y:28 WIDTH:40 HEIGHT:18 VISIBLE</div><div class="line">END_DIALOG</div></div><!-- fragment --><p>The general form of a dialog resource keyword is as follows:</p>
 <p>KEYWORD[:type] [ID:value] [property[:value] [property[:value] [...]]]</p>
 <p>where KEYWORD is defined as BEGIN_DIALOG, END_DIALOG, or CONTROL and 'type' is valid ONLY for 'CONTROL' and 'ID' is valid ONLY for 'CONTROL' or sub-dialogs and 'property' represents one or more properties (which may or may not have values).</p>
 <p>The value of a property is always separated from the property by a : with no white space. If the value contains white space, it must be quoted (as in the above sample). A doubled quote mark will translate into a single quote if embedded within identical quote marks, such as </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;This is a &quot;</span><span class="stringliteral">&quot;quote&quot;</span><span class="stringliteral">&quot; mark&quot;</span></div></div><!-- fragment --><p> translating into </p><div class="fragment"><div class="line">This is a <span class="stringliteral">&quot;quote&quot;</span> mark</div></div><!-- fragment --><p>Properties that use reserved keywords will NORMALLY have their values stored directly into the corresponding area(s) within the dialog box's defining structures. Additional properties (including custom properties) that are specified for a control will be stored in a 'property list' for that control using atoms to identify the property, and with the specified 'value' (as text).<br />
- For more information, see <a class="el" href="group__dlgctrl.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList()</a> <b>WB_DIALOG_PROPLIST</b> <b>WB_DIALOG_PROP</b> <br />
+ For more information, see <a class="el" href="group__dlgctrl__types.html#ga742fa86d160389012fe0a2efe1e7c0f4">WBDialogPropList()</a> <b>WB_DIALOG_PROPLIST</b> <b>WB_DIALOG_PROP</b> <br />
  In some cases, properties may be mutually exclusive, and by definition the last specified property will be the one that takes precedence. The same is true for duplicate entries.<br />
  DIALOG CONTROL PRE-DEFINED TYPES</p>
 <p>The following pre-defined dialog control types are recognized:</p>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('dialog_resource.html','');});
 <p>Sub-dialogs and Tab (container) control </p><ul>
 <li>Tab: Container for sub-dialogs, one per tab.</li>
 </ul>
-<p>See Also: <a class="el" href="group__dlgctrl__atom.html">'Control Name' Atoms for standard dialog controls</a></p>
+<p>See Also: <a class="el" href="group__dlgctrl__atom.html">'Standard Control Name' Atoms</a></p>
 <p>RESERVED: adding the ability to register custom control types</p>
 <p>PRE-DEFINED PROPERTIES</p>
 <p>Certain pre-defined properties have special meaning. The following is a brief description of what the semantics are.</p>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('dialog_resource.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 10 2018 10:46:11 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 15:26:48 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

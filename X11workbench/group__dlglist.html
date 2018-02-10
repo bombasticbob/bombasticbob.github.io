@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: List Support</title>
+<title>X11workbench Toolkit: List Support</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X11 Work Bench Toolkit
+   <div id="projectname">X11workbench Toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
@@ -61,7 +61,10 @@ $(document).ready(function(){initNavTree('group__dlglist.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">List Support<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a></div></div>  </div>
 </div><!--header-->
@@ -76,6 +79,12 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing information about the current selection in a list.  <a href="struct__WB__LIST__CURSEL__.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga42aa5560dc7e3a7a63b04485a6eda1fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault</a>(X)&#160;&#160;&#160;<a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a>(X, <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47ac9d73d55342f27f77df083dad653609c">ListInfoFlags_SORTED</a>, <a class="el" href="group__dlglist.html#gad37ea0f014795844f165efbcd5dd8df3">DLGCDefaultListInfoAllocator</a>, <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">WBFree</a>, NULL, NULL)</td></tr>
+<tr class="memdesc:ga42aa5560dc7e3a7a63b04485a6eda1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrapper macro for <a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> for standard WBAlloc'd text data  <a href="#ga42aa5560dc7e3a7a63b04485a6eda1fd">More...</a><br /></td></tr>
+<tr class="separator:ga42aa5560dc7e3a7a63b04485a6eda1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga9e0253d5bc7a46cc83932ef540d24389"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____LISTINFO____.html">__LISTINFO__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389">LISTINFO</a></td></tr>
@@ -84,7 +93,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga92b775d076e343e60c315d20d6a5245f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__WB__LIST__CURSEL__.html">_WB_LIST_CURSEL_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga92b775d076e343e60c315d20d6a5245f">WBListCurSel</a></td></tr>
 <tr class="memdesc:ga92b775d076e343e60c315d20d6a5245f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing information about the current selection in a list.  <a href="#ga92b775d076e343e60c315d20d6a5245f">More...</a><br /></td></tr>
 <tr class="separator:ga92b775d076e343e60c315d20d6a5245f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b3c5293fad294d782ff4f6e20c63b93"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga9b3c5293fad294d782ff4f6e20c63b93">ControlListIndex</a> { <br />
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga9b3c5293fad294d782ff4f6e20c63b93"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga9b3c5293fad294d782ff4f6e20c63b93">ControlListIndex</a> { <br />
 &#160;&#160;<a class="el" href="group__dlglist.html#gga9b3c5293fad294d782ff4f6e20c63b93a59486f4a46ef398b1c28dc67c0d32726">ControlListIndex_FIRST</a> = 0, 
 <a class="el" href="group__dlglist.html#gga9b3c5293fad294d782ff4f6e20c63b93a1ba327796736e3c1b0bfd7d222d37906">ControlListIndex_LAST</a> = 0x7fffffff, 
 <a class="el" href="group__dlglist.html#gga9b3c5293fad294d782ff4f6e20c63b93a1b2c5f40a1a095645d5c8cdd9757842d">ControlListIndex_INSERT_FIRST</a> = -1, 
@@ -93,10 +105,10 @@ Typedefs</h2></td></tr>
 &#160;&#160;<a class="el" href="group__dlglist.html#gga9b3c5293fad294d782ff4f6e20c63b93a0a68a5f610f3557cde1bf960a8abd894">ControlListIndex_DELETE_ALL</a> = -1, 
 <a class="el" href="group__dlglist.html#gga9b3c5293fad294d782ff4f6e20c63b93a5cbf9027cd22e4ad9a93d4daf5743474">ControlListIndex_NONE</a> = -1
 <br />
- }<tr class="memdesc:ga9b3c5293fad294d782ff4f6e20c63b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">LIST-related constants for the index of an item within a list.  <a href="group__dlgctrl.html#ga9b3c5293fad294d782ff4f6e20c63b93">More...</a><br /></td></tr>
+ }<tr class="memdesc:ga9b3c5293fad294d782ff4f6e20c63b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">LIST-related constants for the index of an item within a list.  <a href="group__dlglist.html#ga9b3c5293fad294d782ff4f6e20c63b93">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga9b3c5293fad294d782ff4f6e20c63b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88f402bd2fdb3a20ed4c883dee516c47"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga88f402bd2fdb3a20ed4c883dee516c47">ListInfoFlags</a> { <br />
+<tr class="memitem:ga88f402bd2fdb3a20ed4c883dee516c47"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga88f402bd2fdb3a20ed4c883dee516c47">ListInfoFlags</a> { <br />
 &#160;&#160;<a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47ac9d73d55342f27f77df083dad653609c">ListInfoFlags_SORTED</a> = 1, 
 <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47a2424e4e1e33fdac2a7f3017bd6f82d62">ListInfoFlags_RESERVED1</a> = 2, 
 <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47a58f8d12c922bd64d025e5bcd4e17e2ef">ListInfoFlags_RESERVED2</a> = 4, 
@@ -107,48 +119,48 @@ Typedefs</h2></td></tr>
 <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47ac8602e0b6df1bb12b6bfba9bc9bbb118">ListInfoFlags_RESERVED6</a> = 0x40, 
 <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47a90575d82b325c06d5cdebcaf2f3fc138">ListInfoFlags_RESERVED7</a> = 0x80
 <br />
- }<tr class="memdesc:ga88f402bd2fdb3a20ed4c883dee516c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create flags specified in the call to <a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a>  <a href="group__dlgctrl.html#ga88f402bd2fdb3a20ed4c883dee516c47">More...</a><br /></td></tr>
+ }<tr class="memdesc:ga88f402bd2fdb3a20ed4c883dee516c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create flags specified in the call to <a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a>  <a href="group__dlglist.html#ga88f402bd2fdb3a20ed4c883dee516c47">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga88f402bd2fdb3a20ed4c883dee516c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad37ea0f014795844f165efbcd5dd8df3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gad37ea0f014795844f165efbcd5dd8df3">DLGCDefaultListInfoAllocator</a> (const void *pData, int cbData)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gad37ea0f014795844f165efbcd5dd8df3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gad37ea0f014795844f165efbcd5dd8df3">DLGCDefaultListInfoAllocator</a> (const void *pData, int cbData)</td></tr>
 <tr class="memdesc:gad37ea0f014795844f165efbcd5dd8df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 'List Info' data allocator for a control's list info.  <a href="#gad37ea0f014795844f165efbcd5dd8df3">More...</a><br /></td></tr>
 <tr class="separator:gad37ea0f014795844f165efbcd5dd8df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec3c1d6afe290b443d6d0c0b9ae3e471"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gaec3c1d6afe290b443d6d0c0b9ae3e471">DLGGetControlListText</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
+<tr class="memitem:gaec3c1d6afe290b443d6d0c0b9ae3e471"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gaec3c1d6afe290b443d6d0c0b9ae3e471">DLGGetControlListText</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
 <tr class="memdesc:gaec3c1d6afe290b443d6d0c0b9ae3e471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the text poiner for a single list entry (listbox, combo, and tree controls only)  <a href="#gaec3c1d6afe290b443d6d0c0b9ae3e471">More...</a><br /></td></tr>
 <tr class="separator:gaec3c1d6afe290b443d6d0c0b9ae3e471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga9c22b88b8abffc7bb60b4fbe4edea96e">DLGGetControlListData</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
+<tr class="memitem:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga9c22b88b8abffc7bb60b4fbe4edea96e">DLGGetControlListData</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
 <tr class="memdesc:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the data pointer for a single list entry (listbox, combo, and tree controls only)  <a href="#ga9c22b88b8abffc7bb60b4fbe4edea96e">More...</a><br /></td></tr>
 <tr class="separator:ga9c22b88b8abffc7bb60b4fbe4edea96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int(*pfnSort)(const void *, const void *))</td></tr>
+<tr class="memitem:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int nFlags, void *(*pfnAllocator)(const void *, int), void(*pfnDestructor)(void *), void(*pfnDisplay)(<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int(*pfnSort)(const void *, const void *))</td></tr>
 <tr class="memdesc:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the 'List Entry' for a control, specifying various callbacks and flags.  <a href="#ga6e2908aa1ad9b30f392d8585f10e893b">More...</a><br /></td></tr>
 <tr class="separator:ga6e2908aa1ad9b30f392d8585f10e893b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga25cfa4ea854ca13b4553d7e043c8cc86">DLGModifyControlListInfo</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int bFlags, int nFlags, int bAllocator, void *(*pfnAllocator)(const void *, int), int bDestructor, void(*pfnDestructor)(void *), int bDisplay, void(*pfnDisplay)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int bSort, int(*pfnSort)(const void *, const void *))</td></tr>
+<tr class="memitem:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga25cfa4ea854ca13b4553d7e043c8cc86">DLGModifyControlListInfo</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int bFlags, int nFlags, int bAllocator, void *(*pfnAllocator)(const void *, int), int bDestructor, void(*pfnDestructor)(void *), int bDisplay, void(*pfnDisplay)(<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet), int bSort, int(*pfnSort)(const void *, const void *))</td></tr>
 <tr class="memdesc:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the 'List Entry' for a control, specifying various callbacks and flags.  <a href="#ga25cfa4ea854ca13b4553d7e043c8cc86">More...</a><br /></td></tr>
 <tr class="separator:ga25cfa4ea854ca13b4553d7e043c8cc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91c094a37f470da65a045d316eb117b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga91c094a37f470da65a045d316eb117b3">DLGAddControlListEntry</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, const char *pData, long cbData, int iIndex)</td></tr>
+<tr class="memitem:ga91c094a37f470da65a045d316eb117b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga91c094a37f470da65a045d316eb117b3">DLGAddControlListEntry</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, const char *pData, long cbData, int iIndex)</td></tr>
 <tr class="memdesc:ga91c094a37f470da65a045d316eb117b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a list entry to a control's list info.  <a href="#ga91c094a37f470da65a045d316eb117b3">More...</a><br /></td></tr>
 <tr class="separator:ga91c094a37f470da65a045d316eb117b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7969d1d81ebc3c597d3d74f9accc1d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gae7969d1d81ebc3c597d3d74f9accc1d7">DLGDelControlListEntry</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
+<tr class="memitem:gae7969d1d81ebc3c597d3d74f9accc1d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gae7969d1d81ebc3c597d3d74f9accc1d7">DLGDelControlListEntry</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
 <tr class="memdesc:gae7969d1d81ebc3c597d3d74f9accc1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a list entry from a control's list info at a specified index (or deletes ALL entries)  <a href="#gae7969d1d81ebc3c597d3d74f9accc1d7">More...</a><br /></td></tr>
 <tr class="separator:gae7969d1d81ebc3c597d3d74f9accc1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga10870d1dee33e59b364a91da23b3d8e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga10870d1dee33e59b364a91da23b3d8e8">DLGGetControlListSelection</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl)</td></tr>
+<tr class="memitem:ga10870d1dee33e59b364a91da23b3d8e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga10870d1dee33e59b364a91da23b3d8e8">DLGGetControlListSelection</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl)</td></tr>
 <tr class="memdesc:ga10870d1dee33e59b364a91da23b3d8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the current selection index for a single-selection list.  <a href="#ga10870d1dee33e59b364a91da23b3d8e8">More...</a><br /></td></tr>
 <tr class="separator:ga10870d1dee33e59b364a91da23b3d8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga984bfd97bcde8e168e38897ee5acf16d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga984bfd97bcde8e168e38897ee5acf16d">DLGSetControlListSelection</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
+<tr class="memitem:ga984bfd97bcde8e168e38897ee5acf16d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga984bfd97bcde8e168e38897ee5acf16d">DLGSetControlListSelection</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex)</td></tr>
 <tr class="memdesc:ga984bfd97bcde8e168e38897ee5acf16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the current selection index for a single-selection list.  <a href="#ga984bfd97bcde8e168e38897ee5acf16d">More...</a><br /></td></tr>
 <tr class="separator:ga984bfd97bcde8e168e38897ee5acf16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad45027025876acd1f23051795e07ecc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#gad45027025876acd1f23051795e07ecc6">DLGSetControlListSelectionValue</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex, int iSelState)</td></tr>
+<tr class="memitem:gad45027025876acd1f23051795e07ecc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#gad45027025876acd1f23051795e07ecc6">DLGSetControlListSelectionValue</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, int iIndex, int iSelState)</td></tr>
 <tr class="memdesc:gad45027025876acd1f23051795e07ecc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the selection state for a specific index within a control's list info.  <a href="#gad45027025876acd1f23051795e07ecc6">More...</a><br /></td></tr>
 <tr class="separator:gad45027025876acd1f23051795e07ecc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82e78b9e3cb6c02187c28bc930035473"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga82e78b9e3cb6c02187c28bc930035473">DLGGetControlListSelectionBits</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, unsigned int *piBits, int nSize)</td></tr>
+<tr class="memitem:ga82e78b9e3cb6c02187c28bc930035473"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga82e78b9e3cb6c02187c28bc930035473">DLGGetControlListSelectionBits</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl, unsigned int *piBits, int nSize)</td></tr>
 <tr class="memdesc:ga82e78b9e3cb6c02187c28bc930035473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the selection state for multiple items within a control's list info.  <a href="#ga82e78b9e3cb6c02187c28bc930035473">More...</a><br /></td></tr>
 <tr class="separator:ga82e78b9e3cb6c02187c28bc930035473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23d7ef52be3f365fffdd779e5b7d5ab2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga23d7ef52be3f365fffdd779e5b7d5ab2">DLGGetControlListSelectionText</a> (<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl)</td></tr>
+<tr class="memitem:ga23d7ef52be3f365fffdd779e5b7d5ab2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlglist.html#ga23d7ef52be3f365fffdd779e5b7d5ab2">DLGGetControlListSelectionText</a> (<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *pCtrl)</td></tr>
 <tr class="memdesc:ga23d7ef52be3f365fffdd779e5b7d5ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the selection text as multiple strings in an allocated buffer.  <a href="#ga23d7ef52be3f365fffdd779e5b7d5ab2">More...</a><br /></td></tr>
 <tr class="separator:ga23d7ef52be3f365fffdd779e5b7d5ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42aa5560dc7e3a7a63b04485a6eda1fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgctrl.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault</a>(X)&#160;&#160;&#160;<a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a>(X, <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47ac9d73d55342f27f77df083dad653609c">ListInfoFlags_SORTED</a>, <a class="el" href="group__dlgctrl.html#gad37ea0f014795844f165efbcd5dd8df3">DLGCDefaultListInfoAllocator</a>, <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">WBFree</a>, NULL, NULL)</td></tr>
-<tr class="memdesc:ga42aa5560dc7e3a7a63b04485a6eda1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrapper macro for <a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> for standard WBAlloc'd text data  <a href="#ga42aa5560dc7e3a7a63b04485a6eda1fd">More...</a><br /></td></tr>
-<tr class="separator:ga42aa5560dc7e3a7a63b04485a6eda1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Designed specifically for dialog controls, 'List Support' APIs and structures contain lists of objects or strings that are 'self-maintained' via special callback functions assigned to the 'List Info' structure. </p>
@@ -164,15 +176,15 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">X</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a>(X, <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47ac9d73d55342f27f77df083dad653609c">ListInfoFlags_SORTED</a>, <a class="el" href="group__dlgctrl.html#gad37ea0f014795844f165efbcd5dd8df3">DLGCDefaultListInfoAllocator</a>, <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">WBFree</a>, NULL, NULL)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b">DLGInitControlListInfo</a>(X, <a class="el" href="group__dlglist.html#gga88f402bd2fdb3a20ed4c883dee516c47ac9d73d55342f27f77df083dad653609c">ListInfoFlags_SORTED</a>, <a class="el" href="group__dlglist.html#gad37ea0f014795844f165efbcd5dd8df3">DLGCDefaultListInfoAllocator</a>, <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">WBFree</a>, NULL, NULL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>wrapper macro for <a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> for standard WBAlloc'd text data </p>
-<p>This macro creates a standard WBAlloc'd text data list entry using <a class="el" href="group__dlgctrl.html#gad37ea0f014795844f165efbcd5dd8df3" title="The default &#39;List Info&#39; data allocator for a control&#39;s list info. ">DLGCDefaultListInfoAllocator()</a> and WBFree, for sorted text data with standard display and sort comparison functions NOTE: using DLGInitControlListInfoDefault implies string data that's WBAlloc'd. For some other scheme of maintaining and copying data pointers for a listbox, substitute your own function pointers as needed. </p>
+<p>wrapper macro for <a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> for standard WBAlloc'd text data </p>
+<p>This macro creates a standard WBAlloc'd text data list entry using <a class="el" href="group__dlglist.html#gad37ea0f014795844f165efbcd5dd8df3" title="The default &#39;List Info&#39; data allocator for a control&#39;s list info. ">DLGCDefaultListInfoAllocator()</a> and WBFree, for sorted text data with standard display and sort comparison functions NOTE: using DLGInitControlListInfoDefault implies string data that's WBAlloc'd. For some other scheme of maintaining and copying data pointers for a listbox, substitute your own function pointers as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01494">1494</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01508">1508</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +233,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__dlgctrl.html#ga9b3c5293fad294d782ff4f6e20c63b93">ControlListIndex</a></td>
+          <td class="memname">enum <a class="el" href="group__dlglist.html#ga9b3c5293fad294d782ff4f6e20c63b93">ControlListIndex</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -243,7 +255,7 @@ Typedefs</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01305">1305</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01319">1319</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -254,12 +266,12 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__dlgctrl.html#ga88f402bd2fdb3a20ed4c883dee516c47">ListInfoFlags</a></td>
+          <td class="memname">enum <a class="el" href="group__dlglist.html#ga88f402bd2fdb3a20ed4c883dee516c47">ListInfoFlags</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create flags specified in the call to <a class="el" href="group__dlgctrl.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> </p>
+<p>Create flags specified in the call to <a class="el" href="group__dlglist.html#ga6e2908aa1ad9b30f392d8585f10e893b" title="Initialize the &#39;List Entry&#39; for a control, specifying various callbacks and flags. ">DLGInitControlListInfo()</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga88f402bd2fdb3a20ed4c883dee516c47ac9d73d55342f27f77df083dad653609c"></a>ListInfoFlags_SORTED&#160;</td><td class="fielddoc"><p>list is sorted </p>
 </td></tr>
@@ -279,7 +291,7 @@ Typedefs</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01319">1319</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__controls_8h_source.html#l01333">1333</a> of file <a class="el" href="dialog__controls_8h_source.html">dialog_controls.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +305,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">int DLGAddControlListEntry </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -383,7 +395,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">void DLGDelControlListEntry </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -424,7 +436,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">const void* DLGGetControlListData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -457,7 +469,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">int DLGGetControlListSelection </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em></td><td>)</td>
           <td></td>
         </tr>
@@ -488,7 +500,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">int DLGGetControlListSelectionBits </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -538,7 +550,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">char* DLGGetControlListSelectionText </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em></td><td>)</td>
           <td></td>
         </tr>
@@ -564,7 +576,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="memname">const char* DLGGetControlListText </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -597,7 +609,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="memname">int DLGInitControlListInfo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -621,7 +633,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
           <td class="paramname"><em>pfnDisplay</em>, </td>
         </tr>
         <tr>
@@ -651,7 +663,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>non-zero on error, zero on success</dd></dl>
-<p>This is a generic method by which a control's list entry can be initialized. If the control's list consists entirely of text data, you can simplify the process by using <a class="el" href="group__dlgctrl.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
+<p>This is a generic method by which a control's list entry can be initialized. If the control's list consists entirely of text data, you can simplify the process by using <a class="el" href="group__dlglist.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01172">1172</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -667,7 +679,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="memname">int DLGModifyControlListInfo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -715,7 +727,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *, void *, int, GC, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *, XFontSet)&#160;</td>
           <td class="paramname"><em>pfnDisplay</em>, </td>
         </tr>
         <tr>
@@ -756,7 +768,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>non-zero on error, zero on success</dd></dl>
-<p>This is a generic method by which the parameters of a control's list entry can be modified. If the entry does not already exist, a new entry will be initialized with 'default' parameters assigned using the same values you would get with <a class="el" href="group__dlgctrl.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
+<p>This is a generic method by which the parameters of a control's list entry can be modified. If the entry does not already exist, a new entry will be initialized with 'default' parameters assigned using the same values you would get with <a class="el" href="group__dlglist.html#ga42aa5560dc7e3a7a63b04485a6eda1fd">DLGInitControlListInfoDefault()</a></p>
 <p>Header File: <a class="el" href="dialog__controls_8h.html">dialog_controls.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="dialog__support_8c_source.html#l01207">1207</a> of file <a class="el" href="dialog__support_8c_source.html">dialog_support.c</a>.</p>
@@ -772,7 +784,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="memname">void DLGSetControlListSelection </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -813,7 +825,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
         <tr>
           <td class="memname">void DLGSetControlListSelectionValue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__dlgctrl.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dlgctrl__types.html#ga135b3de62a2ef87baf36e6281bc53fc0">WBDialogControl</a> *&#160;</td>
           <td class="paramname"><em>pCtrl</em>, </td>
         </tr>
         <tr>
@@ -857,7 +869,7 @@ For non-NULL return values, the caller must use '<a class="el" href="group__sub_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 15:26:49 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -28,6 +28,8 @@ var group__menu =
     [ "WBMENU_POPUP_MASK", "group__menu.html#gaa6a71fec90db85a5246b1f973ccba163", null ],
     [ "WBMENU_RESERVE_DEFAULT", "group__menu.html#ga9f0180efa72232c0547a7d489bad40a1", null ],
     [ "WBMENU_SEPARATOR", "group__menu.html#ga04aed99a89eae4695c9fe534d7896bc1", null ],
+    [ "WBMENU_TAG", "group__menu.html#ga209c6e39176a271f787d3b7a8f24ea0a", null ],
+    [ "WBMENUITEM_TAG", "group__menu.html#gadfe95d67b7e3d7e9a3994876741220a2", null ],
     [ "WBMenu", "group__menu.html#gaa8011ffb36b608b2fc1c74372ee7a759", null ],
     [ "WBMenuItem", "group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4", null ],
     [ "MBAddMenuItem", "group__menu.html#gafbc231c300917a9d36eaa222f1614823", null ],
@@ -43,5 +45,7 @@ var group__menu =
     [ "MBMenuIsPopup", "group__menu.html#ga8760438ac31188bac506659b28fecc33", null ],
     [ "MBMenuProcessHotKey", "group__menu.html#ga9abd89ca1ddde3b72752e1a4c99f6b7f", null ],
     [ "MBRemoveMenuItem", "group__menu.html#gae33f4d3b3630ffca3fa17cecd46d2e0b", null ],
-    [ "MBRemovePopupMenu", "group__menu.html#ga9d1262510d030d74d5cb9fb296481030", null ]
+    [ "MBRemovePopupMenu", "group__menu.html#ga9d1262510d030d74d5cb9fb296481030", null ],
+    [ "aMENU_COMMAND", "group__menu.html#gab6bfa5084348ab4142dcbe45aa80fe27", null ],
+    [ "aMENU_UI_COMMAND", "group__menu.html#gaeb25670661b53eb8107b18530ff73995", null ]
 ];

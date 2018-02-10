@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11 Work Bench Toolkit: X11workbench Toolkit Documentation</title>
+<title>X11workbench Toolkit: X11workbench Toolkit Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X11 Work Bench Toolkit
+   <div id="projectname">X11workbench Toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
@@ -63,23 +63,102 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">X11workbench Toolkit Documentation </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Welcome to the main page for the X11workbench Toolkit documentation. As you will no doubt see, this was generated using Doxygen, and the provided 'doxy.txt' file, which you are welcome to customize to any extent you see fit. <br />
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#summary">Summary and Back Story</a></li>
+<li class="level1"><a href="#mainpage_copyright">Copyright and License Terms</a></li>
+<li class="level1"><a href="#mainpage_1a">Design Goals for the X11workbench Toolkit</a></li>
+<li class="level1"><a href="#mainpage_3">Additional Information</a></li>
+</ul>
+</div>
+<div class="textblock"><p>Welcome to the main page for the X11workbench Toolkit documentation. As you will no doubt see, this was generated using Doxygen, using the 'doxy.txt' file that is an integral part of the project. You are welcome to use and/or customize this documentation to any extent that you might you see fit, in accordance with the Copyright and License Terms. <br />
 <br />
-The X11workbench Toolkit is my response to the inadequacies, difficulty in learning, and general overcomplexity of X11 GUI development. Going back to my roots in OS/2 and Windows programming, I have tried to take what I believe is the best (and simplest) of THAT world and create a toolkit that looks, well, a LOT like what I came from, taylored specifically to the world of X11.<br />
- The main goal is to produce a toolkit that can be copied and pasted into just about any GUI project, and then used as-is to provide straightforward no-nonsense windows with easily recognizable features, without carrying around a boatload of extra baggage commonly found in large scale toolkits.<br />
- Let's face it, X11 is DIFFICULT to code for natively. That is, it's difficult to code for unlessyou don't want to do anything besides creating a simple window with nothing in it. The use of a decent toolkit can shave YEARS off of a project. However, if the toolkit causes load times to become IRRITATING, or use up way too many resources on the computer, or put too many dependency requirements on developers (until it becomes <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/NightmareFuel">nightmare fuel</a>), it can ultimately lead to frustration and disappointment.<br />
- Hence, THIS toolkit was made as an alternative to the "boatload of garbage" that so often ends up being shoved into a 'monolithic toolkit' (or API) that just has to fill every possible set of shoes ever thought up. It is common to list a projects features in the design phase, such that the most important features are ranked according to importance, in a pareto analysis. And a common principle in this kind of pareto analysis is that the first large chunk of functionality can be taken care of in a small chunk of time with a small chunk of resources. The remaining functionality (that which pleases the widest possible audience) will typically take up SIGNIFICANTLY more time and resources to implement. It's sometimes called a 70/30 rule or an 80/20 rule, implying that the first 70% or 80% of functionality can be done in 30% or 20% of the time. The remaining functionality (a much smaller percentage) consumes an inordinately LARGE amount of the time. So I will only focus on the 70% or 80% [when compared to other toolkits] for my own toolkit.<br />
- After all, if you try to please EVERYBODY by providing EVERY possible functionality they might need, you'll end up with a gigantic monolithic pile of wastefulness that requires way too many resources to write, run, and maintain. And typically it is CONSTANTLY being updated to the point of insanity. The only reasonable way to make things work well in a 'lightweight' sense, with at least SOME stability, is to pick the key features that MOST people will need (the 70%), plus those that are needed to 'glue' it all together, and ONLY address those. If the end users or developers want all that other stuff, they are free to use a monolithic, all-encompassing toolkit to do it. Otherwise, if you want a lean and mean application with a lightweight toolkit that loads fast, runs fast, and doesn't take a whole lot of effort to create an application with, you'll probably want to use the X11workbench Toolkit.</p>
-<p>There are many who ALWAYS say 'do not re-invent the wheel'. But auto makers do that EVERY YEAR. And this wheel needed to be re-invented, so I DID IT. It took a while, and nobody came up with anything better during the several YEARS I have been working on this (at least as far as I know).<br />
+For <a class="el" href="index.html#mainpage_copyright">Copyright and License Terms</a>, see the appropriate section (below). <br />
 <br />
+</p>
+<h1><a class="anchor" id="summary"></a>
+Summary and Back Story</h1>
+<p>The X11workbench Toolkit is my response to the inadequacies, difficulty in learning, and general overcomplexity of X11 GUI development. Going back to my roots in OS/2 and Windows programming, I have tried to take what I believe is the best (and simplest) of THAT world and create a toolkit that looks, well, a LOT like what I came from, taylored specifically to the world of X11.<br />
 <br />
-So, if you were looking for a monolithic toolkit that supports every possible feature on the planet, then you'll want Qt or GTK or similar. If you prefer C++ objects you might consider Motif or wxWidgets. Otherwise, have fun with a very simple, yet very effective C language toolkit, aka the X11workbench Toolkit. You're welcome. </p>
+The main goal is to produce a toolkit that can be copied and pasted into just about any GUI project, and then used as-is to provide straightforward no-nonsense windows with easily recognizable features, without carrying around a boatload of extra baggage commonly found in large scale toolkits.<br />
+<br />
+Let's face it, X11 is DIFFICULT to code for natively. That is, it's difficult to code for unlessyou don't want to do anything besides creating a simple window with nothing in it. The use of a decent toolkit can shave YEARS off of a project. However, if the toolkit causes load times to become IRRITATING, or use up way too many resources on the computer, or put too many dependency requirements on developers (until it becomes <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/NightmareFuel">nightmare fuel</a>), it can ultimately lead to frustration and disappointment.<br />
+<br />
+Hence, THIS toolkit was made as an alternative to the "boatload of garbage" that so often ends up being shoved into a 'monolithic toolkit' (or API) that just has to fill every possible set of shoes ever thought up. It is common to list a projects features in the design phase, such that the most important features are ranked according to importance, in a pareto analysis. And a common principle in this kind of pareto analysis is that the first large chunk of functionality can be taken care of in a small chunk of time with a small chunk of resources. The remaining functionality (that which pleases the widest possible audience) will typically take up SIGNIFICANTLY more time and resources to implement. It's sometimes called a 70/30 rule or an 80/20 rule, implying that the first 70% or 80% of functionality can be done in 30% or 20% of the time. The remaining functionality (a much smaller percentage) consumes an inordinately LARGE amount of the time. So I will only focus on the 70% or 80% [when compared to other toolkits] for my own toolkit.<br />
+<br />
+After all, if you try to please EVERYBODY by providing EVERY possible functionality they might need, you'll end up with a gigantic monolithic pile of wastefulness that requires way too many resources to write, run, and maintain. And typically it is CONSTANTLY being updated to the point of insanity. The only reasonable way to make things work well in a 'lightweight' sense, with at least SOME stability, is to pick the key features that MOST people will need (the 70%), plus those that are needed to 'glue' it all together, and ONLY address those. If the end users or developers want all that other stuff, they are free to use a monolithic, all-encompassing toolkit to do it. Otherwise, if you want a lean and mean application with a lightweight toolkit that loads fast, runs fast, and doesn't take a whole lot of effort to create an application with, you'll probably want to use the X11workbench Toolkit. <br />
+There are many who ALWAYS say 'do not re-invent the wheel'. But auto makers do that EVERY YEAR. And this wheel needed to be re-invented, so I DID IT. It took a while, and nobody came up with anything better during the several YEARS I have been working on this (at least as far as I know).<br />
+<br />
+So, if you were looking for a monolithic toolkit that supports every possible feature on the planet, then you'll want Qt or GTK or similar. If you prefer C++ objects you might consider Motif or wxWidgets. Otherwise, have fun with a relatively simple, yet very effective C language toolkit, aka the X11workbench Toolkit. You're welcome.</p>
+<p><br />
+<br />
+ </p>
+<h1><a class="anchor" id="mainpage_copyright"></a>
+Copyright and License Terms</h1>
+<p><b>Copyright</b> <b>and</b> <b>License</b> <b>Terms</b> b for <b>the</b> <b>X11workbench</b> <b>Toolkit</b> </p>
+<p><b>COPYRIGHT</b></p>
+<pre></pre><pre>     X11workbench - X11 programmer's 'work bench' application and toolkit
+      Copyright &copy; 2010-2018 by Bob Frazier (aka 'Big Bad Bombastic Bob')
+                              all rights reserved</pre><pre>DISCLAIMER:  The X11workbench application and toolkit software are supplied
+             'as-is', with no waranties, either implied or explicit.</pre><pre></pre><p><b>LICENSE TERMS</b></p>
+<p>BSD-like license:</p>
+<p>There is no restriction as to what you can do with this software, so long as you include the above copyright notice and DISCLAIMER for any distributed work that is linked with, equivalent to, or derived from any portion of this software, along with this paragraph that explains the terms of the license if the source is also being made available. "Linked with" includes the use of a portion of any of the source and/or header files, or their compiled binary output, as a part of your application or library. A "derived work" describes a work that uses a significant portion of the source files or the algorithms that are included with this software.</p>
+<p>GPL license:</p>
+<p>You may distribute this application, or any derived work, under the following GPL licenses:</p>
+<ul>
+<li>[L]GPL v2 or v2.1<br />
+</li>
+<li>[L]GPL v3 or later</li>
+</ul>
+<p>If you use an unmodified source for the X11workbench Toolkit or the X11workbench application, providing a URL for the official source repository will consistitute compliance with the GPL license requirement of making the source available to anyone receiving a binary copy of this (or any derived) work, so long as all other requirements associated with the license are fulfilled.</p>
+<p><b>EXCLUSIONS</b></p>
+<p>Specifically excluded from this requirement are files that were generated by the software, or anything that is included with the software that is part of another package (such as files that were created or added during the 'configure' process).</p>
+<p><b>DISTRIBUTION</b></p>
+<p>The license also covers the use of part or all of any of the X11 workbench toolkit source or header files in your distributed application, in source or binary form. If you do not ship the source, the above copyright statement and DISCLAIMER is still required to be placed in a reasonably prominent place, such as documentation, splash screens, and/or 'about the application' dialog boxes.</p>
+<p>Use and distribution are in accordance with GPL, LGPL, and/or the above BSD-like license. See COPYING and README.md files for more information.</p>
+<p>Additionally, this software, in source or binary form, and in whole or in part, may be used by explicit permission from the author, without the need of a license.</p>
+<p>You will find similar language and copyright statements at the beginning of most of the source files (and related files) that comprise the X11workbench and X11workbench Toolkit. If there is any confusion as to the intent of the license, the above stated license terms take precedence.</p>
+<p><br />
+<br />
+ </p>
+<h1><a class="anchor" id="mainpage_1a"></a>
+Design Goals for the X11workbench Toolkit</h1>
+<p><b>Design</b> <b>Goals</b> </p>
+<dl class="section user"><dt>Minimal dependencies</dt><dd>You shouldn't have to install a bozillian libraries or development files.<br />
+</dd></dl>
+<dl class="section user"><dt>Ease of use</dt><dd>The basic toolkit should be SO simple that even a 'Newbie' can do it.<br />
+</dd></dl>
+<dl class="section user"><dt>Customizable</dt><dd>Well, open source HELPS, but the design must be FLEXIBLE enough to allow easy customization.<br />
+</dd></dl>
+<dl class="section user"><dt>Practical</dt><dd>Unnecessary functionality, with the exception of certain icons, is to be avoided.<br />
+</dd></dl>
+<dl class="section user"><dt>Logical</dt><dd>No convoluted ideas belong here, like the bass-ackwards programming style you find in <em>CERTAIN</em> languages.<br />
+</dd></dl>
+<dl class="section user"><dt>C language</dt><dd>For maximum compatibility, the C language is almost universally supported, so that's what I use.<br />
+</dd></dl>
+<dl class="section user"><dt>Bulletproof</dt><dd>Even if there is a problem, the code should NEVER be 'fragile'. Validation happens a lot, whenever practical.<br />
+</dd></dl>
+<dl class="section user"><dt>Debug Friendly</dt><dd>Lots of built-in debug, needed by me to even write the thing after all.<br />
+</dd></dl>
+<dl class="section user"><dt>Small (and simple) 'hello world' application</dt><dd>The 'hello world' application should be reasonable AND SMALL, and not because special things were written JUST TO MAKE THAT HAPPEN (that is called 'engineering for the demo' and I don't like doing that)<br />
+ <br />
+<br />
+ </dd></dl>
+<h1><a class="anchor" id="mainpage_3"></a>
+Additional Information</h1>
+<p>Additional information</p>
+<p>For more information on the X11workbench application or the X11workbench Toolkit, visit</p>
+<p><a href="http://sourceforge.net/projects/x11workbench">http://sourceforge.net/projects/x11workbench</a><br />
+<a href="http://github.com/bombasticbob/X11workbenchProject">http://github.com/bombasticbob/X11workbenchProject</a><br />
+<a href="http://www.mrp3.com/">http://www.mrp3.com/</a><br />
+</p>
+<p>The latest official on-line documentation can be found at:</p>
+<p><a href="http://bombasticbob.github.io/X11workbench">http://bombasticbob.github.io/X11workbench</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 15:26:50 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

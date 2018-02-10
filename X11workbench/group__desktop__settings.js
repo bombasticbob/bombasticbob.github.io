@@ -1,20 +1,6 @@
 var group__desktop__settings =
 [
     [ "__XSETTINGS_DATA_COLOR__", "struct____XSETTINGS__DATA__COLOR____.html", [
-      [ "WB_SCROLL_DEFAULT", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a283d7836973fc4cd386fae001266dc17", null ],
-      [ "WB_SCROLL_HORIZONTAL", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600ab721303d414a9b53a65ba336a5db7b6f", null ],
-      [ "WB_SCROLL_VERTICAL", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600aad68f61a838ef3b2b761039b75126cc8", null ],
-      [ "WB_SCROLL_KNOB", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a48b672d82979cd4b521b1a51a672a545", null ],
-      [ "WB_SCROLL_FORWARD", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a83a90584170839c696533222da01d2e3", null ],
-      [ "WB_SCROLL_BACKWARD", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a8c69eac0b90e6178ff504e41cdf28393", null ],
-      [ "WB_SCROLL_PAGEFWD", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a0e4235d4b01941ee13b9069fe88ae862", null ],
-      [ "WB_SCROLL_PAGEBACK", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a830a342759df75b81adc097fb97385be", null ],
-      [ "WB_SCROLL_FIRST", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600ac172c93a92b2d1215685ff35f7dea664", null ],
-      [ "WB_SCROLL_LAST", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a953cac4b0bf9ee06423fad2a7168c663", null ],
-      [ "WB_SCROLL_DBLCLICK", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600ac27b2ab3efb84c0283ad1ff8b5e15256", null ],
-      [ "WB_SCROLL_ABSOLUTE", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a839029034d7678e584b8018d2e1ac532", null ],
-      [ "WB_SCROLL_RELATIVE", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600aacdf3382fc11dae57020e7815f34052d", null ],
-      [ "WB_SCROLL_NA", "group__xatoms.html#ggabed82baf7f470b522273a3e37c24c600a50e9929a4979d1640a72e448cbffdd84", null ],
       [ "sAlpha", "struct____XSETTINGS__DATA__COLOR____.html#a9f8c925b4454831f2d5b1db0f57f8250", null ],
       [ "sBlue", "struct____XSETTINGS__DATA__COLOR____.html#a2b4792cb0102f2b2fd228cb026cd3cd4", null ],
       [ "sGreen", "struct____XSETTINGS__DATA__COLOR____.html#a72ec058732a20dfcba6946d6c631373c", null ],
