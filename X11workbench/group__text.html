@@ -112,7 +112,9 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Generic Utility functions for copying and manipulating text. </p>
-<p>Utility functions for copying and manipulating text, such as string copying and concatenation. These function standardize common string operations and allocate buffers with 'malloc()' as needed. </p>
+<p>Utility functions for copying and manipulating text, such as string copying and concatenation. These function standardize common string operations and allocate new buffers with '<a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;. ">WBAlloc()</a>' as needed. This can greatly simplify working with string-based data.</p>
+<p>These generic string functions are compatible with Multi-Byte character sets, with the assumption that a standard UTF-8 or multi-byte character consists of 1 or more non-zero bytes, and that the end of a multi-byte or UTF-8 string is marked with a zero byte.</p>
+<p>For working specifically with Multi-Byte Character Sets (MBCS), see <a class="el" href="group__text__object__multibyte.html">Multi-Byte Character Set utility functions</a>. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga22d851925a8a6edd21f35a31de883423"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga22d851925a8a6edd21f35a31de883423">&#9670;&nbsp;</a></span>NEXT_WORD</h2>
@@ -157,7 +159,7 @@ Functions</h2></td></tr>
 </dl>
 <p>use this function in a loop to parse out the "next word" within the string until *pX == 0 or pY == pZ </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01016">1016</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01170">1170</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +479,7 @@ The function returns NULL on error.</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 10:46:11 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

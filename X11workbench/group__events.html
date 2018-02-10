@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga1f2b00666adc4ae2587894bcd3ae8d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Event handling in X11 involves an event handler loop and methods by which the various events can be dispatched to window callback functions, or to the application's event handler. The X11workbench Toolkit API has provisinos for event prioritization, asynchronous processing, and the generation of 'internal events' (see <a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">aWM_CHAR</a>, <a class="el" href="group__xatoms.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7">aWM_POINTER</a>, <a class="el" href="group__xatoms.html#ga5bac48715e457c87648fa360fd906a71">aWM_TIMER</a>). </p>
+<p>Event handling in X11 involves an event handler loop and methods by which the various events can be dispatched to window callback functions, or to the application's event handler. The X11workbench Toolkit API has provisinos for event prioritization, asynchronous processing, and the generation of 'internal events' (see <a class="el" href="group__xatoms.html#gab047060739005fbe53d09cc5e05101ce">aWB_CHAR</a>, <a class="el" href="group__xatoms.html#ga5a71c68353174922427c05fd004e1f9a">aWB_POINTER</a>, <a class="el" href="group__xatoms.html#gae8da097fed5abc873cc7e96af53edd37">aWB_TIMER</a>). </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga2648b749bede99874e9ed979ce861f44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2648b749bede99874e9ed979ce861f44">&#9670;&nbsp;</a></span>WBAppEvent</h2>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <p>An event callback for the application should be declared according to this defined type</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00183">183</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00182">182</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 <p>Event callbacks for windows should be declared according to this defined type</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00171">171</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00170">170</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -223,7 +223,7 @@ Functions</h2></td></tr>
 <p>Application events have a window ID of None, and are dispatched to the registered Application callback. In the absence of a callback, default processing is performed.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04288">4288</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04380">4380</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -265,11 +265,11 @@ Functions</h2></td></tr>
 <p>Implementation of the X11workbench Toolkit API is centered around the API's event loop processing. The main application should implement its message loop by repeatedly calling <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event. ">WBCheckGetEvent()</a> or <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5" title="low-level event queue wrapper. Implements the client-side event queue. Does not block if no events av...">WBNextEvent()</a> and passing any retrieved event to <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">WBDispatch()</a>. Internally, <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event. ">WBCheckGetEvent()</a> calls the X___CheckEvent functions correctly, dispatches Expose events for asynchronous processing, translates keyboard and pointer events, and handles internally queued events (such as timers and 'posted' events).</p>
 <p>The function returns a non-zero value if there is an event is to be processed.</p>
 <p>To correctly implement a message loop, your code should be similar to the following:<br />
-</p><div class="fragment"><div class="line">XEvent event;</div><div class="line"></div><div class="line"><span class="keywordflow">while</span> ( !<a class="code" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">bQuitFlag</a> )</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span>( !<a class="code" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09">WBCheckGetEvent</a>(pX11Display, &amp;event) )</div><div class="line">  {</div><div class="line">    <span class="comment">// as needed, perform an iteration of background processing here</span></div><div class="line"></div><div class="line">    <span class="comment">// With nothing else to do, SLEEP if there is no event in the message queue</span></div><div class="line">    <span class="comment">// and no background processing to be performed.</span></div><div class="line">    <span class="comment">// (alternately, you could use WBWaitForEvent() if you do not need periodic</span></div><div class="line">    <span class="comment">//  wake-up for background processing)</span></div><div class="line"></div><div class="line">    <a class="code" href="group__platform.html#ga94004281108be87acc4fb37deef0a104">WBDelay</a>(100);  <span class="comment">// 100 microsecs - 0.1 millisecond</span></div><div class="line"></div><div class="line">    <span class="keywordflow">continue</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <a class="code" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">WBDispatch</a>(&amp;event);</div><div class="line">}</div></div><!-- fragment --><p>NOTE: If you do not want to do any background processing, consider using <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60" title="Wait for an event, blocking indefinitely. ">WBWaitForEvent()</a> instead of <a class="el" href="group__platform.html#ga94004281108be87acc4fb37deef0a104" title="Delay for a specified period in microseconds. ">WBDelay()</a></p>
+</p><div class="fragment"><div class="line">XEvent event;</div><div class="line"></div><div class="line"><span class="keywordflow">while</span> ( !<a class="code" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">bQuitFlag</a> )</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span>( !<a class="code" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09">WBCheckGetEvent</a>(pX11Display, &amp;event) )</div><div class="line">  {</div><div class="line">    <span class="comment">// as needed, perform an iteration of background processing here</span></div><div class="line"></div><div class="line">    <span class="comment">// With nothing else to do, SLEEP if there is no event in the message queue</span></div><div class="line">    <span class="comment">// and no background processing to be performed.</span></div><div class="line">    <span class="comment">// (alternately, you could use WBWaitForEvent() if you do not need periodic</span></div><div class="line">    <span class="comment">//  wake-up for background processing)</span></div><div class="line"></div><div class="line">    <a class="code" href="group__platform__functions.html#ga94004281108be87acc4fb37deef0a104">WBDelay</a>(100);  <span class="comment">// 100 microsecs - 0.1 millisecond</span></div><div class="line"></div><div class="line">    <span class="keywordflow">continue</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <a class="code" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f">WBDispatch</a>(&amp;event);</div><div class="line">}</div></div><!-- fragment --><p>NOTE: If you do not want to do any background processing, consider using <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60" title="Wait for an event, blocking indefinitely. ">WBWaitForEvent()</a> instead of <a class="el" href="group__platform__functions.html#ga94004281108be87acc4fb37deef0a104" title="Delay for a specified period in microseconds. ">WBDelay()</a></p>
 <p>To only retrieve 'internally queued' events, see <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5" title="low-level event queue wrapper. Implements the client-side event queue. Does not block if no events av...">WBNextEvent()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03468">3468</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03560">3560</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ Functions</h2></td></tr>
 <p>Call this function to generically dispatch an XEvent. The application will need to check for a 'quit' state independently. See <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly. ">WBWindowDispatch()</a>, <a class="el" href="group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5" title="Dispatches an application XEvent. May be called directly. ">WBAppDispatch()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04388">4388</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04480">4480</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Functions</h2></td></tr>
 <p>Call this function from within a modal window's event process to close the window and exit from WBShowModal with the specified value in 'iReturn'</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01949">1949</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02041">2041</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ Functions</h2></td></tr>
 <p>Intended primarily for debug messages, it returns a pointer to an ASCII string containing the name of the event, based on its event ID. The ID of the event is the value of 'type' within the XEvent structure.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08389">8389</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08481">8481</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Functions</h2></td></tr>
 <p>In some cases it's necessary to know an approximate value of the X server's timestamp. The message loop will capture the timestamp value whenever it can. Use this function to return the best known server time value for the default Display.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03461">3461</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03553">3553</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -434,10 +434,10 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Call this function to effectively 'cancel' any operation involving the mouse. This will un-do any 'drag' operations and send a WM_POINTER Client Message event with the 'WB_POINTER_CANCEL', and optionally un-grab the mouse (and keyboard, as needed). In the case of a Modal operation, this may differ from normal Asynchronous operations. Additionally, if there are any mouse messages already in the queue, this will not remove them. It will be up to the caller to deal with that. This function ONLY fixes the status and capture of the mouse.</p>
+<p>Call this function to effectively 'cancel' any operation involving the mouse. This will un-do any 'drag' operations and send a WB_POINTER Client Message event with the 'WB_POINTER_CANCEL', and optionally un-grab the mouse (and keyboard, as needed). In the case of a Modal operation, this may differ from normal Asynchronous operations. Additionally, if there are any mouse messages already in the queue, this will not remove them. It will be up to the caller to deal with that. This function ONLY fixes the status and capture of the mouse.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05065">5065</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05157">5157</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -481,7 +481,7 @@ Functions</h2></td></tr>
 <p>See <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event. ">WBCheckGetEvent()</a>, <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60" title="Wait for an event, blocking indefinitely. ">WBWaitForEvent()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08252">8252</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08344">8344</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -513,7 +513,7 @@ Functions</h2></td></tr>
 Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08291">8291</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08383">8383</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -554,7 +554,7 @@ Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 <p>Use this function to effectively delay an event's posting to the internal queue for a specified period of time, in milliseconds. For application messages, specify 'None' for the Window ID in the XEvent structure (otherwise specify the correct Window ID). After the time delay, the event will be retrieved and returned via <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event. ">WBCheckGetEvent()</a>, or <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5" title="low-level event queue wrapper. Implements the client-side event queue. Does not block if no events av...">WBNextEvent()</a>, similar to a timer message. If the window specified in the message is destroyed before the timeout, the message will be ignored.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08270">8270</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08362">8362</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -609,7 +609,7 @@ Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 <p>Causes (reliable) 'Set Active' 'Set Input Focus' 'Raise Window' and 'Map Window' events to be applied to a particular window. In many cases window managers may differ in their handling of things like 'XSetInputFocus' to set focus to a window. By handling this in the application event queue, it is possible to delay events asynchronously in a manner that avoids a race condition from the window manager. Clicking on a window, or using ALT+Tab, or switching desktops may cause unexpected 'things' to take place. By forcing the window to be ACTIVE and also using the normal 'XSetInputFocus' function, as well as 'Raising' and mapping the window, THIS method is likely to work everywhere, and in a consistent manner.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08304">8304</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08396">8396</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 You should always use this function for asynchronously posting non-priority events, such as notifications and timers, or when recursion may occur. Note that any pointers or X11 resources that are passed using XEvent may not be valid by the time they are received. If you must pass volatile data to a window, use <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f" title="Generic Event Dispatcher, using message type to dispatch. ">WBDispatch()</a> or <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly. ">WBWindowDispatch()</a> instead.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08257">8257</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08349">8349</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -695,7 +695,7 @@ You should always use this function for asynchronously posting non-priority even
 Use WBPostPriorityEvent for priority events, such as UI handling (where performance is critical)</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08275">8275</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08367">8367</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -726,7 +726,7 @@ Use WBPostPriorityEvent for priority events, such as UI handling (where performa
 Expose events typically come in bunches, and all too frequently. By delaying their processing, AND consolidating them into a single event, it is possible to minimize the un-necessary re-drawing of windows and improve the 'apparent speed' of your applicatino. Normally this is done within <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event. ">WBCheckGetEvent()</a> automatically. If you decide to implement the message prioritization yourself, you can use this function to handle Expose events for you, and correctly prioritize them.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05046">5046</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05138">5138</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -769,7 +769,7 @@ Expose events typically come in bunches, and all too frequently. By delaying the
 <p>The return value is -1 on error, or the value specified by 'iReturn' in the call to <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351" title="End a modal window with a specific return value. ">WBEndModal()</a>.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01660">1660</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01752">1752</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -801,7 +801,7 @@ NOTE: if 'bQuitFlag' is set, this function will return immediately.</p>
 <p>See <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5" title="low-level event queue wrapper. Implements the client-side event queue. Does not block if no events av...">WBNextEvent()</a>, <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event. ">WBCheckGetEvent()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03473">3473</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03565">3565</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -843,7 +843,7 @@ NOTE: if 'bQuitFlag' is set, this function will return immediately.</p>
 <p>Dispatches an XEvent for the specified window. Normally, WBDispatch will call this function using the window ID from the XEvent itself, and pass that ID as the first parameter. A caller may choose to send the event to a different window, specifying its window ID instead. This is similar to a modal 'Event Send' and can be useful to have a parent or child window handle a particular type of event (rather than the destined window).</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04408">4408</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04500">4500</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -852,7 +852,7 @@ NOTE: if 'bQuitFlag' is set, this function will return immediately.</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -24,6 +24,7 @@ var struct__text__object__vtable__ =
     [ "get_filetype", "struct__text__object__vtable__.html#a62d1ea510a7f4fdd50fdf9a74a007d97", null ],
     [ "get_insmode", "struct__text__object__vtable__.html#a51727de5d962c1ab60597dcfd8a16539", null ],
     [ "get_linefeed", "struct__text__object__vtable__.html#aa4b2cea5aa23114a77db3b1f9cdf1a26", null ],
+    [ "get_modified", "struct__text__object__vtable__.html#a3c69b31ba0706be34583f39444900828", null ],
     [ "get_row", "struct__text__object__vtable__.html#a3812e0faafc32b75a388d024f0800ee7", null ],
     [ "get_rows", "struct__text__object__vtable__.html#a09febea25cf0f350c13a30c88dcac8a0", null ],
     [ "get_scrollmode", "struct__text__object__vtable__.html#a1920bc6cf9e3c36cfdffffaddd79aac7", null ],
@@ -52,11 +53,12 @@ var struct__text__object__vtable__ =
     [ "set_insmode", "struct__text__object__vtable__.html#ae512a8ffb4d89d95431204bb067020cd", null ],
     [ "set_linefeed", "struct__text__object__vtable__.html#acff7b339b3ca43a8a878916f0ceb9484", null ],
     [ "set_row", "struct__text__object__vtable__.html#a0a75dca7c9140b276de00c753fb7f4b7", null ],
+    [ "set_save_point", "struct__text__object__vtable__.html#a1fdbadb06f66736e343b580ee3e2d463", null ],
     [ "set_scrollmode", "struct__text__object__vtable__.html#a105e20b5d1d51c55ef36e1d1b41402f8", null ],
     [ "set_select", "struct__text__object__vtable__.html#a52431b5857f642d19aa93cb2095977a9", null ],
     [ "set_selmode", "struct__text__object__vtable__.html#ab18ecb65c3296cb42f5b39f11c8f0803", null ],
     [ "set_tab", "struct__text__object__vtable__.html#af7f7c006b44fb68c4e1cd7f71014dc2a", null ],
     [ "set_text", "struct__text__object__vtable__.html#a07aea3e59e507a052ae40c5889eac9e1", null ],
-    [ "set_view", "struct__text__object__vtable__.html#a77fb21b621841a0ea5332be6d7fe412e", null ],
+    [ "set_view_orig", "struct__text__object__vtable__.html#a8ca80eee814df53d676b258b69a6e1ee", null ],
     [ "undo", "struct__text__object__vtable__.html#a2cdeb57298bd59dcfe8d7804096672d0", null ]
 ];

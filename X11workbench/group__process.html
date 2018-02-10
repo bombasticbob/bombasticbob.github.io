@@ -83,13 +83,13 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf9c772c6392d057d17513176f3c65902"><td class="memItemLeft" align="right" valign="top">WB_PROCESS_ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#gaf9c772c6392d057d17513176f3c65902">WBRunAsyncPipeV</a> (WB_FILE_HANDLE hStdIn, WB_FILE_HANDLE hStdOut, WB_FILE_HANDLE hStdErr, const char *szAppName, va_list va)</td></tr>
 <tr class="memdesc:gaf9c772c6392d057d17513176f3c65902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run an application asynchronously, specifying file handles for STDIN, STDOUT, and STDERR, using a va_list for the program's parameters.  <a href="#gaf9c772c6392d057d17513176f3c65902">More...</a><br /></td></tr>
 <tr class="separator:gaf9c772c6392d057d17513176f3c65902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab174acc6a11dc722577cd5e3723f0b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d">WBLoadLibrary</a> (const char *szModuleName)</td></tr>
+<tr class="memitem:gab174acc6a11dc722577cd5e3723f0b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform__types.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d">WBLoadLibrary</a> (const char *szModuleName)</td></tr>
 <tr class="memdesc:gab174acc6a11dc722577cd5e3723f0b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a shared library, DLL, module, or whatever you call it on your operating system.  <a href="#gab174acc6a11dc722577cd5e3723f0b2d">More...</a><br /></td></tr>
 <tr class="separator:gab174acc6a11dc722577cd5e3723f0b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga560a982b02824d34447e2b581dc2e190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga560a982b02824d34447e2b581dc2e190">WBFreeLibrary</a> (<a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> hModule)</td></tr>
+<tr class="memitem:ga560a982b02824d34447e2b581dc2e190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga560a982b02824d34447e2b581dc2e190">WBFreeLibrary</a> (<a class="el" href="group__platform__types.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> hModule)</td></tr>
 <tr class="memdesc:ga560a982b02824d34447e2b581dc2e190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a shared library, DLL, module, or whatever, that was loaded via '<a class="el" href="group__process.html#gab174acc6a11dc722577cd5e3723f0b2d" title="Loads a shared library, DLL, module, or whatever you call it on your operating system. ">WBLoadLibrary()</a>'.  <a href="#ga560a982b02824d34447e2b581dc2e190">More...</a><br /></td></tr>
 <tr class="separator:ga560a982b02824d34447e2b581dc2e190"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ebada7768666a227eddfbb7d49afc97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform.html#gadec33de02b83d9f226bcb27b58f14366">WB_PROCADDRESS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97">WBGetProcAddress</a> (<a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> hModule, const char *szProcName)</td></tr>
+<tr class="memitem:ga3ebada7768666a227eddfbb7d49afc97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__platform__types.html#gadec33de02b83d9f226bcb27b58f14366">WB_PROCADDRESS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga3ebada7768666a227eddfbb7d49afc97">WBGetProcAddress</a> (<a class="el" href="group__platform__types.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> hModule, const char *szProcName)</td></tr>
 <tr class="memdesc:ga3ebada7768666a227eddfbb7d49afc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a shared library, DLL, module, or whatever you call it on your operating system.  <a href="#ga3ebada7768666a227eddfbb7d49afc97">More...</a><br /></td></tr>
 <tr class="separator:ga3ebada7768666a227eddfbb7d49afc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -105,7 +105,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void WBFreeLibrary </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__platform__types.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a>&#160;</td>
           <td class="paramname"><em>hModule</em></td><td>)</td>
           <td></td>
         </tr>
@@ -133,9 +133,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__platform.html#gadec33de02b83d9f226bcb27b58f14366">WB_PROCADDRESS</a> WBGetProcAddress </td>
+          <td class="memname"><a class="el" href="group__platform__types.html#gadec33de02b83d9f226bcb27b58f14366">WB_PROCADDRESS</a> WBGetProcAddress </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__platform__types.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a>&#160;</td>
           <td class="paramname"><em>hModule</em>, </td>
         </tr>
         <tr>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__platform.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> WBLoadLibrary </td>
+          <td class="memname"><a class="el" href="group__platform__types.html#ga7f0672ea4d50fd29e009c4945778a92a">WB_MODULE</a> WBLoadLibrary </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>szModuleName</em></td><td>)</td>
@@ -466,7 +466,7 @@ You can monitor 'WB_PROCESS_ID' to find out if the process is running. Additiona
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 10:46:11 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

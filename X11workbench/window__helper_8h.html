@@ -189,51 +189,51 @@ Macros</h2></td></tr>
 <tr class="separator:gaebf4cfa8726a2c18d3efd77c947a5740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6b79a8bd36211dcf1154188c84767790"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga6b79a8bd36211dcf1154188c84767790">WB_POINTER_DBLCLICK</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:ga6b79a8bd36211dcf1154188c84767790"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER 'double-click' event, send in lieu of WB_POINTER_CLICK for double-click. <br /></td></tr>
+<tr class="memdesc:ga6b79a8bd36211dcf1154188c84767790"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER 'double-click' event, send in lieu of WB_POINTER_CLICK for double-click. <br /></td></tr>
 <tr class="separator:ga6b79a8bd36211dcf1154188c84767790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3854f8b9381c334d001bbeece8ad2da7"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga3854f8b9381c334d001bbeece8ad2da7">WB_POINTER_DRAG</a>&#160;&#160;&#160;3 /* window proc returns window ID to support drag/drop */</td></tr>
-<tr class="memdesc:ga3854f8b9381c334d001bbeece8ad2da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER 'drag' event, window proc MUST return the window ID to auto-support drag/drop. <br /></td></tr>
+<tr class="memdesc:ga3854f8b9381c334d001bbeece8ad2da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER 'drag' event, window proc MUST return the window ID to auto-support drag/drop. <br /></td></tr>
 <tr class="separator:ga3854f8b9381c334d001bbeece8ad2da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9fd65ac7aa51f714cc643913a9fb359f"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga9fd65ac7aa51f714cc643913a9fb359f">WB_POINTER_DROP</a>&#160;&#160;&#160;4 /* may not happen if drag is canceled */</td></tr>
-<tr class="memdesc:ga9fd65ac7aa51f714cc643913a9fb359f"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER 'drop' event, only sent if drag/drop supported AND was not 'canceled'; see WB_POINTER_CANCEL. <br /></td></tr>
+<tr class="memdesc:ga9fd65ac7aa51f714cc643913a9fb359f"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER 'drop' event, only sent if drag/drop supported AND was not 'canceled'; see WB_POINTER_CANCEL. <br /></td></tr>
 <tr class="separator:ga9fd65ac7aa51f714cc643913a9fb359f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga653cc740eb3540cfadde6c5c63a4e12a"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga653cc740eb3540cfadde6c5c63a4e12a">WB_POINTER_MOVE</a>&#160;&#160;&#160;5 /* motion notify while dragging */</td></tr>
-<tr class="memdesc:ga653cc740eb3540cfadde6c5c63a4e12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER 'move' event, for motion notification during drag/drop. <br /></td></tr>
+<tr class="memdesc:ga653cc740eb3540cfadde6c5c63a4e12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER 'move' event, for motion notification during drag/drop. <br /></td></tr>
 <tr class="separator:ga653cc740eb3540cfadde6c5c63a4e12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c4bb0c7694cec331e04f65aa52a9bd2"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga9c4bb0c7694cec331e04f65aa52a9bd2">WB_POINTER_CANCEL</a>&#160;&#160;&#160;6 /* reservedly any kind of cancellation, but for now, 'drag cancel' */</td></tr>
-<tr class="memdesc:ga9c4bb0c7694cec331e04f65aa52a9bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER 'cancel' event, cancels an ongoing operation, such as drag/drop (useful for resource cleanup) <br /></td></tr>
+<tr class="memdesc:ga9c4bb0c7694cec331e04f65aa52a9bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER 'cancel' event, cancels an ongoing operation, such as drag/drop (useful for resource cleanup) <br /></td></tr>
 <tr class="separator:ga9c4bb0c7694cec331e04f65aa52a9bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61d6fd9517bc1c810c5dd53c3522479a"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga61d6fd9517bc1c810c5dd53c3522479a">WB_POINTER_SCROLLUP</a>&#160;&#160;&#160;7 /* scroll event, mouse button 4 */</td></tr>
-<tr class="memdesc:ga61d6fd9517bc1c810c5dd53c3522479a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER 'scroll up' event, caused by mouse button 4. <br /></td></tr>
+<tr class="memdesc:ga61d6fd9517bc1c810c5dd53c3522479a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER 'scroll up' event, caused by mouse button 4. <br /></td></tr>
 <tr class="separator:ga61d6fd9517bc1c810c5dd53c3522479a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40ef82512b663867b96310bb215a849a"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga40ef82512b663867b96310bb215a849a">WB_POINTER_SCROLLDOWN</a>&#160;&#160;&#160;8 /* scroll event, mouse button 5 */</td></tr>
-<tr class="memdesc:ga40ef82512b663867b96310bb215a849a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER 'scroll down' event, caused by mouse button 5. <br /></td></tr>
+<tr class="memdesc:ga40ef82512b663867b96310bb215a849a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER 'scroll down' event, caused by mouse button 5. <br /></td></tr>
 <tr class="separator:ga40ef82512b663867b96310bb215a849a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac649b5dc8d0c4e41b2503ac486342961"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#gac649b5dc8d0c4e41b2503ac486342961">WB_POINTER_BUTTON1</a>&#160;&#160;&#160;1 /* these are bitmasks */</td></tr>
-<tr class="memdesc:gac649b5dc8d0c4e41b2503ac486342961"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER button bitmask indicating that button 1 is pressed. <br /></td></tr>
+<tr class="memdesc:gac649b5dc8d0c4e41b2503ac486342961"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER button bitmask indicating that button 1 is pressed. <br /></td></tr>
 <tr class="separator:gac649b5dc8d0c4e41b2503ac486342961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e9780ec8f289385f56aabe7de98fcae"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga3e9780ec8f289385f56aabe7de98fcae">WB_POINTER_BUTTON2</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:ga3e9780ec8f289385f56aabe7de98fcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER button bitmask indicating that button 2 is pressed. <br /></td></tr>
+<tr class="memdesc:ga3e9780ec8f289385f56aabe7de98fcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER button bitmask indicating that button 2 is pressed. <br /></td></tr>
 <tr class="separator:ga3e9780ec8f289385f56aabe7de98fcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae22e68ffc43b25bd360fc980f144e713"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#gae22e68ffc43b25bd360fc980f144e713">WB_POINTER_BUTTON3</a>&#160;&#160;&#160;4</td></tr>
-<tr class="memdesc:gae22e68ffc43b25bd360fc980f144e713"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER button bitmask indicating that button 3 is pressed. <br /></td></tr>
+<tr class="memdesc:gae22e68ffc43b25bd360fc980f144e713"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER button bitmask indicating that button 3 is pressed. <br /></td></tr>
 <tr class="separator:gae22e68ffc43b25bd360fc980f144e713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47b464d1c0cccee22a8827bb51165dab"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#ga47b464d1c0cccee22a8827bb51165dab">WB_POINTER_BUTTON4</a>&#160;&#160;&#160;8</td></tr>
-<tr class="memdesc:ga47b464d1c0cccee22a8827bb51165dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER button bitmask indicating that button 4 (scroll wheel 'up') is pressed. <br /></td></tr>
+<tr class="memdesc:ga47b464d1c0cccee22a8827bb51165dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER button bitmask indicating that button 4 (scroll wheel 'up') is pressed. <br /></td></tr>
 <tr class="separator:ga47b464d1c0cccee22a8827bb51165dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc9fd2c8b32e9737cb3427994d6c8ca8"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html#gabc9fd2c8b32e9737cb3427994d6c8ca8">WB_POINTER_BUTTON5</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memdesc:gabc9fd2c8b32e9737cb3427994d6c8ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM_POINTER button bitmask indicating that button 5 (scroll wheel 'down') is pressed. <br /></td></tr>
+<tr class="memdesc:gabc9fd2c8b32e9737cb3427994d6c8ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">WB_POINTER button bitmask indicating that button 5 (scroll wheel 'down') is pressed. <br /></td></tr>
 <tr class="separator:gabc9fd2c8b32e9737cb3427994d6c8ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -764,9 +764,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:gaed80a5e7c8fe7a9dd83fe789270f5bfe"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe">aRESIZE_NOTIFY</a></td></tr>
 <tr class="memdesc:gaed80a5e7c8fe7a9dd83fe789270f5bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">notification of window re-size via ClientMessage  <a href="group__xatoms.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe">More...</a><br /></td></tr>
 <tr class="separator:gaed80a5e7c8fe7a9dd83fe789270f5bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29a81f7e3ee38538ac7c109bc620e57a"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#ga29a81f7e3ee38538ac7c109bc620e57a">aSCROLLBAR_NOTIFY</a></td></tr>
-<tr class="memdesc:ga29a81f7e3ee38538ac7c109bc620e57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">notification of window scrollbar position/range changes via ClientMessage  <a href="group__xatoms.html#ga29a81f7e3ee38538ac7c109bc620e57a">More...</a><br /></td></tr>
-<tr class="separator:ga29a81f7e3ee38538ac7c109bc620e57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad36ba3d867d9a0856736b552fdce66e4"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#gad36ba3d867d9a0856736b552fdce66e4">aDESTROY_NOTIFY</a></td></tr>
 <tr class="memdesc:gad36ba3d867d9a0856736b552fdce66e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">notify parent that child is being destroyed  <a href="group__xatoms.html#gad36ba3d867d9a0856736b552fdce66e4">More...</a><br /></td></tr>
 <tr class="separator:gad36ba3d867d9a0856736b552fdce66e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -787,15 +784,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:gab4133b83c97fa7100e2a2e8cd3445830"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#gab4133b83c97fa7100e2a2e8cd3445830">aSET_FOCUS</a></td></tr>
 <tr class="memdesc:gab4133b83c97fa7100e2a2e8cd3445830"><td class="mdescLeft">&#160;</td><td class="mdescRight">dialog focus messages  <a href="group__xatoms.html#gab4133b83c97fa7100e2a2e8cd3445830">More...</a><br /></td></tr>
 <tr class="separator:gab4133b83c97fa7100e2a2e8cd3445830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3677a73e79086a6b1a713cb90b1ae1d7"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">aWM_CHAR</a></td></tr>
-<tr class="memdesc:ga3677a73e79086a6b1a713cb90b1ae1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">keystroke/character notifications generated by API  <a href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">More...</a><br /></td></tr>
-<tr class="separator:ga3677a73e79086a6b1a713cb90b1ae1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bac48715e457c87648fa360fd906a71"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#ga5bac48715e457c87648fa360fd906a71">aWM_TIMER</a></td></tr>
-<tr class="memdesc:ga5bac48715e457c87648fa360fd906a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer notifications generated by API  <a href="group__xatoms.html#ga5bac48715e457c87648fa360fd906a71">More...</a><br /></td></tr>
-<tr class="separator:ga5bac48715e457c87648fa360fd906a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7">aWM_POINTER</a></td></tr>
-<tr class="memdesc:ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer click/double-click/drag notifications generated by API  <a href="group__xatoms.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7">More...</a><br /></td></tr>
-<tr class="separator:ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab047060739005fbe53d09cc5e05101ce"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#gab047060739005fbe53d09cc5e05101ce">aWB_CHAR</a></td></tr>
+<tr class="memdesc:gab047060739005fbe53d09cc5e05101ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">keystroke/character notifications generated by API  <a href="group__xatoms.html#gab047060739005fbe53d09cc5e05101ce">More...</a><br /></td></tr>
+<tr class="separator:gab047060739005fbe53d09cc5e05101ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8da097fed5abc873cc7e96af53edd37"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#gae8da097fed5abc873cc7e96af53edd37">aWB_TIMER</a></td></tr>
+<tr class="memdesc:gae8da097fed5abc873cc7e96af53edd37"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer notifications generated by API  <a href="group__xatoms.html#gae8da097fed5abc873cc7e96af53edd37">More...</a><br /></td></tr>
+<tr class="separator:gae8da097fed5abc873cc7e96af53edd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a71c68353174922427c05fd004e1f9a"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xatoms.html#ga5a71c68353174922427c05fd004e1f9a">aWB_POINTER</a></td></tr>
+<tr class="memdesc:ga5a71c68353174922427c05fd004e1f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer click/double-click/drag notifications generated by API  <a href="group__xatoms.html#ga5a71c68353174922427c05fd004e1f9a">More...</a><br /></td></tr>
+<tr class="separator:ga5a71c68353174922427c05fd004e1f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad934d5e7c2a72c15f9c49ee5f719fd73"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gad934d5e7c2a72c15f9c49ee5f719fd73">aWM_PROTOCOLS</a></td></tr>
 <tr class="memdesc:gad934d5e7c2a72c15f9c49ee5f719fd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">WM supported protocols.  <a href="group__wmatom.html#gad934d5e7c2a72c15f9c49ee5f719fd73">More...</a><br /></td></tr>
 <tr class="separator:gad934d5e7c2a72c15f9c49ee5f719fd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -808,89 +805,68 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga78d972018413f3100f8d8e769bad214f"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga78d972018413f3100f8d8e769bad214f">aAVERAGE_WIDTH</a></td></tr>
 <tr class="memdesc:ga78d972018413f3100f8d8e769bad214f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for fonts - Average Character Width.  <a href="group__wmatom.html#ga78d972018413f3100f8d8e769bad214f">More...</a><br /></td></tr>
 <tr class="separator:ga78d972018413f3100f8d8e769bad214f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c168a251f6bfd9c490a216dcfa7744f"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga6c168a251f6bfd9c490a216dcfa7744f">aCLIPBOARD</a></td></tr>
-<tr class="memdesc:ga6c168a251f6bfd9c490a216dcfa7744f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga6c168a251f6bfd9c490a216dcfa7744f"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga6c168a251f6bfd9c490a216dcfa7744f">aCLIPBOARD</a></td></tr>
+<tr class="memdesc:ga6c168a251f6bfd9c490a216dcfa7744f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CLIPBOARD Atom for the clipboard.  <a href="group__wmatom.html#ga6c168a251f6bfd9c490a216dcfa7744f">More...</a><br /></td></tr>
 <tr class="separator:ga6c168a251f6bfd9c490a216dcfa7744f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77559cdccba23fa66d8c43bf01fada9a"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga77559cdccba23fa66d8c43bf01fada9a">aPRIMARY</a></td></tr>
-<tr class="memdesc:ga77559cdccba23fa66d8c43bf01fada9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga77559cdccba23fa66d8c43bf01fada9a"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga77559cdccba23fa66d8c43bf01fada9a">aPRIMARY</a></td></tr>
+<tr class="memdesc:ga77559cdccba23fa66d8c43bf01fada9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">PRIMARY Atom for the clipboard - uses XA_PRIMARY.  <a href="group__wmatom.html#ga77559cdccba23fa66d8c43bf01fada9a">More...</a><br /></td></tr>
 <tr class="separator:ga77559cdccba23fa66d8c43bf01fada9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa445a25cc4b4927c9ae9efa262740fd9"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaa445a25cc4b4927c9ae9efa262740fd9">aSECONDARY</a></td></tr>
-<tr class="memdesc:gaa445a25cc4b4927c9ae9efa262740fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gaa445a25cc4b4927c9ae9efa262740fd9"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaa445a25cc4b4927c9ae9efa262740fd9">aSECONDARY</a></td></tr>
+<tr class="memdesc:gaa445a25cc4b4927c9ae9efa262740fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SECONDARY Atom for the clipboard - uses XA_SECONDARY.  <a href="group__wmatom.html#gaa445a25cc4b4927c9ae9efa262740fd9">More...</a><br /></td></tr>
 <tr class="separator:gaa445a25cc4b4927c9ae9efa262740fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga462fa223f308de505b0f7d3f486e65f8"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga462fa223f308de505b0f7d3f486e65f8">aMANAGER</a></td></tr>
-<tr class="memdesc:ga462fa223f308de505b0f7d3f486e65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga462fa223f308de505b0f7d3f486e65f8"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga462fa223f308de505b0f7d3f486e65f8">aMANAGER</a></td></tr>
+<tr class="memdesc:ga462fa223f308de505b0f7d3f486e65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">MANAGER Atom for the clipboard.  <a href="group__wmatom.html#ga462fa223f308de505b0f7d3f486e65f8">More...</a><br /></td></tr>
 <tr class="separator:ga462fa223f308de505b0f7d3f486e65f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac35fd654b51e9fc0be288104581e0ee4"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gac35fd654b51e9fc0be288104581e0ee4">aTARGET</a></td></tr>
-<tr class="memdesc:gac35fd654b51e9fc0be288104581e0ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gac35fd654b51e9fc0be288104581e0ee4"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gac35fd654b51e9fc0be288104581e0ee4">aTARGET</a></td></tr>
+<tr class="memdesc:gac35fd654b51e9fc0be288104581e0ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">TARGET Atom for the clipboard.  <a href="group__wmatom.html#gac35fd654b51e9fc0be288104581e0ee4">More...</a><br /></td></tr>
 <tr class="separator:gac35fd654b51e9fc0be288104581e0ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga820972fc52310cb7415047ee828c4659"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga820972fc52310cb7415047ee828c4659">aINCR</a></td></tr>
-<tr class="memdesc:ga820972fc52310cb7415047ee828c4659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga820972fc52310cb7415047ee828c4659"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga820972fc52310cb7415047ee828c4659">aINCR</a></td></tr>
+<tr class="memdesc:ga820972fc52310cb7415047ee828c4659"><td class="mdescLeft">&#160;</td><td class="mdescRight">INCR Atom for the clipboard.  <a href="group__wmatom.html#ga820972fc52310cb7415047ee828c4659">More...</a><br /></td></tr>
 <tr class="separator:ga820972fc52310cb7415047ee828c4659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0549c92d32396ae2ec56ee676d0fbf55"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga0549c92d32396ae2ec56ee676d0fbf55">aWINDOW</a></td></tr>
-<tr class="memdesc:ga0549c92d32396ae2ec56ee676d0fbf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga0549c92d32396ae2ec56ee676d0fbf55"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga0549c92d32396ae2ec56ee676d0fbf55">aWINDOW</a></td></tr>
+<tr class="memdesc:ga0549c92d32396ae2ec56ee676d0fbf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">WINDOW Atom for the clipboard - uses XA_WINDOW.  <a href="group__wmatom.html#ga0549c92d32396ae2ec56ee676d0fbf55">More...</a><br /></td></tr>
 <tr class="separator:ga0549c92d32396ae2ec56ee676d0fbf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4d07e81656182b0406e74189d381288"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gae4d07e81656182b0406e74189d381288">aBITMAP</a></td></tr>
-<tr class="memdesc:gae4d07e81656182b0406e74189d381288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gae4d07e81656182b0406e74189d381288"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gae4d07e81656182b0406e74189d381288">aBITMAP</a></td></tr>
+<tr class="memdesc:gae4d07e81656182b0406e74189d381288"><td class="mdescLeft">&#160;</td><td class="mdescRight">BITMAP Atom for the clipboard - uses XA_BITMAP.  <a href="group__wmatom.html#gae4d07e81656182b0406e74189d381288">More...</a><br /></td></tr>
 <tr class="separator:gae4d07e81656182b0406e74189d381288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2b3d4feccacdde0618517b59a9d4bf9"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaa2b3d4feccacdde0618517b59a9d4bf9">aDRAWABLE</a></td></tr>
-<tr class="memdesc:gaa2b3d4feccacdde0618517b59a9d4bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gaa2b3d4feccacdde0618517b59a9d4bf9"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaa2b3d4feccacdde0618517b59a9d4bf9">aDRAWABLE</a></td></tr>
+<tr class="memdesc:gaa2b3d4feccacdde0618517b59a9d4bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">DRAWABLE Atom for the clipboard - uses XA_DRAWABLE.  <a href="group__wmatom.html#gaa2b3d4feccacdde0618517b59a9d4bf9">More...</a><br /></td></tr>
 <tr class="separator:gaa2b3d4feccacdde0618517b59a9d4bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88c5269386d83d4bfe7f835200daec8f"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga88c5269386d83d4bfe7f835200daec8f">aCOLORMAP</a></td></tr>
-<tr class="memdesc:ga88c5269386d83d4bfe7f835200daec8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga88c5269386d83d4bfe7f835200daec8f"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga88c5269386d83d4bfe7f835200daec8f">aCOLORMAP</a></td></tr>
+<tr class="memdesc:ga88c5269386d83d4bfe7f835200daec8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">COLORMAP Atom for the clipboard - uses XA_COLORMAP.  <a href="group__wmatom.html#ga88c5269386d83d4bfe7f835200daec8f">More...</a><br /></td></tr>
 <tr class="separator:ga88c5269386d83d4bfe7f835200daec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga094bd1c83620442f14dd2b2c283fdfab"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga094bd1c83620442f14dd2b2c283fdfab">aPIXEL</a></td></tr>
-<tr class="memdesc:ga094bd1c83620442f14dd2b2c283fdfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga094bd1c83620442f14dd2b2c283fdfab"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga094bd1c83620442f14dd2b2c283fdfab">aPIXEL</a></td></tr>
+<tr class="memdesc:ga094bd1c83620442f14dd2b2c283fdfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIXEL Atom for the clipboard.  <a href="group__wmatom.html#ga094bd1c83620442f14dd2b2c283fdfab">More...</a><br /></td></tr>
 <tr class="separator:ga094bd1c83620442f14dd2b2c283fdfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2ea7c123be41dae7602c5157deb7f55"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gac2ea7c123be41dae7602c5157deb7f55">aPIXMAP</a></td></tr>
-<tr class="memdesc:gac2ea7c123be41dae7602c5157deb7f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gac2ea7c123be41dae7602c5157deb7f55"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gac2ea7c123be41dae7602c5157deb7f55">aPIXMAP</a></td></tr>
+<tr class="memdesc:gac2ea7c123be41dae7602c5157deb7f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIXMAP Atom for the clipboard - uses XA_PIXMAP.  <a href="group__wmatom.html#gac2ea7c123be41dae7602c5157deb7f55">More...</a><br /></td></tr>
 <tr class="separator:gac2ea7c123be41dae7602c5157deb7f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc5174842c8823184c5eb2d7ef07ec59"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gafc5174842c8823184c5eb2d7ef07ec59">aTEXT</a></td></tr>
-<tr class="memdesc:gafc5174842c8823184c5eb2d7ef07ec59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gafc5174842c8823184c5eb2d7ef07ec59"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gafc5174842c8823184c5eb2d7ef07ec59">aTEXT</a></td></tr>
+<tr class="memdesc:gafc5174842c8823184c5eb2d7ef07ec59"><td class="mdescLeft">&#160;</td><td class="mdescRight">TEXT Atom for the clipboard.  <a href="group__wmatom.html#gafc5174842c8823184c5eb2d7ef07ec59">More...</a><br /></td></tr>
 <tr class="separator:gafc5174842c8823184c5eb2d7ef07ec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga301c1b521a4286fc1bd898ad0f02e91c"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga301c1b521a4286fc1bd898ad0f02e91c">aSTRING</a></td></tr>
-<tr class="memdesc:ga301c1b521a4286fc1bd898ad0f02e91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga301c1b521a4286fc1bd898ad0f02e91c"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga301c1b521a4286fc1bd898ad0f02e91c">aSTRING</a></td></tr>
+<tr class="memdesc:ga301c1b521a4286fc1bd898ad0f02e91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">STRING Atom for the clipboard - uses XA_STRING.  <a href="group__wmatom.html#ga301c1b521a4286fc1bd898ad0f02e91c">More...</a><br /></td></tr>
 <tr class="separator:ga301c1b521a4286fc1bd898ad0f02e91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d475bd4065e4550d7423522cba2d548"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga3d475bd4065e4550d7423522cba2d548">aUTF8_STRING</a></td></tr>
-<tr class="memdesc:ga3d475bd4065e4550d7423522cba2d548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga3d475bd4065e4550d7423522cba2d548"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga3d475bd4065e4550d7423522cba2d548">aUTF8_STRING</a></td></tr>
+<tr class="memdesc:ga3d475bd4065e4550d7423522cba2d548"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF8_STRING Atom for the clipboard.  <a href="group__wmatom.html#ga3d475bd4065e4550d7423522cba2d548">More...</a><br /></td></tr>
 <tr class="separator:ga3d475bd4065e4550d7423522cba2d548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba9d0bb8be874bbff95935412d996ef3"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaba9d0bb8be874bbff95935412d996ef3">aC_STRING</a></td></tr>
-<tr class="memdesc:gaba9d0bb8be874bbff95935412d996ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gaba9d0bb8be874bbff95935412d996ef3"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaba9d0bb8be874bbff95935412d996ef3">aC_STRING</a></td></tr>
+<tr class="memdesc:gaba9d0bb8be874bbff95935412d996ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">C_STRING Atom for the clipboard.  <a href="group__wmatom.html#gaba9d0bb8be874bbff95935412d996ef3">More...</a><br /></td></tr>
 <tr class="separator:gaba9d0bb8be874bbff95935412d996ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2505e834402b0142d3a9c874fc3b9914"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga2505e834402b0142d3a9c874fc3b9914">aCOMPOUND_TEXT</a></td></tr>
-<tr class="memdesc:ga2505e834402b0142d3a9c874fc3b9914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:ga2505e834402b0142d3a9c874fc3b9914"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#ga2505e834402b0142d3a9c874fc3b9914">aCOMPOUND_TEXT</a></td></tr>
+<tr class="memdesc:ga2505e834402b0142d3a9c874fc3b9914"><td class="mdescLeft">&#160;</td><td class="mdescRight">COMPOUND_TEXT Atom for the clipboard.  <a href="group__wmatom.html#ga2505e834402b0142d3a9c874fc3b9914">More...</a><br /></td></tr>
 <tr class="separator:ga2505e834402b0142d3a9c874fc3b9914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc188f80702d9e969c48f65bf93d4d16"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gadc188f80702d9e969c48f65bf93d4d16">aTARGETS</a></td></tr>
-<tr class="memdesc:gadc188f80702d9e969c48f65bf93d4d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gadc188f80702d9e969c48f65bf93d4d16"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gadc188f80702d9e969c48f65bf93d4d16">aTARGETS</a></td></tr>
+<tr class="memdesc:gadc188f80702d9e969c48f65bf93d4d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">TARGETS Atom for the clipboard.  <a href="group__wmatom.html#gadc188f80702d9e969c48f65bf93d4d16">More...</a><br /></td></tr>
 <tr class="separator:gadc188f80702d9e969c48f65bf93d4d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad70cf755450b2b515dad5a54b97c14a9"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gad70cf755450b2b515dad5a54b97c14a9">aMULTIPLE</a></td></tr>
-<tr class="memdesc:gad70cf755450b2b515dad5a54b97c14a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gad70cf755450b2b515dad5a54b97c14a9"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gad70cf755450b2b515dad5a54b97c14a9">aMULTIPLE</a></td></tr>
+<tr class="memdesc:gad70cf755450b2b515dad5a54b97c14a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">MULTIPLE Atom for the clipboard.  <a href="group__wmatom.html#gad70cf755450b2b515dad5a54b97c14a9">More...</a><br /></td></tr>
 <tr class="separator:gad70cf755450b2b515dad5a54b97c14a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf33743baad5968419d3c8fdd1f2fff62"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaf33743baad5968419d3c8fdd1f2fff62">aTIMESTAMP</a></td></tr>
-<tr class="memdesc:gaf33743baad5968419d3c8fdd1f2fff62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gaf33743baad5968419d3c8fdd1f2fff62"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaf33743baad5968419d3c8fdd1f2fff62">aTIMESTAMP</a></td></tr>
+<tr class="memdesc:gaf33743baad5968419d3c8fdd1f2fff62"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIMESTAMP Atom for the clipboard.  <a href="group__wmatom.html#gaf33743baad5968419d3c8fdd1f2fff62">More...</a><br /></td></tr>
 <tr class="separator:gaf33743baad5968419d3c8fdd1f2fff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa167210aeb180faba995a7b464bbfd69"><td class="memItemLeft" align="right" valign="top">
-const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaa167210aeb180faba995a7b464bbfd69">aNULL</a></td></tr>
-<tr class="memdesc:gaa167210aeb180faba995a7b464bbfd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atoms for the clipboard. <br /></td></tr>
+<tr class="memitem:gaa167210aeb180faba995a7b464bbfd69"><td class="memItemLeft" align="right" valign="top">const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wmatom.html#gaa167210aeb180faba995a7b464bbfd69">aNULL</a></td></tr>
+<tr class="memdesc:gaa167210aeb180faba995a7b464bbfd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">NULL Atom for the clipboard.  <a href="group__wmatom.html#gaa167210aeb180faba995a7b464bbfd69">More...</a><br /></td></tr>
 <tr class="separator:gaa167210aeb180faba995a7b464bbfd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -937,7 +913,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <p>This function works ONLY for windows that have been registered with a callback. It checks to see if the internal window information exists and returns a non-zero value if the internal information exists AND the window itself has not been destroyed. This works whether or not the window was ever mapped.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05277">5277</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05369">5369</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -947,7 +923,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="window__helper_8h.html">window_helper.h</a></li>
-    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 10:46:11 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

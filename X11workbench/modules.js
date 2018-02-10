@@ -2,7 +2,7 @@ var modules =
 [
     [ "Application Startup and Shutdown", "group__startup.html", "group__startup" ],
     [ "Core API", "group__core.html", "group__core" ],
-    [ "Platform-Helper Functions and Definitions", "group__platform.html", "group__platform" ],
+    [ "Platform Independence", "group__platform.html", "group__platform" ],
     [ "Configuration 'helper' functions", "group__conf__help.html", "group__conf__help" ],
     [ "Text Utilities (generic)", "group__text.html", "group__text" ],
     [ "Memory sub-allocator for high performance dynamic memory management", "group__sub__alloc.html", "group__sub__alloc" ],

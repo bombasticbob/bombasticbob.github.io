@@ -111,6 +111,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga5d43ba2cb1c6add51f387fcee8a5fe9d"><td class="memItemLeft" align="right" valign="top"><a id="ga5d43ba2cb1c6add51f387fcee8a5fe9d"></a>
+typedef struct __internal_window_entry__&#160;</td><td class="memItemRight" valign="bottom"><b>_WINDOW_ENTRY_</b></td></tr>
+<tr class="separator:ga5d43ba2cb1c6add51f387fcee8a5fe9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab37976e62900c9fd328045c33317a369"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gab37976e62900c9fd328045c33317a369">WBLocateWindowCallback</a>) (Window wID, void *pData)</td></tr>
 <tr class="memdesc:gab37976e62900c9fd328045c33317a369"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback definition for WBLocateWindow  <a href="#gab37976e62900c9fd328045c33317a369">More...</a><br /></td></tr>
 <tr class="separator:gab37976e62900c9fd328045c33317a369"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,7 +405,7 @@ Functions</h2></td></tr>
 <p>'Keyboard' input mask. Use this as a parameter to XSelectInput to enable keyboard events to be sent to the window<br />
 This bit mask may be 'or'd with other bit masks as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00740">740</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00755">755</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +425,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>'Mouse' input mask. Use this as a parameter to XSelectInput to enable mouse events to be sent to the window<br />
 This bit mask may be 'or'd with other bit masks as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00748">748</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00763">763</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +445,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>'Standard' input mask. Use this as a parameter to XSelectInput to enable standard events to be sent to the window<br />
 This bit mask may be 'or'd with other bit masks as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00732">732</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00747">747</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +485,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>logical TRUE if the two WB_GEOMs intersect, FALSE otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01559">1559</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01574">1574</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +527,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Essentially, it works the same as <a class="el" href="group__wcore.html#gaf7342f5d4ee06c0d55af2cc5ef6c5b0d" title="makes a copy of the default GC so that it can be modified ">WBGetWindowCopyGC()</a> except it uses gcSrc instead of the window's 'default GC'. (legacy, use <a class="el" href="group__wcore.html#ga312528b37fc862da5e6d1e91df1bc596" title="makes a copy of the specified GC for the desired &#39;Drawable&#39; ">WBCopyDrawableGC()</a> instead)</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01165">1165</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01180">1180</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +574,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>logical TRUE if (X,Y) lies within 'G', FALSE otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01539">1539</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01554">1554</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +621,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>logical TRUE if (X,Y) lies within 'R', FALSE otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01530">1530</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01545">1545</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -658,7 +661,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>logical TRUE if the two WB_RECTs intersect, FALSE otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01547">1547</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01562">1562</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -686,7 +689,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <dl class="section return"><dt>Returns</dt><dd>A value &gt; 0 to indicate a match, &lt; 0 to stop enumerating, 0 to continue enumerating</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01027">1027</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01042">1042</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -706,7 +709,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Window type enumeration. Reserved for future implementation. </p>
 <p>reserved for future implementation </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00757">757</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00772">772</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -725,7 +728,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Window WMProtocols support enumeration. </p>
 <p>Bit flags indicating support for known WM_PROTOCOLS window manager features </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00810">810</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00825">825</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +769,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06892">6892</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06984">6984</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -789,7 +792,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>implements the default application event callback behavior </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04636">4636</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04728">4728</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -818,7 +821,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06112">6112</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06204">6204</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -866,7 +869,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="http://standards.freedesktop.org/wm-spec/wm-spec-latest.html">latest WM spec</a> <a href="http://standards.freedesktop.org/freedesktop-platform-specs/1.0/wm-spec-1.3/">WM spec v 1.3</a></dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02871">2871</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02963">2963</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -915,7 +918,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Makes a copy of the specified GC. Useful if you want to make temporary modifications to a GC for a particular drawing operation, but don't want to actually modify the original GC.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05533">5533</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05625">5625</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1031,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 The window is created with the default visual and depth for the specified display with default screen and a default set of WM_HINTS.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02526">2526</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02618">2618</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1078,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05434">5434</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05526">5526</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1111,7 @@ The window is created with the default visual and depth for the specified displa
 <p>implements the default window event callback behavior </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04641">4641</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04733">4733</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1154,7 @@ The window is created with the default visual and depth for the specified displa
 <p>You should also ignore the visualid and killid parameters. These will both be assigned to 'None'</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05685">5685</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05777">5777</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1178,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Call this function to destroy a window, rather than XDestroyWindow</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02017">2017</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02109">2109</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1207,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06153">6153</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06245">6245</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1229,7 +1232,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Call this function to get the 'Application' window's ID registered via <a class="el" href="group__wcore.html#ga930f1ec5fc0beea185925fd8ce889eaf" title="Destroy a window. ">WBSetApplicationWindow()</a>. There can be only one.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03038">3038</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03130">3130</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1269,7 +1272,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06462">6462</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06554">6554</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1311,7 +1314,7 @@ The window is created with the default visual and depth for the specified displa
 <p>If the current background color cannot be determined, this function will return the pre-defined color for WHITE on the specified Display and default screen</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05664">5664</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05756">5756</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1356,7 @@ The window is created with the default visual and depth for the specified displa
 <p>If the current foreground color cannot be determined, this function will return the pre-defined color for BLACK on the specified Display and default screen</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05644">5644</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05736">5736</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1395,7 +1398,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Call this function to determine the font that has been assigned to a GC. If there has been NO font assigned, the system default font information will be returned. The return value is always a new pointer to an XFontStruct, or NULL on error. The caller must free non-NULL return values via XFreeFont().</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05566">5566</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05658">5658</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1425,7 +1428,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>The Window ID for the Menu window assigned to wID (only one may be assigned for this to work)</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06908">6908</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07000">7000</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1458,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>The Window ID of the parent, or None</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06712">6712</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06804">6804</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1485,7 +1488,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>The current background color for the window</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05632">5632</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05724">5724</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1516,7 +1519,7 @@ The window is created with the default visual and depth for the specified displa
 <p>The windows 'class name' is a persistent string pointer that is optionally assigned by calling <a class="el" href="group__wcore.html#ga8db225b7114ac9c93e83cf44f475002a" title="Assignes the window&#39;s class name pointer. ">WBSetWindowClassName()</a>. This function returns the assigned pointer. Its primary use is for debugging and tracing.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06013">6013</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06105">6105</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1546,7 +1549,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>A copy of the default GC for the specified window</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05505">5505</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05597">5597</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1591,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Each window has up to WINDOW_DATA_SIZE void pointers that can be stored within the internal data structure associated with each window. For many standard windows and controls defined in the API, the first entry (index zero) is reserved. Any unused entries can be made use of in any way necessary. It is important to keep in mind that these values are not automatically checked, nor are any resources automatically deleted when the window is destroyed.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06025">6025</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06117">6117</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1618,7 +1621,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>The Cursor ID (Typically an XC_ definition from X11/cursorfont.h). A value of '-1' equates to 'None'</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06102">6102</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06194">6194</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1649,7 +1652,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Each window that is mapped within the API will have a 'default GC' associated with it. This GC should not be modified unless you want the changes to remain for the next time a GC is required. A preferred method is to re-assign a new default GC with the new settings, or create a copy of the default GC as a 'starting point', then modify the copy as needed to perform the desired operation. This, in fact, will happen every time you use the API to handle Expose events, via the <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> and <a class="el" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> functions, where the paint GC is a modified version of the default GC.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05493">5493</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05585">5585</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1679,7 +1682,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>A Display pointer corresponding to the Window ID, or NULL on error</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05326">5326</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05418">5418</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1709,7 +1712,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>The current foreground color for the window</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05620">5620</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05712">5712</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1739,7 +1742,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>The assigned XFontSet, or 'None' on error</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05986">5986</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06078">6078</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1769,7 +1772,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the assigned XFontStruct, or NULL on error</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05969">5969</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06061">6061</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1809,7 +1812,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06276">6276</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06368">6368</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1850,7 +1853,7 @@ The window is created with the default visual and depth for the specified displa
 <p>The 'ABSOLUTE' window geometry is the position of the window relative to the origin point (the upper left corner of the screen). Window managers typically cook all of the XEvent and API data that relates to window positioning, such that a top level frame window's upper left corner is nearly always reported as 0,0 (or similar). Not all window managers behave the same in this regard. To ensure that an ABSOLUTE window position is known (helpful for centering on screen, etc.), the absolute coordinates are frequently cached within the internal data structure associated with the window. Those cached values are returned by this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06227">6227</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06319">6319</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1890,7 +1893,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06361">6361</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06453">6453</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1930,7 +1933,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06447">6447</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06539">6539</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1961,7 +1964,7 @@ The window is created with the default visual and depth for the specified displa
 <p>These values are cached from <a class="el" href="group__wcore.html#gaeb94431d6bea312dcabae07242dba442" title="assign standard WM (Window Manager) &#39;window type&#39; properties BEFORE mapping it (reserved) ...">WBSetWMPropertiesWindowType()</a> and <a class="el" href="group__wcore.html#gaa081ed4be9f20145a74dd0147fc4b67d" title="re-assign standard WM (Window Manager) &#39;window type&#39; properties and notify the root window (reserved)...">WBChangeWMPropertiesWindowType()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02879">2879</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02971">2971</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2003,7 +2006,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Rather than checking for the parent window ID and doing a 'direct match', this function checks all parent windows of 'wIDChild' to see if 'wIDParent' is one of them, and returns a non-zero value if it is. Otherwise, the function returns zero.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06768">6768</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06860">6860</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2048,7 +2051,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__wcore.html#gab37976e62900c9fd328045c33317a369">WBLocateWindowCallback</a></dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03006">3006</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03098">3098</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2104,7 +2107,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Use this function to see if coordinates relative to one window also fall within another window. Typical use includes 'hover' detection, drag/drop operations, and child window activation To specify X,Y screen coordinates, pass 'None' for 'wIDRef'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06573">6573</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06665">6665</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2128,7 +2131,7 @@ The window is created with the default visual and depth for the specified displa
 <p>To handle events sent to the application ('no window' events), register a callback function using this API. The callback function you register should call <a class="el" href="group__wcore.html#gaebf8a5ba7fe6108957684397fd4ed634" title="implements the default application event callback behavior ">WBAppDefault()</a> for any events that it does not process.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02162">2162</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02254">2254</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2161,7 +2164,7 @@ The window is created with the default visual and depth for the specified displa
 <p>(internal) Register a MENU callback for a window </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06878">6878</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06970">6970</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2194,7 +2197,7 @@ The window is created with the default visual and depth for the specified displa
 <p>register callback function for a window (required) </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02772">2772</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02864">2864</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2234,7 +2237,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06924">6924</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07016">7016</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2290,7 +2293,7 @@ The window is created with the default visual and depth for the specified displa
  NOTE: this function should NOT be called for top level windows.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06747">6747</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06839">6839</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2319,7 +2322,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06213">6213</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06305">6305</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2349,7 +2352,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Call this function to set the 'Application' window's ID. There can be only one. Make sure the window has an assigned callback already, or the assignment will fail. Once the application window's callback has been unregistered, the application window ID will be reset to 'None' automatically.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03043">3043</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03135">3135</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2379,7 +2382,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Call this function to assign the input focus to a specific window. The 'revert' window will be the previous focus window.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01964">1964</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02056">2056</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2421,7 +2424,7 @@ The window is created with the default visual and depth for the specified displa
 <p>If you want to change the owner window you should call <a class="el" href="group__wcore.html#ga814d21556a9f1eb379e7e72fd6b72a51">WBReparentWindow()</a> instead. NOTE: this function should NOT be called for top level windows.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06739">6739</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06831">6831</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2462,7 +2465,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Assigns a pointer to a persistent character string that identifies the 'window class' for debug and tracing purposes. The pointer must be 'persistent', neither allocated via 'malloc()' or on the stack, since it is assigned directly 'as-is' to the internal structure, without copying the string data.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06003">6003</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06095">6095</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2502,7 +2505,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06201">6201</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06293">6293</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2549,7 +2552,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05483">5483</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05575">5575</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2589,7 +2592,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06089">6089</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06181">6181</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2629,7 +2632,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05468">5468</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05560">5560</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2669,7 +2672,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05408">5408</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05500">5500</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2709,7 +2712,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05381">5381</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05473">5473</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2749,7 +2752,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05338">5338</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05430">5430</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2789,7 +2792,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02747">2747</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02839">2839</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2850,7 +2853,7 @@ The window is created with the default visual and depth for the specified displa
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02595">2595</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02687">2687</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2891,7 +2894,7 @@ The window is created with the default visual and depth for the specified displa
 <dl class="section see"><dt>See also</dt><dd><a href="http://standards.freedesktop.org/wm-spec/wm-spec-latest.html">latest WM spec</a> <a href="http://standards.freedesktop.org/freedesktop-platform-specs/1.0/wm-spec-1.3/">WM spec v 1.3</a></dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02861">2861</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02953">2953</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2938,7 +2941,7 @@ The window is created with the default visual and depth for the specified displa
 <p>Additional parameters are all Atom values, the last one being 'None' to mark the end of the list. These Atoms will be assigned to the WM_PROTOCOLS property via XSetWMProtocols(). In some cases, the behavior of the toolkit will change depending on the atoms that are assigned. This assignment should ONLY be done on top-level windows, and only at the time of window creation.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02894">2894</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02986">2986</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2960,7 +2963,7 @@ The window is created with the default visual and depth for the specified displa
 <p>unregister callback function for application events </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02167">2167</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02259">2259</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2983,7 +2986,7 @@ The window is created with the default visual and depth for the specified displa
 <p>un-register the window's callback function (implies resource destruction) </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02794">2794</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02886">2886</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -3039,7 +3042,7 @@ The window is created with the default visual and depth for the specified displa
 To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06516">6516</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06608">6608</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -3109,7 +3112,7 @@ To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
 To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06481">6481</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06573">6573</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -3165,7 +3168,7 @@ To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
 To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06546">6546</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06638">6638</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -3174,7 +3177,7 @@ To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

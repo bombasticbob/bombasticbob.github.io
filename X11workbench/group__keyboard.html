@@ -97,8 +97,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga36d3a3da71f9de6e179166f627565af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The X11workbench Toolkit API provides for mid-level keyboard event handling via WM_CHAR ClientMessage notification events.<br />
-See <a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">aWM_CHAR</a> for more info. </p>
+<p>The X11workbench Toolkit API provides for mid-level keyboard event handling via WB_CHAR ClientMessage notification events.<br />
+See <a class="el" href="group__xatoms.html#gab047060739005fbe53d09cc5e05101ce">aWB_CHAR</a> for more info. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga36d3a3da71f9de6e179166f627565af4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga36d3a3da71f9de6e179166f627565af4">&#9670;&nbsp;</a></span>WBKeyEventProcessKey()</h2>
@@ -150,10 +150,10 @@ See <a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">a
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The first byte of the character string when 'pBuf' is NOT NULL, or a translated UTF character of 1, 2, or 4 bytes when pBuf is NULL</dd></dl>
 <p>generic utility to process a keystroke. 'pcbLen' must be pre-assigned to size of 'pBuf' if 'pBuf' is to be written to. Any parameter other than 'pEvent' may be NULL. when pBuf is NULL, pcbLen (if not NULL) receives the required length in bytes when pcbLen is NULL and pBuf is not, length is assumed to be 1 byte return value is the first byte of the character string when 'pBuf' is NOT NULL, or a translated UTF character of 1, 2 or 4 bytes (when pBuf is NULL).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">aWM_CHAR</a>, <a class="el" href="group__xatoms.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7">aWM_POINTER</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__xatoms.html#gab047060739005fbe53d09cc5e05101ce">aWB_CHAR</a>, <a class="el" href="group__xatoms.html#ga5a71c68353174922427c05fd004e1f9a">aWB_POINTER</a></dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06588">6588</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06680">6680</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -162,7 +162,7 @@ See <a class="el" href="group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7">a
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 1 2018 17:00:58 for X11 Work Bench Toolkit by
+    <li class="footer">Generated on Sat Feb 10 2018 10:46:12 for X11 Work Bench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a77bc6f43abf2a268a036ef11f20cf6ab":[8,11,2,59,42],
 "group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a7f0a0e8648574c4ba8d70df6c041bdc8":[10,0,9,42,25],
 "group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a7f0a0e8648574c4ba8d70df6c041bdc8":[8,11,2,59,25],
 "group__dlgctrl.html#ggaa66d958dbfe799dbf9fd51f20a3a8c72a80bf8b4ffbb645a870000a6051424d29":[10,0,9,42,21],
@@ -158,8 +159,8 @@ var NAVTREEINDEX6 =
 "group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7":[10,0,14,6],
 "group__dlgwindow.html#ga97c244cac0ae5750288fa38b47a10da7":[8,11,1,6],
 "group__dlgwindow.html#ga980821ba8cd425385c5d5ebceead5b3f":[10,0,13,21],
-"group__dlgwindow.html#ga980821ba8cd425385c5d5ebceead5b3f":[8,11,1,23],
 "group__dlgwindow.html#ga980821ba8cd425385c5d5ebceead5b3f":[10,0,14,29],
+"group__dlgwindow.html#ga980821ba8cd425385c5d5ebceead5b3f":[8,11,1,23],
 "group__dlgwindow.html#ga9d2e85a542eea2eafa3f1ec876ae4b58":[10,0,14,25],
 "group__dlgwindow.html#ga9d2e85a542eea2eafa3f1ec876ae4b58":[8,11,1,19],
 "group__dlgwindow.html#gaa095b4df95497427153bc4bc886d3a49":[10,0,13,17],
@@ -239,15 +240,14 @@ var NAVTREEINDEX6 =
 "group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80":[10,0,15,6],
 "group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80":[10,0,16,5],
 "group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80":[8,14,7],
-"group__draw__text.html#gac1a755eebf48ea4c552045d9e9d0d175":[10,0,15,17],
 "group__draw__text.html#gac1a755eebf48ea4c552045d9e9d0d175":[10,0,16,15],
+"group__draw__text.html#gac1a755eebf48ea4c552045d9e9d0d175":[10,0,15,17],
 "group__draw__text.html#gac1a755eebf48ea4c552045d9e9d0d175":[8,14,17],
-"group__draw__text.html#gad4da904e0c113d55962a2de21fb67855":[10,0,16,7],
 "group__draw__text.html#gad4da904e0c113d55962a2de21fb67855":[10,0,15,8],
+"group__draw__text.html#gad4da904e0c113d55962a2de21fb67855":[10,0,16,7],
 "group__draw__text.html#gad4da904e0c113d55962a2de21fb67855":[8,14,9],
 "group__draw__text.html#gadb29b7821f47f595fb02d03adb5d3942":[10,0,15,9],
 "group__draw__text.html#gadb29b7821f47f595fb02d03adb5d3942":[10,0,16,8],
 "group__draw__text.html#gadb29b7821f47f595fb02d03adb5d3942":[8,14,10],
-"group__edit__window.html":[8,10,1],
-"group__edit__window.html#ga1905f55b320db416741d55866a92ebd5":[10,0,18,3]
+"group__edit__window.html":[8,10,1]
 };

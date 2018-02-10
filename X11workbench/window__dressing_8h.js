@@ -28,8 +28,8 @@ var window__dressing_8h =
     [ "WBPaintVScrollBar", "group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d", null ],
     [ "WBScrollBarEvent", "group__window__dressing.html#ga59552cfbf1360ada86f84e4d662570df", null ],
     [ "WBSetHScrollPos", "group__window__dressing.html#gad9cda3c76d25d3053908256495d3e23c", null ],
-    [ "WBSetHScrollRange", "group__window__dressing.html#gae3b977e539eee76cfffc238d7f1b019d", null ],
+    [ "WBSetHScrollRange", "group__window__dressing.html#gaf277824d3f29aed31ef28c9d1fcb0722", null ],
     [ "WBSetVScrollPos", "group__window__dressing.html#ga90a6f39329b178b719f70c11c6a49f76", null ],
-    [ "WBSetVScrollRange", "group__window__dressing.html#gae0e3c8fb6fc629edff6af4046964751c", null ],
+    [ "WBSetVScrollRange", "group__window__dressing.html#ga4c1dab4c5a7a16212ddff047c5caa4e9", null ],
     [ "WBUpdateScrollBarGeometry", "group__window__dressing.html#ga7a248d35a52528818882628963dc3103", null ]
 ];

@@ -9,9 +9,8 @@ var group__xatoms =
     [ "aRECALC_LAYOUT", "group__xatoms.html#gae4b061109ac54ddf38a178e67209dae3", null ],
     [ "aRESIZE_NOTIFY", "group__xatoms.html#gaed80a5e7c8fe7a9dd83fe789270f5bfe", null ],
     [ "aSCROLL_NOTIFY", "group__xatoms.html#gabcf163874e105067053fa2b3e7e659e4", null ],
-    [ "aSCROLLBAR_NOTIFY", "group__xatoms.html#ga29a81f7e3ee38538ac7c109bc620e57a", null ],
     [ "aSET_FOCUS", "group__xatoms.html#gab4133b83c97fa7100e2a2e8cd3445830", null ],
-    [ "aWM_CHAR", "group__xatoms.html#ga3677a73e79086a6b1a713cb90b1ae1d7", null ],
-    [ "aWM_POINTER", "group__xatoms.html#ga2abefe7eb5dd5ab5706b7b9a6ea1c8a7", null ],
-    [ "aWM_TIMER", "group__xatoms.html#ga5bac48715e457c87648fa360fd906a71", null ]
+    [ "aWB_CHAR", "group__xatoms.html#gab047060739005fbe53d09cc5e05101ce", null ],
+    [ "aWB_POINTER", "group__xatoms.html#ga5a71c68353174922427c05fd004e1f9a", null ],
+    [ "aWB_TIMER", "group__xatoms.html#gae8da097fed5abc873cc7e96af53edd37", null ]
 ];
