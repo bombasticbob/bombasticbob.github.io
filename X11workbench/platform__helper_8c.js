@@ -46,6 +46,7 @@ var platform__helper_8c =
     [ "WBFreePointerHashes", "platform__helper_8c.html#a373b87fbcfd1cd4909618bea4dd17e4a", null ],
     [ "WBGetAtom", "group__platform__functions.html#gaf3ed97b8fd7aedff5948c1800fa59455", null ],
     [ "WBGetAtomName", "group__platform__functions.html#ga024ac0b11bace3a96d11ac62ec348e71", null ],
+    [ "WBGetDataAddress", "group__process.html#ga782e2effd1492ba9b4b67be4b0adab65", null ],
     [ "WBGetPointerFromHash", "group__platform__functions.html#gab5193bbf0de01aa9cb4c1d3ea8923448", null ],
     [ "WBGetPrinterList", "group__printer.html#gacbe84588820dd08c5b1f1c3cc1a2e568", null ],
     [ "WBGetProcAddress", "group__process.html#ga3ebada7768666a227eddfbb7d49afc97", null ],

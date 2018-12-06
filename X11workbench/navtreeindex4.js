@@ -1,7 +1,7 @@
 var NAVTREEINDEX4 =
 {
-"group__defaults.html#gaa3f68398eddd018b389e0c1609a369c4":[8,0,48,4],
 "group__defaults.html#gaa3f68398eddd018b389e0c1609a369c4":[6,1,5,2],
+"group__defaults.html#gaa3f68398eddd018b389e0c1609a369c4":[8,0,48,4],
 "group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15":[8,0,47,113],
 "group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15":[8,0,48,85],
 "group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15":[6,1,5,9],
@@ -48,8 +48,8 @@ var NAVTREEINDEX4 =
 "group__desktop__settings.html#gacfb3205d14c47eb4078b17566bad5666":[6,3,1,17],
 "group__desktop__settings.html#gacfb3205d14c47eb4078b17566bad5666":[8,0,3,29],
 "group__desktop__settings.html#gacfb3205d14c47eb4078b17566bad5666":[8,0,4,35],
-"group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df":[8,0,3,30],
 "group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df":[6,3,1,18],
+"group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df":[8,0,3,30],
 "group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df":[8,0,4,36],
 "group__desktop__settings.html#gad91dd92dce9eb3289074d64f982b1ab6":[6,3,1,11],
 "group__desktop__settings.html#gad91dd92dce9eb3289074d64f982b1ab6":[8,0,3,23],

@@ -246,8 +246,8 @@ var NAVTREEINDEX2 =
 "gdb__helper_8h_source.html":[8,0,26],
 "gizzard_8c_source.html":[8,0,27],
 "gizzard_8h_source.html":[8,0,28],
-"globals.html":[8,1,0],
 "globals.html":[8,1,0,0],
+"globals.html":[8,1,0],
 "globals_a.html":[8,1,0,1],
 "globals_b.html":[8,1,0,2]
 };
