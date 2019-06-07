@@ -1,6 +1,8 @@
 var clipboard__helper_8c =
 [
     [ "_CLIPBOARD_HELPER_C", "clipboard__helper_8c.html#a37d947a2319988bb5bf0a1f0155e8a6c", null ],
+    [ "MAX_EVENT_LOOP_SLEEP_PERIOD", "clipboard__helper_8c.html#a4b0bdf77bf23e856b26f933c71796580", null ],
+    [ "MIN_EVENT_LOOP_SLEEP_PERIOD", "clipboard__helper_8c.html#af085cc2084818db1fa4c7c0654dd73f5", null ],
     [ "CLIPBOARD_DATA", "clipboard__helper_8c.html#a3337d46874d59646def642dbed0b7dc6", null ],
     [ "CLIPBOARD_TASK", "clipboard__helper_8c.html#a9c8340a15ec6100cd362680f080e9f6e", null ],
     [ "AddNewItemToRunList", "clipboard__helper_8c.html#a2ce172d09679bc6faf13afb79a038fb9", null ],

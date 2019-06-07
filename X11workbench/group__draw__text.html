@@ -128,54 +128,42 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7ec3cd86a0edb77017e39538cf018d8f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga7ec3cd86a0edb77017e39538cf018d8f">InternalCalcIdealBounds</a> (Display *pDisplay, XFontSet fontSet, <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, int iTabWidth, unsigned int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcSource, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcDest, int iAlignment, int iStartLine, int iEndLine)</td></tr>
-<tr class="memdesc:ga7ec3cd86a0edb77017e39538cf018d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate ideal bounds rectangle for text given a font, tab spacing, tab origin, and alignment  <a href="#ga7ec3cd86a0edb77017e39538cf018d8f">More...</a><br /></td></tr>
-<tr class="separator:ga7ec3cd86a0edb77017e39538cf018d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d243810deae01326217ba00d8471599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga8d243810deae01326217ba00d8471599">DTDrawString</a> (Display *pDisplay, Drawable drawable, XFontSet fontSet, GC gc, int x, int y, const char *pString, int nLength)</td></tr>
-<tr class="memdesc:ga8d243810deae01326217ba00d8471599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw text in a platform-independent manner for UTF-8 or multi-byte text.  <a href="#ga8d243810deae01326217ba00d8471599">More...</a><br /></td></tr>
-<tr class="separator:ga8d243810deae01326217ba00d8471599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga71ddfc3307aaf7c29bf27b4284ae3ee7">DTGetTextWidth</a> (XFontSet fontSet, const char *szUTF8, int nLength)</td></tr>
-<tr class="memdesc:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextWidth equivalent for MBCS and UTF-8 strings.  <a href="#ga71ddfc3307aaf7c29bf27b4284ae3ee7">More...</a><br /></td></tr>
-<tr class="separator:ga71ddfc3307aaf7c29bf27b4284ae3ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga1e26f31d2a2142c9e0127c06a2a9ecd6">DTGetTextExtent</a> (XFontSet fontSet, const char *szUTF8, int nLength, <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">WB_EXTENT</a> *pExtent)</td></tr>
-<tr class="memdesc:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextExtent equivalent for MBCS and UTF-8 strings.  <a href="#ga1e26f31d2a2142c9e0127c06a2a9ecd6">More...</a><br /></td></tr>
-<tr class="separator:ga1e26f31d2a2142c9e0127c06a2a9ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga90aef0f5e842682e7e493d9a87cd0f80">DTCalcIdealFont</a> (XFontStruct *pRefFont, const char *szText, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *geomBounds)</td></tr>
-<tr class="memdesc:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal font based on the text and rectangle.  <a href="#ga90aef0f5e842682e7e493d9a87cd0f80">More...</a><br /></td></tr>
-<tr class="separator:ga90aef0f5e842682e7e493d9a87cd0f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga666863b311e17529b16ccb1b6a8eb6b3"><td class="memItemLeft" align="right" valign="top">XFontSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga666863b311e17529b16ccb1b6a8eb6b3">DTCalcIdealFontSet</a> (Display *pDisplay, XFontSet fontSet, const char *szText, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *geomBounds)</td></tr>
-<tr class="memdesc:ga666863b311e17529b16ccb1b6a8eb6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal font based on the text and rectangle.  <a href="#ga666863b311e17529b16ccb1b6a8eb6b3">More...</a><br /></td></tr>
-<tr class="separator:ga666863b311e17529b16ccb1b6a8eb6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78ab5112ce34085933e4e69a6db20ff4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga78ab5112ce34085933e4e69a6db20ff4">InternalCalcIdealBounds</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, int iTabWidth, unsigned int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcSource, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcDest, int iAlignment, int iStartLine, int iEndLine)</td></tr>
+<tr class="memdesc:ga78ab5112ce34085933e4e69a6db20ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate ideal bounds rectangle for text given a font, tab spacing, tab origin, and alignment  <a href="#ga78ab5112ce34085933e4e69a6db20ff4">More...</a><br /></td></tr>
+<tr class="separator:ga78ab5112ce34085933e4e69a6db20ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2337471599a741adc9f4ab29d369a6b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga2337471599a741adc9f4ab29d369a6b9">DTDrawString</a> (Display *pDisplay, Drawable drawable, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x, int y, const char *pString, int nLength)</td></tr>
+<tr class="memdesc:ga2337471599a741adc9f4ab29d369a6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw text in a platform-independent manner for UTF-8 or multi-byte text.  <a href="#ga2337471599a741adc9f4ab29d369a6b9">More...</a><br /></td></tr>
+<tr class="separator:ga2337471599a741adc9f4ab29d369a6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae89f6c555db78ab36b29390fdd403e5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gae89f6c555db78ab36b29390fdd403e5b">DTGetTextWidth</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szUTF8, int nLength)</td></tr>
+<tr class="memdesc:gae89f6c555db78ab36b29390fdd403e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextWidth equivalent for MBCS and UTF-8 strings.  <a href="#gae89f6c555db78ab36b29390fdd403e5b">More...</a><br /></td></tr>
+<tr class="separator:gae89f6c555db78ab36b29390fdd403e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae68d32f20a7c9e17182d946075e9647a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gae68d32f20a7c9e17182d946075e9647a">DTGetTextExtent</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szUTF8, int nLength, <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">WB_EXTENT</a> *pExtent)</td></tr>
+<tr class="memdesc:gae68d32f20a7c9e17182d946075e9647a"><td class="mdescLeft">&#160;</td><td class="mdescRight">XTextExtent equivalent for MBCS and UTF-8 strings.  <a href="#gae68d32f20a7c9e17182d946075e9647a">More...</a><br /></td></tr>
+<tr class="separator:gae68d32f20a7c9e17182d946075e9647a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bbbe2e24001f10a25985e462d12dee0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga8bbbe2e24001f10a25985e462d12dee0">DTCalcIdealFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szText, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *geomBounds)</td></tr>
+<tr class="memdesc:ga8bbbe2e24001f10a25985e462d12dee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal font based on the text and rectangle.  <a href="#ga8bbbe2e24001f10a25985e462d12dee0">More...</a><br /></td></tr>
+<tr class="separator:ga8bbbe2e24001f10a25985e462d12dee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1de43b31c53880fc492cdee82eb24fd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga1de43b31c53880fc492cdee82eb24fd8">DTCalcIdealBounds0</a> (XFontStruct *pFont, const char *szText, int iTabWidth, unsigned int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcSource, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcDest, int iAlignment)</td></tr>
 <tr class="memdesc:ga1de43b31c53880fc492cdee82eb24fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal bounding rectangle for the specified text and font.  <a href="#ga1de43b31c53880fc492cdee82eb24fd8">More...</a><br /></td></tr>
 <tr class="separator:ga1de43b31c53880fc492cdee82eb24fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga099334a78bb3ab7bf43a23cbba14c74e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga099334a78bb3ab7bf43a23cbba14c74e">DTCalcIdealBounds</a> (Display *pDisplay, XFontSet fontSet, const char *szText, int iTabWidth, unsigned int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcSource, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcDest, int iAlignment)</td></tr>
-<tr class="memdesc:ga099334a78bb3ab7bf43a23cbba14c74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal bounding rectangle for the specified text and font.  <a href="#ga099334a78bb3ab7bf43a23cbba14c74e">More...</a><br /></td></tr>
-<tr class="separator:ga099334a78bb3ab7bf43a23cbba14c74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga168f550d3ac067ea051520264064a1a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga168f550d3ac067ea051520264064a1a0">DTDrawSingleLineText0</a> (XFontStruct *pFont, const char *szText, Display *pDisplay, GC gc, Drawable dw, int iTabWidth, int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment)</td></tr>
-<tr class="memdesc:ga168f550d3ac067ea051520264064a1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw single-line text  <a href="#ga168f550d3ac067ea051520264064a1a0">More...</a><br /></td></tr>
-<tr class="separator:ga168f550d3ac067ea051520264064a1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5dd37bc0aba9e49ae026168f8cf62cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga5dd37bc0aba9e49ae026168f8cf62cb3">DTDrawSingleLineText</a> (XFontSet fontSet, const char *szText, Display *pDisplay, GC gc, Drawable dw, int iTabWidth, int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment)</td></tr>
-<tr class="memdesc:ga5dd37bc0aba9e49ae026168f8cf62cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw single-line text  <a href="#ga5dd37bc0aba9e49ae026168f8cf62cb3">More...</a><br /></td></tr>
-<tr class="separator:ga5dd37bc0aba9e49ae026168f8cf62cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb29b7821f47f595fb02d03adb5d3942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gadb29b7821f47f595fb02d03adb5d3942">DTDrawMultiLineText0</a> (XFontStruct *pFont, const char *szText, Display *pDisplay, GC gc, Drawable dw, int iTabWidth, int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment)</td></tr>
-<tr class="memdesc:gadb29b7821f47f595fb02d03adb5d3942"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw multi-line text  <a href="#gadb29b7821f47f595fb02d03adb5d3942">More...</a><br /></td></tr>
-<tr class="separator:gadb29b7821f47f595fb02d03adb5d3942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4da904e0c113d55962a2de21fb67855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gad4da904e0c113d55962a2de21fb67855">DTDrawMultiLineText</a> (XFontSet fontSet, const char *szText, Display *pDisplay, GC gc, Drawable dw, int iTabWidth, int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment)</td></tr>
-<tr class="memdesc:gad4da904e0c113d55962a2de21fb67855"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw multi-line text  <a href="#gad4da904e0c113d55962a2de21fb67855">More...</a><br /></td></tr>
-<tr class="separator:gad4da904e0c113d55962a2de21fb67855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1a755eebf48ea4c552045d9e9d0d175"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gac1a755eebf48ea4c552045d9e9d0d175">DTGetWordsFromText0</a> (XFontStruct *pFont, const char *szText, int iAlignment)</td></tr>
-<tr class="memdesc:gac1a755eebf48ea4c552045d9e9d0d175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse 'DT_WORDS' structure from single-line or multi-line text.  <a href="#gac1a755eebf48ea4c552045d9e9d0d175">More...</a><br /></td></tr>
-<tr class="separator:gac1a755eebf48ea4c552045d9e9d0d175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ef57be18660df443c4a4a2df1931ce6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga7ef57be18660df443c4a4a2df1931ce6">DTGetWordsFromText</a> (Display *pDisplay, XFontSet fontSet, const char *szText, int iAlignment)</td></tr>
-<tr class="memdesc:ga7ef57be18660df443c4a4a2df1931ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse 'DT_WORDS' structure from single-line or multi-line text.  <a href="#ga7ef57be18660df443c4a4a2df1931ce6">More...</a><br /></td></tr>
-<tr class="separator:ga7ef57be18660df443c4a4a2df1931ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga099adfb0d10d744206bc69e633f73fc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga099adfb0d10d744206bc69e633f73fc6">DTPreRender</a> (Display *pDisplay, XFontSet fontSet, <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, int iTabWidth, int iTabOrigin, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment, int iStartLine, int iEndLine)</td></tr>
-<tr class="memdesc:ga099adfb0d10d744206bc69e633f73fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-render a 'DT_WORDS' structure for subsequent display.  <a href="#ga099adfb0d10d744206bc69e633f73fc6">More...</a><br /></td></tr>
-<tr class="separator:ga099adfb0d10d744206bc69e633f73fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42637c7b6244ae91b63c89e5a6a1a4e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga42637c7b6244ae91b63c89e5a6a1a4e1">DTRender</a> (Display *pDisplay, XFontSet fontSet, const <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, GC gc, Drawable dw, int iHScrollBy, int iVScrollBy, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcViewport, int iAlignment)</td></tr>
-<tr class="memdesc:ga42637c7b6244ae91b63c89e5a6a1a4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using pre-rendered 'DT_WORDS' structure, display.  <a href="#ga42637c7b6244ae91b63c89e5a6a1a4e1">More...</a><br /></td></tr>
-<tr class="separator:ga42637c7b6244ae91b63c89e5a6a1a4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga852a8685f14bd74bcf1e93810718b53f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga852a8685f14bd74bcf1e93810718b53f">DTCalcIdealBounds</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szText, int iTabWidth, unsigned int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcSource, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcDest, int iAlignment)</td></tr>
+<tr class="memdesc:ga852a8685f14bd74bcf1e93810718b53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the ideal bounding rectangle for the specified text and font.  <a href="#ga852a8685f14bd74bcf1e93810718b53f">More...</a><br /></td></tr>
+<tr class="separator:ga852a8685f14bd74bcf1e93810718b53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2931ca9b0db915384ce9272cf3a7e02f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga2931ca9b0db915384ce9272cf3a7e02f">DTDrawSingleLineText</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFontt, const char *szText, Display *pDisplay, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, Drawable dw, int iTabWidth, int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment)</td></tr>
+<tr class="memdesc:ga2931ca9b0db915384ce9272cf3a7e02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw single-line text  <a href="#ga2931ca9b0db915384ce9272cf3a7e02f">More...</a><br /></td></tr>
+<tr class="separator:ga2931ca9b0db915384ce9272cf3a7e02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9fa4aeeec1a4bd73767973c90095271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gaa9fa4aeeec1a4bd73767973c90095271">DTDrawMultiLineText</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szText, Display *pDisplay, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, Drawable dw, int iTabWidth, int iTabOrigin, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment)</td></tr>
+<tr class="memdesc:gaa9fa4aeeec1a4bd73767973c90095271"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw multi-line text  <a href="#gaa9fa4aeeec1a4bd73767973c90095271">More...</a><br /></td></tr>
+<tr class="separator:gaa9fa4aeeec1a4bd73767973c90095271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9ebecb91d9b7fc3e173f0f1015607b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gac9ebecb91d9b7fc3e173f0f1015607b6">DTGetWordsFromText</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szText, int iAlignment)</td></tr>
+<tr class="memdesc:gac9ebecb91d9b7fc3e173f0f1015607b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse 'DT_WORDS' structure from single-line or multi-line text.  <a href="#gac9ebecb91d9b7fc3e173f0f1015607b6">More...</a><br /></td></tr>
+<tr class="separator:gac9ebecb91d9b7fc3e173f0f1015607b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga717caef5ff570827990df40dffd0249c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga717caef5ff570827990df40dffd0249c">DTPreRender</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, int iTabWidth, int iTabOrigin, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, int iAlignment, int iStartLine, int iEndLine)</td></tr>
+<tr class="memdesc:ga717caef5ff570827990df40dffd0249c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-render a 'DT_WORDS' structure for subsequent display.  <a href="#ga717caef5ff570827990df40dffd0249c">More...</a><br /></td></tr>
+<tr class="separator:ga717caef5ff570827990df40dffd0249c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbd5e2664e8336e0117ee6367a36c399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#gabbd5e2664e8336e0117ee6367a36c399">DTRender</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const <a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a> *pWords, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, Drawable dw, int iHScrollBy, int iVScrollBy, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcBounds, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *prcViewport, int iAlignment)</td></tr>
+<tr class="memdesc:gabbd5e2664e8336e0117ee6367a36c399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using pre-rendered 'DT_WORDS' structure, display.  <a href="#gabbd5e2664e8336e0117ee6367a36c399">More...</a><br /></td></tr>
+<tr class="separator:gabbd5e2664e8336e0117ee6367a36c399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>GC Utility functions for drawing text</p>
@@ -285,8 +273,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga099334a78bb3ab7bf43a23cbba14c74e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga099334a78bb3ab7bf43a23cbba14c74e">&#9670;&nbsp;</a></span>DTCalcIdealBounds()</h2>
+<a id="ga852a8685f14bd74bcf1e93810718b53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga852a8685f14bd74bcf1e93810718b53f">&#9670;&nbsp;</a></span>DTCalcIdealBounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,8 +288,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -350,8 +338,8 @@ Functions</h2></td></tr>
 <p>Calculate the ideal bounding rectangle for the specified text and font. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>The Display associated with the XFontSet (NULL implies default display) </td></tr>
-    <tr><td class="paramname">fontSet</td><td>An XFontSet for which to measure the bounding rectangle (None implies system default font set) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>The Display associated with the WB_FONTC (NULL implies default display) </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONTC for which to measure the bounding rectangle (NULL implies system default font set) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>A positive integer in 'characters', or negative integer in pixels, indicating tab width </td></tr>
     <tr><td class="paramname">iTabOrigin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
@@ -366,7 +354,7 @@ Functions</h2></td></tr>
 <p>NOTE: tab width is negative for pixels, positive for avg char width, beginning at the left most position of the specified rectangle. Tab Origin is always in pixels using the absolute position (relative to the same origin as prcSource).</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00601">601</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00577">577</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -446,17 +434,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga90aef0f5e842682e7e493d9a87cd0f80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga90aef0f5e842682e7e493d9a87cd0f80">&#9670;&nbsp;</a></span>DTCalcIdealFont()</h2>
+<a id="ga8bbbe2e24001f10a25985e462d12dee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bbbe2e24001f10a25985e462d12dee0">&#9670;&nbsp;</a></span>DTCalcIdealFont()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">XFontStruct* DTCalcIdealFont </td>
+          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> DTCalcIdealFont </td>
           <td>(</td>
-          <td class="paramtype">XFontStruct *&#160;</td>
-          <td class="paramname"><em>pRefFont</em>, </td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -488,55 +482,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>sometimes you want to adjust text size to fit within a particular rectangle. This function determines how to do that by adjusting the font size.</p>
-<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00264">264</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
-
-</div>
-</div>
-<a id="ga666863b311e17529b16ccb1b6a8eb6b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga666863b311e17529b16ccb1b6a8eb6b3">&#9670;&nbsp;</a></span>DTCalcIdealFontSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XFontSet DTCalcIdealFontSet </td>
-          <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szText</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
-          <td class="paramname"><em>geomBounds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculate the ideal font based on the text and rectangle. </p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> Calculate the ideal font based on the text and rectangle</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the Display associated with the font set </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The referense XFontSet (None implies system default font set) </td></tr>
+    <tr><td class="paramname">pFont</td><td>The reference WB_FONTC (NULL implies system default font set) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
     <tr><td class="paramname">geomBounds</td><td>A pointer to a <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure that defines a bounding rectangle</td></tr>
   </table>
@@ -545,12 +495,12 @@ Functions</h2></td></tr>
 <p>sometimes you want to adjust text size to fit within a particular rectangle. This function determines how to do that by adjusting the font size. It is similar to 'DTCalcIdealFont'.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00278">278</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00275">275</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="gad4da904e0c113d55962a2de21fb67855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad4da904e0c113d55962a2de21fb67855">&#9670;&nbsp;</a></span>DTDrawMultiLineText()</h2>
+<a id="gaa9fa4aeeec1a4bd73767973c90095271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9fa4aeeec1a4bd73767973c90095271">&#9670;&nbsp;</a></span>DTDrawMultiLineText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -558,98 +508,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void DTDrawMultiLineText </td>
           <td>(</td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szText</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GC&#160;</td>
-          <td class="paramname"><em>gc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Drawable&#160;</td>
-          <td class="paramname"><em>dw</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iTabWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iTabOrigin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
-          <td class="paramname"><em>prcBounds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iAlignment</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>draw multi-line text </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fontSet</td><td>An XFontSet to use for drawing text (None implies system default font set) </td></tr>
-    <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
-    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
-    <tr><td class="paramname">gc</td><td>The graphics context for the drawable </td></tr>
-    <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
-    <tr><td class="paramname">iTabWidth</td><td>The width of a tab, negative for pixels, positive for avg char width </td></tr>
-    <tr><td class="paramname">iTabOrigin</td><td>The 'origin point' for tabulation corresponding to the first character in the string </td></tr>
-    <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle </td></tr>
-    <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This function draws multi-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.</p>
-<p>NOTE: tabs begin at the 'left most' position, adjusted by 'iTabOrigin'.</p>
-<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01589">1589</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
-
-</div>
-</div>
-<a id="gadb29b7821f47f595fb02d03adb5d3942"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb29b7821f47f595fb02d03adb5d3942">&#9670;&nbsp;</a></span>DTDrawMultiLineText0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DTDrawMultiLineText0 </td>
-          <td>(</td>
-          <td class="paramtype">XFontStruct *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
           <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
@@ -667,7 +526,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -711,9 +570,9 @@ Functions</h2></td></tr>
 <p>draw multi-line text </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pFont</td><td>A pointer to the font to use for drawing text (NULL implies system default font) </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONTC to use for drawing text (NULL implies system default font set) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
-    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the display associated with the WBGC and Drawable. </td></tr>
     <tr><td class="paramname">gc</td><td>The graphics context for the drawable </td></tr>
     <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>The width of a tab, negative for pixels, positive for avg char width </td></tr>
@@ -723,16 +582,16 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This function draws multi-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.</p>
+<p>This function draws multi-line text within the specified bounds rectangle on the specified drawable using the specified WBGC, adjusting for tab width and text alignment.</p>
 <p>NOTE: tabs begin at the 'left most' position, adjusted by 'iTabOrigin'.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01560">1560</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01531">1531</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="ga5dd37bc0aba9e49ae026168f8cf62cb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5dd37bc0aba9e49ae026168f8cf62cb3">&#9670;&nbsp;</a></span>DTDrawSingleLineText()</h2>
+<a id="ga2931ca9b0db915384ce9272cf3a7e02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2931ca9b0db915384ce9272cf3a7e02f">&#9670;&nbsp;</a></span>DTDrawSingleLineText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -740,8 +599,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void DTDrawSingleLineText </td>
           <td>(</td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFontt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -758,7 +617,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -802,9 +661,9 @@ Functions</h2></td></tr>
 <p>draw single-line text </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontSet</td><td>An XFontSet to use for drawing text (None implies system default font set) </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONTC to use for drawing text (NULL implies system default font set) </td></tr>
     <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
-    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the display associated with the WBGC and Drawable. </td></tr>
     <tr><td class="paramname">gc</td><td>The graphics context for the Drawable </td></tr>
     <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>The width of a tab, negative for pixels, positive for avg char width </td></tr>
@@ -814,111 +673,18 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This function draws single-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.<br />
+<p>This function draws single-line text within the specified bounds rectangle on the specified drawable using the specified WBGC, adjusting for tab width and text alignment.<br />
 If the text cannot fit within the bounding rectangle, it will be truncated.<br />
-If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad4da904e0c113d55962a2de21fb67855" title="draw multi-line text ">DTDrawMultiLineText()</a></p>
+If you want the text to wrap, use <a class="el" href="group__draw__text.html#gaa9fa4aeeec1a4bd73767973c90095271" title="draw multi-line text ">DTDrawMultiLineText()</a></p>
 <p>NOTE: tabs begin at the 'left most' text position, adjusted by 'iTabOrigin'.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01533">1533</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01524">1524</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="ga168f550d3ac067ea051520264064a1a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga168f550d3ac067ea051520264064a1a0">&#9670;&nbsp;</a></span>DTDrawSingleLineText0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DTDrawSingleLineText0 </td>
-          <td>(</td>
-          <td class="paramtype">XFontStruct *&#160;</td>
-          <td class="paramname"><em>pFont</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szText</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GC&#160;</td>
-          <td class="paramname"><em>gc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Drawable&#160;</td>
-          <td class="paramname"><em>dw</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iTabWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iTabOrigin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
-          <td class="paramname"><em>prcBounds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iAlignment</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>draw single-line text </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pFont</td><td>A pointer to the font to use for drawing text (NULL implies system default font) </td></tr>
-    <tr><td class="paramname">szText</td><td>A pointer to a (0-byte terminated) ASCII string that may span multiple lines </td></tr>
-    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
-    <tr><td class="paramname">gc</td><td>The graphics context for the Drawable </td></tr>
-    <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
-    <tr><td class="paramname">iTabWidth</td><td>The width of a tab, negative for pixels, positive for avg char width </td></tr>
-    <tr><td class="paramname">iTabOrigin</td><td>The 'origin point' for tabulation corresponding to the first character in the string </td></tr>
-    <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle </td></tr>
-    <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This function draws single-line text within the specified bounds rectangle on the specified drawable using the specified GC, adjusting for tab width and text alignment.<br />
-If the text cannot fit within the bounding rectangle, it will be truncated.<br />
-If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad4da904e0c113d55962a2de21fb67855" title="draw multi-line text ">DTDrawMultiLineText()</a></p>
-<p>NOTE: tabs begin at the 'left most' text position, adjusted by 'iTabOrigin'.</p>
-<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01506">1506</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
-
-</div>
-</div>
-<a id="ga8d243810deae01326217ba00d8471599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d243810deae01326217ba00d8471599">&#9670;&nbsp;</a></span>DTDrawString()</h2>
+<a id="ga2337471599a741adc9f4ab29d369a6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2337471599a741adc9f4ab29d369a6b9">&#9670;&nbsp;</a></span>DTDrawString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -938,13 +704,13 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -984,8 +750,8 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the display to use for rendering the text </td></tr>
     <tr><td class="paramname">drawable</td><td>The 'Drawable' object upon which to render the text </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The Font Set for which to query metrics </td></tr>
-    <tr><td class="paramname">gc</td><td>The graphics context 'GC' for rendering the text </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONTC for which to query metrics </td></tr>
+    <tr><td class="paramname">gc</td><td>The graphics context 'WBGC' for rendering the text </td></tr>
     <tr><td class="paramname">x</td><td>The 'x' coordinate for the text alignment (left) </td></tr>
     <tr><td class="paramname">y</td><td>The 'y' coordinate for the text alignment (bottom) </td></tr>
     <tr><td class="paramname">pString</td><td>A const pointer to a UTF-8 or multi-byte string </td></tr>
@@ -1001,8 +767,8 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
 
 </div>
 </div>
-<a id="ga1e26f31d2a2142c9e0127c06a2a9ecd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e26f31d2a2142c9e0127c06a2a9ecd6">&#9670;&nbsp;</a></span>DTGetTextExtent()</h2>
+<a id="gae68d32f20a7c9e17182d946075e9647a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae68d32f20a7c9e17182d946075e9647a">&#9670;&nbsp;</a></span>DTGetTextExtent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1010,8 +776,8 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
         <tr>
           <td class="memname">void DTGetTextExtent </td>
           <td>(</td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1042,22 +808,22 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
 <p>XTextExtent equivalent for MBCS and UTF-8 strings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontSet</td><td>The Font Set for which to query metrics </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONTC for which to query metrics </td></tr>
     <tr><td class="paramname">szUTF8</td><td>A const pointer to a UTF-8 string </td></tr>
     <tr><td class="paramname">nLength</td><td>The BYTE LENGTH of the UTF-8 string (not character length) </td></tr>
     <tr><td class="paramname">pExtent</td><td>A pointer to a WB_EXTENT structure that receives the text extent</td></tr>
   </table>
   </dd>
 </dl>
-<p>This function is similar to <a class="el" href="group__font.html#ga1853b5beb1facb182ca60b56ef73089b" title="Obtain the pixel extent of specified text for a specified XFontSet. ">WBTextExtent()</a> except that it allows you to pass a font set of 'None', which will then use the default font set. It calls the <a class="el" href="group__font.html#ga1853b5beb1facb182ca60b56ef73089b" title="Obtain the pixel extent of specified text for a specified XFontSet. ">WBTextExtent()</a> function internally.</p>
+<p>This function is similar to <a class="el" href="group__font.html#ga2c6e771d71004b8566a90eb520d83b20" title="Obtain the pixel extent of specified text for a specified XFontSet. ">WBTextExtent()</a> except that it allows you to pass a font set of 'None', which will then use the default font set. It calls the <a class="el" href="group__font.html#ga2c6e771d71004b8566a90eb520d83b20" title="Obtain the pixel extent of specified text for a specified XFontSet. ">WBTextExtent()</a> function internally.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00243">243</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00266">266</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="ga71ddfc3307aaf7c29bf27b4284ae3ee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga71ddfc3307aaf7c29bf27b4284ae3ee7">&#9670;&nbsp;</a></span>DTGetTextWidth()</h2>
+<a id="gae89f6c555db78ab36b29390fdd403e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae89f6c555db78ab36b29390fdd403e5b">&#9670;&nbsp;</a></span>DTGetTextWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1065,8 +831,8 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
         <tr>
           <td class="memname">int DTGetTextWidth </td>
           <td>(</td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1091,22 +857,22 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
 <p>XTextWidth equivalent for MBCS and UTF-8 strings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontSet</td><td>The Font Set for which to query metrics </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONTC for which to query metrics </td></tr>
     <tr><td class="paramname">szUTF8</td><td>A const pointer to a UTF-8 string </td></tr>
     <tr><td class="paramname">nLength</td><td>The BYTE LENGTH of the UTF-8 string (not character length) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the text width, in pixels</dd></dl>
-<p>This function is similar to <a class="el" href="group__font.html#ga4446640beb73e3c0b9c2600394defa27" title="Obtain the pixel width of specified text for a specified XFontSet. ">WBTextWidth()</a> except that it allows you to pass a font set of 'None', which will then use the default font set. It calls the <a class="el" href="group__font.html#ga4446640beb73e3c0b9c2600394defa27" title="Obtain the pixel width of specified text for a specified XFontSet. ">WBTextWidth()</a> function internally.</p>
+<p>This function is similar to <a class="el" href="group__font.html#ga180c3e86d25be29a4a5c91b821213564" title="Obtain the pixel width of specified text for a specified WB_FONT. ">WBTextWidth()</a> except that it allows you to pass a font set of 'None', which will then use the default font set. It calls the <a class="el" href="group__font.html#ga180c3e86d25be29a4a5c91b821213564" title="Obtain the pixel width of specified text for a specified WB_FONT. ">WBTextWidth()</a> function internally.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00215">215</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00250">250</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="ga7ef57be18660df443c4a4a2df1931ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ef57be18660df443c4a4a2df1931ce6">&#9670;&nbsp;</a></span>DTGetWordsFromText()</h2>
+<a id="gac9ebecb91d9b7fc3e173f0f1015607b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9ebecb91d9b7fc3e173f0f1015607b6">&#9670;&nbsp;</a></span>DTGetWordsFromText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1120,57 +886,7 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szText</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iAlignment</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse 'DT_WORDS' structure from single-line or multi-line text. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the display associated with the XFontSet </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The XFontSet to be used, or None for the system default font set </td></tr>
-    <tr><td class="paramname">szText</td><td>A 0-byte terminated UFT8 string containing the text to be rendered </td></tr>
-    <tr><td class="paramname">iAlignment</td><td>Alignment flags (typically zero). The only flag that really matters is DTAlignment_UNDERSCORE </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd pointer to a DT_WORDS structure (variable length). use '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' to de-allocate the memory block.</dd></dl>
-<p>The 'DT_WORDS' structure is intended to be used to cache rendering information, particularly for a large block of text that may be calculation-expensive to re-render. Call '<a class="el" href="group__draw__text.html#ga099adfb0d10d744206bc69e633f73fc6" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display. ">DTPreRender()</a>' and '<a class="el" href="group__draw__text.html#ga42637c7b6244ae91b63c89e5a6a1a4e1" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>' to manage rendering with the DT_WORDS structure.</p>
-<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00387">387</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
-
-</div>
-</div>
-<a id="gac1a755eebf48ea4c552045d9e9d0d175"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac1a755eebf48ea4c552045d9e9d0d175">&#9670;&nbsp;</a></span>DTGetWordsFromText0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a>* DTGetWordsFromText0 </td>
-          <td>(</td>
-          <td class="paramtype">XFontStruct *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
           <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
@@ -1196,22 +912,23 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
 <p>Parse 'DT_WORDS' structure from single-line or multi-line text. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct to be used, or NULL for the system default font </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the display associated with the WB_FONTC </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONTC to be used, or NULL for the system default font set </td></tr>
     <tr><td class="paramname">szText</td><td>A 0-byte terminated UFT8 string containing the text to be rendered </td></tr>
     <tr><td class="paramname">iAlignment</td><td>Alignment flags (typically zero). The only flag that really matters is DTAlignment_UNDERSCORE </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd pointer to a DT_WORDS structure (variable length). use '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' to de-allocate the memory block.</dd></dl>
-<p>The 'DT_WORDS' structure is intended to be used to cache rendering information, particularly for a large block of text that may be calculation-expensive to re-render. Call '<a class="el" href="group__draw__text.html#ga099adfb0d10d744206bc69e633f73fc6" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display. ">DTPreRender()</a>' and '<a class="el" href="group__draw__text.html#ga42637c7b6244ae91b63c89e5a6a1a4e1" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>' to manage rendering with the DT_WORDS structure.</p>
+<p>The 'DT_WORDS' structure is intended to be used to cache rendering information, particularly for a large block of text that may be calculation-expensive to re-render. Call '<a class="el" href="group__draw__text.html#ga717caef5ff570827990df40dffd0249c" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display. ">DTPreRender()</a>' and '<a class="el" href="group__draw__text.html#gabbd5e2664e8336e0117ee6367a36c399" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>' to manage rendering with the DT_WORDS structure.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00364">364</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00363">363</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="ga099adfb0d10d744206bc69e633f73fc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga099adfb0d10d744206bc69e633f73fc6">&#9670;&nbsp;</a></span>DTPreRender()</h2>
+<a id="ga717caef5ff570827990df40dffd0249c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga717caef5ff570827990df40dffd0249c">&#9670;&nbsp;</a></span>DTPreRender()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1225,8 +942,8 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1281,12 +998,12 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
 <p>Pre-render a 'DT_WORDS' structure for subsequent display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>the display that you intend to render on with <a class="el" href="group__draw__text.html#ga42637c7b6244ae91b63c89e5a6a1a4e1" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>. NULL uses the default display. </td></tr>
-    <tr><td class="paramname">fontSet</td><td>An XFontSet to use for drawing text (None implies system default font set) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the display that you intend to render on with <a class="el" href="group__draw__text.html#gabbd5e2664e8336e0117ee6367a36c399" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>. NULL uses the default display. </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONTC to use for drawing text (NULL implies system default font set) </td></tr>
     <tr><td class="paramname">pWords</td><td>A pointer to the DT_WORDS structure. This structure can be part of a linked list. </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>A positive integer in 'characters', or negative integer in pixels, indicating tab width </td></tr>
     <tr><td class="paramname">iTabOrigin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
-    <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle (advisory with respect to available width and height, based on iAlignment). On return it contains the actual bounding rectangle, calculated from the passed-in value with alignment flags applied. It is important to pass the updated rectangle values when calling <a class="el" href="group__draw__text.html#ga42637c7b6244ae91b63c89e5a6a1a4e1" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>. </td></tr>
+    <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle (advisory with respect to available width and height, based on iAlignment). On return it contains the actual bounding rectangle, calculated from the passed-in value with alignment flags applied. It is important to pass the updated rectangle values when calling <a class="el" href="group__draw__text.html#gabbd5e2664e8336e0117ee6367a36c399" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>. </td></tr>
     <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags </td></tr>
     <tr><td class="paramname">iStartLine</td><td>The starting line to begin pre-rendering the pWords array (0 is the first line) </td></tr>
     <tr><td class="paramname">iEndLine</td><td>The ending line (inclusive) to end pre-rendering the pWords array. (0 is the first line; -1 implies 'all')</td></tr>
@@ -1294,15 +1011,15 @@ If you want the text to wrap, use <a class="el" href="group__draw__text.html#gad
   </dd>
 </dl>
 <p>This function will scan the DT_WORDS structure 'pWords', and using the alignment flags and prcBounds, modify the 'iX' and 'iY' members for each DT_WORD entry in 'pWords' according to their rendered position within the display surface described by 'prcBounds'. It will also calculate the iMaxWidth and iMaxHeight members for 'pWords'.<br />
-Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'infinite' display area by specifying a value of 0x7fffffffL for the 'right' and 'bottom' members. Then, you can use '<a class="el" href="group__draw__text.html#ga42637c7b6244ae91b63c89e5a6a1a4e1" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>' and specify 'iHScrollBy' and 'iVScrollBy' to modify the location of the 'viewport' area using scroll bars.</p>
+Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'infinite' display area by specifying a value of 0x7fffffffL for the 'right' and 'bottom' members. Then, you can use '<a class="el" href="group__draw__text.html#gabbd5e2664e8336e0117ee6367a36c399" title="Using pre-rendered &#39;DT_WORDS&#39; structure, display. ">DTRender()</a>' and specify 'iHScrollBy' and 'iVScrollBy' to modify the location of the 'viewport' area using scroll bars.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01785">1785</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01731">1731</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="ga42637c7b6244ae91b63c89e5a6a1a4e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga42637c7b6244ae91b63c89e5a6a1a4e1">&#9670;&nbsp;</a></span>DTRender()</h2>
+<a id="gabbd5e2664e8336e0117ee6367a36c399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbd5e2664e8336e0117ee6367a36c399">&#9670;&nbsp;</a></span>DTRender()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1316,8 +1033,8 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1328,7 +1045,7 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -1378,14 +1095,14 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
 <p>Using pre-rendered 'DT_WORDS' structure, display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>the display associated with the GC and Drawable. </td></tr>
-    <tr><td class="paramname">fontSet</td><td>An XFontSet to use for drawing text (None implies system default font set) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the display associated with the WBGC and Drawable. </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONTC to use for drawing text (NULL implies system default font set) </td></tr>
     <tr><td class="paramname">pWords</td><td>A pointer to the DT_WORDS structure. This structure can be part of a linked list. </td></tr>
     <tr><td class="paramname">gc</td><td>The graphics context for the Drawable </td></tr>
     <tr><td class="paramname">dw</td><td>The Drawable (Window or Pixmap, typically) </td></tr>
     <tr><td class="paramname">iHScrollBy</td><td>The amount to 'horizontally scroll by' in characters (positive values), or pixels (negative values) </td></tr>
     <tr><td class="paramname">iVScrollBy</td><td>The amount to 'vertically scroll by' in characters (positive values), or pixels (negative values) </td></tr>
-    <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle for pWords, the same rectangle calculated by <a class="el" href="group__draw__text.html#ga099adfb0d10d744206bc69e633f73fc6" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display. ">DTPreRender()</a> </td></tr>
+    <tr><td class="paramname">prcBounds</td><td>A pointer to the bounding rectangle for pWords, the same rectangle calculated by <a class="el" href="group__draw__text.html#ga717caef5ff570827990df40dffd0249c" title="Pre-render a &#39;DT_WORDS&#39; structure for subsequent display. ">DTPreRender()</a> </td></tr>
     <tr><td class="paramname">prcViewport</td><td>A pointer to the bounding rectangle for the viewport, for the Drawable 'dw'. </td></tr>
     <tr><td class="paramname">iAlignment</td><td>The desired text alignment, one or more of the DTAlignment bit flags</td></tr>
   </table>
@@ -1394,12 +1111,12 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
 <p>This function will scan the DT_WORDS structure 'pWords', and using the other parameters, render the text within the 'prcBounds' rectangle on the specified Drawable.</p>
 <p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01831">1831</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l01777">1777</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
-<a id="ga7ec3cd86a0edb77017e39538cf018d8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ec3cd86a0edb77017e39538cf018d8f">&#9670;&nbsp;</a></span>InternalCalcIdealBounds()</h2>
+<a id="ga78ab5112ce34085933e4e69a6db20ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78ab5112ce34085933e4e69a6db20ff4">&#9670;&nbsp;</a></span>InternalCalcIdealBounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1416,8 +1133,8 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1483,8 +1200,8 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
 <p>calculate ideal bounds rectangle for text given a font, tab spacing, tab origin, and alignment </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>the Display associated with the XFontSet </td></tr>
-    <tr><td class="paramname">fontSet</td><td>An XFontSet (None implies system default font set) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>the Display associated with the WB_FONT </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONT (NULL implies system default font set) </td></tr>
     <tr><td class="paramname">pWords</td><td>The DT_WORDS structure for the text (this function modifies <a class="el" href="struct____DT__WORD____.html#aa46fd71a7485fa548df5fd9356167814" title="Relative &#39;X&#39; pixel position for the beginning of this element (when pre-rendered, else -1) ...">DT_WORD::iX</a>, <a class="el" href="struct____DT__WORD____.html#a40c1eea16ed01cb492c2faf0eeb8a6e7" title="Relative &#39;Y&#39; pixel position for the beginning of this element (when pre-rendered, else -1) ...">DT_WORD::iY</a>) </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>A positive integer in 'characters', or negative integer in pixels, indicating tab width </td></tr>
     <tr><td class="paramname">iTabOrigin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
@@ -1500,7 +1217,7 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
 <p>Internal utility to calculate the bounding rectangle for formatted multi-line text, including word wrap, tab aligment, and multiple line feeds. The pre-parsed 'DT_WORDS' contains the text, and 'prcSource' indicates the desired bounding rectangle. This function is CURRENTLY for internal use only, but this may change as code requirements develop</p>
 <p>This function is used internally and should not be invoked. It is declared 'static' and not visible outside of the file it's defined in. </p>
 
-<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00710">710</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="draw__text_8c_source.html#l00686">686</a> of file <a class="el" href="draw__text_8c_source.html">draw_text.c</a>.</p>
 
 </div>
 </div>
@@ -1509,7 +1226,7 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 12 2018 11:51:47 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:33 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

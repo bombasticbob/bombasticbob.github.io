@@ -125,48 +125,54 @@ Functions</h2></td></tr>
 <tr class="memitem:gaff7fdf0d82f4b06105396f506566875e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaff7fdf0d82f4b06105396f506566875e">WBCalcHScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, int iVScrollWidth, int iHScrollHeight, int nListItems, int nPos)</td></tr>
 <tr class="memdesc:gaff7fdf0d82f4b06105396f506566875e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the parameters for a horizontal scroll bar.  <a href="#gaff7fdf0d82f4b06105396f506566875e">More...</a><br /></td></tr>
 <tr class="separator:gaff7fdf0d82f4b06105396f506566875e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a248d35a52528818882628963dc3103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103">WBUpdateScrollBarGeometry</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pSI, XFontSet fontSetRef, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomUsable)</td></tr>
-<tr class="memdesc:ga7a248d35a52528818882628963dc3103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the scroll bar geometry within the WB_SCROLLINFO structure.  <a href="#ga7a248d35a52528818882628963dc3103">More...</a><br /></td></tr>
-<tr class="separator:ga7a248d35a52528818882628963dc3103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37eda791add4362124e740b77b401e15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga37eda791add4362124e740b77b401e15">WBUpdateScrollBarGeometry</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pSI, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFontRef, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomUsable)</td></tr>
+<tr class="memdesc:ga37eda791add4362124e740b77b401e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the scroll bar geometry within the WB_SCROLLINFO structure.  <a href="#ga37eda791add4362124e740b77b401e15">More...</a><br /></td></tr>
+<tr class="separator:ga37eda791add4362124e740b77b401e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecb61dd839172a448605ba59858b53e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaecb61dd839172a448605ba59858b53e8">WBInvalidateVScrollGeom</a> (Window wID, <a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, int bAll, int bUpdate)</td></tr>
+<tr class="memdesc:gaecb61dd839172a448605ba59858b53e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to invalidate the geometry for the vertical scroll bar.  <a href="#gaecb61dd839172a448605ba59858b53e8">More...</a><br /></td></tr>
+<tr class="separator:gaecb61dd839172a448605ba59858b53e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb331724e36022a9dfc9e194bbfe9f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gafb331724e36022a9dfc9e194bbfe9f4a">WBInvalidateHScrollGeom</a> (Window wID, <a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, int bAll, int bUpdate)</td></tr>
+<tr class="memdesc:gafb331724e36022a9dfc9e194bbfe9f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to invalidate the geometry for the horizontal scroll bar.  <a href="#gafb331724e36022a9dfc9e194bbfe9f4a">More...</a><br /></td></tr>
+<tr class="separator:gafb331724e36022a9dfc9e194bbfe9f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59552cfbf1360ada86f84e4d662570df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga59552cfbf1360ada86f84e4d662570df">WBScrollBarEvent</a> (Window wID, XEvent *pEvent, <a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo)</td></tr>
 <tr class="memdesc:ga59552cfbf1360ada86f84e4d662570df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for scroll bars.  <a href="#ga59552cfbf1360ada86f84e4d662570df">More...</a><br /></td></tr>
 <tr class="separator:ga59552cfbf1360ada86f84e4d662570df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b16bdffe6d68e889dce913ccf64229d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga1b16bdffe6d68e889dce913ccf64229d">WBPaintVScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
-<tr class="memdesc:ga1b16bdffe6d68e889dce913ccf64229d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paint the vertical scroll bar within a window based on WB_SCROLLINFO.  <a href="#ga1b16bdffe6d68e889dce913ccf64229d">More...</a><br /></td></tr>
-<tr class="separator:ga1b16bdffe6d68e889dce913ccf64229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab320df64511bdefe4e3544da85164482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gab320df64511bdefe4e3544da85164482">WBPaintHScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
-<tr class="memdesc:gab320df64511bdefe4e3544da85164482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paint the horizontal scroll bar within a window based on WB_SCROLLINFO.  <a href="#gab320df64511bdefe4e3544da85164482">More...</a><br /></td></tr>
-<tr class="separator:gab320df64511bdefe4e3544da85164482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf85e7c61f3170d19da3e0b051a9d6d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaf85e7c61f3170d19da3e0b051a9d6d06">WBDrawBorderRect</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor)</td></tr>
-<tr class="memdesc:gaf85e7c61f3170d19da3e0b051a9d6d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'border' rectangle.  <a href="#gaf85e7c61f3170d19da3e0b051a9d6d06">More...</a><br /></td></tr>
-<tr class="separator:gaf85e7c61f3170d19da3e0b051a9d6d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ebd818d333c3475bdcf5fa0299545b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga2ebd818d333c3475bdcf5fa0299545b7">WBDraw3DBorderRect</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor1, unsigned long lBorderColor2)</td></tr>
-<tr class="memdesc:ga2ebd818d333c3475bdcf5fa0299545b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 3D 'border' rectangle.  <a href="#ga2ebd818d333c3475bdcf5fa0299545b7">More...</a><br /></td></tr>
-<tr class="separator:ga2ebd818d333c3475bdcf5fa0299545b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73f5fb9c36bad6bfb301728bc5f4173a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga73f5fb9c36bad6bfb301728bc5f4173a">WBDrawBorderElipse</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor)</td></tr>
-<tr class="memdesc:ga73f5fb9c36bad6bfb301728bc5f4173a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'border' elipse within a bounding geometry.  <a href="#ga73f5fb9c36bad6bfb301728bc5f4173a">More...</a><br /></td></tr>
-<tr class="separator:ga73f5fb9c36bad6bfb301728bc5f4173a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2136e0b706c247ec476696db2ada244b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga2136e0b706c247ec476696db2ada244b">WBDraw3DBorderElipse</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor1, unsigned long lBorderColor2)</td></tr>
-<tr class="memdesc:ga2136e0b706c247ec476696db2ada244b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 3D 'border' elipse within a bounding geometry.  <a href="#ga2136e0b706c247ec476696db2ada244b">More...</a><br /></td></tr>
-<tr class="separator:ga2136e0b706c247ec476696db2ada244b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad617bf61913a94e557dd18fe2094830f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gad617bf61913a94e557dd18fe2094830f">WBDrawDashedRect</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
-<tr class="memdesc:gad617bf61913a94e557dd18fe2094830f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'dashed' rectangle.  <a href="#gad617bf61913a94e557dd18fe2094830f">More...</a><br /></td></tr>
-<tr class="separator:gad617bf61913a94e557dd18fe2094830f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf24688ae89293b6032aab16b32e2fa48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaf24688ae89293b6032aab16b32e2fa48">WBDrawLeftArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
-<tr class="memdesc:gaf24688ae89293b6032aab16b32e2fa48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a left arrow in a window within a specified geometry.  <a href="#gaf24688ae89293b6032aab16b32e2fa48">More...</a><br /></td></tr>
-<tr class="separator:gaf24688ae89293b6032aab16b32e2fa48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4d381b683d4cf196f87195f83b4e6f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gad4d381b683d4cf196f87195f83b4e6f3">WBDrawRightArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
-<tr class="memdesc:gad4d381b683d4cf196f87195f83b4e6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a right arrow in a window within a specified geometry.  <a href="#gad4d381b683d4cf196f87195f83b4e6f3">More...</a><br /></td></tr>
-<tr class="separator:gad4d381b683d4cf196f87195f83b4e6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1840a4f4b9f855129c79511794348b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gac1840a4f4b9f855129c79511794348b2">WBDrawUpArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
-<tr class="memdesc:gac1840a4f4b9f855129c79511794348b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw an up arrow in a window within a specified geometry.  <a href="#gac1840a4f4b9f855129c79511794348b2">More...</a><br /></td></tr>
-<tr class="separator:gac1840a4f4b9f855129c79511794348b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43da8059f5926c745279d643499490bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga43da8059f5926c745279d643499490bf">WBDrawDownArrow</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
-<tr class="memdesc:ga43da8059f5926c745279d643499490bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a down arrow in a window within a specified geometry.  <a href="#ga43da8059f5926c745279d643499490bf">More...</a><br /></td></tr>
-<tr class="separator:ga43da8059f5926c745279d643499490bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga8a43f2bfb2f71ee03622c93b082ca3a7">WBDraw3DBorderTab</a> (Display *pDisplay, Drawable wID, GC gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomOutline, int fFocus, unsigned long lFGColor, unsigned long lBGColor, unsigned long lBorderColor1, unsigned long lBorderColor2, unsigned long lHighlightColor, XFontSet fontSet, XFontSet fontSetBold, Atom aGraphic, const char *szText)</td></tr>
-<tr class="memdesc:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'tab' within a specified 'outline' rectangle.  <a href="#ga8a43f2bfb2f71ee03622c93b082ca3a7">More...</a><br /></td></tr>
-<tr class="separator:ga8a43f2bfb2f71ee03622c93b082ca3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b048da72d1a752880374d642d24b0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga4b048da72d1a752880374d642d24b0bf">WBPaintVScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
+<tr class="memdesc:ga4b048da72d1a752880374d642d24b0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paint the vertical scroll bar within a window based on WB_SCROLLINFO.  <a href="#ga4b048da72d1a752880374d642d24b0bf">More...</a><br /></td></tr>
+<tr class="separator:ga4b048da72d1a752880374d642d24b0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b7ef9b4916f4fdb838240ba9bb7db19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga6b7ef9b4916f4fdb838240ba9bb7db19">WBPaintHScrollBar</a> (<a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *pScrollInfo, Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomClient)</td></tr>
+<tr class="memdesc:ga6b7ef9b4916f4fdb838240ba9bb7db19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paint the horizontal scroll bar within a window based on WB_SCROLLINFO.  <a href="#ga6b7ef9b4916f4fdb838240ba9bb7db19">More...</a><br /></td></tr>
+<tr class="separator:ga6b7ef9b4916f4fdb838240ba9bb7db19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cdb8f3b464ebd442979f28ed8827a25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga0cdb8f3b464ebd442979f28ed8827a25">WBDrawBorderRect</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor)</td></tr>
+<tr class="memdesc:ga0cdb8f3b464ebd442979f28ed8827a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'border' rectangle.  <a href="#ga0cdb8f3b464ebd442979f28ed8827a25">More...</a><br /></td></tr>
+<tr class="separator:ga0cdb8f3b464ebd442979f28ed8827a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa251600a10c34a3c465bf27eed818edd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaa251600a10c34a3c465bf27eed818edd">WBDraw3DBorderRect</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor1, unsigned long lBorderColor2)</td></tr>
+<tr class="memdesc:gaa251600a10c34a3c465bf27eed818edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 3D 'border' rectangle.  <a href="#gaa251600a10c34a3c465bf27eed818edd">More...</a><br /></td></tr>
+<tr class="separator:gaa251600a10c34a3c465bf27eed818edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae43cad745901309484f78abe8dbb36f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gae43cad745901309484f78abe8dbb36f0">WBDrawBorderElipse</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor)</td></tr>
+<tr class="memdesc:gae43cad745901309484f78abe8dbb36f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'border' elipse within a bounding geometry.  <a href="#gae43cad745901309484f78abe8dbb36f0">More...</a><br /></td></tr>
+<tr class="separator:gae43cad745901309484f78abe8dbb36f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga070463ff8bf049debe4b7862e2d9c953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga070463ff8bf049debe4b7862e2d9c953">WBDraw3DBorderElipse</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomBorder, unsigned long lBorderColor1, unsigned long lBorderColor2)</td></tr>
+<tr class="memdesc:ga070463ff8bf049debe4b7862e2d9c953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 3D 'border' elipse within a bounding geometry.  <a href="#ga070463ff8bf049debe4b7862e2d9c953">More...</a><br /></td></tr>
+<tr class="separator:ga070463ff8bf049debe4b7862e2d9c953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ad1cee919a74851727eca2ee42a58b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga1ad1cee919a74851727eca2ee42a58b4">WBDrawDashedRect</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:ga1ad1cee919a74851727eca2ee42a58b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'dashed' rectangle.  <a href="#ga1ad1cee919a74851727eca2ee42a58b4">More...</a><br /></td></tr>
+<tr class="separator:ga1ad1cee919a74851727eca2ee42a58b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb940a4795ca6b9f93721af773ae5412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gafb940a4795ca6b9f93721af773ae5412">WBDrawLeftArrow</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:gafb940a4795ca6b9f93721af773ae5412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a left arrow in a window within a specified geometry.  <a href="#gafb940a4795ca6b9f93721af773ae5412">More...</a><br /></td></tr>
+<tr class="separator:gafb940a4795ca6b9f93721af773ae5412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4d967364e8c5be5613bc1c36b24ec8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#gaf4d967364e8c5be5613bc1c36b24ec8f">WBDrawRightArrow</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:gaf4d967364e8c5be5613bc1c36b24ec8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a right arrow in a window within a specified geometry.  <a href="#gaf4d967364e8c5be5613bc1c36b24ec8f">More...</a><br /></td></tr>
+<tr class="separator:gaf4d967364e8c5be5613bc1c36b24ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c401638af7ca7284f6ad10c309e7a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga7c401638af7ca7284f6ad10c309e7a1e">WBDrawUpArrow</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:ga7c401638af7ca7284f6ad10c309e7a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw an up arrow in a window within a specified geometry.  <a href="#ga7c401638af7ca7284f6ad10c309e7a1e">More...</a><br /></td></tr>
+<tr class="separator:ga7c401638af7ca7284f6ad10c309e7a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79e38aeba413db37bd65dc00ae157bc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga79e38aeba413db37bd65dc00ae157bc7">WBDrawDownArrow</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomRect, unsigned long lColor)</td></tr>
+<tr class="memdesc:ga79e38aeba413db37bd65dc00ae157bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a down arrow in a window within a specified geometry.  <a href="#ga79e38aeba413db37bd65dc00ae157bc7">More...</a><br /></td></tr>
+<tr class="separator:ga79e38aeba413db37bd65dc00ae157bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67374be1b4bd497081c62209f929b393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window__dressing.html#ga67374be1b4bd497081c62209f929b393">WBDraw3DBorderTab</a> (Display *pDisplay, Drawable wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgeomOutline, int fFocus, unsigned long lFGColor, unsigned long lBGColor, unsigned long lBorderColor1, unsigned long lBorderColor2, unsigned long lHighlightColor, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFontBold, Atom aGraphic, const char *szText)</td></tr>
+<tr class="memdesc:ga67374be1b4bd497081c62209f929b393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a 'tab' within a specified 'outline' rectangle.  <a href="#ga67374be1b4bd497081c62209f929b393">More...</a><br /></td></tr>
+<tr class="separator:ga67374be1b4bd497081c62209f929b393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -190,8 +196,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Structure that defines scroll bar info for both horizontal and vertical scroll bars. </p>
-<p>This structure defines the scroll bar information for both vertical and horizontal scroll bars. You can have both a horizontal AND a vertical scroll bar at the same time. This structure is maintained by various API functions, particularly <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103" title="Update the scroll bar geometry within the WB_SCROLLINFO structure. ">WBUpdateScrollBarGeometry()</a>.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__SCROLLINFO____.html">__WB_SCROLLINFO__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a3976c7ed1cd88ec817924702f55744fb">iScrollState</a>;         <span class="comment">// scroll state flags - see enumeration \ref WBScrollState_ENUM</span></div><div class="line"></div><div class="line">  <span class="comment">// fixed dimension sizes - 0 if not known, else based on owner client width/height</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a3cc8b0ae699cbe7859b5b14bdfc167bb">iVScrollWidth</a>;        <span class="comment">// calculated width of vertical scroll bar (in pixels); 0 if not known</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aec55a88c53a22ca37fbd07feb8da9baf">iHScrollHeight</a>;       <span class="comment">// calculated height of horizontal scroll bar (in pixels); 0 if not known</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aa0f6087962de4344b125963b9d938210">iVBarHeight</a>;          <span class="comment">// calculated height of vertical scroll bar (re-calculate on window size change)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ab9e039a127042ed763804a6d995f1b54">iHBarWidth</a>;           <span class="comment">// calculated width of horizontal scroll bar (re-calculate on window size change)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ac976085d96c9d00f7ae9051bb091d583">iHKnob</a>;               <span class="comment">// calculated relative X pixel position of horizontal scroll &#39;knob&#39;</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a28febfaf5faa20e0b8359fb5975aad2a">iVKnob</a>;               <span class="comment">// calculated relative Y pixel position of vertical scroll &#39;knob&#39;</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a35ebea5c668d15854224d85facf3e2da">iHKnobSize</a>;           <span class="comment">// calculated pixel width of horizontal scroll &#39;knob&#39;</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aa439e007e9b603c8a0c74dd81ab78746">iVKnobSize</a>;           <span class="comment">// calculated pixel height of vertical scroll &#39;knob&#39;</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aaa7d94c928d5742e7ea698a8221491ce">iHMin</a>;                <span class="comment">// minimum horizontal range (0 if no bar)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ac3e883df397923dbed323bd0c51177f1">iHMax</a>;                <span class="comment">// maximum horizontal range (0 if no bar)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ac1effa472c5e4d0627f684dd3149c6fb">iVMin</a>;                <span class="comment">// minimum vertical range (0 if no bar)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a8e171c789a60dfeb0b7ca14210cc1115">iVMax</a>;                <span class="comment">// maximum vertical range (0 if no bar)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a8f1d2756ca5fbdc1c5a63dad9dbbd476">iHPos</a>;                <span class="comment">// current horozontal scroll position (N/A if outside of min/max range)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a5892c9f814b500d157ced6d6ae49b1f1">iVPos</a>;                <span class="comment">// current vertical scroll position (N/A if outside of min/max range)</span></div><div class="line"></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#ac7a5888dc6103c11fa5b7e2d25d3db92">geomHBar</a>;         <span class="comment">// geometry for the horizontal scroll bar excluding border (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a2c7166c151b7ddcda1e0ada7bcab4991">geomHLeft</a>;        <span class="comment">// geometry for the horizontal scroll bar &#39;left&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#ac3ed999b71bff326ee350408c21947f4">geomHRight</a>;       <span class="comment">// geometry for the horizontal scroll bar &#39;right&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a612d3e58557d9cb7795944081f83ff22">geomHKnob</a>;        <span class="comment">// geometry for the horizontal scroll bar &#39;knob&#39; (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a82e3c1c0f40b4b1ebb6826f5b5644315">geomVBar</a>;         <span class="comment">// geometry for the vertical scroll bar excluding border (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a6146d0ec311f2c2fcf1cb7ffeb156ac5">geomVUp</a>;          <span class="comment">// geometry for the vertical scroll bar &#39;up&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a933484ed544ebd8124b30d7081a0af4f">geomVDown</a>;        <span class="comment">// geometry for the vertical scroll bar &#39;down&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a621f7995ddc359065225e0c8c3e59afe">geomVKnob</a>;        <span class="comment">// geometry for the vertical scroll bar &#39;knob&#39; (empty if not visible)</span></div><div class="line">} <a class="code" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a>;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__window__dressing.html#gab712a9fc90508bcc5606733188b34d7b" title="Initialization function for a &#39;WB_SCROLLINFO&#39; structure. ">WBInitScrollInfo()</a>, <a class="el" href="group__window__dressing.html#ga7a248d35a52528818882628963dc3103" title="Update the scroll bar geometry within the WB_SCROLLINFO structure. ">WBUpdateScrollBarGeometry()</a> </dd></dl>
+<p>This structure defines the scroll bar information for both vertical and horizontal scroll bars. You can have both a horizontal AND a vertical scroll bar at the same time. This structure is maintained by various API functions, particularly <a class="el" href="group__window__dressing.html#ga37eda791add4362124e740b77b401e15" title="Update the scroll bar geometry within the WB_SCROLLINFO structure. ">WBUpdateScrollBarGeometry()</a>.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____WB__SCROLLINFO____.html">__WB_SCROLLINFO__</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a3976c7ed1cd88ec817924702f55744fb">iScrollState</a>;         <span class="comment">// scroll state flags - see enumeration \ref WBScrollState_ENUM</span></div><div class="line"></div><div class="line">  <span class="comment">// fixed dimension sizes - 0 if not known, else based on owner client width/height</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a3cc8b0ae699cbe7859b5b14bdfc167bb">iVScrollWidth</a>;        <span class="comment">// calculated width of vertical scroll bar (in pixels); 0 if not known</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aec55a88c53a22ca37fbd07feb8da9baf">iHScrollHeight</a>;       <span class="comment">// calculated height of horizontal scroll bar (in pixels); 0 if not known</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aa0f6087962de4344b125963b9d938210">iVBarHeight</a>;          <span class="comment">// calculated height of vertical scroll bar (re-calculate on window size change)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ab9e039a127042ed763804a6d995f1b54">iHBarWidth</a>;           <span class="comment">// calculated width of horizontal scroll bar (re-calculate on window size change)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ac976085d96c9d00f7ae9051bb091d583">iHKnob</a>;               <span class="comment">// calculated relative X pixel position of horizontal scroll &#39;knob&#39;</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a28febfaf5faa20e0b8359fb5975aad2a">iVKnob</a>;               <span class="comment">// calculated relative Y pixel position of vertical scroll &#39;knob&#39;</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a35ebea5c668d15854224d85facf3e2da">iHKnobSize</a>;           <span class="comment">// calculated pixel width of horizontal scroll &#39;knob&#39;</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aa439e007e9b603c8a0c74dd81ab78746">iVKnobSize</a>;           <span class="comment">// calculated pixel height of vertical scroll &#39;knob&#39;</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#aaa7d94c928d5742e7ea698a8221491ce">iHMin</a>;                <span class="comment">// minimum horizontal range (0 if no bar)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ac3e883df397923dbed323bd0c51177f1">iHMax</a>;                <span class="comment">// maximum horizontal range (0 if no bar)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#ac1effa472c5e4d0627f684dd3149c6fb">iVMin</a>;                <span class="comment">// minimum vertical range (0 if no bar)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a8e171c789a60dfeb0b7ca14210cc1115">iVMax</a>;                <span class="comment">// maximum vertical range (0 if no bar)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a8f1d2756ca5fbdc1c5a63dad9dbbd476">iHPos</a>;                <span class="comment">// current horozontal scroll position (N/A if outside of min/max range)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct____WB__SCROLLINFO____.html#a5892c9f814b500d157ced6d6ae49b1f1">iVPos</a>;                <span class="comment">// current vertical scroll position (N/A if outside of min/max range)</span></div><div class="line"></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#ac7a5888dc6103c11fa5b7e2d25d3db92">geomHBar</a>;         <span class="comment">// geometry for the horizontal scroll bar excluding border (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a2c7166c151b7ddcda1e0ada7bcab4991">geomHLeft</a>;        <span class="comment">// geometry for the horizontal scroll bar &#39;left&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#ac3ed999b71bff326ee350408c21947f4">geomHRight</a>;       <span class="comment">// geometry for the horizontal scroll bar &#39;right&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a612d3e58557d9cb7795944081f83ff22">geomHKnob</a>;        <span class="comment">// geometry for the horizontal scroll bar &#39;knob&#39; (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a82e3c1c0f40b4b1ebb6826f5b5644315">geomVBar</a>;         <span class="comment">// geometry for the vertical scroll bar excluding border (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a6146d0ec311f2c2fcf1cb7ffeb156ac5">geomVUp</a>;          <span class="comment">// geometry for the vertical scroll bar &#39;up&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a933484ed544ebd8124b30d7081a0af4f">geomVDown</a>;        <span class="comment">// geometry for the vertical scroll bar &#39;down&#39; button (empty if not visible)</span></div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> <a class="code" href="struct____WB__SCROLLINFO____.html#a621f7995ddc359065225e0c8c3e59afe">geomVKnob</a>;        <span class="comment">// geometry for the vertical scroll bar &#39;knob&#39; (empty if not visible)</span></div><div class="line">} <a class="code" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a>;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__window__dressing.html#gab712a9fc90508bcc5606733188b34d7b" title="Initialization function for a &#39;WB_SCROLLINFO&#39; structure. ">WBInitScrollInfo()</a>, <a class="el" href="group__window__dressing.html#ga37eda791add4362124e740b77b401e15" title="Update the scroll bar geometry within the WB_SCROLLINFO structure. ">WBUpdateScrollBarGeometry()</a> </dd></dl>
 
 </div>
 </div>
@@ -449,8 +455,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2136e0b706c247ec476696db2ada244b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2136e0b706c247ec476696db2ada244b">&#9670;&nbsp;</a></span>WBDraw3DBorderElipse()</h2>
+<a id="ga070463ff8bf049debe4b7862e2d9c953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga070463ff8bf049debe4b7862e2d9c953">&#9670;&nbsp;</a></span>WBDraw3DBorderElipse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +476,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -504,7 +510,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomBorder</td><td>A WB_GEOM that identifies the bounding rectangle for the elipse to draw </td></tr>
     <tr><td class="paramname">lBorderColor1</td><td>A 'Pixel' color value to use when painting the border (upper, left) </td></tr>
     <tr><td class="paramname">lBorderColor2</td><td>A 'Pixel' color value to use when painting the border (lower, right)</td></tr>
@@ -514,12 +520,12 @@ Variables</h2></td></tr>
 <p>Use this function to draw a border elipse in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01493">1493</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01553">1553</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="ga2ebd818d333c3475bdcf5fa0299545b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2ebd818d333c3475bdcf5fa0299545b7">&#9670;&nbsp;</a></span>WBDraw3DBorderRect()</h2>
+<a id="gaa251600a10c34a3c465bf27eed818edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa251600a10c34a3c465bf27eed818edd">&#9670;&nbsp;</a></span>WBDraw3DBorderRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +545,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -573,7 +579,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomBorder</td><td>A WB_GEOM that identifies the border rectangle to draw </td></tr>
     <tr><td class="paramname">lBorderColor1</td><td>A 'Pixel' color value to use when painting the border (upper, left) </td></tr>
     <tr><td class="paramname">lBorderColor2</td><td>A 'Pixel' color value to use when painting the border (lower, right)</td></tr>
@@ -583,12 +589,12 @@ Variables</h2></td></tr>
 <p>Use this function to draw a 3D border rectangle in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01389">1389</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01449">1449</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="ga8a43f2bfb2f71ee03622c93b082ca3a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8a43f2bfb2f71ee03622c93b082ca3a7">&#9670;&nbsp;</a></span>WBDraw3DBorderTab()</h2>
+<a id="ga67374be1b4bd497081c62209f929b393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67374be1b4bd497081c62209f929b393">&#9670;&nbsp;</a></span>WBDraw3DBorderTab()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,7 +614,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -656,14 +662,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSetBold</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFontBold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -690,7 +696,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomOutline</td><td>A WB_GEOM that identifies the rectangular border of the tab to draw </td></tr>
     <tr><td class="paramname">fFocus</td><td>A flag value that indicates whether or not this tab has the 'focus', and whether or not the 'x' is being 'pressed'.<br />
 <br />
@@ -703,8 +709,8 @@ Variables</h2></td></tr>
     <tr><td class="paramname">lBorderColor1</td><td>The upper, left 'Pixel' color to use when drawing the tab </td></tr>
     <tr><td class="paramname">lBorderColor2</td><td>The lower, right 'Pixel' color to use when drawing the tab </td></tr>
     <tr><td class="paramname">lHighlightColor</td><td>The 'highlight' 'Pixel' color to use for a tab that has the focus </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The 'normal' font to render text in </td></tr>
-    <tr><td class="paramname">fontSetBold</td><td>The 'bold' font to render text in (this includes the 'x' close button on the tab) </td></tr>
+    <tr><td class="paramname">pFont</td><td>The 'normal' WB_FONTC to render text in </td></tr>
+    <tr><td class="paramname">pFontBold</td><td>The 'bold' WB_FONTC to render text in (this includes the 'x' close button on the tab) </td></tr>
     <tr><td class="paramname">aGraphic</td><td>An atom for the current (registered) pixmap graphic, or 'None' for no graphic </td></tr>
     <tr><td class="paramname">szText</td><td>A const pointer to a character string containing the descriptive text for the tab</td></tr>
   </table>
@@ -715,12 +721,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>For proper appearance, the 'focus' tab should be drawn last, and tabs should be drawn from right to left.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01674">1674</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01734">1734</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="ga73f5fb9c36bad6bfb301728bc5f4173a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga73f5fb9c36bad6bfb301728bc5f4173a">&#9670;&nbsp;</a></span>WBDrawBorderElipse()</h2>
+<a id="gae43cad745901309484f78abe8dbb36f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae43cad745901309484f78abe8dbb36f0">&#9670;&nbsp;</a></span>WBDrawBorderElipse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -740,7 +746,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -768,7 +774,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomBorder</td><td>A WB_GEOM that identifies the bounding rectangle for the elipse to draw </td></tr>
     <tr><td class="paramname">lBorderColor</td><td>A 'Pixel' color value to use when painting the border</td></tr>
   </table>
@@ -777,12 +783,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to draw a border elipse in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01477">1477</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01537">1537</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="gaf85e7c61f3170d19da3e0b051a9d6d06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf85e7c61f3170d19da3e0b051a9d6d06">&#9670;&nbsp;</a></span>WBDrawBorderRect()</h2>
+<a id="ga0cdb8f3b464ebd442979f28ed8827a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cdb8f3b464ebd442979f28ed8827a25">&#9670;&nbsp;</a></span>WBDrawBorderRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -802,7 +808,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -830,7 +836,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomBorder</td><td>A WB_GEOM that identifies the border rectangle to draw </td></tr>
     <tr><td class="paramname">lBorderColor</td><td>A 'Pixel' color value to use when painting the border</td></tr>
   </table>
@@ -839,12 +845,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to draw a border rectangle in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01354">1354</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01414">1414</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="gad617bf61913a94e557dd18fe2094830f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad617bf61913a94e557dd18fe2094830f">&#9670;&nbsp;</a></span>WBDrawDashedRect()</h2>
+<a id="ga1ad1cee919a74851727eca2ee42a58b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ad1cee919a74851727eca2ee42a58b4">&#9670;&nbsp;</a></span>WBDrawDashedRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -864,7 +870,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -892,7 +898,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomRect</td><td>A WB_GEOM that identifies the rectangle to draw </td></tr>
     <tr><td class="paramname">lColor</td><td>A 'Pixel' color value to use when painting the dashed rectangle</td></tr>
   </table>
@@ -901,12 +907,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to draw a border rectangle in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01532">1532</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01592">1592</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="ga43da8059f5926c745279d643499490bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43da8059f5926c745279d643499490bf">&#9670;&nbsp;</a></span>WBDrawDownArrow()</h2>
+<a id="ga79e38aeba413db37bd65dc00ae157bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79e38aeba413db37bd65dc00ae157bc7">&#9670;&nbsp;</a></span>WBDrawDownArrow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -926,7 +932,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -954,7 +960,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomRect</td><td>A WB_GEOM that identifies the rectangle within which to draw the arrow </td></tr>
     <tr><td class="paramname">lColor</td><td>A 'Pixel' color value to use when painting the arrow as a polygon</td></tr>
   </table>
@@ -963,12 +969,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to draw a down arrow in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01645">1645</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01705">1705</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="gaf24688ae89293b6032aab16b32e2fa48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf24688ae89293b6032aab16b32e2fa48">&#9670;&nbsp;</a></span>WBDrawLeftArrow()</h2>
+<a id="gafb940a4795ca6b9f93721af773ae5412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb940a4795ca6b9f93721af773ae5412">&#9670;&nbsp;</a></span>WBDrawLeftArrow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,7 +994,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -1016,7 +1022,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomRect</td><td>A WB_GEOM that identifies the rectangle within which to draw the arrow </td></tr>
     <tr><td class="paramname">lColor</td><td>A 'Pixel' color value to use when painting the arrow as a polygon</td></tr>
   </table>
@@ -1025,12 +1031,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to draw a left arrow in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01556">1556</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01616">1616</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="gad4d381b683d4cf196f87195f83b4e6f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad4d381b683d4cf196f87195f83b4e6f3">&#9670;&nbsp;</a></span>WBDrawRightArrow()</h2>
+<a id="gaf4d967364e8c5be5613bc1c36b24ec8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4d967364e8c5be5613bc1c36b24ec8f">&#9670;&nbsp;</a></span>WBDrawRightArrow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1050,7 +1056,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -1078,7 +1084,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomRect</td><td>A WB_GEOM that identifies the rectangle within which to draw the arrow </td></tr>
     <tr><td class="paramname">lColor</td><td>A 'Pixel' color value to use when painting the arrow as a polygon</td></tr>
   </table>
@@ -1087,12 +1093,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to draw a right arrow in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01615">1615</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01675">1675</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="gac1840a4f4b9f855129c79511794348b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac1840a4f4b9f855129c79511794348b2">&#9670;&nbsp;</a></span>WBDrawUpArrow()</h2>
+<a id="ga7c401638af7ca7284f6ad10c309e7a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c401638af7ca7284f6ad10c309e7a1e">&#9670;&nbsp;</a></span>WBDrawUpArrow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1112,7 +1118,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -1140,7 +1146,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomRect</td><td>A WB_GEOM that identifies the rectangle within which to draw the arrow </td></tr>
     <tr><td class="paramname">lColor</td><td>A 'Pixel' color value to use when painting the arrow as a polygon</td></tr>
   </table>
@@ -1149,7 +1155,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to draw an up arrow in the specified window, using the specified geometry.</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01586">1586</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01646">1646</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
@@ -1191,8 +1197,116 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 
 </div>
 </div>
-<a id="gab320df64511bdefe4e3544da85164482"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab320df64511bdefe4e3544da85164482">&#9670;&nbsp;</a></span>WBPaintHScrollBar()</h2>
+<a id="gafb331724e36022a9dfc9e194bbfe9f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb331724e36022a9dfc9e194bbfe9f4a">&#9670;&nbsp;</a></span>WBInvalidateHScrollGeom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBInvalidateHScrollGeom </td>
+          <td>(</td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *&#160;</td>
+          <td class="paramname"><em>pScrollInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bAll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bUpdate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Utility function to invalidate the geometry for the horizontal scroll bar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wID</td><td>The Window ID for the scroll bar owner </td></tr>
+    <tr><td class="paramname">pScrollInfo</td><td>A pointer to the WB_SCROLLINFO structure for the window's scroll bars </td></tr>
+    <tr><td class="paramname">bAll</td><td>A flag to indicate whether the entire scrollbar should be invalidated; zero only invalidates the 'knob' area </td></tr>
+    <tr><td class="paramname">bUpdate</td><td>The 'update' flag to be sent to <a class="el" href="group__expose.html#gaeff5ba820c3e0d9f8c6daab6ec0c95b5" title="&#39;Paint&#39; helper, invalidates a geometry for asynchronous Expose event generation ">WBInvalidateGeom()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Call this function to (efficiently) invalidate the horizontal scroll bar geometry for re-painting </p>
+
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l00893">893</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+
+</div>
+</div>
+<a id="gaecb61dd839172a448605ba59858b53e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaecb61dd839172a448605ba59858b53e8">&#9670;&nbsp;</a></span>WBInvalidateVScrollGeom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBInvalidateVScrollGeom </td>
+          <td>(</td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__window__dressing.html#ga978574a25d8082910a8a811fa55dccff">WB_SCROLLINFO</a> *&#160;</td>
+          <td class="paramname"><em>pScrollInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bAll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bUpdate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Utility function to invalidate the geometry for the vertical scroll bar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wID</td><td>The Window ID for the scroll bar owner </td></tr>
+    <tr><td class="paramname">pScrollInfo</td><td>A pointer to the WB_SCROLLINFO structure for the window's scroll bars </td></tr>
+    <tr><td class="paramname">bAll</td><td>A flag to indicate whether the entire scrollbar should be invalidated; zero only invalidates the 'knob' area </td></tr>
+    <tr><td class="paramname">bUpdate</td><td>The 'update' flag to be sent to <a class="el" href="group__expose.html#gaeff5ba820c3e0d9f8c6daab6ec0c95b5" title="&#39;Paint&#39; helper, invalidates a geometry for asynchronous Expose event generation ">WBInvalidateGeom()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Call this function to (efficiently) invalidate the vertical scroll bar geometry for re-painting </p>
+
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l00862">862</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+
+</div>
+</div>
+<a id="ga6b7ef9b4916f4fdb838240ba9bb7db19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b7ef9b4916f4fdb838240ba9bb7db19">&#9670;&nbsp;</a></span>WBPaintHScrollBar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1218,7 +1332,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -1241,7 +1355,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
     <tr><td class="paramname">pScrollInfo</td><td>A pointer to the WB_SCROLLINFO structure to be initialized </td></tr>
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomClient</td><td>A pointer to the WB_GEOM for the client area</td></tr>
   </table>
   </dd>
@@ -1249,12 +1363,12 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to paint the horizontal scroll bar within the specified window, based on WB_SCROLLINFO</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01213">1213</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01273">1273</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
-<a id="ga1b16bdffe6d68e889dce913ccf64229d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b16bdffe6d68e889dce913ccf64229d">&#9670;&nbsp;</a></span>WBPaintVScrollBar()</h2>
+<a id="ga4b048da72d1a752880374d642d24b0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b048da72d1a752880374d642d24b0bf">&#9670;&nbsp;</a></span>WBPaintVScrollBar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1280,7 +1394,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -1303,7 +1417,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
     <tr><td class="paramname">pScrollInfo</td><td>A pointer to the WB_SCROLLINFO structure to be initialized </td></tr>
     <tr><td class="paramname">pDisplay</td><td>A pointer to the current display (or NULL to use the default Display) </td></tr>
     <tr><td class="paramname">wID</td><td>the Drawable, typically the Window ID for the target window </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) to use </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) to use </td></tr>
     <tr><td class="paramname">pgeomClient</td><td>A pointer to the WB_GEOM for the client area</td></tr>
   </table>
   </dd>
@@ -1311,7 +1425,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>Use this function to paint the vertical scroll bar within the specified window, based on WB_SCROLLINFO</p>
 <p>Header File: <a class="el" href="window__dressing_8h.html">window_dressing.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01278">1278</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l01338">1338</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1474,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>This function generically handles pointer and keyboard events associated with scroll bars, generating scroll bar notification (and related) ClientMessage events from mouse clicks, drags, and scrolling related to the scroll bars. The scroll bar geometry must have already been calculated for this to work properly. The function returns a non-zero value if the event was processed.</p>
 <p>This function does NOT handle Expose events. </p>
 
-<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l00863">863</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__dressing_8c_source.html#l00925">925</a> of file <a class="el" href="window__dressing_8c_source.html">window_dressing.c</a>.</p>
 
 </div>
 </div>
@@ -1544,8 +1658,8 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 
 </div>
 </div>
-<a id="ga7a248d35a52528818882628963dc3103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7a248d35a52528818882628963dc3103">&#9670;&nbsp;</a></span>WBUpdateScrollBarGeometry()</h2>
+<a id="ga37eda791add4362124e740b77b401e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37eda791add4362124e740b77b401e15">&#9670;&nbsp;</a></span>WBUpdateScrollBarGeometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1559,8 +1673,8 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSetRef</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFontRef</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1586,7 +1700,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pSI</td><td>A pointer to the WB_SCROLLINFO structure </td></tr>
-    <tr><td class="paramname">fontSetRef</td><td>The reference font set for scroll bar size. Pass None to use the 'Default' font set. </td></tr>
+    <tr><td class="paramname">pFontRef</td><td>The reference WB_FONTC for scroll bar size. Pass None to use the 'Default' font set. </td></tr>
     <tr><td class="paramname">pgeomClient</td><td>The geometry of the client area where the scroll bars will be displayed. </td></tr>
     <tr><td class="paramname">pgeomUsable</td><td>Returns the resulting 'usable' client area after scroll bar geometry calculations are done.</td></tr>
   </table>
@@ -1635,7 +1749,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <p>data.l[2] Optional parameter, typically the absolute or relative scroll position <br />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l00278">278</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l00284">284</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1644,7 +1758,7 @@ Tabs are drawn differently when they have focus, so 'bFocus' determines whether 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 12 2018 11:51:47 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:33 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -11,6 +11,7 @@ var group__platform__functions =
     [ "WBGetPointerFromHash", "group__platform__functions.html#gab5193bbf0de01aa9cb4c1d3ea8923448", null ],
     [ "WBGetTimeIndex", "group__platform__functions.html#gadc42f83070453daa04ccf39dc842d93b", null ],
     [ "WBLookupAtom", "group__platform__functions.html#gab9521326551eb30d23685ab9e4622666", null ],
+    [ "WBMkDir", "group__platform__functions.html#ga78bea433648af1c750984978a6e27a2a", null ],
     [ "WBSearchPath", "group__platform__functions.html#gaefaa2afddaf082501611eef7339b1edf", null ],
     [ "WBTempFile", "group__platform__functions.html#gabaf82705f01778a667ddef2239899a2f", null ],
     [ "WBTempFile0", "group__platform__functions.html#ga7f8541b2e7204cafe39d514198b82826", null ]

@@ -8,7 +8,6 @@ var group__defaults =
     [ "WB_WAIT_CURSOR", "group__defaults.html#ga45c0e949c2da8dc36a78ee649206756c", null ],
     [ "WINDOW_DATA_SIZE", "group__defaults.html#ga9d6d0cbd8dc3c2a8c603b9458a984847", null ],
     [ "WBGetDefaultDisplay", "group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203", null ],
-    [ "WBGetDefaultFont", "group__defaults.html#ga83eea3d816ace887a40c079d2991ea2a", null ],
-    [ "WBGetDefaultFontSet", "group__defaults.html#gabc99108d8512b7bb7d8749e36fa25f15", null ],
+    [ "WBGetDefaultFont", "group__defaults.html#ga5baa399a7110ea6afa4da364f51021f6", null ],
     [ "WBGetHiddenHelperWindow", "group__defaults.html#gafc45dcd9ad8846fcd775841481f0e7a2", null ]
 ];

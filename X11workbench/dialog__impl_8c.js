@@ -41,7 +41,7 @@ var dialog__impl_8c =
     [ "CreateLumaSaturationImage", "dialog__impl_8c.html#a82b9de6e09294d31b45f9e3cdcdcb368", null ],
     [ "DLGColorDialog", "group__dialog__api__functions.html#ga3f432d9d8e76f234d58a53082ed9bd6c", null ],
     [ "DLGFileDialog", "group__dialog__api__functions.html#ga61c93635fb125b35d904e4e13e0169c6", null ],
-    [ "DLGFontDialog", "group__dialog__api__functions.html#gac953f8471bde9acd98a9cb464838daba", null ],
+    [ "DLGFontDialog", "group__dialog__api__functions.html#ga6b0b5e6d46fe02e47b8a207212217bd2", null ],
     [ "DLGInputBox", "group__dialog__api__functions.html#gae8aa6305ea75cbfc9db1a10cce1b4958", null ],
     [ "DLGMessageBox", "group__dialog__api__functions.html#gac1927b5f46aa6fb8e57a3786db1d0ea0", null ],
     [ "DLGSplashScreen", "group__dialog__api__functions.html#gaa9ac41453b238c153917fcd3a33a587d", null ],
@@ -51,5 +51,5 @@ var dialog__impl_8c =
     [ "MessageBoxCallback", "dialog__impl_8c.html#a1948359e701b9891001d5c3bd7ec973a", null ],
     [ "splash_callback", "dialog__impl_8c.html#a2759dc3649a6ee31693de441c5b7a937", null ],
     [ "SplashDoExposeEvent", "dialog__impl_8c.html#a8cd5833f9f16f6d73f8755d86580d444", null ],
-    [ "__attribute__", "dialog__impl_8c.html#a26aa14fdfbb8419e97de22cdca0792bc", null ]
+    [ "__attribute__", "dialog__impl_8c.html#a8808984773d951f6db0616ef56f7bd3a", null ]
 ];

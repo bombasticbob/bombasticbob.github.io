@@ -106,7 +106,7 @@ var dialog__window_8h =
     [ "DLGDestroyDialogWindow", "group__dlgwindow.html#ga5df6641a71a0a3cba3fcd03e6bf3410d", null ],
     [ "DLGDestroyDialogWindow2", "group__dlgwindow.html#ga1381388e003aa788fa312fd3fc583fd2", null ],
     [ "DLGFileDialog", "group__dialog__api__functions.html#ga61c93635fb125b35d904e4e13e0169c6", null ],
-    [ "DLGFontDialog", "group__dialog__api__functions.html#gac953f8471bde9acd98a9cb464838daba", null ],
+    [ "DLGFontDialog", "group__dialog__api__functions.html#ga6b0b5e6d46fe02e47b8a207212217bd2", null ],
     [ "DLGGetDialogControl", "group__dlgwindow.html#gaa4434295b82ee7f976033c303c088320", null ],
     [ "DLGGetDialogControlEntry", "group__dlgwindow.html#gae22cb9544e033114a520120d143e2b1d", null ],
     [ "DLGGetDialogWindowStruct", "group__dlgwindow.html#ga8a22360f03f14357a2b22dfbff2894b1", null ],

@@ -39,8 +39,11 @@ var annotated_dup =
     [ "_WB_PUSHBUTTON_CONTROL_", "struct__WB__PUSHBUTTON__CONTROL__.html", "struct__WB__PUSHBUTTON__CONTROL__" ],
     [ "_WB_TREE_CONTROL_", "struct__WB__TREE__CONTROL__.html", "struct__WB__TREE__CONTROL__" ],
     [ "_WBExtent_", "struct__WBExtent__.html", "struct__WBExtent__" ],
+    [ "_WBGC_", "struct__WBGC__.html", "struct__WBGC__" ],
     [ "_WBGeom_", "struct__WBGeom__.html", "struct__WBGeom__" ],
     [ "_WBPoint_", "struct__WBPoint__.html", "struct__WBPoint__" ],
     [ "_WBRect_", "struct__WBRect__.html", "struct__WBRect__" ],
-    [ "_XPM_ATTRIBUTES_", "struct__XPM__ATTRIBUTES__.html", "struct__XPM__ATTRIBUTES__" ]
+    [ "_XPM_ATTRIBUTES_", "struct__XPM__ATTRIBUTES__.html", "struct__XPM__ATTRIBUTES__" ],
+    [ "WBFont", "structWBFont.html", "structWBFont" ],
+    [ "WBFontInfo", "structWBFontInfo.html", "structWBFontInfo" ]
 ];

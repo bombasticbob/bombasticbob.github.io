@@ -110,43 +110,139 @@ Functions</h2></td></tr>
 <tr class="memitem:ga365dbd8d44807bcbd0823d9bbdb5ddf5"><td class="memItemLeft" align="right" valign="top">Region&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga365dbd8d44807bcbd0823d9bbdb5ddf5">WBGeomToRegion</a> (const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td></tr>
 <tr class="memdesc:ga365dbd8d44807bcbd0823d9bbdb5ddf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, converts a WB_GEOM structure to a Region.  <a href="#ga365dbd8d44807bcbd0823d9bbdb5ddf5">More...</a><br /></td></tr>
 <tr class="separator:ga365dbd8d44807bcbd0823d9bbdb5ddf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga109a58ab2dd28f4681dfef850a9bf84c"><td class="memItemLeft" align="right" valign="top">Region&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga109a58ab2dd28f4681dfef850a9bf84c">WBCopyRegion</a> (Region rgnSource)</td></tr>
+<tr class="memdesc:ga109a58ab2dd28f4681dfef850a9bf84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple utility to copy a region.  <a href="#ga109a58ab2dd28f4681dfef850a9bf84c">More...</a><br /></td></tr>
+<tr class="separator:ga109a58ab2dd28f4681dfef850a9bf84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga509364383b786ccb743f14bad9b39984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga509364383b786ccb743f14bad9b39984">WBUpdateWindow</a> (Window wID)</td></tr>
 <tr class="memdesc:ga509364383b786ccb743f14bad9b39984"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, generates an asynchronous Expose event for non-empty 'invalid' region  <a href="#ga509364383b786ccb743f14bad9b39984">More...</a><br /></td></tr>
 <tr class="separator:ga509364383b786ccb743f14bad9b39984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc6e7d40bacb6f570c9954f928f44fc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gafc6e7d40bacb6f570c9954f928f44fc6">WBUpdateWindowImmediately</a> (Window wID)</td></tr>
 <tr class="memdesc:gafc6e7d40bacb6f570c9954f928f44fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, generates an immediate Expose event for non-empty 'invalid' region  <a href="#gafc6e7d40bacb6f570c9954f928f44fc6">More...</a><br /></td></tr>
 <tr class="separator:gafc6e7d40bacb6f570c9954f928f44fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf12acdde095ac1a025ab91863140ba1f"><td class="memItemLeft" align="right" valign="top">GC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f">WBBeginPaint</a> (Window wID, XExposeEvent *pEvent, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgRet)</td></tr>
-<tr class="memdesc:gaf12acdde095ac1a025ab91863140ba1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, creates a GC for use in updating the window in an Expose event handler  <a href="#gaf12acdde095ac1a025ab91863140ba1f">More...</a><br /></td></tr>
-<tr class="separator:gaf12acdde095ac1a025ab91863140ba1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0adc3dcf20bfb7cb3add1ac460056f6b"><td class="memItemLeft" align="right" valign="top">GC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga0adc3dcf20bfb7cb3add1ac460056f6b">WBBeginPaintGeom</a> (Window wID, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgBounds)</td></tr>
-<tr class="memdesc:ga0adc3dcf20bfb7cb3add1ac460056f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, creates a GC for use in updating the window for a specified rectangular area  <a href="#ga0adc3dcf20bfb7cb3add1ac460056f6b">More...</a><br /></td></tr>
-<tr class="separator:ga0adc3dcf20bfb7cb3add1ac460056f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadbc5e143b5ad59425ea04752ce982d1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e">WBEndPaint</a> (Window wID, GC gc)</td></tr>
-<tr class="memdesc:gadbc5e143b5ad59425ea04752ce982d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, frees resources and marks the update region 'valid'  <a href="#gadbc5e143b5ad59425ea04752ce982d1e">More...</a><br /></td></tr>
-<tr class="separator:gadbc5e143b5ad59425ea04752ce982d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1cbd545c3fa47148b5458186c2666507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga1cbd545c3fa47148b5458186c2666507">WBClearWindow</a> (Window wID, GC gc)</td></tr>
-<tr class="memdesc:ga1cbd545c3fa47148b5458186c2666507"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, erases background by painting the background color within the clipping region  <a href="#ga1cbd545c3fa47148b5458186c2666507">More...</a><br /></td></tr>
-<tr class="separator:ga1cbd545c3fa47148b5458186c2666507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ea6e17305107ab1c3a78bd279129200"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200">WBBeginPaint</a> (Window wID, XExposeEvent *pEvent, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgRet)</td></tr>
+<tr class="memdesc:ga7ea6e17305107ab1c3a78bd279129200"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, creates a WBGC for use in updating the window in an Expose event handler  <a href="#ga7ea6e17305107ab1c3a78bd279129200">More...</a><br /></td></tr>
+<tr class="separator:ga7ea6e17305107ab1c3a78bd279129200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf32a291349d8222fccee9c21a10057d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gaf32a291349d8222fccee9c21a10057d3">WBBeginPaintGeom</a> (Window wID, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pgBounds)</td></tr>
+<tr class="memdesc:gaf32a291349d8222fccee9c21a10057d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, creates a WBGC for use in updating the window for a specified rectangular area  <a href="#gaf32a291349d8222fccee9c21a10057d3">More...</a><br /></td></tr>
+<tr class="separator:gaf32a291349d8222fccee9c21a10057d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17543b506ed3949dbb2f06f28536a787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787">WBEndPaint</a> (Window wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc)</td></tr>
+<tr class="memdesc:ga17543b506ed3949dbb2f06f28536a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, frees resources and marks the update region 'valid'  <a href="#ga17543b506ed3949dbb2f06f28536a787">More...</a><br /></td></tr>
+<tr class="separator:ga17543b506ed3949dbb2f06f28536a787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad47874135798366638c5f896d8d6d0cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gad47874135798366638c5f896d8d6d0cd">WBClearWindow</a> (Window wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc)</td></tr>
+<tr class="memdesc:gad47874135798366638c5f896d8d6d0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, erases background by painting the background color within the clipping region  <a href="#gad47874135798366638c5f896d8d6d0cd">More...</a><br /></td></tr>
+<tr class="separator:gad47874135798366638c5f896d8d6d0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga499fc00271ef3c2b81adbb457bdf17a7"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga499fc00271ef3c2b81adbb457bdf17a7">WBInvalidateRect</a> (Window wID, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRCT, int bPaintFlag)</td></tr>
 <tr class="memdesc:ga499fc00271ef3c2b81adbb457bdf17a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, invalidates a WB_RECT for asynchronous Expose event generation  <a href="#ga499fc00271ef3c2b81adbb457bdf17a7">More...</a><br /></td></tr>
 <tr class="separator:ga499fc00271ef3c2b81adbb457bdf17a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabfd2640f2400aa4f595c490ebb5baf7f"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gabfd2640f2400aa4f595c490ebb5baf7f">WBValidateRect</a> (Window wID, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRCT)</td></tr>
 <tr class="memdesc:gabfd2640f2400aa4f595c490ebb5baf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Paint' helper, validates a WB_RECT for asynchronous Expose event generation  <a href="#gabfd2640f2400aa4f595c490ebb5baf7f">More...</a><br /></td></tr>
 <tr class="separator:gabfd2640f2400aa4f595c490ebb5baf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15084850c897dcc8d51ea4805ebda435"><td class="memItemLeft" align="right" valign="top">XImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga15084850c897dcc8d51ea4805ebda435">WBGetWindowImage</a> (Display *pDisplay, Window wID)</td></tr>
+<tr class="memdesc:ga15084850c897dcc8d51ea4805ebda435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain an XImage for the entire window.  <a href="#ga15084850c897dcc8d51ea4805ebda435">More...</a><br /></td></tr>
+<tr class="separator:ga15084850c897dcc8d51ea4805ebda435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga905d89854ba078da62ea2484dabee4b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga905d89854ba078da62ea2484dabee4b3">WBAssignWindowImage</a> (Display *pDisplay, Window wID, XImage *pImage)</td></tr>
+<tr class="memdesc:ga905d89854ba078da62ea2484dabee4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an XImage for the entire window.  <a href="#ga905d89854ba078da62ea2484dabee4b3">More...</a><br /></td></tr>
+<tr class="separator:ga905d89854ba078da62ea2484dabee4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4c78925286fea856215092fa776e8c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gae4c78925286fea856215092fa776e8c6">WBCopyIntoWindowImage</a> (Display *pDisplay, Window wID, XImage *pSrcImage, int xSrc, int ySrc, int width, int height, int xOffs, int yOffs)</td></tr>
+<tr class="memdesc:gae4c78925286fea856215092fa776e8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy an XImage into the cached XImage for the entire window.  <a href="#gae4c78925286fea856215092fa776e8c6">More...</a><br /></td></tr>
+<tr class="separator:gae4c78925286fea856215092fa776e8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22596577cfdf1bd74333d345e51e0030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga22596577cfdf1bd74333d345e51e0030">WBUpdateWindowWithImage</a> (Display *pDisplay, Window wID)</td></tr>
+<tr class="memdesc:ga22596577cfdf1bd74333d345e51e0030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the window's appearance with the contents of the cached XImage.  <a href="#ga22596577cfdf1bd74333d345e51e0030">More...</a><br /></td></tr>
+<tr class="separator:ga22596577cfdf1bd74333d345e51e0030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefa867c51c787939f903b0f2e6fc7e9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gaefa867c51c787939f903b0f2e6fc7e9a">WBDrawPoint</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x, int y)</td></tr>
+<tr class="memdesc:gaefa867c51c787939f903b0f2e6fc7e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XDrawPoint()  <a href="#gaefa867c51c787939f903b0f2e6fc7e9a">More...</a><br /></td></tr>
+<tr class="separator:gaefa867c51c787939f903b0f2e6fc7e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cc8eb91149636a46cc806c7ee0f09a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga8cc8eb91149636a46cc806c7ee0f09a3">WBDrawPoints</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, XPoint *points, int npoints, int mode)</td></tr>
+<tr class="memdesc:ga8cc8eb91149636a46cc806c7ee0f09a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XDrawPoints()  <a href="#ga8cc8eb91149636a46cc806c7ee0f09a3">More...</a><br /></td></tr>
+<tr class="separator:ga8cc8eb91149636a46cc806c7ee0f09a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga095948e7ccd6d32a8f963bcb0575caef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga095948e7ccd6d32a8f963bcb0575caef">WBDrawLine</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memdesc:ga095948e7ccd6d32a8f963bcb0575caef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XDrawLines()  <a href="#ga095948e7ccd6d32a8f963bcb0575caef">More...</a><br /></td></tr>
+<tr class="separator:ga095948e7ccd6d32a8f963bcb0575caef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39e691c26ec3c7781ee0a9d0596dfdc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga39e691c26ec3c7781ee0a9d0596dfdc4">WBDrawLines</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, XPoint *points, int npoints, int mode)</td></tr>
+<tr class="memdesc:ga39e691c26ec3c7781ee0a9d0596dfdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XDrawLine()  <a href="#ga39e691c26ec3c7781ee0a9d0596dfdc4">More...</a><br /></td></tr>
+<tr class="separator:ga39e691c26ec3c7781ee0a9d0596dfdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb8a15dd4fbea8bf76f9948bce75e67f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gacb8a15dd4fbea8bf76f9948bce75e67f">WBDrawRectangle</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x, int y, unsigned int width, unsigned int height)</td></tr>
+<tr class="memdesc:gacb8a15dd4fbea8bf76f9948bce75e67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XDrawRectangle()  <a href="#gacb8a15dd4fbea8bf76f9948bce75e67f">More...</a><br /></td></tr>
+<tr class="separator:gacb8a15dd4fbea8bf76f9948bce75e67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13c28a295a7dce2c9062d7006a40fced"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga13c28a295a7dce2c9062d7006a40fced">WBFillRectangle</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x, int y, unsigned int width, unsigned int height)</td></tr>
+<tr class="memdesc:ga13c28a295a7dce2c9062d7006a40fced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XFillRectangle()  <a href="#ga13c28a295a7dce2c9062d7006a40fced">More...</a><br /></td></tr>
+<tr class="separator:ga13c28a295a7dce2c9062d7006a40fced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39f2ad143d1ef34dd03226d99a7a3cfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga39f2ad143d1ef34dd03226d99a7a3cfb">WBDrawArc</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x, int y, unsigned int width, unsigned int height, int angle1, int angle2)</td></tr>
+<tr class="memdesc:ga39f2ad143d1ef34dd03226d99a7a3cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XDrawArc()  <a href="#ga39f2ad143d1ef34dd03226d99a7a3cfb">More...</a><br /></td></tr>
+<tr class="separator:ga39f2ad143d1ef34dd03226d99a7a3cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec7bfa7cbc97cbc70beb86f38f0247fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gaec7bfa7cbc97cbc70beb86f38f0247fc">WBFillArc</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x, int y, unsigned int width, unsigned int height, int angle1, int angle2)</td></tr>
+<tr class="memdesc:gaec7bfa7cbc97cbc70beb86f38f0247fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XFillArc()  <a href="#gaec7bfa7cbc97cbc70beb86f38f0247fc">More...</a><br /></td></tr>
+<tr class="separator:gaec7bfa7cbc97cbc70beb86f38f0247fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b59f9354fa20253c30f6928e367f75f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#ga7b59f9354fa20253c30f6928e367f75f">WBFillPolygon</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, XPoint *points, int npoints, int shape, int mode)</td></tr>
+<tr class="memdesc:ga7b59f9354fa20253c30f6928e367f75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XFillPolygon()  <a href="#ga7b59f9354fa20253c30f6928e367f75f">More...</a><br /></td></tr>
+<tr class="separator:ga7b59f9354fa20253c30f6928e367f75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad608c8ad950018b729c85fba457f1ab9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__expose.html#gad608c8ad950018b729c85fba457f1ab9">WBDrawString</a> (Display *display, Drawable d, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, int x, int y, const char *string, int length)</td></tr>
+<tr class="memdesc:gad608c8ad950018b729c85fba457f1ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrapper for XDrawString()  <a href="#gad608c8ad950018b729c85fba457f1ab9">More...</a><br /></td></tr>
+<tr class="separator:gad608c8ad950018b729c85fba457f1ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Proper handling of Expose events is a performance-critical component of graphical interfaces. To simplify the handling and processing of Expose events there are a set of APIs and internal states that assist you in determining when to re-draw a window, and what portion of the window needs to be re-drawn.</p>
 <p>A typical Expose event handler might look like this:<br />
-</p><div class="fragment"><div class="line"><span class="comment">// parameters to function are XExposeEvent *pEvent, Window wID</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> MyExposeHandler(Window wID, XExposeEvent *pEvent)</div><div class="line">{</div><div class="line">  Display *pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c">WBGetWindowDisplay</a>(wID);</div><div class="line">  GC gc;</div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> geomPaint;</div><div class="line"></div><div class="line">  gc = <a class="code" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f">WBBeginPaint</a>(wID, pEvent, &amp;geomPaint);</div><div class="line">  <span class="keywordflow">if</span>(!gc)</div><div class="line">  {</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// here is where you modify the GC, change foreground/background colors, drawing modes, etc.</span></div><div class="line">  <span class="comment">// and perform necessary erasing within the geometry specified by geomPaint.</span></div><div class="line">  <span class="comment">// ideally your code will NOT attempt to draw anything outside of geomPaint.</span></div><div class="line"></div><div class="line">  XSetForeground(pDisplay, gc, <a class="code" href="group__wcore.html#ga3beb6cfa88596c4660152e63dd6f6cf5">WBGetWindowFGColor</a>(wID)); <span class="comment">// example</span></div><div class="line">  XSetBackground(pDisplay, gc, <a class="code" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">WBGetWindowBGColor</a>(wID)); <span class="comment">// example</span></div><div class="line"></div><div class="line">  XClearArea(pDisplay, wID, geomPaint.<a class="code" href="struct__WBGeom__.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, geomPaint.<a class="code" href="struct__WBGeom__.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>, geomPaint.<a class="code" href="struct__WBGeom__.html#aca34d28e3d8bcbcadb8edb4e3af24f8c">width</a>, geomPaint.<a class="code" href="struct__WBGeom__.html#ab2e78c61905b4419fcc7b4cfc500fe85">height</a>, 0);</div><div class="line"></div><div class="line">  <span class="comment">// perform any drawing here</span></div><div class="line"></div><div class="line">  <a class="code" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e">WBEndPaint</a>(wID, gc);</div><div class="line">}</div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
-<a id="gaf12acdde095ac1a025ab91863140ba1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf12acdde095ac1a025ab91863140ba1f">&#9670;&nbsp;</a></span>WBBeginPaint()</h2>
+</p><div class="fragment"><div class="line"><span class="comment">// parameters to function are XExposeEvent *pEvent, Window wID</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> MyExposeHandler(Window wID, XExposeEvent *pEvent)</div><div class="line">{</div><div class="line">  Display *pDisplay = <a class="code" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c">WBGetWindowDisplay</a>(wID);</div><div class="line">  GC gc;</div><div class="line">  <a class="code" href="struct__WBGeom__.html">WB_GEOM</a> geomPaint;</div><div class="line"></div><div class="line">  gc = <a class="code" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200">WBBeginPaint</a>(wID, pEvent, &amp;geomPaint);</div><div class="line">  <span class="keywordflow">if</span>(!gc)</div><div class="line">  {</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// here is where you modify the GC, change foreground/background colors, drawing modes, etc.</span></div><div class="line">  <span class="comment">// and perform necessary erasing within the geometry specified by geomPaint.</span></div><div class="line">  <span class="comment">// ideally your code will NOT attempt to draw anything outside of geomPaint.</span></div><div class="line"></div><div class="line">  XSetForeground(pDisplay, gc, <a class="code" href="group__wcore.html#ga3beb6cfa88596c4660152e63dd6f6cf5">WBGetWindowFGColor</a>(wID)); <span class="comment">// example</span></div><div class="line">  XSetBackground(pDisplay, gc, <a class="code" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">WBGetWindowBGColor</a>(wID)); <span class="comment">// example</span></div><div class="line"></div><div class="line">  XClearArea(pDisplay, wID, geomPaint.<a class="code" href="struct__WBGeom__.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, geomPaint.<a class="code" href="struct__WBGeom__.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>, geomPaint.<a class="code" href="struct__WBGeom__.html#aca34d28e3d8bcbcadb8edb4e3af24f8c">width</a>, geomPaint.<a class="code" href="struct__WBGeom__.html#ab2e78c61905b4419fcc7b4cfc500fe85">height</a>, 0);</div><div class="line"></div><div class="line">  <span class="comment">// perform any drawing here</span></div><div class="line"></div><div class="line">  <a class="code" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787">WBEndPaint</a>(wID, gc);</div><div class="line">}</div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
+<a id="ga905d89854ba078da62ea2484dabee4b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga905d89854ba078da62ea2484dabee4b3">&#9670;&nbsp;</a></span>WBAssignWindowImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GC WBBeginPaint </td>
+          <td class="memname">int WBAssignWindowImage </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XImage *&#160;</td>
+          <td class="paramname"><em>pImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assign an XImage for the entire window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">wID</td><td>The window that receives the <a class="el" href="group__timer.html#gae8da097fed5abc873cc7e96af53edd37">aWB_TIMER</a> XClientEvent (None == application) </td></tr>
+    <tr><td class="paramname">pImage</td><td>The XImage to assign to the window's internal information. On success, after the function call, this pointer is 'owned' by the window and should not be destroyed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A value of zero on success. A non-zero value indicates an error.</dd></dl>
+<p>Calling this function assigns a new cached XImage as 'backing store' for the window. It must be large enough to include the entire window's display area. On success, the assigned image will replace any existing image. Assigning a value of 'NULL' deletes any existing cached image. If an image is too small, the function call will fail, and ownership of the XImage remains as-is. Your call to this function needs to check for errors so that any resources can be properly cleaned up, as the XImage will not be owned nor destroyed.</p>
+<p>Whenever graphics operations make use of the cached image, an implicit call to <a class="el" href="group__expose.html#ga22596577cfdf1bd74333d345e51e0030" title="Update the window&#39;s appearance with the contents of the cached XImage. ">WBUpdateWindowWithImage()</a> will be made within the call to <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08021">8021</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga7ea6e17305107ab1c3a78bd279129200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ea6e17305107ab1c3a78bd279129200">&#9670;&nbsp;</a></span>WBBeginPaint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> WBBeginPaint </td>
           <td>(</td>
           <td class="paramtype">Window&#160;</td>
           <td class="paramname"><em>wID</em>, </td>
@@ -171,7 +267,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>'Paint' helper, creates a GC for use in updating the window in an Expose event handler </p>
+<p>'Paint' helper, creates a WBGC for use in updating the window in an Expose event handler </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wID</td><td>Window ID associated with the Expose event </td></tr>
@@ -180,23 +276,23 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A GC (graphics context) to be used in handling the Expose event</dd></dl>
-<p>When processing Expose events, you should call WBBeginPaint to obtain the GC needed for all of the operations needed to update (paint) the window.<br />
-This function collects all of the relevant invalid regions associated with the window that fall within the 'Expose' event area, and calculates a bounding WB_GEOM rectangle for it. It also applies the invalid region as a 'clipping' region for the returned GC. When you call <a class="el" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>, the entire clipping region will be marked 'valid' automatically, so it is important for your 'paint' function to update the entire WB_GEOM rectangle identified by pgRet. This includes erasing the background as well as drawing whatever is in the foreground.</p>
+<dl class="section return"><dt>Returns</dt><dd>A WBGC (graphics context) to be used in handling the Expose event</dd></dl>
+<p>When processing Expose events, you should call WBBeginPaint to obtain the WBGC needed for all of the operations needed to update (paint) the window.<br />
+This function collects all of the relevant invalid regions associated with the window that fall within the 'Expose' event area, and calculates a bounding WB_GEOM rectangle for it. It also applies the invalid region as a 'clipping' region for the returned WBGC. When you call <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>, the entire clipping region will be marked 'valid' automatically, so it is important for your 'paint' function to update the entire WB_GEOM rectangle identified by pgRet. This includes erasing the background as well as drawing whatever is in the foreground.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07478">7478</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07624">7624</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga0adc3dcf20bfb7cb3add1ac460056f6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0adc3dcf20bfb7cb3add1ac460056f6b">&#9670;&nbsp;</a></span>WBBeginPaintGeom()</h2>
+<a id="gaf32a291349d8222fccee9c21a10057d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf32a291349d8222fccee9c21a10057d3">&#9670;&nbsp;</a></span>WBBeginPaintGeom()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GC WBBeginPaintGeom </td>
+          <td class="memname"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> WBBeginPaintGeom </td>
           <td>(</td>
           <td class="paramtype">Window&#160;</td>
           <td class="paramname"><em>wID</em>, </td>
@@ -215,7 +311,7 @@ This function collects all of the relevant invalid regions associated with the w
       </table>
 </div><div class="memdoc">
 
-<p>'Paint' helper, creates a GC for use in updating the window for a specified rectangular area </p>
+<p>'Paint' helper, creates a WBGC for use in updating the window for a specified rectangular area </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wID</td><td>Window ID associated with the Expose event </td></tr>
@@ -223,17 +319,17 @@ This function collects all of the relevant invalid regions associated with the w
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A GC (graphics context) to be used in painting the specific rectangular region</dd></dl>
-<p>When processing Expose events, you should call <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> to obtain the GC needed for all of the operations needed to update (paint) the window.<br />
-This particular function is more suited to updating a specific area outside of a normal Expose callback handler. As an example, a frame window would use this to update the tab area or the status bar area, prior to calling the user callback function. That way, only the desired region will be 'validated' on call to <a class="el" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>, and not the entire window client area.</p>
+<dl class="section return"><dt>Returns</dt><dd>A WBGC (graphics context) to be used in painting the specific rectangular region</dd></dl>
+<p>When processing Expose events, you should call <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> to obtain the WBGC needed for all of the operations needed to update (paint) the window.<br />
+This particular function is more suited to updating a specific area outside of a normal Expose callback handler. As an example, a frame window would use this to update the tab area or the status bar area, prior to calling the user callback function. That way, only the desired region will be 'validated' on call to <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>, and not the entire window client area.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07507">7507</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07653">7653</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga1cbd545c3fa47148b5458186c2666507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1cbd545c3fa47148b5458186c2666507">&#9670;&nbsp;</a></span>WBClearWindow()</h2>
+<a id="gad47874135798366638c5f896d8d6d0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad47874135798366638c5f896d8d6d0cd">&#9670;&nbsp;</a></span>WBClearWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +343,7 @@ This particular function is more suited to updating a specific area outside of a
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>&#160;</td>
         </tr>
         <tr>
@@ -262,14 +358,138 @@ This particular function is more suited to updating a specific area outside of a
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wID</td><td>Window ID associated with the Expose event </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) returned by <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a>.</td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) returned by <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Call this function, following a call to <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a>, if you want to erase the background of the window. Call this in lieu of XClearWindow() or XClearArea()</p>
+<p>Call this function, following a call to <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a>, if you want to erase the background of the window. Call this in lieu of XClearWindow() or XClearArea()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07663">7663</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07826">7826</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="gae4c78925286fea856215092fa776e8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4c78925286fea856215092fa776e8c6">&#9670;&nbsp;</a></span>WBCopyIntoWindowImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBCopyIntoWindowImage </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XImage *&#160;</td>
+          <td class="paramname"><em>pSrcImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ySrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xOffs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yOffs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy an XImage into the cached XImage for the entire window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">wID</td><td>The window that receives the <a class="el" href="group__timer.html#gae8da097fed5abc873cc7e96af53edd37">aWB_TIMER</a> XClientEvent (None == application) </td></tr>
+    <tr><td class="paramname">pImage</td><td>The XImage to copy into the cached XImage for the window. Must be a pointer to a valid XImage. The specified XImage will not be changed, owned, nor destroyed. </td></tr>
+    <tr><td class="paramname">xSrc</td><td>The 'x' offset within the source XImage to begin copying from </td></tr>
+    <tr><td class="paramname">ySrc</td><td>The 'y' offset within the source XImage to begin copying from </td></tr>
+    <tr><td class="paramname">width</td><td>The width within the source XImage to copy from. a value of '-1' copies as much as possible to the destination image </td></tr>
+    <tr><td class="paramname">height</td><td>The height within the source XImage to copy from. a value of '-1' copies as much as possible to the destination image </td></tr>
+    <tr><td class="paramname">xDst</td><td>The 'x' offset within the window's cached XImage to begin copying to </td></tr>
+    <tr><td class="paramname">yDst</td><td>The 'y' offset within the window's cached XImage to begin copying to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A value of zero on success. A non-zero value indicates an error.</dd></dl>
+<p>Calling this function copies the specified XImage's data into the cached image of the window. If the window does not already have a cached image, one will be created that containing the window's visible display data. On success, the assigned image will replace that portion of the existing image as specified by the source offset, source size, and destination offset. Images that are too large to fit into the destination will be limited within the appropriate dimensions, based on the destination image size.</p>
+<p>Whenever graphics operations make use of the cached image, an implicit call to <a class="el" href="group__expose.html#ga22596577cfdf1bd74333d345e51e0030" title="Update the window&#39;s appearance with the contents of the cached XImage. ">WBUpdateWindowWithImage()</a> will be made within the call to <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08036">8036</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga109a58ab2dd28f4681dfef850a9bf84c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga109a58ab2dd28f4681dfef850a9bf84c">&#9670;&nbsp;</a></span>WBCopyRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Region WBCopyRegion </td>
+          <td>(</td>
+          <td class="paramtype">Region&#160;</td>
+          <td class="paramname"><em>rgnSource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Simple utility to copy a region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rgnSource</td><td>A source region to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A region that is a union of the source region with itself; i.e. a copy</dd></dl>
+<p>This function makes a simple copy of a region by doing a union with itself, returning the result. The caller must destroy the returned value using XDestroyRegion()</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07526">7526</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -385,8 +605,533 @@ This particular function is more suited to updating a specific area outside of a
 
 </div>
 </div>
-<a id="gadbc5e143b5ad59425ea04752ce982d1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadbc5e143b5ad59425ea04752ce982d1e">&#9670;&nbsp;</a></span>WBEndPaint()</h2>
+<a id="ga39f2ad143d1ef34dd03226d99a7a3cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga39f2ad143d1ef34dd03226d99a7a3cfb">&#9670;&nbsp;</a></span>WBDrawArc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDrawArc </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>angle1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>angle2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XDrawArc() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">x</td><td>The origin x of the operation </td></tr>
+    <tr><td class="paramname">y</td><td>The origin y of the operation </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the arc's elipse </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the arc's elipse </td></tr>
+    <tr><td class="paramname">angle1</td><td>The starting angle of the arc </td></tr>
+    <tr><td class="paramname">angle2</td><td>The ending angle of the arc </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws an arc, similar to XDrawArc(), on the specified Drawable, with the specified graphics context indicating foreground and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00345">345</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="ga095948e7ccd6d32a8f963bcb0575caef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga095948e7ccd6d32a8f963bcb0575caef">&#9670;&nbsp;</a></span>WBDrawLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDrawLine </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XDrawLines() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">x1</td><td>The origin 'x' coordinate of the line </td></tr>
+    <tr><td class="paramname">y1</td><td>The origin 'y' coordinate of the line </td></tr>
+    <tr><td class="paramname">x2</td><td>The final 'x' coordinate of the line </td></tr>
+    <tr><td class="paramname">y2</td><td>The final 'y' coordinate of the line </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws a line, similar to XDrawLines(), on the specified Drawable, with the specified graphics context indicating foreground and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00197">197</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="ga39e691c26ec3c7781ee0a9d0596dfdc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga39e691c26ec3c7781ee0a9d0596dfdc4">&#9670;&nbsp;</a></span>WBDrawLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDrawLines </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XPoint *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>npoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XDrawLine() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">points</td><td>A pointer to an array of XPoint structures describing the line vertices </td></tr>
+    <tr><td class="paramname">npoints</td><td>The number of entries in the 'points' array </td></tr>
+    <tr><td class="paramname">mode</td><td>A constant indicating the coordinate mode, either CoordModeOrigin or CoordModePrevious - see XDrawLines(). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws one or more lines, similar to XDrawLines(), on the specified Drawable, with the specified graphics context indicating foreground and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00234">234</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="gaefa867c51c787939f903b0f2e6fc7e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefa867c51c787939f903b0f2e6fc7e9a">&#9670;&nbsp;</a></span>WBDrawPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDrawPoint </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XDrawPoint() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">x</td><td>The origin 'x' coordinate of the line </td></tr>
+    <tr><td class="paramname">y</td><td>The origin 'y' coordinate of the line </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws a point, similar to XDrawPoint(), on the specified Drawable, with the specified graphics context indicating foreground and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00124">124</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="ga8cc8eb91149636a46cc806c7ee0f09a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8cc8eb91149636a46cc806c7ee0f09a3">&#9670;&nbsp;</a></span>WBDrawPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDrawPoints </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XPoint *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>npoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XDrawPoints() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">points</td><td>A pointer to an array of XPoint structures describing the line vertices </td></tr>
+    <tr><td class="paramname">npoints</td><td>The number of entries in the 'points' array </td></tr>
+    <tr><td class="paramname">mode</td><td>A constant indicating the coordinate mode, either CoordModeOrigin or CoordModePrevious - see XDrawLines(). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws one or more points, similar to XDrawPoints(), on the specified Drawable, with the specified graphics context indicating foreground and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00160">160</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="gacb8a15dd4fbea8bf76f9948bce75e67f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb8a15dd4fbea8bf76f9948bce75e67f">&#9670;&nbsp;</a></span>WBDrawRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDrawRectangle </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XDrawRectangle() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">x</td><td>The origin x of the operation </td></tr>
+    <tr><td class="paramname">y</td><td>The origin y of the operation </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the rectangle </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws a rectangle, similar to XDrawRectangle(), on the specified Drawable, with the specified graphics context indicating foreground and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00271">271</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="gad608c8ad950018b729c85fba457f1ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad608c8ad950018b729c85fba457f1ab9">&#9670;&nbsp;</a></span>WBDrawString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBDrawString </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wrapper for XDrawString() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the display to use for rendering the text </td></tr>
+    <tr><td class="paramname">d</td><td>The 'Drawable' object upon which to render the text </td></tr>
+    <tr><td class="paramname">gc</td><td>The graphics context 'WBGC' for rendering the text </td></tr>
+    <tr><td class="paramname">x</td><td>The 'x' coordinate for the text alignment (left) </td></tr>
+    <tr><td class="paramname">y</td><td>The 'y' coordinate for the text alignment (bottom) </td></tr>
+    <tr><td class="paramname">string</td><td>A const pointer to a UTF-8 or multi-byte string </td></tr>
+    <tr><td class="paramname">length</td><td>The BYTE LENGTH of the UTF-8 or mult-byte string (not character length) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>Use this function in lieu of XDrawString() to draw text in a platform-independent manner, using the specified font, upon the specified 'Drawable'. This function is the equivalent of the X11 library's XDrawString(). Internally, it calls <a class="el" href="group__draw__text.html#ga2337471599a741adc9f4ab29d369a6b9" title="Draw text in a platform-independent manner for UTF-8 or multi-byte text. ">DTDrawString()</a>.</p>
+<p>Header File: <a class="el" href="draw__text_8h.html" title="Utilities for copying and drawing text, determining text extents, and so on. ">draw_text.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00458">458</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="ga17543b506ed3949dbb2f06f28536a787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17543b506ed3949dbb2f06f28536a787">&#9670;&nbsp;</a></span>WBEndPaint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +1145,7 @@ This particular function is more suited to updating a specific area outside of a
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>&#160;</td>
         </tr>
         <tr>
@@ -414,15 +1159,262 @@ This particular function is more suited to updating a specific area outside of a
 <p>'Paint' helper, frees resources and marks the update region 'valid' </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>Window ID associated with the Expose event and passed to <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> </td></tr>
-    <tr><td class="paramname">gc</td><td>The GC (graphics context) returned by <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a></td></tr>
+    <tr><td class="paramname">wID</td><td>Window ID associated with the Expose event and passed to <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> </td></tr>
+    <tr><td class="paramname">gc</td><td>The WBGC (graphics context) returned by <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a></td></tr>
   </table>
   </dd>
 </dl>
-<p>Call this function, following a call to <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a>, once the invalid area of the window has been properly rendered. It will free resources and mark the invalid (update) region as 'valid'</p>
+<p>Call this function, following a call to <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a>, once the invalid area of the window has been properly rendered. It will free resources and mark the invalid (update) region as 'valid'.</p>
+<p>Additionally, if a cached XImage is being used for this window, the display will be updated using the cached image during the call to this function.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga905d89854ba078da62ea2484dabee4b3" title="Assign an XImage for the entire window. ">WBAssignWindowImage()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07888">7888</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="gaec7bfa7cbc97cbc70beb86f38f0247fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec7bfa7cbc97cbc70beb86f38f0247fc">&#9670;&nbsp;</a></span>WBFillArc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBFillArc </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>angle1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>angle2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XFillArc() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">x</td><td>The origin x of the operation </td></tr>
+    <tr><td class="paramname">y</td><td>The origin y of the operation </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the arc's elipse </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the arc's elipse </td></tr>
+    <tr><td class="paramname">angle1</td><td>The starting angle of the arc </td></tr>
+    <tr><td class="paramname">angle2</td><td>The ending angle of the arc </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws a filled arc, similar to XFillArc(), on the specified Drawable, with the specified graphics context indicating foreground, fill, and background colors.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07727">7727</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00383">383</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="ga7b59f9354fa20253c30f6928e367f75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b59f9354fa20253c30f6928e367f75f">&#9670;&nbsp;</a></span>WBFillPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBFillPolygon </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XPoint *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>npoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XFillPolygon() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">points</td><td>A pointer to an array of XPoint structures describing the polygon line vertices </td></tr>
+    <tr><td class="paramname">npoints</td><td>The number of entries in the 'points' array </td></tr>
+    <tr><td class="paramname">shape</td><td>A constant indicating the general shape, either Convex, Nonconvex, or Complex - see XFillPolygon() </td></tr>
+    <tr><td class="paramname">mode</td><td>A constant indicating the coordinate mode, either CoordModeOrigin or CoordModePrevious - see XFillPolygon(). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws a filled polygon, similar to XFillPolygon(), on the specified Drawable, with the specified graphics context indicating foreground, fill, and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00421">421</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
+
+</div>
+</div>
+<a id="ga13c28a295a7dce2c9062d7006a40fced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13c28a295a7dce2c9062d7006a40fced">&#9670;&nbsp;</a></span>WBFillRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBFillRectangle </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XFillRectangle() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">d</td><td>The Drawable (or window) I'm painting. If a window, this may use the XImage cache </td></tr>
+    <tr><td class="paramname">gc</td><td>The Graphics context of the operation </td></tr>
+    <tr><td class="paramname">x</td><td>The origin x of the operation </td></tr>
+    <tr><td class="paramname">y</td><td>The origin y of the operation </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the rectangle </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure</dd></dl>
+<p>This function draws a filled rectangle, similar to XFillRectangle(), on the specified Drawable, with the specified graphics context indicating foreground, fill, and background colors.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="graphical__api_8c_source.html#l00308">308</a> of file <a class="el" href="graphical__api_8c_source.html">graphical_api.c</a>.</p>
 
 </div>
 </div>
@@ -453,7 +1445,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>This function converts a WB_GEOM structure to a Region. The caller must destroy the returned value using XDestroyRegion()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07447">7447</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07589">7589</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -484,7 +1476,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>This function returns a copy of the current invalid region for the window, or None if the window is up-to-date. The caller must destroy the returned value using XDestroyRegion()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07352">7352</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07468">7468</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -513,10 +1505,55 @@ This particular function is more suited to updating a specific area outside of a
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Copy of 'paint region' for this window, or None. not valid outside of BeginPaint() / EndPaint()</dd></dl>
 <p>This function returns a copy of the current paint region for the window, or None if the window is up-to-date. The caller must destroy the returned value using XDestroyRegion()<br />
-This function is not valid outside of <a class="el" href="group__expose.html#gaf12acdde095ac1a025ab91863140ba1f" title="&#39;Paint&#39; helper, creates a GC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> / <a class="el" href="group__expose.html#gadbc5e143b5ad59425ea04752ce982d1e" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> processing, typically part of an 'Expose' event handler.</p>
+This function is not valid outside of <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> / <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> processing, typically part of an 'Expose' event handler.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07377">7377</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07497">7497</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga15084850c897dcc8d51ea4805ebda435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15084850c897dcc8d51ea4805ebda435">&#9670;&nbsp;</a></span>WBGetWindowImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XImage* WBGetWindowImage </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain an XImage for the entire window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">wID</td><td>The window that receives the <a class="el" href="group__timer.html#gae8da097fed5abc873cc7e96af53edd37">aWB_TIMER</a> XClientEvent (None == application) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to an XImage, or NULL on error</dd></dl>
+<p>Returns the cached XImage for the window. If none exists, one will be created and stored within the internal stuctures for the window. Actual changes to the image will not be reflected on the display until you call <a class="el" href="group__expose.html#ga22596577cfdf1bd74333d345e51e0030" title="Update the window&#39;s appearance with the contents of the cached XImage. ">WBUpdateWindowWithImage()</a>.</p>
+<p>NOTE: You should not destroy nor cache the XImage pointer returned by this function. It is owned by the window's internal structures.</p>
+<p>Whenever graphics operations make use of the cached image, an implicit call to <a class="el" href="group__expose.html#ga22596577cfdf1bd74333d345e51e0030" title="Update the window&#39;s appearance with the contents of the cached XImage. ">WBUpdateWindowWithImage()</a> will be made within the call to <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07967">7967</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -565,7 +1602,7 @@ This function is not valid outside of <a class="el" href="group__expose.html#gaf
 For a zero 'bPaintFlag' the next Expose event will include this geometry as part of its update region.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07161">7161</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07257">7257</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -622,7 +1659,7 @@ For a zero 'bPaintFlag' the next Expose event will include this geometry as part
 For a zero 'bPaintFlag' the next Expose event will include this geometry as part of its update region.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02558">2558</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02717">2717</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +1708,7 @@ For a zero 'bPaintFlag' the next Expose event will include this geometry as part
 For a zero 'bPaintFlag' the next Expose event will include this region as part of its update region.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07226">7226</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07324">7324</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -713,7 +1750,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>This function only works for windows that have been registered with a callback function. It checks the internal flags to see if the window has been mapped, and if it has, it returns a non-zero value. It can be helpful to avoid unnecessary signals from the X11 API.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05356">5356</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05472">5472</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -755,7 +1792,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Use this function when 'raising' a window, rather than XMapRaised so that the internal state flags and other information can be updated</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05288">5288</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05404">5404</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -797,7 +1834,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Use this function when making a window visible, rather than XMapWindow so that the internal state flags and other information can be updated.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05244">5244</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05360">5360</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -828,7 +1865,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>This function converts a WB_RECT structure to a Region. The caller must destroy the returned value using XDestroyRegion()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07418">7418</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07556">7556</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -870,7 +1907,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Use this function when making a window invisible, rather than XUnmapWindow so that the internal state flags and other information can be updated</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05331">5331</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05447">5447</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -894,7 +1931,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Whenever the 'invalid' region is non-empty, you can generate an asynchronous Expose event using this function. This allows you to invalidate several geometries or regions during normal processing, with the paint flag set to 'false', and then generate a single Expose event after all of the processing has completed.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07058">7058</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07148">7148</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -919,7 +1956,50 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 You should make sure that the Expose handler does not cause recursion, since it will be called directly by this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07114">7114</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07206">7206</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga22596577cfdf1bd74333d345e51e0030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22596577cfdf1bd74333d345e51e0030">&#9670;&nbsp;</a></span>WBUpdateWindowWithImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBUpdateWindowWithImage </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the window's appearance with the contents of the cached XImage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">wID</td><td>The window that receives the <a class="el" href="group__timer.html#gae8da097fed5abc873cc7e96af53edd37">aWB_TIMER</a> XClientEvent (None == application)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Calling this function will update the window's display area with the contents of the cached image. If there is no cached image, this function will have no effect.</p>
+<p>Whenever graphics operations make use of the cached image, an implicit call to <a class="el" href="group__expose.html#ga22596577cfdf1bd74333d345e51e0030" title="Update the window&#39;s appearance with the contents of the cached XImage. ">WBUpdateWindowWithImage()</a> will be made within the call to <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08054">8054</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -960,7 +2040,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <p>In conjunction with WBProcessExposeEvent it removes a geometry from the 'invalid' region associated with the window. If the resulting 'invalid' region is empty, no subsequent 'Expose' event will be generated, even if one had previously been in the queue, until the next Expose event or 'invalid' region exists for this window.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07253">7253</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07355">7355</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +2089,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <p>In conjunction with WBProcessExposeEvent it removes a rectangle from the 'invalid' region associated with the window. If the resulting 'invalid' region is empty, no subsequent 'Expose' event will be generated, even if one had previously been in the queue, until the next Expose event or 'invalid' region exists for this window.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02590">2590</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02749">2749</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +2130,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <p>In conjunction with WBProcessExposeEvent it removes a region from the 'invalid' region associated with the window. If the resulting 'invalid' region is empty, no subsequent 'Expose' event will be generated, even if one had previously been in the queue, until the next Expose event or 'invalid' region exists for this window.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07311">7311</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07421">7421</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +2139,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 12 2018 11:51:47 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -37,7 +37,7 @@ var child__frame_8h =
     [ "FWChildFrameStatusChanged", "group__child__frame.html#ga599d5935965bdabbbd018689833b9023", null ],
     [ "FWDestroyChildFrame", "group__child__frame.html#ga7d37643bb26a2d032bff749520408f2d", null ],
     [ "FWGetChildFrameStruct", "group__child__frame.html#gac338984e00e8c9a717f935d6fa22b73c", null ],
-    [ "FWInitChildFrame", "group__child__frame.html#ga0c89d4c74dab48b0a7628d8bd03c4b08", null ],
+    [ "FWInitChildFrame", "group__child__frame.html#gad4022a43c3f22a93999562e03404aaf1", null ],
     [ "FWSetChildFrameContextMenuID", "group__child__frame.html#gaf5a2e6b43c177def4ffd45b3c9a3ad05", null ],
     [ "FWSetChildFrameDisplayName", "group__child__frame.html#ga393f410588656125823b9f159fa43f2c", null ],
     [ "FWSetChildFrameExtent", "group__child__frame.html#ga6120d2aa568176b2006560aeaea1678d", null ],

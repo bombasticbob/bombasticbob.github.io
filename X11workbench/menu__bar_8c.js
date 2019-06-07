@@ -10,7 +10,7 @@ var menu__bar_8c =
     [ "MBCreateMenuBarWindow", "group__menu__bar.html#ga30dc16d5a7b5a0dbe33b408d80b7387c", null ],
     [ "MBDestroyMenuBarWindow", "group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4", null ],
     [ "MBFindMenuBarWindow", "group__menu__bar.html#gae9ce9b1b7ecfd7ca8a358e50006dd055", null ],
-    [ "MBGetDefaultMenuFont", "group__menu__bar.html#ga920550fa16c99f21ccc445b64fbf9ee9", null ],
+    [ "MBGetDefaultMenuFont", "group__menu__bar.html#ga969fe3b854fb3d97f91889ec91cb8a61", null ],
     [ "MBInitGlobal", "group__menu__bar.html#ga9fb073faa3c0e7053b27a35991512df0", null ],
     [ "MBMenuHandleMenuItem", "menu__bar_8c.html#a055ddd49ef21cec1f8f2009d763542f6", null ],
     [ "MBMenuParentEvent", "menu__bar_8c.html#adae68bdab62bb6ebac6d467d70555e30", null ],
@@ -31,5 +31,5 @@ var menu__bar_8c =
     [ "clrMenuDisabledFG", "menu__bar_8c.html#aa45d71136efdf8a752e58ce9fa7a6e64", null ],
     [ "clrMenuFG", "group__menu__bar.html#ga90382967048a5ac08616bf7f33792adf", null ],
     [ "iInitColorFlag", "menu__bar_8c.html#a1a11c961eb8bca06493ff34845ff295d", null ],
-    [ "pDefaultMenuFont", "menu__bar_8c.html#aa1014362318ab178dd459542ebaae0c7", null ]
+    [ "pDefaultMenuFont", "menu__bar_8c.html#acd87d12cb8e10029181c7bbab5e8f768", null ]
 ];

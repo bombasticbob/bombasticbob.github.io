@@ -300,8 +300,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_scr
 <tr class="memitem:acd8baa67a7bd3a771197a477fc44c7f8"><td class="memItemLeft" align="right" valign="top"><a id="acd8baa67a7bd3a771197a477fc44c7f8"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_scroll_horizontal</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int nCols)</td></tr>
 <tr class="separator:acd8baa67a7bd3a771197a477fc44c7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ac2446496657e94c78ef8e808bcc3d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text__object_8c.html#a83ac2446496657e94c78ef8e808bcc3d">__internal_do_expose</a> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, Display *pDisplay, Window wID, GC gc, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pPaintGeom, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pViewGeom, XFontSet rFontSet)</td></tr>
-<tr class="separator:a83ac2446496657e94c78ef8e808bcc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2f165b40bca8018b6566f63c0e8a98"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text__object_8c.html#add2f165b40bca8018b6566f63c0e8a98">__internal_do_expose</a> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, Display *pDisplay, Window wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pPaintGeom, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pViewGeom, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="separator:add2f165b40bca8018b6566f63c0e8a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d9ef8a4262f86c9042296363edccd3"><td class="memItemLeft" align="right" valign="top"><a id="a85d9ef8a4262f86c9042296363edccd3"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_cursor_blink</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int bHasFocus)</td></tr>
 <tr class="separator:a85d9ef8a4262f86c9042296363edccd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,9 +368,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_cal
 <tr class="memitem:a057fe0929f651dcf769ff99a8cd0585b"><td class="memItemLeft" align="right" valign="top"><a id="a057fe0929f651dcf769ff99a8cd0585b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_merge_rect</b> (const struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect, int iStartRow, int iStartCol, int iEndRow, int iEndCol)</td></tr>
 <tr class="separator:a057fe0929f651dcf769ff99a8cd0585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e05d48f9da0133dd1c370f34bd47805"><td class="memItemLeft" align="right" valign="top"><a id="a0e05d48f9da0133dd1c370f34bd47805"></a>
-static XFontSet&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((noinline))</td></tr>
-<tr class="separator:a0e05d48f9da0133dd1c370f34bd47805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59067f8eb1df3d2a6a69990639ae6d17"><td class="memItemLeft" align="right" valign="top"><a id="a59067f8eb1df3d2a6a69990639ae6d17"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>internal_IsMBCharValid</b> (const char *pChar, int *piLen)</td></tr>
 <tr class="separator:a59067f8eb1df3d2a6a69990639ae6d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,9 +442,9 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="code" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, <span class="keyword">sizeof</span>(Y)) &lt;= 0) \</div><div class="line">    { <a class="code" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(<span class="stringliteral">&quot;%s - WARNING:  can&#39;t find color %s, using default value %s\n&quot;</span>, \</div><div class="line">                    __FUNCTION__, X, Z); strcpy(Y,Z); }</div><div class="ttc" id="group__defaults_html_gac57c3a0127f4b7f69684ebee98e1e203"><div class="ttname"><a href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a></div><div class="ttdeci">static __inline__ Display * WBGetDefaultDisplay(void)</div><div class="ttdoc">Returns the default Display. </div><div class="ttdef"><b>Definition:</b> <a href="window__helper_8h_source.html#l00581">window_helper.h:581</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="code" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, <span class="keyword">sizeof</span>(Y)) &lt;= 0) \</div><div class="line">    { <a class="code" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(<span class="stringliteral">&quot;%s - WARNING:  can&#39;t find color %s, using default value %s\n&quot;</span>, \</div><div class="line">                    __FUNCTION__, X, Z); strcpy(Y,Z); }</div><div class="ttc" id="group__defaults_html_gac57c3a0127f4b7f69684ebee98e1e203"><div class="ttname"><a href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a></div><div class="ttdeci">static __inline__ Display * WBGetDefaultDisplay(void)</div><div class="ttdoc">Returns the default Display. </div><div class="ttdef"><b>Definition:</b> <a href="window__helper_8h_source.html#l00752">window_helper.h:752</a></div></div>
 <div class="ttc" id="group__desktop__settings_html_gad6b8e3e44a9c6f68d3501def49b2b1df"><div class="ttname"><a href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a></div><div class="ttdeci">int CHGetResourceString(Display *pDisplay, const char *szIdentifier, char *szData, int cbData)</div><div class="ttdoc">Queries desktop resource strings (may become deprecated) </div><div class="ttdef"><b>Definition:</b> <a href="conf__help_8c_source.html#l00474">conf_help.c:474</a></div></div>
-<div class="ttc" id="group__debug_html_ga7733e6c6e9386c713bbe06010f3b6b47"><div class="ttname"><a href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a></div><div class="ttdeci">#define WB_WARN_PRINT(...)</div><div class="ttdoc">Preferred method of implementing a &amp;#39;warning level&amp;#39; debug message for all subsystems. </div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00349">debug_helper.h:349</a></div></div>
+<div class="ttc" id="group__debug_html_ga7733e6c6e9386c713bbe06010f3b6b47"><div class="ttname"><a href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a></div><div class="ttdeci">#define WB_WARN_PRINT(...)</div><div class="ttdoc">Preferred method of implementing a &amp;#39;warning level&amp;#39; debug message for all subsystems. </div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00440">debug_helper.h:440</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -472,8 +469,8 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a83ac2446496657e94c78ef8e808bcc3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83ac2446496657e94c78ef8e808bcc3d">&#9670;&nbsp;</a></span>__internal_do_expose()</h2>
+<a id="add2f165b40bca8018b6566f63c0e8a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2f165b40bca8018b6566f63c0e8a98">&#9670;&nbsp;</a></span>__internal_do_expose()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -502,7 +499,7 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GC&#160;</td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
           <td class="paramname"><em>gc</em>, </td>
         </tr>
         <tr>
@@ -520,8 +517,8 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>rFontSet</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -537,7 +534,7 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
 </div><div class="memdoc">
 <p>memcmp(&amp;pThis-&gt;clrHFG, &amp;pThis-&gt;clrHBG, sizeof(XColor))) </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05125">5125</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05129">5129</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -547,7 +544,7 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="text__object_8c.html">text_object.c</a></li>
-    <li class="footer">Generated on Mon Feb 12 2018 11:51:47 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:33 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

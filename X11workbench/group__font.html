@@ -60,6 +60,9 @@ $(document).ready(function(){initNavTree('group__font.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#groups">Modules</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -67,6 +70,28 @@ $(document).ready(function(){initNavTree('group__font.html','');});
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:group__font__legacy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font__legacy.html">Legacy Font Utilities</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWBFont.html">WBFont</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified font.  <a href="structWBFont.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWBFontInfo.html">WBFontInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga7515205c18796647b17e6838ace63582"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWBFont.html">WBFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a></td></tr>
+<tr class="memdesc:ga7515205c18796647b17e6838ace63582"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified font.  <a href="#ga7515205c18796647b17e6838ace63582">More...</a><br /></td></tr>
+<tr class="separator:ga7515205c18796647b17e6838ace63582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96f0a973d3692fed94b208aa520d45f8"><td class="memItemLeft" align="right" valign="top">typedef const struct <a class="el" href="structWBFont.html">WBFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a></td></tr>
+<tr class="memdesc:ga96f0a973d3692fed94b208aa520d45f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">a 'const' version of WB_FONT - note that this CAN actually be written to, so it's not truly 'const'.  <a href="#ga96f0a973d3692fed94b208aa520d45f8">More...</a><br /></td></tr>
+<tr class="separator:ga96f0a973d3692fed94b208aa520d45f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga8f49d87ff2fe8588132f90e0f257f6ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga8f49d87ff2fe8588132f90e0f257f6ff">WBFontFlags</a> { <br />
@@ -146,51 +171,46 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga736827e64c95112cea24d236b2d7785d"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga736827e64c95112cea24d236b2d7785d">WBCopyFont</a> (XFontStruct *pFont)</td></tr>
-<tr class="memdesc:ga736827e64c95112cea24d236b2d7785d"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a copy of an existing font (best when assigning to a window)  <a href="#ga736827e64c95112cea24d236b2d7785d">More...</a><br /></td></tr>
-<tr class="separator:ga736827e64c95112cea24d236b2d7785d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7562debef3c6912b163e22d0d931dbe"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gad7562debef3c6912b163e22d0d931dbe">WBLoadFont</a> (Display *pDisplay, const char *szFontName, int iFontSize, int iFlags)</td></tr>
-<tr class="memdesc:gad7562debef3c6912b163e22d0d931dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">load a font based on a font name, size, and font flags  <a href="#gad7562debef3c6912b163e22d0d931dbe">More...</a><br /></td></tr>
-<tr class="separator:gad7562debef3c6912b163e22d0d931dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26240a73b1a75e2e5eb0ea37bf7e3748"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748">WBLoadModifyFont</a> (Display *pDisplay, const XFontStruct *pOriginal, int iFontSize, int iFlags)</td></tr>
-<tr class="memdesc:ga26240a73b1a75e2e5eb0ea37bf7e3748"><td class="mdescLeft">&#160;</td><td class="mdescRight">load and modify a font according to the specified size and flags  <a href="#ga26240a73b1a75e2e5eb0ea37bf7e3748">More...</a><br /></td></tr>
-<tr class="separator:ga26240a73b1a75e2e5eb0ea37bf7e3748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24a334e3be360f53e37de85c28227bbe"><td class="memItemLeft" align="right" valign="top">XFontSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga24a334e3be360f53e37de85c28227bbe">WBCopyModifyFontSet</a> (Display *pDisplay, XFontSet fsOrig, int iFontSize, int iFlags)</td></tr>
-<tr class="memdesc:ga24a334e3be360f53e37de85c28227bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy and modify a font set according to the specified size and flags  <a href="#ga24a334e3be360f53e37de85c28227bbe">More...</a><br /></td></tr>
-<tr class="separator:ga24a334e3be360f53e37de85c28227bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf129efae522b6800670aed6758cb92cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gaf129efae522b6800670aed6758cb92cc">WBFontAvgCharWidth</a> (Display *pDisplay, const XFontStruct *pFont)</td></tr>
-<tr class="memdesc:gaf129efae522b6800670aed6758cb92cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the average character width for a font.  <a href="#gaf129efae522b6800670aed6758cb92cc">More...</a><br /></td></tr>
-<tr class="separator:gaf129efae522b6800670aed6758cb92cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d9ea6fa1202b63da4a3f990cafdad63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga7d9ea6fa1202b63da4a3f990cafdad63">WBFontSetDescent</a> (Display *pDisplay, XFontSet fontSet)</td></tr>
-<tr class="memdesc:ga7d9ea6fa1202b63da4a3f990cafdad63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum character descent from a font set.  <a href="#ga7d9ea6fa1202b63da4a3f990cafdad63">More...</a><br /></td></tr>
-<tr class="separator:ga7d9ea6fa1202b63da4a3f990cafdad63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab78afe3ee90a2aad3e508ae30495c5bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gab78afe3ee90a2aad3e508ae30495c5bd">WBFontSetAscent</a> (Display *pDisplay, XFontSet fontSet)</td></tr>
-<tr class="memdesc:gab78afe3ee90a2aad3e508ae30495c5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum character ascent from a font set.  <a href="#gab78afe3ee90a2aad3e508ae30495c5bd">More...</a><br /></td></tr>
-<tr class="separator:gab78afe3ee90a2aad3e508ae30495c5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14f15cfcbaadf932f50f95ae49cc062a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga14f15cfcbaadf932f50f95ae49cc062a">WBFontSetHeight</a> (Display *pDisplay, XFontSet fontSet)</td></tr>
-<tr class="memdesc:ga14f15cfcbaadf932f50f95ae49cc062a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum character height from a font set.  <a href="#ga14f15cfcbaadf932f50f95ae49cc062a">More...</a><br /></td></tr>
-<tr class="separator:ga14f15cfcbaadf932f50f95ae49cc062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb0cc857d49e6b9f08527edaef773a46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gaeb0cc857d49e6b9f08527edaef773a46">WBFontSetAvgCharWidth</a> (Display *pDisplay, XFontSet fontSet)</td></tr>
-<tr class="memdesc:gaeb0cc857d49e6b9f08527edaef773a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the average character width for a font set.  <a href="#gaeb0cc857d49e6b9f08527edaef773a46">More...</a><br /></td></tr>
-<tr class="separator:gaeb0cc857d49e6b9f08527edaef773a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa062b9a5a133a7e5262476ba69177558"><td class="memItemLeft" align="right" valign="top">XCharStruct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gaa062b9a5a133a7e5262476ba69177558">WBFontSetMaxBounds</a> (Display *pDisplay, XFontSet fontSet)</td></tr>
-<tr class="memdesc:gaa062b9a5a133a7e5262476ba69177558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 'maximized' copy of the 'max_bounds' member for the font set.  <a href="#gaa062b9a5a133a7e5262476ba69177558">More...</a><br /></td></tr>
-<tr class="separator:gaa062b9a5a133a7e5262476ba69177558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79162ae03e23d84e9325fb655286a282"><td class="memItemLeft" align="right" valign="top">XFontSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga79162ae03e23d84e9325fb655286a282">WBFontSetFromFont</a> (Display *pDisplay, const XFontStruct *pFont)</td></tr>
-<tr class="memdesc:ga79162ae03e23d84e9325fb655286a282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an 'XFontSet' from an XFontStruct for a given display.  <a href="#ga79162ae03e23d84e9325fb655286a282">More...</a><br /></td></tr>
-<tr class="separator:ga79162ae03e23d84e9325fb655286a282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f665c724f1614d10b0893a5c83a4113"><td class="memItemLeft" align="right" valign="top">XFontStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga1f665c724f1614d10b0893a5c83a4113">WBFontFromFontSet</a> (Display *pDisplay, XFontSet fontSet)</td></tr>
-<tr class="memdesc:ga1f665c724f1614d10b0893a5c83a4113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an 'XFontStruct' from the first font assigned to a Font Set.  <a href="#ga1f665c724f1614d10b0893a5c83a4113">More...</a><br /></td></tr>
-<tr class="separator:ga1f665c724f1614d10b0893a5c83a4113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e43a2148b4a99411b70ec6e838eb48e"><td class="memItemLeft" align="right" valign="top">XFontSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga5e43a2148b4a99411b70ec6e838eb48e">WBFontSetFromFontSingle</a> (Display *pDisplay, const XFontStruct *pFont)</td></tr>
-<tr class="memdesc:ga5e43a2148b4a99411b70ec6e838eb48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an 'XFontSet' from an XFontStruct for a given display, with only a single font in the set.  <a href="#ga5e43a2148b4a99411b70ec6e838eb48e">More...</a><br /></td></tr>
-<tr class="separator:ga5e43a2148b4a99411b70ec6e838eb48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4446640beb73e3c0b9c2600394defa27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga4446640beb73e3c0b9c2600394defa27">WBTextWidth</a> (XFontSet fontSet, const char *szText, int cbText)</td></tr>
-<tr class="memdesc:ga4446640beb73e3c0b9c2600394defa27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the pixel width of specified text for a specified XFontSet.  <a href="#ga4446640beb73e3c0b9c2600394defa27">More...</a><br /></td></tr>
-<tr class="separator:ga4446640beb73e3c0b9c2600394defa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1853b5beb1facb182ca60b56ef73089b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga1853b5beb1facb182ca60b56ef73089b">WBTextExtent</a> (XFontSet fontSet, const char *szText, int cbText, <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">WB_EXTENT</a> *pExtent)</td></tr>
-<tr class="memdesc:ga1853b5beb1facb182ca60b56ef73089b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the pixel extent of specified text for a specified XFontSet.  <a href="#ga1853b5beb1facb182ca60b56ef73089b">More...</a><br /></td></tr>
-<tr class="separator:ga1853b5beb1facb182ca60b56ef73089b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaefea0f904c93eb6ee373e2793aeebf"><td class="memItemLeft" align="right" valign="top"><a id="gafaefea0f904c93eb6ee373e2793aeebf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gafaefea0f904c93eb6ee373e2793aeebf">__internal_font_helper_init</a> (void)</td></tr>
+<tr class="memdesc:gafaefea0f904c93eb6ee373e2793aeebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialization for font helper - call once at start of program (<a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required) ">WBInit()</a> does this for you) <br /></td></tr>
+<tr class="separator:gafaefea0f904c93eb6ee373e2793aeebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a23be1452193c40176ebf497420ca53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga0a23be1452193c40176ebf497420ca53">WBFontEnableAntiAlias</a> (void)</td></tr>
+<tr class="memdesc:ga0a23be1452193c40176ebf497420ca53"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if certain fonts should be anti-aliased when rendered  <a href="#ga0a23be1452193c40176ebf497420ca53">More...</a><br /></td></tr>
+<tr class="separator:ga0a23be1452193c40176ebf497420ca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9eed7b9083863d52c4ff348fc170d124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124">WBFreeFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> pFont)</td></tr>
+<tr class="memdesc:ga9eed7b9083863d52c4ff348fc170d124"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a copy of an existing font (best when assigning to a window)  <a href="#ga9eed7b9083863d52c4ff348fc170d124">More...</a><br /></td></tr>
+<tr class="separator:ga9eed7b9083863d52c4ff348fc170d124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga59dc240b3bdd8c7a1c81d96b524a9e3c">WBCopyFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="memdesc:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a copy of an existing font (best when assigning to a window)  <a href="#ga59dc240b3bdd8c7a1c81d96b524a9e3c">More...</a><br /></td></tr>
+<tr class="separator:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04f6ba317b2fc72cf486ae3523e3a631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga04f6ba317b2fc72cf486ae3523e3a631">WBCopyModifyFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pOriginal, int iFontSize, int iFlags)</td></tr>
+<tr class="memdesc:ga04f6ba317b2fc72cf486ae3523e3a631"><td class="mdescLeft">&#160;</td><td class="mdescRight">load and modify a font according to the specified size and flags  <a href="#ga04f6ba317b2fc72cf486ae3523e3a631">More...</a><br /></td></tr>
+<tr class="separator:ga04f6ba317b2fc72cf486ae3523e3a631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad44bdb5b5cdc6ec62b652839434ca420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gad44bdb5b5cdc6ec62b652839434ca420">WBLoadFont</a> (Display *pDisplay, const char *szFontName, int iFontSize, int iFlags)</td></tr>
+<tr class="memdesc:gad44bdb5b5cdc6ec62b652839434ca420"><td class="mdescLeft">&#160;</td><td class="mdescRight">load a WB_FONT font object based on a font name, size, and font flags  <a href="#gad44bdb5b5cdc6ec62b652839434ca420">More...</a><br /></td></tr>
+<tr class="separator:gad44bdb5b5cdc6ec62b652839434ca420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d70f52908b8568c60701282bf86d842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga8d70f52908b8568c60701282bf86d842">WBFontAvgCharWidth</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="memdesc:ga8d70f52908b8568c60701282bf86d842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the average character width for a font.  <a href="#ga8d70f52908b8568c60701282bf86d842">More...</a><br /></td></tr>
+<tr class="separator:ga8d70f52908b8568c60701282bf86d842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94228c2025c97d062037191628ea8a7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga94228c2025c97d062037191628ea8a7f">WBFontDescent</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="memdesc:ga94228c2025c97d062037191628ea8a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum character descent from a WB_FONT.  <a href="#ga94228c2025c97d062037191628ea8a7f">More...</a><br /></td></tr>
+<tr class="separator:ga94228c2025c97d062037191628ea8a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ea1c2d9295da15fec04009a14feb9ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga8ea1c2d9295da15fec04009a14feb9ef">WBFontAscent</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="memdesc:ga8ea1c2d9295da15fec04009a14feb9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum character ascent from a WB_FONT.  <a href="#ga8ea1c2d9295da15fec04009a14feb9ef">More...</a><br /></td></tr>
+<tr class="separator:ga8ea1c2d9295da15fec04009a14feb9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4eb4ac386252de8b56d11a222e7b11a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gac4eb4ac386252de8b56d11a222e7b11a">WBFontHeight</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="memdesc:gac4eb4ac386252de8b56d11a222e7b11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum character height from a WB_FONT.  <a href="#gac4eb4ac386252de8b56d11a222e7b11a">More...</a><br /></td></tr>
+<tr class="separator:gac4eb4ac386252de8b56d11a222e7b11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dd694a255557dcaa766ed431fab34a8"><td class="memItemLeft" align="right" valign="top">XCharStruct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga2dd694a255557dcaa766ed431fab34a8">WBFontMaxBounds</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="memdesc:ga2dd694a255557dcaa766ed431fab34a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 'maximized' copy of 'max_bounds' (applicable to all font faces in the WB_FONT)  <a href="#ga2dd694a255557dcaa766ed431fab34a8">More...</a><br /></td></tr>
+<tr class="separator:ga2dd694a255557dcaa766ed431fab34a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga180c3e86d25be29a4a5c91b821213564"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga180c3e86d25be29a4a5c91b821213564">WBTextWidth</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szText, int cbText)</td></tr>
+<tr class="memdesc:ga180c3e86d25be29a4a5c91b821213564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the pixel width of specified text for a specified WB_FONT.  <a href="#ga180c3e86d25be29a4a5c91b821213564">More...</a><br /></td></tr>
+<tr class="separator:ga180c3e86d25be29a4a5c91b821213564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c6e771d71004b8566a90eb520d83b20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga2c6e771d71004b8566a90eb520d83b20">WBTextExtent</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, const char *szText, int cbText, <a class="el" href="group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b">WB_EXTENT</a> *pExtent)</td></tr>
+<tr class="memdesc:ga2c6e771d71004b8566a90eb520d83b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the pixel extent of specified text for a specified XFontSet.  <a href="#ga2c6e771d71004b8566a90eb520d83b20">More...</a><br /></td></tr>
+<tr class="separator:ga2c6e771d71004b8566a90eb520d83b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae41279cef060c5a4cd578eef2d1be205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gae41279cef060c5a4cd578eef2d1be205">WB_TEXT_EXTENTS</a>&#160;&#160;&#160;Xutf8TextExtents</td></tr>
 <tr class="separator:gae41279cef060c5a4cd578eef2d1be205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0e51c6603b3f8ea32ad7b4e94e548c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gac0e51c6603b3f8ea32ad7b4e94e548c5">WB_TEXT_ESCAPEMENT</a>&#160;&#160;&#160;Xutf8TextEscapement</td></tr>
@@ -203,9 +223,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga63cb78a78e65fca43cc76e5a1a1764dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>GC Utility functions for font selection and modification</p>
-<p>This is the definition file for font helper functions and structures, designed to SPECIFICALY work with 'X11 Core' fonts and rendering. Compatibility and support for 'Xft' fonts and rendering is currently 'reserved for future implementation'. Fonts under X11 (core) are generally difficult to deal with. These utility functions allow you to more easily select a font based on an existing font or a general description of a font, with 'fuzzy' matching.<br />
-Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, and Xutf8 versions of 'Core' text rendering APIs. </p>
+<p>GC Utility/API functions for WB_FONT mid-level font selection and modification</p>
+<p>This is the definition file for font helper functions and structures, designed to SPECIFICALY work with 'Xft' freetype fonts and rendering. For maximum compatibility, these are abstracted using the WB_FONT object for legacy implementations that do not have the Xft library installed, and for those fonts that are native X11 fonts or font sets. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gacdb2e0a2ede4994aa57807e3fdb89df3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacdb2e0a2ede4994aa57807e3fdb89df3">&#9670;&nbsp;</a></span>WB_DRAW_STRING</h2>
@@ -220,7 +239,7 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
 </div><div class="memdoc">
 <p>abstraction for Xutf8DrawString or XmbDrawString </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00096">96</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00101">101</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +256,7 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
 </div><div class="memdoc">
 <p>abstraction for Xutf8DrawText or XmbDrawText </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00097">97</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00102">102</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +273,7 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
 </div><div class="memdoc">
 <p>abstraction for Xutf8LookupString or XmbLookupString </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00098">98</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00103">103</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
 </div>
 </div>
@@ -271,7 +290,7 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
 </div><div class="memdoc">
 <p>abstraction for Xutf8TextEscapement or XmbTextEscapement </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00095">95</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00100">100</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +307,45 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
 </div><div class="memdoc">
 <p>abstraction for Xutf8TextExtents or XmbTextExtents </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00094">94</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00099">99</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga7515205c18796647b17e6838ace63582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7515205c18796647b17e6838ace63582">&#9670;&nbsp;</a></span>WB_FONT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified font. </p>
+<p>Internal structure, caching font information (mostly for legacy font support)</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWBFont.html">WBFont</a></div><div class="line">{</div><div class="line">  <span class="keyword">struct </span><a class="code" href="structWBFont.html">WBFont</a> *pShareChain; <span class="comment">// RESERVED - next in a chain of WB_FONTs that share the same &quot;stuff&quot;, NULL if this is a stand-alone copy</span></div><div class="line">  <span class="keyword">struct </span><a class="code" href="structWBFont.html">WBFont</a> *<a class="code" href="structWBFont.html#af0d20e8b2193d62327d27315f66b61e0">pSharePrev</a>;  <span class="comment">// RESERVED - previous in a chain of WB_FONTs that share the same &quot;stuff&quot;, NULL if this is a stand-alone copy</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#abe9ebe5ac67cf4534b1035beea899b76">iAscent</a>;                <span class="comment">// RESERVED - cached font ascent (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#a6b186563b68202ddb369e908dc103d0e">iDescent</a>;               <span class="comment">// RESERVED - cached font descent (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#a2884aa55a9f2544c59a08976071b1d64">iHeight</a>;                <span class="comment">// RESERVED - cached font descent (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#ace6c35721f658a2062a2b65009c2a858">iAvgCharWidth</a>;          <span class="comment">// RESERVED - cached average character width (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#a7732300348563d554a9b165b817bce51">iMaxCharWidth</a>;          <span class="comment">// RESERVED - cached max character width (-1 if not valid).  do not access this directly</span></div><div class="line">  XCharStruct <a class="code" href="structWBFont.html#ad80e1b63e7afb05fc8464fb2b0f4f1d3">max_bounds</a>;     <span class="comment">// RESERVED - cached max bounds (all 0&#39;s if not valid).  do not access this directly</span></div><div class="line">  Display *<a class="code" href="structWBFont.html#a0e5b4ba1b30f7c298b82d7592e78a8e3">pDisplay</a>;          <span class="comment">// The Display pointer associated with this font (to be used internally)</span></div><div class="line">  XftFont *pxftFont;          <span class="comment">// general font info (only valid when Xft library is installed)</span></div><div class="line">  XftFontInfo *pxftFontInfo;  <span class="comment">// used by lib like a handle, assign to &#39;None&#39; when not in use (only valid when Xft library is installed)</span></div><div class="line">  XFontStruct *<a class="code" href="structWBFont.html#aec0bc22c584fc6c65e05ab514f161f5d">pFontStruct</a>;   <span class="comment">// legacy &#39;XFontStruct&#39; for X11 raster fonts</span></div><div class="line">  XFontSet <a class="code" href="structWBFont.html#adf92dff485194330da58ca02fdb62eca">fsFont</a>;            <span class="comment">// legacy &#39;XFontSet&#39; for X11 raster fonts (UTF-8)</span></div><div class="line">} * <a class="code" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>; <span class="comment">// WB_FONT will always point to this struct, allocated using WBAlloc</span></div></div><!-- fragment --><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWBFontInfo.html">WBFontInfo</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">char</span> *szFoundry, *szFamily;</div><div class="line">  <span class="keywordtype">int</span> iWeight, iSlant, iWidth;</div><div class="line">  <span class="keywordtype">char</span> *szAdStyle;</div><div class="line">  <span class="keywordtype">int</span> iPixelSize, iPointSize, iResX, iResY, iSpacing, iAvgWidth;</div><div class="line">  <span class="keywordtype">char</span> *szRegistry, *szEncoding;</div><div class="line">  <span class="keywordtype">char</span> data[8];</div><div class="line">} <a class="code" href="structWBFontInfo.html">WB_FONT_INFO</a>;</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="ga96f0a973d3692fed94b208aa520d45f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96f0a973d3692fed94b208aa520d45f8">&#9670;&nbsp;</a></span>WB_FONTC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a 'const' version of WB_FONT - note that this CAN actually be written to, so it's not truly 'const'. </p>
+<p>In order to implement font objects that are not modified, that is the actual system font they represent does not change, the 'WB_FONTC' type is used. This helps to prevent accidentally modifying the font objects returned as 'WB_FONTC'. In the 'C' language there's no obvious way to implement a 'const' that isn't exactly 'const', when you store the cached query information (and forward/back chain pointers) directly into it 'on the fly'. So don't use read-only memory to store a WB_FONTC . The details will be taken care of on the back-end. This also causes the C compiler to perform some implicit type conversions so that the code works.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582" title="An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified...">WB_FONT</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00185">185</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
 </div>
 </div>
@@ -306,8 +363,8 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
 </div><div class="memdoc">
 
 <p>Font 'flag' enumeration. </p>
-<p>An enumeration of 'Font Flags' used by <a class="el" href="group__font.html#gad7562debef3c6912b163e22d0d931dbe" title="load a font based on a font name, size, and font flags ">WBLoadFont()</a> and <a class="el" href="group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748" title="load and modify a font according to the specified size and flags ">WBLoadModifyFont()</a> to load and/or modify a font according to the desired specifications.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font.html#gad7562debef3c6912b163e22d0d931dbe" title="load a font based on a font name, size, and font flags ">WBLoadFont()</a>, <a class="el" href="group__font.html#ga26240a73b1a75e2e5eb0ea37bf7e3748" title="load and modify a font according to the specified size and flags ">WBLoadModifyFont()</a> </dd></dl>
+<p>An enumeration of 'Font Flags' used by <a class="el" href="group__font.html#gad44bdb5b5cdc6ec62b652839434ca420" title="load a WB_FONT font object based on a font name, size, and font flags ">WBLoadFont()</a> and <a class="el" href="group__font.html#ga04f6ba317b2fc72cf486ae3523e3a631" title="load and modify a font according to the specified size and flags ">WBCopyModifyFont()</a> to load and/or modify a font according to the desired specifications.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font.html#gad44bdb5b5cdc6ec62b652839434ca420" title="load a WB_FONT font object based on a font name, size, and font flags ">WBLoadFont()</a>, WBLoadModifyFont() </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ga8f49d87ff2fe8588132f90e0f257f6ffa36cbb5eb7a08f150506081590e08ec0a"></a>WBFontFlag_PITCH_FIXED&#160;</td><td class="fielddoc"><p>force fixed pitch </p>
 </td></tr>
@@ -421,51 +478,19 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00407">407</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00451">451</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga736827e64c95112cea24d236b2d7785d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga736827e64c95112cea24d236b2d7785d">&#9670;&nbsp;</a></span>WBCopyFont()</h2>
+<a id="ga59dc240b3bdd8c7a1c81d96b524a9e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59dc240b3bdd8c7a1c81d96b524a9e3c">&#9670;&nbsp;</a></span>WBCopyFont()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">XFontStruct* WBCopyFont </td>
-          <td>(</td>
-          <td class="paramtype">XFontStruct *&#160;</td>
-          <td class="paramname"><em>pFont</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>make a copy of an existing font (best when assigning to a window) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pFont</td><td>The original font to be copied </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the original font as an XFontStruct</dd></dl>
-<p>use this function to make a copy of an existing XFontStruct.</p>
-<p>On error this function returns NULL. The caller must free non-NULL return values via XFreeFont()</p>
-<p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00097">97</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga24a334e3be360f53e37de85c28227bbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga24a334e3be360f53e37de85c28227bbe">&#9670;&nbsp;</a></span>WBCopyModifyFontSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XFontSet WBCopyModifyFontSet </td>
+          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBCopyFont </td>
           <td>(</td>
           <td class="paramtype">Display *&#160;</td>
           <td class="paramname"><em>pDisplay</em>, </td>
@@ -473,8 +498,51 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fsOrig</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>make a copy of an existing font (best when assigning to a window) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the display </td></tr>
+    <tr><td class="paramname">pFont</td><td>The original font to be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A copy of the original font as a WB_FONT object (pointer).</dd></dl>
+<p>use this function to make a copy of an existing WB_FONT.</p>
+<p>On error this function returns NULL. The caller must free non-NULL return values via <a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124" title="make a copy of an existing font (best when assigning to a window) ">WBFreeFont()</a></p>
+<p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00111">111</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga04f6ba317b2fc72cf486ae3523e3a631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04f6ba317b2fc72cf486ae3523e3a631">&#9670;&nbsp;</a></span>WBCopyModifyFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBCopyModifyFont </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pOriginal</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -496,28 +564,58 @@ Additionally there is support for creating 'Font Sets' for use with Xmb, Xwc, an
       </table>
 </div><div class="memdoc">
 
-<p>copy and modify a font set according to the specified size and flags </p>
+<p>load and modify a font according to the specified size and flags </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the display </td></tr>
-    <tr><td class="paramname">fsOrig</td><td>The original font set on which to base the new font set </td></tr>
-    <tr><td class="paramname">iFontSize</td><td>The font size (see <a class="el" href="group__font.html#gad7562debef3c6912b163e22d0d931dbe">WBLoadFont()</a> for more details)<br />
+    <tr><td class="paramname">pOriginal</td><td>The original font on which to base the new font </td></tr>
+    <tr><td class="paramname">iFontSize</td><td>The font size (see <a class="el" href="group__font.html#gad44bdb5b5cdc6ec62b652839434ca420">WBLoadFont()</a> for more details)<br />
 For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag specified in 'iFlags' An 'iFontSize' value of ZERO copies the font size from the original font specified in 'pOriginal'. </td></tr>
     <tr><td class="paramname">iFlags</td><td>Various <a class="el" href="group__font.html#ga8f49d87ff2fe8588132f90e0f257f6ff">WBFontFlags</a> that specify font characteristics. The existing font is modified according to these flags. If the font size is zero, flags that modify the font size will be ignored. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An XFontSet for the desired font set, or None on error The returned value (if not None) must be free'd using XFreeFontSet()</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A WB_FONT object (pointer) for the desired font, or NULL on error</dd></dl>
 <p>use this function to select a similar font that differs only by whatever is specified in 'iFontSize' or 'iFlags'. If a matching font is NOT available, a copy of the original font will be returned. Typical use is to 'bold' or 'italicize' an existing font.<br />
- The returned value (if not None) will need to be free'd using XFreeFontSet()</p>
+ On error this function returns NULL. The caller must free non-NULL return values via <a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124" title="make a copy of an existing font (best when assigning to a window) ">WBFreeFont()</a></p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01441">1441</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00544">544</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="gaf129efae522b6800670aed6758cb92cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf129efae522b6800670aed6758cb92cc">&#9670;&nbsp;</a></span>WBFontAvgCharWidth()</h2>
+<a id="ga8ea1c2d9295da15fec04009a14feb9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ea1c2d9295da15fec04009a14feb9ef">&#9670;&nbsp;</a></span>WBFontAscent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBFontAscent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum character ascent from a WB_FONT. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFont</td><td>The WB_FONT to query ( NULL implies the system default WB_FONT) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ascent of a character for this font</dd></dl>
+<p>Use this function to query a WB_FONT about its maximum ascent. </p>
+
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00385">385</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga8d70f52908b8568c60701282bf86d842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d70f52908b8568c60701282bf86d842">&#9670;&nbsp;</a></span>WBFontAvgCharWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -525,19 +623,9 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
         <tr>
           <td class="memname">int WBFontAvgCharWidth </td>
           <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const XFontStruct *&#160;</td>
-          <td class="paramname"><em>pFont</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -545,191 +633,138 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Get the average character width for a font. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct </td></tr>
+    <tr><td class="paramname">pFont</td><td>A pointer to a WB_FONT </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The average width of a character for this font</dd></dl>
-<p>Use this function to query an XFontStruct about its average character width. </p>
+<p>Use this function to query a WB_FONT about its average character width. </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00998">998</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00286">286</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga1f665c724f1614d10b0893a5c83a4113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f665c724f1614d10b0893a5c83a4113">&#9670;&nbsp;</a></span>WBFontFromFontSet()</h2>
+<a id="ga94228c2025c97d062037191628ea8a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94228c2025c97d062037191628ea8a7f">&#9670;&nbsp;</a></span>WBFontDescent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">XFontStruct* WBFontFromFontSet </td>
+          <td class="memname">int WBFontDescent </td>
           <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates an 'XFontStruct' from the first font assigned to a Font Set. </p>
+<p>Get the maximum character descent from a WB_FONT. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">fontSet</td><td>An XFontSet (may not be 'None') </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONT to query ( NULL implies the system default WB_FONT) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An XFontStruct pointer or NULL on error. The caller must free the XFontStruct using XFreeFontStruct() if not NULL.</dd></dl>
-<p>This function helps to The returned value (if not NULL) will need to be free'd using XFreeFont()</p>
-<p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>The descent of a character for this font</dd></dl>
+<p>Use this function to query a WB_FONT about its maximum descent. </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l02027">2027</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00335">335</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="gab78afe3ee90a2aad3e508ae30495c5bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab78afe3ee90a2aad3e508ae30495c5bd">&#9670;&nbsp;</a></span>WBFontSetAscent()</h2>
+<a id="ga0a23be1452193c40176ebf497420ca53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a23be1452193c40176ebf497420ca53">&#9670;&nbsp;</a></span>WBFontEnableAntiAlias()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int WBFontSetAscent </td>
+          <td class="memname">int WBFontEnableAntiAlias </td>
           <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the maximum character ascent from a font set. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The average width of a character for this font</dd></dl>
-<p>Use this function to query an XFontSet about its maximum ascent. This will typically be derived from all of the individual fonts in the font set. </p>
+<p>returns non-zero value if certain fonts should be anti-aliased when rendered </p>
+<dl class="section return"><dt>Returns</dt><dd>A non-zero value if certain fonts should be anti-aliased; zero if they should not be. This only applies to legacy (X11) fonts, and not to Xft 'freetype' fonts. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01136">1136</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00105">105</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="gaeb0cc857d49e6b9f08527edaef773a46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb0cc857d49e6b9f08527edaef773a46">&#9670;&nbsp;</a></span>WBFontSetAvgCharWidth()</h2>
+<a id="gac4eb4ac386252de8b56d11a222e7b11a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4eb4ac386252de8b56d11a222e7b11a">&#9670;&nbsp;</a></span>WBFontHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int WBFontSetAvgCharWidth </td>
+          <td class="memname">int WBFontHeight </td>
           <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the average character width for a font set. </p>
+<p>Get the maximum character height from a WB_FONT. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONT to query ( NULL implies the system default font set) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The average width of a character for this font</dd></dl>
-<p>Use this function to query an XFontSet about its average character width. This will typically be derived from all of the individual fonts in the font set. </p>
+<p>Use this function to query a WB_FONT about its maximum height. </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01227">1227</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00434">434</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga7d9ea6fa1202b63da4a3f990cafdad63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7d9ea6fa1202b63da4a3f990cafdad63">&#9670;&nbsp;</a></span>WBFontSetDescent()</h2>
+<a id="ga2dd694a255557dcaa766ed431fab34a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2dd694a255557dcaa766ed431fab34a8">&#9670;&nbsp;</a></span>WBFontMaxBounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int WBFontSetDescent </td>
+          <td class="memname">XCharStruct WBFontMaxBounds </td>
           <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the maximum character descent from a font set. </p>
+<p>Get a 'maximized' copy of 'max_bounds' (applicable to all font faces in the WB_FONT) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
+    <tr><td class="paramname">pFont</td><td>The WB_FONT to query ( NULL implies the system default WB_FONT) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The average width of a character for this font</dd></dl>
-<p>Use this function to query an XFontSet about its maximum descent. This will typically be derived from all of the individual fonts in the font set. </p>
+<dl class="section return"><dt>Returns</dt><dd>RESERVED: A copy of a 'maximized' XCharStruct where all members are 'maximum' values of the entire WB_FONT</dd></dl>
+<p>Use this function to query a WB_FONT about its maximum bounds. This will typically be derived from all of the individual font faces within the object </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01094">1094</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00478">478</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga79162ae03e23d84e9325fb655286a282"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga79162ae03e23d84e9325fb655286a282">&#9670;&nbsp;</a></span>WBFontSetFromFont()</h2>
+<a id="ga9eed7b9083863d52c4ff348fc170d124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9eed7b9083863d52c4ff348fc170d124">&#9670;&nbsp;</a></span>WBFreeFont()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">XFontSet WBFontSetFromFont </td>
+          <td class="memname">void WBFreeFont </td>
           <td>(</td>
           <td class="paramtype">Display *&#160;</td>
           <td class="paramname"><em>pDisplay</em>, </td>
@@ -737,7 +772,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XFontStruct *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td>
           <td class="paramname"><em>pFont</em>&#160;</td>
         </tr>
         <tr>
@@ -748,157 +783,30 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
       </table>
 </div><div class="memdoc">
 
-<p>Creates an 'XFontSet' from an XFontStruct for a given display. </p>
+<p>make a copy of an existing font (best when assigning to a window) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the display </td></tr>
+    <tr><td class="paramname">pFont</td><td>The original font to be copied </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An XFontSet appropriate to the XFontStruct, or None on error. The returned value (if not None) will need to be free'd using XFreeFontSet()</dd></dl>
-<p>This function helps to support internationalization through use of the 'Xmb' 'Xwc' and 'Xutf8' versions of the X11 'core' text rendering API functions by creating an 'XFontSet' that matches all of the available character sets for a supplied font specification.<br />
-The returned value (if not None) will need to be free'd using XFreeFontSet()</p>
+<dl class="section return"><dt>Returns</dt><dd>A copy of the original font as a WB_FONT.</dd></dl>
+<p>use this function to free up resources associated with an existing WB_FONT, invalidating the pointer.</p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01750">1750</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00193">193</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga5e43a2148b4a99411b70ec6e838eb48e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e43a2148b4a99411b70ec6e838eb48e">&#9670;&nbsp;</a></span>WBFontSetFromFontSingle()</h2>
+<a id="gad44bdb5b5cdc6ec62b652839434ca420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad44bdb5b5cdc6ec62b652839434ca420">&#9670;&nbsp;</a></span>WBLoadFont()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">XFontSet WBFontSetFromFontSingle </td>
-          <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XFontStruct *&#160;</td>
-          <td class="paramname"><em>pFont</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates an 'XFontSet' from an XFontStruct for a given display, with only a single font in the set. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An XFontSet appropriate to the XFontStruct, or NULL on error.The returned value (if not None) will need to be free'd using XFreeFontSet()</dd></dl>
-<p>This function helps to support internationalization through use of the 'Xmb' 'Xwc' and 'Xutf8' versions of the X11 'core' text rendering API functions by creating an 'XFontSet' that matches all of the available character sets for a supplied font specification.<br />
- This function differs from <a class="el" href="group__font.html#ga79162ae03e23d84e9325fb655286a282" title="Creates an &#39;XFontSet&#39; from an XFontStruct for a given display. ">WBFontSetFromFont()</a> in that it only adds a SINGLE font to the font set, without any wildcard substitutions, and with a locale of "C".</p>
-<p>The returned value (if not None) will need to be free'd using XFreeFontSet()</p>
-<p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01925">1925</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga14f15cfcbaadf932f50f95ae49cc062a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14f15cfcbaadf932f50f95ae49cc062a">&#9670;&nbsp;</a></span>WBFontSetHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int WBFontSetHeight </td>
-          <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the maximum character height from a font set. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The average width of a character for this font</dd></dl>
-<p>Use this function to query an XFontSet about its maximum height. This will typically be derived from all of the individual fonts in the font set. </p>
-
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01178">1178</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gaa062b9a5a133a7e5262476ba69177558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa062b9a5a133a7e5262476ba69177558">&#9670;&nbsp;</a></span>WBFontSetMaxBounds()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XCharStruct WBFontSetMaxBounds </td>
-          <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get a 'maximized' copy of the 'max_bounds' member for the font set. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
-    <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of a 'maximized' XCharStruct where all members are 'maximum' values of the entire font set</dd></dl>
-<p>Use this function to query an XFontSet about its maximum bounds. This will typically be derived from all of the individual fonts in the font set. </p>
-
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01287">1287</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gad7562debef3c6912b163e22d0d931dbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad7562debef3c6912b163e22d0d931dbe">&#9670;&nbsp;</a></span>WBLoadFont()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XFontStruct* WBLoadFont </td>
+          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBLoadFont </td>
           <td>(</td>
           <td class="paramtype">Display *&#160;</td>
           <td class="paramname"><em>pDisplay</em>, </td>
@@ -929,7 +837,7 @@ The returned value (if not None) will need to be free'd using XFreeFontSet()</p>
       </table>
 </div><div class="memdoc">
 
-<p>load a font based on a font name, size, and font flags </p>
+<p>load a WB_FONT font object based on a font name, size, and font flags </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>A pointer to the display </td></tr>
@@ -940,78 +848,20 @@ the font size is based on the WBFontFlag_SIZE_xxx flag specified in 'iFlags' </t
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An XFontStruct pointer for the desired font, or NULL on error.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A WB_FONT object (pointer) for the desired font, or NULL on error.</dd></dl>
 <p>font mapping helper - uses size, italic, bold, 'flags' and font name to determine "the best font" based on a simple mapping algorithm.<br />
 negative 'iFontSize' is the average font width<br />
 Positive 'iFontSize' is the height (including ascend/descend)<br />
 A value of '0' is considered to be a 'wildcard' match. Use a positive 'iFontSize' for more precise font measurement.<br />
- On error this function returns NULL. The caller must free non-NULL return values via XFreeFont()</p>
+ On error this function returns NULL. The caller must free non-NULL return values via <a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124" title="make a copy of an existing font (best when assigning to a window) ">WBFreeFont()</a></p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00858">858</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00234">234</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga26240a73b1a75e2e5eb0ea37bf7e3748"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga26240a73b1a75e2e5eb0ea37bf7e3748">&#9670;&nbsp;</a></span>WBLoadModifyFont()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XFontStruct* WBLoadModifyFont </td>
-          <td>(</td>
-          <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>pDisplay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XFontStruct *&#160;</td>
-          <td class="paramname"><em>pOriginal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iFontSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iFlags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>load and modify a font according to the specified size and flags </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the display </td></tr>
-    <tr><td class="paramname">pOriginal</td><td>The original font on which to base the new font </td></tr>
-    <tr><td class="paramname">iFontSize</td><td>The font size (see <a class="el" href="group__font.html#gad7562debef3c6912b163e22d0d931dbe">WBLoadFont()</a> for more details)<br />
-For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag specified in 'iFlags' An 'iFontSize' value of ZERO copies the font size from the original font specified in 'pOriginal'. </td></tr>
-    <tr><td class="paramname">iFlags</td><td>Various <a class="el" href="group__font.html#ga8f49d87ff2fe8588132f90e0f257f6ff">WBFontFlags</a> that specify font characteristics. The existing font is modified according to these flags. If the font size is zero, flags that modify the font size will be ignored. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An XFontStruct pointer for the desired font, or NULL on error</dd></dl>
-<p>use this function to select a similar font that differs only by whatever is specified in 'iFontSize' or 'iFlags'. If a matching font is NOT available, a copy of the original font will be returned. Typical use is to 'bold' or 'italicize' an existing font.<br />
- On error this function returns NULL. The caller must free non-NULL return values via XFreeFont()</p>
-<p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l01350">1350</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga1853b5beb1facb182ca60b56ef73089b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1853b5beb1facb182ca60b56ef73089b">&#9670;&nbsp;</a></span>WBTextExtent()</h2>
+<a id="ga2c6e771d71004b8566a90eb520d83b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c6e771d71004b8566a90eb520d83b20">&#9670;&nbsp;</a></span>WBTextExtent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1019,8 +869,8 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
         <tr>
           <td class="memname">void WBTextExtent </td>
           <td>(</td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1051,7 +901,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Obtain the pixel extent of specified text for a specified XFontSet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontSet</td><td>An XFontSet, as returned by WBFontSetFromFont (or similar) </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONT object </td></tr>
     <tr><td class="paramname">szText</td><td>A (const) pointer to a Multi-Byte (or UTF8 string) string </td></tr>
     <tr><td class="paramname">cbText</td><td>The total length of the text pointed to by szText (negative value to use a zero-byte terminator) </td></tr>
     <tr><td class="paramname">pExtent</td><td>A pointer to a WB_EXTENT structure that receives the text extent. This will be the logical text extent, for spacing purposes</td></tr>
@@ -1061,12 +911,12 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Use this function to determine the correct 'display' width and height of a UTF8 or Multi-Byte character string. It calculates the 'logical' extent using either XmbTextExtents() or Xutf8TextExtents() (as applicable) and returns the width/height of the bounding rectangle for the text.</p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l02102">2102</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00673">673</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="ga4446640beb73e3c0b9c2600394defa27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4446640beb73e3c0b9c2600394defa27">&#9670;&nbsp;</a></span>WBTextWidth()</h2>
+<a id="ga180c3e86d25be29a4a5c91b821213564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga180c3e86d25be29a4a5c91b821213564">&#9670;&nbsp;</a></span>WBTextWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1074,8 +924,8 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
         <tr>
           <td class="memname">int WBTextWidth </td>
           <td>(</td>
-          <td class="paramtype">XFontSet&#160;</td>
-          <td class="paramname"><em>fontSet</em>, </td>
+          <td class="paramtype"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
+          <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1097,10 +947,10 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
       </table>
 </div><div class="memdoc">
 
-<p>Obtain the pixel width of specified text for a specified XFontSet. </p>
+<p>Obtain the pixel width of specified text for a specified WB_FONT. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontSet</td><td>An XFontSet, as returned by WBFontSetFromFont (or similar) </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONT object </td></tr>
     <tr><td class="paramname">szText</td><td>A (const) pointer to a Multi-Byte (or UTF8 string) string </td></tr>
     <tr><td class="paramname">cbText</td><td>The total length of the text pointed to by szText (negative value to use a zero-byte terminator) </td></tr>
   </table>
@@ -1110,7 +960,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Use this function to determine the correct 'display' width of a UTF8 or Multi-Byte character string.</p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l02067">2067</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00631">631</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +969,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 12 2018 11:51:47 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:33 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

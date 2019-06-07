@@ -26,7 +26,7 @@ var group__text__object__structures =
       [ "del_chars", "struct__text__object__vtable__.html#abbd71f891bebfb433476f7ad32a883a8", null ],
       [ "del_select", "struct__text__object__vtable__.html#aff7f86160f3de4435ce70debc722ccae", null ],
       [ "destroy", "struct__text__object__vtable__.html#acdc94bbdf548d20539e0858682c16d97", null ],
-      [ "do_expose", "struct__text__object__vtable__.html#a59178294aea6da4ed34434526f2580ff", null ],
+      [ "do_expose", "struct__text__object__vtable__.html#a7151ed2964479dd4c861dd92ec0bde0b", null ],
       [ "end_highlight", "struct__text__object__vtable__.html#a185e7ab23985052675c0b735a99fed67", null ],
       [ "end_mouse_drag", "struct__text__object__vtable__.html#ad0407393a2be3823024852e1be1c1b48", null ],
       [ "get_col", "struct__text__object__vtable__.html#aa1b5c899a10753cbcb089a6e3e309de0", null ],

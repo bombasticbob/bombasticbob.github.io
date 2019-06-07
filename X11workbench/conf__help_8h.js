@@ -7,6 +7,7 @@ var conf__help_8h =
     [ "CHPARSEXML_BRACKET", "group__conf__file.html#ga4c7d5f970b120c9f3b98a618d794f89f", null ],
     [ "CHPARSEXML_DEFAULT", "group__conf__file.html#ga243bf1509391226a7b97534efb4c3467", null ],
     [ "CHPARSEXML_PAREN", "group__conf__file.html#gac2db42ab007d647e9529905ca74a98ea", null ],
+    [ "CONFIG_PATH", "conf__help_8h.html#a863ab5d791c86f9dfff4c6e90624130c", null ],
     [ "GLOBAL_PATH", "conf__help_8h.html#a3186d57934c6f719aae12ec4d8cf191e", null ],
     [ "GLOBAL_XPATH", "conf__help_8h.html#a93b65a606d6e11ed8fd41afdd4524439", null ],
     [ "LOCAL_CONF_NAME", "conf__help_8h.html#ad59e1c4fcc8ff5b79f9e1c1df5410d86", null ],

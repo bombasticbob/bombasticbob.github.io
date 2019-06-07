@@ -14,6 +14,9 @@ var group__pixmap =
     [ "XPM_FREE_ATTRIBUTES", "group__pixmap.html#ga5cadde28513a5d92a6d0bce3505f3a53", null ],
     [ "XPM_ATTRIBUTES", "group__pixmap.html#ga1bb15776f1bc24315c53197bacf5164a", null ],
     [ "MyLoadPixmapFromData", "group__pixmap.html#gac55eae99a18c54dd4ccce171cdbfbf61", null ],
+    [ "PXM_CopyPixmap", "group__pixmap.html#ga4bee6c710b5ac71d1b1c3cc8a6e14d86", null ],
+    [ "PXM_CreatePixmap", "group__pixmap.html#ga9e12bf82a069c595ee868c7cd6746725", null ],
+    [ "PXM_FreePixmap", "group__pixmap.html#gab0f4ffcec671e87890913d11375a11f0", null ],
     [ "PXM_GetIconPixmap", "group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f", null ],
     [ "PXM_GetIconPixmapFromAtom", "group__pixmap.html#ga0fa81602beac3ccf34d3e5de23ec5c47", null ],
     [ "PXM_GetImageDataLength", "group__pixmap.html#gad38bde8589f444e1d494c10432157fd4", null ],
@@ -35,5 +38,10 @@ var group__pixmap =
     [ "WB_icos0", "group__pixmap.html#gacaa0cc1b46d82fc8d923897397b6b830", null ],
     [ "WB_isqrt", "group__pixmap.html#ga45eb8064c0ff21a49694c756ad98842b", null ],
     [ "WBSimpleAntiAliasImage", "group__pixmap.html#ga7d9834073f83c08f21062d27db35559a", null ],
-    [ "WBSimpleAntiAliasPixmap", "group__pixmap.html#ga0100b634b52a0bc7e301b8d2399a3806", null ]
+    [ "WBSimpleAntiAliasPixmap", "group__pixmap.html#ga0100b634b52a0bc7e301b8d2399a3806", null ],
+    [ "WBXCopyImage", "group__pixmap.html#ga9aba905e089692e6daeef3f0d396429f", null ],
+    [ "WBXDestroyImage", "group__pixmap.html#ga9ddfc94b7d0124c02809cd0d7771badc", null ],
+    [ "WBXGetImage", "group__pixmap.html#gab0734a2137b6f9bfc58b71265a6004b5", null ],
+    [ "WBXPutImage", "group__pixmap.html#gaf1ae23dae147cda7488cfafa6c1083b8", null ],
+    [ "WBXShmQueryExtension", "group__pixmap.html#ga24d37dda7466f0e3128255b983775cee", null ]
 ];

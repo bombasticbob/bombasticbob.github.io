@@ -152,6 +152,30 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1a8c10602b009710fc048b977ab62ac1"><td class="memItemLeft" align="right" valign="top">XImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga1a8c10602b009710fc048b977ab62ac1">PXM_PixmapToImage</a> (Display *pDisplay, Pixmap pxImage)</td></tr>
 <tr class="memdesc:ga1a8c10602b009710fc048b977ab62ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert pixmap to image (a wrapper for XGetImage on a pixmap)  <a href="#ga1a8c10602b009710fc048b977ab62ac1">More...</a><br /></td></tr>
 <tr class="separator:ga1a8c10602b009710fc048b977ab62ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e12bf82a069c595ee868c7cd6746725"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga9e12bf82a069c595ee868c7cd6746725">PXM_CreatePixmap</a> (Display *pDisplay, Drawable dw, unsigned int width, unsigned int height, unsigned int depth)</td></tr>
+<tr class="memdesc:ga9e12bf82a069c595ee868c7cd6746725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XCreatePixmap()  <a href="#ga9e12bf82a069c595ee868c7cd6746725">More...</a><br /></td></tr>
+<tr class="separator:ga9e12bf82a069c595ee868c7cd6746725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0f4ffcec671e87890913d11375a11f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gab0f4ffcec671e87890913d11375a11f0">PXM_FreePixmap</a> (Display *pDisplay, Pixmap pxImage)</td></tr>
+<tr class="memdesc:gab0f4ffcec671e87890913d11375a11f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for XCreatePixmap()  <a href="#gab0f4ffcec671e87890913d11375a11f0">More...</a><br /></td></tr>
+<tr class="separator:gab0f4ffcec671e87890913d11375a11f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bee6c710b5ac71d1b1c3cc8a6e14d86"><td class="memItemLeft" align="right" valign="top">Pixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga4bee6c710b5ac71d1b1c3cc8a6e14d86">PXM_CopyPixmap</a> (Display *pDisplay, Drawable dw, Pixmap pxImage)</td></tr>
+<tr class="memdesc:ga4bee6c710b5ac71d1b1c3cc8a6e14d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a pixmap for the specified Display and Drawable.  <a href="#ga4bee6c710b5ac71d1b1c3cc8a6e14d86">More...</a><br /></td></tr>
+<tr class="separator:ga4bee6c710b5ac71d1b1c3cc8a6e14d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24d37dda7466f0e3128255b983775cee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga24d37dda7466f0e3128255b983775cee">WBXShmQueryExtension</a> (Display *pDisplay)</td></tr>
+<tr class="memdesc:ga24d37dda7466f0e3128255b983775cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the 'XShm' extensions are available (libXext)  <a href="#ga24d37dda7466f0e3128255b983775cee">More...</a><br /></td></tr>
+<tr class="separator:ga24d37dda7466f0e3128255b983775cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1ae23dae147cda7488cfafa6c1083b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gaf1ae23dae147cda7488cfafa6c1083b8">WBXPutImage</a> (Display *pDisplay, Drawable dw, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc, XImage *pImage, int src_x, int src_y, int dest_x, int dest_y, unsigned int width, unsigned int height)</td></tr>
+<tr class="memdesc:gaf1ae23dae147cda7488cfafa6c1083b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write contents of an XImage onto a Drawable.  <a href="#gaf1ae23dae147cda7488cfafa6c1083b8">More...</a><br /></td></tr>
+<tr class="separator:gaf1ae23dae147cda7488cfafa6c1083b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0734a2137b6f9bfc58b71265a6004b5"><td class="memItemLeft" align="right" valign="top">XImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#gab0734a2137b6f9bfc58b71265a6004b5">WBXGetImage</a> (Display *pDisplay, Drawable dw, int x, int y, unsigned int width, unsigned int height, unsigned long plane_mask, int format)</td></tr>
+<tr class="memdesc:gab0734a2137b6f9bfc58b71265a6004b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read contents of a Drawable onto an XImage.  <a href="#gab0734a2137b6f9bfc58b71265a6004b5">More...</a><br /></td></tr>
+<tr class="separator:gab0734a2137b6f9bfc58b71265a6004b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ddfc94b7d0124c02809cd0d7771badc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga9ddfc94b7d0124c02809cd0d7771badc">WBXDestroyImage</a> (XImage *pImage)</td></tr>
+<tr class="memdesc:ga9ddfc94b7d0124c02809cd0d7771badc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an XImage - call this instead of XDestroyImage()  <a href="#ga9ddfc94b7d0124c02809cd0d7771badc">More...</a><br /></td></tr>
+<tr class="separator:ga9ddfc94b7d0124c02809cd0d7771badc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9aba905e089692e6daeef3f0d396429f"><td class="memItemLeft" align="right" valign="top">XImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga9aba905e089692e6daeef3f0d396429f">WBXCopyImage</a> (Display *pDisplay, XImage *pImage)</td></tr>
+<tr class="memdesc:ga9aba905e089692e6daeef3f0d396429f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a copy of an XImage.  <a href="#ga9aba905e089692e6daeef3f0d396429f">More...</a><br /></td></tr>
+<tr class="separator:ga9aba905e089692e6daeef3f0d396429f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga41b536eacce89f3484f80bc18cb07997"><td class="memItemLeft" align="right" valign="top">static __inline__ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pixmap.html#ga41b536eacce89f3484f80bc18cb07997">PXM_GetImageDataPtr</a> (XImage *pImage)</td></tr>
 <tr class="memdesc:ga41b536eacce89f3484f80bc18cb07997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer to XImage data.  <a href="#ga41b536eacce89f3484f80bc18cb07997">More...</a><br /></td></tr>
 <tr class="separator:ga41b536eacce89f3484f80bc18cb07997"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +241,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{<span class="keyword">register</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> __iR,__iG,__iB; <a class="code" href="group__pixmap.html#ga8f6b974be899dbc8ee48a8fcaac1c763">RGB_FROM_XCOLOR</a>(X,__iR, __iG, __iB); \</div><div class="line">                                     if(__iR &lt; 0xff80){ __iR += 0x80; } \</div><div class="line">                                     if(__iG &lt; 0xff80){ __iG += 0x80; } \</div><div class="line">                                     if(__iB &lt; 0xff80){ __iB += 0x80; } \</div><div class="line">                                     __iR = __iR &gt;&gt; 8; __iG = __iG &gt;&gt; 8; __iB = __iB &gt;&gt; 8; \</div><div class="line">                                     __iR &amp;= 0xff; __iG &amp;= 0xff; __iB &amp;= 0xff; \</div><div class="line">                                     (R) = __iR; (G) = __iG; (B) = __iB; }</div><div class="ttc" id="group__pixmap_html_ga8f6b974be899dbc8ee48a8fcaac1c763"><div class="ttname"><a href="group__pixmap.html#ga8f6b974be899dbc8ee48a8fcaac1c763">RGB_FROM_XCOLOR</a></div><div class="ttdeci">#define RGB_FROM_XCOLOR(X, R, G, B)</div><div class="ttdoc">Simple RGB assignment from pixel, 0-65535 RGB. </div><div class="ttdef"><b>Definition:</b> <a href="pixmap__helper_8h_source.html#l00151">pixmap_helper.h:151</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{<span class="keyword">register</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> __iR,__iG,__iB; <a class="code" href="group__pixmap.html#ga8f6b974be899dbc8ee48a8fcaac1c763">RGB_FROM_XCOLOR</a>(X,__iR, __iG, __iB); \</div><div class="line">                                     if(__iR &lt; 0xff80){ __iR += 0x80; } \</div><div class="line">                                     if(__iG &lt; 0xff80){ __iG += 0x80; } \</div><div class="line">                                     if(__iB &lt; 0xff80){ __iB += 0x80; } \</div><div class="line">                                     __iR = __iR &gt;&gt; 8; __iG = __iG &gt;&gt; 8; __iB = __iB &gt;&gt; 8; \</div><div class="line">                                     __iR &amp;= 0xff; __iG &amp;= 0xff; __iB &amp;= 0xff; \</div><div class="line">                                     (R) = __iR; (G) = __iG; (B) = __iB; }</div><div class="ttc" id="group__pixmap_html_ga8f6b974be899dbc8ee48a8fcaac1c763"><div class="ttname"><a href="group__pixmap.html#ga8f6b974be899dbc8ee48a8fcaac1c763">RGB_FROM_XCOLOR</a></div><div class="ttdeci">#define RGB_FROM_XCOLOR(X, R, G, B)</div><div class="ttdoc">Simple RGB assignment from pixel, 0-65535 RGB. </div><div class="ttdef"><b>Definition:</b> <a href="pixmap__helper_8h_source.html#l00150">pixmap_helper.h:150</a></div></div>
 </div><!-- fragment -->
 <p>Simple RGB assignment from pixel, 0-255 RGB. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -231,7 +255,7 @@ Functions</h2></td></tr>
 </dl>
 <p>Assigns the R, G, and B parameters based on an XColor structure with 0-255 RGB This assumes the red, green, and blue elements of the XColor structure are correct. To assign red, green, and blue elements from the 'pixel' element within the XColor structure, use <a class="el" href="group__pixmap.html#ga180e026a1a845c326f2297c5358e6fde" title="Convert the pixel menber of an XColor to RGB. ">PXM_PixelToRGB()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00130">130</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00129">129</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +309,7 @@ Functions</h2></td></tr>
 </dl>
 <p>Assigns the appropriate RGB elements of an XColor structure based on 0-255 RGB. This does NOT assign the 'pixel' element. For that, use <a class="el" href="group__pixmap.html#ga8d5263b0ba8461654d76bda4409b6634" title="Icon Registration for application &#39;large&#39; and &#39;small&#39; icons. ">PXM_RGBToPixel()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00095">95</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00094">94</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +363,7 @@ Functions</h2></td></tr>
 </dl>
 <p>Assigns the R, G, and B parameters based on an XColor structure with 0-65535 RGB This assumes the red, green, and blue elements of the XColor structure are correct. To assign red, green, and blue elements from the 'pixel' element within the XColor structure, use <a class="el" href="group__pixmap.html#ga180e026a1a845c326f2297c5358e6fde" title="Convert the pixel menber of an XColor to RGB. ">PXM_PixelToRGB()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00151">151</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00150">150</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +417,7 @@ Functions</h2></td></tr>
 </dl>
 <p>Assigns the appropriate elements of an XColor structure based on 0-65535 RGB This does NOT assign the 'pixel' element. For that, use <a class="el" href="group__pixmap.html#ga8d5263b0ba8461654d76bda4409b6634" title="Icon Registration for application &#39;large&#39; and &#39;small&#39; icons. ">PXM_RGBToPixel()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00111">111</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00110">110</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +447,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An signed char sine value between -127 and 127</dd></dl>
 <p>Use this function when an approximate cosine is needed within Quadrant I </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00631">631</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l01102">1102</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +516,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure. See XpmCreatePixmapFromData in libXpm documentation</dd></dl>
 <p>This macro abstracts calls to XpmCreatePixmapFromData() by allowing an internal function to be called whenever libXpm is not available for this purpose. </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01140">1140</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01164">1164</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +546,7 @@ Functions</h2></td></tr>
 <p>This macro abstracts calls to XpmFreeAttributes() by allowing an internal function to be called whenever libXpm is not available for this purpose. For the current implementation, the non-libXpm version does nothing.<br />
 Use this macro to free up XPM_ATTRIBUTES structure members that consume resources after a successful call to <a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1" title="Platform helper macro to create a pixmap from data. ">XPM_CREATE_PIXMAP_FROM_DATA()</a>. This will help prevent resource leaks. </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01153">1153</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01177">1177</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +643,157 @@ Use this macro to free up XPM_ATTRIBUTES structure members that consume resource
 <p>You should consider whether or not you want to use libXpm whenever it is present on your system, as this function has not been fully tested on all platforms. However, using libXpm carries with it a significant performance penalty. If the application runs ok with the default configuration (i.e. no libXpm), you might as well leave it as-is.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02782">2782</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02987">2987</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga4bee6c710b5ac71d1b1c3cc8a6e14d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bee6c710b5ac71d1b1c3cc8a6e14d86">&#9670;&nbsp;</a></span>PXM_CopyPixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pixmap PXM_CopyPixmap </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>dw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Pixmap&#160;</td>
+          <td class="paramname"><em>pxImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a pixmap for the specified Display and Drawable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the source and destination Pixmaps </td></tr>
+    <tr><td class="paramname">dw</td><td>The Drawable associated with the new Pixmap (this defines how to create it) </td></tr>
+    <tr><td class="paramname">pxImage</td><td>the Pixmap image to free resources for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Pixmap with the appropriate characteristics, or None on error.</dd></dl>
+<p>This function implements the functionality of XCreatPixmap() and XCopyArea() and other operations that are necessary to implement this somewhat common functionality.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01265">1265</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga9e12bf82a069c595ee868c7cd6746725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e12bf82a069c595ee868c7cd6746725">&#9670;&nbsp;</a></span>PXM_CreatePixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pixmap PXM_CreatePixmap </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>dw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XCreatePixmap() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">dw</td><td>The Drawable associated with the Pixmap (this defines how to create it) </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the arc's elipse </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the arc's elipse </td></tr>
+    <tr><td class="paramname">depth</td><td>The bit depth of the Pixmap - if 0, uses DefaultDepth(pDisplay, DefaultScreen(pDisplay)) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Pixmap with the appropriate characteristics, or None on error.</dd></dl>
+<p>This function wraps XCreatePixmap() on X11 systems, and replicates its behavior elsewhere</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+</div>
+</div>
+<a id="gab0f4ffcec671e87890913d11375a11f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0f4ffcec671e87890913d11375a11f0">&#9670;&nbsp;</a></span>PXM_FreePixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PXM_FreePixmap </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Pixmap&#160;</td>
+          <td class="paramname"><em>pxImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for XCreatePixmap() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The display associated with the specified window </td></tr>
+    <tr><td class="paramname">pxImage</td><td>the Pixmap image to free resources for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an integer indicating success or failure</dd></dl>
+<p>This function wraps XFreePixmap() on X11 systems, and replicates its behavior elsewhere</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
 </div>
 </div>
@@ -669,7 +843,7 @@ For portability you should use the XPM_ATTRIBUTES definition, even when libXpm i
 <p>Use this function whenever you need to load an icon using a pre-defined resource ID.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01004">1004</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01020">1020</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -719,7 +893,7 @@ For portability you should use the XPM_ATTRIBUTES definition, even when libXpm i
 <p>Use this function whenever you need to load an icon using a pre-defined or registered Atom</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01030">1030</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01046">1046</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -758,7 +932,7 @@ For portability you should use the XPM_ATTRIBUTES definition, even when libXpm i
 <p>Call this to get the length of the data stored in an XImage. This data can be copied and stored elsewhere, as needed, or restored from a stored copy.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00538">538</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l01009">1009</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -797,7 +971,7 @@ For portability you should use the XPM_ATTRIBUTES definition, even when libXpm i
 <p>Call this to get the pointer to the data stored in an XImage. This data can be copied and stored elsewhere, as needed, or restored from a stored copy.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00522">522</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00993">993</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -867,7 +1041,7 @@ For portability you should use the XPM_ATTRIBUTES definition, even when libXpm i
 The 'hue' (H) information determines the color tone, the 'S' the saturatio, and the value (V) determines the brightness.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="x_8c_source.html#l00125">125</a> of file <a class="el" href="x_8c_source.html">x.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00426">426</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -931,7 +1105,7 @@ The 'hue' (H) information determines the color tone, the 'S' the saturatio, and 
 The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01123">1123</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01139">1139</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -982,7 +1156,7 @@ For monochrome images, the foreground color is black, and the background color i
 The function returns a Pixmap identifier, or None. To delete the Pixmap, use XFreePixmap().</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01195">1195</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01211">1211</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1206,7 @@ For portability you should use the XPM_ATTRIBUTES definition, even when libXpm i
 <p>This function conveniently wraps XpmCreatePixmapFromData()</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01056">1056</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01072">1072</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1247,7 @@ For portability you should use the XPM_ATTRIBUTES definition, even when libXpm i
 <p>This function reads the pixel member from 'pColor' and calculates the RGB values between 0 and 65535, assigning them to the red, green, and blue members of the XColor structure along with appropriate flags.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00672">672</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00688">688</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1292,7 @@ The size of the pixmap is automatically determined using XGetGeometry(). As a si
 The function returns NULL on error. Use XDestroyImage to dispose of the XImage object.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01208">1208</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01224">1224</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1333,7 @@ The function returns NULL on error. Use XDestroyImage to dispose of the XImage o
 <p>Use this function to register the application's icons for IDC_ICON_APP and ID_APPLICATION. In this way you can use both of them in dialog boxes and take advantage of <a class="el" href="group__pixmap.html#gae6a4a9c282a8dbb5bfebb79eea0adc9f" title="Create Icon pixmap pair using pre-defined resource ID. ">PXM_GetIconPixmap()</a> to create a pair of icon pixmaps whenever they are needed.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00809">809</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00825">825</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1269,7 +1443,7 @@ The function returns NULL on error. Use XDestroyImage to dispose of the XImage o
 The 'hue' (H) information determines the color tone, the 'S' the saturation, and the value (V) determines the brightness.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="x_8c_source.html#l00237">237</a> of file <a class="el" href="x_8c_source.html">x.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00522">522</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1484,7 @@ The 'hue' (H) information determines the color tone, the 'S' the saturation, and
 <p>This function reads the red, green, and blue members from 'pColor' and calculates the pixel value. RGB entries are assumed to be between 0 and 65535, for each of the red, green, and blue members.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00719">719</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00735">735</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1384,7 +1558,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
  However, the actual YUV calculations return 'iY' as 16 for 'black', and 235 for 'white'. Anything outside of this Y range SHOULD result in 'faded' colors (towards black or white). This algorithm has been tested for RGB values between 0 and 255, respectively, and the inverse calculation results in a deviation of at most '1' for R, G, or B, from the original RGB value.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00355">355</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00371">371</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1434,7 +1608,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 <p>This function returns a pointer to a static XStandardColormap structure assigned to a specified Colormap, using the specified Display (or default if NULL is specified for the 'D' parameter) for color-related parameters that are part of the XStandardColormap structure.</p>
 <p>This is a convenience function for things like <a class="el" href="group__pixmap.html#ga180e026a1a845c326f2297c5358e6fde" title="Convert the pixel menber of an XColor to RGB. ">PXM_PixelToRGB()</a> and <a class="el" href="group__pixmap.html#ga8d5263b0ba8461654d76bda4409b6634" title="Icon Registration for application &#39;large&#39; and &#39;small&#39; icons. ">PXM_RGBToPixel()</a>, where you may have a Colormap but you need an XStandardColormap. </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00170">170</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8h_source.html#l00179">179</a> of file <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1682,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
  However, the actual YUV calculations return 'iY' as 16 for 'black', and 235 for 'white'. Anything outside of this Y range SHOULD result in 'faded' colors (towards black or white). This algorithm has been tested for RGB values between 0 and 255, respectively, and the inverse calculation results in a deviation of at most '1' for R, G, or B, from the original RGB value.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00383">383</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00399">399</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1712,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 <dl class="section return"><dt>Returns</dt><dd>An signed char cosine value between -127 and 127</dd></dl>
 <p>Use this function when an approximate cosine is needed within Quadrant I </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00322">322</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00338">338</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1568,7 +1742,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 <dl class="section return"><dt>Returns</dt><dd>An integer cosine value between 0 and 255, where WB_icos(0) would return 255, WB_icos(64) would return zero</dd></dl>
 <p>Use this function when an approximate cosine is needed within Quadrant I </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00163">163</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00179">179</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1598,7 +1772,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 <dl class="section return"><dt>Returns</dt><dd>The integer square root of 'iVal'.</dd></dl>
 <p>Use this function when an approximate square root of an integer between 0 and 255 is needed, and you don't want to waste CPU cycles calculating it with floating point numbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00137">137</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l00153">153</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1654,7 +1828,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 <p>This function is expected to be used with lines and text, following a drawing operation.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01363">1363</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01458">1458</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1891,294 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 <p>This function is expected to be used with lines and text, following a drawing operation.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01249">1249</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01344">1344</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga9aba905e089692e6daeef3f0d396429f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9aba905e089692e6daeef3f0d396429f">&#9670;&nbsp;</a></span>WBXCopyImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XImage* WBXCopyImage </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XImage *&#160;</td>
+          <td class="paramname"><em>pImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make a copy of an XImage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display, or NULL to use the default display </td></tr>
+    <tr><td class="paramname">pImage</td><td>A pointer to an XImage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An XImage that is a copy of the original</dd></dl>
+<p>Use this function to make a copy of an XImage via XCreateImage</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01709">1709</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga9ddfc94b7d0124c02809cd0d7771badc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ddfc94b7d0124c02809cd0d7771badc">&#9670;&nbsp;</a></span>WBXDestroyImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBXDestroyImage </td>
+          <td>(</td>
+          <td class="paramtype">XImage *&#160;</td>
+          <td class="paramname"><em>pImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy an XImage - call this instead of XDestroyImage() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pImage</td><td>A pointer to an XImage that may have been allocated using shared memory. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A non-zero value on error, or zero on success</dd></dl>
+<p>Use this function in lieu of XDestroyImage() for an image that was returned from one of the API functions in the X11workbench Toolkit. In some cases, the XImage may have been created using shared memory. This would mean that the shared memory will need to be free'd up correctly using the WBFreeShm() (and related) utility functions.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01693">1693</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="gab0734a2137b6f9bfc58b71265a6004b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0734a2137b6f9bfc58b71265a6004b5">&#9670;&nbsp;</a></span>WBXGetImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XImage* WBXGetImage </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>dw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>plane_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read contents of a Drawable onto an XImage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The disply pointer. NULL uses the default display. </td></tr>
+    <tr><td class="paramname">dw</td><td>A Drawable upon which to perform the action </td></tr>
+    <tr><td class="paramname">x</td><td>The X coordinate within the source Drawable (upper, left corner) </td></tr>
+    <tr><td class="paramname">y</td><td>The Y coordinate within the source Drawable (upper, left corner) </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the image data to transfer </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the image data to transfer </td></tr>
+    <tr><td class="paramname">plane_mask</td><td>The 'plane_mask' of the bits to transfer </td></tr>
+    <tr><td class="paramname">format</td><td>The format of the image - may be XYBitmap, XYPixmap, or ZPixmap. XYBitmap is monochrome. ZPixmap is more efficient than XYPixmap, but requires more memory. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a newly created XImage containing the copied image. See XGetImage() in the X11 API documentation</dd></dl>
+<p>When libXext is being used, this function wraps XShmCreateImage() and XShmGetImage(). Otherwise, it calls XGetImage().</p>
+<p>The resulting XImage may use shareable memory. If it does, the memory is managed using the WBAllocShm() (and related) functions from the X11workbench Toolkit. You will need to use WBXDestroyImage to destroy the XImage returned by this function, rather than XDestroyImage(), to avoid any memory management conflicts.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01607">1607</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="gaf1ae23dae147cda7488cfafa6c1083b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf1ae23dae147cda7488cfafa6c1083b8">&#9670;&nbsp;</a></span>WBXPutImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBXPutImage </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable&#160;</td>
+          <td class="paramname"><em>dw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
+          <td class="paramname"><em>gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XImage *&#160;</td>
+          <td class="paramname"><em>pImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>src_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>src_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dest_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dest_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write contents of an XImage onto a Drawable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The disply pointer. NULL uses the default display. </td></tr>
+    <tr><td class="paramname">dw</td><td>A Drawable upon which to perform the action </td></tr>
+    <tr><td class="paramname">gc</td><td>A GC with which to perform the action </td></tr>
+    <tr><td class="paramname">pImage</td><td>A pointer to an XImage with which to perform the action </td></tr>
+    <tr><td class="paramname">src_x</td><td>The X coordinate within the source image (upper, left corner) </td></tr>
+    <tr><td class="paramname">src_y</td><td>The Y coordinate within the source image (upper, left corner) </td></tr>
+    <tr><td class="paramname">dest_x</td><td>The X coordinate within the destination Drawable (upper, left corner) </td></tr>
+    <tr><td class="paramname">dest_y</td><td>The Y coordinate within the destination Drawable (upper, left corner) </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the image data to transfer </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the image data to transfer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A non-zero value on failure, zero on success. See XPutImage() in the X11 API documentation</dd></dl>
+<p>When libXext is being used, this function wraps XShmPutImage(). Otherwise, it calls XPutImage().</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01580">1580</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga24d37dda7466f0e3128255b983775cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24d37dda7466f0e3128255b983775cee">&#9670;&nbsp;</a></span>WBXShmQueryExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBXShmQueryExtension </td>
+          <td>(</td>
+          <td class="paramtype">Display *&#160;</td>
+          <td class="paramname"><em>pDisplay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates whether the 'XShm' extensions are available (libXext) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDisplay</td><td>The disply pointer. NULL uses the default display. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A non-zero value if the extensions are available for the given display; otherwise, zero</dd></dl>
+<p>When libXext is being used, this function wraps XShmQueryExtension(). Otherwise, it returns zero.</p>
+<p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01574">1574</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +2187,7 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 12 2018 11:51:47 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:33 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

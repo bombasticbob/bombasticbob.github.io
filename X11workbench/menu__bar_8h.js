@@ -5,7 +5,7 @@ var menu__bar_8h =
     [ "MBCreateMenuBarWindow", "group__menu__bar.html#ga30dc16d5a7b5a0dbe33b408d80b7387c", null ],
     [ "MBDestroyMenuBarWindow", "group__menu__bar.html#ga339efd0b3c2e3e09af5251e22241a2a4", null ],
     [ "MBFindMenuBarWindow", "group__menu__bar.html#gae9ce9b1b7ecfd7ca8a358e50006dd055", null ],
-    [ "MBGetDefaultMenuFont", "group__menu__bar.html#ga920550fa16c99f21ccc445b64fbf9ee9", null ],
+    [ "MBGetDefaultMenuFont", "group__menu__bar.html#ga969fe3b854fb3d97f91889ec91cb8a61", null ],
     [ "MBGetMenuBarMenu", "group__menu__bar.html#gaa2c87566c260c2407f06c9ba40d6167b", null ],
     [ "MBGetMenuBarWindowStruct", "group__menu__bar.html#gac6cd6b6f88f5473d25289cab703cf21d", null ],
     [ "MBInitGlobal", "group__menu__bar.html#ga9fb073faa3c0e7053b27a35991512df0", null ],

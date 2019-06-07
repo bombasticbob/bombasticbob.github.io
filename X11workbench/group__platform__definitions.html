@@ -88,6 +88,13 @@ Macros</h2></td></tr>
 <tr class="memitem:gace47742235ba7c59804024b08432cf72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform__definitions.html#gace47742235ba7c59804024b08432cf72">QSORT_R</a>(base,  nmemb,  size,  thunk,  compar)&#160;&#160;&#160;<a class="el" href="group__platform__functions.html#gaaa2be84e6aa35494ef5c78db3fe19886">my_qsort_r</a>((base),(nmemb),(size),(thunk),(compar))</td></tr>
 <tr class="memdesc:gace47742235ba7c59804024b08432cf72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local implementation of qsort_r() for operating systems that do not have it.  <a href="#gace47742235ba7c59804024b08432cf72">More...</a><br /></td></tr>
 <tr class="separator:gace47742235ba7c59804024b08432cf72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79794d0cb0963d108375a04ce3a58b00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform__definitions.html#ga79794d0cb0963d108375a04ce3a58b00">WB_STRINGIZE</a>(X)&#160;&#160;&#160;<a class="el" href="group__platform__definitions.html#ga5d7ffb0b569bc5c30ff3e2d581466dfb">WB_STRINGIZE_INTERNAL</a>(X)</td></tr>
+<tr class="memdesc:ga79794d0cb0963d108375a04ce3a58b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">stringize a macro argument  <a href="#ga79794d0cb0963d108375a04ce3a58b00">More...</a><br /></td></tr>
+<tr class="separator:ga79794d0cb0963d108375a04ce3a58b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d7ffb0b569bc5c30ff3e2d581466dfb"><td class="memItemLeft" align="right" valign="top"><a id="ga5d7ffb0b569bc5c30ff3e2d581466dfb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform__definitions.html#ga5d7ffb0b569bc5c30ff3e2d581466dfb">WB_STRINGIZE_INTERNAL</a>(X)&#160;&#160;&#160;#X</td></tr>
+<tr class="memdesc:ga5d7ffb0b569bc5c30ff3e2d581466dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper to stringize a macro argument <br /></td></tr>
+<tr class="separator:ga5d7ffb0b569bc5c30ff3e2d581466dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71d10c657cde4801e8f2214f0d2c85d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__platform__definitions.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a>(x)&#160;&#160;&#160;(__builtin_expect (!!(x), 0))</td></tr>
 <tr class="memdesc:ga71d10c657cde4801e8f2214f0d2c85d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">optimization for code branching when condition is 'unlikely'. use within conditionals  <a href="#ga71d10c657cde4801e8f2214f0d2c85d3">More...</a><br /></td></tr>
 <tr class="separator:ga71d10c657cde4801e8f2214f0d2c85d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,7 +127,7 @@ Macros</h2></td></tr>
 <p>PACKED definition. </p>
 <p>This assignes the 'packed' attribute; i.e. byte-level alignment. Not valid for Microsoft's compilers </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00484">484</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00496">496</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -176,7 +183,7 @@ Macros</h2></td></tr>
 <div class="fragment"><div class="line"><a class="code" href="group__platform__definitions.html#ga8e072186273813195bb5c42ec9b978c2">DECLARE_SORT_FUNCTION</a>(MySort,pThunk,pParam1,pParam2)</div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> **pStringArray = (<span class="keyword">const</span> <span class="keywordtype">char</span> **)pThunk; <span class="comment">// the real data</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> *pP1 = (<span class="keyword">const</span> <span class="keywordtype">int</span> *)pParam1;</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> *pP2 = (<span class="keyword">const</span> <span class="keywordtype">int</span> *)pParam2;</div><div class="line"></div><div class="line">  <span class="comment">// I am sorting integer indices into an array of character strings so</span></div><div class="line">  <span class="comment">// that I can sort the integers and not the actual strings.  But I needed</span></div><div class="line">  <span class="comment">// a pointer to my string array, so I pass that in as &#39;pThunk&#39;.</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> strcmp(pStringArray[*pP1],pStringArray[*pP2]);</div><div class="line">}</div></div><!-- fragment --><p>this helps resolve the known platform differences in qsort_r() for POSIX systems</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__platform__definitions.html#gace47742235ba7c59804024b08432cf72" title="Local implementation of qsort_r() for operating systems that do not have it. ">QSORT_R</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01263">1263</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01287">1287</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -195,7 +202,7 @@ Macros</h2></td></tr>
 <p>INVALID HANDLE VALUE equivalent. </p>
 <p>This definition generically refers to an INVALID HANDLE, more specifically a FILE or SOCKET handle on POSIX systems </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00273">273</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00268">268</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +263,7 @@ Macros</h2></td></tr>
 </dl>
 <p>Use this UNIVERSALLY whenever you need to use qsort_r(), as it is platform independent and deals with the incompatibilities associated with the BSD version and the Linux version, as well as implementing qsort_r() for systems that do not support it directly. </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01279">1279</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01303">1303</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +285,7 @@ Macros</h2></td></tr>
 <p>In the future, it is possible that an Atom <em>MAY</em> have a randomly assigned value, or a value assigned that clashes with this definition. In such a case, a major re-write might be needed to correct for it.</p>
 <p>NOTE: This value must NOT include any of the bits 'Or'd with an Atom within a menu, such as 'WBMENU_POPUP_HIGH_BIT' or 'WBMENU_DYNAMIC_HIGH_BIT'. Otherwise, THAT architecture would need to be modified as well.the minimum 'internal' Atom value used by the toolkit </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00354">354</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00366">366</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -300,7 +307,7 @@ Macros</h2></td></tr>
 
 <p>optimization for code branching when condition is 'likely'. use within conditionals </p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__platform__definitions.html#ga5703d8802f856a5daf543e0c35caa48f">WB_LIKELY</a>(x == 5))</div><div class="line">{</div><div class="line">  <span class="comment">// branch optimized to execute this code when condition is TRUE</span></div><div class="line">}</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00305">305</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00317">317</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +324,36 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>'secure hash' maximum lifetime, in milliseconds </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00553">553</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00565">565</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+
+</div>
+</div>
+<a id="ga79794d0cb0963d108375a04ce3a58b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79794d0cb0963d108375a04ce3a58b00">&#9670;&nbsp;</a></span>WB_STRINGIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WB_STRINGIZE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__platform__definitions.html#ga5d7ffb0b569bc5c30ff3e2d581466dfb">WB_STRINGIZE_INTERNAL</a>(X)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stringize a macro argument </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>A macro argument that you want substituted with a stringized version</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Use this to 'stringize' a parameter passed to a macro. </p>
+
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00283">283</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +375,7 @@ Macros</h2></td></tr>
 
 <p>optimization for code branching when condition is 'unlikely'. use within conditionals </p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__platform__definitions.html#ga71d10c657cde4801e8f2214f0d2c85d3">WB_UNLIKELY</a>(x == 5))</div><div class="line">{</div><div class="line">  <span class="comment">// branch optimized to bypass this code when condition is FALSE</span></div><div class="line">}</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00295">295</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00307">307</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +395,7 @@ Macros</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keywordtype">int</span> an_unused_var <a class="code" href="group__platform__definitions.html#ga46643c5e1b93235a48a6acf67664ecb3">WB_UNUSED</a> = 5; <span class="comment">// no compiler warnings if I don&#39;t actually use this variable</span></div></div><!-- fragment --><p><b>NOTE:</b> may also be used for function parameters. In some cases a callback function may have unused<br />
  parameters passed to it. Marking them with 'WB_UNUSED' helps prevent unnecessary compiler warnings. </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00327">327</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l00339">339</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +404,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 12 2018 11:51:48 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
