@@ -31,5 +31,6 @@ var group__font__struct =
       [ "szRegistry", "structWBFontInfo.html#a147802d942fe8e3eeddb6ee16b04cf9e", null ]
     ] ],
     [ "WB_FONT", "group__font__struct.html#ga7515205c18796647b17e6838ace63582", null ],
-    [ "WB_FONT_INFO", "group__font__struct.html#ga3dbcd5df176dff4b957a5e949f5553af", null ]
+    [ "WB_FONT_INFO", "group__font__struct.html#ga3dbcd5df176dff4b957a5e949f5553af", null ],
+    [ "WB_FONTC", "group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8", null ]
 ];

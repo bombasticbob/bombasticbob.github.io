@@ -81,6 +81,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga7515205c18796647b17e6838ace63582"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWBFont.html">WBFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a></td></tr>
 <tr class="memdesc:ga7515205c18796647b17e6838ace63582"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified font.  <a href="#ga7515205c18796647b17e6838ace63582">More...</a><br /></td></tr>
 <tr class="separator:ga7515205c18796647b17e6838ace63582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96f0a973d3692fed94b208aa520d45f8"><td class="memItemLeft" align="right" valign="top">typedef const struct <a class="el" href="structWBFont.html">WBFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a></td></tr>
+<tr class="memdesc:ga96f0a973d3692fed94b208aa520d45f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">a 'const' version of WB_FONT - note that this CAN actually be written to, so it's not truly 'const'.  <a href="#ga96f0a973d3692fed94b208aa520d45f8">More...</a><br /></td></tr>
+<tr class="separator:ga96f0a973d3692fed94b208aa520d45f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3dbcd5df176dff4b957a5e949f5553af"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWBFontInfo.html">WBFontInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font__struct.html#ga3dbcd5df176dff4b957a5e949f5553af">WB_FONT_INFO</a></td></tr>
 <tr class="memdesc:ga3dbcd5df176dff4b957a5e949f5553af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal structure, caching font information (mostly for legacy font support)  <a href="#ga3dbcd5df176dff4b957a5e949f5553af">More...</a><br /></td></tr>
 <tr class="separator:ga3dbcd5df176dff4b957a5e949f5553af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,12 +123,32 @@ Typedefs</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWBFontInfo.html">WBFontInfo</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">char</span> *szFoundry, *szFamily;</div><div class="line">  <span class="keywordtype">int</span> iWeight, iSlant, iWidth;</div><div class="line">  <span class="keywordtype">char</span> *szAdStyle;</div><div class="line">  <span class="keywordtype">int</span> iPixelSize, iPointSize, iResX, iResY, iSpacing, iAvgWidth;</div><div class="line">  <span class="keywordtype">char</span> *szRegistry, *szEncoding;</div><div class="line">  <span class="keywordtype">char</span> data[8];</div><div class="line">} <a class="code" href="group__font__struct.html#ga3dbcd5df176dff4b957a5e949f5553af">WB_FONT_INFO</a>;</div></div><!-- fragment --> 
 </div>
 </div>
+<a id="ga96f0a973d3692fed94b208aa520d45f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96f0a973d3692fed94b208aa520d45f8">&#9670;&nbsp;</a></span>WB_FONTC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a 'const' version of WB_FONT - note that this CAN actually be written to, so it's not truly 'const'. </p>
+<p>In order to implement font objects that are not modified, that is the actual system font they represent does not change, the 'WB_FONTC' type is used. This helps to prevent accidentally modifying the font objects returned as 'WB_FONTC'. In the 'C' language there's no obvious way to implement a 'const' that isn't exactly 'const', when you store the cached query information (and forward/back chain pointers) directly into it 'on the fly'. So don't use read-only memory to store a WB_FONTC . The details will be taken care of on the back-end. This also causes the C compiler to perform some implicit type conversions so that the code works.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582" title="An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified...">WB_FONT</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00185">185</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 7 2019 04:32:21 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 05:00:07 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
