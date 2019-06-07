@@ -6,8 +6,8 @@ var font__helper_8h =
     [ "WB_TEXT_ESCAPEMENT", "group__font.html#gac0e51c6603b3f8ea32ad7b4e94e548c5", null ],
     [ "WB_TEXT_EXTENTS", "group__font.html#gae41279cef060c5a4cd578eef2d1be205", null ],
     [ "WB_EXTENT", "group__core__struct.html#ga67e4566f4f9608cbbd05e50ada5a2e3b", null ],
-    [ "WB_FONT", "group__font.html#ga7515205c18796647b17e6838ace63582", null ],
-    [ "WB_FONT_INFO", "font__helper_8h.html#a5f98ec94df39a3f1a0d76079954298b1", null ],
+    [ "WB_FONT", "group__font__struct.html#ga7515205c18796647b17e6838ace63582", null ],
+    [ "WB_FONT_INFO", "group__font__struct.html#ga3dbcd5df176dff4b957a5e949f5553af", null ],
     [ "WB_FONTC", "group__font.html#ga96f0a973d3692fed94b208aa520d45f8", null ],
     [ "WBFontFlags", "group__font.html#ga8f49d87ff2fe8588132f90e0f257f6ff", [
       [ "WBFontFlag_PITCH_FIXED", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa36cbb5eb7a08f150506081590e08ec0a", null ],

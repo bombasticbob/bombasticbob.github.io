@@ -61,7 +61,6 @@ $(document).ready(function(){initNavTree('group__font.html','');});
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -74,20 +73,11 @@ $(document).ready(function(){initNavTree('group__font.html','');});
 Modules</h2></td></tr>
 <tr class="memitem:group__font__legacy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font__legacy.html">Legacy Font Utilities</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWBFont.html">WBFont</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified font.  <a href="structWBFont.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWBFontInfo.html">WBFontInfo</a></td></tr>
+<tr class="memitem:group__font__struct"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font__struct.html">Font Structures</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga7515205c18796647b17e6838ace63582"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWBFont.html">WBFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a></td></tr>
-<tr class="memdesc:ga7515205c18796647b17e6838ace63582"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified font.  <a href="#ga7515205c18796647b17e6838ace63582">More...</a><br /></td></tr>
-<tr class="separator:ga7515205c18796647b17e6838ace63582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga96f0a973d3692fed94b208aa520d45f8"><td class="memItemLeft" align="right" valign="top">typedef const struct <a class="el" href="structWBFont.html">WBFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a></td></tr>
 <tr class="memdesc:ga96f0a973d3692fed94b208aa520d45f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">a 'const' version of WB_FONT - note that this CAN actually be written to, so it's not truly 'const'.  <a href="#ga96f0a973d3692fed94b208aa520d45f8">More...</a><br /></td></tr>
 <tr class="separator:ga96f0a973d3692fed94b208aa520d45f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,16 +168,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:ga0a23be1452193c40176ebf497420ca53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga0a23be1452193c40176ebf497420ca53">WBFontEnableAntiAlias</a> (void)</td></tr>
 <tr class="memdesc:ga0a23be1452193c40176ebf497420ca53"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if certain fonts should be anti-aliased when rendered  <a href="#ga0a23be1452193c40176ebf497420ca53">More...</a><br /></td></tr>
 <tr class="separator:ga0a23be1452193c40176ebf497420ca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9eed7b9083863d52c4ff348fc170d124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124">WBFreeFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> pFont)</td></tr>
+<tr class="memitem:ga9eed7b9083863d52c4ff348fc170d124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124">WBFreeFont</a> (Display *pDisplay, <a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> pFont)</td></tr>
 <tr class="memdesc:ga9eed7b9083863d52c4ff348fc170d124"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a copy of an existing font (best when assigning to a window)  <a href="#ga9eed7b9083863d52c4ff348fc170d124">More...</a><br /></td></tr>
 <tr class="separator:ga9eed7b9083863d52c4ff348fc170d124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga59dc240b3bdd8c7a1c81d96b524a9e3c">WBCopyFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
+<tr class="memitem:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga59dc240b3bdd8c7a1c81d96b524a9e3c">WBCopyFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
 <tr class="memdesc:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a copy of an existing font (best when assigning to a window)  <a href="#ga59dc240b3bdd8c7a1c81d96b524a9e3c">More...</a><br /></td></tr>
 <tr class="separator:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04f6ba317b2fc72cf486ae3523e3a631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga04f6ba317b2fc72cf486ae3523e3a631">WBCopyModifyFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pOriginal, int iFontSize, int iFlags)</td></tr>
+<tr class="memitem:ga04f6ba317b2fc72cf486ae3523e3a631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga04f6ba317b2fc72cf486ae3523e3a631">WBCopyModifyFont</a> (Display *pDisplay, <a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pOriginal, int iFontSize, int iFlags)</td></tr>
 <tr class="memdesc:ga04f6ba317b2fc72cf486ae3523e3a631"><td class="mdescLeft">&#160;</td><td class="mdescRight">load and modify a font according to the specified size and flags  <a href="#ga04f6ba317b2fc72cf486ae3523e3a631">More...</a><br /></td></tr>
 <tr class="separator:ga04f6ba317b2fc72cf486ae3523e3a631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad44bdb5b5cdc6ec62b652839434ca420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gad44bdb5b5cdc6ec62b652839434ca420">WBLoadFont</a> (Display *pDisplay, const char *szFontName, int iFontSize, int iFlags)</td></tr>
+<tr class="memitem:gad44bdb5b5cdc6ec62b652839434ca420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gad44bdb5b5cdc6ec62b652839434ca420">WBLoadFont</a> (Display *pDisplay, const char *szFontName, int iFontSize, int iFlags)</td></tr>
 <tr class="memdesc:gad44bdb5b5cdc6ec62b652839434ca420"><td class="mdescLeft">&#160;</td><td class="mdescRight">load a WB_FONT font object based on a font name, size, and font flags  <a href="#gad44bdb5b5cdc6ec62b652839434ca420">More...</a><br /></td></tr>
 <tr class="separator:gad44bdb5b5cdc6ec62b652839434ca420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d70f52908b8568c60701282bf86d842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga8d70f52908b8568c60701282bf86d842">WBFontAvgCharWidth</a> (<a class="el" href="group__font.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
@@ -224,7 +214,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>GC Utility/API functions for WB_FONT mid-level font selection and modification</p>
-<p>This is the definition file for font helper functions and structures, designed to SPECIFICALY work with 'Xft' freetype fonts and rendering. For maximum compatibility, these are abstracted using the WB_FONT object for legacy implementations that do not have the Xft library installed, and for those fonts that are native X11 fonts or font sets. </p>
+<p>These are the definitions for font helper functions and structures, designed to SPECIFICALY work with 'Xft' freetype fonts and rendering, but also support legacy (X11) fonts and font sets. For maximum compatibility, they have been abstracted using the (new) WB_FONT/WB_FONTC objects, particularly for legacy implementations that do not have the Xft library installed, and for those fonts that are native X11 fonts or font sets. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gacdb2e0a2ede4994aa57807e3fdb89df3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacdb2e0a2ede4994aa57807e3fdb89df3">&#9670;&nbsp;</a></span>WB_DRAW_STRING</h2>
@@ -312,23 +302,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga7515205c18796647b17e6838ace63582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7515205c18796647b17e6838ace63582">&#9670;&nbsp;</a></span>WB_FONT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified font. </p>
-<p>Internal structure, caching font information (mostly for legacy font support)</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWBFont.html">WBFont</a></div><div class="line">{</div><div class="line">  <span class="keyword">struct </span><a class="code" href="structWBFont.html">WBFont</a> *pShareChain; <span class="comment">// RESERVED - next in a chain of WB_FONTs that share the same &quot;stuff&quot;, NULL if this is a stand-alone copy</span></div><div class="line">  <span class="keyword">struct </span><a class="code" href="structWBFont.html">WBFont</a> *<a class="code" href="structWBFont.html#af0d20e8b2193d62327d27315f66b61e0">pSharePrev</a>;  <span class="comment">// RESERVED - previous in a chain of WB_FONTs that share the same &quot;stuff&quot;, NULL if this is a stand-alone copy</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#abe9ebe5ac67cf4534b1035beea899b76">iAscent</a>;                <span class="comment">// RESERVED - cached font ascent (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#a6b186563b68202ddb369e908dc103d0e">iDescent</a>;               <span class="comment">// RESERVED - cached font descent (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#a2884aa55a9f2544c59a08976071b1d64">iHeight</a>;                <span class="comment">// RESERVED - cached font descent (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#ace6c35721f658a2062a2b65009c2a858">iAvgCharWidth</a>;          <span class="comment">// RESERVED - cached average character width (-1 if not valid).  do not access this directly</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structWBFont.html#a7732300348563d554a9b165b817bce51">iMaxCharWidth</a>;          <span class="comment">// RESERVED - cached max character width (-1 if not valid).  do not access this directly</span></div><div class="line">  XCharStruct <a class="code" href="structWBFont.html#ad80e1b63e7afb05fc8464fb2b0f4f1d3">max_bounds</a>;     <span class="comment">// RESERVED - cached max bounds (all 0&#39;s if not valid).  do not access this directly</span></div><div class="line">  Display *<a class="code" href="structWBFont.html#a0e5b4ba1b30f7c298b82d7592e78a8e3">pDisplay</a>;          <span class="comment">// The Display pointer associated with this font (to be used internally)</span></div><div class="line">  XftFont *pxftFont;          <span class="comment">// general font info (only valid when Xft library is installed)</span></div><div class="line">  XftFontInfo *pxftFontInfo;  <span class="comment">// used by lib like a handle, assign to &#39;None&#39; when not in use (only valid when Xft library is installed)</span></div><div class="line">  XFontStruct *<a class="code" href="structWBFont.html#aec0bc22c584fc6c65e05ab514f161f5d">pFontStruct</a>;   <span class="comment">// legacy &#39;XFontStruct&#39; for X11 raster fonts</span></div><div class="line">  XFontSet <a class="code" href="structWBFont.html#adf92dff485194330da58ca02fdb62eca">fsFont</a>;            <span class="comment">// legacy &#39;XFontSet&#39; for X11 raster fonts (UTF-8)</span></div><div class="line">} * <a class="code" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>; <span class="comment">// WB_FONT will always point to this struct, allocated using WBAlloc</span></div></div><!-- fragment --><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWBFontInfo.html">WBFontInfo</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">char</span> *szFoundry, *szFamily;</div><div class="line">  <span class="keywordtype">int</span> iWeight, iSlant, iWidth;</div><div class="line">  <span class="keywordtype">char</span> *szAdStyle;</div><div class="line">  <span class="keywordtype">int</span> iPixelSize, iPointSize, iResX, iResY, iSpacing, iAvgWidth;</div><div class="line">  <span class="keywordtype">char</span> *szRegistry, *szEncoding;</div><div class="line">  <span class="keywordtype">char</span> data[8];</div><div class="line">} <a class="code" href="structWBFontInfo.html">WB_FONT_INFO</a>;</div></div><!-- fragment --> 
-</div>
-</div>
 <a id="ga96f0a973d3692fed94b208aa520d45f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga96f0a973d3692fed94b208aa520d45f8">&#9670;&nbsp;</a></span>WB_FONTC</h2>
 
@@ -343,7 +316,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>a 'const' version of WB_FONT - note that this CAN actually be written to, so it's not truly 'const'. </p>
 <p>In order to implement font objects that are not modified, that is the actual system font they represent does not change, the 'WB_FONTC' type is used. This helps to prevent accidentally modifying the font objects returned as 'WB_FONTC'. In the 'C' language there's no obvious way to implement a 'const' that isn't exactly 'const', when you store the cached query information (and forward/back chain pointers) directly into it 'on the fly'. So don't use read-only memory to store a WB_FONTC . The details will be taken care of on the back-end. This also causes the C compiler to perform some implicit type conversions so that the code works.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582" title="An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified...">WB_FONT</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582" title="An allocated structure containing XFontStruct, XFontInfo, and XftFont [as applicable] for a specified...">WB_FONT</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00185">185</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
@@ -490,7 +463,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBCopyFont </td>
+          <td class="memname"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBCopyFont </td>
           <td>(</td>
           <td class="paramtype">Display *&#160;</td>
           <td class="paramname"><em>pDisplay</em>, </td>
@@ -533,7 +506,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBCopyModifyFont </td>
+          <td class="memname"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBCopyModifyFont </td>
           <td>(</td>
           <td class="paramtype">Display *&#160;</td>
           <td class="paramname"><em>pDisplay</em>, </td>
@@ -772,7 +745,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td>
           <td class="paramname"><em>pFont</em>&#160;</td>
         </tr>
         <tr>
@@ -806,7 +779,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__font.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBLoadFont </td>
+          <td class="memname"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> WBLoadFont </td>
           <td>(</td>
           <td class="paramtype">Display *&#160;</td>
           <td class="paramname"><em>pDisplay</em>, </td>
@@ -969,7 +942,7 @@ A value of '0' is considered to be a 'wildcard' match. Use a positive 'iFontSize
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 7 2019 04:15:07 for X11workbench Toolkit by
+    <li class="footer">Generated on Fri Jun 7 2019 04:32:21 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
