@@ -174,7 +174,7 @@ Functions</h2></td></tr>
 <p>This function implements the QSORT_R macro when there is no libc function for qsort_r()</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02481">2481</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02496">2496</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ Functions</h2></td></tr>
 <p>If the number of available cores is not known or cannot be determined for some reason, this function returns a value of 0.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00949">949</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00964">964</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ Functions</h2></td></tr>
 <p>Passing a pointer asynchronously via a hash, particularly across thread boundaries, SHOULD implement its own method of reference counting to avoid re-using a pointer after the memory has been free'd. If you do not queue the message, this becomes less important. In any case, care needs to be taken to avoid using a pointer after it has been free'd.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01783">1783</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01798">1798</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ Functions</h2></td></tr>
 <p>A generic delay utility that will use 'nanosleep' (when available), or some other means (such as 'usleep') when it is not. On systems that do not support microsecond resolution on delays, this function will always delay at least one millisecond. On some systems, this delay may be interruptible. For exact timing, a non-interruptible loop that times execution by counting CPU instructions shyould be used instead. This function is approximate only.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00923">923</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00938">938</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -297,7 +297,7 @@ Functions</h2></td></tr>
 <p>If you have physically free'd (or otherwise invalidated) a hashed pointer, you should call <a class="el" href="group__platform__functions.html#ga9c295f7a7fb34ed8f99a6abaa598b8a8" title="Destroy a 32-bit &#39;secure&#39; hash for a pointer regardless of reference count. ">WBDestroyPointerHashPtr()</a> so that a hash for that pointer will not exist.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01954">1954</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l01969">1969</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Functions</h2></td></tr>
 <p>You should call this function immediately before you free a pointer that might be referenced by a secure pointer hash, to prevent 'use after free' problems. This will NOT solve problems where the hash is being used across threads, however. You may need to provide a different method of synchronizing hashes under such a condition, such as thread-safe reference counting.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02022">2022</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02037">2037</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ Functions</h2></td></tr>
 <p>The X11 workbench toolkit makes use of Atoms for menu and dialog box events. To prevent flooding the X11 server with a lot of unnecessary proprietary Atom names, this function lets X11 workbench continue to use the Atom paradigm while simultaneously keeping its own separate, private list of Atoms.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02169">2169</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02184">2184</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Functions</h2></td></tr>
 <p>A non-NULL return value must be free'd using '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' rather than 'XFree()' (as it would have been with 'XGetAtomName()'). This is primarily for future cross-platform compatibility.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02357">2357</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02372">2372</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ Functions</h2></td></tr>
 <p>NOTE: automatically freeing the reference does NOT free the pointer. Failure to handle these correctly can result in memory leaks, but that is preferable to security vulnerabilities</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02076">2076</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02091">2091</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ Functions</h2></td></tr>
 <p>On systems that do not natively support a 64-bit integer type, the return value will be WB_UINT32 and may actually wrap around after about 1 hour.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00897">897</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00912">912</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ Functions</h2></td></tr>
 <p>The X11 workbench toolkit makes use of Atoms for menu and dialog box events. To prevent flooding the X11 server with a lot of unnecessary proprietary Atom names, this function lets X11 workbench continue to use the Atom paradigm while simultaneously keeping its own separate, private list of Atoms.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02298">2298</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l02313">2313</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -565,7 +565,7 @@ Functions</h2></td></tr>
 <p>This is a wrapper for 'mkdir' that also handles recursive directory creation when not all paths exist already.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03203">3203</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03218">3218</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -597,7 +597,7 @@ Functions</h2></td></tr>
 The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' any non-NULL pointer returned by this function.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03259">3259</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03274">3274</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -631,7 +631,7 @@ The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a9
 This function preserves the name of the file in a list of temporary files that need to be deleted once the application has terminated. This way an external application can keep the file open indefinitely, or even re-read the file, without negative effects. The '<a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16" title="Resource &#39;free-up&#39; on exit (must call) ">WBPlatformOnExit()</a>' function will delete all temporary files that have been previously created by 'WBTempFile'.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03504">3504</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03519">3519</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ The actual location of the temporary file depends upon platform-specific paramet
 The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;. ">WBFree()</a>' any non-NULL pointer returned by this function.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions. ">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03388">3388</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03403">3403</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -673,7 +673,7 @@ The caller must '<a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a9
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 7 2019 05:00:08 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Jun 8 2019 20:45:08 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
