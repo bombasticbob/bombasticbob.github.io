@@ -6,6 +6,7 @@ var annotated_dup =
     [ "__DT_WORDS__", "struct____DT__WORDS____.html", "struct____DT__WORDS____" ],
     [ "__EVENT_ENTRY__", "struct____EVENT__ENTRY____.html", "struct____EVENT__ENTRY____" ],
     [ "__file_help_buf__", "struct____file__help__buf____.html", "struct____file__help__buf____" ],
+    [ "__internal_window_entry__", "struct____internal__window__entry____.html", "struct____internal__window__entry____" ],
     [ "__LISTINFO__", "struct____LISTINFO____.html", "struct____LISTINFO____" ],
     [ "__TIMER_ENTRY__", "struct____TIMER__ENTRY____.html", "struct____TIMER__ENTRY____" ],
     [ "__WB_DIALOG_CONTROL__", "struct____WB__DIALOG__CONTROL____.html", "struct____WB__DIALOG__CONTROL____" ],
