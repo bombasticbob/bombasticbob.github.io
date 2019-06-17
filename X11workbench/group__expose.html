@@ -231,7 +231,7 @@ Functions</h2></td></tr>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08060">8060</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08125">8125</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ Functions</h2></td></tr>
 This function collects all of the relevant invalid regions associated with the window that fall within the 'Expose' event area, and calculates a bounding WB_GEOM rectangle for it. It also applies the invalid region as a 'clipping' region for the returned WBGC. When you call <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>, the entire clipping region will be marked 'valid' automatically, so it is important for your 'paint' function to update the entire WB_GEOM rectangle identified by pgRet. This includes erasing the background as well as drawing whatever is in the foreground.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07648">7648</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07691">7691</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ This function collects all of the relevant invalid regions associated with the w
 This particular function is more suited to updating a specific area outside of a normal Expose callback handler. As an example, a frame window would use this to update the tab area or the status bar area, prior to calling the user callback function. That way, only the desired region will be 'validated' on call to <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a>, and not the entire window client area.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07691">7691</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07739">7739</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>Call this function, following a call to <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a>, if you want to erase the background of the window. Call this in lieu of XClearWindow() or XClearArea()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07865">7865</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07930">7930</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -458,7 +458,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08075">8075</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08140">8140</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>This function makes a simple copy of a region by doing a union with itself, returning the result. The caller must destroy the returned value using XDestroyRegion()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07550">7550</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07593">7593</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1169,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga905d89854ba078da62ea2484dabee4b3" title="Assign an XImage for the entire window. ">WBAssignWindowImage()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07927">7927</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07992">7992</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1445,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>This function converts a WB_GEOM structure to a Region. The caller must destroy the returned value using XDestroyRegion()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07613">7613</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07656">7656</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1476,7 @@ This particular function is more suited to updating a specific area outside of a
 <p>This function returns a copy of the current invalid region for the window, or None if the window is up-to-date. The caller must destroy the returned value using XDestroyRegion()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07479">7479</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07522">7522</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1508,7 @@ This particular function is more suited to updating a specific area outside of a
 This function is not valid outside of <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> / <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> processing, typically part of an 'Expose' event handler.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07521">7521</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07564">7564</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1553,7 +1553,7 @@ This function is not valid outside of <a class="el" href="group__expose.html#ga7
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08006">8006</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08071">8071</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1602,7 @@ This function is not valid outside of <a class="el" href="group__expose.html#ga7
 For a zero 'bPaintFlag' the next Expose event will include this geometry as part of its update region.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07268">7268</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07283">7283</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1659,7 +1659,7 @@ For a zero 'bPaintFlag' the next Expose event will include this geometry as part
 For a zero 'bPaintFlag' the next Expose event will include this geometry as part of its update region.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02719">2719</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02729">2729</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1708,7 @@ For a zero 'bPaintFlag' the next Expose event will include this geometry as part
 For a zero 'bPaintFlag' the next Expose event will include this region as part of its update region.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07335">7335</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07358">7358</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1750,7 +1750,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>This function only works for windows that have been registered with a callback function. It checks the internal flags to see if the window has been mapped, and if it has, it returns a non-zero value. It can be helpful to avoid unnecessary signals from the X11 API.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05481">5481</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05492">5492</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1792,7 +1792,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Use this function when 'raising' a window, rather than XMapRaised so that the internal state flags and other information can be updated</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05413">5413</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05424">5424</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1834,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Use this function when making a window visible, rather than XMapWindow so that the internal state flags and other information can be updated.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05369">5369</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05380">5380</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1865,7 +1865,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>This function converts a WB_RECT structure to a Region. The caller must destroy the returned value using XDestroyRegion()</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07580">7580</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07623">7623</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +1907,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Use this function when making a window invisible, rather than XUnmapWindow so that the internal state flags and other information can be updated</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05456">5456</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05467">5467</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1931,7 +1931,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 <p>Whenever the 'invalid' region is non-empty, you can generate an asynchronous Expose event using this function. This allows you to invalidate several geometries or regions during normal processing, with the paint flag set to 'false', and then generate a single Expose event after all of the processing has completed.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07159">7159</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07170">7170</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1956,7 +1956,7 @@ For a zero 'bPaintFlag' the next Expose event will include this region as part o
 You should make sure that the Expose handler does not cause recursion, since it will be called directly by this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07217">7217</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07230">7230</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1999,7 +1999,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler ...">WBBeginPaint()</a> <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39; ">WBEndPaint()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08093">8093</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08158">8158</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2040,7 +2040,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <p>In conjunction with WBProcessExposeEvent it removes a geometry from the 'invalid' region associated with the window. If the resulting 'invalid' region is empty, no subsequent 'Expose' event will be generated, even if one had previously been in the queue, until the next Expose event or 'invalid' region exists for this window.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07366">7366</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07414">7414</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2089,7 +2089,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <p>In conjunction with WBProcessExposeEvent it removes a rectangle from the 'invalid' region associated with the window. If the resulting 'invalid' region is empty, no subsequent 'Expose' event will be generated, even if one had previously been in the queue, until the next Expose event or 'invalid' region exists for this window.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02751">2751</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l02765">2765</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -2130,7 +2130,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <p>In conjunction with WBProcessExposeEvent it removes a region from the 'invalid' region associated with the window. If the resulting 'invalid' region is empty, no subsequent 'Expose' event will be generated, even if one had previously been in the queue, until the next Expose event or 'invalid' region exists for this window.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07432">7432</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07479">7479</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2139,7 +2139,7 @@ You should make sure that the Expose handler does not cause recursion, since it 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:08 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

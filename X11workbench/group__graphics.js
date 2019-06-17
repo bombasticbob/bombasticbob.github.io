@@ -7,6 +7,8 @@ var group__graphics =
     [ "WBCreateGC", "group__graphics.html#gadcfffbfb0a23ea30864b864d84138145", null ],
     [ "WBFreeGC", "group__graphics.html#gab03029385655d9a497f48ef95bb06679", null ],
     [ "WBGContextFromGC", "group__graphics.html#ga5f8d4f67db1983057cfb657e503c107f", null ],
+    [ "WBGetBackground", "group__graphics.html#gae7f2ba83371b69e4b6ed40d77ef3d05a", null ],
+    [ "WBGetForeground", "group__graphics.html#ga18bb98350618c570be46713ad98f5836", null ],
     [ "WBGetGCFont", "group__graphics.html#gabf556679aab6bbd757fab8f699a60cae", null ],
     [ "WBGetGCValues", "group__graphics.html#gae7f15f90fb7effa98d99924fbbab6f5f", null ],
     [ "WBQueryGCFont", "group__graphics.html#gadbd76ba213b8e92f9393c7aeb9b18763", null ],

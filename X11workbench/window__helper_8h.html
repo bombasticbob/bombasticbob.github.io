@@ -750,7 +750,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gab03029385655d9a497f48ef95bb06679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free resources for a WBGC, wrapper for XFreeGC()  <a href="group__graphics.html#gab03029385655d9a497f48ef95bb06679">More...</a><br /></td></tr>
 <tr class="separator:gab03029385655d9a497f48ef95bb06679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f8d4f67db1983057cfb657e503c107f"><td class="memItemLeft" align="right" valign="top">GContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga5f8d4f67db1983057cfb657e503c107f">WBGContextFromGC</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC)</td></tr>
-<tr class="memdesc:ga5f8d4f67db1983057cfb657e503c107f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free resources for a WBGC, wrapper for XFreeGC()  <a href="group__graphics.html#ga5f8d4f67db1983057cfb657e503c107f">More...</a><br /></td></tr>
+<tr class="memdesc:ga5f8d4f67db1983057cfb657e503c107f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free resources for a WBGC, wrapper for XGContextFromGC()  <a href="group__graphics.html#ga5f8d4f67db1983057cfb657e503c107f">More...</a><br /></td></tr>
 <tr class="separator:ga5f8d4f67db1983057cfb657e503c107f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacad1360703eaa6f203ba69f7c53cf986"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#gacad1360703eaa6f203ba69f7c53cf986">WBSetRegion</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, Region rgnClip)</td></tr>
 <tr class="memdesc:gacad1360703eaa6f203ba69f7c53cf986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign clipping region, wrapper for XSetRegion()  <a href="group__graphics.html#gacad1360703eaa6f203ba69f7c53cf986">More...</a><br /></td></tr>
@@ -764,11 +764,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga819ec1a1912eda26873e75e3b19acbbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga819ec1a1912eda26873e75e3b19acbbe">WBSetFunction</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, int function)</td></tr>
 <tr class="memdesc:ga819ec1a1912eda26873e75e3b19acbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 'function' for the WBGC, a wrapper for XSetFunction()  <a href="group__graphics.html#ga819ec1a1912eda26873e75e3b19acbbe">More...</a><br /></td></tr>
 <tr class="separator:ga819ec1a1912eda26873e75e3b19acbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18bb98350618c570be46713ad98f5836"><td class="memItemLeft" align="right" valign="top">static __inline__ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga18bb98350618c570be46713ad98f5836">WBGetForeground</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC)</td></tr>
+<tr class="memdesc:ga18bb98350618c570be46713ad98f5836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the (cached) foreground color for a WBGC.  <a href="group__graphics.html#ga18bb98350618c570be46713ad98f5836">More...</a><br /></td></tr>
+<tr class="separator:ga18bb98350618c570be46713ad98f5836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08e657d5f326eb0647b83178f8844db2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga08e657d5f326eb0647b83178f8844db2">WBSetForeground</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, unsigned long foreground)</td></tr>
 <tr class="memdesc:ga08e657d5f326eb0647b83178f8844db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign foreground color, a wrapper for XSetForeground()  <a href="group__graphics.html#ga08e657d5f326eb0647b83178f8844db2">More...</a><br /></td></tr>
 <tr class="separator:ga08e657d5f326eb0647b83178f8844db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7f2ba83371b69e4b6ed40d77ef3d05a"><td class="memItemLeft" align="right" valign="top">static __inline__ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#gae7f2ba83371b69e4b6ed40d77ef3d05a">WBGetBackground</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC)</td></tr>
+<tr class="memdesc:gae7f2ba83371b69e4b6ed40d77ef3d05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the (cached) background color for a WBGC.  <a href="group__graphics.html#gae7f2ba83371b69e4b6ed40d77ef3d05a">More...</a><br /></td></tr>
+<tr class="separator:gae7f2ba83371b69e4b6ed40d77ef3d05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5057035ba8069d50fcef9a43a11cc3ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga5057035ba8069d50fcef9a43a11cc3ed">WBSetBackground</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, unsigned long background)</td></tr>
-<tr class="memdesc:ga5057035ba8069d50fcef9a43a11cc3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign background color, a wrapper for XSetForeground()  <a href="group__graphics.html#ga5057035ba8069d50fcef9a43a11cc3ed">More...</a><br /></td></tr>
+<tr class="memdesc:ga5057035ba8069d50fcef9a43a11cc3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign background color, a wrapper for XSetBackground()  <a href="group__graphics.html#ga5057035ba8069d50fcef9a43a11cc3ed">More...</a><br /></td></tr>
 <tr class="separator:ga5057035ba8069d50fcef9a43a11cc3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e532f72f3980acd8bac072ce905e511"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga3e532f72f3980acd8bac072ce905e511">WBSetFont</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, <a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
 <tr class="memdesc:ga3e532f72f3980acd8bac072ce905e511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign font to a WBGC, a wrapper for XSetFont()  <a href="group__graphics.html#ga3e532f72f3980acd8bac072ce905e511">More...</a><br /></td></tr>
@@ -1017,7 +1023,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <p>This function works ONLY for windows that have been registered with a callback. It checks to see if the internal window information exists and returns a non-zero value if the internal information exists AND the window itself has not been destroyed. This works whether or not the window was ever mapped.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API ">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05495">5495</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05506">5506</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1033,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="window__helper_8h.html">window_helper.h</a></li>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:07 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

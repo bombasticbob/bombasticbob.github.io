@@ -416,9 +416,9 @@ static pthread_rwlock_t&#160;</td><td class="memItemRight" valign="bottom"><b>xI
 <tr class="memitem:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">bQuitFlag</a></td></tr>
 <tr class="memdesc:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Quit' Flag - you should check this periodically in your main (message) loop and exit whenever it is TRUE (non-zero)  <a href="group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f">More...</a><br /></td></tr>
 <tr class="separator:gaa4167dc88ea153b2619cb8eb8e3e9c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf52b4b2deddd3f452646bf57070ace"><td class="memItemLeft" align="right" valign="top"><a id="a6bf52b4b2deddd3f452646bf57070ace"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>iWBDebugLevel</b> = 0</td></tr>
-<tr class="separator:a6bf52b4b2deddd3f452646bf57070ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbddfe92ead09e7e4995b11767f9413"><td class="memItemLeft" align="right" valign="top"><a id="aefbddfe92ead09e7e4995b11767f9413"></a>
+<a class="el" href="group__platform__types.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a">WB_UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>iWBDebugLevel</b> = 0</td></tr>
+<tr class="separator:aefbddfe92ead09e7e4995b11767f9413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d8677391088b62e87a83e154871463"><td class="memItemLeft" align="right" valign="top"><a id="a65d8677391088b62e87a83e154871463"></a>
 static char&#160;</td><td class="memItemRight" valign="bottom"><b>szAppName</b> [PATH_MAX *2] =&quot;&quot;</td></tr>
 <tr class="separator:a65d8677391088b62e87a83e154871463"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -514,7 +514,7 @@ static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>nMaxIn
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{<span class="keywordtype">int</span> iLen; <a class="code" href="group__text.html#ga22d851925a8a6edd21f35a31de883423">NEXT_WORD</a>(pX,pY,pZ); \</div><div class="line">                              iLen=pZ - pY &gt; <span class="keyword">sizeof</span>(tbuf) - 1 ? <span class="keyword">sizeof</span>(tbuf) - 1 : pZ - pY; \</div><div class="line">                              if(iLen&gt;0){memcpy(tbuf,pY,iLen);} tbuf[iLen]=0; iW=atoi(tbuf);}</div><div class="ttc" id="group__text_html_ga22d851925a8a6edd21f35a31de883423"><div class="ttname"><a href="group__text.html#ga22d851925a8a6edd21f35a31de883423">NEXT_WORD</a></div><div class="ttdeci">#define NEXT_WORD(pX, pY, pZ)</div><div class="ttdoc">Obtain the &amp;#39;next word&amp;#39; within a string pointed to by pX, bounded by pY and pZ. </div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l01194">platform_helper.h:1194</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{<span class="keywordtype">int</span> iLen; <a class="code" href="group__text.html#ga22d851925a8a6edd21f35a31de883423">NEXT_WORD</a>(pX,pY,pZ); \</div><div class="line">                              iLen=pZ - pY &gt; <span class="keyword">sizeof</span>(tbuf) - 1 ? <span class="keyword">sizeof</span>(tbuf) - 1 : pZ - pY; \</div><div class="line">                              if(iLen&gt;0){memcpy(tbuf,pY,iLen);} tbuf[iLen]=0; iW=atoi(tbuf);}</div><div class="ttc" id="group__text_html_ga22d851925a8a6edd21f35a31de883423"><div class="ttname"><a href="group__text.html#ga22d851925a8a6edd21f35a31de883423">NEXT_WORD</a></div><div class="ttdeci">#define NEXT_WORD(pX, pY, pZ)</div><div class="ttdoc">Obtain the &amp;#39;next word&amp;#39; within a string pointed to by pX, bounded by pY and pZ. </div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l01202">platform_helper.h:1202</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -524,7 +524,7 @@ static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>nMaxIn
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="platform__helper_8c.html">platform_helper.c</a></li>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:07 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

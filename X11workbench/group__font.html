@@ -158,9 +158,16 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gafaefea0f904c93eb6ee373e2793aeebf">__internal_font_helper_init</a> (void)</td></tr>
 <tr class="memdesc:gafaefea0f904c93eb6ee373e2793aeebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialization for font helper - call once at start of program (<a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required) ">WBInit()</a> does this for you) <br /></td></tr>
 <tr class="separator:gafaefea0f904c93eb6ee373e2793aeebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15f08693c870c2b7387c240b6bb897a8"><td class="memItemLeft" align="right" valign="top"><a id="ga15f08693c870c2b7387c240b6bb897a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga15f08693c870c2b7387c240b6bb897a8">__internal_font_helper_exit</a> (void)</td></tr>
+<tr class="memdesc:ga15f08693c870c2b7387c240b6bb897a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-initialization for font helper - call once at end of program (<a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824" title="deletes any remaining global objects, frees the Display pointer, and terminates event processing ...">WBExit()</a> does this for you) <br /></td></tr>
+<tr class="separator:ga15f08693c870c2b7387c240b6bb897a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a23be1452193c40176ebf497420ca53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga0a23be1452193c40176ebf497420ca53">WBFontEnableAntiAlias</a> (void)</td></tr>
 <tr class="memdesc:ga0a23be1452193c40176ebf497420ca53"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if certain fonts should be anti-aliased when rendered  <a href="#ga0a23be1452193c40176ebf497420ca53">More...</a><br /></td></tr>
 <tr class="separator:ga0a23be1452193c40176ebf497420ca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88f213b5ddebd8f8acfc6d17c7efde24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga88f213b5ddebd8f8acfc6d17c7efde24">WBFontSetEnableAntiAlias</a> (int bEnable)</td></tr>
+<tr class="memdesc:ga88f213b5ddebd8f8acfc6d17c7efde24"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if certain fonts should be anti-aliased when rendered  <a href="#ga88f213b5ddebd8f8acfc6d17c7efde24">More...</a><br /></td></tr>
+<tr class="separator:ga88f213b5ddebd8f8acfc6d17c7efde24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9eed7b9083863d52c4ff348fc170d124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124">WBFreeFont</a> (Display *pDisplay, <a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> pFont)</td></tr>
 <tr class="memdesc:ga9eed7b9083863d52c4ff348fc170d124"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a copy of an existing font (best when assigning to a window)  <a href="#ga9eed7b9083863d52c4ff348fc170d124">More...</a><br /></td></tr>
 <tr class="separator:ga9eed7b9083863d52c4ff348fc170d124"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,7 +430,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00451">451</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8h_source.html#l00468">468</a> of file <a class="el" href="font__helper_8h_source.html">font_helper.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +474,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <p>On error this function returns NULL. The caller must free non-NULL return values via <a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124" title="make a copy of an existing font (best when assigning to a window) ">WBFreeFont()</a></p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00111">111</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00168">168</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -525,7 +532,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
  On error this function returns NULL. The caller must free non-NULL return values via <a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124" title="make a copy of an existing font (best when assigning to a window) ">WBFreeFont()</a></p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00544">544</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00611">611</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -555,7 +562,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <dl class="section return"><dt>Returns</dt><dd>The ascent of a character for this font</dd></dl>
 <p>Use this function to query a WB_FONT about its maximum ascent. </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00385">385</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00446">446</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -585,7 +592,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <dl class="section return"><dt>Returns</dt><dd>The average width of a character for this font</dd></dl>
 <p>Use this function to query a WB_FONT about its average character width. </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00286">286</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00343">343</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -615,7 +622,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <dl class="section return"><dt>Returns</dt><dd>The descent of a character for this font</dd></dl>
 <p>Use this function to query a WB_FONT about its maximum descent. </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00335">335</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00394">394</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -636,9 +643,11 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 </div><div class="memdoc">
 
 <p>returns non-zero value if certain fonts should be anti-aliased when rendered </p>
-<dl class="section return"><dt>Returns</dt><dd>A non-zero value if certain fonts should be anti-aliased; zero if they should not be. This only applies to legacy (X11) fonts, and not to Xft 'freetype' fonts. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A non-zero value if certain fonts should be anti-aliased; zero if they should not be. This generally applies to legacy (X11) fonts only.</dd></dl>
+<p>Anti-aliasing can carry with it a performance degradation due to the somewhat slow process of getting rendering information from the X server. if the Render extension is present, and libXft is also present, then the Xft library uses the Render extension to do the anti-aliasing. Otherwise, it's done "the hard way" which can be slow.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font.html#ga88f213b5ddebd8f8acfc6d17c7efde24" title="returns non-zero value if certain fonts should be anti-aliased when rendered ">WBFontSetEnableAntiAlias()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00105">105</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00157">157</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -668,7 +677,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <dl class="section return"><dt>Returns</dt><dd>The average width of a character for this font</dd></dl>
 <p>Use this function to query a WB_FONT about its maximum height. </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00434">434</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00497">497</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -698,7 +707,37 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <dl class="section return"><dt>Returns</dt><dd>RESERVED: A copy of a 'maximized' XCharStruct where all members are 'maximum' values of the entire WB_FONT</dd></dl>
 <p>Use this function to query a WB_FONT about its maximum bounds. This will typically be derived from all of the individual font faces within the object </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00478">478</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00543">543</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga88f213b5ddebd8f8acfc6d17c7efde24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88f213b5ddebd8f8acfc6d17c7efde24">&#9670;&nbsp;</a></span>WBFontSetEnableAntiAlias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBFontSetEnableAntiAlias </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns non-zero value if certain fonts should be anti-aliased when rendered </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bEnable</td><td>A non-zero value if certain fonts should be anti-aliased; zero if they should not be. This generally applies to legacy (X11) fonts only.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Anti-aliasing can carry with it a performance degradation due to the somewhat slow process of getting rendering information from the X server. if the Render extension is present, and libXft is also present, then the Xft library uses the Render extension to do the anti-aliasing. Otherwise, it's done "the hard way" which can be slow.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__font.html#ga0a23be1452193c40176ebf497420ca53" title="returns non-zero value if certain fonts should be anti-aliased when rendered ">WBFontEnableAntiAlias()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00162">162</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -740,7 +779,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>use this function to free up resources associated with an existing WB_FONT, invalidating the pointer.</p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00193">193</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00250">250</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -801,7 +840,7 @@ A value of '0' is considered to be a 'wildcard' match. Use a positive 'iFontSize
  On error this function returns NULL. The caller must free non-NULL return values via <a class="el" href="group__font.html#ga9eed7b9083863d52c4ff348fc170d124" title="make a copy of an existing font (best when assigning to a window) ">WBFreeFont()</a></p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00234">234</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00291">291</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -856,7 +895,7 @@ A value of '0' is considered to be a 'wildcard' match. Use a positive 'iFontSize
 <p>Use this function to determine the correct 'display' width and height of a UTF8 or Multi-Byte character string. It calculates the 'logical' extent using either XmbTextExtents() or Xutf8TextExtents() (as applicable) and returns the width/height of the bounding rectangle for the text.</p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00673">673</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00741">741</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -905,7 +944,7 @@ A value of '0' is considered to be a 'wildcard' match. Use a positive 'iFontSize
 <p>Use this function to determine the correct 'display' width of a UTF8 or Multi-Byte character string.</p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00631">631</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__helper_8c_source.html#l00698">698</a> of file <a class="el" href="font__helper_8c_source.html">font_helper.c</a>.</p>
 
 </div>
 </div>
@@ -914,7 +953,7 @@ A value of '0' is considered to be a 'wildcard' match. Use a positive 'iFontSize
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:08 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -103,7 +103,7 @@ var platform__helper_8c =
     [ "cbMaxAtomNames", "platform__helper_8c.html#a83eb20350b06d191df0de25c517de5fa", null ],
     [ "cbTempFileList", "platform__helper_8c.html#a9d900f4c1def3c000d12308af4659da1", null ],
     [ "fInterlockedRWLockInitFlag", "platform__helper_8c.html#a109e967360e1254fddd4e229055e5518", null ],
-    [ "iWBDebugLevel", "platform__helper_8c.html#a6bf52b4b2deddd3f452646bf57070ace", null ],
+    [ "iWBDebugLevel", "platform__helper_8c.html#aefbddfe92ead09e7e4995b11767f9413", null ],
     [ "lInternalAtomSpinner", "platform__helper_8c.html#aa8b8dc36e2e3c8bb5980977f5c69b43c", null ],
     [ "mallocFlagMalloc", "platform__helper_8c.html#aa45d05652eccfa16c791172902f8bdeb", null ],
     [ "nInternalAtoms", "platform__helper_8c.html#a783ae18f47918186c830736a4b51c688", null ],

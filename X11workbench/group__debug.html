@@ -77,7 +77,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga07195be75eaddbb7ddd020b30638f921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga07195be75eaddbb7ddd020b30638f921">WB_DEBUG_DUMP</a>(L,  X,  Y,  Z)&#160;&#160;&#160;<a class="el" href="group__debug.html#gad6ac5dd5ac445f238b70bcb3050254f3">WB_IF_DEBUG_LEVEL</a>(L) { <a class="el" href="group__debug.html#ga1b403292a2ce065b57db74db5809dfea">WBDebugDump</a>(X,Y,Z); }</td></tr>
 <tr class="memdesc:ga07195be75eaddbb7ddd020b30638f921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing conditional debug 'dump' output.  <a href="#ga07195be75eaddbb7ddd020b30638f921">More...</a><br /></td></tr>
 <tr class="separator:ga07195be75eaddbb7ddd020b30638f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6ac5dd5ac445f238b70bcb3050254f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gad6ac5dd5ac445f238b70bcb3050254f3">WB_IF_DEBUG_LEVEL</a>(L)&#160;&#160;&#160;if(<a class="el" href="group__debug.html#gad1c641ef930388b2f1c8f2d011126059">WBCheckDebugLevel</a>((L)))</td></tr>
+<tr class="memitem:gad6ac5dd5ac445f238b70bcb3050254f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gad6ac5dd5ac445f238b70bcb3050254f3">WB_IF_DEBUG_LEVEL</a>(L)&#160;&#160;&#160;if(<a class="el" href="group__debug.html#ga339a962ef03a3af994cf4bb15790a5d6">WBCheckDebugLevel</a>((L)))</td></tr>
 <tr class="memdesc:gad6ac5dd5ac445f238b70bcb3050254f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred method of implementing conditional debug 'if block' code.  <a href="#gad6ac5dd5ac445f238b70bcb3050254f3">More...</a><br /></td></tr>
 <tr class="separator:gad6ac5dd5ac445f238b70bcb3050254f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c9f763affc2de8797b1ffbcf6fafc25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga9c9f763affc2de8797b1ffbcf6fafc25">WB_DEFINE_PROFILE</a>(__name)&#160;&#160;&#160;static int __wb_profile_##__name = -1</td></tr>
@@ -157,7 +157,21 @@ Enumerations</h2></td></tr>
 <b>DebugSubSystem_ScrollBar</b> = 0x00080000, 
 <br />
 &#160;&#160;<b>DebugSubSystem_DrawText</b> = 0x00100000, 
-<b>DebugSubSystem_MASK</b> = ~7L
+<b>DebugSubSystem_Clipboard</b> = 0x00200000, 
+<b>DebugSubSystem_RESERVED1</b> = 0x00400000, 
+<b>DebugSubSystem_RESERVED2</b> = 0x00800000, 
+<br />
+&#160;&#160;<b>DebugSubSystem_RESERVED3</b> = 0x01000000, 
+<b>DebugSubSystem_RESERVED4</b> = 0x02000000, 
+<b>DebugSubSystem_RESERVED5</b> = 0x04000000, 
+<b>DebugSubSystem_RESERVED6</b> = 0x08000000, 
+<br />
+&#160;&#160;<b>DebugSubSystem_RESERVED7</b> = 0x10000000, 
+<b>DebugSubSystem_RESERVED8</b> = 0x20000000, 
+<b>DebugSubSystem_RESERVED9</b> = 0x40000000, 
+<b>DebugSubSystem_MAX</b> = 0x40000000, 
+<br />
+&#160;&#160;<b>DebugSubSystem_MASK</b> = ~7L
 <br />
  }<tr class="memdesc:gab658e6d84759440dbf3c890446075395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug level enumeration.  <a href="group__debug.html#gab658e6d84759440dbf3c890446075395">More...</a><br /></td></tr>
 </td></tr>
@@ -168,9 +182,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2a09380df755537647684f30f7bfab3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">WBSetDebugLevel</a> (unsigned int iLevel)</td></tr>
 <tr class="memdesc:ga2a09380df755537647684f30f7bfab3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set debug level  <a href="#ga2a09380df755537647684f30f7bfab3f">More...</a><br /></td></tr>
 <tr class="separator:ga2a09380df755537647684f30f7bfab3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeed1620ced80e88fa15ec89c3d03de13"><td class="memItemLeft" align="right" valign="top">static __inline__ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13">WBGetDebugLevel</a> (void)</td></tr>
-<tr class="memdesc:gaeed1620ced80e88fa15ec89c3d03de13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current debug level assigned by WBSetDebugLevel.  <a href="#gaeed1620ced80e88fa15ec89c3d03de13">More...</a><br /></td></tr>
-<tr class="separator:gaeed1620ced80e88fa15ec89c3d03de13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdff0718f4556f2cbe2cd24f2dba9691"><td class="memItemLeft" align="right" valign="top">static __inline__ <a class="el" href="group__platform__types.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a">WB_UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gacdff0718f4556f2cbe2cd24f2dba9691">WBGetDebugLevel</a> (void)</td></tr>
+<tr class="memdesc:gacdff0718f4556f2cbe2cd24f2dba9691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current debug level assigned by WBSetDebugLevel.  <a href="#gacdff0718f4556f2cbe2cd24f2dba9691">More...</a><br /></td></tr>
+<tr class="separator:gacdff0718f4556f2cbe2cd24f2dba9691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff552460367fbdb1397a29e364800f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaff552460367fbdb1397a29e364800f49">WBDebugPrint</a> (const char *pFmt,...) __attribute__((format(printf</td></tr>
 <tr class="memdesc:gaff552460367fbdb1397a29e364800f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">conditional debug message output  <a href="#gaff552460367fbdb1397a29e364800f49">More...</a><br /></td></tr>
 <tr class="separator:gaff552460367fbdb1397a29e364800f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,9 +200,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa39191469018c352801b1178befdd5b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gaa39191469018c352801b1178befdd5b2">WBDebugDumpEvent</a> (XEvent *pEvent)</td></tr>
 <tr class="memdesc:gaa39191469018c352801b1178befdd5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps the contents of an XEvent  <a href="#gaa39191469018c352801b1178befdd5b2">More...</a><br /></td></tr>
 <tr class="separator:gaa39191469018c352801b1178befdd5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1c641ef930388b2f1c8f2d011126059"><td class="memItemLeft" align="right" valign="top">static __inline__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#gad1c641ef930388b2f1c8f2d011126059">WBCheckDebugLevel</a> (unsigned int dwLevel)</td></tr>
-<tr class="memdesc:gad1c641ef930388b2f1c8f2d011126059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check specified debug level against the value returned by <a class="el" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13" title="Returns the current debug level assigned by WBSetDebugLevel. ">WBGetDebugLevel()</a> and return non-zero for a match.  <a href="#gad1c641ef930388b2f1c8f2d011126059">More...</a><br /></td></tr>
-<tr class="separator:gad1c641ef930388b2f1c8f2d011126059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga339a962ef03a3af994cf4bb15790a5d6"><td class="memItemLeft" align="right" valign="top">static __inline__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga339a962ef03a3af994cf4bb15790a5d6">WBCheckDebugLevel</a> (<a class="el" href="group__platform__types.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a">WB_UINT64</a> dwLevel)</td></tr>
+<tr class="memdesc:ga339a962ef03a3af994cf4bb15790a5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check specified debug level against the value returned by <a class="el" href="group__debug.html#gacdff0718f4556f2cbe2cd24f2dba9691" title="Returns the current debug level assigned by WBSetDebugLevel. ">WBGetDebugLevel()</a> and return non-zero for a match.  <a href="#ga339a962ef03a3af994cf4bb15790a5d6">More...</a><br /></td></tr>
+<tr class="separator:ga339a962ef03a3af994cf4bb15790a5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga83838706c9ede44d648da13f17eb4734"><td class="memItemLeft" align="right" valign="top"><a id="ga83838706c9ede44d648da13f17eb4734"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga83838706c9ede44d648da13f17eb4734">WBDumpFontStruct</a> (const XFontStruct *pFont)</td></tr>
 <tr class="memdesc:ga83838706c9ede44d648da13f17eb4734"><td class="mdescLeft">&#160;</td><td class="mdescRight">debug function to dump font struct members <br /></td></tr>
@@ -279,7 +293,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 The remainng 3 parameters are passed to WBDebugDump as the title, data pointer, and size of the data (in bytes).<br />
 </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00360">360</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00382">382</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -321,7 +335,7 @@ The remainng 3 parameters are passed to WBDebugDump as the title, data pointer, 
 The remaining parameters, format string (and a variable number of parameters), are passed along to the WBDebugPrint function.<br />
 </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00339">339</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00361">361</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +364,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 </dl>
 <p>This will create a static variable based on '__name' and pre-assign it to an invalid value. </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00389">389</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00411">411</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +393,7 @@ The remaining parameters, format string (and a variable number of parameters), a
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ <span class="keywordflow">if</span>(__wb_profile_##__name &lt; 0) \</div><div class="line">                                           __wb_profile_##__name = WBRegisterProfileVar(__FILE__, __LINE__, __FUNCTION__, \</div><div class="line">                                                                                        <a class="code" href="group__platform__definitions.html#ga79794d0cb0963d108375a04ce3a58b00">WB_STRINGIZE</a>(__name), __desc); }</div><div class="ttc" id="group__platform__definitions_html_ga79794d0cb0963d108375a04ce3a58b00"><div class="ttname"><a href="group__platform__definitions.html#ga79794d0cb0963d108375a04ce3a58b00">WB_STRINGIZE</a></div><div class="ttdeci">#define WB_STRINGIZE(X)</div><div class="ttdoc">stringize a macro argument </div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00283">platform_helper.h:283</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{ <span class="keywordflow">if</span>(__wb_profile_##__name &lt; 0) \</div><div class="line">                                           __wb_profile_##__name = WBRegisterProfileVar(__FILE__, __LINE__, __FUNCTION__, \</div><div class="line">                                                                                        <a class="code" href="group__platform__definitions.html#ga79794d0cb0963d108375a04ce3a58b00">WB_STRINGIZE</a>(__name), __desc); }</div><div class="ttc" id="group__platform__definitions_html_ga79794d0cb0963d108375a04ce3a58b00"><div class="ttname"><a href="group__platform__definitions.html#ga79794d0cb0963d108375a04ce3a58b00">WB_STRINGIZE</a></div><div class="ttdeci">#define WB_STRINGIZE(X)</div><div class="ttdoc">stringize a macro argument </div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00291">platform_helper.h:291</a></div></div>
 </div><!-- fragment -->
 <p>Declaration of a profiling variable and description. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -392,7 +406,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 <p>This will register a static variable based on '__name' with the profiling system, along with the description. Debug builds only.</p>
 <p>NOTE: if this is unique to a particular function, you should include the function name as part of '__desc' </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00401">401</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00423">423</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +453,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 </dl>
 <p>Preferred method of implementing an 'error level' binary dump for all subsystems </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00471">471</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00493">493</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +476,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 <p>Preferred method of implementing an 'error level' debug message for all subsystems. </p>
 <p>Preferred method of implementing an 'error level' debug message for all subsystems </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00449">449</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00471">471</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +491,7 @@ The remaining parameters, format string (and a variable number of parameters), a
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">L</td><td>)</td>
-          <td>&#160;&#160;&#160;if(<a class="el" href="group__debug.html#gad1c641ef930388b2f1c8f2d011126059">WBCheckDebugLevel</a>((L)))</td>
+          <td>&#160;&#160;&#160;if(<a class="el" href="group__debug.html#ga339a962ef03a3af994cf4bb15790a5d6">WBCheckDebugLevel</a>((L)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -492,7 +506,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 <p>Similar to <a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d">WB_DEBUG_PRINT</a>, this macro will conditionally execute a statement or block of code that follows. Example:</p>
 <div class="fragment"><div class="line"><a class="code" href="group__debug.html#gad6ac5dd5ac445f238b70bcb3050254f3">WB_IF_DEBUG_LEVEL</a>(DebugLevel_WARN | DebugSubSystem_Keyboard)</div><div class="line">{</div><div class="line">  <span class="comment">// do something for warnings or higher debug level</span></div><div class="line">}</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00379">379</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00401">401</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +535,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 </dl>
 <p>Use this macro to begin profiling a portion of a function. you must call '<a class="el" href="group__debug.html#ga36881d2498df28fbb95b64faf13783d3" title="Stop profiling using the specified profile variable. ">WB_STOP_PROFILE()</a>' for the counters to be meaningful. </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00414">414</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00436">436</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +564,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 </dl>
 <p>Use this macro to stop profiling a portion of a function. you must have called '<a class="el" href="group__debug.html#ga13eec649ff054aa1ce467def27aa0c76" title="Start profiling using the specified profile variable. ">WB_START_PROFILE()</a>' for the counters to be meaningful. </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00425">425</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00447">447</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +611,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 </dl>
 <p>Preferred method of implementing a 'warning level' binary dump for all subsystems </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00460">460</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00482">482</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +634,7 @@ The remaining parameters, format string (and a variable number of parameters), a
 <p>Preferred method of implementing a 'warning level' debug message for all subsystems. </p>
 <p>Preferred method of implementing a 'warning level' debug message for all subsystems </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00442">442</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00464">464</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -640,16 +654,17 @@ The remaining parameters, format string (and a variable number of parameters), a
 <p>Debug level enumeration. </p>
 <p>Debug Level enumeration and subsystem idetification enumeration</p>
 <p>Bits 0 to 3 identify the level (0 = none, 7 = excessive)<br />
-The remaining bits identify the subsystem filters (no bits set for ALL)</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39; ">WBParseStandardArguments()</a> in <a class="el" href="platform__helper_8c.html" title="Platform-specific utility functions. ">platform_helper.c</a>, 'aszDebugSubSys[]' array </dd></dl>
+The remaining 28 bits (lower DWORD) identify the subsystem filters (no bits set for ALL)</p>
+<p>End-users may use any of the bits in the upper DWORD as the debug level is an 'unsigned long long' (64-bit) value. However, enumerations only work for 32-bit integers with 32-bit compilers, so there are no definitions for those bits here.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39; ">WBParseStandardArguments()</a> in <a class="el" href="platform__helper_8c.html" title="Platform-specific utility functions. ">platform_helper.c</a>, 'aszDebugSubSys[]' array, <a class="el" href="group__debug.html#gacdff0718f4556f2cbe2cd24f2dba9691" title="Returns the current debug level assigned by WBSetDebugLevel. ">WBGetDebugLevel()</a>, <a class="el" href="group__debug.html#ga339a962ef03a3af994cf4bb15790a5d6" title="Check specified debug level against the value returned by WBGetDebugLevel() and return non-zero for a...">WBCheckDebugLevel()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00085">85</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00090">90</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad1c641ef930388b2f1c8f2d011126059"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad1c641ef930388b2f1c8f2d011126059">&#9670;&nbsp;</a></span>WBCheckDebugLevel()</h2>
+<a id="ga339a962ef03a3af994cf4bb15790a5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga339a962ef03a3af994cf4bb15790a5d6">&#9670;&nbsp;</a></span>WBCheckDebugLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -660,7 +675,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
         <tr>
           <td class="memname">static __inline__ int WBCheckDebugLevel </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__platform__types.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a">WB_UINT64</a>&#160;</td>
           <td class="paramname"><em>dwLevel</em></td><td>)</td>
           <td></td>
         </tr>
@@ -672,18 +687,18 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 </table>
 </div><div class="memdoc">
 
-<p>Check specified debug level against the value returned by <a class="el" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13" title="Returns the current debug level assigned by WBSetDebugLevel. ">WBGetDebugLevel()</a> and return non-zero for a match. </p>
+<p>Check specified debug level against the value returned by <a class="el" href="group__debug.html#gacdff0718f4556f2cbe2cd24f2dba9691" title="Returns the current debug level assigned by WBSetDebugLevel. ">WBGetDebugLevel()</a> and return non-zero for a match. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dwLevel</td><td>A combination of one or more 'DebugLevel_' and 'DebugSubSystem_' flags to check </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A non-zero value if the specified debug level matches that returned by <a class="el" href="group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13" title="Returns the current debug level assigned by WBSetDebugLevel. ">WBGetDebugLevel()</a>, zero otherwise.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A non-zero value if the specified debug level matches that returned by <a class="el" href="group__debug.html#gacdff0718f4556f2cbe2cd24f2dba9691" title="Returns the current debug level assigned by WBSetDebugLevel. ">WBGetDebugLevel()</a>, zero otherwise.</dd></dl>
 <p>Various 'debug print' macros need to know what the current debug level is in order to filter their output. This function provides a standard way in which to obtain the debug level. It is defined 'inline' to minimize any performance impact and to allow optimization.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00275">275</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00297">297</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -732,7 +747,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00698">698</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00741">741</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -773,7 +788,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Call this to do a debug dump of XStandardColormap information</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02167">2167</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02202">2202</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -804,7 +819,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09147">9147</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09212">9212</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -846,7 +861,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09100">9100</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09165">9165</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -888,7 +903,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>This function is enabled even for a non-debug build. To have conditional debug output ONLY for a debug build (or given debug level), use the various '<a class="el" href="group__debug.html#ga3c0fc7cbc16080fb7336bfc18dfb6c0d" title="Preferred method of implementing conditional debug output. ">WB_DEBUG_PRINT()</a>' (and related) macros.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09216">9216</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09281">9281</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -929,7 +944,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Call this to do a debug dump of XColor information</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02187">2187</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02222">2222</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -999,12 +1014,12 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Use this function to gain insight into the available fonts. Output is dumped to stderr using the debug output functions.</p>
 <p>Header File: <a class="el" href="font__helper_8h.html" title="Definition file for font helper functions and structures. ">font_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="font__legacy_8c_source.html#l02202">2202</a> of file <a class="el" href="font__legacy_8c_source.html">font_legacy.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="font__legacy_8c_source.html#l02212">2212</a> of file <a class="el" href="font__legacy_8c_source.html">font_legacy.c</a>.</p>
 
 </div>
 </div>
-<a id="gaeed1620ced80e88fa15ec89c3d03de13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeed1620ced80e88fa15ec89c3d03de13">&#9670;&nbsp;</a></span>WBGetDebugLevel()</h2>
+<a id="gacdff0718f4556f2cbe2cd24f2dba9691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdff0718f4556f2cbe2cd24f2dba9691">&#9670;&nbsp;</a></span>WBGetDebugLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1013,7 +1028,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static __inline__ unsigned int WBGetDebugLevel </td>
+          <td class="memname">static __inline__ <a class="el" href="group__platform__types.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a">WB_UINT64</a> WBGetDebugLevel </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1032,7 +1047,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Various 'debug print' macros need to know what the current debug level is in order to filter their output. This function provides a standard way in which to obtain the debug level. It is defined 'inline' to minimize any performance impact and to allow optimization.</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00160">160</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug__helper_8h_source.html#l00182">182</a> of file <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1072,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <p>Pass the debug level as 'iLevel' 0 for none, 1 for minimal, 2 for more, etc. up to 7</p>
 <p>Header File: <a class="el" href="debug__helper_8h_source.html">debug_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00643">643</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00686">686</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1081,7 @@ The remaining bits identify the subsystem filters (no bits set for ALL)</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:08 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

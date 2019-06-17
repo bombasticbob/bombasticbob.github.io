@@ -60,7 +60,7 @@ var text__object_8c =
     [ "__internal_init", "text__object_8c.html#ab902a5ebab988550fb26a4f717803ecd", null ],
     [ "__internal_ins_chars", "text__object_8c.html#a12974e53ae948a41f7800ef1f0022a7e", null ],
     [ "__internal_invalidate_cursor", "text__object_8c.html#a494335e59d0349c743b89322128679c1", null ],
-    [ "__internal_invalidate_rect", "text__object_8c.html#a67b84a600432b8326f419098c7ff3082", null ],
+    [ "__internal_invalidate_rect", "text__object_8c.html#abb122ce8d97e3183630558a13de4866b", null ],
     [ "__internal_merge_rect", "text__object_8c.html#a057fe0929f651dcf769ff99a8cd0585b", null ],
     [ "__internal_mouse_click", "text__object_8c.html#a9ff57d12e59cae3f0e36eda19a2b24bc", null ],
     [ "__internal_page_down", "text__object_8c.html#afcb8f1f1194c690f532580a1dc28ec8e", null ],

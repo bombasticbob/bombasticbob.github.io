@@ -359,9 +359,9 @@ static char *&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_g
 <tr class="memitem:a494335e59d0349c743b89322128679c1"><td class="memItemLeft" align="right" valign="top"><a id="a494335e59d0349c743b89322128679c1"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_invalidate_cursor</b> (const struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, int bPaintFlag)</td></tr>
 <tr class="separator:a494335e59d0349c743b89322128679c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b84a600432b8326f419098c7ff3082"><td class="memItemLeft" align="right" valign="top"><a id="a67b84a600432b8326f419098c7ff3082"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_invalidate_rect</b> (const struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect, int bPaintFlag)</td></tr>
-<tr class="separator:a67b84a600432b8326f419098c7ff3082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb122ce8d97e3183630558a13de4866b"><td class="memItemLeft" align="right" valign="top"><a id="abb122ce8d97e3183630558a13de4866b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_invalidate_rect</b> (struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect, int bPaintFlag)</td></tr>
+<tr class="separator:abb122ce8d97e3183630558a13de4866b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105087c02b0f2eaefdcb2e6a296cb71f"><td class="memItemLeft" align="right" valign="top"><a id="a105087c02b0f2eaefdcb2e6a296cb71f"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_calc_rect</b> (const struct <a class="el" href="struct__text__object__.html">_text_object_</a> *pThis, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect, int iStartRow, int iStartCol, int iEndRow, int iEndCol)</td></tr>
 <tr class="separator:a105087c02b0f2eaefdcb2e6a296cb71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -442,9 +442,9 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="code" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, <span class="keyword">sizeof</span>(Y)) &lt;= 0) \</div><div class="line">    { <a class="code" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(<span class="stringliteral">&quot;%s - WARNING:  can&#39;t find color %s, using default value %s\n&quot;</span>, \</div><div class="line">                    __FUNCTION__, X, Z); strcpy(Y,Z); }</div><div class="ttc" id="group__defaults_html_gac57c3a0127f4b7f69684ebee98e1e203"><div class="ttname"><a href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a></div><div class="ttdeci">static __inline__ Display * WBGetDefaultDisplay(void)</div><div class="ttdoc">Returns the default Display. </div><div class="ttdef"><b>Definition:</b> <a href="window__helper_8h_source.html#l00754">window_helper.h:754</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="code" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, <span class="keyword">sizeof</span>(Y)) &lt;= 0) \</div><div class="line">    { <a class="code" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(<span class="stringliteral">&quot;%s - WARNING:  can&#39;t find color %s, using default value %s\n&quot;</span>, \</div><div class="line">                    __FUNCTION__, X, Z); strcpy(Y,Z); }</div><div class="ttc" id="group__defaults_html_gac57c3a0127f4b7f69684ebee98e1e203"><div class="ttname"><a href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a></div><div class="ttdeci">static __inline__ Display * WBGetDefaultDisplay(void)</div><div class="ttdoc">Returns the default Display. </div><div class="ttdef"><b>Definition:</b> <a href="window__helper_8h_source.html#l00760">window_helper.h:760</a></div></div>
 <div class="ttc" id="group__desktop__settings_html_gad6b8e3e44a9c6f68d3501def49b2b1df"><div class="ttname"><a href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a></div><div class="ttdeci">int CHGetResourceString(Display *pDisplay, const char *szIdentifier, char *szData, int cbData)</div><div class="ttdoc">Queries desktop resource strings (may become deprecated) </div><div class="ttdef"><b>Definition:</b> <a href="conf__help_8c_source.html#l00474">conf_help.c:474</a></div></div>
-<div class="ttc" id="group__debug_html_ga7733e6c6e9386c713bbe06010f3b6b47"><div class="ttname"><a href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a></div><div class="ttdeci">#define WB_WARN_PRINT(...)</div><div class="ttdoc">Preferred method of implementing a &amp;#39;warning level&amp;#39; debug message for all subsystems. </div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00442">debug_helper.h:442</a></div></div>
+<div class="ttc" id="group__debug_html_ga7733e6c6e9386c713bbe06010f3b6b47"><div class="ttname"><a href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a></div><div class="ttdeci">#define WB_WARN_PRINT(...)</div><div class="ttdoc">Preferred method of implementing a &amp;#39;warning level&amp;#39; debug message for all subsystems. </div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00464">debug_helper.h:464</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -534,7 +534,7 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
 </div><div class="memdoc">
 <p>memcmp(&amp;pThis-&gt;clrHFG, &amp;pThis-&gt;clrHBG, sizeof(XColor))) </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05132">5132</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l05161">5161</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="text__object_8c.html">text_object.c</a></li>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:07 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

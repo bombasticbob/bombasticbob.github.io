@@ -14,7 +14,7 @@ var group__debug =
     [ "WB_WARN_DUMP", "group__debug.html#gaea40bfd99822e6845b9f0e2244574b0f", null ],
     [ "WB_WARN_PRINT", "group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47", null ],
     [ "DebugLevel", "group__debug.html#gab658e6d84759440dbf3c890446075395", null ],
-    [ "WBCheckDebugLevel", "group__debug.html#gad1c641ef930388b2f1c8f2d011126059", null ],
+    [ "WBCheckDebugLevel", "group__debug.html#ga339a962ef03a3af994cf4bb15790a5d6", null ],
     [ "WBDebugDump", "group__debug.html#ga1b403292a2ce065b57db74db5809dfea", null ],
     [ "WBDebugDumpColormap", "group__debug.html#ga7ef1c98bae517a021a3d110ddbf42525", null ],
     [ "WBDebugDumpEvent", "group__debug.html#gaa39191469018c352801b1178befdd5b2", null ],
@@ -26,7 +26,7 @@ var group__debug =
     [ "WBDumpFontSet", "group__debug.html#ga1fcc21210c29e70ba9a6b3fcce671ce6", null ],
     [ "WBDumpFontStruct", "group__debug.html#ga83838706c9ede44d648da13f17eb4734", null ],
     [ "WBDumpMatchingFontNames", "group__debug.html#gaa3e8d5cb698062dcc6e933f8098c46bf", null ],
-    [ "WBGetDebugLevel", "group__debug.html#gaeed1620ced80e88fa15ec89c3d03de13", null ],
+    [ "WBGetDebugLevel", "group__debug.html#gacdff0718f4556f2cbe2cd24f2dba9691", null ],
     [ "WBSetDebugLevel", "group__debug.html#ga2a09380df755537647684f30f7bfab3f", null ],
     [ "i_xcall_line", "group__debug.html#gadf69fb1eee4bd95c8ef094865bfcdfd0", null ],
     [ "sz_xcall_func", "group__debug.html#ga61491e06febc120b12e741142c45c89a", null ]

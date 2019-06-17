@@ -64,6 +64,7 @@ var group__font =
       [ "WBFontFlag_REG_ReservedF", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffaf2dcdcaeb99de44430012481cfb1874c", null ],
       [ "WBFontFlag_REG_MASK", "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa4555d046caac25e5a688fbc31d357cdf", null ]
     ] ],
+    [ "__internal_font_helper_exit", "group__font.html#ga15f08693c870c2b7387c240b6bb897a8", null ],
     [ "__internal_font_helper_init", "group__font.html#gafaefea0f904c93eb6ee373e2793aeebf", null ],
     [ "WBCopyFont", "group__font.html#ga59dc240b3bdd8c7a1c81d96b524a9e3c", null ],
     [ "WBCopyModifyFont", "group__font.html#ga04f6ba317b2fc72cf486ae3523e3a631", null ],
@@ -73,6 +74,7 @@ var group__font =
     [ "WBFontEnableAntiAlias", "group__font.html#ga0a23be1452193c40176ebf497420ca53", null ],
     [ "WBFontHeight", "group__font.html#gac4eb4ac386252de8b56d11a222e7b11a", null ],
     [ "WBFontMaxBounds", "group__font.html#ga2dd694a255557dcaa766ed431fab34a8", null ],
+    [ "WBFontSetEnableAntiAlias", "group__font.html#ga88f213b5ddebd8f8acfc6d17c7efde24", null ],
     [ "WBFreeFont", "group__font.html#ga9eed7b9083863d52c4ff348fc170d124", null ],
     [ "WBLoadFont", "group__font.html#gad44bdb5b5cdc6ec62b652839434ca420", null ],
     [ "WBTextExtent", "group__font.html#ga2c6e771d71004b8566a90eb520d83b20", null ],

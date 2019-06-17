@@ -38,23 +38,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "X11workbenchToolkit__config_8h_source.html",
-"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eabf6246225566ffb7677c566c924b9f47",
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa1dc7f928d38cabb4558a90e7ed655214",
-"functions_x.html",
-"group__debug.html#gaa3e8d5cb698062dcc6e933f8098c46bf",
-"group__dlgctrl__atom.html#ga3376b89d9c4291d2af7e7cf1080a2f59",
-"group__dlgctrl__types.html",
-"group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351",
-"group__font.html#ga9eed7b9083863d52c4ff348fc170d124",
-"group__keyboard.html#gad4854afa0d8a90e00760496fdabcd4fd",
-"group__platform__functions.html#gadc42f83070453daa04ccf39dc842d93b",
-"group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ea4ea5a0ae60774c805d12f492dcd341be",
-"group__wcore.html#ga37248fbd87d296716633672fd98877f9",
-"group__window__dressing.html#ga67374be1b4bd497081c62209f929b393",
-"platform__helper_8c.html#aacf8f7dcfa99255e738151d116e23777",
-"struct____WBChildFrameUI____.html#afcc8e5b02c81608938cf284f5087ff74",
-"struct__text__object__vtable__.html#a2cdeb57298bd59dcfe8d7804096672d0",
-"window__helper_8c.html#aa988d6f93c746b6c6e1d869b52ba92a0"
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea87fdf63367b44e4737645c6e0ac6bb7d",
+"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0feb3ea8d12b845d64d183f8e1e86fae",
+"functions_vars_t.html",
+"group__debug.html#ga7ef1c98bae517a021a3d110ddbf42525",
+"group__dlgctrl__atom.html#ga20208d59c52072417a63e3fc1f3e563a",
+"group__dlgctrl__properties.html#ga3bce1639919b375deeb81262df4a7200",
+"group__events.html#ga79275e72d837cef2b535e9feeb81074f",
+"group__font.html#ga8d70f52908b8568c60701282bf86d842",
+"group__graphics.html#gae7f15f90fb7effa98d99924fbbab6f5f",
+"group__platform__functions.html#ga99ffb9b6c8c93ea9e20706c62b4b7713",
+"group__text__object__definitions.html#ga9856ebbcda78c7da7c18524b5f11003f",
+"group__wcore.html#ga19e4ba777feaca6530867f1628c34b27",
+"group__window__dressing.html#ga1ad1cee919a74851727eca2ee42a58b4",
+"platform__helper_8c.html#a673c5ede48ed22d87ea59cf860e2d13d",
+"struct____WBChildFrameUI____.html#aa1b5992d1115e3c76117569cf18cf9ae",
+"struct__text__object__.html#afbb76e6ad6c0d940a7fce363f8008fa6",
+"window__helper_8c.html#a716c91c1c48d1d6d82f19c4107f55ef8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

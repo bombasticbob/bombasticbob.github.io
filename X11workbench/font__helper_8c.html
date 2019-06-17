@@ -102,9 +102,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_enable_ant
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#gafaefea0f904c93eb6ee373e2793aeebf">__internal_font_helper_init</a> (void)</td></tr>
 <tr class="memdesc:gafaefea0f904c93eb6ee373e2793aeebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialization for font helper - call once at start of program (<a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required) ">WBInit()</a> does this for you) <br /></td></tr>
 <tr class="separator:gafaefea0f904c93eb6ee373e2793aeebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15f08693c870c2b7387c240b6bb897a8"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga15f08693c870c2b7387c240b6bb897a8">__internal_font_helper_exit</a> (void)</td></tr>
+<tr class="memdesc:ga15f08693c870c2b7387c240b6bb897a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-initialization for font helper - call once at end of program (<a class="el" href="group__startup.html#ga7a1bc590572b555cc78840cd857e6824" title="deletes any remaining global objects, frees the Display pointer, and terminates event processing ...">WBExit()</a> does this for you) <br /></td></tr>
+<tr class="separator:ga15f08693c870c2b7387c240b6bb897a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a23be1452193c40176ebf497420ca53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga0a23be1452193c40176ebf497420ca53">WBFontEnableAntiAlias</a> (void)</td></tr>
 <tr class="memdesc:ga0a23be1452193c40176ebf497420ca53"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if certain fonts should be anti-aliased when rendered  <a href="group__font.html#ga0a23be1452193c40176ebf497420ca53">More...</a><br /></td></tr>
 <tr class="separator:ga0a23be1452193c40176ebf497420ca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88f213b5ddebd8f8acfc6d17c7efde24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga88f213b5ddebd8f8acfc6d17c7efde24">WBFontSetEnableAntiAlias</a> (int bEnable)</td></tr>
+<tr class="memdesc:ga88f213b5ddebd8f8acfc6d17c7efde24"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns non-zero value if certain fonts should be anti-aliased when rendered  <a href="group__font.html#ga88f213b5ddebd8f8acfc6d17c7efde24">More...</a><br /></td></tr>
+<tr class="separator:ga88f213b5ddebd8f8acfc6d17c7efde24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__font.html#ga59dc240b3bdd8c7a1c81d96b524a9e3c">WBCopyFont</a> (Display *pDisplay, <a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pOldFont)</td></tr>
 <tr class="memdesc:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a copy of an existing font (best when assigning to a window)  <a href="group__font.html#ga59dc240b3bdd8c7a1c81d96b524a9e3c">More...</a><br /></td></tr>
 <tr class="separator:ga59dc240b3bdd8c7a1c81d96b524a9e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +151,9 @@ Variables</h2></td></tr>
 <tr class="memitem:ad20ea5975304a06297242546258c07c7"><td class="memItemLeft" align="right" valign="top"><a id="ad20ea5975304a06297242546258c07c7"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>bDisableAntiAlias</b> = 0</td></tr>
 <tr class="separator:ad20ea5975304a06297242546258c07c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05aac41f53ad3f8b23e18180081bfc4"><td class="memItemLeft" align="right" valign="top"><a id="ac05aac41f53ad3f8b23e18180081bfc4"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>bEnableTrueTypeFonts</b> = 0</td></tr>
+<tr class="separator:ac05aac41f53ad3f8b23e18180081bfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation file for font helper functions. </p>
@@ -156,7 +166,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>bDisableAntiAli
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="font__helper_8c.html">font_helper.c</a></li>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:07 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

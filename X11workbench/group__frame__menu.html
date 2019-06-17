@@ -89,7 +89,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga10289c47ba568d1a721f19b817d7a6b7">FW_MENU_HANDLER_END</a>&#160;&#160;&#160;{0, 0, 0} };</td></tr>
 <tr class="memdesc:ga10289c47ba568d1a721f19b817d7a6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this macro to complete the definition of a WBFWMenuHandler array. <br /></td></tr>
 <tr class="separator:ga10289c47ba568d1a721f19b817d7a6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb">FWGetFocusWindow</a>(pFW)&#160;&#160;&#160;<a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1)</td></tr>
+<tr class="memitem:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb">FWGetFocusWindow</a>(pFW)&#160;&#160;&#160;(<a class="el" href="group__frame__window.html#gad593b650497ec120af93adcade1499c2">FWGetNumContWindows</a>(pFW) &gt; 0 ? <a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1) : NULL)</td></tr>
 <tr class="memdesc:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro to aid code readability, returning the Window ID of the contained window that has the focus.  <a href="#ga1f3667b5a203812ffbf9dd8f8e3946fb">More...</a><br /></td></tr>
 <tr class="separator:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -190,7 +190,7 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pFW</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="group__frame__window.html#gad593b650497ec120af93adcade1499c2">FWGetNumContWindows</a>(pFW) &gt; 0 ? <a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1) : NULL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +231,7 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:08 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:35 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,5 +1,11 @@
 var NAVTREEINDEX1 =
 {
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea87fdf63367b44e4737645c6e0ac6bb7d":[6,11,0,1,0,2],
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea8a316a1057a6229327716e8b08c6a084":[8,0,14,4,8],
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea8a316a1057a6229327716e8b08c6a084":[6,11,0,1,0,8],
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eaa1c9702296ce8aa04df0c0b01cfa8a34":[8,0,14,4,9],
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eaa1c9702296ce8aa04df0c0b01cfa8a34":[6,11,0,1,0,9],
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eabf6246225566ffb7677c566c924b9f47":[8,0,14,4,5],
 "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eabf6246225566ffb7677c566c924b9f47":[6,11,0,1,0,5],
 "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eae6d938c6bbd1b15b4d675521f70317bd":[8,0,14,4,3],
 "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938eae6d938c6bbd1b15b4d675521f70317bd":[6,11,0,1,0,3],
@@ -230,8 +236,9 @@ var NAVTREEINDEX1 =
 "font__helper_8c.html":[8,0,21],
 "font__helper_8c.html#a6c31c5b6d8b17ef532cda59c5f9d61d9":[8,0,21,0],
 "font__helper_8c.html#a7ef68056b7280940464a012df4281674":[8,0,21,2],
+"font__helper_8c.html#ac05aac41f53ad3f8b23e18180081bfc4":[8,0,21,19],
 "font__helper_8c.html#acc1e8a34bcb637df446830bdcf14b444":[8,0,21,1],
-"font__helper_8c.html#ad20ea5975304a06297242546258c07c7":[8,0,21,16],
+"font__helper_8c.html#ad20ea5975304a06297242546258c07c7":[8,0,21,18],
 "font__helper_8c_source.html":[8,0,21],
 "font__helper_8h.html":[8,0,22],
 "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa00fefa9ec38fa26c59baa2ea1f8c2711":[6,13,7,17],
@@ -242,12 +249,5 @@ var NAVTREEINDEX1 =
 "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0d72f2f47c5727868dfad152ef1842e4":[6,13,7,44],
 "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0e001d8a2b73b0e9b2f6cf4a367910f1":[8,0,22,9,29],
 "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0e001d8a2b73b0e9b2f6cf4a367910f1":[6,13,7,29],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0feb3ea8d12b845d64d183f8e1e86fae":[8,0,22,9,6],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0feb3ea8d12b845d64d183f8e1e86fae":[6,13,7,6],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa15042a0e30c239089f110fe6e14f6d46":[8,0,22,9,7],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa15042a0e30c239089f110fe6e14f6d46":[6,13,7,7],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa1a1fa4eb4676476a383eaa3dde1100c9":[8,0,22,9,31],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa1a1fa4eb4676476a383eaa3dde1100c9":[6,13,7,31],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa1ced0117d64fb1863f073ed47d0a14c2":[8,0,22,9,13],
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa1ced0117d64fb1863f073ed47d0a14c2":[6,13,7,13]
+"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0feb3ea8d12b845d64d183f8e1e86fae":[8,0,22,9,6]
 };

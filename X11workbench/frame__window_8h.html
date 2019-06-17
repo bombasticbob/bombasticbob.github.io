@@ -110,7 +110,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga10289c47ba568d1a721f19b817d7a6b7">FW_MENU_HANDLER_END</a>&#160;&#160;&#160;{0, 0, 0} };</td></tr>
 <tr class="memdesc:ga10289c47ba568d1a721f19b817d7a6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this macro to complete the definition of a WBFWMenuHandler array. <br /></td></tr>
 <tr class="separator:ga10289c47ba568d1a721f19b817d7a6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb">FWGetFocusWindow</a>(pFW)&#160;&#160;&#160;<a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1)</td></tr>
+<tr class="memitem:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb">FWGetFocusWindow</a>(pFW)&#160;&#160;&#160;(<a class="el" href="group__frame__window.html#gad593b650497ec120af93adcade1499c2">FWGetNumContWindows</a>(pFW) &gt; 0 ? <a class="el" href="group__frame__window.html#ga2932bd7fb9fbe99081b5e598e6c5317c">FWGetContainedWindowByIndex</a>(pFW, -1) : NULL)</td></tr>
 <tr class="memdesc:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro to aid code readability, returning the Window ID of the contained window that has the focus.  <a href="group__frame__menu.html#ga1f3667b5a203812ffbf9dd8f8e3946fb">More...</a><br /></td></tr>
 <tr class="separator:ga1f3667b5a203812ffbf9dd8f8e3946fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc8edaf4afaeddf049731b751f54e0a7"><td class="memItemLeft" align="right" valign="top">
@@ -271,7 +271,7 @@ const Atom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="frame__window_8h.html">frame_window.h</a></li>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:07 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

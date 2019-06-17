@@ -41,7 +41,7 @@ var dialog__window_8c =
     ] ],
     [ "__internal_destroy_dialog_window", "dialog__window_8c.html#a4b15f7cff96c930a7b0941e3b85eeb4f", null ],
     [ "DLGAssignOwner", "group__dlgwindow.html#gab7bdf5b39d9df41d00817eb0ffda16ef", null ],
-    [ "DLGCreateDialogWindow", "group__dialog__api__functions.html#ga39053c006797afbd6c436823dac75dcb", null ],
+    [ "DLGCreateDialogWindow", "group__dialog__api__functions.html#gabe0c09a1e44d89a87257da3b27996c1d", null ],
     [ "DLGDefaultCallback", "dialog__window_8c.html#a4bc731abab27bd01954b5939bdd2878e", null ],
     [ "DLGDestroyDialogWindow", "group__dlgwindow.html#ga5df6641a71a0a3cba3fcd03e6bf3410d", null ],
     [ "DLGDestroyDialogWindow2", "group__dlgwindow.html#ga1381388e003aa788fa312fd3fc583fd2", null ],

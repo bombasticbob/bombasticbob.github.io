@@ -102,7 +102,7 @@ var dialog__window_8h =
     ] ],
     [ "DLGAssignOwner", "group__dlgwindow.html#gab7bdf5b39d9df41d00817eb0ffda16ef", null ],
     [ "DLGColorDialog", "group__dialog__api__functions.html#ga3f432d9d8e76f234d58a53082ed9bd6c", null ],
-    [ "DLGCreateDialogWindow", "group__dialog__api__functions.html#ga39053c006797afbd6c436823dac75dcb", null ],
+    [ "DLGCreateDialogWindow", "group__dialog__api__functions.html#gabe0c09a1e44d89a87257da3b27996c1d", null ],
     [ "DLGDestroyDialogWindow", "group__dlgwindow.html#ga5df6641a71a0a3cba3fcd03e6bf3410d", null ],
     [ "DLGDestroyDialogWindow2", "group__dlgwindow.html#ga1381388e003aa788fa312fd3fc583fd2", null ],
     [ "DLGFileDialog", "group__dialog__api__functions.html#ga61c93635fb125b35d904e4e13e0169c6", null ],

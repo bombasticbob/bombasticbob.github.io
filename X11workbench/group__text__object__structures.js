@@ -100,7 +100,9 @@ var group__text__object__structures =
       [ "rctHighLight", "struct__text__object__.html#ae892bb7174415a60d62b33906531a923", null ],
       [ "rctSel", "struct__text__object__.html#a922bb91783f47b60a4dfc9d5ec85cd5b", null ],
       [ "rctView", "struct__text__object__.html#ad5ae99dff7021ede0a9518f9f556d5e0", null ],
+      [ "rctViewOld", "struct__text__object__.html#a418e572b694f0383d7fab94049352889", null ],
       [ "rctWinView", "struct__text__object__.html#aa54896eacbd59c2d64d9f686a6f6ab88", null ],
+      [ "rctWinViewOld", "struct__text__object__.html#af8095ed905585f24542fd5563560997e", null ],
       [ "ulTag", "struct__text__object__.html#a9cad1622f4396ded0afaf6a8d8a5727a", null ],
       [ "vtable", "struct__text__object__.html#a0ee4145be39cb511f58e63bead7e3f56", null ],
       [ "wIDOwner", "struct__text__object__.html#a8ee54f42851c33959157c826f2847e83", null ]

@@ -64,7 +64,7 @@ $(document).ready(function(){initNavTree('dialog_resource.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>To simplify the creation of one of the most COMMON types of windows, the Dialog Box, the X11workbench Toolkit uses a TEXT RESOURCE format that can be subsequently passed to a high-level function to create a dialog box, either modal or modeless. The return value from a modal dialog box will be based on the value passed to <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351">WBEndModal()</a>.</p>
-<p>For more information on creating a dialog box, see <a class="el" href="group__dialog__api__functions.html#ga39053c006797afbd6c436823dac75dcb">DLGCreateDialogWindow()</a>.</p>
+<p>For more information on creating a dialog box, see <a class="el" href="group__dialog__api__functions.html#gabe0c09a1e44d89a87257da3b27996c1d">DLGCreateDialogWindow()</a>.</p>
 <p>The format of the dialog box resource begins with the 'BEGIN_DIALOG' keyword, and ends with the 'END_DIALOG' keyword. In between are the various dialog controls, in their 'tab order', such that the first control in the list that is capable of receiving the input focus will get the focus when the window is made visible.</p>
 <p>A typical dialog window resource might look as follows:<br />
 </p><div class="fragment"><div class="line">BEGIN_DIALOG FONT:Variable HEIGHT:50 WIDTH:200 TITLE:<span class="stringliteral">&quot;Sample Message Box Dialog Window&quot;</span></div><div class="line">  CONTROL:Icon ID:1000 X:2 Y:2 HEIGHT:20 WIDTH:20 VISIBLE</div><div class="line">  CONTROL:Text ID:1001 X:24 Y:2 HEIGHT:20 WIDTH:172 VISIBLE</div><div class="line">  CONTROL:DefPushButton ID:<a class="code" href="group__dlgctrl__definitions.html#ga77644707f6801a795c75d2f37913fbc1">IDOK</a> TITLE:OK X:80 Y:28 WIDTH:40 HEIGHT:18 VISIBLE</div><div class="line">END_DIALOG</div></div><!-- fragment --><p>The general form of a dialog resource keyword is as follows:</p>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('dialog_resource.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 8 2019 20:45:07 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 21:08:34 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
