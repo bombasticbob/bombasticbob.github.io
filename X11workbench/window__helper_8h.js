@@ -42,12 +42,11 @@ var window__helper_8h =
     [ "WB_POINT", "group__core__struct.html#ga925d8c11829be5075193d34c9c8aed64", null ],
     [ "WB_RECT", "group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718", null ],
     [ "WBAppEvent", "group__events.html#ga2648b749bede99874e9ed979ce861f44", null ],
-    [ "WBGC", "window__helper_8h.html#a0bd7dd3de3212b8f2e57f42e275fa275", null ],
+    [ "WBGC", "group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e", null ],
     [ "WBLocateWindowCallback", "group__wcore.html#gab37976e62900c9fd328045c33317a369", null ],
     [ "WBWinEvent", "group__events.html#ga873795f7442d970037a691cd4e51792c", null ],
     [ "WBCreateWindow_flags", "group__wcore.html#ga2e7647b8aa40d85f3329ce9b661852f5", [
-      [ "WBCreateWindow_flagsDefault", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a886a86125ba7a6bdaa3c58ed9fd64f31", null ],
-      [ "WBCreateWindow_flagsNoImageCache", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a4d20903c6d17fc6ca816bcbb7da7b805", null ]
+      [ "WBCreateWindow_flagsDefault", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a886a86125ba7a6bdaa3c58ed9fd64f31", null ]
     ] ],
     [ "WBScrollEventParam", "group__events__types.html#ga1b55ae4a3abf02c335d439ad901c28bb", [
       [ "WB_SCROLL_DEFAULT", "group__events__types.html#gga1b55ae4a3abf02c335d439ad901c28bba283d7836973fc4cd386fae001266dc17", null ],

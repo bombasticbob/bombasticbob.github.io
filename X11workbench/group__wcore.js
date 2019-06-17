@@ -11,8 +11,7 @@ var group__wcore =
     [ "WBRectOverlapped", "group__wcore.html#gac63e4883a78e0a46f209f23294367d9d", null ],
     [ "WBLocateWindowCallback", "group__wcore.html#gab37976e62900c9fd328045c33317a369", null ],
     [ "WBCreateWindow_flags", "group__wcore.html#ga2e7647b8aa40d85f3329ce9b661852f5", [
-      [ "WBCreateWindow_flagsDefault", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a886a86125ba7a6bdaa3c58ed9fd64f31", null ],
-      [ "WBCreateWindow_flagsNoImageCache", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a4d20903c6d17fc6ca816bcbb7da7b805", null ]
+      [ "WBCreateWindow_flagsDefault", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a886a86125ba7a6bdaa3c58ed9fd64f31", null ]
     ] ],
     [ "WMPropertiesWindowType", "group__wcore.html#ga393c61affbc5766ce678224558be0b16", null ],
     [ "WMPropertiesWMProtocols", "group__wcore.html#ga720fc619923711fbdeb2191d4b094077", [

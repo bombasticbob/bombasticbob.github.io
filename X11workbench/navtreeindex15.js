@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"struct____WBChildFrameUI____.html#aa08aa674e60a18b35e154e50f19e4fb8":[6,10,0,1,7],
 "struct____WBChildFrameUI____.html#aa13569bf2112cdee84abe25242c6cb3d":[6,10,0,1,10],
 "struct____WBChildFrameUI____.html#aa1b5992d1115e3c76117569cf18cf9ae":[6,10,0,1,30],
 "struct____WBChildFrameUI____.html#aada997ecd5baf92c190d67c8100fc1c0":[6,10,0,1,18],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "struct__text__buffer__.html":[6,16,1,0],
 "struct__text__buffer__.html#a0734be45c637f24ee988b84b76ebf18c":[6,16,1,0,5],
 "struct__text__buffer__.html#a50d3960714722658ff5105bbba79a538":[6,16,1,0,6],
-"struct__text__buffer__.html#a68cec487379287db8032b3eec05947ca":[6,16,1,0,1]
+"struct__text__buffer__.html#a68cec487379287db8032b3eec05947ca":[6,16,1,0,1],
+"struct__text__buffer__.html#a7f4fae9f2d922e3c85d3dab45f1dbfe3":[6,16,1,0,3]
 };

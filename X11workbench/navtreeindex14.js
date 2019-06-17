@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"platform__helper_8c.html#a539c450d34f0e5e14649f5d01a2f801d":[8,0,39,12],
 "platform__helper_8c.html#a65d8677391088b62e87a83e154871463":[8,0,39,118],
 "platform__helper_8c.html#a673c5ede48ed22d87ea59cf860e2d13d":[8,0,39,3],
 "platform__helper_8c.html#a6f4b29e30959ca07aa73edc9de925876":[8,0,39,81],
@@ -145,14 +144,14 @@ var NAVTREEINDEX14 =
 "struct__WB__LIST__CONTROL__.html#ae2dd2b41b384f94e15688ad75fe0d724":[6,11,3,4,7,1],
 "struct__WB__LIST__CURSEL__.html":[6,11,3,4,6],
 "struct__WB__LIST__CURSEL__.html":[6,11,4,1],
-"struct__WB__LIST__CURSEL__.html#a2884aa55a9f2544c59a08976071b1d64":[6,11,4,1,2],
 "struct__WB__LIST__CURSEL__.html#a2884aa55a9f2544c59a08976071b1d64":[6,11,3,4,6,2],
+"struct__WB__LIST__CURSEL__.html#a2884aa55a9f2544c59a08976071b1d64":[6,11,4,1,2],
 "struct__WB__LIST__CURSEL__.html#a9be0073fd0d9ec612c66fd3bd8fabb6a":[6,11,4,1,1],
 "struct__WB__LIST__CURSEL__.html#a9be0073fd0d9ec612c66fd3bd8fabb6a":[6,11,3,4,6,1],
 "struct__WB__LIST__CURSEL__.html#ac34c298c311e29b36839e7bc617db45f":[6,11,4,1,3],
 "struct__WB__LIST__CURSEL__.html#ac34c298c311e29b36839e7bc617db45f":[6,11,3,4,6,3],
-"struct__WB__LIST__CURSEL__.html#ae27257a2b09b74ce8528f55e65381ed5":[6,11,3,4,6,0],
 "struct__WB__LIST__CURSEL__.html#ae27257a2b09b74ce8528f55e65381ed5":[6,11,4,1,0],
+"struct__WB__LIST__CURSEL__.html#ae27257a2b09b74ce8528f55e65381ed5":[6,11,3,4,6,0],
 "struct__WB__PUSHBUTTON__CONTROL__.html":[6,11,3,4,4],
 "struct__WB__PUSHBUTTON__CONTROL__.html#a2c6fe912af6b883836eea48b2a112825":[6,11,3,4,4,0],
 "struct__WB__PUSHBUTTON__CONTROL__.html#a49dad2ef4ed3564d7624d80881bd486f":[6,11,3,4,4,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "struct____WBChildFrameUI____.html#a99cd168c164a60c851a3908995c043cb":[6,10,0,1,0],
 "struct____WBChildFrameUI____.html#a9a322c0b43ae381b70c8a6c8088d88a9":[6,10,0,1,25],
 "struct____WBChildFrameUI____.html#a9c6925d64487dd515a8842cee0d02ea1":[6,10,0,1,34],
-"struct____WBChildFrameUI____.html#a9cad1622f4396ded0afaf6a8d8a5727a":[6,10,0,1,43]
+"struct____WBChildFrameUI____.html#a9cad1622f4396ded0afaf6a8d8a5727a":[6,10,0,1,43],
+"struct____WBChildFrameUI____.html#aa08aa674e60a18b35e154e50f19e4fb8":[6,10,0,1,7]
 };

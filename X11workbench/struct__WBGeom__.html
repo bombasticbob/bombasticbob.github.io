@@ -89,7 +89,7 @@ Data Fields</h2></td></tr>
 <p>The geometry structure is a wrapper for the X11 functions that specify the individual parameters for a geometry, such as XGetGeometry. Instead of passing 5 integers, you pass the pointer to a structure for the X11workbench API functions. This provides many advantages over the 'individual parameter' method as well as providing a structure for cacheing geometry information.</p>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__WBGeom__.html">_WBGeom_</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="struct__WBGeom__.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, <a class="code" href="struct__WBGeom__.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>;</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct__WBGeom__.html#aca34d28e3d8bcbcadb8edb4e3af24f8c">width</a>, <a class="code" href="struct__WBGeom__.html#ab2e78c61905b4419fcc7b4cfc500fe85">height</a>, <a class="code" href="struct__WBGeom__.html#a8f31549b347fd7b3c2a3690f5f3bc156">border</a>;</div><div class="line">} <a class="code" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a>;</div></div><!-- fragment --><p>Use of 'int' and 'unsigned int' for the various parameter is consistent with the various 'Geom' functions, which typically use 'int *' for returned parameters, as shown:</p>
 <div class="fragment"><div class="line">Status XGetGeometry(Display *display, Drawable d, Window *root_return,</div><div class="line">                    <span class="keywordtype">int</span> *x_return, <span class="keywordtype">int</span> *y_return,</div><div class="line">                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *width_return, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *height_return,</div><div class="line">                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *border_return, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *depth_return);</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00521">521</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00527">527</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a8f31549b347fd7b3c2a3690f5f3bc156"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f31549b347fd7b3c2a3690f5f3bc156">&#9670;&nbsp;</a></span>border</h2>
@@ -104,7 +104,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>border width of geometry </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00527">527</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00533">533</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -121,7 +121,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>height of geometry </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00526">526</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00532">532</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -138,7 +138,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>width of geometry </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00525">525</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00531">531</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -155,7 +155,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>X coordinate for geometry upper left corner (excluding border) </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00523">523</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00529">529</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Y coordinate for geometry upper left corner (excluding border) </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00524">524</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00530">530</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -185,7 +185,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__WBGeom__.html">_WBGeom_</a></li>
-    <li class="footer">Generated on Sun Jun 16 2019 21:25:36 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jun 16 2019 23:38:55 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
