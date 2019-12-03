@@ -1,7 +1,6 @@
 var window__dressing_8c =
 [
-    [ "LOAD_COLOR", "window__dressing_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
-    [ "LOAD_COLOR0", "window__dressing_8c.html#adaa7dab283c25528f228e1e938a30726", null ],
+    [ "COPY_COLOR_NAME", "window__dressing_8c.html#a47f90f81482d57aaade18699625a271b", null ],
     [ "CheckInitScrollColors", "window__dressing_8c.html#a3805e54a9e2f35a9274b583657ec1e19", null ],
     [ "DebugDumpScrollInfo", "window__dressing_8c.html#ab607bf67dc75e9b7e9b6ea76883cdb8c", null ],
     [ "InternalCalcHScrollBar", "window__dressing_8c.html#ad85bb3d12ef259641326688664876a99", null ],

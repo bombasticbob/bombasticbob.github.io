@@ -1,10 +1,10 @@
 var text__object_8c =
 [
+    [ "COPY_COLOR_NAME", "text__object_8c.html#a47f90f81482d57aaade18699625a271b", null ],
     [ "CURSOR_BLINK_OFF", "text__object_8c.html#abae39ca05991cc55c5bc5475940e6d41", null ],
     [ "CURSOR_BLINK_PERIOD", "text__object_8c.html#a05cfe79f5f250776eaf0ce31aab7a7a0", null ],
     [ "CURSOR_BLINK_RESET", "text__object_8c.html#a64cbe6f64a8162a75a8bcfbd5737fda8", null ],
     [ "DEFAULT_TEXT_BUFFER_LINES", "text__object_8c.html#abe0b3a771bd5fb49b94248e1cceb3a8c", null ],
-    [ "LOAD_COLOR", "text__object_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
     [ "NORMALIZE_SEL_RECT", "text__object_8c.html#a159330f420ab980327b68ce804de7ba4", null ],
     [ "SEL_RECT_ALL", "text__object_8c.html#a77ca013744dd30e10aab470bbc06ecf9", null ],
     [ "SEL_RECT_EMPTY", "text__object_8c.html#addb290e57a097588a94864f6fdef2fb5", null ],

@@ -1,10 +1,6 @@
 var group__pixmap =
 [
-    [ "_XPM_ATTRIBUTES_", "struct__XPM__ATTRIBUTES__.html", [
-      [ "depth", "struct__XPM__ATTRIBUTES__.html#acb5ba97551079e0b072c62c21d784ac5", null ],
-      [ "height", "struct__XPM__ATTRIBUTES__.html#ad12fc34ce789bce6c8a05d8a17138534", null ],
-      [ "width", "struct__XPM__ATTRIBUTES__.html#a2474a5474cbff19523a51eb1de01cda4", null ]
-    ] ],
+    [ "em", "structem.html", null ],
     [ "RGB255_FROM_XCOLOR", "group__pixmap.html#gad417b255477034815d6289b3c075260b", null ],
     [ "RGB255_TO_XCOLOR", "group__pixmap.html#ga8f0e531e62635c381c282b4485cfd025", null ],
     [ "RGB_FROM_XCOLOR", "group__pixmap.html#ga8f6b974be899dbc8ee48a8fcaac1c763", null ],

@@ -1,6 +1,7 @@
 var dialog__controls_8c =
 [
     [ "BEGIN_CREATE_CONTROL", "dialog__controls_8c.html#a15af8ae00f3e45c195049ee3f818ad30", null ],
+    [ "COPY_COLOR_NAME", "dialog__controls_8c.html#a47f90f81482d57aaade18699625a271b", null ],
     [ "DEFAULT_BUTTON_TAB_WIDTH", "dialog__controls_8c.html#a641087cf1eb7b921b2eec6e0f605a67a", null ],
     [ "DEFAULT_STATIC_TAB_WIDTH", "dialog__controls_8c.html#ab0f94e3b1c639955ca72477f2f1b31c6", null ],
     [ "DEFINE_CREATE_CONTROL", "dialog__controls_8c.html#a7aac29966d468a7325b101fe5f0c4a74", null ],
@@ -13,7 +14,7 @@ var dialog__controls_8c =
     [ "LOAD_COLOR0", "dialog__controls_8c.html#adaa7dab283c25528f228e1e938a30726", null ],
     [ "THIS_SUBSYSTEM", "dialog__controls_8c.html#a4c86db9b4d20c25c379871767e1904f0", null ],
     [ "XK_MISCELLANY", "dialog__controls_8c.html#aeab6a095afeed0b9e64e415c5a5c669a", null ],
-    [ "alloc_control_colors", "dialog__controls_8c.html#a2e059d5f4f97ebee8593f369abd6b259", null ],
+    [ "alloc_control_colors", "dialog__controls_8c.html#a84a6cf3be88b366e0f831548cfbec152", null ],
     [ "button_callback", "dialog__controls_8c.html#a2ea6ef423b38224da4efa56a1882d4d0", null ],
     [ "ButtonDoExposeEvent", "dialog__controls_8c.html#a0abf2971d4341ac6e877df094e5546b3", null ],
     [ "ButtonHandleCheckEvent", "dialog__controls_8c.html#acdf11868bb04e7997f0417ba20f9aed9", null ],
@@ -60,6 +61,7 @@ var dialog__controls_8c =
     [ "ListGetItemIndexFromXY", "dialog__controls_8c.html#a8e55be1374dff47afa2a7309e63b33a6", null ],
     [ "ListInvalidateItemRect", "dialog__controls_8c.html#ad0b0ac74add74921f8cd873b771cb6c1", null ],
     [ "ManageRadioButtonGroupSelectState", "dialog__controls_8c.html#a9943e6ea101984e011ef401e88395407", null ],
+    [ "old_alloc_control_colors", "dialog__controls_8c.html#a6ff96cf97fac499085fd8aec51d468be", null ],
     [ "path_tree_callback", "dialog__controls_8c.html#aef19727e9f18f7d5f855a40a9e19d77b", null ],
     [ "PushButtonDoExposeEvent", "dialog__controls_8c.html#a07a55e3e411e9cf6714bd68b9a2b49db", null ],
     [ "standard_do_create_control", "dialog__controls_8c.html#aea881214da9095d2cec1c09234f0f0c1", null ],

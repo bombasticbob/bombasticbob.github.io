@@ -35,8 +35,6 @@ var draw__text_8h =
     [ "DTDrawMultiLineText", "group__draw__text.html#gaa9fa4aeeec1a4bd73767973c90095271", null ],
     [ "DTDrawSingleLineText", "group__draw__text.html#ga2931ca9b0db915384ce9272cf3a7e02f", null ],
     [ "DTDrawString", "group__draw__text.html#ga2337471599a741adc9f4ab29d369a6b9", null ],
-    [ "DTGetTextExtent", "group__draw__text.html#gae68d32f20a7c9e17182d946075e9647a", null ],
-    [ "DTGetTextWidth", "group__draw__text.html#gae89f6c555db78ab36b29390fdd403e5b", null ],
     [ "DTGetWordsFromText", "group__draw__text.html#gac9ebecb91d9b7fc3e173f0f1015607b6", null ],
     [ "DTPreRender", "group__draw__text.html#ga717caef5ff570827990df40dffd0249c", null ],
     [ "DTRender", "group__draw__text.html#gabbd5e2664e8336e0117ee6367a36c399", null ]

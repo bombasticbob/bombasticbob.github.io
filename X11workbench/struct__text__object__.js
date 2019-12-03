@@ -14,6 +14,7 @@ var struct__text__object__ =
     [ "iFontWidth", "struct__text__object__.html#ac47c42052f16d55340ece84f121d13c8", null ],
     [ "iInsMode", "struct__text__object__.html#afdbc13156212b35cb825a303336e6162", null ],
     [ "iLineFeed", "struct__text__object__.html#aac4ae59152ec703a75a9bea60f98b42f", null ],
+    [ "iMaxFontWidth", "struct__text__object__.html#ad0045683a828d4f7ddd7decb9f7bd644", null ],
     [ "iPos", "struct__text__object__.html#ab76e454cd48f5cd2f856f5aac6c79738", null ],
     [ "iRow", "struct__text__object__.html#a431c133f885a93bf46af818cc5cad82e", null ],
     [ "iScrollMode", "struct__text__object__.html#a32b54760de261f88914c291c13aed559", null ],

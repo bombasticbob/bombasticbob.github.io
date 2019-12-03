@@ -1,7 +1,6 @@
 var dialog__window_8c =
 [
-    [ "LOAD_COLOR", "dialog__window_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
-    [ "LOAD_COLOR0", "dialog__window_8c.html#adaa7dab283c25528f228e1e938a30726", null ],
+    [ "COPY_COLOR_NAME", "dialog__window_8c.html#a47f90f81482d57aaade18699625a271b", null ],
     [ "THIS_SUBSYSTEM", "dialog__window_8c.html#a4c86db9b4d20c25c379871767e1904f0", null ],
     [ "XK_MISCELLANY", "dialog__window_8c.html#aeab6a095afeed0b9e64e415c5a5c669a", null ],
     [ "DIALOG_WINDOW", "group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245", null ],

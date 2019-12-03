@@ -112,6 +112,8 @@ var window__helper_8h =
       [ "WMPropertiesWMProtocols_Reserved7", "group__wcore.html#gga720fc619923711fbdeb2191d4b094077ade7eb0c1d80ea49f39424c44d8322703", null ],
       [ "WMPropertiesWMProtocols_Reserved8", "group__wcore.html#gga720fc619923711fbdeb2191d4b094077a6d62f2c9f7a8d7e8c052d19ecaeafd16", null ]
     ] ],
+    [ "__FinishInitClipboardSystem", "group__startup.html#ga57989efb1cb6dcd9177024010be60759", null ],
+    [ "__StartInitClipboardSystem", "group__startup.html#ga27c3e96c3d8d20190e77a630c25ee3c3", null ],
     [ "CreateTimer", "group__timer.html#gab895b3dffe33d2ad2ff83e0564785999", null ],
     [ "DeleteTimer", "group__timer.html#gac0847f36d2cbc0d28cfa9ebb727ad3c9", null ],
     [ "GetStartupDisplayName", "group__startup.html#ga9e32c84e39bafa6723df9943dbfdb657", null ],

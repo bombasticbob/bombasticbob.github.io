@@ -85,6 +85,7 @@ var font__helper_8h =
     [ "WBFontFromFontSet", "group__font__legacy.html#ga1f665c724f1614d10b0893a5c83a4113", null ],
     [ "WBFontHeight", "group__font.html#gac4eb4ac386252de8b56d11a222e7b11a", null ],
     [ "WBFontMaxBounds", "group__font.html#ga2dd694a255557dcaa766ed431fab34a8", null ],
+    [ "WBFontMaxCharWidth", "group__font.html#ga785c621bba3eb9ce858b511275246585", null ],
     [ "WBFontSetAscent", "group__font__legacy.html#gab78afe3ee90a2aad3e508ae30495c5bd", null ],
     [ "WBFontSetAvgCharWidth", "group__font__legacy.html#gaeb0cc857d49e6b9f08527edaef773a46", null ],
     [ "WBFontSetDescent", "group__font__legacy.html#ga7d9ea6fa1202b63da4a3f990cafdad63", null ],

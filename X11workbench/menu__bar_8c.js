@@ -1,8 +1,8 @@
 var menu__bar_8c =
 [
     [ "BORDER", "menu__bar_8c.html#a6d0652ae6ea6a5c4fef68baf139fd085", null ],
+    [ "COPY_COLOR_NAME", "menu__bar_8c.html#a47f90f81482d57aaade18699625a271b", null ],
     [ "DEBUG_VALIDATE", "menu__bar_8c.html#afcde85bd7b6fbbbd694f518a7e6e457f", null ],
-    [ "LOAD_COLOR", "menu__bar_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
     [ "MENU_ALT_FONT", "menu__bar_8c.html#ae2f8506360aad9abe8fd8ad17585bd61", null ],
     [ "MENU_FONT", "menu__bar_8c.html#a04d46f28d25d5b97d577aa8ddc949fee", null ],
     [ "MENU_FONT_SIZE", "menu__bar_8c.html#adc71b26dd2805a6002cf1de8c3a32582", null ],

@@ -1,3 +1,26 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "X11workbench Toolkit", "index.html", [
@@ -16,12 +39,12 @@ var NAVTREE =
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ]
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
@@ -38,23 +61,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "X11workbenchToolkit__config_8h_source.html",
-"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea87fdf63367b44e4737645c6e0ac6bb7d",
-"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0feb3ea8d12b845d64d183f8e1e86fae",
-"functions_vars_t.html",
-"group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47",
+"dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea6662e898d9a6ddd6278acdde8e884fd3",
+"font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0d72f2f47c5727868dfad152ef1842e4",
+"globals_func_m.html",
+"group__defaults.html#gafc45dcd9ad8846fcd775841481f0e7a2",
 "group__dlgctrl__atom.html#ga200becf2035093f2a5351b2bbd0df278",
 "group__dlgctrl__properties.html#ga2a3ccabb1f0e2ad5875ab951962f5fd0",
-"group__events.html#ga79275e72d837cef2b535e9feeb81074f",
-"group__font.html#ga88f213b5ddebd8f8acfc6d17c7efde24",
-"group__graphics.html#gae7f15f90fb7effa98d99924fbbab6f5f",
-"group__platform__functions.html#ga99ffb9b6c8c93ea9e20706c62b4b7713",
+"group__events.html#ga7db44fa0c4785345f944167a066209d3",
+"group__font.html#ga8d70f52908b8568c60701282bf86d842",
+"group__graphics.html#gae7f2ba83371b69e4b6ed40d77ef3d05a",
+"group__platform__functions.html#ga9c295f7a7fb34ed8f99a6abaa598b8a8",
 "group__text__object__definitions.html#ga93debe6aabce250a2dbec2f9281774c4",
 "group__wcore.html#ga19e4ba777feaca6530867f1628c34b27",
-"group__window__dressing.html#ga0cdb8f3b464ebd442979f28ed8827a25",
-"platform__helper_8c.html#a65d8677391088b62e87a83e154871463",
-"struct____WBChildFrameUI____.html#aa13569bf2112cdee84abe25242c6cb3d",
-"struct__text__buffer__.html#a8e7c87e0c68661c51c508ab6faac58ac",
-"window__helper_8c.html#a2ff1d0f40e9f6e87341234d7b3e34900"
+"group__window__dressing.html#ga1ad1cee919a74851727eca2ee42a58b4",
+"platform__helper_8c.html#a673c5ede48ed22d87ea59cf860e2d13d",
+"window__helper_8c.html#a1225a7bf036007d2f593e6a56ee130e8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

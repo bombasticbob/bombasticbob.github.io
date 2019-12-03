@@ -13,6 +13,7 @@ var font__helper_8c =
     [ "WBFontEnableAntiAlias", "group__font.html#ga0a23be1452193c40176ebf497420ca53", null ],
     [ "WBFontHeight", "group__font.html#gac4eb4ac386252de8b56d11a222e7b11a", null ],
     [ "WBFontMaxBounds", "group__font.html#ga2dd694a255557dcaa766ed431fab34a8", null ],
+    [ "WBFontMaxCharWidth", "group__font.html#ga785c621bba3eb9ce858b511275246585", null ],
     [ "WBFontSetEnableAntiAlias", "group__font.html#ga88f213b5ddebd8f8acfc6d17c7efde24", null ],
     [ "WBFreeFont", "group__font.html#ga9eed7b9083863d52c4ff348fc170d124", null ],
     [ "WBLoadFont", "group__font.html#gad44bdb5b5cdc6ec62b652839434ca420", null ],

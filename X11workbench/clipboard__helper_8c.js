@@ -5,6 +5,8 @@ var clipboard__helper_8c =
     [ "MIN_EVENT_LOOP_SLEEP_PERIOD", "clipboard__helper_8c.html#af085cc2084818db1fa4c7c0654dd73f5", null ],
     [ "CLIPBOARD_DATA", "clipboard__helper_8c.html#a3337d46874d59646def642dbed0b7dc6", null ],
     [ "CLIPBOARD_TASK", "clipboard__helper_8c.html#a9c8340a15ec6100cd362680f080e9f6e", null ],
+    [ "__FinishInitClipboardSystem", "group__startup.html#ga57989efb1cb6dcd9177024010be60759", null ],
+    [ "__StartInitClipboardSystem", "group__startup.html#ga27c3e96c3d8d20190e77a630c25ee3c3", null ],
     [ "AddNewItemToRunList", "clipboard__helper_8c.html#a2ce172d09679bc6faf13afb79a038fb9", null ],
     [ "CleanupDoneList", "clipboard__helper_8c.html#aef37c7ed3800f366a94af3d0e808f40e", null ],
     [ "ClipboardThreadProc", "clipboard__helper_8c.html#af008f0cd2c753c88516c1e7d840c182e", null ],
@@ -18,5 +20,6 @@ var clipboard__helper_8c =
     [ "hClipboardThread", "clipboard__helper_8c.html#ad99628fbe96d35ade489cdccda0411d5", null ],
     [ "pCBDHead", "clipboard__helper_8c.html#a5b19a12d26517bd4af4843ba260c98b1", null ],
     [ "pCBTHead", "clipboard__helper_8c.html#ae9c076e952e56860e9c8d04148677983", null ],
+    [ "pGlobalDisplayNameForClipboardInit", "clipboard__helper_8c.html#a4ec7df9310b037ae34b4f463f20609e1", null ],
     [ "xClipboardMutex", "clipboard__helper_8c.html#af39bc69c9dc5bb98286318c8830753c8", null ]
 ];

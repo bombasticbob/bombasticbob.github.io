@@ -2,12 +2,11 @@ var frame__window_8c =
 [
     [ "_FRAME_WINDOW_C_", "frame__window_8c.html#a6a927e87c2484592ec30f4a79f5269ab", null ],
     [ "CLOSE_TAB_MESSAGE", "frame__window_8c.html#aa6ae13de23b5d06a9e497a605ce2461e", null ],
+    [ "COPY_COLOR_NAME", "frame__window_8c.html#a47f90f81482d57aaade18699625a271b", null ],
     [ "DEFAULT_STATUS_BAR_TAB", "frame__window_8c.html#af1d999f7c8eb0101e808c7427c775831", null ],
     [ "DEFAULT_STATUS_STRING", "frame__window_8c.html#adf71ca30587f3cc7b8d19ba3ccd06a38", null ],
     [ "FRAME_WINDOW_MIN_HEIGHT", "frame__window_8c.html#ae961b11e76723e5db75781f0a3b3f07b", null ],
     [ "FRAME_WINDOW_MIN_WIDTH", "frame__window_8c.html#a60bcefc485841a62e300b663381c76eb", null ],
-    [ "LOAD_COLOR", "frame__window_8c.html#a61b54ca275d4d228b63c0bab30424630", null ],
-    [ "LOAD_COLOR0", "frame__window_8c.html#adaa7dab283c25528f228e1e938a30726", null ],
     [ "NEW_TAB_MESSAGE", "frame__window_8c.html#add5a1b574cf1d233d3c2ce49b52fbbdf", null ],
     [ "NEXT_TAB_MESSAGE", "frame__window_8c.html#a6dbab7c2f09939bbd0f445456a349c70", null ],
     [ "PREV_TAB_MESSAGE", "frame__window_8c.html#a7a3be59347f26af5f0aac1cffdcdc2d3", null ],
@@ -63,12 +62,12 @@ var frame__window_8c =
     [ "InternalPaintTabBar", "frame__window_8c.html#a40251ebed200dfb76bec9215328f1146", null ],
     [ "WBFrameWindowExit", "frame__window_8c.html#a2c5369b62735fc702b114c838ad08c08", null ],
     [ "aTAB_MESSAGE", "group__frame__window.html#ga6a8d6f297223d5d6299e239ddeac2391", null ],
-    [ "clrABG", "frame__window_8c.html#a5ffd7e6b0e5f0d760ee67deeeaff08a5", null ],
     [ "clrBD", "frame__window_8c.html#a6e418d6909b006779a63227887fdaf15", null ],
     [ "clrBD2", "frame__window_8c.html#a41f44d3a46417565ff0ba7ceb2b36cd5", null ],
     [ "clrBD3", "frame__window_8c.html#a083d22d8982be24a6583763d337bb232", null ],
     [ "clrBG", "frame__window_8c.html#a941251ffe1c31fbb1b408a2f491f2614", null ],
     [ "clrFG", "frame__window_8c.html#aa253b1f842bc04541a5ce0e9c4c40d75", null ],
+    [ "clrHBG", "frame__window_8c.html#afbb76e6ad6c0d940a7fce363f8008fa6", null ],
     [ "iInitColorFlag", "frame__window_8c.html#a1a11c961eb8bca06493ff34845ff295d", null ],
     [ "pFrames", "frame__window_8c.html#a3c14d57a9b16ae55b71a84c264175ad7", null ]
 ];

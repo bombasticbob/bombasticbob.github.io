@@ -1,26 +1,6 @@
 var group__draw__text =
 [
-    [ "__DT_WORD__", "struct____DT__WORD____.html", [
-      [ "iHeight", "struct____DT__WORD____.html#a2884aa55a9f2544c59a08976071b1d64", null ],
-      [ "iIsLineFeed", "struct____DT__WORD____.html#adf51da265112e0310b0a782496c94669", null ],
-      [ "iIsTab", "struct____DT__WORD____.html#a237a536bc95e0c75ebc9c69e81efc44f", null ],
-      [ "iIsWhiteSpace", "struct____DT__WORD____.html#ac1ef761a679b65a4f8d349f8f7d37a07", null ],
-      [ "iWidth", "struct____DT__WORD____.html#a339c9f28b92af29925c235e75f37bd11", null ],
-      [ "iX", "struct____DT__WORD____.html#aa46fd71a7485fa548df5fd9356167814", null ],
-      [ "iY", "struct____DT__WORD____.html#a40c1eea16ed01cb492c2faf0eeb8a6e7", null ],
-      [ "nLength", "struct____DT__WORD____.html#ab8842d19dcb5084fd4cca196318d3bd4", null ],
-      [ "pText", "struct____DT__WORD____.html#afe44df317fd6bd5ee90f68a9ef8b2073", null ]
-    ] ],
-    [ "__DT_WORDS__", "struct____DT__WORDS____.html", [
-      [ "aWords", "struct____DT__WORDS____.html#a5c94dd74811f016b5458861460c44933", null ],
-      [ "iMaxHeight", "struct____DT__WORDS____.html#aedb7ee58003a0d684429fb1e6808d234", null ],
-      [ "iMaxWidth", "struct____DT__WORDS____.html#a978cabf5fa7005d326e0e3418a63056b", null ],
-      [ "nCount", "struct____DT__WORDS____.html#a40cac163737ecbfdcce8144f9a89c552", null ],
-      [ "nMax", "struct____DT__WORDS____.html#a23d9f7b5895f47c027059c43a4589e4f", null ],
-      [ "pNext", "struct____DT__WORDS____.html#afdaeb8e851eb3d1e1bfe43b97df4ded8", null ],
-      [ "pPrev", "struct____DT__WORDS____.html#a7370327996fe8fb814744e490b80d402", null ],
-      [ "szText", "struct____DT__WORDS____.html#a55e7f44006af0fe8d5aef9a573402acd", null ]
-    ] ],
+    [ "strong", "structstrong.html", null ],
     [ "DT_WORD", "group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a", null ],
     [ "DT_WORDS", "group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52", null ],
     [ "DTAlignment", "group__draw__text.html#ga082c206bfd406e64f16e934644548d40", [
@@ -55,8 +35,6 @@ var group__draw__text =
     [ "DTDrawMultiLineText", "group__draw__text.html#gaa9fa4aeeec1a4bd73767973c90095271", null ],
     [ "DTDrawSingleLineText", "group__draw__text.html#ga2931ca9b0db915384ce9272cf3a7e02f", null ],
     [ "DTDrawString", "group__draw__text.html#ga2337471599a741adc9f4ab29d369a6b9", null ],
-    [ "DTGetTextExtent", "group__draw__text.html#gae68d32f20a7c9e17182d946075e9647a", null ],
-    [ "DTGetTextWidth", "group__draw__text.html#gae89f6c555db78ab36b29390fdd403e5b", null ],
     [ "DTGetWordsFromText", "group__draw__text.html#gac9ebecb91d9b7fc3e173f0f1015607b6", null ],
     [ "DTPreRender", "group__draw__text.html#ga717caef5ff570827990df40dffd0249c", null ],
     [ "DTRender", "group__draw__text.html#gabbd5e2664e8336e0117ee6367a36c399", null ],

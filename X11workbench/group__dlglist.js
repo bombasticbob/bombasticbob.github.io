@@ -1,27 +1,7 @@
 var group__dlglist =
 [
-    [ "__LISTINFO__", "struct____LISTINFO____.html", [
-      [ "aItems", "struct____LISTINFO____.html#a911a9d918389b496e3cbe8c49d290f7f", null ],
-      [ "geomDisplay", "struct____LISTINFO____.html#a9dc4ebb9415bda8826e2d842adb37a1e", null ],
-      [ "nFlags", "struct____LISTINFO____.html#afbc77915ccefbcbd8fc8b27867a46c57", null ],
-      [ "nHeight", "struct____LISTINFO____.html#a17d981419afeee27eb36a8b43183e49a", null ],
-      [ "nItemHeight", "struct____LISTINFO____.html#a22b1e22ce9222542fbc3b8613d6e6eac", null ],
-      [ "nItems", "struct____LISTINFO____.html#a24b1cb6145a6f39dcafd3622138a05d3", null ],
-      [ "nMaxItems", "struct____LISTINFO____.html#a63473adbe2109db2b71cfba9efff0df6", null ],
-      [ "nPos", "struct____LISTINFO____.html#aab21bf45159b912d5deb21b4cc54c377", null ],
-      [ "nTop", "struct____LISTINFO____.html#adf10e19a2ea7ef40bde221b24094f48f", null ],
-      [ "pfnAllocator", "struct____LISTINFO____.html#a9ea1b76d8a4850ded2fd0b3b60da49b1", null ],
-      [ "pfnDestructor", "struct____LISTINFO____.html#ab8d21949541b0e8d8e8eaf585e3b8eee", null ],
-      [ "pfnDisplay", "struct____LISTINFO____.html#aed95f858f41594dc7bc5aea633877188", null ],
-      [ "pfnSort", "struct____LISTINFO____.html#a28f9d6c1e4a4c1d32834d6abd9097430", null ],
-      [ "wOwner", "struct____LISTINFO____.html#af2479329d50a78c07f034e58942003c1", null ]
-    ] ],
-    [ "_WB_LIST_CURSEL_", "struct__WB__LIST__CURSEL__.html", [
-      [ "iCurSel", "struct__WB__LIST__CURSEL__.html#ae27257a2b09b74ce8528f55e65381ed5", null ],
-      [ "iEntryHeight", "struct__WB__LIST__CURSEL__.html#a9be0073fd0d9ec612c66fd3bd8fabb6a", null ],
-      [ "iHeight", "struct__WB__LIST__CURSEL__.html#a2884aa55a9f2544c59a08976071b1d64", null ],
-      [ "iTopIndex", "struct__WB__LIST__CURSEL__.html#ac34c298c311e29b36839e7bc617db45f", null ]
-    ] ],
+    [ "strong", "structstrong.html", null ],
+    [ "em", "structem.html", null ],
     [ "DLGInitControlListInfoDefault", "group__dlglist.html#ga42aa5560dc7e3a7a63b04485a6eda1fd", null ],
     [ "LISTINFO", "group__dlglist.html#ga9e0253d5bc7a46cc83932ef540d24389", null ],
     [ "WBListCurSel", "group__dlglist.html#ga92b775d076e343e60c315d20d6a5245f", null ],
