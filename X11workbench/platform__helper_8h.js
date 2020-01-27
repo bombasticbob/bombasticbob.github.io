@@ -77,6 +77,7 @@ var platform__helper_8h =
     [ "WBInterlockedRead", "group__threads.html#gaf85c648847aaed2824c9f81168bf5157", null ],
     [ "WBLoadLibrary", "group__process.html#gab174acc6a11dc722577cd5e3723f0b2d", null ],
     [ "WBLookupAtom", "group__platform__functions.html#gab9521326551eb30d23685ab9e4622666", null ],
+    [ "WBMain", "group__startup.html#gaea2918b6cdc49dc3cdd17e67dd9ecfa8", null ],
     [ "WBMkDir", "group__platform__functions.html#ga78bea433648af1c750984978a6e27a2a", null ],
     [ "WBMutexCreate", "group__threads.html#gac8c67307c5039bd3a52cf18e298dc5bd", null ],
     [ "WBMutexFree", "group__threads.html#ga66a3f110301da7fa32b2c0ccd26cae66", null ],
@@ -110,5 +111,6 @@ var platform__helper_8h =
     [ "WBThreadSetLocal", "group__threads.html#ga8860533d5bd6d4a62fdc2559c1993ba8", null ],
     [ "WBThreadWait", "group__threads.html#ga41d0fceffe667a304b2b6ee7a271594d", null ],
     [ "WBToolkitUsage", "group__startup.html#ga5cee3f4b704525ba89117af6616593e2", null ],
+    [ "WBUsage", "group__startup.html#ga1366603ef5d97dd105872f5c309f3e2e", null ],
     [ "bQuitFlag", "group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f", null ]
 ];

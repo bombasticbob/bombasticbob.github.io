@@ -8,5 +8,5 @@ var group__core =
     [ "Clipboard and Selections", "group__clipboard.html", "group__clipboard" ],
     [ "Default Parameters and Definitions", "group__defaults.html", "group__defaults" ],
     [ "'Core' Structures", "group__core__struct.html", "group__core__struct" ],
-    [ "Window Manager and Clipboard-related Atoms", "group__wmatom.html", "group__wmatom" ]
+    [ "Atoms for Window Manager and Clipboard", "group__wmatom.html", "group__wmatom" ]
 ];

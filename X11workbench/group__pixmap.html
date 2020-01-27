@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -520,7 +524,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating success or failure. See XpmCreatePixmapFromData in libXpm documentation</dd></dl>
 <p>This macro abstracts calls to XpmCreatePixmapFromData() by allowing an internal function to be called whenever libXpm is not available for this purpose. </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01172">1172</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01216">1216</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +554,7 @@ Functions</h2></td></tr>
 <p>This macro abstracts calls to XpmFreeAttributes() by allowing an internal function to be called whenever libXpm is not available for this purpose. For the current implementation, the non-libXpm version does nothing.<br />
 Use this macro to free up XPM_ATTRIBUTES structure members that consume resources after a successful call to <a class="el" href="group__pixmap.html#ga2f46e1ee45b5d47e6b642e56f1a0ddd1" title="Platform helper macro to create a pixmap from data.">XPM_CREATE_PIXMAP_FROM_DATA()</a>. This will help prevent resource leaks. </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01185">1185</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8h_source.html#l01229">1229</a> of file <a class="el" href="platform__helper_8h_source.html">platform_helper.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +651,7 @@ Use this macro to free up XPM_ATTRIBUTES structure members that consume resource
 <p>You should consider whether or not you want to use libXpm whenever it is present on your system, as this function has not been fully tested on all platforms. However, using libXpm carries with it a significant performance penalty. If the application runs ok with the default configuration (i.e. no libXpm), you might as well leave it as-is.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03045">3045</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l03108">3108</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2188,13 +2192,16 @@ Similarly, a black pixel should have R, G, B of 0, with Y at 255, and both U and
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:30 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

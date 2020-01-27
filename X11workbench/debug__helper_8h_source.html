@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -71,9 +75,9 @@ $(document).ready(function(){initNavTree('debug__helper_8h_source.html','');});
 <div class="ttc" id="group__platform__types_html_ga17e22d77ef26bafa95ceeffc51947c79"><div class="ttname"><a href="group__platform__types.html#ga17e22d77ef26bafa95ceeffc51947c79">WB_INT32</a></div><div class="ttdeci">int WB_INT32</div><div class="ttdoc">Platform abstract 32-bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00385">platform_helper.h:385</a></div></div>
 <div class="ttc" id="group__debug_html_gab658e6d84759440dbf3c890446075395"><div class="ttname"><a href="group__debug.html#gab658e6d84759440dbf3c890446075395">DebugLevel</a></div><div class="ttdeci">DebugLevel</div><div class="ttdoc">Debug level enumeration.</div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00094">debug_helper.h:94</a></div></div>
 <div class="ttc" id="group__debug_html_ga339a962ef03a3af994cf4bb15790a5d6"><div class="ttname"><a href="group__debug.html#ga339a962ef03a3af994cf4bb15790a5d6">WBCheckDebugLevel</a></div><div class="ttdeci">static __inline__ int WBCheckDebugLevel(WB_UINT64 dwLevel)</div><div class="ttdoc">Check specified debug level against the value returned by WBGetDebugLevel() and return non-zero for a...</div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00301">debug_helper.h:301</a></div></div>
-<div class="ttc" id="group__debug_html_ga1b403292a2ce065b57db74db5809dfea"><div class="ttname"><a href="group__debug.html#ga1b403292a2ce065b57db74db5809dfea">WBDebugDump</a></div><div class="ttdeci">void void WBDebugDump(const char *szTitle, void *pData, int cbData)</div><div class="ttdoc">conditionally dumps binary data to debug message output</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l00741">platform_helper.c:741</a></div></div>
+<div class="ttc" id="group__debug_html_ga1b403292a2ce065b57db74db5809dfea"><div class="ttname"><a href="group__debug.html#ga1b403292a2ce065b57db74db5809dfea">WBDebugDump</a></div><div class="ttdeci">void void WBDebugDump(const char *szTitle, void *pData, int cbData)</div><div class="ttdoc">conditionally dumps binary data to debug message output</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l00802">platform_helper.c:802</a></div></div>
 <div class="ttc" id="group__platform__types_html_gafe03a6c44f6d9df7e0e4bf1e8f49967a"><div class="ttname"><a href="group__platform__types.html#gafe03a6c44f6d9df7e0e4bf1e8f49967a">WB_UINT64</a></div><div class="ttdeci">unsigned long long WB_UINT64</div><div class="ttdoc">Platform abstract unsigned 64-bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8h_source.html#l00415">platform_helper.h:415</a></div></div>
-<div class="ttc" id="group__debug_html_ga2a09380df755537647684f30f7bfab3f"><div class="ttname"><a href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">WBSetDebugLevel</a></div><div class="ttdeci">void WBSetDebugLevel(unsigned int iLevel)</div><div class="ttdoc">set debug level</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l00686">platform_helper.c:686</a></div></div>
+<div class="ttc" id="group__debug_html_ga2a09380df755537647684f30f7bfab3f"><div class="ttname"><a href="group__debug.html#ga2a09380df755537647684f30f7bfab3f">WBSetDebugLevel</a></div><div class="ttdeci">void WBSetDebugLevel(unsigned int iLevel)</div><div class="ttdoc">set debug level</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l00747">platform_helper.c:747</a></div></div>
 <div class="ttc" id="group__debug_html_gaa39191469018c352801b1178befdd5b2"><div class="ttname"><a href="group__debug.html#gaa39191469018c352801b1178befdd5b2">WBDebugDumpEvent</a></div><div class="ttdeci">void WBDebugDumpEvent(XEvent *pEvent)</div><div class="ttdoc">dumps the contents of an XEvent</div><div class="ttdef"><b>Definition:</b> <a href="window__helper_8c_source.html#l09254">window_helper.c:9254</a></div></div>
 <div class="ttc" id="group__debug_html_ga2190ea813f55d52742733bb8c137e906"><div class="ttname"><a href="group__debug.html#ga2190ea813f55d52742733bb8c137e906">WBDebugDumpGC</a></div><div class="ttdeci">void WBDebugDumpGC(Display *pDisplay, WBGC hGC)</div><div class="ttdoc">dumps a GC's settings</div><div class="ttdef"><b>Definition:</b> <a href="window__helper_8c_source.html#l09207">window_helper.c:9207</a></div></div>
 <div class="ttc" id="group__core__struct_html_ga74173c00060b57fc3bf11c52460bf92e"><div class="ttname"><a href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a></div><div class="ttdeci">struct _WBGC_ * WBGC</div><div class="ttdoc">internal wrapper struct for GC with local cache</div></div>
@@ -84,14 +88,17 @@ $(document).ready(function(){initNavTree('debug__helper_8h_source.html','');});
 <div class="ttc" id="group__debug_html_gacdff0718f4556f2cbe2cd24f2dba9691"><div class="ttname"><a href="group__debug.html#gacdff0718f4556f2cbe2cd24f2dba9691">WBGetDebugLevel</a></div><div class="ttdeci">static __inline__ WB_UINT64 WBGetDebugLevel(void)</div><div class="ttdoc">Returns the current debug level assigned by WBSetDebugLevel.</div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00186">debug_helper.h:186</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><b>debug_helper.h</b></li>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:28 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

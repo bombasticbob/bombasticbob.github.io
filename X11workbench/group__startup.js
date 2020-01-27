@@ -17,11 +17,13 @@ var group__startup =
     [ "WBInitDisplay", "group__startup.html#ga1ca511628142e183e7db3e326b947244", null ],
     [ "WBInitSizeHints", "group__startup.html#ga832d717d9276cf16a656c105c6ce667a", null ],
     [ "WBInitWindowAttributes", "group__startup.html#gacad4fcff08891dd42c7cd889e9d0c35a", null ],
+    [ "WBMain", "group__startup.html#gaea2918b6cdc49dc3cdd17e67dd9ecfa8", null ],
     [ "WBParseStandardArguments", "group__startup.html#ga576673ed5710c0711a453f935b5043aa", null ],
     [ "WBPlatformOnExit", "group__startup.html#ga186e21ce3badbba01435fa3e30bacd16", null ],
     [ "WBPlatformOnInit", "group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5", null ],
     [ "WBThreadFreeDisplay", "group__startup.html#gabc195384568f9fb8ed6d2a7704722395", null ],
     [ "WBThreadInitDisplay", "group__startup.html#ga59e964570bd9a7a7bf893796a83606a3", null ],
     [ "WBToolkitUsage", "group__startup.html#ga5cee3f4b704525ba89117af6616593e2", null ],
+    [ "WBUsage", "group__startup.html#ga1366603ef5d97dd105872f5c309f3e2e", null ],
     [ "bQuitFlag", "group__startup.html#gaa4167dc88ea153b2619cb8eb8e3e9c2f", null ]
 ];

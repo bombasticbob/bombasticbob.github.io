@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -65,6 +69,7 @@ $(document).ready(function(){initNavTree('group__events.html','');});
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -82,6 +87,18 @@ Modules</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__pointer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pointer.html">Mouse Pointer Event Handling</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gabf332a9e9be0d42e529b972eee8dd696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#gabf332a9e9be0d42e529b972eee8dd696">WB_STANDARD_INPUT_MASK</a>&#160;&#160;&#160;(FocusChangeMask | PropertyChangeMask | ExposureMask | StructureNotifyMask | VisibilityChangeMask | SubstructureNotifyMask)</td></tr>
+<tr class="memdesc:gabf332a9e9be0d42e529b972eee8dd696"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Standard' input mask, bit flag for window creation  <a href="#gabf332a9e9be0d42e529b972eee8dd696">More...</a><br /></td></tr>
+<tr class="separator:gabf332a9e9be0d42e529b972eee8dd696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga686aaff005092ee3cde10c1967dddedb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga686aaff005092ee3cde10c1967dddedb">WB_KEYBOARD_INPUT_MASK</a>&#160;&#160;&#160;(KeyPressMask | KeyReleaseMask)</td></tr>
+<tr class="memdesc:ga686aaff005092ee3cde10c1967dddedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Keyboard' input mask, bit flag for window creation  <a href="#ga686aaff005092ee3cde10c1967dddedb">More...</a><br /></td></tr>
+<tr class="separator:ga686aaff005092ee3cde10c1967dddedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47804029d8dd10d0590dbea7cace452a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga47804029d8dd10d0590dbea7cace452a">WB_MOUSE_INPUT_MASK</a>&#160;&#160;&#160;(ButtonPressMask | ButtonReleaseMask | PointerMotionMask | EnterWindowMask | LeaveWindowMask)</td></tr>
+<tr class="memdesc:ga47804029d8dd10d0590dbea7cace452a"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Mouse' input mask, bit flag for window creation  <a href="#ga47804029d8dd10d0590dbea7cace452a">More...</a><br /></td></tr>
+<tr class="separator:ga47804029d8dd10d0590dbea7cace452a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -148,6 +165,67 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Event handling in X11 involves an event handler loop and methods by which the various events can be dispatched to window callback functions, or to the application's event handler. The X11workbench Toolkit API has provisinos for event prioritization, asynchronous processing, and the generation of 'internal events' (see <a class="el" href="group__keyboard.html#gab047060739005fbe53d09cc5e05101ce">aWB_CHAR</a>, <a class="el" href="group__pointer.html#ga5a71c68353174922427c05fd004e1f9a">aWB_POINTER</a>, <a class="el" href="group__timer.html#gae8da097fed5abc873cc7e96af53edd37">aWB_TIMER</a>). </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga686aaff005092ee3cde10c1967dddedb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga686aaff005092ee3cde10c1967dddedb">&#9670;&nbsp;</a></span>WB_KEYBOARD_INPUT_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WB_KEYBOARD_INPUT_MASK&#160;&#160;&#160;(KeyPressMask | KeyReleaseMask)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>'Keyboard' input mask, bit flag for window creation </p>
+<p>'Keyboard' input mask. Use this as a parameter to XSelectInput to enable keyboard events to be sent to the window<br />
+This bit mask may be 'or'd with other bit masks as needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00945">945</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+
+</div>
+</div>
+<a id="ga47804029d8dd10d0590dbea7cace452a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47804029d8dd10d0590dbea7cace452a">&#9670;&nbsp;</a></span>WB_MOUSE_INPUT_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WB_MOUSE_INPUT_MASK&#160;&#160;&#160;(ButtonPressMask | ButtonReleaseMask | PointerMotionMask | EnterWindowMask | LeaveWindowMask)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>'Mouse' input mask, bit flag for window creation </p>
+<p>'Mouse' input mask. Use this as a parameter to XSelectInput to enable mouse events to be sent to the window<br />
+This bit mask may be 'or'd with other bit masks as needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00953">953</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+
+</div>
+</div>
+<a id="gabf332a9e9be0d42e529b972eee8dd696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf332a9e9be0d42e529b972eee8dd696">&#9670;&nbsp;</a></span>WB_STANDARD_INPUT_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WB_STANDARD_INPUT_MASK&#160;&#160;&#160;(FocusChangeMask | PropertyChangeMask | ExposureMask | StructureNotifyMask | VisibilityChangeMask | SubstructureNotifyMask)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>'Standard' input mask, bit flag for window creation </p>
+<p>'Standard' input mask. Use this as a parameter to XSelectInput to enable standard events to be sent to the window<br />
+This bit mask may be 'or'd with other bit masks as needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00937">937</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga2648b749bede99874e9ed979ce861f44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2648b749bede99874e9ed979ce861f44">&#9670;&nbsp;</a></span>WBAppEvent</h2>
@@ -857,13 +935,16 @@ NOTE: if 'bQuitFlag' is set, this function will return immediately.</p>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:30 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

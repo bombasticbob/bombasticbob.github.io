@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,11 +96,11 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="ttc" id="structWBFont_html_a0e5b4ba1b30f7c298b82d7592e78a8e3"><div class="ttname"><a href="structWBFont.html#a0e5b4ba1b30f7c298b82d7592e78a8e3">WBFont::pDisplay</a></div><div class="ttdeci">Display * pDisplay</div><div class="ttdoc">The Display pointer associated with this font (to be used internally)</div><div class="ttdef"><b>Definition:</b> <a href="font__helper_8h_source.html#l00162">font_helper.h:162</a></div></div>
 <div class="ttc" id="group__font_html_ga0a23be1452193c40176ebf497420ca53"><div class="ttname"><a href="group__font.html#ga0a23be1452193c40176ebf497420ca53">WBFontEnableAntiAlias</a></div><div class="ttdeci">int WBFontEnableAntiAlias(void)</div><div class="ttdoc">returns non-zero value if certain fonts should be anti-aliased when rendered</div><div class="ttdef"><b>Definition:</b> <a href="font__helper_8c_source.html#l00157">font_helper.c:157</a></div></div>
 <div class="ttc" id="group__font__legacy_html_ga1f44dbda6bce3d4428a4748d80de98c1"><div class="ttname"><a href="group__font__legacy.html#ga1f44dbda6bce3d4428a4748d80de98c1">WBCopyFontX</a></div><div class="ttdeci">XFontStruct * WBCopyFontX(XFontStruct *pOldFont)</div><div class="ttdoc">make a copy of an existing font (best when assigning to a window)</div><div class="ttdef"><b>Definition:</b> <a href="font__legacy_8c_source.html#l00106">font_legacy.c:106</a></div></div>
-<div class="ttc" id="group__sub__alloc_html_ga8ee962cea8e2f0cb52d1cab9057ffe6c"><div class="ttname"><a href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">WBAlloc</a></div><div class="ttdeci">void * WBAlloc(int nSize)</div><div class="ttdoc">High performance memory sub-allocator 'allocate'.</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l01129">platform_helper.c:1129</a></div></div>
+<div class="ttc" id="group__sub__alloc_html_ga8ee962cea8e2f0cb52d1cab9057ffe6c"><div class="ttname"><a href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c">WBAlloc</a></div><div class="ttdeci">void * WBAlloc(int nSize)</div><div class="ttdoc">High performance memory sub-allocator 'allocate'.</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l01190">platform_helper.c:1190</a></div></div>
 <div class="ttc" id="group__debug_html_gaecce059895600af7ce5b6ad5bf88ff63"><div class="ttname"><a href="group__debug.html#gaecce059895600af7ce5b6ad5bf88ff63">END_XCALL_DEBUG_WRAPPER</a></div><div class="ttdeci">#define END_XCALL_DEBUG_WRAPPER</div><div class="ttdoc">wrapper macro for calls into the X11 library. This macro follows the call(s)</div><div class="ttdef"><b>Definition:</b> <a href="window__helper_8h_source.html#l00161">window_helper.h:161</a></div></div>
 <div class="ttc" id="structWBFont_html_ad80e1b63e7afb05fc8464fb2b0f4f1d3"><div class="ttname"><a href="structWBFont.html#ad80e1b63e7afb05fc8464fb2b0f4f1d3">WBFont::max_bounds</a></div><div class="ttdeci">XCharStruct max_bounds</div><div class="ttdoc">RESERVED - cached max bounds (all 0's if not valid). do not access this directly.</div><div class="ttdef"><b>Definition:</b> <a href="font__helper_8h_source.html#l00161">font_helper.h:161</a></div></div>
 <div class="ttc" id="group__debug_html_ga1a1d182c6caeb2224b7f5cee41250e6c"><div class="ttname"><a href="group__debug.html#ga1a1d182c6caeb2224b7f5cee41250e6c">WB_ERROR_PRINT</a></div><div class="ttdeci">#define WB_ERROR_PRINT(...)</div><div class="ttdoc">Preferred method of implementing an 'error level' debug message for all subsystems.</div><div class="ttdef"><b>Definition:</b> <a href="debug__helper_8h_source.html#l00475">debug_helper.h:475</a></div></div>
-<div class="ttc" id="group__sub__alloc_html_gaebf9d7c0cd9aa525a93d0c5cc5376a1c"><div class="ttname"><a href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">WBFree</a></div><div class="ttdeci">void WBFree(void *pBuf)</div><div class="ttdoc">High performance memory sub-allocator 'free'.</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l01213">platform_helper.c:1213</a></div></div>
+<div class="ttc" id="group__sub__alloc_html_gaebf9d7c0cd9aa525a93d0c5cc5376a1c"><div class="ttname"><a href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c">WBFree</a></div><div class="ttdeci">void WBFree(void *pBuf)</div><div class="ttdoc">High performance memory sub-allocator 'free'.</div><div class="ttdef"><b>Definition:</b> <a href="platform__helper_8c_source.html#l01274">platform_helper.c:1274</a></div></div>
 <div class="ttc" id="group__font_html_ga2dd694a255557dcaa766ed431fab34a8"><div class="ttname"><a href="group__font.html#ga2dd694a255557dcaa766ed431fab34a8">WBFontMaxBounds</a></div><div class="ttdeci">XCharStruct WBFontMaxBounds(WB_FONTC pFont0)</div><div class="ttdoc">Get a 'maximized' copy of 'max_bounds' (applicable to all font faces in the WB_FONT)</div><div class="ttdef"><b>Definition:</b> <a href="font__helper_8c_source.html#l00592">font_helper.c:592</a></div></div>
 <div class="ttc" id="group__font__legacy_html_ga7d9ea6fa1202b63da4a3f990cafdad63"><div class="ttname"><a href="group__font__legacy.html#ga7d9ea6fa1202b63da4a3f990cafdad63">WBFontSetDescent</a></div><div class="ttdeci">int WBFontSetDescent(Display *pDisplay, XFontSet fontSet)</div><div class="ttdoc">Get the maximum character descent from a font set.</div><div class="ttdef"><b>Definition:</b> <a href="font__legacy_8c_source.html#l01013">font_legacy.c:1013</a></div></div>
 <div class="ttc" id="structWBFont_html_adf92dff485194330da58ca02fdb62eca"><div class="ttname"><a href="structWBFont.html#adf92dff485194330da58ca02fdb62eca">WBFont::fsFont</a></div><div class="ttdeci">XFontSet fsFont</div><div class="ttdoc">legacy 'XFontSet' for X11 raster fonts (UTF-8)</div><div class="ttdef"><b>Definition:</b> <a href="font__helper_8h_source.html#l00168">font_helper.h:168</a></div></div>
@@ -120,14 +124,17 @@ $(document).ready(function(){initNavTree('font__helper_8c_source.html','');});
 <div class="ttc" id="structWBFont_html_a2884aa55a9f2544c59a08976071b1d64"><div class="ttname"><a href="structWBFont.html#a2884aa55a9f2544c59a08976071b1d64">WBFont::iHeight</a></div><div class="ttdeci">int iHeight</div><div class="ttdoc">RESERVED - cached font height (-1 if not valid). do not access this directly.</div><div class="ttdef"><b>Definition:</b> <a href="font__helper_8h_source.html#l00158">font_helper.h:158</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="font__helper_8c.html">font_helper.c</a></li>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:28 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:02 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

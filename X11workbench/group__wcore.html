@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -65,7 +69,6 @@ $(document).ready(function(){initNavTree('group__wcore.html','');});
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -78,33 +81,14 @@ $(document).ready(function(){initNavTree('group__wcore.html','');});
 Modules</h2></td></tr>
 <tr class="memitem:group__wcore__internal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html">Internal-only Window 'Core' features</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gabf332a9e9be0d42e529b972eee8dd696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gabf332a9e9be0d42e529b972eee8dd696">WB_STANDARD_INPUT_MASK</a>&#160;&#160;&#160;(FocusChangeMask | PropertyChangeMask | ExposureMask | StructureNotifyMask | VisibilityChangeMask | SubstructureNotifyMask)</td></tr>
-<tr class="memdesc:gabf332a9e9be0d42e529b972eee8dd696"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Standard' input mask, bit flag for window creation  <a href="#gabf332a9e9be0d42e529b972eee8dd696">More...</a><br /></td></tr>
-<tr class="separator:gabf332a9e9be0d42e529b972eee8dd696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga686aaff005092ee3cde10c1967dddedb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga686aaff005092ee3cde10c1967dddedb">WB_KEYBOARD_INPUT_MASK</a>&#160;&#160;&#160;(KeyPressMask | KeyReleaseMask)</td></tr>
-<tr class="memdesc:ga686aaff005092ee3cde10c1967dddedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Keyboard' input mask, bit flag for window creation  <a href="#ga686aaff005092ee3cde10c1967dddedb">More...</a><br /></td></tr>
-<tr class="separator:ga686aaff005092ee3cde10c1967dddedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47804029d8dd10d0590dbea7cace452a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga47804029d8dd10d0590dbea7cace452a">WB_MOUSE_INPUT_MASK</a>&#160;&#160;&#160;(ButtonPressMask | ButtonReleaseMask | PointerMotionMask | EnterWindowMask | LeaveWindowMask)</td></tr>
-<tr class="memdesc:ga47804029d8dd10d0590dbea7cace452a"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Mouse' input mask, bit flag for window creation  <a href="#ga47804029d8dd10d0590dbea7cace452a">More...</a><br /></td></tr>
-<tr class="separator:ga47804029d8dd10d0590dbea7cace452a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60f396a81f1f933b1abe375e5486ff40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga60f396a81f1f933b1abe375e5486ff40">WBGetWindowCopyGC2</a>(wID,  gcSrc)&#160;&#160;&#160;<a class="el" href="group__graphics.html#ga48ffc8081b06b99457a70873a3d81661">WBCopyDrawableGC</a>(<a class="el" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c">WBGetWindowDisplay</a>(wID), wID, gcSrc)</td></tr>
-<tr class="memdesc:ga60f396a81f1f933b1abe375e5486ff40"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes a copy of the specified WBGC for the desired window  <a href="#ga60f396a81f1f933b1abe375e5486ff40">More...</a><br /></td></tr>
-<tr class="separator:ga60f396a81f1f933b1abe375e5486ff40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85fc7b30e4d22796448591954b3fc257"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga85fc7b30e4d22796448591954b3fc257">WBPointInRect</a>(X,  Y,  R)&#160;&#160;&#160;((X) &gt;= (R).left &amp;&amp; (X) &lt; (R).right &amp;&amp; (Y) &gt;= (R).top &amp;&amp; (Y) &lt; (R).bottom)</td></tr>
-<tr class="memdesc:ga85fc7b30e4d22796448591954b3fc257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns logical TRUE if the point (X,Y) is within the borders of the rectangle 'R'.  <a href="#ga85fc7b30e4d22796448591954b3fc257">More...</a><br /></td></tr>
-<tr class="separator:ga85fc7b30e4d22796448591954b3fc257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacbf422a1a4a3db6ccac2b9213b3ae93d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gacbf422a1a4a3db6ccac2b9213b3ae93d">WBPointInGeom</a>(X,  Y,  G)&#160;&#160;&#160;((X) &gt;= (G).x &amp;&amp; (X) &lt; ((G).x + (G).width) &amp;&amp; (Y) &gt;= (G).y &amp;&amp; (Y) &lt; ((G).y + (G).height))</td></tr>
-<tr class="memdesc:gacbf422a1a4a3db6ccac2b9213b3ae93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns logical TRUE if the point (X,Y) is within the borders of the geometry 'G'.  <a href="#gacbf422a1a4a3db6ccac2b9213b3ae93d">More...</a><br /></td></tr>
-<tr class="separator:gacbf422a1a4a3db6ccac2b9213b3ae93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac63e4883a78e0a46f209f23294367d9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gac63e4883a78e0a46f209f23294367d9d">WBRectOverlapped</a>(R1,  R2)</td></tr>
-<tr class="memdesc:gac63e4883a78e0a46f209f23294367d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns logical TRUE if the rectangle R1 overlaps/intersects R2.  <a href="#gac63e4883a78e0a46f209f23294367d9d">More...</a><br /></td></tr>
-<tr class="separator:gac63e4883a78e0a46f209f23294367d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc27373f1024b64ba99341c1790269f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gacc27373f1024b64ba99341c1790269f9">WBGeomOverlapped</a>(G1,  G2)</td></tr>
-<tr class="memdesc:gacc27373f1024b64ba99341c1790269f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns logical TRUE if the geometry G1 overlaps/intersects G2.  <a href="#gacc27373f1024b64ba99341c1790269f9">More...</a><br /></td></tr>
-<tr class="separator:gacc27373f1024b64ba99341c1790269f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__wcore__wm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__wm.html">Window Manager Window Properties</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__wcore__cursor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__cursor.html">Pointer/Cursor management</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__wcore__geom"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__geom.html">Points, Rectangles, and Geometries</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__wcore__gc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__gc.html">Graphics Context APIs related to Windows</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -114,70 +98,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga393c61affbc5766ce678224558be0b16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a> { <br />
-&#160;&#160;<b>WMPropertiesWindowType_TypeMask</b> = 0x3f, 
-<b>WMPropertiesWindowType_Normal</b> = 0, 
-<b>WMPropertiesWindowType_Desktop</b> = 1, 
-<b>WMPropertiesWindowType_Dock</b> = 2, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_ToolBar</b> = 3, 
-<b>WMPropertiesWindowType_Menu</b> = 4, 
-<b>WMPropertiesWindowType_Utility</b> = 5, 
-<b>WMPropertiesWindowType_Splash</b> = 6, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_Dialog</b> = 7, 
-<b>WMPropertiesWindowType_DropDownMenu</b> = 8, 
-<b>WMPropertiesWindowType_PopupMenu</b> = 9, 
-<b>WMPropertiesWindowType_ToolTip</b> = 10, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_Notification</b> = 11, 
-<b>WMPropertiesWindowType_Combo</b> = 12, 
-<b>WMPropertiesWindowType_Drag_N_Drop</b> = 13, 
-<b>WMPropertiesWindowType_Reserved14</b> = 14, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_Reserved15</b> = 15, 
-<b>WMPropertiesWindowType_StateMask</b> = 0xfffC0, 
-<b>WMPropertiesWindowType_NoState</b> = 0, 
-<b>WMPropertiesWindowType_Modal</b> = 0x00040, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_Sticky</b> = 0x00080, 
-<b>WMPropertiesWindowType_VMax</b> = 0x00100, 
-<b>WMPropertiesWindowType_HMax</b> = 0x00200, 
-<b>WMPropertiesWindowType_FullScreen</b> = 0x00400, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_Hidden</b> = 0x00800, 
-<b>WMPropertiesWindowType_Shaded</b> = 0x01000, 
-<b>WMPropertiesWindowType_SkipTaskbar</b> = 0x02000, 
-<b>WMPropertiesWindowType_SkipPager</b> = 0x04000, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_Above</b> = 0x08000, 
-<b>WMPropertiesWindowType_Below</b> = 0x10000, 
-<b>WMPropertiesWindowType_Focused</b> = 0x20000, 
-<b>WMPropertiesWindowType_DemandsAttention</b> = 0x40000, 
-<br />
-&#160;&#160;<b>WMPropertiesWindowType_Reserved80000</b> = 0x80000, 
-<b>WMPropertiesWindowType_Max</b> = 0x80000000
-<br />
- }</td></tr>
-<tr class="memdesc:ga393c61affbc5766ce678224558be0b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window type enumeration. Reserved for future implementation.  <a href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">More...</a><br /></td></tr>
-<tr class="separator:ga393c61affbc5766ce678224558be0b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga720fc619923711fbdeb2191d4b094077"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga720fc619923711fbdeb2191d4b094077">WMPropertiesWMProtocols</a> { <br />
-&#160;&#160;<b>WMPropertiesWMProtocols_Mask</b> = 0xff, 
-<a class="el" href="group__wcore.html#gga720fc619923711fbdeb2191d4b094077ae458a049dd4860403d96b1232204851a">WMPropertiesWMProtocols_None</a> = 0x0, 
-<b>WMPropertiesWMProtocols_DeleteWindow</b> = 0x01, 
-<b>WMPropertiesWMProtocols_Reserved2</b> = 0x02, 
-<br />
-&#160;&#160;<b>WMPropertiesWMProtocols_Reserved3</b> = 0x04, 
-<b>WMPropertiesWMProtocols_Reserved4</b> = 0x08, 
-<b>WMPropertiesWMProtocols_Reserved5</b> = 0x10, 
-<b>WMPropertiesWMProtocols_Reserved6</b> = 0x20, 
-<br />
-&#160;&#160;<b>WMPropertiesWMProtocols_Reserved7</b> = 0x40, 
-<b>WMPropertiesWMProtocols_Reserved8</b> = 0x80
-<br />
- }</td></tr>
-<tr class="memdesc:ga720fc619923711fbdeb2191d4b094077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window WMProtocols support enumeration.  <a href="group__wcore.html#ga720fc619923711fbdeb2191d4b094077">More...</a><br /></td></tr>
-<tr class="separator:ga720fc619923711fbdeb2191d4b094077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e7647b8aa40d85f3329ce9b661852f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga2e7647b8aa40d85f3329ce9b661852f5">WBCreateWindow_flags</a> { <a class="el" href="group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a886a86125ba7a6bdaa3c58ed9fd64f31">WBCreateWindow_flagsDefault</a> = 0
  }</td></tr>
 <tr class="memdesc:ga2e7647b8aa40d85f3329ce9b661852f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">WBCreateWindow 'iFlags' additional bits.  <a href="group__wcore.html#ga2e7647b8aa40d85f3329ce9b661852f5">More...</a><br /></td></tr>
@@ -192,10 +112,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac8375c7dda24fb4455f903c4c46b35ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a window.  <a href="#gac8375c7dda24fb4455f903c4c46b35ce">More...</a><br /></td></tr>
 <tr class="separator:gac8375c7dda24fb4455f903c4c46b35ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7fc5565c125adbf08ff0da71400a0702"><td class="memItemLeft" align="right" valign="top">Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga7fc5565c125adbf08ff0da71400a0702">WBGetApplicationWindow</a> (void)</td></tr>
-<tr class="memdesc:ga7fc5565c125adbf08ff0da71400a0702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a window.  <a href="#ga7fc5565c125adbf08ff0da71400a0702">More...</a><br /></td></tr>
+<tr class="memdesc:ga7fc5565c125adbf08ff0da71400a0702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the main 'Application' window.  <a href="#ga7fc5565c125adbf08ff0da71400a0702">More...</a><br /></td></tr>
 <tr class="separator:ga7fc5565c125adbf08ff0da71400a0702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga930f1ec5fc0beea185925fd8ce889eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga930f1ec5fc0beea185925fd8ce889eaf">WBSetApplicationWindow</a> (Window wID)</td></tr>
-<tr class="memdesc:ga930f1ec5fc0beea185925fd8ce889eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a window.  <a href="#ga930f1ec5fc0beea185925fd8ce889eaf">More...</a><br /></td></tr>
+<tr class="memdesc:ga930f1ec5fc0beea185925fd8ce889eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the main 'Appklication' window.  <a href="#ga930f1ec5fc0beea185925fd8ce889eaf">More...</a><br /></td></tr>
 <tr class="separator:ga930f1ec5fc0beea185925fd8ce889eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82131f2b559763bb5091f2ce5a0e3fff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga82131f2b559763bb5091f2ce5a0e3fff">WBDefault</a> (Window wID, XEvent *pEvent)</td></tr>
 <tr class="memdesc:ga82131f2b559763bb5091f2ce5a0e3fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">implements the default window event callback behavior  <a href="#ga82131f2b559763bb5091f2ce5a0e3fff">More...</a><br /></td></tr>
@@ -215,24 +135,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaba341876375df2c16fe7981839671e19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gaba341876375df2c16fe7981839671e19">WBUnregisterWindowCallback</a> (Window wID)</td></tr>
 <tr class="memdesc:gaba341876375df2c16fe7981839671e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">un-register the window's callback function (implies resource destruction)  <a href="#gaba341876375df2c16fe7981839671e19">More...</a><br /></td></tr>
 <tr class="separator:gaba341876375df2c16fe7981839671e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa37fcfe35d0ac3daf6d22ef6451a3cb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gaa37fcfe35d0ac3daf6d22ef6451a3cb7">WBSetWMProperties</a> (Window wID, const char *szTitle, XSizeHints *pNormalHints, XWMHints *pWMHints, XClassHint *pClassHints)</td></tr>
-<tr class="memdesc:gaa37fcfe35d0ac3daf6d22ef6451a3cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign standard WM (Window Manager) properties via XSetWMProperties  <a href="#gaa37fcfe35d0ac3daf6d22ef6451a3cb7">More...</a><br /></td></tr>
-<tr class="separator:gaa37fcfe35d0ac3daf6d22ef6451a3cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga230b8aa2544ae37a42578af7f6a29e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga230b8aa2544ae37a42578af7f6a29e10">WBSetWindowTitle</a> (Window wID, const char *szTitle)</td></tr>
 <tr class="memdesc:ga230b8aa2544ae37a42578af7f6a29e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign window (and icon) title  <a href="#ga230b8aa2544ae37a42578af7f6a29e10">More...</a><br /></td></tr>
 <tr class="separator:ga230b8aa2544ae37a42578af7f6a29e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb94431d6bea312dcabae07242dba442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gaeb94431d6bea312dcabae07242dba442">WBSetWMPropertiesWindowType</a> (Window wID, enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a> wmProp)</td></tr>
-<tr class="memdesc:gaeb94431d6bea312dcabae07242dba442"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign standard WM (Window Manager) 'window type' properties BEFORE mapping it (reserved)  <a href="#gaeb94431d6bea312dcabae07242dba442">More...</a><br /></td></tr>
-<tr class="separator:gaeb94431d6bea312dcabae07242dba442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa081ed4be9f20145a74dd0147fc4b67d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gaa081ed4be9f20145a74dd0147fc4b67d">WBChangeWMPropertiesWindowType</a> (Window wID, enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a> wmPropSet, enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a> wmChangeMask)</td></tr>
-<tr class="memdesc:gaa081ed4be9f20145a74dd0147fc4b67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">re-assign standard WM (Window Manager) 'window type' properties and notify the root window (reserved)  <a href="#gaa081ed4be9f20145a74dd0147fc4b67d">More...</a><br /></td></tr>
-<tr class="separator:gaa081ed4be9f20145a74dd0147fc4b67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0199c1cc0a1bf869c79f3a823dc31b5c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga0199c1cc0a1bf869c79f3a823dc31b5c">WBGetWMPropertiesWindowType</a> (Window wID)</td></tr>
-<tr class="memdesc:ga0199c1cc0a1bf869c79f3a823dc31b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">re-assign standard WM (Window Manager) 'window type' properties and notify the root window (reserved)  <a href="#ga0199c1cc0a1bf869c79f3a823dc31b5c">More...</a><br /></td></tr>
-<tr class="separator:ga0199c1cc0a1bf869c79f3a823dc31b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41ed2ee5aa49afcddfbf72c0903fb6ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga41ed2ee5aa49afcddfbf72c0903fb6ae">WBSetWMProtocols</a> (Window wID, Atom aProperty,...)</td></tr>
-<tr class="memdesc:ga41ed2ee5aa49afcddfbf72c0903fb6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">re-assign standard WM (Window Manager) 'window type' properties and notify the root window (reserved)  <a href="#ga41ed2ee5aa49afcddfbf72c0903fb6ae">More...</a><br /></td></tr>
-<tr class="separator:ga41ed2ee5aa49afcddfbf72c0903fb6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9d6d01f936dee703f708e7e4120c099"><td class="memItemLeft" align="right" valign="top">Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gae9d6d01f936dee703f708e7e4120c099">WBLocateWindow</a> (<a class="el" href="group__wcore.html#gab37976e62900c9fd328045c33317a369">WBLocateWindowCallback</a> callback, void *pData)</td></tr>
 <tr class="memdesc:gae9d6d01f936dee703f708e7e4120c099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate a window by enumerating with a callback function.  <a href="#gae9d6d01f936dee703f708e7e4120c099">More...</a><br /></td></tr>
 <tr class="separator:gae9d6d01f936dee703f708e7e4120c099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,39 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga80452c075ad3ed5c000c06b2776d8e22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga80452c075ad3ed5c000c06b2776d8e22">WBSetWindowFont</a> (Window wID, <a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont)</td></tr>
 <tr class="memdesc:ga80452c075ad3ed5c000c06b2776d8e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">assigns the default WB_FONT object for a window  <a href="#ga80452c075ad3ed5c000c06b2776d8e22">More...</a><br /></td></tr>
 <tr class="separator:ga80452c075ad3ed5c000c06b2776d8e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9970130e4c54ad2ea57d59034b31565c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga9970130e4c54ad2ea57d59034b31565c">WBSetWindowDefaultCursor</a> (Window wID, int idStandardCursor)</td></tr>
-<tr class="memdesc:ga9970130e4c54ad2ea57d59034b31565c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a default cursor (by ID) to a window.  <a href="#ga9970130e4c54ad2ea57d59034b31565c">More...</a><br /></td></tr>
-<tr class="separator:ga9970130e4c54ad2ea57d59034b31565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9c6e20f64f40a06373cacad485d9e554"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga9c6e20f64f40a06373cacad485d9e554">WBGetWindowDefaultCursor</a> (Window wID)</td></tr>
-<tr class="memdesc:ga9c6e20f64f40a06373cacad485d9e554"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the default cursor ID for a window  <a href="#ga9c6e20f64f40a06373cacad485d9e554">More...</a><br /></td></tr>
-<tr class="separator:ga9c6e20f64f40a06373cacad485d9e554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe9c0442cd6da2a894b08a408db10a7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gafe9c0442cd6da2a894b08a408db10a7c">WBCreateWindowDefaultGC</a> (Window wID, unsigned long clrFG, unsigned long clrBG)</td></tr>
-<tr class="memdesc:gafe9c0442cd6da2a894b08a408db10a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a default WBGC for a window  <a href="#gafe9c0442cd6da2a894b08a408db10a7c">More...</a><br /></td></tr>
-<tr class="separator:gafe9c0442cd6da2a894b08a408db10a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae21b4f5cf6607b1fc4aced2acddbd5a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gae21b4f5cf6607b1fc4aced2acddbd5a5">WBSetWindowDefaultGC</a> (Window wID, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC)</td></tr>
-<tr class="memdesc:gae21b4f5cf6607b1fc4aced2acddbd5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">assigns a default WBGC to a window  <a href="#gae21b4f5cf6607b1fc4aced2acddbd5a5">More...</a><br /></td></tr>
-<tr class="separator:gae21b4f5cf6607b1fc4aced2acddbd5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaacb0d38cb3a1a68449dc011806349428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gaacb0d38cb3a1a68449dc011806349428">WBGetWindowCopyGC</a> (Window wID)</td></tr>
-<tr class="memdesc:gaacb0d38cb3a1a68449dc011806349428"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes a copy of the default WBGC so that it can be modified  <a href="#gaacb0d38cb3a1a68449dc011806349428">More...</a><br /></td></tr>
-<tr class="separator:gaacb0d38cb3a1a68449dc011806349428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9741aaa9e1b09f96c8580d0486f5001a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga9741aaa9e1b09f96c8580d0486f5001a">WBSetWindowData</a> (Window wID, int iIndex, void *pData)</td></tr>
 <tr class="memdesc:ga9741aaa9e1b09f96c8580d0486f5001a"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign 'data pointer' for a window and specified index value  <a href="#ga9741aaa9e1b09f96c8580d0486f5001a">More...</a><br /></td></tr>
 <tr class="separator:ga9741aaa9e1b09f96c8580d0486f5001a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa94b62835fe172896de55fb95dbee45c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gaa94b62835fe172896de55fb95dbee45c">WBBeginWaitCursor</a> (Window wID)</td></tr>
-<tr class="memdesc:gaa94b62835fe172896de55fb95dbee45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">increment 'wait cursor' count, set cursor to WB_WAIT_CURSOR  <a href="#gaa94b62835fe172896de55fb95dbee45c">More...</a><br /></td></tr>
-<tr class="separator:gaa94b62835fe172896de55fb95dbee45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf4bb90fa142a8a4467cc89120551911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gabf4bb90fa142a8a4467cc89120551911">WBEndWaitCursor</a> (Window wID)</td></tr>
-<tr class="memdesc:gabf4bb90fa142a8a4467cc89120551911"><td class="mdescLeft">&#160;</td><td class="mdescRight">decrement 'wait cursor' count, restore to default when zero  <a href="#gabf4bb90fa142a8a4467cc89120551911">More...</a><br /></td></tr>
-<tr class="separator:gabf4bb90fa142a8a4467cc89120551911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga740d7fdf5934052f07ec18cdbd41d72a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga740d7fdf5934052f07ec18cdbd41d72a">WBSetWindowCursor</a> (Window wID, int idCursor)</td></tr>
-<tr class="memdesc:ga740d7fdf5934052f07ec18cdbd41d72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">immediately set the window cursor  <a href="#ga740d7fdf5934052f07ec18cdbd41d72a">More...</a><br /></td></tr>
-<tr class="separator:ga740d7fdf5934052f07ec18cdbd41d72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf0a0701e24130b74f7e3fe023ad66e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gabf0a0701e24130b74f7e3fe023ad66e7">WBRestoreDefaultCursor</a> (Window wID)</td></tr>
-<tr class="memdesc:gabf0a0701e24130b74f7e3fe023ad66e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">restore the default cursor  <a href="#gabf0a0701e24130b74f7e3fe023ad66e7">More...</a><br /></td></tr>
-<tr class="separator:gabf0a0701e24130b74f7e3fe023ad66e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41bf939e43675d91d95a7053cae29d07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga41bf939e43675d91d95a7053cae29d07">WBGetWindowDefaultGC</a> (Window wID)</td></tr>
-<tr class="memdesc:ga41bf939e43675d91d95a7053cae29d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default WBGC currently assigned to the window (not a copy)  <a href="#ga41bf939e43675d91d95a7053cae29d07">More...</a><br /></td></tr>
-<tr class="separator:ga41bf939e43675d91d95a7053cae29d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad60b10079f97ae5c3d5e3b9fa360e427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gad60b10079f97ae5c3d5e3b9fa360e427">WBQueryWindowFont</a> (Window wID)</td></tr>
 <tr class="memdesc:gad60b10079f97ae5c3d5e3b9fa360e427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the WB_FONT assigned to the window (may be NULL), not a copy.  <a href="#gad60b10079f97ae5c3d5e3b9fa360e427">More...</a><br /></td></tr>
 <tr class="separator:gad60b10079f97ae5c3d5e3b9fa360e427"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,12 +168,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gac876324ffc644272a81a9f72645d3f54"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">WBGetWindowBGColor</a> (Window wID)</td></tr>
 <tr class="memdesc:gac876324ffc644272a81a9f72645d3f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently assigned background color.  <a href="#gac876324ffc644272a81a9f72645d3f54">More...</a><br /></td></tr>
 <tr class="separator:gac876324ffc644272a81a9f72645d3f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga024b9bcf7e20f7778ae173918e7b50d3"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga024b9bcf7e20f7778ae173918e7b50d3">WBGetGCFGColor</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc)</td></tr>
-<tr class="memdesc:ga024b9bcf7e20f7778ae173918e7b50d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the currently assigned foreground color for a WBGC  <a href="#ga024b9bcf7e20f7778ae173918e7b50d3">More...</a><br /></td></tr>
-<tr class="separator:ga024b9bcf7e20f7778ae173918e7b50d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6153daf26d06a44d7bd4524adb47045a"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga6153daf26d06a44d7bd4524adb47045a">WBGetGCBGColor</a> (<a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> gc)</td></tr>
-<tr class="memdesc:ga6153daf26d06a44d7bd4524adb47045a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the currently assigned background color for a WBGC  <a href="#ga6153daf26d06a44d7bd4524adb47045a">More...</a><br /></td></tr>
-<tr class="separator:ga6153daf26d06a44d7bd4524adb47045a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8761c10a76e21f0c9381778a349490ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga8761c10a76e21f0c9381778a349490ab">WBDefaultStandardColormap</a> (Display *pDisplay, XStandardColormap *pMap)</td></tr>
 <tr class="memdesc:ga8761c10a76e21f0c9381778a349490ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a default XStandardColormap structure for the default screen of the specified display  <a href="#ga8761c10a76e21f0c9381778a349490ab">More...</a><br /></td></tr>
 <tr class="separator:ga8761c10a76e21f0c9381778a349490ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,21 +180,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gab83a97ec06617320209dafdc8077ec95"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gab83a97ec06617320209dafdc8077ec95">WBGetWindowData</a> (Window wID, int iIndex)</td></tr>
 <tr class="memdesc:gab83a97ec06617320209dafdc8077ec95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data associated with this window and the specified index.  <a href="#gab83a97ec06617320209dafdc8077ec95">More...</a><br /></td></tr>
 <tr class="separator:gab83a97ec06617320209dafdc8077ec95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga78f3eb1180fe3847bab48df07b2ed733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga78f3eb1180fe3847bab48df07b2ed733">WBGetWindowGeom</a> (Window wID, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td></tr>
-<tr class="memdesc:ga78f3eb1180fe3847bab48df07b2ed733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RAW geometry of the window as reported by the window manager.  <a href="#ga78f3eb1180fe3847bab48df07b2ed733">More...</a><br /></td></tr>
-<tr class="separator:ga78f3eb1180fe3847bab48df07b2ed733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97483426403de83cbd3a1e150896c471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga97483426403de83cbd3a1e150896c471">WBGetWindowGeom2</a> (Window wID, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td></tr>
-<tr class="memdesc:ga97483426403de83cbd3a1e150896c471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the geometry of the window relative to the root window.  <a href="#ga97483426403de83cbd3a1e150896c471">More...</a><br /></td></tr>
-<tr class="separator:ga97483426403de83cbd3a1e150896c471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga898a6ceaf7ca1062ece62ab6b5c905ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga898a6ceaf7ca1062ece62ab6b5c905ed">WBGetWindowGeom0</a> (Window wID, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td></tr>
-<tr class="memdesc:ga898a6ceaf7ca1062ece62ab6b5c905ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ABSOLUTE window geometry relative the screen.  <a href="#ga898a6ceaf7ca1062ece62ab6b5c905ed">More...</a><br /></td></tr>
-<tr class="separator:ga898a6ceaf7ca1062ece62ab6b5c905ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac709d588caa1437ca81a5d78140cce69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gac709d588caa1437ca81a5d78140cce69">WBGetWindowRect</a> (Window wID, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect)</td></tr>
-<tr class="memdesc:gac709d588caa1437ca81a5d78140cce69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the WB_RECT (rectangle) defined by the window's geometry, including the border area.  <a href="#gac709d588caa1437ca81a5d78140cce69">More...</a><br /></td></tr>
-<tr class="separator:gac709d588caa1437ca81a5d78140cce69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19e4ba777feaca6530867f1628c34b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga19e4ba777feaca6530867f1628c34b27">WBGetClientRect</a> (Window wID, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect)</td></tr>
-<tr class="memdesc:ga19e4ba777feaca6530867f1628c34b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the WB_RECT (rectangle) defined by the window's geometry, excluding the border area.  <a href="#ga19e4ba777feaca6530867f1628c34b27">More...</a><br /></td></tr>
-<tr class="separator:ga19e4ba777feaca6530867f1628c34b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf830503e3f54f60be04355855df308f"><td class="memItemLeft" align="right" valign="top">Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gadf830503e3f54f60be04355855df308f">WBGetParentWindow</a> (Window wID)</td></tr>
 <tr class="memdesc:gadf830503e3f54f60be04355855df308f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window's parent (or None if there is no parent)  <a href="#gadf830503e3f54f60be04355855df308f">More...</a><br /></td></tr>
 <tr class="separator:gadf830503e3f54f60be04355855df308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,18 +192,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa22217ba9e1d6e96e68a39e71d5116ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gaa22217ba9e1d6e96e68a39e71d5116ca">WBIsChildWindow</a> (Window wIDParent, Window wIDChild)</td></tr>
 <tr class="memdesc:gaa22217ba9e1d6e96e68a39e71d5116ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns non-zero if wIDParent is in a parent relationsihp with wIDChild.  <a href="#gaa22217ba9e1d6e96e68a39e71d5116ca">More...</a><br /></td></tr>
 <tr class="separator:gaa22217ba9e1d6e96e68a39e71d5116ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37248fbd87d296716633672fd98877f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga37248fbd87d296716633672fd98877f9">WBXlatCoordPoint</a> (Window wIDSrc, int iXSrc, int iYSrc, Window wIDDest, int *piXDest, int *piYDest)</td></tr>
-<tr class="memdesc:ga37248fbd87d296716633672fd98877f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate X,Y point coordinates relative to a window.  <a href="#ga37248fbd87d296716633672fd98877f9">More...</a><br /></td></tr>
-<tr class="separator:ga37248fbd87d296716633672fd98877f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ef37a916fec2cacab2c772ad915ff58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga1ef37a916fec2cacab2c772ad915ff58">WBXlatCoordGeom</a> (Window wIDSrc, const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeomSrc, Window wIDDest, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeomDest)</td></tr>
-<tr class="memdesc:ga1ef37a916fec2cacab2c772ad915ff58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate geometry coordinates relative to a window.  <a href="#ga1ef37a916fec2cacab2c772ad915ff58">More...</a><br /></td></tr>
-<tr class="separator:ga1ef37a916fec2cacab2c772ad915ff58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b344942d3e9ccc9c8fb3ca6f3ae45a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga1b344942d3e9ccc9c8fb3ca6f3ae45a8">WBXlatCoordRect</a> (Window wIDSrc, const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRectSrc, Window wIDDest, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRectDest)</td></tr>
-<tr class="memdesc:ga1b344942d3e9ccc9c8fb3ca6f3ae45a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate rectangle coordinates relative to a window.  <a href="#ga1b344942d3e9ccc9c8fb3ca6f3ae45a8">More...</a><br /></td></tr>
-<tr class="separator:ga1b344942d3e9ccc9c8fb3ca6f3ae45a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e404238e502acadf531c26abd7e7cbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#ga3e404238e502acadf531c26abd7e7cbe">WBPointInWindow</a> (Window wIDRef, int iX, int iY, Window wIDQuery)</td></tr>
-<tr class="memdesc:ga3e404238e502acadf531c26abd7e7cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returna a non-zero value if X,Y coordinates relative to the reference window are within the query window.  <a href="#ga3e404238e502acadf531c26abd7e7cbe">More...</a><br /></td></tr>
-<tr class="separator:ga3e404238e502acadf531c26abd7e7cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabff70a128dddc8634658e93cfd7b51bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore.html#gabff70a128dddc8634658e93cfd7b51bb">WBRegisterMenuCallback</a> (Window wID, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pCallback)</td></tr>
 <tr class="memdesc:gabff70a128dddc8634658e93cfd7b51bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">(internal) Register a MENU callback for a window  <a href="#gabff70a128dddc8634658e93cfd7b51bb">More...</a><br /></td></tr>
 <tr class="separator:gabff70a128dddc8634658e93cfd7b51bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,283 +207,6 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These functions and definitions comprise the CORE WINDOW HANDLING functionality for the X11workbench Toolkit API. This includes information and initialization functions, but not event nor class-specific functionality. </p>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga686aaff005092ee3cde10c1967dddedb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga686aaff005092ee3cde10c1967dddedb">&#9670;&nbsp;</a></span>WB_KEYBOARD_INPUT_MASK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WB_KEYBOARD_INPUT_MASK&#160;&#160;&#160;(KeyPressMask | KeyReleaseMask)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>'Keyboard' input mask, bit flag for window creation </p>
-<p>'Keyboard' input mask. Use this as a parameter to XSelectInput to enable keyboard events to be sent to the window<br />
-This bit mask may be 'or'd with other bit masks as needed. </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00945">945</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="ga47804029d8dd10d0590dbea7cace452a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47804029d8dd10d0590dbea7cace452a">&#9670;&nbsp;</a></span>WB_MOUSE_INPUT_MASK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WB_MOUSE_INPUT_MASK&#160;&#160;&#160;(ButtonPressMask | ButtonReleaseMask | PointerMotionMask | EnterWindowMask | LeaveWindowMask)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>'Mouse' input mask, bit flag for window creation </p>
-<p>'Mouse' input mask. Use this as a parameter to XSelectInput to enable mouse events to be sent to the window<br />
-This bit mask may be 'or'd with other bit masks as needed. </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00953">953</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="gabf332a9e9be0d42e529b972eee8dd696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf332a9e9be0d42e529b972eee8dd696">&#9670;&nbsp;</a></span>WB_STANDARD_INPUT_MASK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WB_STANDARD_INPUT_MASK&#160;&#160;&#160;(FocusChangeMask | PropertyChangeMask | ExposureMask | StructureNotifyMask | VisibilityChangeMask | SubstructureNotifyMask)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>'Standard' input mask, bit flag for window creation </p>
-<p>'Standard' input mask. Use this as a parameter to XSelectInput to enable standard events to be sent to the window<br />
-This bit mask may be 'or'd with other bit masks as needed. </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00937">937</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="gacc27373f1024b64ba99341c1790269f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacc27373f1024b64ba99341c1790269f9">&#9670;&nbsp;</a></span>WBGeomOverlapped</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WBGeomOverlapped</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">G1, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">G2&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((((G1).x &gt;= (G2).x &amp;&amp; (G1).x &lt; (G2).x + (G2).width) || \</div><div class="line">    ((G2).x &gt;= (G1).x &amp;&amp; (G2).x &lt; (G1).x + (G1).width)) &amp;&amp; \</div><div class="line">   (((G1).y &gt;= (G2).y &amp;&amp; (G1).y &lt; (G2).y + (G2).height) || \</div><div class="line">    ((G2).y &gt;= (G1).y &amp;&amp; (G2).y &lt; (G1).y + (G1).height)))</div></div><!-- fragment -->
-<p>Returns logical TRUE if the geometry G1 overlaps/intersects G2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">G1</td><td>A WB_GEOM structure bounding the first area to check </td></tr>
-    <tr><td class="paramname">G2</td><td>A second WB_GEOM structure bounding the second area to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>logical TRUE if the two WB_GEOMs intersect, FALSE otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01749">1749</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="ga60f396a81f1f933b1abe375e5486ff40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60f396a81f1f933b1abe375e5486ff40">&#9670;&nbsp;</a></span>WBGetWindowCopyGC2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WBGetWindowCopyGC2</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">wID, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">gcSrc&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__graphics.html#ga48ffc8081b06b99457a70873a3d81661">WBCopyDrawableGC</a>(<a class="el" href="group__wcore.html#gac56c57947ba8e73838fc97f705f00c3c">WBGetWindowDisplay</a>(wID), wID, gcSrc)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>makes a copy of the specified WBGC for the desired window </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for which to copy the WBGC </td></tr>
-    <tr><td class="paramname">gcSrc</td><td>The source 'WBGC' </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the WBGC for the specified window</dd></dl>
-<p>Essentially, it works the same as <a class="el" href="group__wcore.html#gaacb0d38cb3a1a68449dc011806349428" title="makes a copy of the default WBGC so that it can be modified">WBGetWindowCopyGC()</a> except it uses gcSrc instead of the window's 'default WBGC'. (legacy, use <a class="el" href="group__graphics.html#ga48ffc8081b06b99457a70873a3d81661" title="makes a copy of the specified WBGC for the desired &#39;Drawable&#39;">WBCopyDrawableGC()</a> instead)</p>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01388">1388</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="gacbf422a1a4a3db6ccac2b9213b3ae93d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacbf422a1a4a3db6ccac2b9213b3ae93d">&#9670;&nbsp;</a></span>WBPointInGeom</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WBPointInGeom</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">X, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Y, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">G&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((X) &gt;= (G).x &amp;&amp; (X) &lt; ((G).x + (G).width) &amp;&amp; (Y) &gt;= (G).y &amp;&amp; (Y) &lt; ((G).y + (G).height))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns logical TRUE if the point (X,Y) is within the borders of the geometry 'G'. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">X</td><td>The X value to check for </td></tr>
-    <tr><td class="paramname">Y</td><td>The Y value to check for </td></tr>
-    <tr><td class="paramname">G</td><td>A WB_GEOM structure bounding the area to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>logical TRUE if (X,Y) lies within 'G', FALSE otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01729">1729</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="ga85fc7b30e4d22796448591954b3fc257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85fc7b30e4d22796448591954b3fc257">&#9670;&nbsp;</a></span>WBPointInRect</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WBPointInRect</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">X, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Y, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">R&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((X) &gt;= (R).left &amp;&amp; (X) &lt; (R).right &amp;&amp; (Y) &gt;= (R).top &amp;&amp; (Y) &lt; (R).bottom)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns logical TRUE if the point (X,Y) is within the borders of the rectangle 'R'. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">X</td><td>The X value to check for </td></tr>
-    <tr><td class="paramname">Y</td><td>The Y value to check for </td></tr>
-    <tr><td class="paramname">R</td><td>A WB_RECT structure bounding the area to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>logical TRUE if (X,Y) lies within 'R', FALSE otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01720">1720</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="gac63e4883a78e0a46f209f23294367d9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac63e4883a78e0a46f209f23294367d9d">&#9670;&nbsp;</a></span>WBRectOverlapped</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WBRectOverlapped</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">R1, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">R2&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((((R1).left &gt;= (R2).left &amp;&amp; (R1).left &lt; (R2).right) || \</div><div class="line">    ((R2).left &gt;= (R1).left &amp;&amp; (R2).left &lt; (R1).right)) &amp;&amp; \</div><div class="line">   (((R1).top &gt;= (R2).top &amp;&amp; (R1).top &lt; (R2).bottom) || \</div><div class="line">    ((R2).top &gt;= (R1).top &amp;&amp; (R2).top &lt; (R1).bottom)))</div></div><!-- fragment -->
-<p>Returns logical TRUE if the rectangle R1 overlaps/intersects R2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">R1</td><td>A WB_RECT structure bounding the first area to check </td></tr>
-    <tr><td class="paramname">R2</td><td>A second WB_RECT structure bounding the second area to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>logical TRUE if the two WB_RECTs intersect, FALSE otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01737">1737</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab37976e62900c9fd328045c33317a369"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab37976e62900c9fd328045c33317a369">&#9670;&nbsp;</a></span>WBLocateWindowCallback</h2>
@@ -666,7 +231,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <dl class="section return"><dt>Returns</dt><dd>A value &gt; 0 to indicate a match, &lt; 0 to stop enumerating, 0 to continue enumerating</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01260">1260</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01291">1291</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -690,49 +255,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01037">1037</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="ga393c61affbc5766ce678224558be0b16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga393c61affbc5766ce678224558be0b16">&#9670;&nbsp;</a></span>WMPropertiesWindowType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Window type enumeration. Reserved for future implementation. </p>
-<p>reserved for future implementation </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00962">962</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="ga720fc619923711fbdeb2191d4b094077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga720fc619923711fbdeb2191d4b094077">&#9670;&nbsp;</a></span>WMPropertiesWMProtocols</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__wcore.html#ga720fc619923711fbdeb2191d4b094077">WMPropertiesWMProtocols</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Window WMProtocols support enumeration. </p>
-<p>Bit flags indicating support for known WM_PROTOCOLS window manager features </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga720fc619923711fbdeb2191d4b094077ae458a049dd4860403d96b1232204851a"></a>WMPropertiesWMProtocols_None&#160;</td><td class="fielddoc"><p>the default </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01015">1015</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l01068">1068</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -797,83 +320,6 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04907">4907</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gaa94b62835fe172896de55fb95dbee45c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa94b62835fe172896de55fb95dbee45c">&#9670;&nbsp;</a></span>WBBeginWaitCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBBeginWaitCursor </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>increment 'wait cursor' count, set cursor to WB_WAIT_CURSOR </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to which the wait cursor needs to be assigned</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06359">6359</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gaa081ed4be9f20145a74dd0147fc4b67d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa081ed4be9f20145a74dd0147fc4b67d">&#9670;&nbsp;</a></span>WBChangeWMPropertiesWindowType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBChangeWMPropertiesWindowType </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a>&#160;</td>
-          <td class="paramname"><em>wmPropSet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a>&#160;</td>
-          <td class="paramname"><em>wmChangeMask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>re-assign standard WM (Window Manager) 'window type' properties and notify the root window (reserved) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for the window </td></tr>
-    <tr><td class="paramname">wmPropSet</td><td>A set of enumerated bit values from the WMPropertiesWindowType enumeration </td></tr>
-    <tr><td class="paramname">wmChangeMask</td><td>A mask for the enumerated bit values to change from the WMPropertiesWindowType enumeration</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://standards.freedesktop.org/wm-spec/wm-spec-latest.html">latest WM spec</a> <a href="http://standards.freedesktop.org/freedesktop-platform-specs/1.0/wm-spec-1.3/">WM spec v 1.3</a></dd></dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03129">3129</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -993,53 +439,6 @@ The window is created with the default visual and depth for the specified displa
 
 </div>
 </div>
-<a id="gafe9c0442cd6da2a894b08a408db10a7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafe9c0442cd6da2a894b08a408db10a7c">&#9670;&nbsp;</a></span>WBCreateWindowDefaultGC()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBCreateWindowDefaultGC </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>clrFG</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>clrBG</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>creates a default WBGC for a window </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for which to assign the colors </td></tr>
-    <tr><td class="paramname">clrFG</td><td>The foreground color </td></tr>
-    <tr><td class="paramname">clrBG</td><td>The background color</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05727">5727</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
 <a id="ga82131f2b559763bb5091f2ce5a0e3fff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga82131f2b559763bb5091f2ce5a0e3fff">&#9670;&nbsp;</a></span>WBDefault()</h2>
 
@@ -1140,35 +539,6 @@ The window is created with the default visual and depth for the specified displa
 
 </div>
 </div>
-<a id="gabf4bb90fa142a8a4467cc89120551911"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf4bb90fa142a8a4467cc89120551911">&#9670;&nbsp;</a></span>WBEndWaitCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBEndWaitCursor </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>decrement 'wait cursor' count, restore to default when zero </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to which the cursor needs to be restored</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06400">6400</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
 <a id="ga7fc5565c125adbf08ff0da71400a0702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7fc5565c125adbf08ff0da71400a0702">&#9670;&nbsp;</a></span>WBGetApplicationWindow()</h2>
 
@@ -1185,114 +555,12 @@ The window is created with the default visual and depth for the specified displa
       </table>
 </div><div class="memdoc">
 
-<p>Destroy a window. </p>
+<p>Get the main 'Application' window. </p>
 <dl class="section return"><dt>Returns</dt><dd>The application window's Window ID, or 'None'</dd></dl>
-<p>Call this function to get the 'Application' window's ID registered via <a class="el" href="group__wcore.html#ga930f1ec5fc0beea185925fd8ce889eaf" title="Destroy a window.">WBSetApplicationWindow()</a>. There can be only one.</p>
+<p>Call this function to get the 'Application' window's ID registered via <a class="el" href="group__wcore.html#ga930f1ec5fc0beea185925fd8ce889eaf" title="Assign the main &#39;Appklication&#39; window.">WBSetApplicationWindow()</a>. There can be only one.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03296">3296</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga19e4ba777feaca6530867f1628c34b27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga19e4ba777feaca6530867f1628c34b27">&#9670;&nbsp;</a></span>WBGetClientRect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBGetClientRect </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
-          <td class="paramname"><em>pRect</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the WB_RECT (rectangle) defined by the window's geometry, excluding the border area. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_RECT data for </td></tr>
-    <tr><td class="paramname">pRect</td><td>A pointer to the WB_RECT structure to receive the data</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06709">6709</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga6153daf26d06a44d7bd4524adb47045a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6153daf26d06a44d7bd4524adb47045a">&#9670;&nbsp;</a></span>WBGetGCBGColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long WBGetGCBGColor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
-          <td class="paramname"><em>gc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns the currently assigned background color for a WBGC </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gc</td><td>The WBGC to be queried </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The currently assigned background color</dd></dl>
-<p>If the current background color cannot be determined, this function will return the pre-defined color for WHITE on the specified Display and default screen</p>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05887">5887</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga024b9bcf7e20f7778ae173918e7b50d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga024b9bcf7e20f7778ae173918e7b50d3">&#9670;&nbsp;</a></span>WBGetGCFGColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long WBGetGCFGColor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
-          <td class="paramname"><em>gc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns the currently assigned foreground color for a WBGC </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gc</td><td>The WBGC to be queried </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The currently assigned foreground color</dd></dl>
-<p>If the current foreground color cannot be determined, this function will return the pre-defined color for BLACK on the specified Display and default screen</p>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05858">5858</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +648,8 @@ The window is created with the default visual and depth for the specified displa
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The current background color for the window</dd></dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__graphics.html#ga6153daf26d06a44d7bd4524adb47045a">WBGetGCBGColor()</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05846">5846</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -1414,36 +683,6 @@ The window is created with the default visual and depth for the specified displa
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06260">6260</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gaacb0d38cb3a1a68449dc011806349428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaacb0d38cb3a1a68449dc011806349428">&#9670;&nbsp;</a></span>WBGetWindowCopyGC()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> WBGetWindowCopyGC </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>makes a copy of the default WBGC so that it can be modified </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID from which to copy the WBGC </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the default WBGC for the specified window</dd></dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05818">5818</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1486,67 +725,6 @@ The window is created with the default visual and depth for the specified displa
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06272">6272</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga9c6e20f64f40a06373cacad485d9e554"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9c6e20f64f40a06373cacad485d9e554">&#9670;&nbsp;</a></span>WBGetWindowDefaultCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int WBGetWindowDefaultCursor </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns the default cursor ID for a window </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID from which to return the default cursor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The Cursor ID (Typically an XC_ definition from X11/cursorfont.h). A value of '-1' equates to 'None'</dd></dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06349">6349</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga41bf939e43675d91d95a7053cae29d07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga41bf939e43675d91d95a7053cae29d07">&#9670;&nbsp;</a></span>WBGetWindowDefaultGC()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> WBGetWindowDefaultGC </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the default WBGC currently assigned to the window (not a copy) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID from which to obtain the default WBGC </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The default WBGC associated with the specified window. This is the actual WBGC, not a copy.</dd></dl>
-<p>Each window that is mapped within the API will have a 'default WBGC' associated with it. This WBGC should not be modified unless you want the changes to remain for the next time a WBGC is required. A preferred method is to re-assign a new default WBGC with the new settings, or create a copy of the default WBGC as a 'starting point', then modify the copy as needed to perform the desired operation. This, in fact, will happen every time you use the API to handle Expose events, via the <a class="el" href="group__expose.html#ga7ea6e17305107ab1c3a78bd279129200" title="&#39;Paint&#39; helper, creates a WBGC for use in updating the window in an Expose event handler">WBBeginPaint()</a> and <a class="el" href="group__expose.html#ga17543b506ed3949dbb2f06f28536a787" title="&#39;Paint&#39; helper, frees resources and marks the update region &#39;valid&#39;">WBEndPaint()</a> functions, where the paint WBGC is a modified version of the default WBGC.</p>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05806">5806</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +782,8 @@ The window is created with the default visual and depth for the specified displa
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The current foreground color for the window</dd></dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__graphics.html#ga024b9bcf7e20f7778ae173918e7b50d3">WBGetGCFGColor()</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05834">5834</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
@@ -1637,198 +816,6 @@ The window is created with the default visual and depth for the specified displa
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06214">6214</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga78f3eb1180fe3847bab48df07b2ed733"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga78f3eb1180fe3847bab48df07b2ed733">&#9670;&nbsp;</a></span>WBGetWindowGeom()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBGetWindowGeom </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
-          <td class="paramname"><em>pGeom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the RAW geometry of the window as reported by the window manager. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_GEOM data for </td></tr>
-    <tr><td class="paramname">pGeom</td><td>A pointer to the WB_GEOM structure to receive the data</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06523">6523</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga898a6ceaf7ca1062ece62ab6b5c905ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga898a6ceaf7ca1062ece62ab6b5c905ed">&#9670;&nbsp;</a></span>WBGetWindowGeom0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBGetWindowGeom0 </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
-          <td class="paramname"><em>pGeom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the ABSOLUTE window geometry relative the screen. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_GEOM data for </td></tr>
-    <tr><td class="paramname">pGeom</td><td>A pointer to the WB_GEOM structure to receive the data</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>The 'ABSOLUTE' window geometry is the position of the window relative to the origin point (the upper left corner of the screen). Window managers typically cook all of the XEvent and API data that relates to window positioning, such that a top level frame window's upper left corner is nearly always reported as 0,0 (or similar). Not all window managers behave the same in this regard. To ensure that an ABSOLUTE window position is known (helpful for centering on screen, etc.), the absolute coordinates are frequently cached within the internal data structure associated with the window. Those cached values are returned by this function.</p>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06474">6474</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga97483426403de83cbd3a1e150896c471"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97483426403de83cbd3a1e150896c471">&#9670;&nbsp;</a></span>WBGetWindowGeom2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBGetWindowGeom2 </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
-          <td class="paramname"><em>pGeom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the geometry of the window relative to the root window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_GEOM data for </td></tr>
-    <tr><td class="paramname">pGeom</td><td>A pointer to the WB_GEOM structure to receive the data</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06608">6608</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gac709d588caa1437ca81a5d78140cce69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac709d588caa1437ca81a5d78140cce69">&#9670;&nbsp;</a></span>WBGetWindowRect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBGetWindowRect </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
-          <td class="paramname"><em>pRect</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the WB_RECT (rectangle) defined by the window's geometry, including the border area. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_RECT data for </td></tr>
-    <tr><td class="paramname">pRect</td><td>A pointer to the WB_RECT structure to receive the data</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06694">6694</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga0199c1cc0a1bf869c79f3a823dc31b5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0199c1cc0a1bf869c79f3a823dc31b5c">&#9670;&nbsp;</a></span>WBGetWMPropertiesWindowType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a> WBGetWMPropertiesWindowType </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>re-assign standard WM (Window Manager) 'window type' properties and notify the root window (reserved) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for the window </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A bitmask consisting of WMPropertiesWindowType enumeration values.</dd></dl>
-<p>These values are cached from <a class="el" href="group__wcore.html#gaeb94431d6bea312dcabae07242dba442" title="assign standard WM (Window Manager) &#39;window type&#39; properties BEFORE mapping it (reserved)">WBSetWMPropertiesWindowType()</a> and <a class="el" href="group__wcore.html#gaa081ed4be9f20145a74dd0147fc4b67d" title="re-assign standard WM (Window Manager) &#39;window type&#39; properties and notify the root window (reserved)">WBChangeWMPropertiesWindowType()</a></p>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03137">3137</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1916,62 +903,6 @@ The window is created with the default visual and depth for the specified displa
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03264">3264</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga3e404238e502acadf531c26abd7e7cbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3e404238e502acadf531c26abd7e7cbe">&#9670;&nbsp;</a></span>WBPointInWindow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int WBPointInWindow </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDRef</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDQuery</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returna a non-zero value if X,Y coordinates relative to the reference window are within the query window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wIDRef</td><td>The reference Window ID </td></tr>
-    <tr><td class="paramname">iX</td><td>The X coordinates relative to wIDRef </td></tr>
-    <tr><td class="paramname">iY</td><td>The Y coordinates relative to wIDRef </td></tr>
-    <tr><td class="paramname">wIDQuery</td><td>The Window ID of the window to test the translated X and Y values against </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Non-zero if the (X,Y) coordinates are within wIDQuery, zero otherwise.</dd></dl>
-<p>Use this function to see if coordinates relative to one window also fall within another window. Typical use includes 'hover' detection, drag/drop operations, and child window activation To specify X,Y screen coordinates, pass 'None' for 'wIDRef'<br />
- Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06820">6820</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2191,35 +1122,6 @@ The window is created with the default visual and depth for the specified displa
 
 </div>
 </div>
-<a id="gabf0a0701e24130b74f7e3fe023ad66e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf0a0701e24130b74f7e3fe023ad66e7">&#9670;&nbsp;</a></span>WBRestoreDefaultCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBRestoreDefaultCursor </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>restore the default cursor </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to which the default cursor needs to be restored</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06460">6460</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
 <a id="ga930f1ec5fc0beea185925fd8ce889eaf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga930f1ec5fc0beea185925fd8ce889eaf">&#9670;&nbsp;</a></span>WBSetApplicationWindow()</h2>
 
@@ -2236,7 +1138,7 @@ The window is created with the default visual and depth for the specified displa
       </table>
 </div><div class="memdoc">
 
-<p>Destroy a window. </p>
+<p>Assign the main 'Appklication' window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wID</td><td>The Window identifier of the 'application' window, or None</td></tr>
@@ -2363,46 +1265,6 @@ The window is created with the default visual and depth for the specified displa
 
 </div>
 </div>
-<a id="ga740d7fdf5934052f07ec18cdbd41d72a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga740d7fdf5934052f07ec18cdbd41d72a">&#9670;&nbsp;</a></span>WBSetWindowCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBSetWindowCursor </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idCursor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>immediately set the window cursor </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to which the cursor needs to be assigned </td></tr>
-    <tr><td class="paramname">idCursor</td><td>The Cursor ID (Typically an XC_ definition from X11/cursorfont.h). A value of '-1' equates to 'None'</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06448">6448</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
 <a id="ga9741aaa9e1b09f96c8580d0486f5001a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9741aaa9e1b09f96c8580d0486f5001a">&#9670;&nbsp;</a></span>WBSetWindowData()</h2>
 
@@ -2450,86 +1312,6 @@ The window is created with the default visual and depth for the specified displa
 
 </div>
 </div>
-<a id="ga9970130e4c54ad2ea57d59034b31565c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9970130e4c54ad2ea57d59034b31565c">&#9670;&nbsp;</a></span>WBSetWindowDefaultCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBSetWindowDefaultCursor </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idStandardCursor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Assigns a default cursor (by ID) to a window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID from which to return the default cursor </td></tr>
-    <tr><td class="paramname">idStandardCursor</td><td>The default Cursor ID to assign (Typically an XC_ definition from X11/cursorfont.h). A value of '-1' equates to 'None'</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06336">6336</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gae21b4f5cf6607b1fc4aced2acddbd5a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae21b4f5cf6607b1fc4aced2acddbd5a5">&#9670;&nbsp;</a></span>WBSetWindowDefaultGC()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBSetWindowDefaultGC </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td>
-          <td class="paramname"><em>hGC</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>assigns a default WBGC to a window </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for which to assign the WBGC </td></tr>
-    <tr><td class="paramname">hGC</td><td>The WBGC to assign</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05775">5775</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
 <a id="ga80452c075ad3ed5c000c06b2776d8e22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga80452c075ad3ed5c000c06b2776d8e22">&#9670;&nbsp;</a></span>WBSetWindowFont()</h2>
 
@@ -2559,7 +1341,7 @@ The window is created with the default visual and depth for the specified displa
 <p>assigns the default WB_FONT object for a window </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID from which to return the default cursor </td></tr>
+    <tr><td class="paramname">wID</td><td>The Window ID from which to return the default font </td></tr>
     <tr><td class="paramname">pFont</td><td>The WB_FONTC (or WB_FONT) object for the window. A copy of this object will be owned by the window. To use the default font set, you can assign a value of 'NULL'</td></tr>
   </table>
   </dd>
@@ -2599,7 +1381,7 @@ The window is created with the default visual and depth for the specified displa
 <p>assigns an icon resource (by ID) to a window </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID from which to return the default cursor </td></tr>
+    <tr><td class="paramname">wID</td><td>The Window ID from which to return the default icon </td></tr>
     <tr><td class="paramname">idIcon</td><td>The resource ID for the window's icon</td></tr>
   </table>
   </dd>
@@ -2650,155 +1432,6 @@ The window is created with the default visual and depth for the specified displa
 
 </div>
 </div>
-<a id="gaa37fcfe35d0ac3daf6d22ef6451a3cb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa37fcfe35d0ac3daf6d22ef6451a3cb7">&#9670;&nbsp;</a></span>WBSetWMProperties()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBSetWMProperties </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szTitle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XSizeHints *&#160;</td>
-          <td class="paramname"><em>pNormalHints</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XWMHints *&#160;</td>
-          <td class="paramname"><em>pWMHints</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XClassHint *&#160;</td>
-          <td class="paramname"><em>pClassHints</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>assign standard WM (Window Manager) properties via XSetWMProperties </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for the window </td></tr>
-    <tr><td class="paramname">szTitle</td><td>A const pointer to a character string containing the window title </td></tr>
-    <tr><td class="paramname">pNormalHints</td><td>The pointer to the XSiteHints data, or NULL </td></tr>
-    <tr><td class="paramname">pWMHints</td><td>The pointer to the XWMHints data, or NULL </td></tr>
-    <tr><td class="paramname">pClassHints</td><td>The pointer to the XClassHint data, or NULL</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02853">2853</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="gaeb94431d6bea312dcabae07242dba442"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb94431d6bea312dcabae07242dba442">&#9670;&nbsp;</a></span>WBSetWMPropertiesWindowType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBSetWMPropertiesWindowType </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum <a class="el" href="group__wcore.html#ga393c61affbc5766ce678224558be0b16">WMPropertiesWindowType</a>&#160;</td>
-          <td class="paramname"><em>wmProp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>assign standard WM (Window Manager) 'window type' properties BEFORE mapping it (reserved) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for the window </td></tr>
-    <tr><td class="paramname">wmProp</td><td>An inclusive set of enumerated bit values from the WMPropertiesWindowType enumeration</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://standards.freedesktop.org/wm-spec/wm-spec-latest.html">latest WM spec</a> <a href="http://standards.freedesktop.org/freedesktop-platform-specs/1.0/wm-spec-1.3/">WM spec v 1.3</a></dd></dl>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03119">3119</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga41ed2ee5aa49afcddfbf72c0903fb6ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga41ed2ee5aa49afcddfbf72c0903fb6ae">&#9670;&nbsp;</a></span>WBSetWMProtocols()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBSetWMProtocols </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Atom&#160;</td>
-          <td class="paramname"><em>aProperty</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>re-assign standard WM (Window Manager) 'window type' properties and notify the root window (reserved) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID for the window </td></tr>
-    <tr><td class="paramname">aProperty</td><td>The atoms to be assigned to the supported WM Protocols list</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Additional parameters are all Atom values, the last one being 'None' to mark the end of the list. These Atoms will be assigned to the WM_PROTOCOLS property via XSetWMProtocols(). In some cases, the behavior of the toolkit will change depending on the atoms that are assigned. This assignment should ONLY be done on top-level windows, and only at the time of window creation.</p>
-<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03152">3152</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
 <a id="ga3c1835ae548b23c1b6ead80c4743ddee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3c1835ae548b23c1b6ead80c4743ddee">&#9670;&nbsp;</a></span>WBUnregisterAppCallback()</h2>
 
@@ -2844,197 +1477,18 @@ The window is created with the default visual and depth for the specified displa
 
 </div>
 </div>
-<a id="ga1ef37a916fec2cacab2c772ad915ff58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ef37a916fec2cacab2c772ad915ff58">&#9670;&nbsp;</a></span>WBXlatCoordGeom()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBXlatCoordGeom </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
-          <td class="paramname"><em>pGeomSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDDest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *&#160;</td>
-          <td class="paramname"><em>pGeomDest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Translate geometry coordinates relative to a window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wIDSrc</td><td>The source Window ID </td></tr>
-    <tr><td class="paramname">pGeomSrc</td><td>A const pointer to a WB_GEOM structure containing the coordinates to translate </td></tr>
-    <tr><td class="paramname">wIDDest</td><td>The destination Window ID </td></tr>
-    <tr><td class="paramname">pGeomDest</td><td>A pointer to a WB_GEOM structure that receives the translated coordinates</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>For many operations, coordinates relative to one window must be translated into coordinates relative to a different window so that they can be used for the new window's processing.<br />
-To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
- Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06763">6763</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga37248fbd87d296716633672fd98877f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga37248fbd87d296716633672fd98877f9">&#9670;&nbsp;</a></span>WBXlatCoordPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBXlatCoordPoint </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iXSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iYSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDDest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>piXDest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>piYDest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Translate X,Y point coordinates relative to a window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wIDSrc</td><td>The source Window ID </td></tr>
-    <tr><td class="paramname">iXSrc</td><td>The X coordinate within wIDSrc </td></tr>
-    <tr><td class="paramname">iYSrc</td><td>The Y coordinate within wIDSrc </td></tr>
-    <tr><td class="paramname">wIDDest</td><td>The destination Window ID </td></tr>
-    <tr><td class="paramname">piXDest</td><td>A pointer to an integer to receive the translated X coordinate </td></tr>
-    <tr><td class="paramname">piYDest</td><td>A pointer to an integer to receive the translated Y coordinate</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>For many operations, coordinates relative to one window must be translated into coordinates relative to a different window so that they can be used for the new window's processing.<br />
-To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
- Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06728">6728</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="ga1b344942d3e9ccc9c8fb3ca6f3ae45a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b344942d3e9ccc9c8fb3ca6f3ae45a8">&#9670;&nbsp;</a></span>WBXlatCoordRect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WBXlatCoordRect </td>
-          <td>(</td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
-          <td class="paramname"><em>pRectSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Window&#160;</td>
-          <td class="paramname"><em>wIDDest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *&#160;</td>
-          <td class="paramname"><em>pRectDest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Translate rectangle coordinates relative to a window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wIDSrc</td><td>The source Window ID </td></tr>
-    <tr><td class="paramname">pRectSrc</td><td>A const pointer to a WB_RECT structure containing the coordinates to translate </td></tr>
-    <tr><td class="paramname">wIDDest</td><td>The destination Window ID </td></tr>
-    <tr><td class="paramname">pRectDest</td><td>A pointer to a WB_RECT structure that receives the translated coordinates</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>For many operations, coordinates relative to one window must be translated into coordinates relative to a different window so that they can be used for the new window's processing.<br />
-To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
- Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06793">6793</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:30 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

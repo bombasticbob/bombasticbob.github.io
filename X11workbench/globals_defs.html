@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -468,7 +472,7 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 : <a class="el" href="group__platform__definitions.html#ga8bad3985812a598774350fb2a70839e3">platform_helper.h</a>
 </li>
 <li>WB_KEYBOARD_INPUT_MASK
-: <a class="el" href="group__wcore.html#ga686aaff005092ee3cde10c1967dddedb">window_helper.h</a>
+: <a class="el" href="group__events.html#ga686aaff005092ee3cde10c1967dddedb">window_helper.h</a>
 </li>
 <li>WB_KEYEVENT_ACSMASK
 : <a class="el" href="group__keyboard.html#gad4854afa0d8a90e00760496fdabcd4fd">window_helper.h</a>
@@ -504,7 +508,7 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 : <a class="el" href="group__dlgctrl__definitions.html#ga50ae323d293f50dfa7b6574fc05e617d">dialog_controls.h</a>
 </li>
 <li>WB_MOUSE_INPUT_MASK
-: <a class="el" href="group__wcore.html#ga47804029d8dd10d0590dbea7cace452a">window_helper.h</a>
+: <a class="el" href="group__events.html#ga47804029d8dd10d0590dbea7cace452a">window_helper.h</a>
 </li>
 <li>WB_POINTER_BUTTON1
 : <a class="el" href="group__pointer.html#gac649b5dc8d0c4e41b2503ac486342961">window_helper.h</a>
@@ -552,7 +556,7 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 : <a class="el" href="group__platform__definitions.html#gae106384a618f9454b4b2e78934aa8e93">platform_helper.h</a>
 </li>
 <li>WB_STANDARD_INPUT_MASK
-: <a class="el" href="group__wcore.html#gabf332a9e9be0d42e529b972eee8dd696">window_helper.h</a>
+: <a class="el" href="group__events.html#gabf332a9e9be0d42e529b972eee8dd696">window_helper.h</a>
 </li>
 <li>WB_STRINGIZE
 : <a class="el" href="group__platform__definitions.html#ga79794d0cb0963d108375a04ce3a58b00">platform_helper.h</a>
@@ -576,10 +580,10 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 : <a class="el" href="group__defaults.html#ga45c0e949c2da8dc36a78ee649206756c">window_helper.h</a>
 </li>
 <li>WBGeomOverlapped
-: <a class="el" href="group__wcore.html#gacc27373f1024b64ba99341c1790269f9">window_helper.h</a>
+: <a class="el" href="group__wcore__geom.html#gacc27373f1024b64ba99341c1790269f9">window_helper.h</a>
 </li>
 <li>WBGetWindowCopyGC2
-: <a class="el" href="group__wcore.html#ga60f396a81f1f933b1abe375e5486ff40">window_helper.h</a>
+: <a class="el" href="group__wcore__gc.html#ga60f396a81f1f933b1abe375e5486ff40">window_helper.h</a>
 </li>
 <li>WBMENU_DYNAMIC_HIGH_BIT
 : <a class="el" href="group__menu.html#gab44db5d5d421803fa6a04d4019ff28cf">menu.h</a>
@@ -603,13 +607,13 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 : <a class="el" href="group__menu.html#gadfe95d67b7e3d7e9a3994876741220a2">menu.h</a>
 </li>
 <li>WBPointInGeom
-: <a class="el" href="group__wcore.html#gacbf422a1a4a3db6ccac2b9213b3ae93d">window_helper.h</a>
+: <a class="el" href="group__wcore__geom.html#gacbf422a1a4a3db6ccac2b9213b3ae93d">window_helper.h</a>
 </li>
 <li>WBPointInRect
-: <a class="el" href="group__wcore.html#ga85fc7b30e4d22796448591954b3fc257">window_helper.h</a>
+: <a class="el" href="group__wcore__geom.html#ga85fc7b30e4d22796448591954b3fc257">window_helper.h</a>
 </li>
 <li>WBRectOverlapped
-: <a class="el" href="group__wcore.html#gac63e4883a78e0a46f209f23294367d9d">window_helper.h</a>
+: <a class="el" href="group__wcore__geom.html#gac63e4883a78e0a46f209f23294367d9d">window_helper.h</a>
 </li>
 <li>WINDOW_DATA_SIZE
 : <a class="el" href="group__defaults.html#ga9d6d0cbd8dc3c2a8c603b9458a984847">window_helper.h</a>
@@ -627,13 +631,16 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:30 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:04 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

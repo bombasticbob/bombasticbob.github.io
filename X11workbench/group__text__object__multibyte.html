@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -162,7 +166,7 @@ Functions</h2></td></tr>
 <p>If a 'ppDeleted' pointer value is specified, this function will store the deleted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06799">6799</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06805">6805</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -210,7 +214,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the multi-byte character located at the 'iCol' position within the string. If 'iCol' is out range, the return value will point to the terminating zero byte. On error, the return value will be NULL.</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06973">6973</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06979">6979</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -251,7 +255,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The zero-based column index of the character pointed to by 'pChar' within 'pString. If 'pChar' is out range, or points to an invalid character, the return value will be zero.</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l07005">7005</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l07011">7011</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -281,7 +285,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The length of the multi-byte character string in 'characters'</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06963">6963</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06969">6969</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -367,7 +371,7 @@ Functions</h2></td></tr>
 <p>If a 'ppInserted' pointer value is specified, this function will store the inserted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06705">6705</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06711">6711</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -416,7 +420,7 @@ Functions</h2></td></tr>
 <p>This function will 'join' a 2nd string to an existing (WBAlloc'd) multi-byte character string, optionally at a specified column (padding it with white space, as needed). The 'pString' pointer must have been allocated via WBAlloc for this to function properly. However, the 'pJoin' string can be from any source.</p>
 <p>The caller is expected to remove the subsequent string pointer from being the 'next' line, as needed, following the line join. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06762">6762</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06768">6768</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -458,19 +462,22 @@ Functions</h2></td></tr>
 <p>This function will 'split' a string at a particular column, returning a WBAlloc'd pointer to the 'remainder' of the line, which is intended to be inserted as a new line. The new line will NOT be indented, and leading white space will be left 'as-is'. Trailing white space on the original line, however, will automatically be trimmed.</p>
 <p>The caller is expected to insert the returned string pointer as the 'next' line, following the line split. The caller is also responsible for any 'auto indent' functionality that might be needed for a line split. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06725">6725</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06731">6731</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:30 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:04 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

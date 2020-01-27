@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -94,6 +98,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga186e21ce3badbba01435fa3e30bacd16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16">WBPlatformOnExit</a> (void)</td></tr>
 <tr class="memdesc:ga186e21ce3badbba01435fa3e30bacd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource 'free-up' on exit (must call)  <a href="#ga186e21ce3badbba01435fa3e30bacd16">More...</a><br /></td></tr>
 <tr class="separator:ga186e21ce3badbba01435fa3e30bacd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea2918b6cdc49dc3cdd17e67dd9ecfa8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#gaea2918b6cdc49dc3cdd17e67dd9ecfa8">WBMain</a> (int argc, char *argv[], char *envp[])</td></tr>
+<tr class="memdesc:gaea2918b6cdc49dc3cdd17e67dd9ecfa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Startup function, equivalent to 'main()' - provided for convenience.  <a href="#gaea2918b6cdc49dc3cdd17e67dd9ecfa8">More...</a><br /></td></tr>
+<tr class="separator:gaea2918b6cdc49dc3cdd17e67dd9ecfa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1366603ef5d97dd105872f5c309f3e2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga1366603ef5d97dd105872f5c309f3e2e">WBUsage</a> (void)</td></tr>
+<tr class="memdesc:ga1366603ef5d97dd105872f5c309f3e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional startup function, sends 'usage' (help) info to stderr - application-defined function.  <a href="#ga1366603ef5d97dd105872f5c309f3e2e">More...</a><br /></td></tr>
+<tr class="separator:ga1366603ef5d97dd105872f5c309f3e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga576673ed5710c0711a453f935b5043aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa">WBParseStandardArguments</a> (int *pargc, char ***pargv, char ***penvp)</td></tr>
 <tr class="memdesc:ga576673ed5710c0711a453f935b5043aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses standard C arguments as passed to 'main()'  <a href="#ga576673ed5710c0711a453f935b5043aa">More...</a><br /></td></tr>
 <tr class="separator:ga576673ed5710c0711a453f935b5043aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,7 +305,7 @@ Variables</h2></td></tr>
 <p>This function is only valid if you call <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a> on startup</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00668">668</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00729">729</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -704,6 +714,57 @@ The preferred method for initialization is to use <a class="el" href="group__sta
 
 </div>
 </div>
+<a id="gaea2918b6cdc49dc3cdd17e67dd9ecfa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea2918b6cdc49dc3cdd17e67dd9ecfa8">&#9670;&nbsp;</a></span>WBMain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WBMain </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>envp</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Startup function, equivalent to 'main()' - provided for convenience. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>An integer that indicates the number of elements in 'argv'. On exit, it is updated based on the arguments that were parsed. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of char *, the list of arguments passed as 'argv' to 'main()', minus toolkit-specific entries </td></tr>
+    <tr><td class="paramname">envp</td><td>An array of char *, the list of arguments passed as 'envp', plus anything toolkit-specific </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A non-zero value indicating the exit/return code (which only uses the low 8 bits)</dd></dl>
+<p>Use this function in your application, in lieu of 'main()', to ensure that everything is initialized and cleaned up properly, and so that command line arguments are correctly handled. It avoids having to add a call to '<a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a>' and other startup functions from within your application's 'main()'.</p>
+<p>NOTE: Your application must either have a 'main()' or a 'WBMain'. Internally, 'main()' is declared 'weak' and simply calls '<a class="el" href="group__startup.html#gaea2918b6cdc49dc3cdd17e67dd9ecfa8" title="Startup function, equivalent to &#39;main()&#39; - provided for convenience.">WBMain()</a>' with proper initialization and termination. If you want to process this yourself, use 'main()' instead.</p>
+<p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a></p>
+<p>/sa <a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a> <a class="el" href="group__startup.html#ga4231ddc6f845891d9be8f4f1f3c0aab5" title="Resource initialization on startup.">WBPlatformOnInit()</a> <a class="el" href="group__startup.html#ga186e21ce3badbba01435fa3e30bacd16" title="Resource &#39;free-up&#39; on exit (must call)">WBPlatformOnExit()</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="X11workbench_8c_source.html#l00164">164</a> of file <a class="el" href="X11workbench_8c_source.html">X11workbench.c</a>.</p>
+
+</div>
+</div>
 <a id="ga576673ed5710c0711a453f935b5043aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga576673ed5710c0711a453f935b5043aa">&#9670;&nbsp;</a></span>WBParseStandardArguments()</h2>
 
@@ -753,7 +814,7 @@ The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will
 <p>For consistency, a negative return should display a 'usage()' banner (see <a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2" title="Displays &#39;usage&#39; for toolkit options to stderr.">WBToolkitUsage()</a>, below). Any non-zero return value should cause the application to close.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00210">210</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00271">271</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -778,7 +839,7 @@ The values for 'argc' (as *pargc) 'argv' (as *pargv) and 'envp' (as *penvp) will
 It should also be safe to call this function from within a 'signal' handler, prior to '__exit()'.</p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00172">172</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00233">233</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -802,7 +863,7 @@ It should also be safe to call this function from within a 'signal' handler, pri
 <p>Call this function right before using any 'platform_helper' functions to initialize any global resources from '<a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a>'. <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a> does this automatically. It should only be called once. It's ok to call it before calling <a class="el" href="group__startup.html#gab921a58954031f69ec22295ce106bde3" title="initializes default objects for the specified Display (required)">WBInit()</a>, however.<br />
  Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00127">127</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00188">188</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -880,7 +941,33 @@ It should also be safe to call this function from within a 'signal' handler, pri
 <p>Displays 'usage' for toolkit options to stderr. </p>
 <p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00639">639</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00700">700</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
+
+</div>
+</div>
+<a id="ga1366603ef5d97dd105872f5c309f3e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1366603ef5d97dd105872f5c309f3e2e">&#9670;&nbsp;</a></span>WBUsage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBUsage </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional startup function, sends 'usage' (help) info to stderr - application-defined function. </p>
+<p>Define this function in your application (automatically called by internally defined 'main()' when '<a class="el" href="group__startup.html#ga576673ed5710c0711a453f935b5043aa" title="parses standard C arguments as passed to &#39;main()&#39;">WBParseStandardArguments()</a>' returns an error) to display a customized 'help' message that documents the command line options and/or other 'help' information for the application.</p>
+<p>The default (weak) version simply calls <a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2" title="Displays &#39;usage&#39; for toolkit options to stderr.">WBToolkitUsage()</a></p>
+<p>Header File: <a class="el" href="platform__helper_8h.html" title="Definition file for platform-specific utility functions.">platform_helper.h</a></p>
+<p>/sa <a class="el" href="group__startup.html#ga5cee3f4b704525ba89117af6616593e2" title="Displays &#39;usage&#39; for toolkit options to stderr.">WBToolkitUsage()</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="platform__helper_8c_source.html#l00181">181</a> of file <a class="el" href="platform__helper_8c_source.html">platform_helper.c</a>.</p>
 
 </div>
 </div>
@@ -907,13 +994,16 @@ It should also be safe to call this function from within a 'signal' handler, pri
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:30 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>

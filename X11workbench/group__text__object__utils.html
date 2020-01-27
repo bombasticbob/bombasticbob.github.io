@@ -1,5 +1,8 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -18,6 +21,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -159,7 +163,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A 'WBAlloc'd pointer to a TEXT_BUFFER object. Use 'WBFreeTextBuffer' to free it safely.</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00299">299</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00305">305</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -200,7 +204,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A non-zero value on error, or zero on success</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00415">415</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00421">421</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -269,7 +273,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00450">450</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00456">456</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -438,7 +442,7 @@ For complex edits, use <a class="el" href="group__text__object__utils.html#gad40
 If you join a pair of lines, call this function once for the deleted line, then again for the new (joined) line.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00495">495</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00501">501</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -480,7 +484,7 @@ If you join a pair of lines, call this function once for the deleted line, then 
 <p>This function returns the cached line length for the specified line. If you do something that might change this value, you can check first by calling this function to obtain the cached value, and then use <a class="el" href="group__text__object__utils.html#gad4092bcfdf3f63f4f223c5089bcdd5bf" title="Text buffer &#39;cached information&#39; refresh function.">WBTextBufferRefreshCache()</a> to update it (as needed).</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00473">473</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00479">479</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -512,7 +516,7 @@ If you join a pair of lines, call this function once for the deleted line, then 
 You should call this function following an 'undo' or other complex edit operation, in lieu of <a class="el" href="group__text__object__utils.html#ga21cd50513992d6b1687006d260f69f42" title="Text buffer &#39;cached information&#39; update function indicating a change to a line&#39;s length.">WBTextBufferLineChange()</a>. Also, for single-line edits, it may be better to ALWAYS use this function.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00670">670</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00676">676</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -554,7 +558,7 @@ You should call this function following an 'undo' or other complex edit operatio
 <p>Use this function to consistently get the line height from font information. The Text Object expose handler uses this calculation exclusively. Sometimes owning objects need to know exactly how this is being calculated to properly handle scrolling, etc. and this function returns the same results that the expose handler will use to determine where to draw text in the display geometry.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00843">843</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00849">849</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -610,7 +614,7 @@ You should call this function following an 'undo' or other complex edit operatio
 <p>This is being implemented as an object, similar to a C++ class with virtual member functions, for the purpose of being able to re-assign the vtable and thereby overload its functionality.</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00805">805</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00811">811</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -641,7 +645,7 @@ You should call this function following an 'undo' or other complex edit operatio
 <p>Use this function to SAFELY destroy an object allocated using WBTextObjectConstructor</p>
 <p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00827">827</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l00833">833</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -698,13 +702,16 @@ You should call this function following an 'undo' or other complex edit operatio
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 3 2019 11:20:30 for X11workbench Toolkit by
+    <li class="footer">Generated on Sun Jan 26 2020 15:41:04 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
+<!-- Copyright 2020 by S.F.T. Inc. and 'Bombastic' Bob Frazier in accordance with the X11workbench Project -->
+<!--    Use and/or Distribution in accordance with either an MIT-like or LGPL v2 license - see COPYING     -->
 </html>
