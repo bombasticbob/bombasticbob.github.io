@@ -39,8 +39,8 @@ var NAVTREE =
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -63,19 +63,21 @@ var NAVTREEINDEX =
 "X11workbenchToolkit__config_8h_source.html",
 "dialog__window_8h.html#ga92ee7dbf8c990b8a2b7fd764ee1c938ea6662e898d9a6ddd6278acdde8e884fd3",
 "font__helper_8h.html#ga8f49d87ff2fe8588132f90e0f257f6ffa0d72f2f47c5727868dfad152ef1842e4",
-"globals_func_m.html",
-"group__defaults.html#gafc45dcd9ad8846fcd775841481f0e7a2",
-"group__dlgctrl__atom.html#ga200becf2035093f2a5351b2bbd0df278",
-"group__dlgctrl__properties.html#ga2a3ccabb1f0e2ad5875ab951962f5fd0",
-"group__events.html#ga79275e72d837cef2b535e9feeb81074f",
-"group__font.html#ga785c621bba3eb9ce858b511275246585",
-"group__graphics.html#gad3dc336019272c415fa2ad276fd0f50f",
-"group__platform__functions.html#ga7f8541b2e7204cafe39d514198b82826",
-"group__text.html#ga970cc5651dadf44ab9335c64ef67283b",
-"group__timer.html#gac0847f36d2cbc0d28cfa9ebb727ad3c9",
-"group__wcore__wm.html#gga720fc619923711fbdeb2191d4b094077ae458a049dd4860403d96b1232204851a",
-"platform__helper_8c.html#a1cc6485630d776fa497b380eec68572b",
-"window__dressing_8h.html#gac6b4ec514aee9f08233471bf41bfd74da9f3373d0abebaf83863227df13e0f28f"
+"functions_vars_p.html",
+"group__debug.html#ga52003ddafb527ef3fff980445a02dab2",
+"group__dlgctrl.html#gaf2e4376a500298d25344ec4deeb2ea27",
+"group__dlgctrl__notify.html#ga5cc77793f7e7d5341c9ce080ea60a219",
+"group__events.html#ga26c444fc559879a0457ad3915dc95041",
+"group__font.html#ga180c3e86d25be29a4a5c91b821213564",
+"group__graphics.html#gaa118cb4455807aa8bc67409ce2cb2810",
+"group__platform__definitions.html#gace47742235ba7c59804024b08432cf72",
+"group__text.html#ga11ada3ca2b715b8d12a9237ff5b8edcb",
+"group__threads.html#gadf525b8a15c7044a869c72ae03266559",
+"group__wcore__wm.html#gaeb94431d6bea312dcabae07242dba442",
+"menu_resource.html",
+"structs__WB__POINT.html#a0a2f84ed7838f07779ae24c5a9086d33",
+"structtagWBChildFrameUI.html#a94b881d5e8c6bcd233434d111c2b18ed",
+"window__dressing_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -109,9 +109,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gada9e1b5f893e85bb0821ab7e13828fd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#gada9e1b5f893e85bb0821ab7e13828fd3">WBXFillPolygon</a> (XImage *pImage, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, XPoint *points, int npoints, int shape, int mode)</td></tr>
 <tr class="memdesc:gada9e1b5f893e85bb0821ab7e13828fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">XImage version for XFillPolygon()  <a href="#gada9e1b5f893e85bb0821ab7e13828fd3">More...</a><br /></td></tr>
 <tr class="separator:gada9e1b5f893e85bb0821ab7e13828fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3dc336019272c415fa2ad276fd0f50f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#gad3dc336019272c415fa2ad276fd0f50f">WBXDrawString</a> (XImage *pImage, <a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a> pFont, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, int x, int y, const char *string, int length)</td></tr>
-<tr class="memdesc:gad3dc336019272c415fa2ad276fd0f50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">XImage version for XDrawString() or <a class="el" href="group__draw__text.html#ga2337471599a741adc9f4ab29d369a6b9" title="Draw text in a platform-independent manner for UTF-8 or multi-byte text, equivalent to WBDrawString()...">DTDrawString()</a>  <a href="#gad3dc336019272c415fa2ad276fd0f50f">More...</a><br /></td></tr>
-<tr class="separator:gad3dc336019272c415fa2ad276fd0f50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b34e3eb2a95383306307fcf67872dab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga4b34e3eb2a95383306307fcf67872dab">WBXDrawString</a> (XImage *pImage, <a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a> pFont, <a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a> hGC, int x, int y, const char *string, int length)</td></tr>
+<tr class="memdesc:ga4b34e3eb2a95383306307fcf67872dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">XImage version for XDrawString() or <a class="el" href="group__draw__text.html#ga2337471599a741adc9f4ab29d369a6b9" title="Draw text in a platform-independent manner for UTF-8 or multi-byte text, equivalent to WBDrawString()...">DTDrawString()</a>  <a href="#ga4b34e3eb2a95383306307fcf67872dab">More...</a><br /></td></tr>
+<tr class="separator:ga4b34e3eb2a95383306307fcf67872dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcfffbfb0a23ea30864b864d84138145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core__struct.html#ga74173c00060b57fc3bf11c52460bf92e">WBGC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#gadcfffbfb0a23ea30864b864d84138145">WBCreateGC</a> (Display *pDisplay, Drawable dw, unsigned long valuemask, const XGCValues *values)</td></tr>
 <tr class="memdesc:gadcfffbfb0a23ea30864b864d84138145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a WBGC, wrapper for XCreateGC()  <a href="#gadcfffbfb0a23ea30864b864d84138145">More...</a><br /></td></tr>
 <tr class="separator:gadcfffbfb0a23ea30864b864d84138145"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -518,7 +518,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the backgound color associated with the WBGC</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03121">3121</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03136">3136</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the foreground color associated with the WBGC</dd></dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03090">3090</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03105">3105</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ Functions</h2></td></tr>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__wcore.html#gac876324ffc644272a81a9f72645d3f54">WBGetWindowBGColor()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05887">5887</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05886">5886</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ Functions</h2></td></tr>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__wcore.html#ga3beb6cfa88596c4660152e63dd6f6cf5">WBGetWindowFGColor()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05858">5858</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05857">5857</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1300,7 +1300,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02054">2054</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02040">2040</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1371,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01941">1941</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01927">1927</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1435,7 +1435,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01976">1976</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01962">1962</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1556,7 +1556,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01888">1888</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01874">1874</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1627,12 +1627,12 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01999">1999</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l01985">1985</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
-<a id="gad3dc336019272c415fa2ad276fd0f50f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3dc336019272c415fa2ad276fd0f50f">&#9670;&nbsp;</a></span>WBXDrawString()</h2>
+<a id="ga4b34e3eb2a95383306307fcf67872dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b34e3eb2a95383306307fcf67872dab">&#9670;&nbsp;</a></span>WBXDrawString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1646,7 +1646,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__font__struct.html#ga7515205c18796647b17e6838ace63582">WB_FONT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__font__struct.html#ga96f0a973d3692fed94b208aa520d45f8">WB_FONTC</a>&#160;</td>
           <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
@@ -1691,7 +1691,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pImage</td><td>A pointer to the XImage to draw to </td></tr>
-    <tr><td class="paramname">pFont</td><td>A WB_FONT to use for rendering text. May be NULL, in which case a default font set (based on the WBGC) will be used </td></tr>
+    <tr><td class="paramname">pFont</td><td>A WB_FONTC to use for rendering text. May be NULL, in which case a default font set (based on the WBGC) will be used </td></tr>
     <tr><td class="paramname">hGC</td><td>A WBGC that describes the device context (mostly for colors, clipping, etc.) </td></tr>
     <tr><td class="paramname">x</td><td>The 'x' coordinate for the text alignment (left) </td></tr>
     <tr><td class="paramname">y</td><td>The 'y' coordinate for the text alignment (bottom) </td></tr>
@@ -1705,7 +1705,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02121">2121</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02107">2107</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1790,7 +1790,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02085">2085</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02071">2071</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1861,7 +1861,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02092">2092</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02078">2078</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -1932,7 +1932,7 @@ Functions</h2></td></tr>
 <p>The XImage should either have a monochrome (single plane) XYPixmap, or 24-bit color ZPixmap format.</p>
 <p>Header File: <a class="el" href="pixmap__helper_8h_source.html">pixmap_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02020">2020</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixmap__helper_8c_source.html#l02006">2006</a> of file <a class="el" href="pixmap__helper_8c_source.html">pixmap_helper.c</a>.</p>
 
 </div>
 </div>
@@ -2022,7 +2022,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

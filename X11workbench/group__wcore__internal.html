@@ -69,7 +69,8 @@ $(document).ready(function(){initNavTree('group__wcore__internal.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Internal-only Window 'Core' features<div class="ingroups"><a class="el" href="group__core.html">Core API</a> &raquo; <a class="el" href="group__wcore.html">Window 'Core'</a></div></div>  </div>
 </div><!--header-->
@@ -77,34 +78,84 @@ $(document).ready(function(){initNavTree('group__wcore__internal.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrong.html">strong</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  <a href="structstrong.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__internal__window__entry.html">s_internal_window_entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__EVENT__ENTRY.html">s_EVENT_ENTRY</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core (internal) structure for storing and dispatching events.  <a href="structs__EVENT__ENTRY.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__TIMER__ENTRY.html">s_TIMER_ENTRY</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core (internal) structure for managing timers.  <a href="structs__TIMER__ENTRY.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__DELAYED__EVENT__ENTRY.html">s_DELAYED_EVENT_ENTRY</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core (internal) structure for managing delayed events.  <a href="structs__DELAYED__EVENT__ENTRY.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gab87e06659103cb899c8b6aea8e84ef8c"><td class="memItemLeft" align="right" valign="top"><a id="gab87e06659103cb899c8b6aea8e84ef8c"></a>
-typedef struct __EVENT_ENTRY__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html#gab87e06659103cb899c8b6aea8e84ef8c">EVENT_ENTRY</a></td></tr>
+typedef struct <a class="el" href="structs__EVENT__ENTRY.html">s_EVENT_ENTRY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html#gab87e06659103cb899c8b6aea8e84ef8c">EVENT_ENTRY</a></td></tr>
 <tr class="memdesc:gab87e06659103cb899c8b6aea8e84ef8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core (internal) structure for storing and dispatching events. <br /></td></tr>
 <tr class="separator:gab87e06659103cb899c8b6aea8e84ef8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64abeb023c491d85aa6d0cafd5cdffa3"><td class="memItemLeft" align="right" valign="top"><a id="ga64abeb023c491d85aa6d0cafd5cdffa3"></a>
-typedef struct __TIMER_ENTRY__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html#ga64abeb023c491d85aa6d0cafd5cdffa3">TIMER_ENTRY</a></td></tr>
+typedef struct <a class="el" href="structs__TIMER__ENTRY.html">s_TIMER_ENTRY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html#ga64abeb023c491d85aa6d0cafd5cdffa3">TIMER_ENTRY</a></td></tr>
 <tr class="memdesc:ga64abeb023c491d85aa6d0cafd5cdffa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core (internal) structure for managing timers. <br /></td></tr>
 <tr class="separator:ga64abeb023c491d85aa6d0cafd5cdffa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga44fd462d402d3afa7d52a5df7c986bc3"><td class="memItemLeft" align="right" valign="top"><a id="ga44fd462d402d3afa7d52a5df7c986bc3"></a>
-typedef struct __DELAYED_EVENT_ENTRY__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html#ga44fd462d402d3afa7d52a5df7c986bc3">DELAYED_EVENT_ENTRY</a></td></tr>
+typedef struct <a class="el" href="structs__DELAYED__EVENT__ENTRY.html">s_DELAYED_EVENT_ENTRY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html#ga44fd462d402d3afa7d52a5df7c986bc3">DELAYED_EVENT_ENTRY</a></td></tr>
 <tr class="memdesc:ga44fd462d402d3afa7d52a5df7c986bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core (internal) structure for managing delayed events. <br /></td></tr>
 <tr class="separator:ga44fd462d402d3afa7d52a5df7c986bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gabff70a128dddc8634658e93cfd7b51bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__internal.html#gabff70a128dddc8634658e93cfd7b51bb">WBRegisterMenuCallback</a> (Window wID, <a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pCallback)</td></tr>
+<tr class="memdesc:gabff70a128dddc8634658e93cfd7b51bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">(internal) Register a MENU callback for a window  <a href="#gabff70a128dddc8634658e93cfd7b51bb">More...</a><br /></td></tr>
+<tr class="separator:gabff70a128dddc8634658e93cfd7b51bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These functions and definitions comprise internal-only 'CORE WINDOW HANDLING' features. You should not make use of these. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gabff70a128dddc8634658e93cfd7b51bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabff70a128dddc8634658e93cfd7b51bb">&#9670;&nbsp;</a></span>WBRegisterMenuCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WBRegisterMenuCallback </td>
+          <td>(</td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>wID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a>&#160;</td>
+          <td class="paramname"><em>pCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(internal) Register a MENU callback for a window </p>
+<p>The various 'menu' windows and popups will make use of the assigned 'menu callback' function to register a special event handler that deals with main window events. Event processing via <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a> invokes the menu callback whenever it is assigned. To disable the special event handling, assign the 'menu callback' function to NULL.</p>
+<p>Normally, you should not make use of this function in your own application.</p>
+<p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l07124">7124</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

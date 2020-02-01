@@ -164,9 +164,9 @@ Functions</h2></td></tr>
 <p>This function performs the somewhat complicated 'delete a multi-byte character' functionality in a consistent AND column-based manner, so that a string that has multi-byte characters can be edited in the same way as a string that has characters with consistent length. It also returns the number of delete operations remaining.</p>
 <p>In many cases, a series of 'backspaces' or 'deletes' may extend into a previous or subsequent line. In these cases, they must be handled in a separate call involving the previous or next line's multi-byte character buffer. The caller is responsible for handlnig this, as well as for collapsing the lines or joining them together.</p>
 <p>If a 'ppDeleted' pointer value is specified, this function will store the deleted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
-<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, that can be overridden for custom behavior.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06805">6805</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06820">6820</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -212,9 +212,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the multi-byte character located at the 'iCol' position within the string. If 'iCol' is out range, the return value will point to the terminating zero byte. On error, the return value will be NULL.</dd></dl>
-<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, that can be overridden for custom behavior.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06979">6979</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06994">6994</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -253,9 +253,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The zero-based column index of the character pointed to by 'pChar' within 'pString. If 'pChar' is out range, or points to an invalid character, the return value will be zero.</dd></dl>
-<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, that can be overridden for custom behavior.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l07011">7011</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l07026">7026</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -283,9 +283,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The length of the multi-byte character string in 'characters'</dd></dl>
-<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, that can be overridden for custom behavior.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06969">6969</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06984">6984</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -369,9 +369,9 @@ Functions</h2></td></tr>
 <p>This function performs the somewhat complicated 'insert a multi-byte character' functionality in a consistent AND column-based manner, so that a string that has multi-byte characters can be edited in the same way as a string that has characters with consistent length. In this way, ANY multi-byte character that is available at a future point in time can be supported. The alternative would be to convert to "a unicode format", which may limit the character set that could be used; as an example, 16-bit unicode characters won't include characters that are available in the 24-bit Unicode character set. Having a ridiculously large bit-length for a single character is not much of a consolation, and so this function (and others) will deal with multiple byte characters as they are, in an independent manner.</p>
 <p>It is the caller's responsibility to filter out line feed characters, and insert new lines into a line buffer.</p>
 <p>If a 'ppInserted' pointer value is specified, this function will store the inserted text in a buffer allocated via <a class="el" href="group__sub__alloc.html#ga8ee962cea8e2f0cb52d1cab9057ffe6c" title="High performance memory sub-allocator &#39;allocate&#39;.">WBAlloc()</a>. The caller must free any non-NULL value returned by this function using <a class="el" href="group__sub__alloc.html#gaebf9d7c0cd9aa525a93d0c5cc5376a1c" title="High performance memory sub-allocator &#39;free&#39;.">WBFree()</a>. The data that is stored in this allocated buffer can be used to support 'undo' and 'redo'.</p>
-<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, can be overridden.">text_object.h</a> </p>
+<p>Header File: <a class="el" href="text__object_8h.html" title="A &#39;C++&#39;-like object for managing text, that can be overridden for custom behavior.">text_object.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06711">6711</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06726">6726</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ Functions</h2></td></tr>
 <p>This function will 'join' a 2nd string to an existing (WBAlloc'd) multi-byte character string, optionally at a specified column (padding it with white space, as needed). The 'pString' pointer must have been allocated via WBAlloc for this to function properly. However, the 'pJoin' string can be from any source.</p>
 <p>The caller is expected to remove the subsequent string pointer from being the 'next' line, as needed, following the line join. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06768">6768</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06783">6783</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Functions</h2></td></tr>
 <p>This function will 'split' a string at a particular column, returning a WBAlloc'd pointer to the 'remainder' of the line, which is intended to be inserted as a new line. The new line will NOT be indented, and leading white space will be left 'as-is'. Trailing white space on the original line, however, will automatically be trimmed.</p>
 <p>The caller is expected to insert the returned string pointer as the 'next' line, following the line split. The caller is also responsible for any 'auto indent' functionality that might be needed for a line split. </p>
 
-<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06731">6731</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="text__object_8c_source.html#l06746">6746</a> of file <a class="el" href="text__object_8c_source.html">text_object.c</a>.</p>
 
 </div>
 </div>
@@ -472,7 +472,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:04 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

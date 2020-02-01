@@ -142,7 +142,9 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The X11workbench Toolkit API provides for mid-level pointer event handling via WB_POINTER ClientMessage notification events.<br />
-See <a class="el" href="group__pointer.html#ga5a71c68353174922427c05fd004e1f9a">aWB_POINTER</a> for more info. </p>
+ </p><div class="fragment"><div class="line">pointer <span class="keyword">event</span> definitions - WB_POINTER</div><div class="line"></div><div class="line">  data.l[0] is one of the notification codes</div><div class="line">  data.l[1] is bitmap of mouse button state (button 1 is bit 0, button 2 is bit 1, etc.)</div><div class="line">  data.l[2] is &#39;WB_KEYEVENT_&#39; mask for CTRL+ALT+SHIFT</div><div class="line">  data.l[3] is translated X coordinate</div><div class="line">  data.l[4] is translated Y coordinate</div></div><!-- fragment --><p>The X11workbench Toolkit framework generates 'ClientMessage' events with a message type of 'aWB_POINTER' to the window callback function associated with the Window containing the mouse cursor. You can intercept these events in your window's callback function and process them. They can be considered 'mid-level' API events (low-level could be raw pointer data, as an example, and high-level would determine a result and just notify you, such as a focus change).</p>
+<p>See <a class="el" href="group__pointer.html#ga5a71c68353174922427c05fd004e1f9a">aWB_POINTER</a> for more info.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__events__atoms.html">ClientMessage Atoms</a>, <a class="el" href="group__events__types.html">Data Types, Enumerations, and Definitions</a> </dd></dl>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga5a71c68353174922427c05fd004e1f9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5a71c68353174922427c05fd004e1f9a">&#9670;&nbsp;</a></span>aWB_POINTER</h2>
@@ -204,7 +206,7 @@ data.l[4] is translated Y coordinate<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

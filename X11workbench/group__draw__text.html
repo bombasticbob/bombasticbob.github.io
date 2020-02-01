@@ -79,16 +79,19 @@ $(document).ready(function(){initNavTree('group__draw__text.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrong.html">strong</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  <a href="structstrong.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtagDT__WORD.html">tagDT_WORD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure defining a 'word' for rendering purposes.  <a href="structtagDT__WORD.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtagDT__WORDS.html">tagDT_WORDS</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of DT_WORD structures along with a pointer to the original text.  <a href="structtagDT__WORDS.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0438c7249c6116b4d483a1651af2847a"><td class="memItemLeft" align="right" valign="top">typedef struct __DT_WORD__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a></td></tr>
+<tr class="memitem:ga0438c7249c6116b4d483a1651af2847a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtagDT__WORD.html">tagDT_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a></td></tr>
 <tr class="memdesc:ga0438c7249c6116b4d483a1651af2847a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure defining a 'word' for rendering purposes.  <a href="#ga0438c7249c6116b4d483a1651af2847a">More...</a><br /></td></tr>
 <tr class="separator:ga0438c7249c6116b4d483a1651af2847a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="memItemLeft" align="right" valign="top">typedef struct __DT_WORDS__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a></td></tr>
+<tr class="memitem:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtagDT__WORDS.html">tagDT_WORDS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a></td></tr>
 <tr class="memdesc:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of DT_WORD structures along with a pointer to the original text.  <a href="#ga2aa53ab555af841f2aa3bd5e5ef21e52">More...</a><br /></td></tr>
 <tr class="separator:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -96,34 +99,52 @@ Typedefs</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga082c206bfd406e64f16e934644548d40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40">DTAlignment</a> { <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a72306f5eca801e824103a1fd0b53188d">DTAlignment_HLEFT</a> = 1, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9">DTAlignment_HCENTER</a> = 2, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a4517739f660ece9cdab37ba10c495efa">DTAlignment_HRIGHT</a> = 3, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ab786574b5d6658fb6f3e009731e2bbfd">DTAlignment_HJUSTIFY</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9">DTAlignment_HCENTER</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a4517739f660ece9cdab37ba10c495efa">DTAlignment_HRIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ab786574b5d6658fb6f3e009731e2bbfd">DTAlignment_HJUSTIFY</a> = 4, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2abf475a51e97fa55a98bb0f734cde76">DTAlignment_HMASK</a> = 0xf, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a20d24f444ddd76c5a6bd9db788acdd5f">DTAlignment_VTOP</a> = 0x10, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a03b1eb562cb646bee8b39ae5dd940af8">DTAlignment_VBOTTOM</a> = 0x20, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2752318131612802b50de90a63af8746">DTAlignment_VCENTER</a> = 0x30, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a20d24f444ddd76c5a6bd9db788acdd5f">DTAlignment_VTOP</a> = 0x10, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a03b1eb562cb646bee8b39ae5dd940af8">DTAlignment_VBOTTOM</a> = 0x20, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2752318131612802b50de90a63af8746">DTAlignment_VCENTER</a> = 0x30, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ae1bca6731a86b174e35173f7a3715d46">DTAlignment_VCENTERASCENT</a> = 0x40, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a63b23f329d537fee04d388190e3aef64">DTAlignment_VCENTERBASELINE</a> = 0x50, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aed72bc3f15671e758d4d02bc9f499b95">DTAlignment_VTOPHALF</a> = 0x60, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a51fd4a54a1d15f105858870f5389acde">DTAlignment_VTBOTTOMHALF</a> = 0x70, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a63b23f329d537fee04d388190e3aef64">DTAlignment_VCENTERBASELINE</a> = 0x50, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aed72bc3f15671e758d4d02bc9f499b95">DTAlignment_VTOPHALF</a> = 0x60, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a51fd4a54a1d15f105858870f5389acde">DTAlignment_VTBOTTOMHALF</a> = 0x70, 
 <br />
 &#160;&#160;<b>DTAlignment_VMASK</b> = 0xf0, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2f647c5a4d7da10a46e583bbc1d0158a">DTAlignment_V_BEFORE_H</a> = 0x100, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2704ae0b66da9e61b5df32cdfe820515">DTAlignment_NO_VRESIZE</a> = 0x200, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ae9bdfc2c8e174936ac52b85dc1145acd">DTAlignment_NO_HRESIZE</a> = 0x400, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2f647c5a4d7da10a46e583bbc1d0158a">DTAlignment_V_BEFORE_H</a> = 0x100, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2704ae0b66da9e61b5df32cdfe820515">DTAlignment_NO_VRESIZE</a> = 0x200, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ae9bdfc2c8e174936ac52b85dc1145acd">DTAlignment_NO_HRESIZE</a> = 0x400, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a606dd177e39da086cf9320cf0b2de2c0">DTAlignment_NO_RESIZE</a> = 0x600, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40af6f73c2d3293592b078f0cf3f03dbce4">DTAlignment_RESIZE_PIXEL</a> = 0x800, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a0fa654264f70855c10b5960fbdb5e94c">DTAlignment_NO_SHRINK</a> = 0x1000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804">DTAlignment_ALLOW_TRAILING</a> = 0x2000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40af6f73c2d3293592b078f0cf3f03dbce4">DTAlignment_RESIZE_PIXEL</a> = 0x800, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a0fa654264f70855c10b5960fbdb5e94c">DTAlignment_NO_SHRINK</a> = 0x1000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804">DTAlignment_ALLOW_TRAILING</a> = 0x2000, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a204dff61b43cd0d49df26819f2a1984c">DTAlignment_NO_WORD_WRAP</a> = 0x4000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a5747ce763c071a30cc7f19b5d66d724f">DTAlignment_ANTIALIAS</a> = 0x10000000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a196a3d7f39c98443cc28b2d35ba1108b">DTAlignment_SINGLELINE</a> = 0x20000000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da">DTAlignment_UNDERSCORE</a> = 0x40000000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a5747ce763c071a30cc7f19b5d66d724f">DTAlignment_ANTIALIAS</a> = 0x10000000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a196a3d7f39c98443cc28b2d35ba1108b">DTAlignment_SINGLELINE</a> = 0x20000000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da">DTAlignment_UNDERSCORE</a> = 0x40000000, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6">DTAlignment_PRINTING</a> = 0x80000000
 <br />
@@ -182,7 +203,7 @@ Functions</h2></td></tr>
 
 <p>Structure defining a 'word' for rendering purposes. </p>
 <p>A 'word' is defined as one or more characters as a group that is to be rendered in as single-line or multi-line text. Special case is white space, line feeds, and tabs. The width and height of the 'word' element can be used to line up and do 'word breaks' on text for line wrapping. Multiple white space blocks can also be eliminated from the output when it is at the end of a line, particularly when wrapping text.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__DT_WORD__</div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *pText;      <span class="comment">// pointer to start of word (most likely in the supplied buffer)</span></div><div class="line">                          <span class="comment">// for tabs and white space, it will be NULL</span></div><div class="line">                          <span class="comment">// for OTHER special characters, it points to the character</span></div><div class="line">  <span class="keywordtype">int</span> nLength;            <span class="comment">// length of text element (in bytes)</span></div><div class="line">  <span class="keywordtype">int</span> iWidth;             <span class="comment">// width of text in pixels (based on font size) (NA for tabs, LF, valid for white space)</span></div><div class="line">  <span class="keywordtype">int</span> iHeight;            <span class="comment">// height of text in pixels (based on font size) (NA for tabs, LF, valid for white space)</span></div><div class="line">  <span class="keywordtype">int</span> iIsTab;             <span class="comment">// indicates that the text consists of tabs (nLength for number of tabs, pText is NULL)</span></div><div class="line">  <span class="keywordtype">int</span> iIsLineFeed;        <span class="comment">// indicates a line feed (CR, CRLF, LF, or LFCR) (nLength for number of line feeds, pText is NULL)</span></div><div class="line">  <span class="keywordtype">int</span> iIsWhiteSpace;      <span class="comment">// indicates that it is &#39;white space&#39; (regular or special character) (nLength, width, height applies)</span></div><div class="line">  <span class="keywordtype">int</span> iX;                 <span class="comment">// Relative &#39;X&#39; pixel position for the beginning of this element (when pre-rendered, else -1)</span></div><div class="line">  <span class="keywordtype">int</span> iY;                 <span class="comment">// Relative &#39;Y&#39; pixel position for the beginning of this element (when pre-rendered, else -1)</span></div><div class="line">} <a class="code" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a>;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtagDT__WORD.html">tagDT_WORD</a></div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structtagDT__WORD.html#afe44df317fd6bd5ee90f68a9ef8b2073">pText</a>;      <span class="comment">// pointer to start of word (most likely in the supplied buffer)</span></div><div class="line">                          <span class="comment">// for tabs and white space, it will be NULL</span></div><div class="line">                          <span class="comment">// for OTHER special characters, it points to the character</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#ab8842d19dcb5084fd4cca196318d3bd4">nLength</a>;            <span class="comment">// length of text element (in bytes)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#a339c9f28b92af29925c235e75f37bd11">iWidth</a>;             <span class="comment">// width of text in pixels (based on font size) (NA for tabs, LF, valid for white space)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#a2884aa55a9f2544c59a08976071b1d64">iHeight</a>;            <span class="comment">// height of text in pixels (based on font size) (NA for tabs, LF, valid for white space)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#a237a536bc95e0c75ebc9c69e81efc44f">iIsTab</a>;             <span class="comment">// indicates that the text consists of tabs (nLength for number of tabs, pText is NULL)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#adf51da265112e0310b0a782496c94669">iIsLineFeed</a>;        <span class="comment">// indicates a line feed (CR, CRLF, LF, or LFCR) (nLength for number of line feeds, pText is NULL)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#ac1ef761a679b65a4f8d349f8f7d37a07">iIsWhiteSpace</a>;      <span class="comment">// indicates that it is &#39;white space&#39; (regular or special character) (nLength, width, height applies)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#aa46fd71a7485fa548df5fd9356167814">iX</a>;                 <span class="comment">// Relative &#39;X&#39; pixel position for the beginning of this element (when pre-rendered, else -1)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORD.html#a40c1eea16ed01cb492c2faf0eeb8a6e7">iY</a>;                 <span class="comment">// Relative &#39;Y&#39; pixel position for the beginning of this element (when pre-rendered, else -1)</span></div><div class="line">} <a class="code" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a>;</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ga2aa53ab555af841f2aa3bd5e5ef21e52"></a>
@@ -199,7 +220,7 @@ Functions</h2></td></tr>
 
 <p>A collection of DT_WORD structures along with a pointer to the original text. </p>
 <p>A collection of DT_WORD structures, along with a pointer to the original text. This structure is typically used to render text and calculate bounding rectangles for the purpose of window sizing and viewport scrolling.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__DT_WORDS__</div><div class="line">{</div><div class="line">  <span class="keyword">struct </span>__DT_WORDS__ *pPrev; <span class="comment">// pointer to previous structure in linked list (reserved)</span></div><div class="line">  <span class="keyword">struct </span>__DT_WORDS__ *pNext; <span class="comment">// pointer to next structure in linked list (reserved)</span></div><div class="line">  <span class="keywordtype">int</span> nCount;           <span class="comment">// number of items in aWords</span></div><div class="line">  <span class="keywordtype">int</span> nMax;             <span class="comment">// max number of items in aWords (for memory allocation purposes)</span></div><div class="line">  <span class="keywordtype">int</span> iMaxWidth;        <span class="comment">// maximum width of contained text, or -1 if not known</span></div><div class="line">  <span class="keywordtype">int</span> iMaxHeight;       <span class="comment">// maximum height of contained text, or -1 if not known</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *szText;   <span class="comment">// original text pointer</span></div><div class="line">  <a class="code" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a> aWords[1];    <span class="comment">// The actual data (self-contained within the memory block)</span></div><div class="line">} <a class="code" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a>;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtagDT__WORDS.html">tagDT_WORDS</a></div><div class="line">{</div><div class="line">  <span class="keyword">struct </span><a class="code" href="structtagDT__WORDS.html">tagDT_WORDS</a> *<a class="code" href="structtagDT__WORDS.html#a18a65b3bb7168f3e84b1a15bc462243c">pPrev</a>; <span class="comment">// pointer to previous structure in linked list (reserved)</span></div><div class="line">  <span class="keyword">struct </span><a class="code" href="structtagDT__WORDS.html">tagDT_WORDS</a> *<a class="code" href="structtagDT__WORDS.html#a03064d96fab10b652f5c6d95e12728b4">pNext</a>; <span class="comment">// pointer to next structure in linked list (reserved)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORDS.html#a40cac163737ecbfdcce8144f9a89c552">nCount</a>;                <span class="comment">// number of items in aWords</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORDS.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a>;                  <span class="comment">// max number of items in aWords (for memory allocation purposes)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORDS.html#a978cabf5fa7005d326e0e3418a63056b">iMaxWidth</a>;             <span class="comment">// maximum width of contained text, or -1 if not known</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structtagDT__WORDS.html#aedb7ee58003a0d684429fb1e6808d234">iMaxHeight</a>;            <span class="comment">// maximum height of contained text, or -1 if not known</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structtagDT__WORDS.html#a55e7f44006af0fe8d5aef9a573402acd">szText</a>;        <span class="comment">// original text pointer</span></div><div class="line">  <a class="code" href="structtagDT__WORD.html">DT_WORD</a> <a class="code" href="structtagDT__WORDS.html#a5c94dd74811f016b5458861460c44933">aWords</a>[1];         <span class="comment">// The actual data (self-contained within the memory block)</span></div><div class="line">} <a class="code" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a>;</div></div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -1097,7 +1118,7 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
   <table class="params">
     <tr><td class="paramname">pDisplay</td><td>the Display associated with the WB_FONT </td></tr>
     <tr><td class="paramname">pFont</td><td>The WB_FONT (NULL implies system default font set) </td></tr>
-    <tr><td class="paramname">pWords</td><td>The DT_WORDS structure for the text (this function modifies DT_WORD::iX, DT_WORD::iY) </td></tr>
+    <tr><td class="paramname">pWords</td><td>The DT_WORDS structure for the text (this function modifies <a class="el" href="structtagDT__WORD.html#aa46fd71a7485fa548df5fd9356167814" title="Relative &#39;X&#39; pixel position for the beginning of this element (when pre-rendered, else -1)">DT_WORD::iX</a>, <a class="el" href="structtagDT__WORD.html#a40c1eea16ed01cb492c2faf0eeb8a6e7" title="Relative &#39;Y&#39; pixel position for the beginning of this element (when pre-rendered, else -1)">DT_WORD::iY</a>) </td></tr>
     <tr><td class="paramname">iTabWidth</td><td>A positive integer in 'characters', or negative integer in pixels, indicating tab width </td></tr>
     <tr><td class="paramname">iTabOrigin</td><td>An unsigned integer indicating the tab origin, using the same units as iTabWidth, corresponding to the first character. </td></tr>
     <tr><td class="paramname">prcSource</td><td>A pointer to the 'source' bounding rectangle in which the text is intended to fit </td></tr>
@@ -1122,7 +1143,7 @@ Since the 'WB_RECT' elements are 32-bit integers, it is possible to create an 'i
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

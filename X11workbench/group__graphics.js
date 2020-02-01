@@ -30,7 +30,7 @@ var group__graphics =
     [ "WBXDrawPoint", "group__graphics.html#gad1ef3a0d64028bf07ac8a9e33fc22f82", null ],
     [ "WBXDrawPoints", "group__graphics.html#gac604d0f390f7f04d9a03c39300996fbc", null ],
     [ "WBXDrawRectangle", "group__graphics.html#gab79dee82d07fe4e353d3ba7da80055fe", null ],
-    [ "WBXDrawString", "group__graphics.html#gad3dc336019272c415fa2ad276fd0f50f", null ],
+    [ "WBXDrawString", "group__graphics.html#ga4b34e3eb2a95383306307fcf67872dab", null ],
     [ "WBXFillArc", "group__graphics.html#gae9248f1d7fa383285e30fa4642abf665", null ],
     [ "WBXFillPolygon", "group__graphics.html#gada9e1b5f893e85bb0821ab7e13828fd3", null ],
     [ "WBXFillRectangle", "group__graphics.html#ga6b484ef5efea5339253ae74419ad8f57", null ],

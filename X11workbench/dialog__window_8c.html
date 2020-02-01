@@ -68,6 +68,7 @@ $(document).ready(function(){initNavTree('dialog__window_8c.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -77,6 +78,9 @@ $(document).ready(function(){initNavTree('dialog__window_8c.html','');});
 <div class="title">dialog_window.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation for dialog (frame) window and intercommunication structures and APIs.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
@@ -96,6 +100,12 @@ $(document).ready(function(){initNavTree('dialog__window_8c.html','');});
 </div>
 <p><a href="dialog__window_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__DIALOG__WINDOW.html">s_DIALOG_WINDOW</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure, an extension of WBDialogWindow.  <a href="structs__DIALOG__WINDOW.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:aeab6a095afeed0b9e64e415c5a5c669a"><td class="memItemLeft" align="right" valign="top"><a id="aeab6a095afeed0b9e64e415c5a5c669a"></a>
@@ -105,57 +115,81 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>THIS_SUBSYSTEM</b>&#160;&#160;&#160;DebugSubSystem_Dialog</td></tr>
 <tr class="separator:a4c86db9b4d20c25c379871767e1904f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47f90f81482d57aaade18699625a271b"><td class="memItemLeft" align="right" valign="top"><a id="a47f90f81482d57aaade18699625a271b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COPY_COLOR_NAME</b>(X,  Y,  Z)&#160;&#160;&#160;{const char *pX = X(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>()); if(pX) strncpy(Y,pX,sizeof(Y)); else strncpy(Y,Z,sizeof(Y));}</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COPY_COLOR_NAME</b>(X,  Y,  Z)&#160;&#160;&#160;{const char *pX = X(<a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>()); if(pX) strncpy(Y,pX,sizeof(Y)); else strncpy(Y,Z,sizeof(Y));}</td></tr>
 <tr class="separator:a47f90f81482d57aaade18699625a271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab8c73137f754b5662dd2d6dbf4e76245"><td class="memItemLeft" align="right" valign="top">typedef struct __DIALOG_WINDOW__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">DIALOG_WINDOW</a></td></tr>
-<tr class="memdesc:gab8c73137f754b5662dd2d6dbf4e76245"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  <a href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">More...</a><br /></td></tr>
+<tr class="memitem:gab8c73137f754b5662dd2d6dbf4e76245"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__DIALOG__WINDOW.html">s_DIALOG_WINDOW</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">DIALOG_WINDOW</a></td></tr>
+<tr class="memdesc:gab8c73137f754b5662dd2d6dbf4e76245"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure, an extension of WBDialogWindow.  <a href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">More...</a><br /></td></tr>
 <tr class="separator:gab8c73137f754b5662dd2d6dbf4e76245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:af8e643515805cf3031739584d81e2389"><td class="memItemLeft" align="right" valign="top"><a id="af8e643515805cf3031739584d81e2389"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DlgResourceStringKeywordIndices</b> { <br />
 &#160;&#160;<b>DlgResourceKW__BEGIN_DIALOG</b> =0, 
-<b>DlgResourceKW__END_DIALOG</b>, 
-<b>DlgResourceKW__FONT</b>, 
-<b>DlgResourceKW__CONTROL</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__END_DIALOG</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__FONT</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__CONTROL</b>, 
 <br />
 &#160;&#160;<b>DlgResourceKW__ID</b>, 
-<b>DlgResourceKW__X</b>, 
-<b>DlgResourceKW__Y</b>, 
-<b>DlgResourceKW__WIDTH</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__X</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__Y</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__WIDTH</b>, 
 <br />
 &#160;&#160;<b>DlgResourceKW__HEIGHT</b>, 
-<b>DlgResourceKW__VISIBLE</b>, 
-<b>DlgResourceKW__INVISIBLE</b>, 
-<b>DlgResourceKW__TITLE</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__VISIBLE</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__INVISIBLE</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__TITLE</b>, 
 <br />
 &#160;&#160;<b>DlgResourceKW__VA_DLGTOP</b>, 
-<b>DlgResourceKW__VA_DLGBOTTOM</b>, 
-<b>DlgResourceKW__VA_DLGCENTER</b>, 
-<b>DlgResourceKW__HA_DLGLEFT</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__VA_DLGBOTTOM</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__VA_DLGCENTER</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__HA_DLGLEFT</b>, 
 <br />
 &#160;&#160;<b>DlgResourceKW__HA_DLGRIGHT</b>, 
-<b>DlgResourceKW__HA_DLGCENTER</b>, 
-<b>DlgResourceKW__VRESIZE</b>, 
-<b>DlgResourceKW__HRESIZE</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__HA_DLGCENTER</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__VRESIZE</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__HRESIZE</b>, 
 <br />
 &#160;&#160;<b>DlgResourceKW__BORDER</b>, 
-<b>DlgResourceKW__NOBORDER</b>, 
-<b>DlgResourceKW__CLICKABLE</b>, 
-<b>DlgResourceKW__CHECKED</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__NOBORDER</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__CLICKABLE</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__CHECKED</b>, 
 <br />
 &#160;&#160;<b>DlgResourceKW__ENABLED</b>, 
-<b>DlgResourceKW__DISABLED</b>, 
-<b>DlgResourceKW__VA_TEXT_TOP</b>, 
-<b>DlgResourceKW__VA_TEXT_BOTTOM</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__DISABLED</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__VA_TEXT_TOP</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__VA_TEXT_BOTTOM</b>, 
 <br />
 &#160;&#160;<b>DlgResourceKW__VA_TEXT_CENTER</b>, 
-<b>DlgResourceKW__HA_TEXT_LEFT</b>, 
-<b>DlgResourceKW__HA_TEXT_RIGHT</b>, 
-<b>DlgResourceKW__HA_TEXT_CENTER</b>
+<br />
+&#160;&#160;<b>DlgResourceKW__HA_TEXT_LEFT</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__HA_TEXT_RIGHT</b>, 
+<br />
+&#160;&#160;<b>DlgResourceKW__HA_TEXT_CENTER</b>
 <br />
  }</td></tr>
 <tr class="separator:af8e643515805cf3031739584d81e2389"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +291,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>iIDSymbol
 <tr class="separator:a28be0cbe5928a2bf1a95f87df290f829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation for dialog (frame) window and intercommunication structures and APIs </p>
+<div class="textblock"><p>Implementation for dialog (frame) window and intercommunication structures and APIs. </p>
 
 <p class="definition">Definition in file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 </div><h2 class="groupheader">Variable Documentation</h2>
@@ -281,7 +315,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>iIDSymbol
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">={ <span class="stringliteral">&quot;BEGIN_DIALOG&quot;</span>,<span class="stringliteral">&quot;END_DIALOG&quot;</span>,<span class="stringliteral">&quot;FONT&quot;</span>,<span class="stringliteral">&quot;CONTROL&quot;</span>,<span class="stringliteral">&quot;ID&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;X&quot;</span>,<span class="stringliteral">&quot;Y&quot;</span>,<span class="stringliteral">&quot;WIDTH&quot;</span>,<span class="stringliteral">&quot;HEIGHT&quot;</span>,<span class="stringliteral">&quot;VISIBLE&quot;</span>,<span class="stringliteral">&quot;INVISIBLE&quot;</span>,<span class="stringliteral">&quot;TITLE&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VALIGN_DIALOG_BOTTOM&quot;</span>,<span class="stringliteral">&quot;VALIGN_DIALOG_TOP&quot;</span>,<span class="stringliteral">&quot;VALIGN_DIALOG_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;HALIGN_DIALOG_LEFT&quot;</span>,<span class="stringliteral">&quot;HALIGN_DIALOG_RIGHT&quot;</span>,<span class="stringliteral">&quot;HALIGN_DIALOG_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VRESIZE&quot;</span>,<span class="stringliteral">&quot;HRESIZE&quot;</span>,<span class="stringliteral">&quot;BORDER&quot;</span>,<span class="stringliteral">&quot;NOBORDER&quot;</span>,<span class="stringliteral">&quot;CLICKABLE&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;CHECKED&quot;</span>,<span class="stringliteral">&quot;ENABLED&quot;</span>,<span class="stringliteral">&quot;DISABLED&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;VALIGN_TEXT_TOP&quot;</span>,<span class="stringliteral">&quot;VALIGN_TEXT_BOTTOM&quot;</span>,<span class="stringliteral">&quot;VALIGN_TEXT_CENTER&quot;</span>,</div><div class="line">                                          <span class="stringliteral">&quot;HALIGN_TEXT_LEFT&quot;</span>,<span class="stringliteral">&quot;HALIGN_TEXT_RIGHT&quot;</span>,<span class="stringliteral">&quot;HALIGN_TEXT_CENTER&quot;</span>,</div><div class="line">                                          NULL }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01783">1783</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01785">1785</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -292,7 +326,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>iIDSymbol
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="dialog__window_8c.html">dialog_window.c</a></li>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

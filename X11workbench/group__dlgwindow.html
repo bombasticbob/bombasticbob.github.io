@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X11workbench Toolkit: Dialog (Frame) Windows</title>
+<title>X11workbench Toolkit: Dialog Frame Windows</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ $(document).ready(function(){initNavTree('group__dlgwindow.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Dialog (Frame) Windows<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a></div></div>  </div>
+<div class="title">Dialog Frame Windows<div class="ingroups"><a class="el" href="group__dialog.html">Dialog Boxes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -85,13 +85,13 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab8c73137f754b5662dd2d6dbf4e76245"><td class="memItemLeft" align="right" valign="top">typedef struct __DIALOG_WINDOW__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">DIALOG_WINDOW</a></td></tr>
-<tr class="memdesc:gab8c73137f754b5662dd2d6dbf4e76245"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  <a href="#gab8c73137f754b5662dd2d6dbf4e76245">More...</a><br /></td></tr>
+<tr class="memitem:gab8c73137f754b5662dd2d6dbf4e76245"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__DIALOG__WINDOW.html">s_DIALOG_WINDOW</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">DIALOG_WINDOW</a></td></tr>
+<tr class="memdesc:gab8c73137f754b5662dd2d6dbf4e76245"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure, an extension of WBDialogWindow.  <a href="#gab8c73137f754b5662dd2d6dbf4e76245">More...</a><br /></td></tr>
 <tr class="separator:gab8c73137f754b5662dd2d6dbf4e76245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a5708463cbce854b9df6363c1f43bad"><td class="memItemLeft" align="right" valign="top">typedef struct __WB_DIALOG_ENTRY__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a></td></tr>
+<tr class="memitem:ga3a5708463cbce854b9df6363c1f43bad"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__WB__DIALOG__ENTRY.html">s_WB_DIALOG_ENTRY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a></td></tr>
 <tr class="memdesc:ga3a5708463cbce854b9df6363c1f43bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure identifying one of the controls that appears on a dialog window.  <a href="#ga3a5708463cbce854b9df6363c1f43bad">More...</a><br /></td></tr>
 <tr class="separator:ga3a5708463cbce854b9df6363c1f43bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4eaea60424ed090d6f051d41f7663b1a"><td class="memItemLeft" align="right" valign="top">typedef struct __WB_DIALOG_WINDOW__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a></td></tr>
+<tr class="memitem:ga4eaea60424ed090d6f051d41f7663b1a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__WB__DIALOG__WINDOW.html">s_WB_DIALOG_WINDOW</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a></td></tr>
 <tr class="memdesc:ga4eaea60424ed090d6f051d41f7663b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure identifying a dialog (frame) window.  <a href="#ga4eaea60424ed090d6f051d41f7663b1a">More...</a><br /></td></tr>
 <tr class="separator:ga4eaea60424ed090d6f051d41f7663b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -151,7 +151,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="separator:ga9d2e85a542eea2eafa3f1ec876ae4b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Dialog (Frame) Windows are specialized frame windows that normally execute as MODAL windows ( see <a class="el" href="group__events.html#ga0c303659d95901643983f88a38948b44" title="Shows a &#39;modal&#39; window by processing events until the window closes.">WBShowModal()</a> and <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351" title="End a modal window with a specific return value.">WBEndModal()</a> ).<br />
+<p>Dialog Frame Windows are specialized frame windows that normally execute as MODAL windows ( see <a class="el" href="group__events.html#ga0c303659d95901643983f88a38948b44" title="Shows a &#39;modal&#39; window by processing events until the window closes.">WBShowModal()</a> and <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351" title="End a modal window with a specific return value.">WBEndModal()</a> ).<br />
 A lot of specialized processing needs to be done for a proper dialog window, including all of the hot keys necessary to change focus and activate 'default' buttons and controls. Additionally, it is often desirable to create a dialog window 'on the fly' from a resource that can be language-dependent or content-dependent (or both). For this reason the Dialog portion of the X11 Work Bench Toolkit API supports dialog window creation from a text resource, using registered identifier names within the resource text. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab8c73137f754b5662dd2d6dbf4e76245"></a>
@@ -166,8 +166,8 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
       </table>
 </div><div class="memdoc">
 
-<p>DIALOG_WINDOW structure (internal), an extension of WBDialogWindow. </p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__DIALOG_WINDOW__</div><div class="line">{</div><div class="line">  <a class="code" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a> wbDLG;            <span class="comment">// WBDialogWIndow structure, required to be at the beginning</span></div><div class="line"></div><div class="line">  <a class="code" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a> *pwContents;       <span class="comment">// WBAlloc&#39;d array of child window/control information as</span></div><div class="line">                                   <span class="comment">// WBDialogEntry following order of windows creation and tab order</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> nContents;                   <span class="comment">// size of &#39;pwContents&#39; when pwContents is not NULL</span></div><div class="line">  <span class="keywordtype">int</span> nMaxContents;                <span class="comment">// extent of &#39;pwContents&#39; when pwContents is not NULL</span></div><div class="line">  <span class="keywordtype">char</span> *szTitle;                   <span class="comment">// title bar string (WBAlloc&#39;d pointer, must WBFree on destroy)</span></div><div class="line"></div><div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pDLGCallback;         <span class="comment">// pointer to dialog window callback function</span></div><div class="line"></div><div class="line">  <span class="keyword">struct </span>__DIALOG_WINDOW__ *pNext; <span class="comment">// internal use only, pointer to next entry in chain (linked list)</span></div><div class="line"></div><div class="line">} <a class="code" href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">DIALOG_WINDOW</a>;</div></div><!-- fragment --><p>Dialog 'owner' window structure, kept internally as part of a link list. This structure keeps track of the child (control) windows and global properties. See also <a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> and WBDialogPropList.<br />
+<p>DIALOG_WINDOW structure, an extension of WBDialogWindow. </p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__DIALOG__WINDOW.html">s_DIALOG_WINDOW</a></div><div class="line">{</div><div class="line">  <a class="code" href="structs__WB__DIALOG__WINDOW.html">WBDialogWindow</a> <a class="code" href="structs__DIALOG__WINDOW.html#abbd3348b2419dc3237a6a963cc6aa704">wbDLG</a>;            <span class="comment">// WBDialogWIndow structure, required to be at the beginning</span></div><div class="line"></div><div class="line">  <a class="code" href="structs__WB__DIALOG__ENTRY.html">WBDialogEntry</a> *<a class="code" href="structs__DIALOG__WINDOW.html#a8cb4686b7633f8696696761533a37b4a">pwContents</a>;       <span class="comment">// WBAlloc&#39;d array of child window/control information as</span></div><div class="line">                                   <span class="comment">// WBDialogEntry following order of windows creation and tab order</span></div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__DIALOG__WINDOW.html#a45b1722dcd4bfec379e336b4ddb3870c">nContents</a>;                   <span class="comment">// size of &#39;pwContents&#39; when pwContents is not NULL</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__DIALOG__WINDOW.html#adf4e1559b888de60b9fc1cf1771875ad">nMaxContents</a>;                <span class="comment">// extent of &#39;pwContents&#39; when pwContents is not NULL</span></div><div class="line">  <span class="keywordtype">char</span> *<a class="code" href="structs__DIALOG__WINDOW.html#a1b1024bebb223853fcd34131aae6c549">szTitle</a>;                   <span class="comment">// title bar string (WBAlloc&#39;d pointer, must WBFree on destroy)</span></div><div class="line"></div><div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> <a class="code" href="structs__DIALOG__WINDOW.html#a75b5ac90ba23f881854d08b7f7b9385c">pDLGCallback</a>;         <span class="comment">// pointer to dialog window callback function</span></div><div class="line"></div><div class="line">  <span class="keyword">struct </span><a class="code" href="structs__DIALOG__WINDOW.html">s_DIALOG_WINDOW</a> *<a class="code" href="structs__DIALOG__WINDOW.html#a66b020d6cc9269c5b534beb3b18c7035">pNext</a>; <span class="comment">// internal use only, pointer to next entry in chain (linked list)</span></div><div class="line"></div><div class="line">} <a class="code" href="group__dlgwindow.html#gab8c73137f754b5662dd2d6dbf4e76245">DIALOG_WINDOW</a>;</div></div><!-- fragment --><p>Dialog 'owner' window structure, kept internally as part of a link list. This structure keeps track of the child (control) windows and global properties. See also <a class="el" href="group__dlgctrl__types.html#gacbd581d981459f107eb29a6e946506a6">WB_DIALOG_PROP</a> and WBDialogPropList.<br />
 </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad" title="Structure identifying one of the controls that appears on a dialog window.">WBDialogEntry</a>, <a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a" title="Structure identifying a dialog (frame) window.">WBDialogWindow</a> </dd></dl>
 
@@ -186,7 +186,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 </div><div class="memdoc">
 
 <p>Structure identifying one of the controls that appears on a dialog window. </p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__WB_DIALOG_ENTRY__</div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ulTag;  <span class="comment">// tag word DIALOG_ENTRY_TAG</span></div><div class="line">  Window wID;          <span class="comment">// window ID of control</span></div><div class="line">  Atom aClass;         <span class="comment">// control class identifier</span></div><div class="line">  <span class="keywordtype">int</span> iID;             <span class="comment">// control unique identifier (number or atom, as appropriate, unique to dialog window)</span></div><div class="line">  <span class="keywordtype">int</span> iFlags;          <span class="comment">// visibility, focus, etc.</span></div><div class="line">  <span class="keywordtype">int</span> iX,              <span class="comment">// horizontal position of upper left corner of control (client-relative)</span></div><div class="line">      iY,              <span class="comment">// vertical position of upper left corner of control (client-relative)</span></div><div class="line">      iWidth,          <span class="comment">// width of control</span></div><div class="line">      iHeight;         <span class="comment">// height of control</span></div><div class="line">} <a class="code" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a>;</div></div><!-- fragment --><p>Public members of the structure that identifies a dialog control. This structure identifies one of the controls that appears on a dialog window. Each control will uniquely map to one of these structures.</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__WB__DIALOG__ENTRY.html">s_WB_DIALOG_ENTRY</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structs__WB__DIALOG__ENTRY.html#a9cad1622f4396ded0afaf6a8d8a5727a">ulTag</a>;  <span class="comment">// tag word DIALOG_ENTRY_TAG</span></div><div class="line">  Window <a class="code" href="structs__WB__DIALOG__ENTRY.html#ac1bf4c310535451938ef5b31b2b0c51b">wID</a>;          <span class="comment">// window ID of control</span></div><div class="line">  Atom <a class="code" href="structs__WB__DIALOG__ENTRY.html#a22e6314c12a504e76f0dad137c8eb41e">aClass</a>;         <span class="comment">// control class identifier</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__DIALOG__ENTRY.html#a0b691228d5cd92d0578b0814a760e858">iID</a>;             <span class="comment">// control unique identifier (number or atom, as appropriate, unique to dialog window)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__DIALOG__ENTRY.html#aa554ac4b7e21f28462750b92ad87add8">iFlags</a>;          <span class="comment">// visibility, focus, etc.</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__DIALOG__ENTRY.html#aa46fd71a7485fa548df5fd9356167814">iX</a>,              <span class="comment">// horizontal position of upper left corner of control (client-relative)</span></div><div class="line">      <a class="code" href="structs__WB__DIALOG__ENTRY.html#a40c1eea16ed01cb492c2faf0eeb8a6e7">iY</a>,              <span class="comment">// vertical position of upper left corner of control (client-relative)</span></div><div class="line">      <a class="code" href="structs__WB__DIALOG__ENTRY.html#a339c9f28b92af29925c235e75f37bd11">iWidth</a>,          <span class="comment">// width of control</span></div><div class="line">      <a class="code" href="structs__WB__DIALOG__ENTRY.html#a2884aa55a9f2544c59a08976071b1d64">iHeight</a>;         <span class="comment">// height of control</span></div><div class="line">} <a class="code" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a>;</div></div><!-- fragment --><p>Public members of the structure that identifies a dialog control. This structure identifies one of the controls that appears on a dialog window. Each control will uniquely map to one of these structures.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a" title="Structure identifying a dialog (frame) window.">WBDialogWindow</a> </dd></dl>
 
 </div>
@@ -204,7 +204,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 </div><div class="memdoc">
 
 <p>Structure identifying a dialog (frame) window. </p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__WB_DIALOG_WINDOW__</div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ulTag;    <span class="comment">// tag word, always assigned to DIALOG_WINDOW_TAG</span></div><div class="line">  Window wID;            <span class="comment">// window ID of the dialog (frame) window</span></div><div class="line">  Window wIDOwner;       <span class="comment">// window ID of the dialog&#39;s OWNER (can be &#39;None&#39;, should be assigned for Modal dialogs)</span></div><div class="line">  <span class="keywordtype">void</span> *pUserData;       <span class="comment">// user data that&#39;s assignable via API</span></div><div class="line">  <span class="keywordtype">int</span> iFlags;            <span class="comment">// bitmask of attribute flags (see &#39;WBDialogWindowFlags&#39; enumeration)</span></div><div class="line">  <span class="keywordtype">int</span> iClientX,          <span class="comment">// horizontal position of upper left corner of client area, relative to the window</span></div><div class="line">      iClientY,          <span class="comment">// vertical position of upper left corner of client area, relative to the window</span></div><div class="line">      iClientWidth,      <span class="comment">// width of the dialog window&#39;s client area</span></div><div class="line">      iClientHeight;     <span class="comment">// height of the dialog window&#39;s client area</span></div><div class="line">  XColor clrFG,          <span class="comment">// foreground pixel color</span></div><div class="line">         clrBG,          <span class="comment">// background pixel color</span></div><div class="line">         clrBD;          <span class="comment">// border pixel color</span></div><div class="line">} <a class="code" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a>;</div></div><!-- fragment --><p>This structure identifies the dialog (frame) window. The public members are documented in this file. Private members store information that is only accessible using the API functions (such as an array of <a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a> structures).</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__WB__DIALOG__WINDOW.html">s_WB_DIALOG_WINDOW</a></div><div class="line">{</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structs__WB__DIALOG__WINDOW.html#a9cad1622f4396ded0afaf6a8d8a5727a">ulTag</a>;    <span class="comment">// tag word, always assigned to DIALOG_WINDOW_TAG</span></div><div class="line">  Window <a class="code" href="structs__WB__DIALOG__WINDOW.html#ac1bf4c310535451938ef5b31b2b0c51b">wID</a>;            <span class="comment">// window ID of the dialog (frame) window</span></div><div class="line">  Window <a class="code" href="structs__WB__DIALOG__WINDOW.html#a8ee54f42851c33959157c826f2847e83">wIDOwner</a>;       <span class="comment">// window ID of the dialog&#39;s OWNER (can be &#39;None&#39;, should be assigned for Modal dialogs)</span></div><div class="line">  <span class="keywordtype">void</span> *<a class="code" href="structs__WB__DIALOG__WINDOW.html#a8d75dbe9027a94780bc2f31670400613">pUserData</a>;       <span class="comment">// user data that&#39;s assignable via API</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__DIALOG__WINDOW.html#aa554ac4b7e21f28462750b92ad87add8">iFlags</a>;            <span class="comment">// bitmask of attribute flags (see &#39;WBDialogWindowFlags&#39; enumeration)</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__DIALOG__WINDOW.html#ab7853bf1a94cfbc4acf1198eb8e557d5">iClientX</a>,          <span class="comment">// horizontal position of upper left corner of client area, relative to the window</span></div><div class="line">      <a class="code" href="structs__WB__DIALOG__WINDOW.html#a357ee914afb0052f18c556589b678566">iClientY</a>,          <span class="comment">// vertical position of upper left corner of client area, relative to the window</span></div><div class="line">      <a class="code" href="structs__WB__DIALOG__WINDOW.html#a27424747da84f0a941eabfa48faf916b">iClientWidth</a>,      <span class="comment">// width of the dialog window&#39;s client area</span></div><div class="line">      <a class="code" href="structs__WB__DIALOG__WINDOW.html#a611ee0649d456278be1b38dffce515a5">iClientHeight</a>;     <span class="comment">// height of the dialog window&#39;s client area</span></div><div class="line">  XColor <a class="code" href="structs__WB__DIALOG__WINDOW.html#aa253b1f842bc04541a5ce0e9c4c40d75">clrFG</a>,          <span class="comment">// foreground pixel color</span></div><div class="line">         <a class="code" href="structs__WB__DIALOG__WINDOW.html#a941251ffe1c31fbb1b408a2f491f2614">clrBG</a>,          <span class="comment">// background pixel color</span></div><div class="line">         <a class="code" href="structs__WB__DIALOG__WINDOW.html#a6e418d6909b006779a63227887fdaf15">clrBD</a>;          <span class="comment">// border pixel color</span></div><div class="line">} <a class="code" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a>;</div></div><!-- fragment --><p>This structure identifies the dialog (frame) window. The public members are documented in this file. Private members store information that is only accessible using the API functions (such as an array of <a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad">WBDialogEntry</a> structures).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__dlgwindow.html#ga3a5708463cbce854b9df6363c1f43bad" title="Structure identifying one of the controls that appears on a dialog window.">WBDialogEntry</a> </dd></dl>
 
 </div>
@@ -240,7 +240,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>The 'owning' window defines the window that the dialog belongs to such that when the dialog is destroyed (and currently has focus) this window will automatically be raised and assigned the input focus. This is NOT the same as the parent window!</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00553">553</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00555">555</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Use this function to destroy a modeless dialog window using the window ID of the dialog (frame) window. This also causes the 'WBDialogWindow' structure to be destroyed. Use caution if you retained a pointer to it.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00563">563</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00565">565</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Use this function to destroy a modeless dialog window using the WBDialogWindow for the dialog (frame) window. This also causes the 'WBDialogWindow' structure to be destroyed. Use caution if you retained a pointer to it, to avoid re-using the (now) invalid pointer.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00568">568</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00570">570</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>To obtain the Window ID of a member control, using the control's ID, call this function.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01380">1380</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01382">1382</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>This is usually the preferred method of obtaining information about a dialog control. Call this function to obtain a pointer to the WBDialogEntry for a control, passing the WBDialogWindow pointer and the window ID. The return value from <a class="el" href="group__dlgwindow.html#gaa4434295b82ee7f976033c303c088320" title="returns the Window ID of a member control of the dialog window using the &#39;control ID&#39;">DLGGetDialogControl()</a> can be passed directly as the control's Window ID.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01399">1399</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01401">1401</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Use this function to obtain a pointer to the 'user data' for the dialog (frame) window. This function returns NULL if there is no <a class="el" href="group__dlgwindow.html#ga4eaea60424ed090d6f051d41f7663b1a">WBDialogWindow</a> structure associated with the window, or if there is no user data assigned.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01368">1368</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01370">1370</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 <p>Each dialog window has what can be called a 'tab order' in which the FIRST control listed in the resource is the FIRST control in the tab order, the next control listed in the resource is the NEXT control, and so on. Tab order has nothing to do with the control's position within the dialog window. It is solely dependent on its order in the resource.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01418">1418</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01420">1420</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -471,7 +471,7 @@ A lot of specialized processing needs to be done for a proper dialog window, inc
 If the specified control ID is the LAST one, this function returns the FIRST dialog control's window ID</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01428">1428</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01430">1430</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -506,7 +506,7 @@ If the specified control ID is the LAST one, this function returns the FIRST dia
 If the specified control ID is the FIRST one, this function returns the LAST dialog control's window ID</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01452">1452</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01454">1454</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -686,7 +686,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <p>Return the height of a dialog unit, in pixels. Currently hard-coded to '1'</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00178">178</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00180">180</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -720,7 +720,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <p>Return the width of a dialog unit, in pixels. Currently hard-coded to '1'</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00183">183</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00185">185</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 <p>Forcing re-calculation of the layout implies that size, position, and content information is to be re-evaluated and updated, as needed, in an implementation-specific manner.</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01361">1361</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l01363">1363</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ If the specified control ID is the FIRST one, this function returns the LAST dia
 NOTE: not all events will pass through the callback. Some are handled solely by the dialog window default processing</p>
 <p>Header File: <a class="el" href="dialog__window_8h.html">dialog_window.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00616">616</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dialog__window_8c_source.html#l00618">618</a> of file <a class="el" href="dialog__window_8c_source.html">dialog_window.c</a>.</p>
 
 </div>
 </div>
@@ -789,7 +789,7 @@ NOTE: not all events will pass through the callback. Some are handled solely by 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

@@ -7,7 +7,8 @@ var group__wcore =
     [ "Graphics Context APIs related to Windows", "group__wcore__gc.html", "group__wcore__gc" ],
     [ "WBLocateWindowCallback", "group__wcore.html#gab37976e62900c9fd328045c33317a369", null ],
     [ "WBCreateWindow_flags", "group__wcore.html#ga2e7647b8aa40d85f3329ce9b661852f5", [
-      [ "WBCreateWindow_flagsDefault", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a886a86125ba7a6bdaa3c58ed9fd64f31", null ]
+      [ "WBCreateWindow_flagsDefault", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a886a86125ba7a6bdaa3c58ed9fd64f31", null ],
+      [ "WBCreateWindow_flagsNoImageCache", "group__wcore.html#gga2e7647b8aa40d85f3329ce9b661852f5a4d20903c6d17fc6ca816bcbb7da7b805", null ]
     ] ],
     [ "WBAddMenuWindow", "group__wcore.html#ga695df2e819b6c11e8ddf547c6629ac80", null ],
     [ "WBAppDefault", "group__wcore.html#gaebf8a5ba7fe6108957684397fd4ed634", null ],
@@ -25,10 +26,10 @@ var group__wcore =
     [ "WBGetWindowFGColor", "group__wcore.html#ga3beb6cfa88596c4660152e63dd6f6cf5", null ],
     [ "WBGetWindowFont", "group__wcore.html#ga0f1d3f825b023f28cbcc9555035e5a02", null ],
     [ "WBIsChildWindow", "group__wcore.html#gaa22217ba9e1d6e96e68a39e71d5116ca", null ],
+    [ "WBIsValid", "group__wcore.html#ga2a90faa7799fed7477bb8c1ca6a1a376", null ],
     [ "WBLocateWindow", "group__wcore.html#gae9d6d01f936dee703f708e7e4120c099", null ],
     [ "WBQueryWindowFont", "group__wcore.html#gad60b10079f97ae5c3d5e3b9fa360e427", null ],
     [ "WBRegisterAppCallback", "group__wcore.html#gae168859f15eab09401ca4271e064b299", null ],
-    [ "WBRegisterMenuCallback", "group__wcore.html#gabff70a128dddc8634658e93cfd7b51bb", null ],
     [ "WBRegisterWindowCallback", "group__wcore.html#ga7785399731e3727be5b33170d9dd3625", null ],
     [ "WBRemoveMenuWindow", "group__wcore.html#ga4553d3a9b93d12308ca096aa4625b44e", null ],
     [ "WBReparentWindow", "group__wcore.html#ga814d21556a9f1eb379e7e72fd6b72a51", null ],

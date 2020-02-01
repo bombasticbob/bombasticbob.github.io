@@ -68,6 +68,7 @@ $(document).ready(function(){initNavTree('draw__text_8h.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -82,12 +83,21 @@ $(document).ready(function(){initNavTree('draw__text_8h.html','');});
 </div>
 <p><a href="draw__text_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtagDT__WORD.html">tagDT_WORD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure defining a 'word' for rendering purposes.  <a href="structtagDT__WORD.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtagDT__WORDS.html">tagDT_WORDS</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of DT_WORD structures along with a pointer to the original text.  <a href="structtagDT__WORDS.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0438c7249c6116b4d483a1651af2847a"><td class="memItemLeft" align="right" valign="top">typedef struct __DT_WORD__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a></td></tr>
+<tr class="memitem:ga0438c7249c6116b4d483a1651af2847a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtagDT__WORD.html">tagDT_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">DT_WORD</a></td></tr>
 <tr class="memdesc:ga0438c7249c6116b4d483a1651af2847a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure defining a 'word' for rendering purposes.  <a href="group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a">More...</a><br /></td></tr>
 <tr class="separator:ga0438c7249c6116b4d483a1651af2847a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="memItemLeft" align="right" valign="top">typedef struct __DT_WORDS__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a></td></tr>
+<tr class="memitem:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtagDT__WORDS.html">tagDT_WORDS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">DT_WORDS</a></td></tr>
 <tr class="memdesc:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of DT_WORD structures along with a pointer to the original text.  <a href="group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52">More...</a><br /></td></tr>
 <tr class="separator:ga2aa53ab555af841f2aa3bd5e5ef21e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -95,34 +105,52 @@ Typedefs</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga082c206bfd406e64f16e934644548d40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40">DTAlignment</a> { <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a72306f5eca801e824103a1fd0b53188d">DTAlignment_HLEFT</a> = 1, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9">DTAlignment_HCENTER</a> = 2, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a4517739f660ece9cdab37ba10c495efa">DTAlignment_HRIGHT</a> = 3, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ab786574b5d6658fb6f3e009731e2bbfd">DTAlignment_HJUSTIFY</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aff9323902adb52fee47f497a57c0b3d9">DTAlignment_HCENTER</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a4517739f660ece9cdab37ba10c495efa">DTAlignment_HRIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ab786574b5d6658fb6f3e009731e2bbfd">DTAlignment_HJUSTIFY</a> = 4, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2abf475a51e97fa55a98bb0f734cde76">DTAlignment_HMASK</a> = 0xf, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a20d24f444ddd76c5a6bd9db788acdd5f">DTAlignment_VTOP</a> = 0x10, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a03b1eb562cb646bee8b39ae5dd940af8">DTAlignment_VBOTTOM</a> = 0x20, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2752318131612802b50de90a63af8746">DTAlignment_VCENTER</a> = 0x30, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a20d24f444ddd76c5a6bd9db788acdd5f">DTAlignment_VTOP</a> = 0x10, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a03b1eb562cb646bee8b39ae5dd940af8">DTAlignment_VBOTTOM</a> = 0x20, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2752318131612802b50de90a63af8746">DTAlignment_VCENTER</a> = 0x30, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ae1bca6731a86b174e35173f7a3715d46">DTAlignment_VCENTERASCENT</a> = 0x40, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a63b23f329d537fee04d388190e3aef64">DTAlignment_VCENTERBASELINE</a> = 0x50, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aed72bc3f15671e758d4d02bc9f499b95">DTAlignment_VTOPHALF</a> = 0x60, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a51fd4a54a1d15f105858870f5389acde">DTAlignment_VTBOTTOMHALF</a> = 0x70, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a63b23f329d537fee04d388190e3aef64">DTAlignment_VCENTERBASELINE</a> = 0x50, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40aed72bc3f15671e758d4d02bc9f499b95">DTAlignment_VTOPHALF</a> = 0x60, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a51fd4a54a1d15f105858870f5389acde">DTAlignment_VTBOTTOMHALF</a> = 0x70, 
 <br />
 &#160;&#160;<b>DTAlignment_VMASK</b> = 0xf0, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2f647c5a4d7da10a46e583bbc1d0158a">DTAlignment_V_BEFORE_H</a> = 0x100, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2704ae0b66da9e61b5df32cdfe820515">DTAlignment_NO_VRESIZE</a> = 0x200, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ae9bdfc2c8e174936ac52b85dc1145acd">DTAlignment_NO_HRESIZE</a> = 0x400, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2f647c5a4d7da10a46e583bbc1d0158a">DTAlignment_V_BEFORE_H</a> = 0x100, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a2704ae0b66da9e61b5df32cdfe820515">DTAlignment_NO_VRESIZE</a> = 0x200, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40ae9bdfc2c8e174936ac52b85dc1145acd">DTAlignment_NO_HRESIZE</a> = 0x400, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a606dd177e39da086cf9320cf0b2de2c0">DTAlignment_NO_RESIZE</a> = 0x600, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40af6f73c2d3293592b078f0cf3f03dbce4">DTAlignment_RESIZE_PIXEL</a> = 0x800, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a0fa654264f70855c10b5960fbdb5e94c">DTAlignment_NO_SHRINK</a> = 0x1000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804">DTAlignment_ALLOW_TRAILING</a> = 0x2000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40af6f73c2d3293592b078f0cf3f03dbce4">DTAlignment_RESIZE_PIXEL</a> = 0x800, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a0fa654264f70855c10b5960fbdb5e94c">DTAlignment_NO_SHRINK</a> = 0x1000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a517841794e41baab54c7bf2c82ae5804">DTAlignment_ALLOW_TRAILING</a> = 0x2000, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a204dff61b43cd0d49df26819f2a1984c">DTAlignment_NO_WORD_WRAP</a> = 0x4000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a5747ce763c071a30cc7f19b5d66d724f">DTAlignment_ANTIALIAS</a> = 0x10000000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a196a3d7f39c98443cc28b2d35ba1108b">DTAlignment_SINGLELINE</a> = 0x20000000, 
-<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da">DTAlignment_UNDERSCORE</a> = 0x40000000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a5747ce763c071a30cc7f19b5d66d724f">DTAlignment_ANTIALIAS</a> = 0x10000000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a196a3d7f39c98443cc28b2d35ba1108b">DTAlignment_SINGLELINE</a> = 0x20000000, 
+<br />
+&#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a87b8afbb4cefa0df6587cbe5cf9d64da">DTAlignment_UNDERSCORE</a> = 0x40000000, 
 <br />
 &#160;&#160;<a class="el" href="group__draw__text.html#ga082c206bfd406e64f16e934644548d40a15455a303ffe237eb6e4acddf39d52f6">DTAlignment_PRINTING</a> = 0x80000000
 <br />
@@ -172,7 +200,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="draw__text_8h.html">draw_text.h</a></li>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

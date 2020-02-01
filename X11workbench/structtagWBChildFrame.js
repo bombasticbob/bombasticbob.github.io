@@ -1,0 +1,27 @@
+var structtagWBChildFrame =
+[
+    [ "aImageAtom", "structtagWBChildFrame.html#a7542563daf460d8496807608ae40232f", null ],
+    [ "destructor", "structtagWBChildFrame.html#a8dd331e9b7696394f91a7af8a8a1aa97", null ],
+    [ "extent", "structtagWBChildFrame.html#a2227550f6cb6cd368c40c0e9d77efce6", null ],
+    [ "fFlags", "structtagWBChildFrame.html#a8923c9253dc2f4b2186a564941c06794", null ],
+    [ "geom", "structtagWBChildFrame.html#af0c954535c57f8d693e63e7c18c4731f", null ],
+    [ "geomEntire", "structtagWBChildFrame.html#a9e681dc938cdfe58d022d0181f88ca93", null ],
+    [ "iColWidth", "structtagWBChildFrame.html#ae0fbcc2f7866acb6705dfc2d9f32158a", null ],
+    [ "iContextMenuID", "structtagWBChildFrame.html#a26e41e6640cc0c7900ca1a478f9e6230", null ],
+    [ "iRowHeight", "structtagWBChildFrame.html#ab34480c6f1fc391b5ede9d85f853e846", null ],
+    [ "iSplit", "structtagWBChildFrame.html#afbeb6624eec2723842ebacaced2422be", null ],
+    [ "origin", "structtagWBChildFrame.html#ab78ce17a0ab4be39cdc5815133b9a89e", null ],
+    [ "pFont", "structtagWBChildFrame.html#a334bda24a68a43c9aba14ea95befa669", null ],
+    [ "pMenuHandler", "structtagWBChildFrame.html#aabc16695d018877c93e89552d9d85376", null ],
+    [ "pNext", "structtagWBChildFrame.html#a35193ac6bd33b8f7b347763ab7491b76", null ],
+    [ "pOwner", "structtagWBChildFrame.html#a49a27a7812434437ed11908f962b6bfc", null ],
+    [ "pszMenuResource", "structtagWBChildFrame.html#ae4d0d2bddab3b244568a7b8fd7995278", null ],
+    [ "pUI", "structtagWBChildFrame.html#aa9e6d66c0fa43bced366d7cc828650a5", null ],
+    [ "pUserCallback", "structtagWBChildFrame.html#a128b559603a87806509de798256669e3", null ],
+    [ "scroll", "structtagWBChildFrame.html#a7927b1a39e5de20d8824c8c0d51c3245", null ],
+    [ "scrollSplit", "structtagWBChildFrame.html#a4b071d37a5058ddadde9dff72de06fb7", null ],
+    [ "szDisplayName", "structtagWBChildFrame.html#a495794af48dde1f64ab785bd60b86c4b", null ],
+    [ "szStatusText", "structtagWBChildFrame.html#a196b0cda9efae24073bb27c1bde81cdf", null ],
+    [ "ulTag", "structtagWBChildFrame.html#a9cad1622f4396ded0afaf6a8d8a5727a", null ],
+    [ "wID", "structtagWBChildFrame.html#ac1bf4c310535451938ef5b31b2b0c51b", null ]
+];

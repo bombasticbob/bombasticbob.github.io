@@ -99,13 +99,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga97483426403de83cbd3a1e150896c471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the geometry of the window relative to the root window.  <a href="#ga97483426403de83cbd3a1e150896c471">More...</a><br /></td></tr>
 <tr class="separator:ga97483426403de83cbd3a1e150896c471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga898a6ceaf7ca1062ece62ab6b5c905ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__geom.html#ga898a6ceaf7ca1062ece62ab6b5c905ed">WBGetWindowGeom0</a> (Window wID, <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> *pGeom)</td></tr>
-<tr class="memdesc:ga898a6ceaf7ca1062ece62ab6b5c905ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ABSOLUTE window geometry relative the screen.  <a href="#ga898a6ceaf7ca1062ece62ab6b5c905ed">More...</a><br /></td></tr>
+<tr class="memdesc:ga898a6ceaf7ca1062ece62ab6b5c905ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ABSOLUTE window geometry relative to the screen.  <a href="#ga898a6ceaf7ca1062ece62ab6b5c905ed">More...</a><br /></td></tr>
 <tr class="separator:ga898a6ceaf7ca1062ece62ab6b5c905ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac709d588caa1437ca81a5d78140cce69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__geom.html#gac709d588caa1437ca81a5d78140cce69">WBGetWindowRect</a> (Window wID, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect)</td></tr>
-<tr class="memdesc:gac709d588caa1437ca81a5d78140cce69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the WB_RECT (rectangle) defined by the window's geometry, including the border area.  <a href="#gac709d588caa1437ca81a5d78140cce69">More...</a><br /></td></tr>
+<tr class="memdesc:gac709d588caa1437ca81a5d78140cce69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> (rectangle) defined by the window's geometry, including the border area.  <a href="#gac709d588caa1437ca81a5d78140cce69">More...</a><br /></td></tr>
 <tr class="separator:gac709d588caa1437ca81a5d78140cce69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19e4ba777feaca6530867f1628c34b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__geom.html#ga19e4ba777feaca6530867f1628c34b27">WBGetClientRect</a> (Window wID, <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> *pRect)</td></tr>
-<tr class="memdesc:ga19e4ba777feaca6530867f1628c34b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the WB_RECT (rectangle) defined by the window's geometry, excluding the border area.  <a href="#ga19e4ba777feaca6530867f1628c34b27">More...</a><br /></td></tr>
+<tr class="memdesc:ga19e4ba777feaca6530867f1628c34b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> (rectangle) defined by the window's geometry, excluding the border area.  <a href="#ga19e4ba777feaca6530867f1628c34b27">More...</a><br /></td></tr>
 <tr class="separator:ga19e4ba777feaca6530867f1628c34b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37248fbd87d296716633672fd98877f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wcore__geom.html#ga37248fbd87d296716633672fd98877f9">WBXlatCoordPoint</a> (Window wIDSrc, int iXSrc, int iYSrc, Window wIDDest, int *piXDest, int *piYDest)</td></tr>
 <tr class="memdesc:ga37248fbd87d296716633672fd98877f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate X,Y point coordinates relative to a window.  <a href="#ga37248fbd87d296716633672fd98877f9">More...</a><br /></td></tr>
@@ -153,8 +153,8 @@ Functions</h2></td></tr>
 <p>Returns logical TRUE if the geometry G1 overlaps/intersects G2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">G1</td><td>A WB_GEOM structure bounding the first area to check </td></tr>
-    <tr><td class="paramname">G2</td><td>A second WB_GEOM structure bounding the second area to check </td></tr>
+    <tr><td class="paramname">G1</td><td>A <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure bounding the first area to check </td></tr>
+    <tr><td class="paramname">G2</td><td>A second <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure bounding the second area to check </td></tr>
   </table>
   </dd>
 </dl>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">X</td><td>The X value to check for </td></tr>
     <tr><td class="paramname">Y</td><td>The Y value to check for </td></tr>
-    <tr><td class="paramname">G</td><td>A WB_GEOM structure bounding the area to check </td></tr>
+    <tr><td class="paramname">G</td><td>A <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure bounding the area to check </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,7 +248,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">X</td><td>The X value to check for </td></tr>
     <tr><td class="paramname">Y</td><td>The Y value to check for </td></tr>
-    <tr><td class="paramname">R</td><td>A WB_RECT structure bounding the area to check </td></tr>
+    <tr><td class="paramname">R</td><td>A <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> structure bounding the area to check </td></tr>
   </table>
   </dd>
 </dl>
@@ -287,8 +287,8 @@ Functions</h2></td></tr>
 <p>Returns logical TRUE if the rectangle R1 overlaps/intersects R2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">R1</td><td>A WB_RECT structure bounding the first area to check </td></tr>
-    <tr><td class="paramname">R2</td><td>A second WB_RECT structure bounding the second area to check </td></tr>
+    <tr><td class="paramname">R1</td><td>A <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> structure bounding the first area to check </td></tr>
+    <tr><td class="paramname">R2</td><td>A second <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> structure bounding the second area to check </td></tr>
   </table>
   </dd>
 </dl>
@@ -325,17 +325,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the WB_RECT (rectangle) defined by the window's geometry, excluding the border area. </p>
+<p>Returns the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> (rectangle) defined by the window's geometry, excluding the border area. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_RECT data for </td></tr>
-    <tr><td class="paramname">pRect</td><td>A pointer to the WB_RECT structure to receive the data</td></tr>
+    <tr><td class="paramname">wID</td><td>The Window ID to obtain the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> data for </td></tr>
+    <tr><td class="paramname">pRect</td><td>A pointer to the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> structure to receive the data</td></tr>
   </table>
   </dd>
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06709">6709</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06708">6708</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -368,14 +368,14 @@ Functions</h2></td></tr>
 <p>Returns the RAW geometry of the window as reported by the window manager. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_GEOM data for </td></tr>
-    <tr><td class="paramname">pGeom</td><td>A pointer to the WB_GEOM structure to receive the data</td></tr>
+    <tr><td class="paramname">wID</td><td>The Window ID to obtain the <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> data for </td></tr>
+    <tr><td class="paramname">pGeom</td><td>A pointer to the <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure to receive the data</td></tr>
   </table>
   </dd>
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06523">6523</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06522">6522</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -405,18 +405,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the ABSOLUTE window geometry relative the screen. </p>
+<p>Returns the ABSOLUTE window geometry relative to the screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_GEOM data for </td></tr>
-    <tr><td class="paramname">pGeom</td><td>A pointer to the WB_GEOM structure to receive the data</td></tr>
+    <tr><td class="paramname">wID</td><td>The Window ID to obtain the <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> data for </td></tr>
+    <tr><td class="paramname">pGeom</td><td>A pointer to the <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure to receive the data</td></tr>
   </table>
   </dd>
 </dl>
 <p>The 'ABSOLUTE' window geometry is the position of the window relative to the origin point (the upper left corner of the screen). Window managers typically cook all of the XEvent and API data that relates to window positioning, such that a top level frame window's upper left corner is nearly always reported as 0,0 (or similar). Not all window managers behave the same in this regard. To ensure that an ABSOLUTE window position is known (helpful for centering on screen, etc.), the absolute coordinates are frequently cached within the internal data structure associated with the window. Those cached values are returned by this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06474">6474</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06473">6473</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -449,14 +449,14 @@ Functions</h2></td></tr>
 <p>Returns the geometry of the window relative to the root window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_GEOM data for </td></tr>
-    <tr><td class="paramname">pGeom</td><td>A pointer to the WB_GEOM structure to receive the data</td></tr>
+    <tr><td class="paramname">wID</td><td>The Window ID to obtain the <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> data for </td></tr>
+    <tr><td class="paramname">pGeom</td><td>A pointer to the <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure to receive the data</td></tr>
   </table>
   </dd>
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06608">6608</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06607">6607</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -486,17 +486,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the WB_RECT (rectangle) defined by the window's geometry, including the border area. </p>
+<p>Returns the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> (rectangle) defined by the window's geometry, including the border area. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wID</td><td>The Window ID to obtain the WB_RECT data for </td></tr>
-    <tr><td class="paramname">pRect</td><td>A pointer to the WB_RECT structure to receive the data</td></tr>
+    <tr><td class="paramname">wID</td><td>The Window ID to obtain the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> data for </td></tr>
+    <tr><td class="paramname">pRect</td><td>A pointer to the <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> structure to receive the data</td></tr>
   </table>
   </dd>
 </dl>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06694">6694</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06693">6693</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ Functions</h2></td></tr>
 <p>Use this function to see if coordinates relative to one window also fall within another window. Typical use includes 'hover' detection, drag/drop operations, and child window activation To specify X,Y screen coordinates, pass 'None' for 'wIDRef'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06820">6820</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06819">6819</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -598,9 +598,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wIDSrc</td><td>The source Window ID </td></tr>
-    <tr><td class="paramname">pGeomSrc</td><td>A const pointer to a WB_GEOM structure containing the coordinates to translate </td></tr>
+    <tr><td class="paramname">pGeomSrc</td><td>A const pointer to a <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure containing the coordinates to translate </td></tr>
     <tr><td class="paramname">wIDDest</td><td>The destination Window ID </td></tr>
-    <tr><td class="paramname">pGeomDest</td><td>A pointer to a WB_GEOM structure that receives the translated coordinates</td></tr>
+    <tr><td class="paramname">pGeomDest</td><td>A pointer to a <a class="el" href="group__core__struct.html#ga37cf1decbd82558512b5b108ec6f3d01">WB_GEOM</a> structure that receives the translated coordinates</td></tr>
   </table>
   </dd>
 </dl>
@@ -608,7 +608,7 @@ Functions</h2></td></tr>
 To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06763">6763</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06762">6762</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -678,7 +678,7 @@ To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
 To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06728">6728</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06727">6727</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -724,9 +724,9 @@ To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wIDSrc</td><td>The source Window ID </td></tr>
-    <tr><td class="paramname">pRectSrc</td><td>A const pointer to a WB_RECT structure containing the coordinates to translate </td></tr>
+    <tr><td class="paramname">pRectSrc</td><td>A const pointer to a <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> structure containing the coordinates to translate </td></tr>
     <tr><td class="paramname">wIDDest</td><td>The destination Window ID </td></tr>
-    <tr><td class="paramname">pRectDest</td><td>A pointer to a WB_RECT structure that receives the translated coordinates</td></tr>
+    <tr><td class="paramname">pRectDest</td><td>A pointer to a <a class="el" href="group__core__struct.html#ga3d18dd30d60f281275c252bf6c7f5718">WB_RECT</a> structure that receives the translated coordinates</td></tr>
   </table>
   </dd>
 </dl>
@@ -734,7 +734,7 @@ To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
 To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
  Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06793">6793</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l06792">6792</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ To translate from screen coordinates, pass 'None' for 'wIDSrc'<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:04 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

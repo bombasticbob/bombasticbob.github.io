@@ -1,15 +1,27 @@
 var group__menu =
 [
-    [ "strong", "structstrong.html", null ],
-    [ "__WBMenu", "struct____WBMenu.html", [
-      [ "iMenuID", "struct____WBMenu.html#a2bb21eec20254688020158712a7914cc", null ],
-      [ "nItems", "struct____WBMenu.html#a24b1cb6145a6f39dcafd3622138a05d3", null ],
-      [ "nMaxItems", "struct____WBMenu.html#a63473adbe2109db2b71cfba9efff0df6", null ],
-      [ "nMaxPopups", "struct____WBMenu.html#a6f97d99954ffe66592d514cd8f57ed50", null ],
-      [ "nPopups", "struct____WBMenu.html#ae15309f5e39a6efbc70fe8d9b8222535", null ],
-      [ "ppItems", "struct____WBMenu.html#aaffc211c6852c7f86f7a4dee949b618c", null ],
-      [ "ppPopups", "struct____WBMenu.html#af48da72d9f8d489f7ddd8aee93d4b2ff", null ],
-      [ "uiTag", "struct____WBMenu.html#a9242290baf4201fe01c6b88b162a2fb0", null ]
+    [ "tagWBMenuItem__", "structtagWBMenuItem____.html", [
+      [ "data", "structtagWBMenuItem____.html#aa12fa7025612e5f4774f2412dd7f465b", null ],
+      [ "iAction", "structtagWBMenuItem____.html#a6afcd9b6e57229f2cb0822631939f73d", null ],
+      [ "iHotKey", "structtagWBMenuItem____.html#aa952e7b1e353d2d10725e0adb34c989f", null ],
+      [ "iMenuItemText", "structtagWBMenuItem____.html#aed4773ce2c0a2045039203efefdf81c0", null ],
+      [ "iPosition", "structtagWBMenuItem____.html#a5d95487df73075e613c66baba4097a6e", null ],
+      [ "iTextWidth", "structtagWBMenuItem____.html#a7edb30334c0aee836b64400457fc937f", null ],
+      [ "iTooltipText", "structtagWBMenuItem____.html#a379bda790791742d87163a7e9c4aa331", null ],
+      [ "iUnderscore", "structtagWBMenuItem____.html#a9fbeb92f9390bf28646ccba81cdb8ace", null ],
+      [ "nDataSize", "structtagWBMenuItem____.html#a11868eb3d48b4fda9f66ea0bc586ae6c", null ],
+      [ "nHotKey", "structtagWBMenuItem____.html#a28b2937d5c94a3f034d2ae3c3b29af8a", null ],
+      [ "uiTag", "structtagWBMenuItem____.html#a9242290baf4201fe01c6b88b162a2fb0", null ]
+    ] ],
+    [ "tagWBMenu", "structtagWBMenu.html", [
+      [ "iMenuID", "structtagWBMenu.html#a2bb21eec20254688020158712a7914cc", null ],
+      [ "nItems", "structtagWBMenu.html#a24b1cb6145a6f39dcafd3622138a05d3", null ],
+      [ "nMaxItems", "structtagWBMenu.html#a63473adbe2109db2b71cfba9efff0df6", null ],
+      [ "nMaxPopups", "structtagWBMenu.html#a6f97d99954ffe66592d514cd8f57ed50", null ],
+      [ "nPopups", "structtagWBMenu.html#ae15309f5e39a6efbc70fe8d9b8222535", null ],
+      [ "ppItems", "structtagWBMenu.html#aaffc211c6852c7f86f7a4dee949b618c", null ],
+      [ "ppPopups", "structtagWBMenu.html#aaebfdf2ad6782b7c60cd34403c0b8f32", null ],
+      [ "uiTag", "structtagWBMenu.html#a9242290baf4201fe01c6b88b162a2fb0", null ]
     ] ],
     [ "WBMENU_DYNAMIC_HIGH_BIT", "group__menu.html#gab44db5d5d421803fa6a04d4019ff28cf", null ],
     [ "WBMENU_POPUP_HIGH_BIT", "group__menu.html#ga789ce61d76d2e8f8255210cc915577e7", null ],

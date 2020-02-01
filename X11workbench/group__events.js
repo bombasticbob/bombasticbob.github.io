@@ -1,7 +1,7 @@
 var group__events =
 [
     [ "ClientMessage Atoms", "group__events__atoms.html", "group__events__atoms" ],
-    [ "Data Types and Definitions", "group__events__types.html", "group__events__types" ],
+    [ "Data Types, Enumerations, and Definitions", "group__events__types.html", "group__events__types" ],
     [ "Keyboard Event Handling", "group__keyboard.html", "group__keyboard" ],
     [ "Mouse Pointer Event Handling", "group__pointer.html", "group__pointer" ],
     [ "WB_KEYBOARD_INPUT_MASK", "group__events.html#ga686aaff005092ee3cde10c1967dddedb", null ],

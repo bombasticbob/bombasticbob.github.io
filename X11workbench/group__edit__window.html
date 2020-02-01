@@ -79,13 +79,13 @@ $(document).ready(function(){initNavTree('group__edit__window.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrong.html">strong</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  <a href="structstrong.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtagWBEditWindow.html">tagWBEditWindow</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure that defines an Edit Window.  <a href="structtagWBEditWindow.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab0739851c618da43225f6cfac53c0ac2"><td class="memItemLeft" align="right" valign="top">typedef struct __WBEditWindow__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a></td></tr>
+<tr class="memitem:gab0739851c618da43225f6cfac53c0ac2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtagWBEditWindow.html">tagWBEditWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a></td></tr>
 <tr class="memdesc:gab0739851c618da43225f6cfac53c0ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure that defines an Edit Window.  <a href="#gab0739851c618da43225f6cfac53c0ac2">More...</a><br /></td></tr>
 <tr class="separator:gab0739851c618da43225f6cfac53c0ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -127,7 +127,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Edit windows are 'Child Frame' windows, owned by a frame window, in which text is edited and menu callbacks are processed.<br />
-The edited text is typically associated with a file name. An Edit Window uses the <a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> object (structure) to manage its state.</p>
+The edited text is typically associated with a file name. An Edit Window uses the <a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> object (structure) to manage its state.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__text__object.html">Text Editing Utilities and Objects</a> </dd></dl>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab0739851c618da43225f6cfac53c0ac2"></a>
@@ -145,8 +145,8 @@ The edited text is typically associated with a file name. An Edit Window uses th
 <p>Structure that defines an Edit Window. </p>
 <p>The WBEditWindow structure defines an 'Edit Window' that is a 'superclass' of a Child Frame window. The first element MUST be the 'WBChildFrame'. Elements that follow it are specific to the Edit Window.</p>
 <p>This uses a TEXT_OBJECT structure to store the actual text data, and to manage the UI functionality.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__WBEditWindow__</div><div class="line">{</div><div class="line">  <a class="code" href="group__child__frame.html#gaf06650d056e926657cc94548674c1d98">WBChildFrame</a> childframe;          <span class="comment">// elements common to a &#39;child frame&#39; (derived object)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ulTag;               <span class="comment">// &#39;Tag&#39; identifying this structure as a WBEditWindow</span></div><div class="line"></div><div class="line">  <span class="keywordtype">char</span> *szFileName;                 <span class="comment">// malloc&#39;d name of file associated with this edit window (NULL if none)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> llModDateTime; <span class="comment">// file&#39;s mod date/time - see WBGetFileModDateTime()</span></div><div class="line"></div><div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> pUserCallback;         <span class="comment">// user callback function to receive notifications and unhandled messages</span></div><div class="line"></div><div class="line">  <a class="code" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> xTextObject;          <span class="comment">// the &#39;TEXT_OBJECT&#39; member, that does MOST of the work</span></div><div class="line"></div><div class="line">} <a class="code" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a>;</div></div><!-- fragment --><p>Additional 'Child Frame' API functions can be called directly by using a type cast from 'WBEditWindow *' to 'WBChildFrame *', or by using the 'WBChildWindowFromWindowID()' function.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> </dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtagWBEditWindow.html">tagWBEditWindow</a></div><div class="line">{</div><div class="line">  <a class="code" href="structtagWBChildFrame.html">WBChildFrame</a> <a class="code" href="structtagWBEditWindow.html#af43b80ebb62fff3da6707d56b1487a65">childframe</a>;          <span class="comment">// elements common to a &#39;child frame&#39; (derived object)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structtagWBEditWindow.html#a9cad1622f4396ded0afaf6a8d8a5727a">ulTag</a>;               <span class="comment">// &#39;Tag&#39; identifying this structure as a WBEditWindow</span></div><div class="line"></div><div class="line">  <span class="keywordtype">char</span> *<a class="code" href="structtagWBEditWindow.html#ae6b57379a155552a87604d15bdea3a5a">szFileName</a>;                 <span class="comment">// malloc&#39;d name of file associated with this edit window (NULL if none)</span></div><div class="line"></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="structtagWBEditWindow.html#a14272c7ab3be4908b1f8705c5de0f77c">llModDateTime</a>; <span class="comment">// file&#39;s mod date/time - see WBGetFileModDateTime()</span></div><div class="line"></div><div class="line">  <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a> <a class="code" href="structtagWBEditWindow.html#a128b559603a87806509de798256669e3">pUserCallback</a>;         <span class="comment">// user callback function to receive notifications and unhandled messages</span></div><div class="line"></div><div class="line">  <a class="code" href="structs__text__object.html">TEXT_OBJECT</a> <a class="code" href="structtagWBEditWindow.html#ae0d2ba439b30720b797c108c4009a769">xTextObject</a>;          <span class="comment">// the &#39;TEXT_OBJECT&#39; member, that does MOST of the work</span></div><div class="line"></div><div class="line">} <a class="code" href="group__edit__window.html#gab0739851c618da43225f6cfac53c0ac2">WBEditWindow</a>;</div></div><!-- fragment --><p>Additional 'Child Frame' API functions can be called directly by using a type cast from 'WBEditWindow *' to 'WBChildFrame *', or by using the 'WBChildWindowFromWindowID()' function.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> </dd></dl>
 
 </div>
 </div>
@@ -530,7 +530,7 @@ data.l[2] The current column (0-based) (hover notify only)<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

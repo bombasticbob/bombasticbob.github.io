@@ -6,7 +6,7 @@ var group__core =
     [ "Graphics Abstraction Layer", "group__graphics.html", "group__graphics" ],
     [ "Timer Functions", "group__timer.html", "group__timer" ],
     [ "Clipboard and Selections", "group__clipboard.html", "group__clipboard" ],
-    [ "Default Parameters and Definitions", "group__defaults.html", "group__defaults" ],
+    [ "Default Parameters and Definitions", "group__wbdefaults.html", "group__wbdefaults" ],
     [ "'Core' Structures", "group__core__struct.html", "group__core__struct" ],
     [ "Atoms for Window Manager and Clipboard", "group__wmatom.html", "group__wmatom" ]
 ];

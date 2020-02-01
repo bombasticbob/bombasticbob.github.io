@@ -1,6 +1,6 @@
 var group__menu__popup =
 [
-    [ "strong", "structstrong.html", null ],
+    [ "WBMenuPopupWindow", "group__menu__popup.html#ga55b2e297de4e2e8d73ae812fe843fcf2", null ],
     [ "MBCreateMenuPopupWindow", "group__menu__popup.html#ga5a5ff78cc5ec8a0d31c51881e64e0d64", null ],
     [ "MBDestroyMenuPopupWindow", "group__menu__popup.html#ga4c2df8b51befbc2dc4d02537c2249914", null ],
     [ "MBFindMenuPopupWindow", "group__menu__popup.html#ga6390f0c36dce0247e6f91f0cc8a993ea", null ],

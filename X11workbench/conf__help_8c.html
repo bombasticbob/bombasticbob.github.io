@@ -117,10 +117,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_CURSOR_BLINK_TIME</b>&#160;&#160;&#160;1200 /* msec */</td></tr>
 <tr class="separator:a29051ea03e414f5ef0c7e5c15a204dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa7dab283c25528f228e1e938a30726"><td class="memItemLeft" align="right" valign="top"><a id="adaa7dab283c25528f228e1e938a30726"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR0</b>(X,  Y)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &gt; 0) {  }</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR0</b>(X,  Y)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &gt; 0) {  }</td></tr>
 <tr class="separator:adaa7dab283c25528f228e1e938a30726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b54ca275d4d228b63c0bab30424630"><td class="memItemLeft" align="right" valign="top"><a id="a61b54ca275d4d228b63c0bab30424630"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR</b>(X,  Y,  Z)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &lt;= 0){ <a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(&quot;%s - WARNING:  can't find color %s, using default value %s\n&quot;, __FUNCTION__, X, Z); strcpy(Y,Z); }</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_COLOR</b>(X,  Y,  Z)&#160;&#160;&#160;if(<a class="el" href="group__desktop__settings.html#gad6b8e3e44a9c6f68d3501def49b2b1df">CHGetResourceString</a>(<a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay</a>(), X, Y, sizeof(Y)) &lt;= 0){ <a class="el" href="group__debug.html#ga7733e6c6e9386c713bbe06010f3b6b47">WB_WARN_PRINT</a>(&quot;%s - WARNING:  can't find color %s, using default value %s\n&quot;, __FUNCTION__, X, Z); strcpy(Y,Z); }</td></tr>
 <tr class="separator:a61b54ca275d4d228b63c0bab30424630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -336,7 +336,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>szData</b> [4]</td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_737be4ee9c2278b1c60007ff0c686bd8.html">lib</a></li><li class="navelem"><a class="el" href="conf__help_8c.html">conf_help.c</a></li>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

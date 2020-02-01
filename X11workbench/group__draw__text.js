@@ -1,6 +1,26 @@
 var group__draw__text =
 [
-    [ "strong", "structstrong.html", null ],
+    [ "tagDT_WORD", "structtagDT__WORD.html", [
+      [ "iHeight", "structtagDT__WORD.html#a2884aa55a9f2544c59a08976071b1d64", null ],
+      [ "iIsLineFeed", "structtagDT__WORD.html#adf51da265112e0310b0a782496c94669", null ],
+      [ "iIsTab", "structtagDT__WORD.html#a237a536bc95e0c75ebc9c69e81efc44f", null ],
+      [ "iIsWhiteSpace", "structtagDT__WORD.html#ac1ef761a679b65a4f8d349f8f7d37a07", null ],
+      [ "iWidth", "structtagDT__WORD.html#a339c9f28b92af29925c235e75f37bd11", null ],
+      [ "iX", "structtagDT__WORD.html#aa46fd71a7485fa548df5fd9356167814", null ],
+      [ "iY", "structtagDT__WORD.html#a40c1eea16ed01cb492c2faf0eeb8a6e7", null ],
+      [ "nLength", "structtagDT__WORD.html#ab8842d19dcb5084fd4cca196318d3bd4", null ],
+      [ "pText", "structtagDT__WORD.html#afe44df317fd6bd5ee90f68a9ef8b2073", null ]
+    ] ],
+    [ "tagDT_WORDS", "structtagDT__WORDS.html", [
+      [ "aWords", "structtagDT__WORDS.html#a5c94dd74811f016b5458861460c44933", null ],
+      [ "iMaxHeight", "structtagDT__WORDS.html#aedb7ee58003a0d684429fb1e6808d234", null ],
+      [ "iMaxWidth", "structtagDT__WORDS.html#a978cabf5fa7005d326e0e3418a63056b", null ],
+      [ "nCount", "structtagDT__WORDS.html#a40cac163737ecbfdcce8144f9a89c552", null ],
+      [ "nMax", "structtagDT__WORDS.html#a23d9f7b5895f47c027059c43a4589e4f", null ],
+      [ "pNext", "structtagDT__WORDS.html#a03064d96fab10b652f5c6d95e12728b4", null ],
+      [ "pPrev", "structtagDT__WORDS.html#a18a65b3bb7168f3e84b1a15bc462243c", null ],
+      [ "szText", "structtagDT__WORDS.html#a55e7f44006af0fe8d5aef9a573402acd", null ]
+    ] ],
     [ "DT_WORD", "group__draw__text.html#ga0438c7249c6116b4d483a1651af2847a", null ],
     [ "DT_WORDS", "group__draw__text.html#ga2aa53ab555af841f2aa3bd5e5ef21e52", null ],
     [ "DTAlignment", "group__draw__text.html#ga082c206bfd406e64f16e934644548d40", [

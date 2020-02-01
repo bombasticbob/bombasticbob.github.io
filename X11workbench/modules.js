@@ -1,6 +1,7 @@
 var modules =
 [
     [ "Application Startup and Shutdown", "group__startup.html", "group__startup" ],
+    [ "Internal-only Startup and SHutdown", "group__startup__internal.html", "group__startup__internal" ],
     [ "Core API", "group__core.html", "group__core" ],
     [ "Platform Independence", "group__platform.html", "group__platform" ],
     [ "Configuration 'helper' functions", "group__conf__help.html", "group__conf__help" ],

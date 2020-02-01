@@ -1,7 +1,36 @@
 var group__desktop__settings =
 [
-    [ "strong", "structstrong.html", null ],
-    [ "em", "structem.html", null ],
+    [ "tagXSETTINGS_DATA_COLOR", "structtagXSETTINGS__DATA__COLOR.html", [
+      [ "sAlpha", "structtagXSETTINGS__DATA__COLOR.html#a9f8c925b4454831f2d5b1db0f57f8250", null ],
+      [ "sBlue", "structtagXSETTINGS__DATA__COLOR.html#a2b4792cb0102f2b2fd228cb026cd3cd4", null ],
+      [ "sGreen", "structtagXSETTINGS__DATA__COLOR.html#a72ec058732a20dfcba6946d6c631373c", null ],
+      [ "sRed", "structtagXSETTINGS__DATA__COLOR.html#ac613f3453e7049c5cb90618fc3dd4bfb", null ]
+    ] ],
+    [ "tagCHXSetting", "structtagCHXSetting.html", [
+      [ "clrData", "structtagCHXSetting.html#ae240c7f4192f75473ba7c40c874c692f", null ],
+      [ "iData", "structtagCHXSetting.html#a467ba57b62803194f79e661ffd6dc73a", null ],
+      [ "iLen", "structtagCHXSetting.html#a5107428870ffb7eeaedd654d10e86916", null ],
+      [ "iType", "structtagCHXSetting.html#adfc54d0a91539b0ef936ee9c7dae58c0", null ],
+      [ "llData", "structtagCHXSetting.html#a7eca3badeedc59e9d0f1e65e1387ff37", null ],
+      [ "pData", "structtagCHXSetting.html#aa92f08987c51e4eb7b92e84944ca2af3", null ],
+      [ "szData", "structtagCHXSetting.html#abe24f5f3933a24906a280ca25840a717", null ],
+      [ "szName", "structtagCHXSetting.html#aa988d6f93c746b6c6e1d869b52ba92a0", null ],
+      [ "uData", "structtagCHXSetting.html#ac181796c2a871cfe48f8d556babfe49c", null ],
+      [ "uiSerial", "structtagCHXSetting.html#a74bf6b69faca68501bfca1269185bc35", null ]
+    ] ],
+    [ "tagCHXSettings", "structtagCHXSettings.html", [
+      [ "aData", "structtagCHXSettings.html#afb4f3d2c83e670d1f57ee2750bca723e", null ],
+      [ "nSettings", "structtagCHXSettings.html#a20dadca04de7a0fac91cae9cc2974b8a", null ],
+      [ "pDisplay", "structtagCHXSettings.html#a0e5b4ba1b30f7c298b82d7592e78a8e3", null ],
+      [ "uiSerial", "structtagCHXSettings.html#a74bf6b69faca68501bfca1269185bc35", null ]
+    ] ],
+    [ "tagCHXMLEntry", "structtagCHXMLEntry.html", [
+      [ "iContainer", "structtagCHXMLEntry.html#a0d22ca0cc003c2e92d1ae964b1c60f09", null ],
+      [ "iContentsIndex", "structtagCHXMLEntry.html#a18284d62701b4b25cf642bf09b54529c", null ],
+      [ "iNextIndex", "structtagCHXMLEntry.html#a1fa20917bd6c65fc11a5e73975756828", null ],
+      [ "nDataOffset", "structtagCHXMLEntry.html#ae15ca83b37811d6a3fcb090fdb0948e1", null ],
+      [ "nLabelOffset", "structtagCHXMLEntry.html#a22f6679d807c3adea7383509eda2d44d", null ]
+    ] ],
     [ "CHXSetting", "group__desktop__settings.html#ga99c9eca7bca8350d6657917666ae2426", null ],
     [ "CHXSettings", "group__desktop__settings.html#ga78d9a6c66a95454b2fc898da68562c95", null ],
     [ "XSETTINGS_DATA_COLOR", "group__desktop__settings.html#gae01fd313d4d5127b45782b652e5eb5e3", null ],

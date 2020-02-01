@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('text__object_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>A 'C++'-like object for managing text, can be overridden.  
+<p>A 'C++'-like object for managing text, that can be overridden for custom behavior.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="window__helper_8h_source.html">window_helper.h</a>&quot;</code><br />
 </div>
@@ -86,8 +86,14 @@ $(document).ready(function(){initNavTree('text__object_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__text__buffer__.html">_text_buffer_</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">'base class' structure for TEXT_OBJECT  <a href="struct__text__buffer__.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__text__object__vtable.html">s_text_object_vtable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">'vtable' structure for TEXT_OBJECT  <a href="structs__text__object__vtable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__text__object.html">s_text_object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">'base class' structure for TEXT_OBJECT  <a href="structs__text__object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__text__buffer.html">s_text_buffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">'base class' structure for TEXT_OBJECT  <a href="structs__text__buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -112,108 +118,134 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga47fb27d1f2a968b64a65476649b52f36"><td class="memItemLeft" align="right" valign="top">typedef struct _text_object_vtable_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b64a65476649b52f36">TEXT_OBJECT_VTABLE</a></td></tr>
-<tr class="memdesc:ga47fb27d1f2a968b64a65476649b52f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">'vtable' structure for TEXT_OBJECT  <a href="group__text__object__structures.html#ga47fb27d1f2a968b64a65476649b52f36">More...</a><br /></td></tr>
-<tr class="separator:ga47fb27d1f2a968b64a65476649b52f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7953714ac52297d4eab55b7ea5f3dc7d"><td class="memItemLeft" align="right" valign="top">typedef struct _text_object_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a></td></tr>
-<tr class="memdesc:ga7953714ac52297d4eab55b7ea5f3dc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">'base class' structure for TEXT_OBJECT  <a href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">More...</a><br /></td></tr>
-<tr class="separator:ga7953714ac52297d4eab55b7ea5f3dc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5833900dbf06c8ec0f32459f8d151df6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__text__buffer__.html">_text_buffer_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a></td></tr>
-<tr class="memdesc:ga5833900dbf06c8ec0f32459f8d151df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">'base class' structure for TEXT_OBJECT  <a href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">More...</a><br /></td></tr>
-<tr class="separator:ga5833900dbf06c8ec0f32459f8d151df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d3c4a4320a2b66ed17cd114a8d8955b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__text__object.html">s_text_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a></td></tr>
+<tr class="memdesc:ga1d3c4a4320a2b66ed17cd114a8d8955b"><td class="mdescLeft">&#160;</td><td class="mdescRight">'base class' structure for TEXT_OBJECT  <a href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">More...</a><br /></td></tr>
+<tr class="separator:ga1d3c4a4320a2b66ed17cd114a8d8955b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f0fb16320c2bce33f44d20997fff276"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__text__object__vtable.html">s_text_object_vtable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__structures.html#ga1f0fb16320c2bce33f44d20997fff276">TEXT_OBJECT_VTABLE</a></td></tr>
+<tr class="memdesc:ga1f0fb16320c2bce33f44d20997fff276"><td class="mdescLeft">&#160;</td><td class="mdescRight">'vtable' structure for TEXT_OBJECT  <a href="group__text__object__structures.html#ga1f0fb16320c2bce33f44d20997fff276">More...</a><br /></td></tr>
+<tr class="separator:ga1f0fb16320c2bce33f44d20997fff276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2620adc5d25e079502f8c37ef3ca73f0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__text__buffer.html">s_text_buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">TEXT_BUFFER</a></td></tr>
+<tr class="memdesc:ga2620adc5d25e079502f8c37ef3ca73f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">'base class' structure for TEXT_OBJECT  <a href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">More...</a><br /></td></tr>
+<tr class="separator:ga2620adc5d25e079502f8c37ef3ca73f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga9856ebbcda78c7da7c18524b5f11003f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#ga9856ebbcda78c7da7c18524b5f11003f">_FileType_</a> { <br />
-&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fa1558365ab19cea1817e298849b80302e">FileType_PLAIN_TEXT</a> = 0, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fa37d6cb2945c9a55827a6e29b6356aaaf">FileType_PROGRAM</a> = 1, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003faef381fca548327e485c735249a3069a2">FileType_RESOURCE</a> = 2, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fac5cc49ee47038cbf2c1a5bbf0e65d340">FileType_XML</a> = 3, 
+<tr class="memitem:ga9963a1bb0f42a47362581e14c904ce7f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#ga9963a1bb0f42a47362581e14c904ce7f">e_FileType</a> { <br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fa1558365ab19cea1817e298849b80302e">FileType_PLAIN_TEXT</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fa4de4ad34f2563a8c57cee1448d44e8c4">FileType_MAKEFILE</a> = 4, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fa80105dd163713e070291786fcef7ecb9">FileType_CUSTOM_FLAG</a> = 0x80, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fa5dd7063b9fbfe53f0f12457480762639">FileType_MASK</a> = 0xff, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fab1fc36a383c29fb8a9baf78bbc197673">FileType_HARDTAB</a> = 0x10000, 
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fa37d6cb2945c9a55827a6e29b6356aaaf">FileType_PROGRAM</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fad2dbf710d95d67746db99ffe4ba2f994">FileType_RESERVED2</a> = 0x20000, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003faa82d3dbca8fae38937e4a2cb06bc2749">FileType_RESERVED3</a> = 0x40000, 
-<a class="el" href="group__text__object__definitions.html#gga9856ebbcda78c7da7c18524b5f11003fa2a66392aea40c34c40a6ac32f5712f6c">FileType_RESERVED4</a> = 0x80000
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7faef381fca548327e485c735249a3069a2">FileType_RESOURCE</a> = 2, 
 <br />
- }</td></tr>
-<tr class="memdesc:ga9856ebbcda78c7da7c18524b5f11003f"><td class="mdescLeft">&#160;</td><td class="mdescRight">file types for TEXT_OBJECT  <a href="group__text__object__definitions.html#ga9856ebbcda78c7da7c18524b5f11003f">More...</a><br /></td></tr>
-<tr class="separator:ga9856ebbcda78c7da7c18524b5f11003f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dfaf31d98729de91c6eed721db8fd1e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#ga1dfaf31d98729de91c6eed721db8fd1e">_LineFeed_</a> { <br />
-&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ea0d131396b6601763222c252847d3fa94">LineFeed_NONE</a> = -1, 
-<a class="el" href="group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ea302bde58c44cf1d4a589060e792d4543">LineFeed_DEFAULT</a> = 0, 
-<a class="el" href="group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ead8ae53b6b42fc5480dc9e2c4ff48aa53">LineFeed_NEWLINE</a> = 1, 
-<a class="el" href="group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ea03f4ce5711b2a26a5b2ddbbc6e710acb">LineFeed_RETURN</a> = 2, 
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fac5cc49ee47038cbf2c1a5bbf0e65d340">FileType_XML</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ea4ea5a0ae60774c805d12f492dcd341be">LineFeed_CRLF</a> = 3, 
-<a class="el" href="group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ea8d8a64ab608f3e8ac6c21fee0ee110b1">LineFeed_LFCR</a> = 4, 
-<a class="el" href="group__text__object__definitions.html#gga1dfaf31d98729de91c6eed721db8fd1ea84795b4c28c7d981b425137060240b0f">LineFeed_ENTRYCOUNT</a> = 5
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fa4de4ad34f2563a8c57cee1448d44e8c4">FileType_MAKEFILE</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fa80105dd163713e070291786fcef7ecb9">FileType_CUSTOM_FLAG</a> = 0x80, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fa5dd7063b9fbfe53f0f12457480762639">FileType_MASK</a> = 0xff, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fab1fc36a383c29fb8a9baf78bbc197673">FileType_HARDTAB</a> = 0x10000, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fad2dbf710d95d67746db99ffe4ba2f994">FileType_RESERVED2</a> = 0x20000, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7faa82d3dbca8fae38937e4a2cb06bc2749">FileType_RESERVED3</a> = 0x40000, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga9963a1bb0f42a47362581e14c904ce7fa2a66392aea40c34c40a6ac32f5712f6c">FileType_RESERVED4</a> = 0x80000
 <br />
  }</td></tr>
-<tr class="memdesc:ga1dfaf31d98729de91c6eed721db8fd1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">line feed (line ending) types for TEXT_OBJECT  <a href="group__text__object__definitions.html#ga1dfaf31d98729de91c6eed721db8fd1e">More...</a><br /></td></tr>
-<tr class="separator:ga1dfaf31d98729de91c6eed721db8fd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9456e77c727f5401b61753e26dfc1b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#gaa9456e77c727f5401b61753e26dfc1b8">_SelectMode_</a> { <a class="el" href="group__text__object__definitions.html#ggaa9456e77c727f5401b61753e26dfc1b8a1c98f37f07f50df004fa0c686fdbfe99">SelectMode_DEFAULT</a> = 0, 
-<a class="el" href="group__text__object__definitions.html#ggaa9456e77c727f5401b61753e26dfc1b8ae14ea2e9cdc2c7811815f0625596c310">SelectMode_CHAR</a> = 1, 
-<a class="el" href="group__text__object__definitions.html#ggaa9456e77c727f5401b61753e26dfc1b8a33dacb1c36c9b4516286c4ba078866f0">SelectMode_LINE</a> = 2, 
-<a class="el" href="group__text__object__definitions.html#ggaa9456e77c727f5401b61753e26dfc1b8a13a0a7654ca310c2e9558261f13d9281">SelectMode_BOX</a> = 3
+<tr class="memdesc:ga9963a1bb0f42a47362581e14c904ce7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">file types for TEXT_OBJECT  <a href="group__text__object__definitions.html#ga9963a1bb0f42a47362581e14c904ce7f">More...</a><br /></td></tr>
+<tr class="separator:ga9963a1bb0f42a47362581e14c904ce7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50713c46ce7c16d2bc5afce0c9932baf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#ga50713c46ce7c16d2bc5afce0c9932baf">e_LineFeed</a> { <br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga50713c46ce7c16d2bc5afce0c9932bafa0d131396b6601763222c252847d3fa94">LineFeed_NONE</a> = -1, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga50713c46ce7c16d2bc5afce0c9932bafa302bde58c44cf1d4a589060e792d4543">LineFeed_DEFAULT</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga50713c46ce7c16d2bc5afce0c9932bafad8ae53b6b42fc5480dc9e2c4ff48aa53">LineFeed_NEWLINE</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga50713c46ce7c16d2bc5afce0c9932bafa03f4ce5711b2a26a5b2ddbbc6e710acb">LineFeed_RETURN</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga50713c46ce7c16d2bc5afce0c9932bafa4ea5a0ae60774c805d12f492dcd341be">LineFeed_CRLF</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga50713c46ce7c16d2bc5afce0c9932bafa8d8a64ab608f3e8ac6c21fee0ee110b1">LineFeed_LFCR</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga50713c46ce7c16d2bc5afce0c9932bafa84795b4c28c7d981b425137060240b0f">LineFeed_ENTRYCOUNT</a> = 5
+<br />
  }</td></tr>
-<tr class="memdesc:gaa9456e77c727f5401b61753e26dfc1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">select mode types for TEXT_OBJECT  <a href="group__text__object__definitions.html#gaa9456e77c727f5401b61753e26dfc1b8">More...</a><br /></td></tr>
-<tr class="separator:gaa9456e77c727f5401b61753e26dfc1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae25c81a136508d2822cfd94927091186"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#gae25c81a136508d2822cfd94927091186">_InsertMode_</a> { <a class="el" href="group__text__object__definitions.html#ggae25c81a136508d2822cfd94927091186a6329e32095da2ba11efd4a5ac540a50d">InsertMode_DEFAULT</a> = 0, 
-<a class="el" href="group__text__object__definitions.html#ggae25c81a136508d2822cfd94927091186a337d1fc8ff4f8f1a2847b1899633e7fe">InsertMode_INSERT</a> = 1, 
-<a class="el" href="group__text__object__definitions.html#ggae25c81a136508d2822cfd94927091186a068b663bf6f23e10d4ec6440d0fe30cd">InsertMode_OVERWRITE</a> = 2
+<tr class="memdesc:ga50713c46ce7c16d2bc5afce0c9932baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">line feed (line ending) types for TEXT_OBJECT  <a href="group__text__object__definitions.html#ga50713c46ce7c16d2bc5afce0c9932baf">More...</a><br /></td></tr>
+<tr class="separator:ga50713c46ce7c16d2bc5afce0c9932baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1542acf489a91ce919e57e7ea46fef0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#gaf1542acf489a91ce919e57e7ea46fef0">e_SelectMode</a> { <br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#ggaf1542acf489a91ce919e57e7ea46fef0a1c98f37f07f50df004fa0c686fdbfe99">SelectMode_DEFAULT</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#ggaf1542acf489a91ce919e57e7ea46fef0ae14ea2e9cdc2c7811815f0625596c310">SelectMode_CHAR</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#ggaf1542acf489a91ce919e57e7ea46fef0a33dacb1c36c9b4516286c4ba078866f0">SelectMode_LINE</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#ggaf1542acf489a91ce919e57e7ea46fef0a13a0a7654ca310c2e9558261f13d9281">SelectMode_BOX</a> = 3
+<br />
  }</td></tr>
-<tr class="memdesc:gae25c81a136508d2822cfd94927091186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert/Overwrite mode for TEXT_OBJECT.  <a href="group__text__object__definitions.html#gae25c81a136508d2822cfd94927091186">More...</a><br /></td></tr>
-<tr class="separator:gae25c81a136508d2822cfd94927091186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37a3e5c5f3772578e4ddfe9ed6c9f924"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#ga37a3e5c5f3772578e4ddfe9ed6c9f924">_DragState_</a> { <a class="el" href="group__text__object__definitions.html#gga37a3e5c5f3772578e4ddfe9ed6c9f924af8e2c264c4758cc7ef1eaa54b932c2a7">DragState_NONE</a> = 0, 
-<a class="el" href="group__text__object__definitions.html#gga37a3e5c5f3772578e4ddfe9ed6c9f924aeaea3ec6fd34a2930fa8ed1056ac68cb">DragState_CURSOR</a> = 1, 
-<a class="el" href="group__text__object__definitions.html#gga37a3e5c5f3772578e4ddfe9ed6c9f924a9b6532c21012141bce39834afe4bea33">DragState_MOUSE</a> = 2
+<tr class="memdesc:gaf1542acf489a91ce919e57e7ea46fef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">select mode types for TEXT_OBJECT  <a href="group__text__object__definitions.html#gaf1542acf489a91ce919e57e7ea46fef0">More...</a><br /></td></tr>
+<tr class="separator:gaf1542acf489a91ce919e57e7ea46fef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bd0452f072e985332d611afe92a3f07"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#ga2bd0452f072e985332d611afe92a3f07">e_InsertMode</a> { <br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga2bd0452f072e985332d611afe92a3f07a6329e32095da2ba11efd4a5ac540a50d">InsertMode_DEFAULT</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga2bd0452f072e985332d611afe92a3f07a337d1fc8ff4f8f1a2847b1899633e7fe">InsertMode_INSERT</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga2bd0452f072e985332d611afe92a3f07a068b663bf6f23e10d4ec6440d0fe30cd">InsertMode_OVERWRITE</a> = 2
+<br />
  }</td></tr>
-<tr class="memdesc:ga37a3e5c5f3772578e4ddfe9ed6c9f924"><td class="mdescLeft">&#160;</td><td class="mdescRight">State flags for mouse/cursor 'drag' (i.e. selection)  <a href="group__text__object__definitions.html#ga37a3e5c5f3772578e4ddfe9ed6c9f924">More...</a><br /></td></tr>
-<tr class="separator:ga37a3e5c5f3772578e4ddfe9ed6c9f924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ga2bd0452f072e985332d611afe92a3f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert/Overwrite mode for TEXT_OBJECT.  <a href="group__text__object__definitions.html#ga2bd0452f072e985332d611afe92a3f07">More...</a><br /></td></tr>
+<tr class="separator:ga2bd0452f072e985332d611afe92a3f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d12867c340e9632eeb617eec44bcdb0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__definitions.html#ga7d12867c340e9632eeb617eec44bcdb0">e_DragState</a> { <br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga7d12867c340e9632eeb617eec44bcdb0af8e2c264c4758cc7ef1eaa54b932c2a7">DragState_NONE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga7d12867c340e9632eeb617eec44bcdb0aeaea3ec6fd34a2930fa8ed1056ac68cb">DragState_CURSOR</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__text__object__definitions.html#gga7d12867c340e9632eeb617eec44bcdb0a9b6532c21012141bce39834afe4bea33">DragState_MOUSE</a> = 2
+<br />
+ }</td></tr>
+<tr class="memdesc:ga7d12867c340e9632eeb617eec44bcdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">State flags for mouse/cursor 'drag' (i.e. selection)  <a href="group__text__object__definitions.html#ga7d12867c340e9632eeb617eec44bcdb0">More...</a><br /></td></tr>
+<tr class="separator:ga7d12867c340e9632eeb617eec44bcdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7c20ed24f57275db985803f47263a694"><td class="memItemLeft" align="right" valign="top">static __inline__ const <a class="el" href="group__text__object__structures.html#ga47fb27d1f2a968b64a65476649b52f36">TEXT_OBJECT_VTABLE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga7c20ed24f57275db985803f47263a694">WBGetDefaultTextObjectVTable</a> (void)</td></tr>
+<tr class="memitem:ga7c20ed24f57275db985803f47263a694"><td class="memItemLeft" align="right" valign="top">static __inline__ const <a class="el" href="group__text__object__structures.html#ga1f0fb16320c2bce33f44d20997fff276">TEXT_OBJECT_VTABLE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga7c20ed24f57275db985803f47263a694">WBGetDefaultTextObjectVTable</a> (void)</td></tr>
 <tr class="memdesc:ga7c20ed24f57275db985803f47263a694"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the default vtable for a TEXT_OBJECT structure  <a href="group__text__object__utils.html#ga7c20ed24f57275db985803f47263a694">More...</a><br /></td></tr>
 <tr class="separator:ga7c20ed24f57275db985803f47263a694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5a5a199098d57dc59f58090ae22af47"><td class="memItemLeft" align="right" valign="top">static __inline__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gab5a5a199098d57dc59f58090ae22af47">WBIsValidTextObject</a> (const <a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pObj)</td></tr>
+<tr class="memitem:gab5a5a199098d57dc59f58090ae22af47"><td class="memItemLeft" align="right" valign="top">static __inline__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gab5a5a199098d57dc59f58090ae22af47">WBIsValidTextObject</a> (const <a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> *pObj)</td></tr>
 <tr class="memdesc:gab5a5a199098d57dc59f58090ae22af47"><td class="mdescLeft">&#160;</td><td class="mdescRight">'TEXT_OBJECT' validator  <a href="group__text__object__utils.html#gab5a5a199098d57dc59f58090ae22af47">More...</a><br /></td></tr>
 <tr class="separator:gab5a5a199098d57dc59f58090ae22af47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga288a073741ae3c2486370b7130e8dd73"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga288a073741ae3c2486370b7130e8dd73">WBInitializeInPlaceTextObject</a> (<a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pTextObject, Window wIDOwner)</td></tr>
+<tr class="memitem:ga288a073741ae3c2486370b7130e8dd73"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga288a073741ae3c2486370b7130e8dd73">WBInitializeInPlaceTextObject</a> (<a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> *pTextObject, Window wIDOwner)</td></tr>
 <tr class="memdesc:ga288a073741ae3c2486370b7130e8dd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize an 'in-place' TEXT_OBJECT structure  <a href="group__text__object__utils.html#ga288a073741ae3c2486370b7130e8dd73">More...</a><br /></td></tr>
 <tr class="separator:ga288a073741ae3c2486370b7130e8dd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd728e00e574c713e0897d98f3cbf5f4"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gabd728e00e574c713e0897d98f3cbf5f4">WBDestroyInPlaceTextObject</a> (<a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pTextObject)</td></tr>
+<tr class="memitem:gabd728e00e574c713e0897d98f3cbf5f4"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gabd728e00e574c713e0897d98f3cbf5f4">WBDestroyInPlaceTextObject</a> (<a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> *pTextObject)</td></tr>
 <tr class="memdesc:gabd728e00e574c713e0897d98f3cbf5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a previously initialized 'in-place' TEXT_OBJECT structure.  <a href="group__text__object__utils.html#gabd728e00e574c713e0897d98f3cbf5f4">More...</a><br /></td></tr>
 <tr class="separator:gabd728e00e574c713e0897d98f3cbf5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3161994482cbb54c3a35e1c9330c7d1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga3161994482cbb54c3a35e1c9330c7d1f">WBAllocTextBuffer</a> (const char *pBuf, unsigned int cbBufSize)</td></tr>
+<tr class="memitem:ga3161994482cbb54c3a35e1c9330c7d1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">TEXT_BUFFER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga3161994482cbb54c3a35e1c9330c7d1f">WBAllocTextBuffer</a> (const char *pBuf, unsigned int cbBufSize)</td></tr>
 <tr class="memdesc:ga3161994482cbb54c3a35e1c9330c7d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor for a TEXT_BUFFER using defaults.  <a href="group__text__object__utils.html#ga3161994482cbb54c3a35e1c9330c7d1f">More...</a><br /></td></tr>
 <tr class="separator:ga3161994482cbb54c3a35e1c9330c7d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4625b33f8ab15d8646546257af958d45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga4625b33f8ab15d8646546257af958d45">WBCheckReAllocTextBuffer</a> (<a class="el" href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> **ppBuf, int nLinesToAdd)</td></tr>
+<tr class="memitem:ga4625b33f8ab15d8646546257af958d45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga4625b33f8ab15d8646546257af958d45">WBCheckReAllocTextBuffer</a> (<a class="el" href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">TEXT_BUFFER</a> **ppBuf, int nLinesToAdd)</td></tr>
 <tr class="memdesc:ga4625b33f8ab15d8646546257af958d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-allocator for TEXT_BUFFER object.  <a href="group__text__object__utils.html#ga4625b33f8ab15d8646546257af958d45">More...</a><br /></td></tr>
 <tr class="separator:ga4625b33f8ab15d8646546257af958d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa875345ecadd735f983b8a37ba7ce11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gaaa875345ecadd735f983b8a37ba7ce11">WBFreeTextBuffer</a> (<a class="el" href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *pBuf)</td></tr>
+<tr class="memitem:gaaa875345ecadd735f983b8a37ba7ce11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gaaa875345ecadd735f983b8a37ba7ce11">WBFreeTextBuffer</a> (<a class="el" href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">TEXT_BUFFER</a> *pBuf)</td></tr>
 <tr class="memdesc:gaaa875345ecadd735f983b8a37ba7ce11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-allocator for TEXT_BUFFER object, returns ZERO on success. Pointer may be modified (or not).  <a href="group__text__object__utils.html#gaaa875345ecadd735f983b8a37ba7ce11">More...</a><br /></td></tr>
 <tr class="separator:gaaa875345ecadd735f983b8a37ba7ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga926da753b33c387fb009a970a6e97caf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga926da753b33c387fb009a970a6e97caf">WBTextBufferLineLength</a> (<a class="el" href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *pBuf, unsigned long nLine)</td></tr>
+<tr class="memitem:ga926da753b33c387fb009a970a6e97caf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga926da753b33c387fb009a970a6e97caf">WBTextBufferLineLength</a> (<a class="el" href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">TEXT_BUFFER</a> *pBuf, unsigned long nLine)</td></tr>
 <tr class="memdesc:ga926da753b33c387fb009a970a6e97caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text buffer 'cached information' query function indicating a line's cached length.  <a href="group__text__object__utils.html#ga926da753b33c387fb009a970a6e97caf">More...</a><br /></td></tr>
 <tr class="separator:ga926da753b33c387fb009a970a6e97caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21cd50513992d6b1687006d260f69f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga21cd50513992d6b1687006d260f69f42">WBTextBufferLineChange</a> (<a class="el" href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *pBuf, unsigned long nLine, int nNewLen)</td></tr>
+<tr class="memitem:ga21cd50513992d6b1687006d260f69f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga21cd50513992d6b1687006d260f69f42">WBTextBufferLineChange</a> (<a class="el" href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">TEXT_BUFFER</a> *pBuf, unsigned long nLine, int nNewLen)</td></tr>
 <tr class="memdesc:ga21cd50513992d6b1687006d260f69f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text buffer 'cached information' update function indicating a change to a line's length.  <a href="group__text__object__utils.html#ga21cd50513992d6b1687006d260f69f42">More...</a><br /></td></tr>
 <tr class="separator:ga21cd50513992d6b1687006d260f69f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">WBTextBufferRefreshCache</a> (<a class="el" href="group__text__object__structures.html#ga5833900dbf06c8ec0f32459f8d151df6">TEXT_BUFFER</a> *pBuf)</td></tr>
+<tr class="memitem:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">WBTextBufferRefreshCache</a> (<a class="el" href="group__text__object__structures.html#ga2620adc5d25e079502f8c37ef3ca73f0">TEXT_BUFFER</a> *pBuf)</td></tr>
 <tr class="memdesc:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text buffer 'cached information' refresh function.  <a href="group__text__object__utils.html#gad4092bcfdf3f63f4f223c5089bcdd5bf">More...</a><br /></td></tr>
 <tr class="separator:gad4092bcfdf3f63f4f223c5089bcdd5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga13ddd8c043e9ea838b70fbe74b190c92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga13ddd8c043e9ea838b70fbe74b190c92">WBTextObjectSetColorContextCallback</a> (<a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pThis, unsigned long(*callback)(<a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pThis, int nRow, int nCol), void *pColorContextPointer)</td></tr>
+<tr class="memitem:ga13ddd8c043e9ea838b70fbe74b190c92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#ga13ddd8c043e9ea838b70fbe74b190c92">WBTextObjectSetColorContextCallback</a> (<a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> *pThis, unsigned long(*callback)(<a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> *pThis, int nRow, int nCol), void *pColorContextPointer)</td></tr>
 <tr class="memdesc:ga13ddd8c043e9ea838b70fbe74b190c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign callback function for 'color context' for a given character  <a href="group__text__object__utils.html#ga13ddd8c043e9ea838b70fbe74b190c92">More...</a><br /></td></tr>
 <tr class="separator:ga13ddd8c043e9ea838b70fbe74b190c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb89e8eacd7f963104ed12b034482e7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gafb89e8eacd7f963104ed12b034482e7c">WBTextObjectConstructor</a> (unsigned long cbStructSize, const char *szText, unsigned long cbLen, Window wIDOwner)</td></tr>
+<tr class="memitem:gafb89e8eacd7f963104ed12b034482e7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gafb89e8eacd7f963104ed12b034482e7c">WBTextObjectConstructor</a> (unsigned long cbStructSize, const char *szText, unsigned long cbLen, Window wIDOwner)</td></tr>
 <tr class="memdesc:gafb89e8eacd7f963104ed12b034482e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor for a TEXT_OBJECT using defaults.  <a href="group__text__object__utils.html#gafb89e8eacd7f963104ed12b034482e7c">More...</a><br /></td></tr>
 <tr class="separator:gafb89e8eacd7f963104ed12b034482e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">WBTextObjectDestructor</a> (<a class="el" href="group__text__object__structures.html#ga7953714ac52297d4eab55b7ea5f3dc7d">TEXT_OBJECT</a> *pObj)</td></tr>
+<tr class="memitem:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">WBTextObjectDestructor</a> (<a class="el" href="group__text__object__structures.html#ga1d3c4a4320a2b66ed17cd114a8d8955b">TEXT_OBJECT</a> *pObj)</td></tr>
 <tr class="memdesc:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic detructor for a TEXT_OBJECT.  <a href="group__text__object__utils.html#gacc9102b78fe0ca6ba8b11c6e969bbf29">More...</a><br /></td></tr>
 <tr class="separator:gacc9102b78fe0ca6ba8b11c6e969bbf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae1f8ddf1de53987c95b923e2b7f5f2ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__text__object__utils.html#gae1f8ddf1de53987c95b923e2b7f5f2ce">WBTextObjectCalculateLineHeight</a> (int iAscent, int iDescent)</td></tr>
@@ -242,8 +274,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga158a023bde6f7acbfe114d13dd934109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A 'C++'-like object for managing text, can be overridden. </p>
-<p>X11 Work Bench Toolkit Toolkit API </p>
+<div class="textblock"><p>A 'C++'-like object for managing text, that can be overridden for custom behavior. </p>
+<p>X11workbench Toolkit API 'text object' for copying and drawing text, determining text extents for rendering, managing edits and undo for a block of text, and so on. In short it encapsulates the core functionality for managing a block of editable and/or viewable text. </p>
 
 <p class="definition">Definition in file <a class="el" href="text__object_8h_source.html">text_object.h</a>.</p>
 </div></div><!-- contents -->
@@ -253,7 +285,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a93e93c5bedfcb08c52d5d17e8990c46.html">d-drive</a></li><li class="navelem"><a class="el" href="dir_bfaf6c490b18bb944e1bfe03df21e305.html">SecureStorage</a></li><li class="navelem"><a class="el" href="dir_25641dbb6b1388c1f9cc5ef412f4280f.html">root</a></li><li class="navelem"><a class="el" href="dir_3f9cdd2bc8dc1ccb6b1e1e3fd78cbb3f.html">source</a></li><li class="navelem"><a class="el" href="dir_065f11664435750749470b46766d6b74.html">X11workbench</a></li><li class="navelem"><a class="el" href="dir_67f7212035addfee64e51ddf5eb74691.html">include</a></li><li class="navelem"><a class="el" href="text__object_8h.html">text_object.h</a></li>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

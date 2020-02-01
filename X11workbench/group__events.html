@@ -81,7 +81,7 @@ $(document).ready(function(){initNavTree('group__events.html','');});
 Modules</h2></td></tr>
 <tr class="memitem:group__events__atoms"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events__atoms.html">ClientMessage Atoms</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__events__types"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events__types.html">Data Types and Definitions</a></td></tr>
+<tr class="memitem:group__events__types"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events__types.html">Data Types, Enumerations, and Definitions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__keyboard"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__keyboard.html">Keyboard Event Handling</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,7 +106,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ga873795f7442d970037a691cd4e51792c"><td class="mdescLeft">&#160;</td><td class="mdescRight">event callback function type for window events  <a href="#ga873795f7442d970037a691cd4e51792c">More...</a><br /></td></tr>
 <tr class="separator:ga873795f7442d970037a691cd4e51792c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2648b749bede99874e9ed979ce861f44"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html#ga2648b749bede99874e9ed979ce861f44">WBAppEvent</a>) (XEvent *pEvent)</td></tr>
-<tr class="memdesc:ga2648b749bede99874e9ed979ce861f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">event callback function type for application events  <a href="#ga2648b749bede99874e9ed979ce861f44">More...</a><br /></td></tr>
+<tr class="memdesc:ga2648b749bede99874e9ed979ce861f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">event callback function type definition for application events  <a href="#ga2648b749bede99874e9ed979ce861f44">More...</a><br /></td></tr>
 <tr class="separator:ga2648b749bede99874e9ed979ce861f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -182,7 +182,7 @@ Functions</h2></td></tr>
 <p>'Keyboard' input mask. Use this as a parameter to XSelectInput to enable keyboard events to be sent to the window<br />
 This bit mask may be 'or'd with other bit masks as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00945">945</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00976">976</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +202,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>'Mouse' input mask. Use this as a parameter to XSelectInput to enable mouse events to be sent to the window<br />
 This bit mask may be 'or'd with other bit masks as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00953">953</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00984">984</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +222,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>'Standard' input mask. Use this as a parameter to XSelectInput to enable standard events to be sent to the window<br />
 This bit mask may be 'or'd with other bit masks as needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00937">937</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00968">968</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -239,8 +239,8 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
       </table>
 </div><div class="memdoc">
 
-<p>event callback function type for application events </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>event callback function type definition for application events </p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> int (* <a class="code" href="group__events.html#ga2648b749bede99874e9ed979ce861f44">WBAppEvent</a>)(XEvent *pEvent);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pEvent</td><td>A pointer to the XEvent structure passed to the callback function </td></tr>
   </table>
@@ -250,7 +250,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>An event callback for the application should be declared according to this defined type</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00188">188</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00239">239</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +267,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 </div><div class="memdoc">
 
 <p>event callback function type for window events </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> int (* <a class="code" href="group__events.html#ga873795f7442d970037a691cd4e51792c">WBWinEvent</a>)(Window wID, XEvent *pEvent);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wID</td><td>The Window ID for the window receiving the event notification </td></tr>
     <tr><td class="paramname">pEvent</td><td>A pointer to the XEvent structure passed to the callback function </td></tr>
@@ -278,7 +278,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Event callbacks for windows should be declared according to this defined type</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00176">176</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l00221">221</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Application events have a window ID of None, and are dispatched to the registered Application callback. In the absence of a callback, default processing is performed.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04559">4559</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04558">4558</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>To only retrieve 'internally queued' events, see <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5" title="low-level event queue wrapper. Implements the client-side event queue. Does not block if no events av...">WBNextEvent()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03726">3726</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03725">3725</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Call this function to generically dispatch an XEvent. The application will need to check for a 'quit' state independently. See <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a>, <a class="el" href="group__events.html#ga4a3789b26732b720b3e1b4334ec2e3e5" title="Dispatches an application XEvent. May be called directly.">WBAppDispatch()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04659">4659</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04658">4658</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Call this function from within a modal window's event process to close the window and exit from WBShowModal with the specified value in 'iReturn'</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02166">2166</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l02165">2165</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Intended primarily for debug messages, it returns a pointer to an ASCII string containing the name of the event, based on its event ID. The ID of the event is the value of 'type' within the XEvent structure.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08977">8977</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08976">8976</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>In some cases it's necessary to know an approximate value of the X server's timestamp. The message loop will capture the timestamp value whenever it can. Use this function to return the best known server time value for the default Display.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03719">3719</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03718">3718</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>Call this function to effectively 'cancel' any operation involving the mouse. This will un-do any 'drag' operations and send a WB_POINTER Client Message event with the 'WB_POINTER_CANCEL', and optionally un-grab the mouse (and keyboard, as needed). In the case of a Modal operation, this may differ from normal Asynchronous operations. Additionally, if there are any mouse messages already in the queue, this will not remove them. It will be up to the caller to deal with that. This function ONLY fixes the status and capture of the mouse.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05336">5336</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05335">5335</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 <p>See <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a>, <a class="el" href="group__events.html#gacf7234ca254d2459a41bb6917b41ab60" title="Wait for an event, blocking indefinitely.">WBWaitForEvent()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08840">8840</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08839">8839</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -599,7 +599,7 @@ This bit mask may be 'or'd with other bit masks as needed. </p>
 Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08879">8879</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08878">8878</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -640,7 +640,7 @@ Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 <p>Use this function to effectively delay an event's posting to the internal queue for a specified period of time, in milliseconds. For application messages, specify 'None' for the Window ID in the XEvent structure (otherwise specify the correct Window ID). After the time delay, the event will be retrieved and returned via <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a>, or <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5" title="low-level event queue wrapper. Implements the client-side event queue. Does not block if no events av...">WBNextEvent()</a>, similar to a timer message. If the window specified in the message is destroyed before the timeout, the message will be ignored.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08858">8858</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08857">8857</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -695,7 +695,7 @@ Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 <p>Causes (reliable) 'Set Active' 'Set Input Focus' 'Raise Window' and 'Map Window' events to be applied to a particular window. In many cases window managers may differ in their handling of things like 'XSetInputFocus' to set focus to a window. By handling this in the application event queue, it is possible to delay events asynchronously in a manner that avoids a race condition from the window manager. Clicking on a window, or using ALT+Tab, or switching desktops may cause unexpected 'things' to take place. By forcing the window to be ACTIVE and also using the normal 'XSetInputFocus' function, as well as 'Raising' and mapping the window, THIS method is likely to work everywhere, and in a consistent manner.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08892">8892</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08891">8891</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ Use WBPostAppEvent for application events (where the window ID is 'None')</p>
 You should always use this function for asynchronously posting non-priority events, such as notifications and timers, or when recursion may occur. Note that any pointers or X11 resources that are passed using XEvent may not be valid by the time they are received. If you must pass volatile data to a window, use <a class="el" href="group__events.html#ga79275e72d837cef2b535e9feeb81074f" title="Generic Event Dispatcher, using message type to dispatch.">WBDispatch()</a> or <a class="el" href="group__events.html#gaf6df53fd27da18e4a5a0ad5077c45a21" title="Dispatches a window XEvent. May be called directly.">WBWindowDispatch()</a> instead.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08845">8845</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08844">8844</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -781,7 +781,7 @@ You should always use this function for asynchronously posting non-priority even
 Use WBPostPriorityEvent for priority events, such as UI handling (where performance is critical)</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08863">8863</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l08862">8862</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -812,7 +812,7 @@ Use WBPostPriorityEvent for priority events, such as UI handling (where performa
 Expose events typically come in bunches, and all too frequently. By delaying their processing, AND consolidating them into a single event, it is possible to minimize the un-necessary re-drawing of windows and improve the 'apparent speed' of your applicatino. Normally this is done within <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a> automatically. If you decide to implement the message prioritization yourself, you can use this function to handle Expose events for you, and correctly prioritize them.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05317">5317</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l05316">5316</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -855,7 +855,7 @@ Expose events typically come in bunches, and all too frequently. By delaying the
 <p>The return value is -1 on error, or the value specified by 'iReturn' in the call to <a class="el" href="group__events.html#gac1ece849fdeb1fc9c42f3565dcc35351" title="End a modal window with a specific return value.">WBEndModal()</a>.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01863">1863</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l01862">1862</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -887,7 +887,7 @@ NOTE: if 'bQuitFlag' is set, this function will return immediately.</p>
 <p>See <a class="el" href="group__events.html#gaded67a2919c5cb862d512803fbcf21b5" title="low-level event queue wrapper. Implements the client-side event queue. Does not block if no events av...">WBNextEvent()</a>, <a class="el" href="group__events.html#gae65d3f6f49b844602dfc2ce6037fde09" title="Main message loop, high level API to check for and retrieve the next event.">WBCheckGetEvent()</a></p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03731">3731</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l03730">3730</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -929,7 +929,7 @@ NOTE: if 'bQuitFlag' is set, this function will return immediately.</p>
 <p>Dispatches an XEvent for the specified window. Normally, WBDispatch will call this function using the window ID from the XEvent itself, and pass that ID as the first parameter. A caller may choose to send the event to a different window, specifying its window ID instead. This is similar to a modal 'Event Send' and can be useful to have a parent or child window handle a particular type of event (rather than the destined window).</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04679">4679</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l04678">4678</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -939,7 +939,7 @@ NOTE: if 'bQuitFlag' is set, this function will return immediately.</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

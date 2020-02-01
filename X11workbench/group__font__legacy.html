@@ -246,7 +246,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Get the average character width for a font. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct </td></tr>
   </table>
   </dd>
@@ -287,7 +287,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Creates an 'XFontStruct' from the first font assigned to a Font Set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">fontSet</td><td>An XFontSet (may not be 'None') </td></tr>
   </table>
   </dd>
@@ -329,7 +329,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Get the maximum character ascent from a font set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
   </table>
   </dd>
@@ -370,7 +370,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Get the average character width for a font set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
   </table>
   </dd>
@@ -411,7 +411,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Get the maximum character descent from a font set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
   </table>
   </dd>
@@ -452,7 +452,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <p>Creates an 'XFontSet' from an XFontStruct for a given display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct </td></tr>
   </table>
   </dd>
@@ -495,7 +495,7 @@ The returned value (if not None) will need to be free'd using XFreeFontSet()</p>
 <p>Creates an 'XFontSet' from an XFontStruct for a given display, with only a single font in the set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">pFont</td><td>A pointer to an XFontStruct </td></tr>
   </table>
   </dd>
@@ -539,7 +539,7 @@ The returned value (if not None) will need to be free'd using XFreeFontSet()</p>
 <p>Get the maximum character height from a font set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
   </table>
   </dd>
@@ -580,7 +580,7 @@ The returned value (if not None) will need to be free'd using XFreeFontSet()</p>
 <p>Get a 'maximized' copy of the 'max_bounds' member for the font set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__defaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
+    <tr><td class="paramname">pDisplay</td><td>A pointer to the Display ( NULL uses <a class="el" href="group__wbdefaults.html#gac57c3a0127f4b7f69684ebee98e1e203">WBGetDefaultDisplay()</a> ) </td></tr>
     <tr><td class="paramname">fontSet</td><td>The Font Set to query ( None implies the system default font set) </td></tr>
   </table>
   </dd>
@@ -821,7 +821,7 @@ For a non-zero value, the font size is based on the WBFontFlag_SIZE_xxx flag spe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

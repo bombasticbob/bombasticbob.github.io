@@ -70,6 +70,7 @@ $(document).ready(function(){initNavTree('group__file__help__buf.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">File Buffer 'helper' functions<div class="ingroups"><a class="el" href="group__file__help.html">File Buffer and I/O 'helper' functions</a></div></div>  </div>
@@ -78,15 +79,42 @@ $(document).ready(function(){initNavTree('group__file__help__buf.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrong.html">strong</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  <a href="structstrong.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtag__file__help__buf.html">tag_file_help_buf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">basic 'buffered I/O' object structure for 'FileBuf' APIs  <a href="structtag__file__help__buf.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaab09332bdbc48bdbfdda71bd22f3dbc6"><td class="memItemLeft" align="right" valign="top">typedef struct __file_help_buf__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a></td></tr>
+<tr class="memitem:gaab09332bdbc48bdbfdda71bd22f3dbc6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtag__file__help__buf.html">tag_file_help_buf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a></td></tr>
 <tr class="memdesc:gaab09332bdbc48bdbfdda71bd22f3dbc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">basic 'buffered I/O' object structure for 'FileBuf' APIs  <a href="#gaab09332bdbc48bdbfdda71bd22f3dbc6">More...</a><br /></td></tr>
 <tr class="separator:gaab09332bdbc48bdbfdda71bd22f3dbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gadb8a29808233b663ad9117b072fb8592"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__help__buf.html#gadb8a29808233b663ad9117b072fb8592">tag_file_help_buf_flags</a> { <br />
+&#160;&#160;<b>file_help_buf_dirty</b> = 1, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved01</b> = 2, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved02</b> = 4, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved03</b> = 8, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved04</b> = 16, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved05</b> = 32, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved06</b> = 64, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved07</b> = 128, 
+<br />
+&#160;&#160;<b>file_help_buf_reserved08</b> = 256, 
+<br />
+&#160;&#160;<b>file_help_buf_last</b> = 0x80000000L
+<br />
+ }</td></tr>
+<tr class="memdesc:gadb8a29808233b663ad9117b072fb8592"><td class="mdescLeft">&#160;</td><td class="mdescRight">bit flags for <a class="el" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a> 'iFlags' member  <a href="group__file__help__buf.html#gadb8a29808233b663ad9117b072fb8592">More...</a><br /></td></tr>
+<tr class="separator:gadb8a29808233b663ad9117b072fb8592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -152,9 +180,30 @@ Functions</h2></td></tr>
 
 <p>basic 'buffered I/O' object structure for 'FileBuf' APIs </p>
 <p>This structure is intended to assist implementing buffered I/O for files that contain multiple lines separated by linefeeds. A 'file edit' window or dialog control could use one of these objects to assist with displaying and editing text based on the contents of a file. It would also be possible to construct a <a class="el" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a> object from a memory buffer as well as from a text file.</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__file_help_buf__</div><div class="line">{</div><div class="line">  <span class="keyword">struct </span>__file_help_buf__ *pPrev; <span class="comment">// pointer to &#39;previous&#39; item in linked list (NULL for owner object)</span></div><div class="line">  <span class="keyword">struct </span>__file_help_buf__ *pNext; <span class="comment">// pointer to &#39;next&#39; item in linked list (NULL for last object)</span></div><div class="line">  <span class="keywordtype">long</span> lBufferSize;                <span class="comment">// size of entire buffer</span></div><div class="line">  <span class="keywordtype">long</span> lBufferCount;               <span class="comment">// number of bytes of valid data</span></div><div class="line">  <span class="keywordtype">long</span> lLineCount;                 <span class="comment">// number of lines in &#39;cData&#39; when ppLineBuf not NULL</span></div><div class="line">  <span class="keywordtype">long</span> lLineBufSize;               <span class="comment">// size of memory block pointed to by &#39;ppLineBuf&#39;</span></div><div class="line">  <span class="keywordtype">int</span>  iFlags;                     <span class="comment">// various bit flags</span></div><div class="line">  <span class="keywordtype">char</span> **ppLineBuf;                <span class="comment">// array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)</span></div><div class="line">  <span class="keywordtype">char</span> cData[<span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *)];      <span class="comment">// the data itself (aligned to size of a pointer)</span></div><div class="line">} <a class="code" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a>;</div></div><!-- fragment --><p>TODO: 'ppLineBuf' should point to an area within cData. If 'pNext' is valid, subsequent lines could be pointed to by the 'ppLineBuf' within the structure pointed to by 'pNext'. In this way line pointers can be re-structured without re-allocating memory. Additionally, there is no reason why lines must be contiguous, so inserting and removing lines can make use of the additional allocated space pointed to by 'pNext'.<br />
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtag__file__help__buf.html">tag_file_help_buf</a></div><div class="line">{</div><div class="line">  <span class="keyword">struct </span><a class="code" href="structtag__file__help__buf.html">tag_file_help_buf</a> *<a class="code" href="structtag__file__help__buf.html#ad653124c6f44e7e07e61fa6a12f4f9ea">pPrev</a>; <span class="comment">// pointer to &#39;previous&#39; item in linked list (NULL for owner object)</span></div><div class="line">  <span class="keyword">struct </span><a class="code" href="structtag__file__help__buf.html">tag_file_help_buf</a> *<a class="code" href="structtag__file__help__buf.html#adf886edc462bcd49e6d22125e51e0316">pNext</a>; <span class="comment">// pointer to &#39;next&#39; item in linked list (NULL for last object)</span></div><div class="line">  <span class="keywordtype">long</span> <a class="code" href="structtag__file__help__buf.html#a9f8d162f1bb78e6eb33b102ad156709c">lBufferSize</a>;                <span class="comment">// size of entire buffer</span></div><div class="line">  <span class="keywordtype">long</span> <a class="code" href="structtag__file__help__buf.html#a75e0d422e416b24dbdb71a446b37f633">lBufferCount</a>;               <span class="comment">// number of bytes of valid data</span></div><div class="line">  <span class="keywordtype">long</span> <a class="code" href="structtag__file__help__buf.html#a784da442c51b7035c38b8253a0bdfae2">lLineCount</a>;                 <span class="comment">// number of lines in &#39;cData&#39; when ppLineBuf not NULL</span></div><div class="line">  <span class="keywordtype">long</span> <a class="code" href="structtag__file__help__buf.html#ae2a560aa453934694159998937774996">lLineBufSize</a>;               <span class="comment">// size of memory block pointed to by &#39;ppLineBuf&#39;</span></div><div class="line">  <span class="keywordtype">int</span>  <a class="code" href="structtag__file__help__buf.html#aa554ac4b7e21f28462750b92ad87add8">iFlags</a>;                     <span class="comment">// various bit flags</span></div><div class="line">  <span class="keywordtype">char</span> **<a class="code" href="structtag__file__help__buf.html#ac7175999d612098c350d12adb888840d">ppLineBuf</a>;                <span class="comment">// array of pointers to beginning of each line (WBAlloc&#39;d TODO: make it part of &#39;cData&#39;?)</span></div><div class="line">  <span class="keywordtype">char</span> <a class="code" href="structtag__file__help__buf.html#a8fa9b91fa1975d59de84cf999f530924">cData</a>[<span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *)];      <span class="comment">// the data itself (aligned to size of a pointer)</span></div><div class="line">} <a class="code" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a>;</div></div><!-- fragment --><p>TODO: 'ppLineBuf' should point to an area within cData. If 'pNext' is valid, subsequent lines could be pointed to by the 'ppLineBuf' within the structure pointed to by 'pNext'. In this way line pointers can be re-structured without re-allocating memory. Additionally, there is no reason why lines must be contiguous, so inserting and removing lines can make use of the additional allocated space pointed to by 'pNext'.<br />
  As it would become fragmented, it would also be a good idea to re-build the structure periodically using <a class="el" href="group__file__help__buf.html#ga4473fb94d70c15cb95277ef19cb564e0" title="Parse or Re-Parse the data for a file_help_buf_t object.">FBParseFileBuf()</a></p>
 <p>header file: <a class="el" href="file__help_8h_source.html">file_help.h</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gadb8a29808233b663ad9117b072fb8592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb8a29808233b663ad9117b072fb8592">&#9670;&nbsp;</a></span>tag_file_help_buf_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__file__help__buf.html#gadb8a29808233b663ad9117b072fb8592">tag_file_help_buf_flags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bit flags for <a class="el" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a> 'iFlags' member </p>
+<p>These are the bit flag definitions for the <a class="el" href="group__file__help__buf.html#gaab09332bdbc48bdbfdda71bd22f3dbc6">file_help_buf_t</a> 'iFlags' member</p>
+<p>header file: <a class="el" href="file__help_8h_source.html">file_help.h</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="file__help_8h_source.html#l00184">184</a> of file <a class="el" href="file__help_8h_source.html">file_help.h</a>.</p>
 
 </div>
 </div>
@@ -764,7 +813,7 @@ The function returns 0 on success, non-zero on error.<br />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

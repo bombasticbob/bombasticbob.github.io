@@ -1,6 +1,14 @@
 var group__frame__window =
 [
-    [ "strong", "structstrong.html", null ],
+    [ "tagWB_FRAME_WINDOW", "structtagWB__FRAME__WINDOW.html", [
+      [ "iClientHeight", "structtagWB__FRAME__WINDOW.html#a611ee0649d456278be1b38dffce515a5", null ],
+      [ "iClientWidth", "structtagWB__FRAME__WINDOW.html#a27424747da84f0a941eabfa48faf916b", null ],
+      [ "iClientX", "structtagWB__FRAME__WINDOW.html#ab7853bf1a94cfbc4acf1198eb8e557d5", null ],
+      [ "iClientY", "structtagWB__FRAME__WINDOW.html#a357ee914afb0052f18c556589b678566", null ],
+      [ "iFlags", "structtagWB__FRAME__WINDOW.html#aa554ac4b7e21f28462750b92ad87add8", null ],
+      [ "ulTag", "structtagWB__FRAME__WINDOW.html#a9cad1622f4396ded0afaf6a8d8a5727a", null ],
+      [ "wID", "structtagWB__FRAME__WINDOW.html#ac1bf4c310535451938ef5b31b2b0c51b", null ]
+    ] ],
     [ "FRAME_WINDOW_TAG", "group__frame__window.html#gaf0816ee655e0dfe37f0889b7091f4058", null ],
     [ "MOVE_CHILD_FRAME_TAB_INDEX_BEGINNING", "group__frame__window.html#gabc8edaf4afaeddf049731b751f54e0a7", null ],
     [ "MOVE_CHILD_FRAME_TAB_INDEX_LEFT", "group__frame__window.html#ga6cf13a1c060bb910cc14208944c53462", null ],

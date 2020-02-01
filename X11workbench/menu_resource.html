@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('menu_resource.html','');});
 </ul>
 <p>Popups are each identified by their own resource, which begins with a single number followed by a linefeed, followed by additional menu resource information. In the example, there are 4 popup menus identified by the numbers '2' through '5'. These can invoke other popup menus, as needed.</p>
 <p>Menu callback functions have prototypes similar to the following: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> MenuHandler(XClientMessageEvent *pEvent);</div></div><!-- fragment --><p>It will be invoked by passing in a Client Message event, where the Atom for 'pEvent-&gt;message_type' will be <a class="el" href="group__menu.html#gab6bfa5084348ab4142dcbe45aa80fe27">'aMENU_COMMAND'</a>, and pEvent-&gt;data.l[0] will contain the menu item's Atom. This way, it is possible to share the same callback function for multiple message identifiers, by checking the contents of the XClientMessageEvent to determine how to process it.</p>
-<p>A menu UI callback function is declared similar to the following: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> MenuUIHandler(<a class="code" href="struct____WBMenu.html">WBMenu</a> *pMenu, <a class="code" href="group__menu.html#ga6e4ffa6e5616302be7bbf961388d40f4">WBMenuItem</a> *pMenuItem);</div></div><!-- fragment --><p>The 'pMenu' and 'pMenuItem' pointers identify the menu and menu item associated with the UI request. The function will return '1' to enable, or -1 to disable the menu item associated with the callback. A value of '0' is currently undefined, and will result in a behavior as if NO UI callback were defined. </p>
+<p>A menu UI callback function is declared similar to the following: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> MenuUIHandler(<a class="code" href="structtagWBMenu.html">WBMenu</a> *pMenu, <a class="code" href="structtagWBMenuItem____.html">WBMenuItem</a> *pMenuItem);</div></div><!-- fragment --><p>The 'pMenu' and 'pMenuItem' pointers identify the menu and menu item associated with the UI request. The function will return '1' to enable, or -1 to disable the menu item associated with the callback. A value of '0' is currently undefined, and will result in a behavior as if NO UI callback were defined. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('menu_resource.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

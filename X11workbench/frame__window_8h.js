@@ -10,7 +10,7 @@ var frame__window_8h =
     [ "MOVE_CHILD_FRAME_TAB_INDEX_RIGHT", "group__frame__window.html#gaf3c30b075ad22663b37c3ca11540ceea", null ],
     [ "WBChildFrame", "group__child__frame.html#gaf06650d056e926657cc94548674c1d98", null ],
     [ "WBChildFrameUI", "group__child__frame.html#gaef35967785afcadb1b6ede35ac972349", null ],
-    [ "WBFrameWindow", "frame__window_8h.html#a54551f4cd3a77998576ba4bd6a8c23e9", null ],
+    [ "WBFrameWindow", "frame__window_8h.html#a7affbba0ee838bc53296fbbfec5d9fb6", null ],
     [ "WBFWMenuHandler", "group__frame__menu.html#ga3c4f2af99262415109ef93e4e3ad009b", null ],
     [ "WBChildFrame_FLAGS", "group__child__frame.html#ga8876436ba7e43c85f832361df3e05a9e", [
       [ "WBChildFrame_NO_TAB", "frame__window_8h.html#ga8876436ba7e43c85f832361df3e05a9ea2d205951e2714825deddcfebe15a53a2", null ],

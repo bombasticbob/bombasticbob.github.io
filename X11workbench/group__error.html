@@ -78,13 +78,13 @@ $(document).ready(function(){initNavTree('group__error.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrong.html">strong</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIALOG_WINDOW structure (internal), an extension of WBDialogWindow.  <a href="structstrong.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__WB__ERROR__INFO.html">s_WB_ERROR_INFO</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure definition for X11 error information.  <a href="structs__WB__ERROR__INFO.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga68ee9920c7b28343743907556c9102ca"><td class="memItemLeft" align="right" valign="top">typedef struct __WB_ERROR_INFO__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#ga68ee9920c7b28343743907556c9102ca">WB_ERROR_INFO</a></td></tr>
+<tr class="memitem:ga68ee9920c7b28343743907556c9102ca"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structs__WB__ERROR__INFO.html">s_WB_ERROR_INFO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#ga68ee9920c7b28343743907556c9102ca">WB_ERROR_INFO</a></td></tr>
 <tr class="memdesc:ga68ee9920c7b28343743907556c9102ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure definition for X11 error information.  <a href="#ga68ee9920c7b28343743907556c9102ca">More...</a><br /></td></tr>
 <tr class="separator:ga68ee9920c7b28343743907556c9102ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -111,7 +111,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>X11 has its own error notification mechanism that normally terminates the application. Since many errors are actually 'expected' (particularly with respect to using the clipboard) it is necessary to process these without program interruption. Normal error handling consists of a notification message sent to stderr, and error information being stored in a set of global variables. Prior to using this information, it is FIRST necessary to clear the error state, and then check for an error after the operation has completed.<br />
- </p><div class="fragment"><div class="line"><a class="code" href="group__error.html#ga70d0d1f97b689823e303b794124537a2">WBSupressErrorOutput</a>(); <span class="comment">// expect errors, no need for diagnostics</span></div><div class="line"><a class="code" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42">WBErrorClear</a>();</div><div class="line"></div><div class="line"><span class="keywordflow">while</span>(1)</div><div class="line">{</div><div class="line">  <span class="comment">// perform some operation that does not</span></div><div class="line">  <span class="comment">// normally indicate if an error took place</span></div><div class="line">  <span class="comment">// or needs to be checked for retry</span></div><div class="line"></div><div class="line">  <span class="keywordflow">if</span>(!<a class="code" href="group__error.html#ga64d82be0ea138ae3746cd634cdafc4f8">WBErrorCheck</a>())</div><div class="line">  {</div><div class="line">    <span class="keywordflow">break</span>;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">else</span></div><div class="line">  {</div><div class="line">    <a class="code" href="group__error.html#ga68ee9920c7b28343743907556c9102ca">WB_ERROR_INFO</a> *pErr = <a class="code" href="group__error.html#ga93cb9008e2362ce06c2795838274f472">WBGetLastError</a>();</div><div class="line"></div><div class="line">    <span class="comment">// report error, limit number of retries, etc.</span></div><div class="line"></div><div class="line">    <span class="keywordflow">if</span>(!<a class="code" href="group__error.html#ga6544252ab08490d0f12f543f52bd1246">WBErrorCheckRetry</a>())</div><div class="line">    {</div><div class="line">      <span class="comment">// do some kind of cleanup since I failed</span></div><div class="line">      <span class="comment">// and could not retry the operation</span></div><div class="line"></div><div class="line">      <span class="keywordflow">break</span>;</div><div class="line">    }</div><div class="line">  }</div><div class="line">}</div><div class="line"></div><div class="line">WBRestoreErrorOutput(); <span class="comment">// restore error message output</span></div></div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
+ </p><div class="fragment"><div class="line"><a class="code" href="group__error.html#ga70d0d1f97b689823e303b794124537a2">WBSupressErrorOutput</a>(); <span class="comment">// expect errors, no need for diagnostics</span></div><div class="line"><a class="code" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42">WBErrorClear</a>();</div><div class="line"></div><div class="line"><span class="keywordflow">while</span>(1)</div><div class="line">{</div><div class="line">  <span class="comment">// perform some operation that does not</span></div><div class="line">  <span class="comment">// normally indicate if an error took place</span></div><div class="line">  <span class="comment">// or needs to be checked for retry</span></div><div class="line"></div><div class="line">  <span class="keywordflow">if</span>(!<a class="code" href="group__error.html#ga64d82be0ea138ae3746cd634cdafc4f8">WBErrorCheck</a>())</div><div class="line">  {</div><div class="line">    <span class="keywordflow">break</span>;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">else</span></div><div class="line">  {</div><div class="line">    <a class="code" href="structs__WB__ERROR__INFO.html">WB_ERROR_INFO</a> *pErr = <a class="code" href="group__error.html#ga93cb9008e2362ce06c2795838274f472">WBGetLastError</a>();</div><div class="line"></div><div class="line">    <span class="comment">// report error, limit number of retries, etc.</span></div><div class="line"></div><div class="line">    <span class="keywordflow">if</span>(!<a class="code" href="group__error.html#ga6544252ab08490d0f12f543f52bd1246">WBErrorCheckRetry</a>())</div><div class="line">    {</div><div class="line">      <span class="comment">// do some kind of cleanup since I failed</span></div><div class="line">      <span class="comment">// and could not retry the operation</span></div><div class="line"></div><div class="line">      <span class="keywordflow">break</span>;</div><div class="line">    }</div><div class="line">  }</div><div class="line">}</div><div class="line"></div><div class="line">WBRestoreErrorOutput(); <span class="comment">// restore error message output</span></div></div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga68ee9920c7b28343743907556c9102ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga68ee9920c7b28343743907556c9102ca">&#9670;&nbsp;</a></span>WB_ERROR_INFO</h2>
 
@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Structure definition for X11 error information. </p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>__WB_ERROR_INFO__</div><div class="line">{</div><div class="line">  Display *pDisplay;     <span class="comment">// Display pointer passed into error handler function (NULL if no error)</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *pFunc;     <span class="comment">// Name of the function as assigned by BEGIN_XCALL_DEBUG_WRAPPER</span></div><div class="line">  <span class="keywordtype">int</span> iLine;             <span class="comment">// Line number of the function as assigned by BEGIN_XCALL_DEBUG_WRAPPER</span></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> serial;  <span class="comment">// serial number from XErrorEvent</span></div><div class="line">  <span class="keywordtype">int</span> error_code;        <span class="comment">// error code from XErrorEvent</span></div><div class="line">  <span class="keywordtype">int</span> request_code;      <span class="comment">// request code from XErrorEvent</span></div><div class="line">  <span class="keywordtype">int</span> minor_code;        <span class="comment">// minor code from XErrorEvent</span></div><div class="line">  XID resourceid;        <span class="comment">// resource ID (usually a Window) from XErrorEvent</span></div><div class="line">} <a class="code" href="group__error.html#ga68ee9920c7b28343743907556c9102ca">WB_ERROR_INFO</a>;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__WB__ERROR__INFO.html">s_WB_ERROR_INFO</a></div><div class="line">{</div><div class="line">  Display *<a class="code" href="structs__WB__ERROR__INFO.html#a0e5b4ba1b30f7c298b82d7592e78a8e3">pDisplay</a>;     <span class="comment">// Display pointer passed into error handler function (NULL if no error)</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structs__WB__ERROR__INFO.html#a0c78a21ceb74a261a9ad14f8b51dde03">pFunc</a>;     <span class="comment">// Name of the function as assigned by BEGIN_XCALL_DEBUG_WRAPPER</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__ERROR__INFO.html#a4d2517b7d0e2a89bf8f679590bb60c13">iLine</a>;             <span class="comment">// Line number of the function as assigned by BEGIN_XCALL_DEBUG_WRAPPER</span></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="structs__WB__ERROR__INFO.html#a1e3162f089d71a92c383b398715e0c92">serial</a>;  <span class="comment">// serial number from XErrorEvent</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__ERROR__INFO.html#a7d16b1c68c87cec009d972e79abfba78">error_code</a>;        <span class="comment">// error code from XErrorEvent</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__ERROR__INFO.html#af5a870a4054c4c367a8792bd396cd11a">request_code</a>;      <span class="comment">// request code from XErrorEvent</span></div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="structs__WB__ERROR__INFO.html#a8fabfbe2f601a8bf791b0f11a9e64626">minor_code</a>;        <span class="comment">// minor code from XErrorEvent</span></div><div class="line">  XID <a class="code" href="structs__WB__ERROR__INFO.html#a18d3702a195f1daa384d760dd6af1184">resourceid</a>;        <span class="comment">// resource ID (usually a Window) from XErrorEvent</span></div><div class="line">} <a class="code" href="group__error.html#ga68ee9920c7b28343743907556c9102ca">WB_ERROR_INFO</a>;</div></div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <p>Call this function to decrement the error output supression counter. Error output will be restored whenever the supression counter returns to zero. Each call to the <a class="el" href="group__error.html#ga70d0d1f97b689823e303b794124537a2" title="Supress X11 XErrorEvent output to stderr.">WBSupressErrorOutput()</a> function should be balanced with a call to this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03688">3688</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03703">3703</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -182,7 +182,7 @@ Functions</h2></td></tr>
 <p>Call this function to check to see if an XErrorEvent has been processed and stored in the internal WB_ERROR_INFO structure. It is necessary to FIRST call <a class="el" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42" title="Clear the &#39;last error&#39; information obtained via WBGetLastError()">WBErrorClear()</a> before any operation that might result in an error that can THEN be checked for using this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09595">9595</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09594">9594</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -207,7 +207,7 @@ Functions</h2></td></tr>
 <p>Call this function to check to see if an XErrorEvent has been processed and stored in the internal WB_ERROR_INFO structure, and if a retry is possible based on the type and condition of the error. It is necessary to FIRST call <a class="el" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42" title="Clear the &#39;last error&#39; information obtained via WBGetLastError()">WBErrorClear()</a> before any operation that might result in an error that can THEN be checked for retryability using this function.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09600">9600</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09599">9599</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Functions</h2></td></tr>
 <p>Clear the 'last error' information obtained via <a class="el" href="group__error.html#ga93cb9008e2362ce06c2795838274f472" title="Obtain a const pointer to the internal WB_ERROR_INFO structure.">WBGetLastError()</a> </p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09590">9590</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09589">9589</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ Functions</h2></td></tr>
 <p>Call this function to obtain details about the last error from the XErrorEvent passed to the error handler. If there has been no error event, the 'pDisplay' member will always be NULL. You should always call <a class="el" href="group__error.html#gae4ea07cf5fe7953619b9c5e879890b42" title="Clear the &#39;last error&#39; information obtained via WBGetLastError()">WBErrorClear()</a> to clear out this structure before performing an operation that might result in an XErrorEvent.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09612">9612</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8c_source.html#l09611">9611</a> of file <a class="el" href="window__helper_8c_source.html">window_helper.c</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Functions</h2></td></tr>
 <p>Call this function to increment the error output supression counter. Error output will be restored whenever the supression counter returns to zero. Each call to this function should be balanced with a call to <a class="el" href="group__error.html#ga35b0078efe9871577c382d8a6a3ff5f4" title="Restore X11 XErrorEvent output to stderr.">WBAllowErrorOutput()</a>.</p>
 <p>Header File: <a class="el" href="window__helper_8h.html" title="&#39;window helper&#39; main header file for the X11workbench Toolkit API">window_helper.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03667">3667</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__helper_8h_source.html#l03682">3682</a> of file <a class="el" href="window__helper_8h_source.html">window_helper.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +297,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2020 15:41:03 for X11workbench Toolkit by
+    <li class="footer">Generated on Sat Feb 1 2020 14:59:01 for X11workbench Toolkit by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
